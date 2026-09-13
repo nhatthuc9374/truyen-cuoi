@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truyện Tranh Hài: Oliver Tree - Again & Again</title>
+  <style>
+    :root {
+      --primary: #EC4899;
+      --primary-dark: #BE185D;
+      --accent: #8B5CF6;
+      --gold: #FACC15;
+      --cyan: #06B6D4;
+      --orange: #F97316;
+      --bg: #0F172A;
+      --card-bg: #1E1B4B;
+      --text: #F8FAFC;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      background: radial-gradient(circle at top, #311042 0%, #110A24 50%, #06020D 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px;
+    }
+    header { text-align: center; margin-bottom: 24px; max-width: 900px; }
+    .badge {
+      display: inline-block;
+      background: linear-gradient(90deg, #EC4899, #06B6D4);
+      color: #FFF;
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-weight: 900;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 15px rgba(236, 72, 153, 0.5);
+    }
+    h1 {
+      font-size: 34px;
+      font-weight: 900;
+      background: linear-gradient(90deg, #F43F5E, #FACC15, #38BDF8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+    p.subtitle { font-size: 16px; color: #CBD5E1; line-height: 1.5; }
+    .controls { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; justify-content: center; }
+    .btn {
+      padding: 10px 20px;
+      border: 2px solid var(--primary);
+      border-radius: 12px;
+      background: var(--card-bg);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn:hover { background: var(--primary); transform: translateY(-2px); box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4); }
+    .btn.active { background: var(--primary); border-color: #F472B6; }
+    .comic-container { width: 100%; max-width: 1240px; transition: all 0.3s ease; }
+    .grid-mode { display: grid; grid-template-columns: repeat(auto-fit, minmax(560px, 1fr)); gap: 24px; }
+    .strip-mode { display: flex; flex-direction: column; gap: 32px; max-width: 960px; margin: 0 auto; }
+    .slide-mode .comic-card { display: none; }
+    .slide-mode .comic-card.current { display: block; animation: fadeIn 0.35s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: scale(0.97); } to { opacity: 1; transform: scale(1); } }
+    .comic-card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 18px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+      border: 2px solid #432874;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .comic-card:hover { transform: translateY(-4px); border-color: var(--primary); }
+    .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding: 0 6px; }
+    .panel-tag { font-size: 15px; font-weight: 800; background: #DB2777; color: #FFF; padding: 4px 12px; border-radius: 8px; }
+    .panel-caption { font-size: 15px; font-weight: 700; color: #E2E8F0; }
+    .img-wrapper { width: 100%; border-radius: 14px; overflow: hidden; background: #000; }
+    .img-wrapper img { width: 100%; height: auto; display: block; }
+    .card-footer {
+      margin-top: 14px;
+      padding: 14px 16px;
+      background: #0B071B;
+      border-radius: 12px;
+      border-left: 5px solid var(--primary);
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: #CBD5E1;
+    }
+    .card-footer strong { color: #F9A8D4; }
+    .slide-nav { display: none; justify-content: center; align-items: center; gap: 20px; margin-top: 24px; }
+    .slide-mode ~ .slide-nav { display: flex; }
+    .slide-btn {
+      background: #2D144E;
+      border: 2px solid var(--primary);
+      color: #FFF;
+      padding: 10px 24px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .slide-btn:hover { background: var(--primary); transform: scale(1.05); }
+    .slide-indicator { font-size: 18px; font-weight: 800; color: var(--gold); }
+    footer { margin-top: 40px; font-size: 14px; color: #64748B; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="badge">🛸 SIÊU PHẨM COMIC SLAPSTICK 90s</div>
+    <h1>OLIVER TREE — AGAIN & AGAIN</h1>
+    <p class="subtitle">Vòng lặp định mệnh bất tận của quái xế Turbo: Thề bỏ chơi dại, hóa thần 8 tay, phóng xuống vực, đo đất và tái sinh!</p>
+  </header>
+
+  <div class="controls">
+    <button class="btn active" onclick="setMode('grid')">📱 Lưới 2x2</button>
+    <button class="btn" onclick="setMode('strip')">📜 Cuộn dọc (Webtoon)</button>
+    <button class="btn" onclick="setMode('slide')">📽️ Trình chiếu (Slideshow)</button>
+  </div>
+
+  <div id="comicContainer" class="comic-container grid-mode">
+    
+    <!-- KHUNG 1 -->
+    <div class="comic-card current" data-index="0">
+      <div class="card-header">
+        <span class="panel-tag">Khung 1</span>
+        <span class="panel-caption">Vị Thần 8 Tay Tái Xuất Phố Phường</span>
+      </div>
+      <div class="img-wrapper">
+        <img src="images/oliver_again_1.jpg" alt="Khung 1: Oliver Tree hóa thân thành quái kiệt Turbo 8 tay" />
+      </div>
+      <div class="card-footer">
+        <strong>Oliver Tree:</strong> "Tôi từng hứa sẽ bỏ chơi dại... Nhưng nhìn đi, vũ trụ ban cho tôi tận 8 cánh tay để lái xe trượt scooter cơ mà! VÒNG LẶP LẠI BẮT ĐẦU! CHIẾN TIẾP NÀO BÀ CON ƠI!" 🛸✨
+      </div>
+    </div>
+
+    <!-- KHUNG 2 -->
+    <div class="comic-card" data-index="1">
+      <div class="card-header">
+        <span class="panel-tag">Khung 2</span>
+        <span class="panel-caption">Cú Nhảy Phản Lực Xuống Vực Thẳm</span>
+      </div>
+      <div class="img-wrapper">
+        <img src="images/oliver_again_2.jpg" alt="Khung 2: Oliver Tree vít ga scooter gắn Nitro bay qua bờ vực" />
+      </div>
+      <div class="card-footer">
+        <strong>Oliver Tree:</strong> "AGAIN AND AGAIN, I'M DOING THE SAME THING! Không thể tin là tôi lại bấm nút Nitro phóng xuống vực! WOO-HOO!" 🚀🌪️
+      </div>
+    </div>
+
+    <!-- KHUNG 3 -->
+    <div class="comic-card" data-index="2">
+      <div class="card-header">
+        <span class="panel-tag">Khung 3</span>
+        <span class="panel-caption">Cú Đo Đất Toàn Diện & Scooter Gãy Đôi</span>
+      </div>
+      <div class="img-wrapper">
+        <img src="images/oliver_again_3.jpg" alt="Khung 3: Động cơ nổ tung, Oliver rơi tự do nằm đo đất" />
+      </div>
+      <div class="card-footer">
+        <strong>Oliver Tree:</strong> "U là trời... Scooter gãy đôi, mông đập đất! Tại sao lần nào tôi cũng kết thúc dưới mặt đất thế này?! Bác sĩ ơi cứu tôi với...!" 💥🚑
+      </div>
+    </div>
+
+    <!-- KHUNG 4 -->
+    <div class="comic-card" data-index="3">
+      <div class="card-header">
+        <span class="panel-tag">Khung 4</span>
+        <span class="panel-caption">"Xác Ướp Bệnh Viện" Tái Sinh Bất Diệt</span>
+      </div>
+      <div class="img-wrapper">
+        <img src="images/oliver_again_4.jpg" alt="Khung 4: Oliver Tree bó bột toàn thân trên xe lăn tuyên bố tiếp tục liều mạng" />
+      </div>
+      <div class="card-footer">
+        <strong>Oliver Tree:</strong> "Bó bột toàn thân thì đã làm sao?! Đời là vòng lặp vô tận! Xuất viện xong tôi sẽ mua chiếc Scooter mạ vàng để nhảy tiếp! AGAIN & AGAIN! HAHAHA!" 🏥🎤🎉
+      </div>
+    </div>
+
+  </div>
+
+  <div class="slide-nav">
+    <button class="slide-btn" onclick="prevSlide()">◀ Trước</button>
+    <div class="slide-indicator"><span id="currentSlide">1</span> / 4</div>
+    <button class="slide-btn" onclick="nextSlide()">Sau ▶</button>
+  </div>
+
+  <footer>
+    Bộ sưu tập truyện tranh hài hước 4 khung • Oliver Tree Music Video Comics • Ugly Is Beautiful Collection
+  </footer>
+
+  <script>
+    let currentIndex = 0;
+    const cards = document.querySelectorAll('.comic-card');
+    const container = document.getElementById('comicContainer');
+    const indicator = document.getElementById('currentSlide');
+
+    function setMode(mode) {
+      document.querySelectorAll('.controls .btn').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+      
+      container.className = 'comic-container ' + mode + '-mode';
+      if (mode === 'slide') {
+        updateSlide();
+      } else {
+        cards.forEach(c => c.style.display = 'block');
+      }
+    }
+
+    function updateSlide() {
+      cards.forEach((c, idx) => {
+        c.classList.toggle('current', idx === currentIndex);
+        c.style.display = (idx === currentIndex) ? 'block' : 'none';
+      });
+      indicator.textContent = currentIndex + 1;
+    }
+
+    function nextSlide() {
+      if (currentIndex < cards.length - 1) {
+        currentIndex++;
+        updateSlide();
+      }
+    }
+
+    function prevSlide() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSlide();
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (container.classList.contains('slide-mode')) {
+        if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+        if (e.key === 'ArrowLeft') prevSlide();
+      }
+    });
+  </script>
+</body>
+</html>

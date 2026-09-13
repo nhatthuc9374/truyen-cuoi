@@ -24,6 +24,7 @@
 
 ### Khung 1: Vị Thần 8 Tay Tái Xuất — Lời Thề Bỏ Cuộc Tan Biến! 🛸✨
 
+![Khung 1: Vị Thần 8 Tay Tái Xuất](images/oliver_again_1.jpg)
 ![[oliver_again_1.jpg]]
 
 > **Bối cảnh:** Con phố ngoại ô trước hàng rào kẽm gai gỉ sét. Sau chuỗi tai nạn thập tử nhất sinh ở tập trước, Oliver Tree vừa bước chân ra khỏi viện và mở cuộc họp báo thề thốt sẽ "cải tà quy chính", sống một cuộc đời mẫu mực bình yên.  
@@ -41,6 +42,7 @@
 
 ### Khung 2: Cú Nhảy Vực Thẳm Phản Lực — "Again & Again, Lại Chơi Dại!" 🚀💥
 
+![Khung 2: Cú Nhảy Vực Thẳm Phản Lực](images/oliver_again_2.jpg)
 ![[oliver_again_2.jpg]]
 
 > **Bối cảnh:** Con dốc đại lộ Hollywood dẫn thẳng ra bờ vực đá dựng đứng cao 100 mét. Đám đông người hâm mộ và phóng viên đứng kín hai bên đường hò reo cổ vũ.  
@@ -55,6 +57,7 @@
 
 ### Khung 3: "Đo Đất Toàn Diện" — Xe Gãy Đôi, Người Nằm Sõng Soài! 💥😱
 
+![Khung 3: Đo Đất Toàn Diện](images/oliver_again_3.jpg)
 ![[oliver_again_3.jpg]]
 
 > **Bối cảnh:** Bãi đất cát khô cằn dưới đáy vực, khói lửa bốc lên ngùn ngụt mù mịt cả một góc trời.  
@@ -72,6 +75,7 @@
 
 ### Khung 4: "Xác Ướp Bệnh Viện" Tái Sinh — Vòng Lặp Không Hồi Kết! 🏥⚡🛴
 
+![Khung 4: Xác Ướp Bệnh Viện Tái Sinh](images/oliver_again_4.jpg)
 ![[oliver_again_4.jpg]]
 
 > **Bối cảnh:** Phòng hồi sức đặc biệt của bệnh viện trung tâm. Băng rôn chào đón hoành tráng treo ngang tường: *"WORLD TOUR ANNOUNCED: LIFE GOES ON — CHÀO MỪNG QUÁI XẾ TRỞ LẠI!"*  
@@ -98,9 +102,10 @@
 
 ## 🔗 Tài Nguyên & Xem Truyện Tranh Trực Quan
 
-* 🌐 **Trình xem tương tác trên trình duyệt:** [xem_truyen_oliver_tree_again_and_again.html](file:///c:/truy%E1%BB%87n%20c%C6%B0%E1%BB%9Di/02%20-%20Oliver%20Tree/xem_truyen_oliver_tree_again_and_again.html) *(Hỗ trợ 3 chế độ xem: Lưới 2x2, Cuộn dọc Webtoon, Trình chiếu Slideshow)*
+* 🎬 **Video điện ảnh chuyển động & lồng tiếng hoàn chỉnh:** [oliver_tree_again_and_again.mp4](oliver_tree_again_and_again.mp4) *(Độ dài 1:40, 1376x768, hiệu ứng Ken Burns, âm thanh vòm SFX và lồng tiếng biểu cảm)*
+* 🌐 **Trình xem tương tác trên trình duyệt:** [xem_truyen_oliver_tree_again_and_again.html](xem_truyen_oliver_tree_again_and_again.html) *(Hỗ trợ 3 chế độ xem: Lưới 2x2, Cuộn dọc Webtoon, Trình chiếu Slideshow)*
 * 📸 **Bộ tranh 4 khung Live-Action chân thực (Tích hợp lời thoại & ý truyện trực tiếp trên tranh):**
-  * [oliver_again_1.jpg](file:///c:/truy%E1%BB%87n%20c%C6%B0%E1%BB%9Di/images/oliver_again_1.jpg) — *Khung 1: Vị Thần 8 Tay Tái Xuất — Lời Thề Bỏ Cuộc Tan Biến!*
-  * [oliver_again_2.jpg](file:///c:/truy%E1%BB%87n%20c%C6%B0%E1%BB%9Di/images/oliver_again_2.jpg) — *Khung 2: Cú Nhảy Vực Thẳm Phản Lực — "Again & Again, Lại Chơi Dại!"*
-  * [oliver_again_3.jpg](file:///c:/truy%E1%BB%87n%20c%C6%B0%E1%BB%9Di/images/oliver_again_3.jpg) — *Khung 3: "Đo Đất Toàn Diện" — Xe Gãy Đôi, Người Nằm Bẹp Dí!*
-  * [oliver_again_4.jpg](file:///c:/truy%E1%BB%87n%20c%C6%B0%E1%BB%9Di/images/oliver_again_4.jpg) — *Khung 4: "Xác Ướp Bệnh Viện" Tái Sinh — Vòng Lặp Không Hồi Kết!*
+  * [oliver_again_1.jpg](images/oliver_again_1.jpg) — *Khung 1: Vị Thần 8 Tay Tái Xuất — Lời Thề Bỏ Cuộc Tan Biến!*
+  * [oliver_again_2.jpg](images/oliver_again_2.jpg) — *Khung 2: Cú Nhảy Vực Thẳm Phản Lực — "Again & Again, Lại Chơi Dại!"*
+  * [oliver_again_3.jpg](images/oliver_again_3.jpg) — *Khung 3: "Đo Đất Toàn Diện" — Xe Gãy Đôi, Người Nằm Bẹp Dí!*
+  * [oliver_again_4.jpg](images/oliver_again_4.jpg) — *Khung 4: "Xác Ướp Bệnh Viện" Tái Sinh — Vòng Lặp Không Hồi Kết!*
