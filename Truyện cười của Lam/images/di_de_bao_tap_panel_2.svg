@@ -1,0 +1,145 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="speedNight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="bellyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6"/>
+      <stop offset="50%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#BE185D"/>
+    </linearGradient>
+    <filter id="shSpeed" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Nền đêm tốc độ cao -->
+  <rect width="750" height="500" rx="16" fill="url(#speedNight)" stroke="#EF4444" stroke-width="4"/>
+
+  <!-- Tiêu đề Cảnh 2 to rõ -->
+  <g filter="url(#shSpeed)">
+    <rect x="25" y="16" width="560" height="42" rx="10" fill="#DC2626"/>
+    <text x="305" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#FFFFFF" text-anchor="middle">🚗 CẢNH 2: BỐ RUN LẨY BẨY, MẸ LÁI XE VƯỢT CẠN 💨🔥</text>
+  </g>
+
+  <!-- Kính chắn gió ban đêm với vệt đèn đường và vệt tốc độ Fast & Furious -->
+  <g transform="translate(50, 75)" filter="url(#shSpeed)">
+    <rect width="650" height="150" rx="12" fill="#0F172A" stroke="#334155" stroke-width="3"/>
+    <!-- Vệt ánh sáng đèn đường vàng và đỏ xé toạc màn đêm -->
+    <line x1="20" y1="120" x2="300" y2="120" stroke="#FDE047" stroke-width="6" stroke-dasharray="25,20" opacity="0.8"/>
+    <line x1="350" y1="90" x2="630" y2="90" stroke="#EF4444" stroke-width="5" stroke-dasharray="30,15" opacity="0.7"/>
+    <line x1="80" y1="140" x2="520" y2="140" stroke="#38BDF8" stroke-width="8" stroke-dasharray="40,25" opacity="0.6"/>
+  </g>
+
+  <!-- TAPLO XE Ô TÔ TO CẬN CẢNH TRƯỚC MẶT -->
+  <g transform="translate(30, 220)" filter="url(#shSpeed)">
+    <rect width="690" height="80" rx="14" fill="#0F172A" stroke="#1E293B" stroke-width="3"/>
+    
+    <!-- ĐỒNG HỒ TỐC ĐỘ 120 KM/H ĐỎ RỰC Ở GIỮA -->
+    <circle cx="345" cy="260" r="34" fill="#000000" stroke="#EF4444" stroke-width="4"/>
+    <text x="345" y="254" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#EF4444" text-anchor="middle">120</text>
+    <text x="345" y="272" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="900" fill="#FDE047" text-anchor="middle">KM/H FAST &amp; FURIOUS</text>
+
+    <!-- VÔ LĂNG XE Ô TÔ BÊN GHẾ LÁI (TRÁI) -->
+    <circle cx="170" cy="275" r="72" fill="none" stroke="#000000" stroke-width="18"/>
+  </g>
+
+  <!-- MẸ BẦU CẬN CẢNH LỚN BÊN GHẾ LÁI (TRÁI) - CỰC NGẦU, BỤNG TO ĐÈ VÔ LĂNG -->
+  <g transform="translate(60, 120)" filter="url(#shSpeed)">
+    <!-- Thân mẹ bầu áo hồng -->
+    <path d="M 20 220 L 190 220 L 200 370 L 10 370 Z" fill="#F43F5E" stroke="#BE123C" stroke-width="3.5"/>
+
+    <!-- CHIẾC BỤNG BẦU SIÊU TO KHỔNG LỒ MÀU HỒNG ĐÈ SÁT VÔ LĂNG -->
+    <ellipse cx="160" cy="280" rx="80" ry="70" fill="url(#bellyGrad)" stroke="#9D174D" stroke-width="4"/>
+    <ellipse cx="140" cy="260" rx="25" ry="12" fill="#FFFFFF" fill-opacity="0.3"/> <!-- Ánh sáng bóng tròn của bụng bầu -->
+    <text x="160" y="286" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">BỤNG ĐÈ VÔ LĂNG!</text>
+
+    <!-- Tay mẹ xoay vô lăng cực nghệ -->
+    <path d="M 40 210 Q 80 260 115 275" stroke="#F43F5E" stroke-width="24" stroke-linecap="round" fill="none"/>
+    <circle cx="115" cy="275" r="14" fill="#FED7AA"/>
+
+    <!-- ĐẦU MẸ BẦU TO RÕ, ĐEO KÍNH RÂM CỰC NGẦU ĐỜI -->
+    <ellipse cx="95" cy="110" rx="55" ry="58" fill="#FED7AA" stroke="#1E293B" stroke-width="3.5"/>
+    <!-- Tóc nâu buộc đuôi ngựa bay phần phật trong gió -->
+    <path d="M 40 100 C 40 40 150 40 150 100 Z" fill="#78350F"/>
+    <path d="M 40 85 Q 0 70 -15 95 Q 10 110 40 105 Z" fill="#78350F"/> <!-- Đuôi tóc bay -->
+
+    <!-- KÍNH RÂM ĐEN SIÊU NGẦU -->
+    <rect x="52" y="98" width="40" height="28" rx="6" fill="#0F172A" stroke="#334155" stroke-width="3"/>
+    <line x1="56" y1="104" x2="86" y2="120" stroke="#94A3B8" stroke-width="2.5"/>
+    <rect x="100" y="98" width="40" height="28" rx="6" fill="#0F172A" stroke="#334155" stroke-width="3"/>
+    <line x1="104" y1="104" x2="134" y2="120" stroke="#94A3B8" stroke-width="2.5"/>
+    <line x1="92" y1="110" x2="100" y2="110" stroke="#0F172A" stroke-width="4"/>
+
+    <!-- Nụ cười tự tin bản lĩnh của mẹ siêu nhân -->
+    <path d="M 75 148 Q 95 162 115 148" stroke="#BE123C" stroke-width="3.5" fill="none"/>
+  </g>
+
+  <!-- ÔNG BỐ CẬN CẢNH BÊN GHẾ PHỤ (PHẢI) - MẶT TÁI XANH, ÔM CHẶT CHẢO RÁN VÀ LÀN ĐẺ -->
+  <g transform="translate(450, 120)" filter="url(#shSpeed)">
+    <!-- Thân bố áo vàng co rúm người lại -->
+    <path d="M 30 220 L 180 220 L 190 370 L 20 370 Z" fill="#FBBF24" stroke="#B45309" stroke-width="3.5"/>
+
+    <!-- BỐ ÔM CHIẾC LÀN ĐẺ ĐỎ VÀ CÁI CHẢO RÁN TRƯỚC NGỰC -->
+    <!-- Chiếc làn đỏ -->
+    <rect x="50" y="240" width="110" height="90" rx="8" fill="#DC2626" stroke="#991B1B" stroke-width="3"/>
+    <path d="M 70 240 Q 105 190 140 240" stroke="#991B1B" stroke-width="6" fill="none"/> <!-- Quai làn -->
+
+    <!-- CÁI CHẢO RÁN THÒ CÁN RA NGOÀI LÀN -->
+    <circle cx="105" cy="270" r="30" fill="#1E293B" stroke="#64748B" stroke-width="3"/>
+    <line x1="75" y1="280" x2="20" y2="300" stroke="#78350F" stroke-width="10" stroke-linecap="round"/> <!-- Cán chảo gỗ -->
+    <text x="105" y="275" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" fill="#FDE047" text-anchor="middle">CHẢO RÁN 🍳</text>
+
+    <!-- Hai tay bố ôm chặt lấy làn đẻ run bần bật -->
+    <path d="M 20 230 Q 50 270 70 270" stroke="#FBBF24" stroke-width="20" stroke-linecap="round" fill="none"/>
+    <circle cx="70" cy="270" r="12" fill="#FED7AA"/>
+    <path d="M 190 230 Q 160 270 140 270" stroke="#FBBF24" stroke-width="20" stroke-linecap="round" fill="none"/>
+    <circle cx="140" cy="270" r="12" fill="#FED7AA"/>
+
+    <!-- ĐẦU ÔNG BỐ MẶT XANH NHƯ TÀU LÁ CHUỐI, MẮT NỔ ĐOM ĐÓM -->
+    <ellipse cx="105" cy="110" rx="55" ry="58" fill="#CCFBF1" stroke="#0F766E" stroke-width="3.5"/> <!-- Mặt xanh tái -->
+    <path d="M 50 100 C 50 40 160 40 160 100 Z" fill="#1E293B"/> <!-- Tóc dựng ngược hoảng loạn -->
+    <polygon points="80,45 75,18 95,40" fill="#1E293B"/>
+    <polygon points="110,40 125,15 130,45" fill="#1E293B"/>
+
+    <!-- Đôi mắt trợn tròn xoay vòng hoa mắt vì sợ tốc độ -->
+    <circle cx="80" cy="110" r="14" fill="#FFFFFF" stroke="#DC2626" stroke-width="2.5"/>
+    <circle cx="80" cy="110" r="5" fill="#DC2626"/>
+    <circle cx="130" cy="110" r="14" fill="#FFFFFF" stroke="#DC2626" stroke-width="2.5"/>
+    <circle cx="130" cy="110" r="5" fill="#DC2626"/>
+
+    <!-- Miệng run lẩy bẩy méo xệch khóc ròng -->
+    <path d="M 85 150 Q 95 140 105 150 Q 115 140 125 150" stroke="#0F766E" stroke-width="3.5" fill="none"/>
+
+    <!-- Mồ hôi rơi lộp độp như mưa -->
+    <path d="M 45 110 C 45 98 58 98 58 110 C 58 120 45 120 45 110 Z" fill="#38BDF8"/>
+    <path d="M 160 110 C 160 98 172 98 172 110 C 172 120 160 120 160 110 Z" fill="#38BDF8"/>
+  </g>
+
+  <!-- BONG BÓNG THOẠI BÊN TRÁI: MẸ BẦU HÉT LỚN -->
+  <g transform="translate(25, 65)" filter="url(#shSpeed)">
+    <path d="M 15 0 L 325 0 C 335 0 335 12 335 12 L 335 70 C 335 80 325 80 325 80 L 120 80 L 95 100 L 105 80 L 15 80 C 5 80 5 70 5 70 L 5 12 C 5 0 15 0 15 0 Z" fill="#FFFFFF" stroke="#EC4899" stroke-width="3"/>
+    <text x="170" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="900" fill="#BE185D" text-anchor="middle">🏎️ MẸ BẦU (ĐẠP GA 120KM/H, HÉT LỚN):</text>
+    <text x="170" y="46" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">“Bám chắc tay nắm anh ơi! 🏎️💨”</text>
+    <text x="170" y="68" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#DB2777" text-anchor="middle">“Em đưa anh... à đưa em đi đẻ!”</text>
+  </g>
+
+  <!-- BONG BÓNG THOẠI BÊN PHẢI: BỐ KHÓC THÉT -->
+  <g transform="translate(385, 65)" filter="url(#shSpeed)">
+    <path d="M 15 0 L 335 0 C 345 0 345 12 345 12 L 345 70 C 345 80 335 80 335 80 L 260 80 L 270 100 L 245 80 L 15 80 C 5 80 5 70 5 70 L 5 12 C 5 0 15 0 15 0 Z" fill="#FFFFFF" stroke="#0284C7" stroke-width="3"/>
+    <text x="175" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="900" fill="#0369A1" text-anchor="middle">😭 BỐ (ÔM LÀN ĐẺ, RUN BẦN BẬT KHÓC):</text>
+    <text x="175" y="46" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">“Vợ ơi... từ từ thôi... 🤢”</text>
+    <text x="175" y="68" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#DC2626" text-anchor="middle">“Tim anh rớt ra ngoài rồi... hu hu!”</text>
+  </g>
+
+  <!-- CAPTION CHÂN HÌNH -->
+  <g transform="translate(20, 445)">
+    <rect width="710" height="34" rx="8" fill="#0F172A" stroke="#EF4444" stroke-width="1.5"/>
+    <text x="355" y="22" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#FDE047" text-anchor="middle">
+      Bố run rẩy làm rơi chìa khóa, mẹ bầu tự trèo ghế lái phóng 120km/h vượt cạn!
+    </text>
+  </g>
+
+</svg>

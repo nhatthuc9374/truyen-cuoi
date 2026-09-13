@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nightBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="65%" stop-color="#312E81"/>
+      <stop offset="65%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="bellyP1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6"/>
+      <stop offset="50%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#DB2777"/>
+    </linearGradient>
+    <filter id="p1Shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Khung tranh & Nền phòng ngủ đêm -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#nightBg)" stroke="#4338CA" stroke-width="4"/>
+
+  <!-- Tiêu đề phân cảnh -->
+  <rect x="25" y="20" width="370" height="36" rx="10" fill="#4F46E5" filter="url(#p1Shadow)"/>
+  <text x="210" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">🌙 CẢNH 1: 1H ĐÊM VỠ ỐI & ÔNG BỐ HOẢNG LOẠN ⏰😱</text>
+
+  <!-- Cửa sổ đêm có mặt trăng & sao -->
+  <rect x="50" y="80" width="90" height="90" rx="8" fill="#0F172A" stroke="#6366F1" stroke-width="2"/>
+  <circle cx="110" cy="115" r="18" fill="#FDE047"/>
+  <circle cx="102" cy="110" r="16" fill="#0F172A"/>
+  <!-- Đồng hồ báo thức chỉ 1:00 -->
+  <circle cx="170" cy="110" r="22" fill="#EF4444" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="170" y="115" font-size="9" font-weight="bold" fill="#FFFFFF" text-anchor="middle">01:00 AM</text>
+
+  <!-- Giường ngủ -->
+  <rect x="30" y="230" width="300" height="70" rx="8" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2"/>
+  <polygon points="30,230 70,180 140,230" fill="#FBCFE8"/>
+
+  <!-- MẸ BẦU BÌNH TĨNH NẰM TỰA GỐI, BỤNG SIÊU TO KHỔNG LỒ -->
+  <g transform="translate(60, 160)">
+    <!-- Đầu mẹ mỉm cười nhẹ nhàng -->
+    <circle cx="45" cy="30" r="24" fill="#FFE4E6" stroke="#1E293B" stroke-width="2"/>
+    <path d="M 25 25 C 25 2 65 2 65 25 Z" fill="#78350F"/>
+    <ellipse cx="38" cy="28" rx="3" ry="3.5" fill="#1E293B"/><ellipse cx="52" cy="28" rx="3.5" ry="3" fill="#1E293B"/>
+    <path d="M 42 38 Q 45 44 48 38" stroke="#E11D48" stroke-width="2" fill="none"/>
+    <ellipse cx="34" cy="32" rx="3" ry="2" fill="#FDA4AF"/><ellipse cx="56" cy="32" rx="3" ry="2" fill="#FDA4AF"/>
+
+    <!-- Váy ngủ hồng -->
+    <path d="M 30 50 L 60 50 L 110 80 L 20 80 Z" fill="#F472B6"/>
+
+    <!-- CHIẾC BỤNG BẦU SIÊU TO TRÒN CĂNG NHÔ CAO -->
+    <ellipse cx="115" cy="60" rx="85" ry="70" fill="url(#bellyP1)" stroke="#BE185D" stroke-width="3.5" filter="url(#p1Shadow)"/>
+    <text x="115" y="65" font-family="'Impact', sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">SẮP ĐẺ RỒI! 👶👶</text>
+
+    <!-- Tay mẹ xoa bụng vỗ về -->
+    <path d="M 55 52 Q 80 65 100 62" stroke="#F472B6" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <circle cx="100" cy="62" r="5" fill="#FFE4E6"/>
+  </g>
+
+  <!-- BỐ HOẢNG LOẠN NHẢY DỰNG, XỎ 2 CHÂN 1 ỐNG QUẦN -->
+  <g transform="translate(390, 120)">
+    <!-- Đầu bố tóc dựng đứng, mắt trợn trừng há hốc mồm -->
+    <circle cx="60" cy="40" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <!-- Tóc dựng đứng vì sốc -->
+    <path d="M 40 25 L 35 5 L 48 15 L 60 -2 L 72 15 L 85 5 L 80 25 Z" fill="#1E293B"/>
+    <!-- Mắt tròn xoe ốc nhồi -->
+    <circle cx="50" cy="36" r="7" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5"/>
+    <circle cx="50" cy="36" r="3" fill="#1E293B"/>
+    <circle cx="70" cy="36" r="7" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5"/>
+    <circle cx="70" cy="36" r="3" fill="#1E293B"/>
+    <!-- Miệng ngoác to hét lớn -->
+    <ellipse cx="60" cy="54" rx="10" ry="12" fill="#7F1D1D"/>
+    <!-- Mồ hôi bắn tung tóe -->
+    <circle cx="95" cy="20" r="4" fill="#38BDF8"/><circle cx="25" cy="15" r="3" fill="#38BDF8"/>
+    <text x="100" y="55" font-family="'Impact', sans-serif" font-size="20" fill="#EF4444">Á Á Á! 😱</text>
+
+    <!-- Áo ngủ mặc trái -->
+    <rect x="40" y="66" width="40" height="55" rx="5" fill="#FACC15" stroke="#CA8A04" stroke-width="2"/>
+    <text x="60" y="95" font-size="8" fill="#854D0E" font-weight="bold" text-anchor="middle">ÁO TRÁI</text>
+
+    <!-- 2 CHÂN NHÉT CHUNG 1 ỐNG QUẦN -->
+    <rect x="45" y="120" width="30" height="70" rx="6" fill="#60A5FA" stroke="#2563EB" stroke-width="2"/>
+    <!-- 2 bàn chân thò ra cùng 1 chỗ té ngã -->
+    <ellipse cx="50" cy="192" rx="8" ry="5" fill="#FFEDD5"/>
+    <ellipse cx="70" cy="192" rx="8" ry="5" fill="#FFEDD5"/>
+    <text x="60" y="215" font-size="10" font-weight="bold" fill="#DC2626" text-anchor="middle">Xỏ nhầm 1 ống! 🦵🦵</text>
+
+    <!-- Tay trái cầm cái chảo rán nhét làn đi đẻ -->
+    <line x1="40" y1="85" x2="0" y2="100" stroke="#FFEDD5" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="-15" cy="100" r="16" fill="#334155" stroke="#0F172A" stroke-width="2"/>
+    <line x1="-15" y1="100" x2="-35" y2="85" stroke="#78350F" stroke-width="4"/>
+    <text x="-15" y="130" font-size="9" font-weight="bold" fill="#FDE047" text-anchor="middle">Cầm chảo rán 🍳</text>
+
+    <!-- Tay phải cầm máy sấy tóc nhét vào làn -->
+    <line x1="80" y1="85" x2="120" y2="100" stroke="#FFEDD5" stroke-width="8" stroke-linecap="round"/>
+    <rect x="120" y="90" width="20" height="12" rx="3" fill="#EC4899"/>
+    <rect x="125" y="102" width="6" height="15" fill="#9D174D"/>
+  </g>
+
+  <!-- Làn đi đẻ màu đỏ đặt dưới sàn -->
+  <g transform="translate(320, 270)">
+    <rect x="0" y="20" width="75" height="50" rx="8" fill="#EF4444" stroke="#B91C1C" stroke-width="2"/>
+    <path d="M 15 20 Q 37 -10 60 20" stroke="#B91C1C" stroke-width="4" fill="none"/>
+    <text x="37" y="50" font-size="9" font-weight="bold" fill="#FFFFFF" text-anchor="middle">LÀN ĐẺ</text>
+  </g>
+
+  <!-- Lời thoại của mẹ -->
+  <rect x="40" y="65" width="220" height="50" rx="10" fill="#FFFFFF" stroke="#BE185D" stroke-width="2" filter="url(#p1Shadow)"/>
+  <text x="150" y="85" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#BE185D" text-anchor="middle">"Anh ơi dậy đi, em vỡ ối rồi!</text>
+  <text x="150" y="103" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#BE185D" text-anchor="middle">Bình tĩnh nào sao anh nhảy dựng thế? 😄"</text>
+
+  <!-- Chú thích đáy -->
+  <rect x="25" y="390" width="600" height="40" rx="8" fill="#312E81" stroke="#6366F1" stroke-width="1.5"/>
+  <text x="325" y="415" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#E0E7FF" text-anchor="middle">Mẹ bầu vỡ ối cực kỳ điềm tĩnh, trong khi bố hoảng loạn vơ chảo rán nhét làn đi đẻ!</text>
+</svg>
