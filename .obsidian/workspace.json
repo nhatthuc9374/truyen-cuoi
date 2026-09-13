@@ -22,35 +22,21 @@
             }
           },
           {
-            "id": "b8af8e46bda0d7bd",
+            "id": "c47d858538ec9788",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nhân.md",
+                "file": "Truyện cười của Nhân/🎭 Oliver Tree Again and Again.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nhân"
-            }
-          },
-          {
-            "id": "1a0976d3dfda36b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LAM.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "LAM"
+              "title": "🎭 Oliver Tree Again and Again"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -75,7 +61,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
-              "title": "Trình duyệt tệp"
+              "title": "Files"
             }
           },
           {
@@ -112,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c308aba82b05c7eb",
@@ -129,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Truyện cười của Nhân/🎭 Oliver Tree Again and Again.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Truyện cười của Nhân/🎭 Oliver Tree Again and Again.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -191,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "Truyện cười của Nhân/🎭 Oliver Tree Again and Again.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -209,19 +194,22 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Mở bộ chuyển đổi nhanh": false,
-      "graph:Mở xem biểu đồ": false,
-      "canvas:Tạo bảng mới": false,
-      "daily-notes:Mở ghi chú hôm nay": false,
-      "templates:Chèn mẫu": false,
-      "command-palette:Mở khay lệnh": false,
-      "bases:Tạo cơ sở mới": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
     }
   },
-  "active": "1a0976d3dfda36b9",
+  "active": "c47d858538ec9788",
   "lastOpenFiles": [
-    "Nhân.md",
     "LAM.md",
+    "Truyện cười của Nhân/🎭 Oliver Tree Again and Again.md",
+    "Nhân.md",
+    "Untitled5.md",
+    "Truyện cười của Nhân",
     "README.md"
   ]
 }
