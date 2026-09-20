@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dự Án Truyện Cười - Cổng Tổng Hợp</title>
+  <style>
+    :root {
+      --primary: #6366f1;
+      --primary-hover: #4f46e5;
+      --accent: #f59e0b;
+      --accent-hover: #d97706;
+      --bg: #0b0f19;
+      --card-bg: #151d30;
+      --card-hover: #1c2742;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: #263352;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.6;
+    }
+
+    /* Hero Banner */
+    .hero {
+      background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.25), transparent 70%),
+                  linear-gradient(180deg, #111827 0%, #0b0f19 100%);
+      padding: 4rem 1.5rem 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 0.35rem 1rem;
+      border-radius: 9999px;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.35);
+      color: #a5b4fc;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      background: linear-gradient(to right, #ffffff, #cbd5e1, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      color: var(--text-muted);
+      font-size: 1.15rem;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    /* Main Container */
+    main {
+      flex: 1;
+      max-width: 1100px;
+      width: 100%;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Featured Section - Nhân HTML Portal */
+    .featured-section {
+      margin-bottom: 3.5rem;
+    }
+
+    .featured-card {
+      position: relative;
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(236, 72, 153, 0.1) 50%, rgba(99, 102, 241, 0.1) 100%),
+                  var(--card-bg);
+      border: 2px solid rgba(245, 158, 11, 0.4);
+      border-radius: 24px;
+      padding: 2.5rem;
+      box-shadow: 0 20px 40px -15px rgba(245, 158, 11, 0.15);
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .featured-card:hover {
+      border-color: rgba(245, 158, 11, 0.8);
+      transform: translateY(-4px);
+      box-shadow: 0 25px 50px -12px rgba(245, 158, 11, 0.25);
+    }
+
+    .featured-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .featured-icon {
+      font-size: 3rem;
+      line-height: 1;
+      background: rgba(245, 158, 11, 0.2);
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+    }
+
+    .featured-title-group {
+      flex: 1;
+    }
+
+    .featured-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #fbbf24;
+      background: rgba(245, 158, 11, 0.15);
+      padding: 0.25rem 0.75rem;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+
+    .featured-title-group h2 {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .featured-desc {
+      font-size: 1.05rem;
+      color: #cbd5e1;
+      line-height: 1.7;
+    }
+
+    .featured-meta {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      flex-wrap: wrap;
+    }
+
+    .featured-meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .btn-enter-nhan {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: linear-gradient(135deg, #f59e0b, #ea580c);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 1rem 2rem;
+      border-radius: 14px;
+      transition: all 0.2s ease;
+      align-self: flex-start;
+      box-shadow: 0 10px 20px -5px rgba(245, 158, 11, 0.4);
+    }
+
+    .btn-enter-nhan:hover {
+      background: linear-gradient(135deg, #fbbf24, #f97316);
+      transform: translateX(4px);
+      box-shadow: 0 14px 28px -5px rgba(245, 158, 11, 0.5);
+    }
+
+    /* Section Title */
+    .section-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: #f1f5f9;
+    }
+
+    /* Other Sections Grid */
+    .grid-secondary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .hub-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .hub-card:hover {
+      background: var(--card-hover);
+      transform: translateY(-3px);
+      border-color: rgba(99, 102, 241, 0.5);
+      box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.5);
+    }
+
+    .hub-card-icon {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hub-card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .hub-card-desc {
+      color: var(--text-muted);
+      font-size: 0.925rem;
+      margin-bottom: 1.25rem;
+      flex: 1;
+    }
+
+    .hub-card-link {
+      color: #818cf8;
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* Story link lists */
+    .quick-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .quick-links a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.6rem;
+      border-radius: 8px;
+      background: rgba(56, 189, 248, 0.08);
+      transition: background 0.2s;
+    }
+
+    .quick-links a:hover {
+      background: rgba(56, 189, 248, 0.18);
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-badge">🌟 Cổng Thông Tin Dự Án</div>
+    <h1>Kho Lưu Trữ Truyện Cười</h1>
+    <p>Tổng hợp các tác phẩm, mẩu chuyện vui, tranh truyện và tiểu phẩm hài hước đa phương tiện.</p>
+  </div>
+
+  <main>
+    <!-- Điểm nhấn: Thư mục truyện cười HTML của Nhân -->
+    <div class="featured-section">
+      <div class="featured-card">
+        <div class="featured-header">
+          <div class="featured-icon">🎭</div>
+          <div class="featured-title-group">
+            <span class="featured-tag">Khu vực sáng tác mới</span>
+            <h2>Kho Truyện Cười HTML - Nhân</h2>
+          </div>
+        </div>
+
+        <p class="featured-desc">
+          Thư mục chuyên biệt dành cho các câu chuyện cười dưới định dạng <strong>HTML tương tác</strong>. Trình bày sống động với giao diện tùy biến, hiệu ứng meme, âm thanh, video và nhiều chi tiết bất ngờ!
+        </p>
+
+        <div class="featured-meta">
+          <span>📁 Thư mục: <code>Nhan/</code></span>
+          <span>⚡ Định dạng: Web HTML / Tương tác</span>
+          <span>📄 Tệp chính: <code>Nhan/index.html</code></span>
+        </div>
+
+        <!-- Nút bấm trực tiếp mở file index bên trong -->
+        <a href="Nhan/index.html" class="btn-enter-nhan">
+          👉 Mở Kho Truyện HTML Của Nhân &rarr;
+        </a>
+      </div>
+    </div>
+
+    <!-- Các mục khác trong dự án -->
+    <h3 class="section-title">📚 Các Khu Vực Khác Trong Dự Án</h3>
+    <div class="grid-secondary">
+      
+      <!-- Thư viện truyện & video của Nhân trước đây -->
+      <div class="hub-card">
+        <div class="hub-card-icon">🎬</div>
+        <div class="hub-card-title">Truyện & Video - Nhân</div>
+        <p class="hub-card-desc">Các tác phẩm truyện tranh và video vui nhộn đã có sẵn:</p>
+        <ul class="quick-links">
+          <li><a href="Truyện cười của Nhân/xem_truyen_naruto.html">📖 Xem Truyện Naruto</a></li>
+          <li><a href="Truyện cười của Nhân/xem_truyen_shin.html">📖 Xem Truyện Shin - Cậu Bé Bút Chì</a></li>
+          <li><a href="Truyện cười của Nhân/xem_truyen_ninh_cong_hoang.html">📖 Xem Ninh Công Hoàng Sinh Tồn</a></li>
+          <li><a href="Truyện cười của Nhân/xem_video_doraemon.html">🎬 Video Doraemon Bánh Mì Trí Nhớ</a></li>
+        </ul>
+      </div>
+
+      <!-- Góc truyện cười của Lam -->
+      <div class="hub-card">
+        <div class="hub-card-icon">🍃</div>
+        <div class="hub-card-title">Truyện Cười Của Lam</div>
+        <p class="hub-card-desc">Các câu chuyện vui, kỷ niệm hài hước của tác giả Lam.</p>
+        <ul class="quick-links">
+          <li><a href="Truyện cười của Lam/🍃 Đi đẻ bão táp - Bố ngất xỉu, mẹ tự cầm lái vượt cạn.md">📄 Đi đẻ bão táp (Markdown)</a></li>
+          <li><a href="LAM.md">📝 Giới thiệu tác giả Lam</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Dự án Truyện Cười &copy; 2026 | Chúc bạn có những phút giây thư giãn tràn ngập tiếng cười! 😄</p>
+  </footer>
+
+</body>
+</html>
