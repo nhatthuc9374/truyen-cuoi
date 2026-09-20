@@ -1,7 +1,7 @@
 # 🎭: Oliver Tree — "When I'm Down" (Khởi Nguồn Siêu Hit Toàn Cầu)
 
 > **Tác phẩm gốc:** Siêu hit đột phá *"When I'm Down"* (Hợp tác cùng DJ/Producer Whethan, 2016) — ca khúc đưa tên tuổi **Oliver Tree** vụt sáng thành hiện tượng toàn cầu  
-> **Phong cách nghệ thuật:** Tiểu thuyết đồ họa điện ảnh (Cinematic Graphic Novel Comic Strip)  
+> **Phong cách nghệ thuật:** Người thật siêu thực điện ảnh (Cinematic Photorealistic Live-Action 4-Koma Comic Strip), 100% hình ảnh người thật của Oliver Tree và bối cảnh hành động thực tế  
 > **Chủ đề:** Tinh thần kiên cường, biến thất bại thành nghệ thuật trình diễn và triết lý sống lạc quan bất diệt! 🏜️🛹🔥  
 
 ---

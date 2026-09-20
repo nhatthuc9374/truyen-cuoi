@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kho Truyện Cười HTML - Nhân</title>
+  <style>
+    :root {
+      --primary: #f59e0b;
+      --primary-hover: #d97706;
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-hover: #273549;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: #334155;
+      --badge: #38bdf8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #0f172a 100%);
+      padding: 2.5rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .top-nav {
+      max-width: 1050px;
+      margin: 0 auto 1.5rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 0.5rem 1.1rem;
+      border-radius: 9999px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      transition: all 0.2s ease;
+    }
+
+    .back-btn:hover {
+      background: rgba(56, 189, 248, 0.25);
+      transform: translateX(-4px);
+    }
+
+    .badge-path {
+      background: #334155;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-family: monospace;
+    }
+
+    .header-content {
+      max-width: 1050px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .header-content h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      background: linear-gradient(to right, #fbbf24, #f43f5e, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.75rem;
+    }
+
+    .header-content p {
+      color: var(--text-muted);
+      font-size: 1.15rem;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    main {
+      flex: 1;
+      max-width: 1050px;
+      width: 100%;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .search-wrap {
+      position: relative;
+      flex: 1;
+      max-width: 420px;
+    }
+
+    .search-wrap input {
+      width: 100%;
+      padding: 0.75rem 1rem 0.75rem 2.6rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: var(--text);
+      font-size: 0.95rem;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .search-wrap input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+    }
+
+    .search-wrap::before {
+      content: '🔍';
+      position: absolute;
+      left: 0.9rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.9rem;
+    }
+
+    .count-badge {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 0.45rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .story-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .story-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 28px -12px rgba(0, 0, 0, 0.6);
+      border-color: var(--primary);
+      background: var(--card-hover);
+    }
+
+    .card-banner {
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      background: linear-gradient(135deg, #f59e0b, #ef4444);
+    }
+
+    .card-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .tags {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 6px;
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      font-weight: 600;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-desc {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      flex: 1;
+      margin-bottom: 1.25rem;
+    }
+
+    .card-link-label {
+      color: #38bdf8;
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .guide-box {
+      background: linear-gradient(145deg, #1e293b, #172033);
+      border: 1px dashed #475569;
+      border-radius: 16px;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    .guide-box h3 {
+      font-size: 1.25rem;
+      color: #f8fafc;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .guide-box p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .guide-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .step-item {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem;
+    }
+
+    .step-num {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #0f172a;
+      font-weight: 700;
+      font-size: 0.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .step-title {
+      font-weight: 600;
+      color: #f1f5f9;
+      margin-bottom: 0.25rem;
+      font-size: 0.95rem;
+    }
+
+    .step-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="top-nav">
+      <a href="../index.html" class="back-btn">
+        <span>←</span> Trang Chủ Dự Án
+      </a>
+      <span class="badge-path">C:\DU-AN\truyen-cuoi\Nhan</span>
+    </div>
+    <div class="header-content">
+      <h1>🎭 Kho Truyện Cười - Nhân</h1>
+      <p>Nơi lưu trữ và sáng tác các mẩu chuyện cười, tiểu phẩm hài hước tương tác dạng HTML.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="toolbar">
+      <div class="search-wrap">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm truyện cười..." oninput="filterStories()">
+      </div>
+      <div class="count-badge" id="countDisplay">1 câu chuyện</div>
+    </div>
+
+    <!-- Grid danh sách truyện cười -->
+    <div class="story-grid" id="storyList">
+      <a class="story-card" href="naruto_bi_thuat_nghin_nam_dau_don.html">
+        <div class="card-banner" style="background: url('images/naruto_intro.jpg') center/cover no-repeat; height: 160px;">
+        </div>
+        <div class="card-body">
+          <div class="tags">
+            <span class="tag">🍃 Naruto</span>
+            <span class="tag">🔥 Hài hước</span>
+            <span class="tag">🥋 4-Koma</span>
+          </div>
+          <div class="card-title">🎭 Naruto: Bí Thuật Nghìn Năm Đau Đớn</div>
+          <div class="card-desc">
+            Phân cảnh kinh điển trong bài kiểm tra cướp chuông của Đội 7. Khi thánh gáy Naruto chạm trán cú thọc chí mạng của thầy Kakashi!
+          </div>
+          <div class="card-link-label">
+            <span>Đọc truyện ngay</span> &rarr;
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Hướng dẫn thêm truyện mới -->
+    <div class="guide-box">
+      <h3>💡 Hướng dẫn thêm truyện cười HTML mới</h3>
+      <p>Mỗi câu chuyện là một tệp HTML riêng biệt giúp bạn thỏa sức sáng tạo giao diện, meme, hiệu ứng và âm thanh:</p>
+      <div class="guide-steps">
+        <div class="step-item">
+          <span class="step-num">1</span>
+          <div class="step-title">Tạo tệp HTML</div>
+          <div class="step-desc">Tạo tệp mới trong thư mục <code>Nhan/</code>, ví dụ: <code>chuyen_cuoi_01.html</code></div>
+        </div>
+        <div class="step-item">
+          <span class="step-num">2</span>
+          <div class="step-title">Soạn thảo nội dung</div>
+          <div class="step-desc">Viết nội dung truyện cười, thêm style CSS và hình ảnh để trang thật sinh động.</div>
+        </div>
+        <div class="step-item">
+          <span class="step-num">3</span>
+          <div class="step-title">Gắn liên kết</div>
+          <div class="step-desc">Mở tệp <code>index.html</code> này và thêm thẻ liên kết đến truyện vừa tạo vào danh sách!</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Dự án Truyện Cười &copy; 2026 - Tác giả: <strong>Nhân</strong></p>
+  </footer>
+
+  <script>
+    function filterStories() {
+      const q = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.story-card');
+      let count = 0;
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        if (text.includes(q)) {
+          card.style.display = '';
+          count++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      const badge = document.getElementById('countDisplay');
+      if (badge) {
+        badge.textContent = count + ' câu chuyện';
+      }
+    }
+  </script>
+</body>
+</html>
