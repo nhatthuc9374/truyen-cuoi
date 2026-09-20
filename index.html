@@ -81,8 +81,11 @@
       padding: 0 1.5rem;
     }
 
-    /* Featured Section - Nhân HTML Portal */
-    .featured-section {
+    /* Featured Section - 2 Kho Truyện HTML của Nhân & Lam */
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+      gap: 2rem;
       margin-bottom: 3.5rem;
     }
 
@@ -104,6 +107,50 @@
       border-color: rgba(245, 158, 11, 0.8);
       transform: translateY(-4px);
       box-shadow: 0 25px 50px -12px rgba(245, 158, 11, 0.25);
+    }
+
+    .featured-card.card-lam {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(56, 189, 248, 0.1) 50%, rgba(244, 63, 94, 0.08) 100%),
+                  var(--card-bg);
+      border-color: rgba(16, 185, 129, 0.4);
+      box-shadow: 0 20px 40px -15px rgba(16, 185, 129, 0.15);
+    }
+
+    .featured-card.card-lam:hover {
+      border-color: rgba(16, 185, 129, 0.8);
+      box-shadow: 0 25px 50px -12px rgba(16, 185, 129, 0.25);
+    }
+
+    .featured-card.card-lam .featured-icon {
+      background: rgba(16, 185, 129, 0.2);
+    }
+
+    .featured-card.card-lam .featured-tag {
+      color: #34d399;
+      background: rgba(16, 185, 129, 0.15);
+    }
+
+    .btn-enter-lam {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 1rem 2rem;
+      border-radius: 14px;
+      transition: all 0.2s ease;
+      align-self: flex-start;
+      box-shadow: 0 10px 20px -5px rgba(16, 185, 129, 0.4);
+    }
+
+    .btn-enter-lam:hover {
+      background: linear-gradient(135deg, #34d399, #10b981);
+      transform: translateX(4px);
+      box-shadow: 0 14px 28px -5px rgba(16, 185, 129, 0.5);
     }
 
     .featured-header {
@@ -305,8 +352,10 @@
   </div>
 
   <main>
-    <!-- Điểm nhấn: Thư mục truyện cười HTML của Nhân -->
-    <div class="featured-section">
+    <!-- Điểm nhấn: 2 Kho Truyện Cười HTML Sáng Tác Mới Của Nhân & Lam -->
+    <div class="featured-grid">
+      
+      <!-- Kho của Nhân -->
       <div class="featured-card">
         <div class="featured-header">
           <div class="featured-icon">🎭</div>
@@ -317,7 +366,7 @@
         </div>
 
         <p class="featured-desc">
-          Thư mục chuyên biệt dành cho các câu chuyện cười dưới định dạng <strong>HTML tương tác</strong>. Trình bày sống động với giao diện tùy biến, hiệu ứng meme, âm thanh, video và nhiều chi tiết bất ngờ!
+          Thư mục chuyên biệt dành cho các câu chuyện cười dưới định dạng <strong>HTML tương tác</strong> của anh Nhân. Trình bày sống động với phong cách Live-Action, hiệu ứng meme và chi tiết bất ngờ!
         </p>
 
         <div class="featured-meta">
@@ -326,16 +375,46 @@
           <span>📄 Tệp chính: <code>Nhan/index.html</code></span>
         </div>
 
-        <!-- Nút bấm trực tiếp mở file index bên trong và truyện mới -->
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; margin-top: auto;">
           <a href="Nhan/index.html" class="btn-enter-nhan">
-            👉 Mở Kho Truyện HTML Của Nhân &rarr;
+            👉 Mở Kho Truyện Của Nhân &rarr;
           </a>
-          <a href="Nhan/naruto_bi_thuat_nghin_nam_dau_don.html" style="color: #fbbf24; text-decoration: none; font-weight: 600; padding: 0.9rem 1.4rem; border-radius: 12px; background: rgba(251, 191, 36, 0.12); border: 1px solid rgba(251, 191, 36, 0.3); display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.2s ease;">
-            ⚡ Đọc ngay: Naruto Bí Thuật Nghìn Năm Đau Đớn &rarr;
+          <a href="Nhan/naruto_bi_thuat_nghin_nam_dau_don.html" style="color: #fbbf24; text-decoration: none; font-weight: 600; padding: 0.8rem 1.2rem; border-radius: 12px; background: rgba(251, 191, 36, 0.12); border: 1px solid rgba(251, 191, 36, 0.3); display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.2s ease;">
+            ⚡ Naruto Bí Thuật &rarr;
           </a>
         </div>
       </div>
+
+      <!-- Kho của Lam -->
+      <div class="featured-card card-lam">
+        <div class="featured-header">
+          <div class="featured-icon">🍃</div>
+          <div class="featured-title-group">
+            <span class="featured-tag">Khu vực sáng tác mới</span>
+            <h2>Kho Truyện Cười HTML - Lam</h2>
+          </div>
+        </div>
+
+        <p class="featured-desc">
+          Thư mục chuyên biệt dành cho các câu chuyện cười, kỷ niệm đời thường dưới định dạng <strong>HTML tương tác</strong> của Lam. Tích hợp 3 chế độ xem truyện tranh, âm thanh lẫy cơ khí Web Audio và các nút thả cảm xúc!
+        </p>
+
+        <div class="featured-meta">
+          <span>📁 Thư mục: <code>Lam/</code></span>
+          <span>⚡ Định dạng: Web HTML / Tương tác</span>
+          <span>📄 Tệp chính: <code>Lam/index.html</code></span>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; margin-top: auto;">
+          <a href="Lam/index.html" class="btn-enter-lam">
+            👉 Mở Kho Truyện Của Lam &rarr;
+          </a>
+          <a href="Lam/co_ket_bung_bau_vao_thanh_giuong_y_te.html" style="color: #34d399; text-decoration: none; font-weight: 600; padding: 0.8rem 1.2rem; border-radius: 12px; background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.2s ease;">
+            🍃 Cô Kẹt Bụng Bầu Y Tế &rarr;
+          </a>
+        </div>
+      </div>
+
     </div>
 
     <!-- Các mục khác trong dự án -->
@@ -361,6 +440,8 @@
         <div class="hub-card-title">Truyện Cười Của Lam</div>
         <p class="hub-card-desc">Các câu chuyện vui, kỷ niệm hài hước của tác giả Lam.</p>
         <ul class="quick-links">
+          <li><a href="Lam/index.html">🍃 Mở Kho Truyện HTML của Lam</a></li>
+          <li><a href="Lam/co_ket_bung_bau_vao_thanh_giuong_y_te.html">🏥 Cô Kẹt Bụng Bầu Giường Y Tế (HTML)</a></li>
           <li><a href="Truyện cười của Lam/🍃 Đi đẻ bão táp - Bố ngất xỉu, mẹ tự cầm lái vượt cạn.md">📄 Đi đẻ bão táp (Markdown)</a></li>
           <li><a href="LAM.md">📝 Giới thiệu tác giả Lam</a></li>
         </ul>

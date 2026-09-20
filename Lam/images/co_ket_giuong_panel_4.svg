@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="medWallBg4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7"/>
+      <stop offset="65%" stop-color="#FDE68A"/>
+      <stop offset="65%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <filter id="medShadow4" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Panel Border & Background (Warm Golden Tone) -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#medWallBg4)" stroke="#EA580C" stroke-width="4"/>
+
+  <!-- Cheerful Window on Left -->
+  <rect x="35" y="55" width="85" height="105" rx="6" fill="#EFF6FF" stroke="#38BDF8" stroke-width="2.5"/>
+  <line x1="77" y1="55" x2="77" y2="160" stroke="#38BDF8" stroke-width="2"/>
+  <line x1="35" y1="105" x2="120" y2="105" stroke="#38BDF8" stroke-width="2"/>
+  <circle cx="55" cy="78" r="12" fill="#F59E0B"/>
+  <ellipse cx="90" cy="90" rx="14" ry="7" fill="#FFFFFF" opacity="0.9"/>
+
+  <!-- Hearts and Sparkles around Room -->
+  <text x="140" y="80" font-size="22">💖</text>
+  <text x="240" y="70" font-size="20">✨</text>
+  <text x="360" y="80" font-size="24">🌸</text>
+  <text x="580" y="100" font-size="22">❤️</text>
+  <text x="590" y="160" font-size="18">✨</text>
+
+  <!-- Floor separator line -->
+  <line x1="5" y1="292" x2="645" y2="292" stroke="#94A3B8" stroke-width="2"/>
+
+  <!-- Hospital Bed (Safely Lowered Rails) on Background -->
+  <g id="bed-bg-p4" transform="translate(60, 190)">
+    <rect x="15" y="80" width="300" height="14" rx="4" fill="#64748B"/>
+    <rect x="18" y="52" width="294" height="28" rx="5" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <rect x="10" y="0" width="12" height="90" rx="3" fill="#38BDF8"/>
+    <!-- Guard rail clearly folded down safely -->
+    <rect x="40" y="75" width="220" height="6" rx="2" fill="#94A3B8"/>
+    <ellipse cx="60" cy="52" rx="35" ry="14" fill="#F1F5F9" stroke="#94A3B8"/>
+  </g>
+
+  <!-- TEACHER SITTING HAPPILY ON BED, CARESSING HER HUGE ROUND BELLY -->
+  <g id="happy-teacher-p4" transform="translate(140, 115)">
+    <!-- Floor Shadow -->
+    <ellipse cx="90" cy="205" rx="70" ry="14" fill="#000000" opacity="0.2"/>
+
+    <!-- Sitting Posture & Pink Dress -->
+    <path d="M50 80 Q90 65 115 80 L145 200 L30 200 Z" fill="#FDA4AF" stroke="#E11D48" stroke-width="2"/>
+
+    <!-- GIANT ROUND BELLY (PROUD & SAFE) -->
+    <ellipse cx="120" cy="142" rx="72" ry="60" fill="#FB7185" stroke="#E11D48" stroke-width="3"/>
+    <path d="M85 115 Q125 95 160 125" stroke="#FFE4E6" stroke-width="5" fill="none" opacity="0.75"/>
+
+    <!-- Floral Patterns on dress -->
+    <circle cx="65" cy="145" r="4" fill="#FEF08A"/><circle cx="60" cy="175" r="4" fill="#FEF08A"/>
+    <circle cx="145" cy="175" r="4" fill="#FEF08A"/>
+
+    <!-- Right hand lovingly resting on giant belly -->
+    <path d="M95 85 Q130 115 115 142" fill="none" stroke="#FDA4AF" stroke-width="13" stroke-linecap="round"/>
+    <circle cx="115" cy="142" r="9" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+
+    <!-- Left hand gently reaching out / holding Lan's hand in deep gratitude -->
+    <path d="M60 85 Q120 85 185 120" fill="none" stroke="#FDA4AF" stroke-width="13" stroke-linecap="round"/>
+    <circle cx="185" cy="120" r="9" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+
+    <!-- Teacher Head with Radiant Happy Smile -->
+    <circle cx="75" cy="42" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M48 42 C44 15 105 15 102 42 Z" fill="#3B2005"/>
+    <circle cx="48" cy="22" r="12" fill="#3B2005"/>
+    <circle cx="62" cy="18" r="5" fill="#F43F5E"/>
+
+    <!-- Red Rimmed Glasses -->
+    <rect x="63" y="38" width="10" height="8" rx="2" fill="none" stroke="#DC2626" stroke-width="1.8"/>
+    <rect x="77" y="38" width="10" height="8" rx="2" fill="none" stroke="#DC2626" stroke-width="1.8"/>
+    <line x1="73" y1="42" x2="77" y2="42" stroke="#DC2626" stroke-width="1.8"/>
+
+    <!-- Beaming Happy Curved Eyes & Rosy Cheeks -->
+    <path d="M65 42 Q68 38 71 42" fill="none" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M79 42 Q82 38 85 42" fill="none" stroke="#1E293B" stroke-width="2.5"/>
+    <circle cx="58" cy="48" r="4" fill="#FDA4AF"/>
+    <circle cx="90" cy="48" r="4" fill="#FDA4AF"/>
+
+    <!-- Wide joyful grateful smile -->
+    <path d="M69 50 Q75 60 81 50 Z" fill="#DC2626" stroke="#B91C1C" stroke-width="1"/>
+  </g>
+
+  <!-- BẠN LAN [NỮ] STANDING HAPPY & PROUD (Right Side) -->
+  <g id="happy-lan-p4" transform="translate(385, 120)">
+    <!-- Floor Shadow -->
+    <ellipse cx="50" cy="200" rx="42" ry="12" fill="#000000" opacity="0.2"/>
+
+    <!-- Pleated Navy Skirt -->
+    <path d="M30 140 L15 190 L75 190 L60 140 Z" fill="#1E3A8A" stroke="#172554" stroke-width="2"/>
+    <line x1="32" y1="150" x2="28" y2="190" stroke="#3B82F6" stroke-width="1.5"/>
+    <line x1="45" y1="150" x2="45" y2="190" stroke="#3B82F6" stroke-width="1.5"/>
+    <line x1="58" y1="150" x2="62" y2="190" stroke="#3B82F6" stroke-width="1.5"/>
+
+    <!-- Legs & Shoes -->
+    <rect x="25" y="190" width="10" height="20" fill="#FFEDD5"/>
+    <rect x="52" y="190" width="10" height="20" fill="#FFEDD5"/>
+    <ellipse cx="28" cy="210" rx="9" ry="5" fill="#1E293B"/>
+    <ellipse cx="57" cy="210" rx="9" ry="5" fill="#1E293B"/>
+
+    <!-- White Shirt with Red Bow -->
+    <path d="M28 85 L62 85 L66 142 L24 142 Z" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+    <polygon points="45,92 40,102 50,102" fill="#DC2626"/>
+    <circle cx="45" cy="91" r="3" fill="#DC2626"/>
+
+    <!-- Left hand holding Teacher's hand warmly -->
+    <path d="M30 92 Q-20 110 -55 115" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+    <circle cx="-55" cy="115" r="8" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+
+    <!-- Right hand giving a cheerful "Thumbs up" 👍 -->
+    <path d="M60 92 Q80 110 82 125" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+    <circle cx="82" cy="125" r="8" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+    <!-- Thumbs up thumb -->
+    <rect x="80" y="112" width="5" height="12" rx="2" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+
+    <!-- Lan Head -->
+    <circle cx="45" cy="45" r="23" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M25 45 C22 18 70 18 68 45 Z" fill="#1E293B"/>
+    <path d="M62 30 Q88 32 88 55 Q76 65 65 45 Z" fill="#1E293B"/> <!-- Ponytail -->
+    <circle cx="65" cy="32" r="6" fill="#EC4899"/>
+    <circle cx="62" cy="27" r="4" fill="#F472B6"/>
+
+    <!-- Eyes: Smiling Crescent with stars -->
+    <path d="M34 45 Q38 40 42 45" fill="none" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M48 45 Q52 40 56 45" fill="none" stroke="#1E293B" stroke-width="2.5"/>
+    <circle cx="28" cy="52" r="3.5" fill="#FDA4AF"/>
+    <circle cx="58" cy="52" r="3.5" fill="#FDA4AF"/>
+
+    <!-- Wide Happy Smile -->
+    <path d="M39 52 Q45 60 51 52 Z" fill="#DC2626" stroke="#B91C1C" stroke-width="1"/>
+
+    <text x="75" y="105" font-size="16">👍</text>
+    <text x="25" y="20" font-size="16">💖</text>
+  </g>
+
+  <!-- Speech Bubble: Teacher Grateful -->
+  <g filter="url(#medShadow4)">
+    <path d="M80 20 Q80 2 240 2 L410 2 Q430 2 430 25 Q430 52 340 52 L290 52 L270 76 L280 52 L140 52 Q80 52 80 20 Z" fill="#FFF1F2" stroke="#F43F5E" stroke-width="2.5"/>
+    <text x="255" y="22" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#9F1239" text-anchor="middle">"Cô cảm ơn bạn Lan [nữ] rất nhiều nhé!"</text>
+    <text x="255" y="42" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#9F1239" text-anchor="middle">"Em bé và cô được cứu nguy kịp thời rồi! ❤️🥰"</text>
+  </g>
+
+  <!-- Speech Bubble: Student Lan Cheerful -->
+  <g filter="url(#medShadow4)">
+    <path d="M450 65 Q450 45 540 45 L625 45 Q640 45 640 68 Q640 95 590 95 L560 95 L545 118 L552 95 L490 95 Q450 95 450 65 Z" fill="#F0FDF4" stroke="#16A34A" stroke-width="2"/>
+    <text x="545" y="68" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#15803D" text-anchor="middle">"Dạ không có gì đâu cô!"</text>
+    <text x="545" y="85" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#15803D" text-anchor="middle">"Cô và bé an toàn là tốt rồi! 💕"</text>
+  </g>
+
+  <!-- Panel Header Banner -->
+  <rect x="20" y="16" width="370" height="32" rx="8" fill="#EA580C"/>
+  <text x="205" y="37" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">★ CẢNH 4: THOÁT NẠN NGOẠN MỤC – CÔ CẢM ƠN LAN</text>
+
+  <!-- Caption at bottom -->
+  <rect x="25" y="402" width="600" height="34" rx="8" fill="#0F172A" opacity="0.85"/>
+  <text x="325" y="424" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#F8FAFC" text-anchor="middle">Chiếc bụng bầu thoát nạn an toàn, cô cảm động nắm tay gửi lời cảm ơn sâu sắc đến bạn Lan [nữ]...</text>
+</svg>

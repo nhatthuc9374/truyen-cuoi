@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="medWallBg2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF2F2"/>
+      <stop offset="65%" stop-color="#FEE2E2"/>
+      <stop offset="65%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <filter id="medShadow2" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Panel Border & Background (Alert tone) -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#medWallBg2)" stroke="#EF4444" stroke-width="4"/>
+
+  <!-- Medicine Cabinet & Empty Nurse Desk on background -->
+  <rect x="35" y="55" width="85" height="90" rx="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+  <rect x="70" y="68" width="14" height="40" fill="#EF4444" rx="2"/>
+  <rect x="57" y="81" width="40" height="14" fill="#EF4444" rx="2"/>
+
+  <!-- Empty Nurse Chair (Signifying nobody is there!) -->
+  <g transform="translate(135, 110)">
+    <rect x="10" y="20" width="35" height="6" rx="2" fill="#64748B"/>
+    <rect x="12" y="5" width="6" height="35" rx="2" fill="#475569"/>
+    <rect x="25" y="26" width="5" height="30" fill="#334155"/>
+    <!-- Note on desk: "Đi vắng 10p" -->
+    <rect x="60" y="15" width="45" height="30" rx="3" fill="#FEF08A" stroke="#CA8A04" stroke-width="1"/>
+    <text x="82" y="32" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" fill="#854D0E" text-anchor="middle">VẮNG MẶT</text>
+    <text x="82" y="42" font-family="'Segoe UI', sans-serif" font-size="8" fill="#854D0E" text-anchor="middle">Đi lấy thuốc</text>
+  </g>
+
+  <!-- Floor separator line -->
+  <line x1="5" y1="292" x2="645" y2="292" stroke="#94A3B8" stroke-width="2"/>
+
+  <!-- Hospital Bed -->
+  <g id="medical-bed-p2" transform="translate(90, 180)">
+    <!-- Bed shadow -->
+    <ellipse cx="260" cy="160" rx="240" ry="16" fill="#000000" opacity="0.2"/>
+
+    <!-- Bed Legs -->
+    <rect x="30" y="90" width="12" height="60" fill="#64748B" rx="2"/>
+    <circle cx="36" cy="152" r="8" fill="#334155"/>
+    <rect x="470" y="90" width="12" height="60" fill="#64748B" rx="2"/>
+    <circle cx="476" cy="152" r="8" fill="#334155"/>
+
+    <!-- Bed Frame Bottom -->
+    <rect x="20" y="80" width="470" height="16" rx="4" fill="#475569"/>
+
+    <!-- Mattress -->
+    <rect x="22" y="48" width="466" height="34" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+
+    <!-- Headboard & Footboard -->
+    <rect x="15" y="-15" width="16" height="105" rx="4" fill="#38BDF8" stroke="#0284C7" stroke-width="2"/>
+    <rect x="482" y="10" width="14" height="80" rx="4" fill="#38BDF8" stroke="#0284C7" stroke-width="2"/>
+    <ellipse cx="90" cy="50" rx="45" ry="20" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.5"/>
+  </g>
+
+  <!-- STUCK PREGNANT TEACHER STRUGGLING ON BED -->
+  <g id="stuck-teacher" transform="translate(130, 140)">
+    <!-- Body twisted towards the bed rail -->
+    <path d="M120 70 Q170 80 200 85 L200 120 L120 120 Z" fill="#FDA4AF"/>
+    <path d="M280 90 Q350 90 400 95 L400 120 L280 120 Z" fill="#F472B6"/>
+
+    <!-- HUGE BELLY STUCK INTO BED RAIL (Pushed forward, bulging between slats!) -->
+    <!-- Belly main mass -->
+    <ellipse cx="240" cy="95" rx="78" ry="68" fill="#FB7185" stroke="#E11D48" stroke-width="3.5"/>
+    
+    <!-- Pressure bulge contour on the belly -->
+    <path d="M185 85 Q240 55 295 85" stroke="#FFE4E6" stroke-width="6" fill="none" opacity="0.8" stroke-linecap="round"/>
+    <ellipse cx="242" cy="98" rx="20" ry="28" fill="#F43F5E" opacity="0.3"/> <!-- Squeezed center -->
+
+    <!-- Teacher Head with Shocked / Stressed Expression -->
+    <circle cx="85" cy="50" r="28" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <!-- Messy bun / Hair reacting to struggle -->
+    <path d="M52 48 C50 20 115 20 112 48 Z" fill="#3B2005"/>
+    <circle cx="56" cy="30" r="14" fill="#3B2005"/>
+    <circle cx="70" cy="22" r="6" fill="#F43F5E"/>
+
+    <!-- Glasses askew -->
+    <g transform="rotate(-8 85 50)">
+      <rect x="74" y="44" width="12" height="9" rx="2" fill="none" stroke="#DC2626" stroke-width="2"/>
+      <rect x="90" y="44" width="12" height="9" rx="2" fill="none" stroke="#DC2626" stroke-width="2"/>
+      <line x1="86" y1="48" x2="90" y2="48" stroke="#DC2626" stroke-width="2"/>
+    </g>
+
+    <!-- Shocked wide eyes with dots -->
+    <circle cx="77" cy="46" r="4" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5"/>
+    <circle cx="77" cy="46" r="2" fill="#1E293B"/>
+    <circle cx="95" cy="44" r="4" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5"/>
+    <circle cx="95" cy="44" r="2" fill="#1E293B"/>
+
+    <!-- Wavy anxious eyebrows -->
+    <path d="M72 38 Q78 34 83 39" fill="none" stroke="#1E293B" stroke-width="2"/>
+    <path d="M91 36 Q96 32 101 37" fill="none" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- Open panicked mouth -->
+    <ellipse cx="86" cy="62" rx="7" ry="9" fill="#991B1B" stroke="#1E293B" stroke-width="1.5"/>
+    <path d="M82 66 Q86 63 90 66" fill="#FCA5A5"/>
+
+    <!-- Sweat drops flying -->
+    <path d="M118 35 Q125 35 122 45 Q115 45 118 35 Z" fill="#38BDF8"/>
+    <path d="M60 40 Q55 40 57 48 Q62 48 60 40 Z" fill="#38BDF8"/>
+    <path d="M105 70 Q112 70 109 80 Q103 80 105 70 Z" fill="#38BDF8"/>
+
+    <!-- Hands frantically pushing and pulling on the bed rail -->
+    <!-- Hand 1 trying to push rail -->
+    <path d="M105 75 Q150 90 180 110" fill="none" stroke="#FDA4AF" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="180" cy="110" r="10" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- Hand 2 holding belly trying to pull it back -->
+    <path d="M125 75 Q180 65 220 90" fill="none" stroke="#FDA4AF" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="220" cy="90" r="10" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- Struggle motion lines -->
+    <path d="M165 140 L155 148 M160 152 L150 160" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M315 140 L325 148 M320 152 L330 160" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- BED RAILS CLAMPING ONTO THE GIANT BELLY -->
+  <g id="bed-safety-rails-pinching" transform="translate(90, 180)">
+    <!-- Top Horizontal Rail Bar -->
+    <rect x="70" y="10" width="370" height="9" rx="3" fill="#94A3B8" stroke="#475569" stroke-width="2"/>
+    <!-- Bottom Horizontal Rail Bar -->
+    <rect x="70" y="65" width="370" height="8" rx="2" fill="#94A3B8" stroke="#475569" stroke-width="2"/>
+
+    <!-- Slats with two slats pressing tight against belly! -->
+    <rect x="90" y="18" width="8" height="48" fill="#CBD5E1" stroke="#64748B" stroke-width="1.2"/>
+    <rect x="145" y="18" width="8" height="48" fill="#CBD5E1" stroke="#64748B" stroke-width="1.2"/>
+
+    <!-- SLAT 1 PRESSING LEFT SIDE OF BELLY -->
+    <rect x="210" y="18" width="10" height="48" fill="#E2E8F0" stroke="#DC2626" stroke-width="2"/>
+    <!-- SLAT 2 PRESSING RIGHT SIDE OF BELLY -->
+    <rect x="300" y="18" width="10" height="48" fill="#E2E8F0" stroke="#DC2626" stroke-width="2"/>
+
+    <rect x="365" y="18" width="8" height="48" fill="#CBD5E1" stroke="#64748B" stroke-width="1.2"/>
+    <rect x="415" y="18" width="8" height="48" fill="#CBD5E1" stroke="#64748B" stroke-width="1.2"/>
+
+    <!-- SQUEEZE / STUCK EFFECT (KẸT CỨNG NGẮC!) -->
+    <ellipse cx="255" cy="42" rx="38" ry="24" fill="#EF4444" opacity="0.2"/>
+    <text x="255" y="47" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#DC2626" text-anchor="middle">★ KẸT CỨNG! ★</text>
+
+    <!-- Shock ripples -->
+    <path d="M198 32 Q192 42 198 52" stroke="#DC2626" stroke-width="3" fill="none"/>
+    <path d="M316 32 Q322 42 316 52" stroke="#DC2626" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- Speech Bubble: Panicked Teacher -->
+  <g filter="url(#medShadow2)">
+    <path d="M160 25 Q160 5 310 5 L580 5 Q610 5 610 32 Q610 65 470 65 L410 65 L380 95 L395 65 L220 65 Q160 65 160 25 Z" fill="#FEF2F2" stroke="#EF4444" stroke-width="2.8"/>
+    <text x="390" y="27" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#B91C1C" text-anchor="middle">"ỐI TRỜI ƠI! SAO KẸT CỨNG NGẮC THẾ NÀY?!"</text>
+    <text x="390" y="48" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#B91C1C" text-anchor="middle">"Phòng không có ai... Tự gỡ mà bụng to quá cựa không nổi! 😭💦"</text>
+  </g>
+
+  <!-- Panel Header Banner -->
+  <rect x="20" y="16" width="370" height="32" rx="8" fill="#DC2626"/>
+  <text x="205" y="37" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">★ CẢNH 2: BỤNG BẦU BỊ KẸT VÀO THANH GIƯỜNG!</text>
+
+  <!-- Caption at bottom -->
+  <rect x="25" y="402" width="600" height="34" rx="8" fill="#0F172A" opacity="0.85"/>
+  <text x="325" y="424" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#F8FAFC" text-anchor="middle">Cô trở mình thì bụng bầu kẹt chặt vào thanh giường, phòng vắng tanh, cô tự loay hoay thoát thân...</text>
+</svg>

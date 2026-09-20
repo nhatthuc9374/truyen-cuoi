@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kho Truyện Cười HTML - Nhân</title>
+  <title>Kho Truyện Cười HTML - Lam</title>
   <style>
     :root {
-      --primary: #f59e0b;
-      --primary-hover: #d97706;
+      --primary: #10b981;
+      --primary-hover: #059669;
+      --primary-glow: rgba(16, 185, 129, 0.25);
+      --accent: #f43f5e;
       --bg: #0f172a;
       --card-bg: #1e293b;
       --card-hover: #273549;
@@ -34,7 +36,7 @@
     }
 
     header {
-      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #0f172a 100%);
+      background: linear-gradient(135deg, #064e3b 0%, #065f46 50%, #0f172a 100%);
       padding: 2.5rem 1.5rem;
       border-bottom: 1px solid var(--border);
     }
@@ -45,29 +47,17 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
     }
 
     .back-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: #38bdf8;
-      text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 600;
-      padding: 0.5rem 1.1rem;
-      border-radius: 9999px;
-      background: rgba(56, 189, 248, 0.1);
-      border: 1px solid rgba(56, 189, 248, 0.25);
-      transition: all 0.2s ease;
-    }
-
-    .back-btn:hover {
-      background: rgba(56, 189, 248, 0.25);
-      transform: translateX(-4px);
-    }
-
-    .lam-btn {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
@@ -82,9 +72,30 @@
       transition: all 0.2s ease;
     }
 
-    .lam-btn:hover {
+    .back-btn:hover {
       background: rgba(16, 185, 129, 0.25);
-      transform: translateX(4px);
+      transform: translateX(-3px);
+      color: #fff;
+    }
+
+    .nhan-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #fbbf24;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 0.5rem 1.1rem;
+      border-radius: 9999px;
+      background: rgba(251, 191, 36, 0.12);
+      border: 1px solid rgba(251, 191, 36, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    .nhan-btn:hover {
+      background: rgba(251, 191, 36, 0.25);
+      transform: translateX(3px);
       color: #fff;
     }
 
@@ -106,16 +117,16 @@
     .header-content h1 {
       font-size: 2.6rem;
       font-weight: 800;
-      background: linear-gradient(to right, #fbbf24, #f43f5e, #ec4899);
+      background: linear-gradient(to right, #34d399, #38bdf8, #f472b6);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-bottom: 0.75rem;
     }
 
     .header-content p {
-      color: var(--text-muted);
+      color: #cbd5e1;
       font-size: 1.15rem;
-      max-width: 650px;
+      max-width: 700px;
       margin: 0 auto;
     }
 
@@ -156,7 +167,7 @@
 
     .search-wrap input:focus {
       border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+      box-shadow: 0 0 0 3px var(--primary-glow);
     }
 
     .search-wrap::before {
@@ -179,15 +190,15 @@
 
     .story-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.75rem;
       margin-bottom: 3rem;
     }
 
     .story-card {
       background: var(--card-bg);
       border: 1px solid var(--border);
-      border-radius: 16px;
+      border-radius: 18px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
@@ -198,22 +209,25 @@
 
     .story-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 16px 28px -12px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 16px 28px -10px rgba(0, 0, 0, 0.65);
       border-color: var(--primary);
       background: var(--card-hover);
     }
 
     .card-banner {
-      height: 120px;
+      height: 165px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 3.5rem;
-      background: linear-gradient(135deg, #f59e0b, #ef4444);
+      background: linear-gradient(135deg, #059669, #0284c7);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
     .card-body {
-      padding: 1.25rem;
+      padding: 1.35rem;
       display: flex;
       flex-direction: column;
       flex: 1;
@@ -221,46 +235,54 @@
 
     .tags {
       display: flex;
-      gap: 0.5rem;
+      gap: 0.45rem;
       margin-bottom: 0.75rem;
+      flex-wrap: wrap;
     }
 
     .tag {
       font-size: 0.75rem;
       padding: 0.2rem 0.55rem;
       border-radius: 6px;
-      background: rgba(245, 158, 11, 0.15);
-      color: #fbbf24;
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
       font-weight: 600;
     }
 
+    .tag.pink {
+      background: rgba(244, 63, 94, 0.15);
+      color: #fb7185;
+    }
+
     .card-title {
-      font-size: 1.2rem;
-      font-weight: 700;
+      font-size: 1.25rem;
+      font-weight: 800;
       color: #ffffff;
       margin-bottom: 0.5rem;
+      line-height: 1.35;
     }
 
     .card-desc {
       color: var(--text-muted);
-      font-size: 0.9rem;
+      font-size: 0.92rem;
       flex: 1;
       margin-bottom: 1.25rem;
+      line-height: 1.6;
     }
 
     .card-link-label {
-      color: #38bdf8;
+      color: #34d399;
       font-size: 0.9rem;
-      font-weight: 600;
+      font-weight: 700;
       display: flex;
       align-items: center;
-      gap: 0.35rem;
+      gap: 0.4rem;
     }
 
     .guide-box {
-      background: linear-gradient(145deg, #1e293b, #172033);
-      border: 1px dashed #475569;
-      border-radius: 16px;
+      background: linear-gradient(145deg, #1e293b, #152238);
+      border: 1px dashed #334155;
+      border-radius: 18px;
       padding: 2rem;
       margin-top: 2rem;
     }
@@ -291,27 +313,27 @@
       background: rgba(15, 23, 42, 0.6);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 1rem;
+      padding: 1.1rem;
     }
 
     .step-num {
       display: inline-block;
-      width: 24px;
-      height: 24px;
-      line-height: 24px;
+      width: 26px;
+      height: 26px;
+      line-height: 26px;
       text-align: center;
       border-radius: 50%;
       background: var(--primary);
       color: #0f172a;
-      font-weight: 700;
-      font-size: 0.8rem;
+      font-weight: 800;
+      font-size: 0.85rem;
       margin-bottom: 0.5rem;
     }
 
     .step-title {
-      font-weight: 600;
+      font-weight: 700;
       color: #f1f5f9;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.35rem;
       font-size: 0.95rem;
     }
 
@@ -322,7 +344,7 @@
 
     footer {
       text-align: center;
-      padding: 2rem 1.5rem;
+      padding: 2.2rem 1.5rem;
       border-top: 1px solid var(--border);
       color: var(--text-muted);
       font-size: 0.875rem;
@@ -334,19 +356,19 @@
 
   <header>
     <div class="top-nav">
-      <div style="display: flex; gap: 0.75rem; align-items: center;">
+      <div class="nav-actions">
         <a href="../index.html" class="back-btn">
           <span>←</span> Trang Chủ Dự Án
         </a>
-        <a href="../Lam/index.html" class="lam-btn">
-          <span>🍃</span> Kho của Lam &rarr;
+        <a href="../Nhan/index.html" class="nhan-btn">
+          <span>🎭</span> Kho của Nhân &rarr;
         </a>
       </div>
-      <span class="badge-path">C:\DU-AN\truyen-cuoi\Nhan</span>
+      <span class="badge-path">C:\DU-AN\truyen-cuoi\Lam</span>
     </div>
     <div class="header-content">
-      <h1>🎭 Kho Truyện Cười - Nhân</h1>
-      <p>Nơi lưu trữ và sáng tác các mẩu chuyện cười, tiểu phẩm hài hước tương tác dạng HTML.</p>
+      <h1>🍃 Kho Truyện Cười - Lam</h1>
+      <p>Nơi lưu trữ và sáng tác các mẩu chuyện cười, kỷ niệm đời thường vui nhộn tương tác dạng HTML.</p>
     </div>
   </header>
 
@@ -358,26 +380,30 @@
       <div class="count-badge" id="countDisplay">1 câu chuyện</div>
     </div>
 
-    <!-- Grid danh sách truyện cười -->
+    <!-- Grid danh sách truyện cười của Lam -->
     <div class="story-grid" id="storyList">
-      <a class="story-card" href="naruto_bi_thuat_nghin_nam_dau_don.html">
-        <div class="card-banner" style="background: url('images/naruto_intro.jpg') center/cover no-repeat; height: 160px;">
+      
+      <!-- Thẻ truyện: Cô Bị Kẹt Bụng Bầu Vào Thanh Giường Y Tế -->
+      <a class="story-card" href="co_ket_bung_bau_vao_thanh_giuong_y_te.html">
+        <div class="card-banner" style="background-image: url('images/co_ket_giuong_full.jpg');">
         </div>
         <div class="card-body">
           <div class="tags">
-            <span class="tag">🍃 Naruto</span>
-            <span class="tag">🔥 Hài hước</span>
-            <span class="tag">🥋 4-Koma</span>
+            <span class="tag">🍃 Đời thường</span>
+            <span class="tag">🏥 Y tế</span>
+            <span class="tag pink">🤰 Mẹ bầu</span>
+            <span class="tag">💖 Ấm áp</span>
           </div>
-          <div class="card-title">🎭 Naruto: Bí Thuật Nghìn Năm Đau Đớn</div>
+          <div class="card-title">🍃 Cô Bị Kẹt Bụng Bầu Vào Thanh Giường Y Tế</div>
           <div class="card-desc">
-            Phân cảnh kinh điển trong bài kiểm tra cướp chuông của Đội 7. Khi thánh gáy Naruto chạm trán cú thọc chí mạng của thầy Kakashi!
+            Kỷ niệm "dở khóc dở cười" mà vô cùng ấm áp: Chiếc bụng bầu 150cm bị kẹt cứng ngắc vào gióng giường y tế và màn giải cứu nhanh trí của bạn Lan [nữ]!
           </div>
           <div class="card-link-label">
             <span>Đọc truyện ngay</span> &rarr;
           </div>
         </div>
       </a>
+
     </div>
 
     <!-- Hướng dẫn thêm truyện mới -->
@@ -388,12 +414,12 @@
         <div class="step-item">
           <span class="step-num">1</span>
           <div class="step-title">Tạo tệp HTML</div>
-          <div class="step-desc">Tạo tệp mới trong thư mục <code>Nhan/</code>, ví dụ: <code>chuyen_cuoi_01.html</code></div>
+          <div class="step-desc">Tạo tệp mới trong thư mục <code>Lam/</code>, ví dụ: <code>chuyen_cuoi_02.html</code></div>
         </div>
         <div class="step-item">
           <span class="step-num">2</span>
           <div class="step-title">Soạn thảo nội dung</div>
-          <div class="step-desc">Viết nội dung truyện cười, thêm style CSS và hình ảnh để trang thật sinh động.</div>
+          <div class="step-desc">Viết nội dung truyện cười, thêm hình ảnh minh họa trong thư mục <code>Lam/images/</code>.</div>
         </div>
         <div class="step-item">
           <span class="step-num">3</span>
@@ -405,7 +431,7 @@
   </main>
 
   <footer>
-    <p>Dự án Truyện Cười &copy; 2026 - Tác giả: <strong>Nhân</strong></p>
+    <p>Dự án Truyện Cười &copy; 2026 - Tác giả: <strong>Lam</strong></p>
   </footer>
 
   <script>
