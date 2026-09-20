@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"header_ot_alien","type":"text","text":"# 🛸🛴 Oliver Tree: All That x Alien Boy (Đại Chiến Scooter & Monster Truck)\nThứ tự đọc: **Khung 1 (Scooter trượt nóc xe) ➜ Khung 2 (Cú tông trời giáng & vỡ scooter) ➜ Khung 3 (Monster Truck cán nát bẹp ô tô) ➜ Khung 4 (Cưỡi ngựa vác Bazooka thiêu rụi)**","x":0,"y":-180,"width":1700,"height":130,"color":"5"},
+		{"id":"ot_panel1","type":"file","file":"oliver_tree_alien_boy_1.jpg","x":0,"y":0,"width":800,"height":447},
+		{"id":"ot_panel2","type":"file","file":"oliver_tree_alien_boy_2.jpg","x":880,"y":0,"width":820,"height":447},
+		{"id":"ot_panel3","type":"file","file":"oliver_tree_alien_boy_3.jpg","x":0,"y":550,"width":800,"height":447},
+		{"id":"ot_panel4","type":"file","file":"oliver_tree_alien_boy_4.jpg","x":880,"y":550,"width":820,"height":447},
+		{"id":"ot_story","type":"file","file":"02 - Oliver Tree/🎭 Oliver Tree All That x Alien Boy.md","x":1760,"y":0,"width":620,"height":1050}
+	],
+	"edges":[
+		{"id":"edge_ot_1_2","fromNode":"ot_panel1","fromSide":"right","toNode":"ot_panel2","toSide":"left","label":"Lướt scooter trượt nóc xe ➜ Bị ô tô tông bay lên trời, gãy xe! 💥"},
+		{"id":"edge_ot_2_3","fromNode":"ot_panel2","fromSide":"bottom","toNode":"ot_panel3","toSide":"top","label":"Nổi trận lôi đình ➜ Lái xe địa hình Monster Truck cán bẹp dí ô tô! 🚜"},
+		{"id":"edge_ot_3_4","fromNode":"ot_panel3","fromSide":"right","toNode":"ot_panel4","toSide":"left","label":"Cưỡi ngựa vác Bazooka phóng hỏa tiễn nổ tung rực lửa! 🚀🔥"}
+	]
+}

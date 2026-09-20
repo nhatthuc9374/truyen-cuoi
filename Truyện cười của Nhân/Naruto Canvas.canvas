@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"header_naruto","type":"text","text":"# 🍃🍜 🎭: Naruto (Bí Thuật Konoha: Nghìn Năm Đau Đớn)\nThứ tự đọc: **Khung 1 (Thánh gáy xuất trận) ➜ Khung 2 (Cấm thuật Ấn Hổ) ➜ Khung 3 (Nghìn Năm Đau Đớn) ➜ Khung 4 (Bay vào quỹ đạo)**","x":0,"y":-180,"width":1700,"height":130,"color":"1"},
+		{"id":"naruto_panel1_node","type":"file","file":"naruto_1.jpg","x":0,"y":0,"width":800,"height":447},
+		{"id":"naruto_panel2_node","type":"file","file":"naruto_2.jpg","x":900,"y":0,"width":800,"height":447},
+		{"id":"naruto_panel3_node","type":"file","file":"naruto_3.jpg","x":0,"y":550,"width":800,"height":447},
+		{"id":"naruto_story_note","type":"file","file":"03 - Meme & Hiện Tượng Mạng/🎭 Naruto Bí Thuật Nghìn Năm Đau Đớn.md","x":1780,"y":0,"width":620,"height":1000},
+		{"id":"d8edb43c861dd298","type":"file","file":"canvas/Oliver Tree Welcome to LA Canvas.canvas","x":-1600,"y":1200,"width":400,"height":400},
+		{"id":"naruto_panel4_node","type":"file","file":"naruto_4.jpg","x":850,"y":550,"width":800,"height":447}
+	],
+	"edges":[
+		{"id":"edge_naruto_1_2","fromNode":"naruto_panel1_node","fromSide":"right","toNode":"naruto_panel2_node","toSide":"left","label":"Naruto gáy đòi đập thầy ➜ Kakashi kết ấn Hổ 📖"},
+		{"id":"edge_naruto_2_3","fromNode":"naruto_panel2_node","fromSide":"bottom","toNode":"naruto_panel3_node","toSide":"top","label":"Tưởng Hỏa Độn ➜ Biến ra sau lưng: NGHÌN NĂM ĐAU ĐỚN! 👉🍑"},
+		{"id":"edge_naruto_3_4","fromNode":"naruto_panel3_node","fromSide":"right","toNode":"naruto_panel4_node","toSide":"left","label":"Phóng thẳng lên trời ➜ Sasuke bất lực, Sakura xấu hổ! 🚀🤦‍♂️"}
+	]
+}

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phim Hoạt Hình: Oliver Tree: Welcome to LA</title>
+  <style>
+    :root { --primary: #f59e0b; --cyan: #00e5ff; --accent: #ec4899; --bg: #0b0714; --card-bg: #140e24; --border: #281a42; --text: #f8fafc; --muted: #94a3b8; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; background: radial-gradient(circle at top, #23123d 0%, #0b0714 65%, #05020a 100%); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 30px 16px 80px; }
+    header { text-align: center; margin-bottom: 24px; max-width: 980px; }
+    .badge { display: inline-block; background: linear-gradient(135deg, #ec4899, #8b5cf6); color: white; padding: 6px 20px; border-radius: 999px; font-weight: 800; font-size: 12px; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 12px; box-shadow: 0 4px 18px rgba(236, 72, 153, 0.35); }
+    h1 { font-size: 32px; font-weight: 900; background: linear-gradient(135deg, #fde047, #f43f5e, #38bdf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
+    p.subtitle { font-size: 15px; color: var(--muted); line-height: 1.6; }
+    .video-theater { width: 100%; max-width: 1100px; background: #000; border: 2px solid rgba(0, 229, 255, 0.45); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85), 0 0 40px rgba(236, 72, 153, 0.2); margin-bottom: 28px; }
+    video { width: 100%; aspect-ratio: 16 / 9; display: block; background: #000; outline: none; }
+    .controls-panel { max-width: 1100px; width: 100%; background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 22px; margin-bottom: 30px; box-shadow: 0 8px 30px rgba(0,0,0,0.5); }
+    .panel-title { font-size: 15px; font-weight: 800; color: var(--cyan); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; }
+    .scenes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 12px; }
+    .scene-card { background: #1c1530; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 12px 14px; cursor: pointer; display: flex; gap: 12px; align-items: flex-start; transition: all 0.2s ease; }
+    .scene-card:hover { background: #271c42; border-color: var(--cyan); transform: translateY(-2px); }
+    .scene-num { background: linear-gradient(135deg, #ec4899, #a855f7); color: white; font-size: 11px; font-weight: 800; padding: 4px 8px; border-radius: 6px; white-space: nowrap; }
+    .scene-body { flex: 1; min-width: 0; }
+    .scene-title { font-size: 13.5px; font-weight: 700; color: #fef08a; margin-bottom: 4px; }
+    .scene-time { color: var(--cyan); font-weight: 600; font-size: 12px; }
+    .scene-desc { font-size: 12px; color: var(--muted); line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .actions-bar { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.08); }
+    .btn { padding: 8px 18px; border-radius: 8px; font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s; cursor: pointer; border: none; }
+    .btn-primary { background: linear-gradient(135deg, #00e5ff, #3b82f6); color: #020617; }
+    .btn-secondary { background: #281a42; color: #f1f5f9; border: 1px solid rgba(255,255,255,0.15); }
+    .btn:hover { filter: brightness(1.15); transform: translateY(-1px); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class='badge'>ĐẠI NÁO HOLLYWOOD & VÍT SCOOTER TRÊN WALK OF FAME</div>
+    <h1>Oliver Tree: Welcome to LA</h1>
+    <p class='subtitle'>Cú Gào Thét Làm Hãng Đĩa Té Ngửa và Giữ Trọn Bản Sắc Riêng</p>
+  </header>
+  <div class="video-theater">
+    <video id="player" controls autoplay preload="metadata">
+      <source src='oliver_tree_welcome_to_la.mp4' type='video/mp4'>
+      Trình duyệt của bạn không hỗ trợ thẻ video HTML5.
+    </video>
+  </div>
+  <div class="controls-panel">
+    <div class="panel-title">
+      <span>🎬 Danh Sách Phân Cảnh (Bấm Để Xem Ngay)</span>
+      <span style="font-size:12px; color:var(--muted); font-weight:normal;">Chất lượng Master 1376x768 @ 25fps</span>
+    </div>
+    <div class="scenes-grid">
+      <div class='scene-card' onclick='jumpTo(0)'><div class='scene-num'>Cảnh 0</div><div class='scene-body'><div class='scene-title'>Thẻ Mở Đầu Intro <span class='scene-time'>()</span></div><div class='scene-desc'>Chào mừng các bạn đến với cuộc viễn chinh Hollywood: Oliver Tree — Welcome to LA! Nơi chiếc xe trượt scooter mini quậy tung kinh đô điện ảnh hào nhoáng!</div></div></div><div class='scene-card' onclick='jumpTo(12)'><div class='scene-num'>Cảnh 1</div><div class='scene-body'><div class='scene-title'>Khung 1: Vít Scooter Trên Đại Lộ Danh Vọng <span class='scene-time'>()</span></div><div class='scene-desc'>Ánh nắng vàng rực rỡ trên Đại Lộ Hollywood. Giữa dòng siêu xe bóng bẩy, Oliver Tree ung dung vít chiếc xe trượt scooter mini lướt xoèn xoẹt trên các ngôi sao Walk of Fame! Đèn flash chớp sáng liên thanh: Chào mừng tới Los Angeles hào nhoáng!</div></div></div><div class='scene-card' onclick='jumpTo(31)'><div class='scene-num'>Cảnh 2</div><div class='scene-body'><div class='scene-title'>Khung 2: Cú Gào Thét Phá Nát Hợp Đồng <span class='scene-time'>()</span></div><div class='scene-desc'>Tại phòng họp tầng bốn mươi, các giám đốc ép Oliver ký hợp đồng và bắt bỏ quả đầu bát úp. Oliver ghé sát micro gào thét chất rock chấn động màng nhĩ: Ký hợp đồng để đổi kiểu tóc sao?! Không bao giờ! Ở đây tao là luật!</div></div></div><div class='scene-card' onclick='jumpTo(48)'><div class='scene-num'>Cảnh 3</div><div class='scene-body'><div class='scene-title'>Khung 3: Bay Scooter Ngược Chiều Hoàng Hôn <span class='scene-time'>()</span></div><div class='scene-desc'>Hoàng hôn buông xuống trên vịnh biển Thái Bình Dương. Oliver phóng scooter bay vút qua không trung ngược chiều hoàng hôn, tóc bay phần phật trong gió biển: LA là thành phố của những giấc mơ giả tạo, nhưng đam mê của tao là thật một trăm phần trăm!</div></div></div><div class='scene-card' onclick='jumpTo(66)'><div class='scene-num'>Cảnh 4</div><div class='scene-body'><div class='scene-title'>Khung 4: Bục Vinh Quang Đêm Neon <span class='scene-time'>()</span></div><div class='scene-desc'>Đêm xuống ngập tràn ánh đèn neon tím huyền ảo. Hàng vạn khán giả trẻ reo hò dưới chân biển hiệu Hollywood rực rỡ. Oliver Tree đứng trên bục vinh quang, giơ cao chiếc scooter mini mạ vàng: Hãy luôn giữ lấy bản sắc chân thật của chính mình!</div></div></div><div class='scene-card' onclick='jumpTo(84)'><div class='scene-num'>Cảnh 5</div><div class='scene-body'><div class='scene-title'>Thẻ Kết Thúc Outro <span class='scene-time'>()</span></div><div class='scene-desc'>Thông điệp bất diệt từ Welcome to LA: Dù đặt chân tới bất kỳ kinh đô hoa lệ nào, đừng bao giờ đánh mất bản sắc và sự nguyên bản của mình vì sự phán xét của người khác! Cảm ơn các bạn đã theo dõi!</div></div></div>
+    </div>
+    <div class="actions-bar">
+      <a href='oliver_tree_welcome_to_la.mp4' download class='btn btn-primary'>⬇️ Tải Video MP4 Về Máy</a>
+      <a href='xem_truyen_oliver_tree_welcome_to_la.html' class='btn btn-secondary'>📖 Đọc Truyện Tranh Gốc</a>
+      <button onclick="toggleLoop()" id="btnLoop" class="btn btn-secondary">🔁 Bật Tự Động Lặp</button>
+    </div>
+  </div>
+  <script>
+    const player = document.getElementById("player");
+    function jumpTo(sec) { player.currentTime = sec; player.play(); }
+    function toggleLoop() { player.loop = !player.loop; document.getElementById("btnLoop").innerText = player.loop ? "🔁 Tắt Tự Động Lặp (Đang Bật)" : "🔁 Bật Tự Động Lặp"; document.getElementById("btnLoop").style.background = player.loop ? "#059669" : "#281a42"; }
+  </script>
+</body>
+</html>

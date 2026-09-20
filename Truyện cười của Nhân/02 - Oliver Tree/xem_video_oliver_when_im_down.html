@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Hoạt Hình: Oliver Tree & Whethan — "When I'm Down"</title>
+  <style>
+    :root { --primary: #f43f5e; --cyan: #06b6d4; --accent: #ec4899; --gold: #fbbf24; --bg: #0c0614; --card-bg: #170d24; --border: #2d1844; --text: #fdf4ff; --muted: #cbd5e1; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; background: radial-gradient(circle at top, #2b103d 0%, #0c0614 65%, #05020a 100%); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 30px 16px 80px; }
+    header { text-align: center; margin-bottom: 24px; max-width: 980px; }
+    .badge { display: inline-block; background: linear-gradient(135deg, #f43f5e, #ec4899); color: white; padding: 6px 20px; border-radius: 999px; font-weight: 800; font-size: 12px; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 12px; box-shadow: 0 4px 18px rgba(244, 63, 94, 0.4); }
+    h1 { font-size: 32px; font-weight: 900; background: linear-gradient(135deg, #fbbf24, #f43f5e, #38bdf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
+    p.subtitle { font-size: 15px; color: var(--muted); line-height: 1.6; }
+    .video-theater { width: 100%; max-width: 1100px; background: #000; border: 2px solid rgba(6, 182, 212, 0.5); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85), 0 0 40px rgba(244, 63, 94, 0.25); margin-bottom: 28px; }
+    video { width: 100%; aspect-ratio: 16 / 9; display: block; background: #000; outline: none; }
+    .controls-panel { max-width: 1100px; width: 100%; background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 22px; margin-bottom: 30px; box-shadow: 0 8px 30px rgba(0,0,0,0.5); }
+    .panel-title { font-size: 15px; font-weight: 800; color: var(--cyan); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; }
+    .scenes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 12px; }
+    .scene-card { background: #1e1230; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 12px 14px; cursor: pointer; display: flex; gap: 12px; align-items: flex-start; transition: all 0.2s ease; }
+    .scene-card:hover { background: #2b1846; border-color: var(--cyan); transform: translateY(-2px); }
+    .scene-num { background: linear-gradient(135deg, #f43f5e, #a855f7); color: white; font-size: 11px; font-weight: 800; padding: 4px 8px; border-radius: 6px; white-space: nowrap; }
+    .scene-body { flex: 1; min-width: 0; }
+    .scene-title { font-size: 13.5px; font-weight: 700; color: #fef08a; margin-bottom: 4px; }
+    .scene-time { color: var(--cyan); font-weight: 600; font-size: 12px; }
+    .scene-desc { font-size: 12px; color: var(--muted); line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .actions-bar { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.08); }
+    .btn { padding: 8px 18px; border-radius: 8px; font-size: 13px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s; cursor: pointer; border: none; }
+    .btn-primary { background: linear-gradient(135deg, #06b6d4, #3b82f6); color: #020617; }
+    .btn-secondary { background: #2d1844; color: #f1f5f9; border: 1px solid rgba(255,255,255,0.15); }
+    .btn:hover { filter: brightness(1.15); transform: translateY(-1px); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="badge">🎬 SIÊU PHẨM COMIC ĐIỆN ẢNH 2.5D</div>
+    <h1>OLIVER TREE — "WHEN I'M DOWN"</h1>
+    <p class="subtitle">Chuyển thể điện ảnh trực tiếp từ bộ truyện tranh hài hước 4 khung với hiệu ứng lia máy 2.5D Ken Burns, lồng tiếng cảm xúc và nhạc nền sống động.</p>
+  </header>
+  <div class="video-theater">
+    <video id="player" controls autoplay preload="metadata">
+      <source src="oliver_tree_when_im_down.mp4" type="video/mp4">
+      Trình duyệt của bạn không hỗ trợ thẻ video HTML5.
+    </video>
+  </div>
+  <div class="controls-panel">
+    <div class="panel-title">
+      <span>🎬 Danh Sách Phân Cảnh (Bấm Để Xem Ngay)</span>
+      <span style="font-size:12px; color:var(--muted); font-weight:normal;">Chất lượng Master 1376x768 @ 25fps</span>
+    </div>
+    <div class="scenes-grid">
+      <div class='scene-card' onclick='jumpTo(0)'><div class='scene-num'>Cảnh 0</div><div class='scene-body'><div class='scene-title'>Thẻ Mở Đầu: Siêu Hit Khởi Nguồn <span class='scene-time'>(00:00 • 17s)</span></div><div class='scene-desc'>Chào mừng bạn đến với siêu phẩm truyện tranh hoạt hình điện ảnh: Oliver Tree và ca khúc bất hủ When I'm Down. Đây là cột mốc lịch sử đưa chàng nghệ sĩ tóc bát úp từ kẻ vô danh bước thẳng lên đỉnh cao danh vọng toàn cầu!</div></div></div>
+      <div class='scene-card' onclick='jumpTo(16)'><div class='scene-num'>Cảnh 1</div><div class='scene-body'><div class='scene-title'>Khung 1: Bữa Tiệc Nhảy Sa Mạc & Quả Đầu Bát Úp <span class='scene-time'>(00:16 • 22s)</span></div><div class='scene-desc'>Giữa thung lũng sa mạc bao la, Oliver Tree xuất hiện với quả đầu bát úp bóng lộn, áo gió retro ba màu tím hồng và cặp kính râm đỏ cực chiến. Cậu nhảy nhót điên cuồng bên chiếc xe tải lốp bự và gào to: Tôi không hề gục ngã, tôi chỉ đang phiêu theo điệu nhạc thôi baby ơi!</div></div></div>
+      <div class='scene-card' onclick='jumpTo(37)'><div class='scene-num'>Cảnh 2</div><div class='scene-body'><div class='scene-title'>Khung 2: Cỗ Máy Monster Truck Drift Tóe Khói <span class='scene-time'>(00:37 • 22s)</span></div><div class='scene-desc'>Chưa thỏa mãn sự ngông cuồng, Oliver nhảy phắt lên chiếc xe tải quái vật Monster Truck mang số hiệu sáu chín. Cậu đạp lút ga bẻ lái nghiền nát bãi cát, cuốn tung từng đợt khói bụi mù mịt và thét lớn qua cửa sổ: Tránh hết ra nào! Khi tao đã vào guồng thì không ai cản nổi!</div></div></div>
+      <div class='scene-card' onclick='jumpTo(58)'><div class='scene-num'>Cảnh 3</div><div class='scene-body'><div class='scene-title'>Khung 3: Cú Phóng Scooter Liều Mạng Qua Biển Lửa <span class='scene-time'>(00:58 • 24s)</span></div><div class='scene-desc'>Màn trình diễn được đẩy lên đỉnh điểm điên rồ: Oliver Tree cưỡi chiếc xe trượt scooter mini tí hon phóng thẳng qua ngọn núi lửa rực cháy! Một cú bật nhảy xé toạc bầu trời hoàng hôn. Hai tay cậu bám chặt ghi đông, mặt tuy hoảng hốt tột cùng nhưng miệng vẫn hét vang trời đất: Bay cao nữa lên nào!</div></div></div>
+      <div class='scene-card' onclick='jumpTo(81)'><div class='scene-num'>Cảnh 4</div><div class='scene-body'><div class='scene-title'>Khung 4: Cú Tiếp Đất Đi Vào Lòng Đất & Nụ Cười Bất Tử <span class='scene-time'>(01:21 • 23s)</span></div><div class='scene-desc'>Và rồi, bùm một phát, chiếc scooter cắm ngược xuống cồn cát! Oliver Tree nằm chổng vó cả người vùi sâu trong cát nóng. Nhưng thay vì đau đớn, cậu giơ ngón tay cái cười tươi rói: Never give up baby! Vấp ngã chỉ làm cho màn biểu diễn này thêm phần huyền thoại mà thôi!</div></div></div>
+      <div class='scene-card' onclick='jumpTo(103)'><div class='scene-num'>Cảnh 5</div><div class='scene-body'><div class='scene-title'>Thẻ Kết: Bài Học Bất Hủ Của Kẻ Điên Rồ <span class='scene-time'>(01:43 • 14s)</span></div><div class='scene-desc'>Cuộc đời có thể xô ngã bạn một trăm lần, nhưng cách bạn ngẩng đầu cười khẩy sau cú ngã mới định nghĩa bạn là ai. Hãy kiên định, tự tin và biến mọi khó khăn thành màn biểu diễn rực rỡ nhất!</div></div></div>
+    </div>
+    <div class="actions-bar">
+      <a href="oliver_tree_when_im_down.mp4" download class="btn btn-primary">⬇️ Tải Video MP4 Về Máy</a>
+      <a href="02%20-%20Oliver%20Tree/xem_truyen_oliver_tree_when_im_down.html" class="btn btn-secondary">📖 Đọc Truyện Tranh Web Gốc</a>
+      <button onclick="toggleLoop()" id="btnLoop" class="btn btn-secondary">🔁 Bật Tự Động Lặp</button>
+    </div>
+  </div>
+  <script>
+    const player = document.getElementById("player");
+    function jumpTo(sec) { player.currentTime = sec; player.play(); }
+    function toggleLoop() { player.loop = !player.loop; document.getElementById("btnLoop").innerText = player.loop ? "🔁 Tắt Tự Động Lặp (Đang Bật)" : "🔁 Bật Tự Động Lặp"; document.getElementById("btnLoop").style.background = player.loop ? "#059669" : "#2d1844"; }
+  </script>
+</body>
+</html>

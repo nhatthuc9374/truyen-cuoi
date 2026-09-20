@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truyện Tranh Shin - Cậu Bé Bút Chì (Live-Action)</title>
+  <style>
+    :root {
+      --primary: #ef4444;
+      --primary-dark: #dc2626;
+      --accent: #f59e0b;
+      --yellow: #fde047;
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      background: linear-gradient(135deg, #0b0f19 0%, #1e1b4b 50%, #0f172a 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 16px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+      max-width: 900px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 6px 18px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #fde047, #f97316, #ef4444);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+    p.subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .controls {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      padding: 10px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      background: var(--card-bg);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn:hover {
+      background: var(--primary);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .btn.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--yellow);
+    }
+    .comic-grid {
+      width: 100%;
+      max-width: 1240px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 768px) {
+      .comic-grid { grid-template-columns: 1fr; }
+    }
+    .panel-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      transition: transform 0.2s;
+    }
+    .panel-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+    .panel-img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+      cursor: pointer;
+    }
+    .panel-info {
+      padding: 16px 20px;
+      background: rgba(15, 23, 42, 0.9);
+    }
+    .panel-info h3 {
+      font-size: 17px;
+      color: var(--yellow);
+      margin-bottom: 6px;
+    }
+    .panel-info p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    /* Modal Lightbox */
+    .lightbox {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.92);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+    }
+    .lightbox.active { display: flex; }
+    .lightbox-img {
+      max-width: 92vw;
+      max-height: 92vh;
+      border-radius: 12px;
+      object-fit: contain;
+      box-shadow: 0 0 50px rgba(0,0,0,0.9);
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 20px; right: 25px;
+      font-size: 34px;
+      color: #fff;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="badge">🖍️ Crayon Shin-chan Live-Action</div>
+    <h1>SHIN: CẬU BÉ BÚT CHÌ</h1>
+    <p class="subtitle">Bộ truyện tranh 4-koma phong cách người thật điện ảnh: Bánh gấu Chocobi, điệu múa lắc mông Buri Buri, chiến dịch trốn ớt chuông và tuyệt chiêu xoay thái dương của mẹ Misae!</p>
+  </header>
+
+  <div class="controls">
+    <button class="btn active" onclick="setViewMode('grid')">📑 Lưới 2x2</button>
+    <button class="btn" onclick="setViewMode('single')">📜 Xem Dọc Từng Khung</button>
+    <a href="xem_tong_hop_tat_ca_tranh.html" class="btn">🏠 Về Kho Tranh Tổng Hợp</a>
+  </div>
+
+  <main class="comic-grid" id="comicContainer">
+    <div class="panel-card">
+      <img src="images/shin_human_1.jpg" alt="Khung 1" class="panel-img" onclick="openLightbox(this.src)">
+      <div class="panel-info">
+        <h3>Khung 1: Chân Ái Chocobi — Bữa Tiệc Bánh Ngọt Cùng Bạch Tuyết</h3>
+        <p>Cậu bé Shin ôm trọn hộp bánh Chocobi cá sấu hồng cười thỏa mãn bên cạnh chú cún lông xù Bạch Tuyết (Shiro).</p>
+      </div>
+    </div>
+
+    <div class="panel-card">
+      <img src="images/shin_human_2.jpg" alt="Khung 2" class="panel-img" onclick="openLightbox(this.src)">
+      <div class="panel-info">
+        <h3>Khung 2: Vũ Điệu Buri Buri — Nỗi Ám Ảnh Của Mẹ Misae!</h3>
+        <p>Shin chổng mông lắc lư điệu múa Buri Buri huyền thoại khiến mẹ Misae tức xì khói đầu, hai mắt nảy lửa.</p>
+      </div>
+    </div>
+
+    <div class="panel-card">
+      <img src="images/shin_human_3.jpg" alt="Khung 3" class="panel-img" onclick="openLightbox(this.src)">
+      <div class="panel-info">
+        <h3>Khung 3: Cơn Ác Mộng Ớt Chuông — Chiến Dịch Tẩu Tán Dưới Gầm Bàn</h3>
+        <p>Shin bịt mồm kinh hoàng trước đĩa ớt chuông xanh, lén đút xuống gầm bàn nhưng bị Bạch Tuyết Shiro che mắt từ chối.</p>
+      </div>
+    </div>
+
+    <div class="panel-card">
+      <img src="images/shin_human_4.jpg" alt="Khung 4" class="panel-img" onclick="openLightbox(this.src)">
+      <div class="panel-info">
+        <h3>Khung 4: Thiết Đầu Công — Cú Xoay Thái Dương U Đầu Của Mẹ Misae</h3>
+        <p>Tuyệt chiêu xoay nắm đấm hai bên thái dương của mẹ Misae khiến Shin mọc cục u to tướng, ôm đầu la oai oái!</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close">&times;</button>
+    <img src="" alt="Zoom" class="lightbox-img" id="lightboxImg">
+  </div>
+
+  <script>
+    function setViewMode(mode) {
+      const container = document.getElementById('comicContainer');
+      const buttons = document.querySelectorAll('.controls .btn');
+      buttons[0].classList.toggle('active', mode === 'grid');
+      buttons[1].classList.toggle('active', mode === 'single');
+      
+      if (mode === 'single') {
+        container.style.gridTemplateColumns = '1fr';
+        container.style.maxWidth = '900px';
+      } else {
+        container.style.gridTemplateColumns = 'repeat(2, 1fr)';
+        container.style.maxWidth = '1240px';
+      }
+    }
+
+    function openLightbox(src) {
+      const lb = document.getElementById('lightbox');
+      const img = document.getElementById('lightboxImg');
+      img.src = src;
+      lb.classList.add('active');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"6dd1946828ce9ef2","type":"file","file":"canvas/Oliver Tree Cash Machine Canvas.canvas","x":560,"y":210,"width":400,"height":400},
+		{"id":"header_oliver","type":"text","text":"# 🛴🔥 Oliver Tree: Cú Nhảy Scooter Thế Kỷ (Live-Action Photorealistic Comic Canvas)\nThứ tự đọc: **Chân dung nhận diện ➜ Khung 1 (Họp báo) ➜ Khung 2 (Phóng xe) ➜ Khung 3 (Nổ tung trên không) ➜ Khung 4 (Hồi sinh ở bệnh viện)**","x":-880,"y":-180,"width":3280,"height":130,"color":"3"},
+		{"id":"oliver_portrait_node","type":"file","file":"oliver_tree_portrait.jpg","x":-880,"y":0,"width":800,"height":447},
+		{"id":"oliver_panel1_node","type":"file","file":"oliver_tree_1.jpg","x":0,"y":0,"width":800,"height":447},
+		{"id":"oliver_panel2_node","type":"file","file":"oliver_tree_2.jpg","x":900,"y":0,"width":800,"height":447},
+		{"id":"oliver_panel3_node","type":"file","file":"oliver_tree_3.jpg","x":0,"y":550,"width":800,"height":447},
+		{"id":"oliver_panel4_node","type":"file","file":"oliver_tree_4.jpg","x":900,"y":550,"width":800,"height":447},
+		{"id":"oliver_story_note","type":"file","file":"02 - Oliver Tree/🎭 Oliver Tree Và Cú Nhảy Thế Kỷ.md","x":1780,"y":0,"width":620,"height":1000},
+		{"id":"578bed36db6cc992","type":"file","file":"images/67_kid_panel4.svg","x":1100,"y":640,"width":400,"height":267}
+	],
+	"edges":[
+		{"id":"edge_oliver_portrait_1","fromNode":"oliver_portrait_node","fromSide":"right","toNode":"oliver_panel1_node","toSide":"left","label":"Đặc điểm nhận diện 🕶️"},
+		{"id":"edge_oliver_1_2","fromNode":"oliver_panel1_node","fromSide":"right","toNode":"oliver_panel2_node","toSide":"left","label":"Leo lên dốc phóng xe! 🚀"},
+		{"id":"edge_oliver_2_3","fromNode":"oliver_panel2_node","fromSide":"bottom","toNode":"oliver_panel3_node","toSide":"top","label":"Nổ tung giữa trời! BOOM! 💥"},
+		{"id":"edge_oliver_3_4","fromNode":"oliver_panel3_node","fromSide":"right","toNode":"oliver_panel4_node","toSide":"left","label":"Tái xuất bất tử: Life Goes On! 🎤👑"}
+	]
+}

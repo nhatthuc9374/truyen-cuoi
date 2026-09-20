@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"301963f559b43790","x":1691,"y":500,"width":400,"height":400,"type":"file","file":"canvas/Untitled.canvas"},
+		{"id":"header_ot_la","type":"text","text":"# 🛸🛴 Oliver Tree: Welcome to LA (Đại Náo Kinh Đô Điện Ảnh)\nThứ tự đọc: **Khung 1 (Scooter lướt Đại lộ danh vọng) ➜ Khung 2 (Gào thét phá nát hợp đồng hãng đĩa) ➜ Khung 3 (Tóc bay ngược gió quẩy nát sân vận động) ➜ Khung 4 (Chúa tể quần thụng thống trị đêm LA)**","x":0,"y":-180,"width":1700,"height":130,"color":"5"},
+		{"id":"ot_panel3","type":"file","file":"oliver_tree_la_3.jpg","x":0,"y":550,"width":800,"height":447},
+		{"id":"ot_panel4","type":"file","file":"oliver_tree_la_4.jpg","x":900,"y":550,"width":800,"height":447},
+		{"id":"ot_panel2","type":"file","file":"oliver_tree_la_2.jpg","x":900,"y":-115,"width":800,"height":447},
+		{"id":"ot_panel1","type":"file","file":"oliver_tree_la_1.jpg","x":50,"y":0,"width":800,"height":447},
+		{"id":"ot_story","type":"file","file":"02 - Oliver Tree/🎭 Oliver Tree Welcome To LA.md","x":1700,"y":0,"width":720,"height":1100}
+	],
+	"edges":[
+		{"id":"edge_ot_1_2","fromNode":"ot_panel1","fromSide":"right","toNode":"ot_panel2","toSide":"left","label":"Lướt scooter Walk of Fame ➜ Vào phòng họp hãng đĩa gào thét từ chối hợp đồng! 🎤"},
+		{"id":"edge_ot_2_3","fromNode":"ot_panel2","fromSide":"bottom","toNode":"ot_panel3","toSide":"top","label":"Nổi loạn cực độ ➜ Tóc bay ngược gió bùng nổ trên sân khấu LA! 🌪️"},
+		{"id":"edge_ot_3_4","fromNode":"ot_panel3","fromSide":"right","toNode":"ot_panel4","toSide":"left","label":"Thống trị kinh đô điện ảnh ➜ Quần thụng khổng lồ ngự trên ngai vàng ánh tím! 🛸"}
+	]
+}

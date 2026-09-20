@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"header_ot_ord","type":"text","text":"# 🛸🌀 Oliver Tree: Out of Ordinary (Kẻ Tuyên Chiến Với Sự Tầm Thường)\nThứ tự đọc: **Khung 1 (Bão màu sắc giáng xuống khu xám xịt) ➜ Khung 2 (Màn uốn dẻo gập ngược hai chân) ➜ Khung 3 (Tóc dựng đứng gào thét Rock n' Roll) ➜ Khung 4 (Đại nhạc hội bừng tỉnh & Vua Meme)**","x":0,"y":-180,"width":1700,"height":130,"color":"5"},
+		{"id":"ot_ord_p1","type":"file","file":"oliver_ordinary_real_1.jpg","x":0,"y":0,"width":800,"height":447},
+		{"id":"ot_ord_p2","type":"file","file":"oliver_ordinary_real_2.jpg","x":900,"y":0,"width":800,"height":447},
+		{"id":"ot_ord_p3","type":"file","file":"oliver_ordinary_real_3.jpg","x":0,"y":550,"width":800,"height":447},
+		{"id":"ot_ord_p4","type":"file","file":"oliver_ordinary_real_4.jpg","x":900,"y":550,"width":800,"height":447},
+		{"id":"ot_ord_story","type":"file","file":"02 - Oliver Tree/🎭 Oliver Tree Out Of Ordinary.md","x":1780,"y":0,"width":620,"height":1100}
+	],
+	"edges":[
+		{"id":"edge_ord_1_2","fromNode":"ot_ord_p1","fromSide":"right","toNode":"ot_ord_p2","toSide":"left","label":"Khu phố xám xịt ➜ Màn uốn dẻo quậy banh nóc! 🤸‍♂️"},
+		{"id":"edge_ord_2_3","fromNode":"ot_ord_p2","fromSide":"bottom","toNode":"ot_ord_p3","toSide":"top","label":"Nổi loạn đường phố ➜ Tóc dựng đứng bùng nổ Rock n' Roll! ⚡"},
+		{"id":"edge_ord_3_4","fromNode":"ot_ord_p3","fromSide":"right","toNode":"ot_ord_p4","toSide":"left","label":"Đánh thức thị trấn ➜ Đăng quang Vua Meme Out of Ordinary! 👑"}
+	]
+}
