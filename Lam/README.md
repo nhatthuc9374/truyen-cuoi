@@ -38,6 +38,7 @@ Lam/
 | STT | Tên truyện | Tệp HTML | Thể loại / Ghi chú |
 | :---: | :--- | :--- | :--- |
 | 1 | 🍃 [Cô Bị Kẹt Bụng Bầu Vào Thanh Giường Y Tế](co_ket_bung_bau_vao_thanh_giuong_y_te.html) | [`co_ket_bung_bau_vao_thanh_giuong_y_te.html`](co_ket_bung_bau_vao_thanh_giuong_y_te.html) | Truyện tranh 4 khung, Kỷ niệm đời thường, Ấm áp |
+| 2 | 🍃 [Cô Giáo Bị Kẹt Bụng Bầu Vào Ghế](co_giao_ket_bung_bau_vao_ghe.html) | [`co_giao_ket_bung_bau_vao_ghe.html`](co_giao_ket_bung_bau_vao_ghe.html) | Truyện tranh 4 khung, Kỷ niệm học đường, Hài hước |
 
 ---
 

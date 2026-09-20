@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wallBg3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EFF6FF"/>
+      <stop offset="65%" stop-color="#DBEAFE"/>
+      <stop offset="65%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <filter id="actionGlow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#38BDF8" flood-opacity="0.6"/>
+    </filter>
+    <filter id="dropShadow3" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Panel Border & Background -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#wallBg3)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Floor separator line -->
+  <line x1="5" y1="292" x2="645" y2="292" stroke="#94A3B8" stroke-width="2"/>
+
+  <!-- Teacher Desk on Left -->
+  <g id="teacher-desk-side" transform="translate(40, 195)">
+    <rect x="15" y="25" width="80" height="15" rx="3" fill="#B45309" stroke="#451A03" stroke-width="2.5"/>
+    <rect x="20" y="40" width="10" height="75" fill="#92400E"/>
+    <rect x="75" y="40" width="10" height="75" fill="#92400E"/>
+  </g>
+
+  <!-- Teacher Stepping Free, Belly Unjammed! (Center-Left) -->
+  <g id="teacher-freed" transform="translate(140, 110)">
+    <!-- Floor Shadow -->
+    <ellipse cx="80" cy="205" rx="70" ry="14" fill="#000000" opacity="0.2"/>
+
+    <!-- Dress flowing freely now -->
+    <path d="M50 75 Q75 60 100 75 L150 200 L25 200 Z" fill="#FDA4AF" stroke="#E11D48" stroke-width="2.5"/>
+
+    <!-- Giant belly smoothly sliding out - Sparkling with relief! -->
+    <ellipse cx="110" cy="140" rx="68" ry="58" fill="#FB7185" stroke="#E11D48" stroke-width="3" filter="url(#actionGlow3)"/>
+    <path d="M75 110 Q115 90 150 120" stroke="#FFE4E6" stroke-width="5" fill="none" opacity="0.6"/>
+
+    <!-- Relief / Free motion swooshes around belly -->
+    <path d="M180 110 Q195 135 180 160" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+    <path d="M190 120 Q205 135 190 150" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Hands gently caressing the freed belly in relief -->
+    <path d="M50 85 Q35 125 75 145" fill="none" stroke="#FDA4AF" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="75" cy="145" r="9" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M95 85 Q135 120 125 145" fill="none" stroke="#FDA4AF" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="125" cy="145" r="9" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- Teacher Head - Sweet Relieved Smile -->
+    <circle cx="75" cy="42" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <circle cx="75" cy="18" r="12" fill="#3B2005"/>
+    <path d="M48 42 C45 15 105 15 102 42 Z" fill="#3B2005"/>
+
+    <!-- Straightened glasses -->
+    <rect x="62" y="38" width="11" height="8" rx="1.5" fill="none" stroke="#DC2626" stroke-width="1.8"/>
+    <rect x="78" y="38" width="11" height="8" rx="1.5" fill="none" stroke="#DC2626" stroke-width="1.8"/>
+    <line x1="73" y1="42" x2="78" y2="42" stroke="#DC2626" stroke-width="1.8"/>
+
+    <!-- Relieved eyes & warm smiling mouth -->
+    <path d="M63 42 Q68 37 73 42" fill="none" stroke="#1E293B" stroke-width="2" stroke-linecap="round"/>
+    <path d="M79 42 Q84 37 89 42" fill="none" stroke="#1E293B" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="58" cy="48" r="4" fill="#FCA5A5"/><circle cx="92" cy="48" r="4" fill="#FCA5A5"/>
+    <path d="M69 51 Q76 58 83 51" fill="none" stroke="#E11D48" stroke-width="2.5"/>
+    <text x="100" y="28" font-size="14">✨</text>
+  </g>
+
+  <!-- The Smart Front Student Moving Chair Away (Center-Right) -->
+  <g id="hero-student" transform="translate(320, 160)">
+    <!-- Floor Shadow -->
+    <ellipse cx="65" cy="155" rx="55" ry="12" fill="#000000" opacity="0.25"/>
+
+    <!-- Motion lines of pulling chair backward -->
+    <path d="M125 100 L155 100" stroke="#0284C7" stroke-width="3" stroke-linecap="round"/>
+    <path d="M130 115 L165 115" stroke="#0284C7" stroke-width="3" stroke-linecap="round"/>
+    <path d="M125 130 L155 130" stroke="#0284C7" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Wooden Chair being pulled back -->
+    <g transform="translate(10, 20)">
+      <rect x="5" y="45" width="65" height="12" rx="3" fill="#9A3412" stroke="#431407" stroke-width="2"/>
+      <rect x="10" y="57" width="9" height="55" fill="#7C2D12"/>
+      <rect x="52" y="57" width="9" height="55" fill="#7C2D12"/>
+      <rect x="5" y="-30" width="10" height="75" rx="2" fill="#9A3412" stroke="#431407" stroke-width="2"/>
+      <rect x="50" y="-30" width="10" height="75" rx="2" fill="#9A3412" stroke="#431407" stroke-width="2"/>
+      <rect x="5" y="-25" width="55" height="12" rx="2" fill="#B45309"/>
+    </g>
+
+    <!-- Student's Hands Firmly & Carefully Gripping the Chair Back -->
+    <path d="M45 40 Q25 15 18 10" fill="none" stroke="#38BDF8" stroke-width="11" stroke-linecap="round"/>
+    <circle cx="18" cy="10" r="7" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M55 40 Q45 15 35 8" fill="none" stroke="#38BDF8" stroke-width="11" stroke-linecap="round"/>
+    <circle cx="35" cy="8" r="7" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- Student Body in Action Stance -->
+    <ellipse cx="65" cy="65" rx="20" ry="26" fill="#38BDF8" stroke="#0284C7" stroke-width="2.5"/>
+    <rect x="52" y="85" width="11" height="40" fill="#1E3A8A" rx="3"/>
+    <rect x="67" y="85" width="11" height="40" fill="#1E3A8A" rx="3"/>
+
+    <!-- Student Head & Confident Enthusiastic Expression -->
+    <circle cx="65" cy="25" r="20" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M46 22 C44 5 85 5 84 22 Z" fill="#1E293B"/>
+    <!-- Focused, enthusiastic eyes -->
+    <ellipse cx="58" cy="23" rx="3" ry="4" fill="#1E293B"/>
+    <circle cx="59" cy="22" r="1.2" fill="#FFFFFF"/>
+    <ellipse cx="70" cy="23" rx="3" ry="4" fill="#1E293B"/>
+    <circle cx="71" cy="22" r="1.2" fill="#FFFFFF"/>
+    <!-- Confident helpful smile -->
+    <path d="M60 32 Q65 37 71 32" fill="none" stroke="#DC2626" stroke-width="2"/>
+    <circle cx="53" cy="28" r="3" fill="#FDA4AF"/>
+    <circle cx="77" cy="28" r="3" fill="#FDA4AF"/>
+  </g>
+
+  <!-- Big Pop Effect: "RA RỒI NÈ!" -->
+  <g filter="url(#dropShadow3)">
+    <polygon points="260,80 275,65 295,75 310,60 325,75 345,65 340,85 355,100 338,110 345,130 325,120 310,135 295,120 275,130 280,110 260,98" fill="#FEF08A" stroke="#F59E0B" stroke-width="2.5"/>
+    <text x="308" y="103" font-family="'Impact', Arial Black, sans-serif" font-size="14" font-weight="900" fill="#B45309" text-anchor="middle">★ THOÁT KẸT! ★</text>
+  </g>
+
+  <!-- Speech Bubble: Front Student -->
+  <g filter="url(#dropShadow3)">
+    <path d="M380 30 Q380 10 450 10 L590 10 Q630 10 630 35 Q630 65 560 65 L510 65 L490 90 L500 65 L420 65 Q380 65 380 30 Z" fill="#F0F9FF" stroke="#0284C7" stroke-width="2.5"/>
+    <text x="505" y="32" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#0369A1" text-anchor="middle">"Cô nghiêng người một xíu ạ..."</text>
+    <text x="505" y="52" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#0F172A" text-anchor="middle">"1, 2, 3... Ra rồi nè cô ơi! 🌟"</text>
+  </g>
+
+  <!-- Speech Bubble: Teacher -->
+  <g filter="url(#dropShadow3)">
+    <path d="M20 30 Q20 10 90 10 L230 10 Q260 10 260 35 Q260 65 190 65 L150 65 L140 90 L145 65 L60 65 Q20 65 20 30 Z" fill="#FFF1F2" stroke="#F43F5E" stroke-width="2"/>
+    <text x="140" y="32" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#BE123C" text-anchor="middle">"Phù... May quá em ơi!"</text>
+    <text x="140" y="50" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#9F1239" text-anchor="middle">"Bụng cô thoát kẹt rồi! 😅❤️"</text>
+  </g>
+
+  <!-- Panel Header Banner -->
+  <rect x="20" y="16" width="320" height="32" rx="8" fill="#1E293B"/>
+  <text x="180" y="37" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#38BDF8" text-anchor="middle">★ CẢNH 3: BẠN BÀN ĐẦU GIẢI CỨU KỊP THỜI!</text>
+
+  <!-- Caption at bottom -->
+  <rect x="25" y="402" width="600" height="34" rx="8" fill="#0F172A" opacity="0.85"/>
+  <text x="325" y="424" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#F8FAFC" text-anchor="middle">Bạn học sinh ngồi bàn đầu nhanh trí chạy lên, kéo lùi ghế để gỡ chiếc bụng bầu an toàn!</text>
+</svg>

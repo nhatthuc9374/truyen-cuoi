@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍃 Cô Giáo Kẹt Bụng Bầu Vào Ghế - Truyện Cười Lam</title>
+  <style>
+    :root {
+      --primary: #10b981;
+      --primary-hover: #059669;
+      --primary-glow: rgba(16, 185, 129, 0.35);
+      --accent: #f43f5e;
+      --accent-hover: #e11d48;
+      --accent-glow: rgba(244, 63, 94, 0.3);
+      --gold: #fbbf24;
+      --sky: #38bdf8;
+      --bg: #0b111e;
+      --card-bg: #131f33;
+      --card-hover: #192842;
+      --card-border: #233554;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.6;
+    }
+
+    /* Top Navigation */
+    .nav-bar {
+      width: 100%;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--card-border);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.45rem 0.95rem;
+      border-radius: 9999px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      transition: all 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      background: rgba(16, 185, 129, 0.22);
+      transform: translateY(-1px);
+      color: #fff;
+    }
+
+    .nav-btn.secondary {
+      color: #fbbf24;
+      background: rgba(251, 191, 36, 0.1);
+      border-color: rgba(251, 191, 36, 0.25);
+    }
+
+    .nav-btn.secondary:hover {
+      background: rgba(251, 191, 36, 0.22);
+      color: #fff;
+    }
+
+    .badge-path {
+      background: #1e293b;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-family: monospace;
+    }
+
+    /* Header & Hero */
+    header {
+      text-align: center;
+      margin: 2.5rem 1rem 1.5rem 1rem;
+      max-width: 950px;
+    }
+
+    .story-tag-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, #10b981, #0ea5e9);
+      color: #ffffff;
+      padding: 0.4rem 1.25rem;
+      border-radius: 9999px;
+      font-weight: 800;
+      font-size: 0.825rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 4px 18px var(--primary-glow);
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 900;
+      line-height: 1.25;
+      background: linear-gradient(to right, #34d399, #38bdf8, #f472b6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    .story-lead-quote {
+      background: linear-gradient(145deg, rgba(16, 185, 129, 0.08), rgba(244, 63, 94, 0.08));
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 5px solid #10b981;
+      border-radius: 14px;
+      padding: 1.25rem 1.5rem;
+      font-size: 1.05rem;
+      color: #e2e8f0;
+      max-width: 860px;
+      margin: 1rem auto 2rem auto;
+      text-align: left;
+      line-height: 1.7;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .story-lead-quote strong {
+      color: #34d399;
+    }
+
+    /* Characters Profile Section */
+    .char-section {
+      width: 100%;
+      max-width: 1050px;
+      margin: 0 auto 2.5rem auto;
+      padding: 0 1.25rem;
+    }
+
+    .section-headline {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #f1f5f9;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .char-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .char-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 1.25rem 1.4rem;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .char-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--primary);
+      box-shadow: 0 12px 24px -8px var(--primary-glow);
+    }
+
+    .char-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.65rem;
+    }
+
+    .char-avatar {
+      font-size: 2rem;
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      background: rgba(16, 185, 129, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .char-title h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .char-title span {
+      font-size: 0.82rem;
+      color: #34d399;
+      font-weight: 600;
+    }
+
+    .char-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Media Box / Interactive Audio bar */
+    .interactive-bar {
+      width: 100%;
+      max-width: 1050px;
+      background: linear-gradient(135deg, #162438, #111b2b);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 1.25rem 1.5rem;
+      margin: 0 auto 2.5rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .audio-title-group {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .audio-icon {
+      font-size: 1.8rem;
+    }
+
+    .audio-title {
+      font-weight: 700;
+      font-size: 1rem;
+      color: #fff;
+    }
+
+    .audio-subtitle {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .sound-buttons {
+      display: flex;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-sound {
+      padding: 0.55rem 1.1rem;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      color: #34d399;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.875rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      transition: all 0.2s;
+    }
+
+    .btn-sound:hover {
+      background: var(--primary);
+      color: #0b111e;
+      box-shadow: 0 4px 14px var(--primary-glow);
+      transform: scale(1.03);
+    }
+
+    .btn-sound.applause {
+      background: rgba(251, 191, 36, 0.15);
+      border-color: rgba(251, 191, 36, 0.35);
+      color: #fbbf24;
+    }
+
+    .btn-sound.applause:hover {
+      background: var(--gold);
+      color: #0b111e;
+      box-shadow: 0 4px 14px rgba(251, 191, 36, 0.4);
+    }
+
+    /* View Controls */
+    .controls-wrapper {
+      width: 100%;
+      max-width: 1050px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 0 auto 1.75rem auto;
+      padding: 0 1.25rem;
+    }
+
+    .view-mode-buttons {
+      display: flex;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-mode {
+      padding: 0.55rem 1.15rem;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      background: var(--card-bg);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .btn-mode:hover {
+      border-color: var(--primary);
+      color: #34d399;
+      transform: translateY(-2px);
+    }
+
+    .btn-mode.active {
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: #ffffff;
+      border-color: #10b981;
+      box-shadow: 0 4px 15px var(--primary-glow);
+    }
+
+    /* Comic Container */
+    .comic-container {
+      width: 100%;
+      max-width: 1050px;
+      padding: 0 1.25rem;
+      margin-bottom: 2.5rem;
+      transition: all 0.3s ease;
+    }
+
+    /* Grid Mode */
+    .grid-mode {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+      gap: 1.75rem;
+    }
+
+    /* Strip Mode */
+    .strip-mode {
+      display: flex;
+      flex-direction: column;
+      gap: 2.25rem;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    /* Slide Mode */
+    .slide-mode .comic-card {
+      display: none;
+    }
+
+    .slide-mode .comic-card.current {
+      display: flex;
+      animation: fadeIn 0.3s ease;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* Comic Card */
+    .comic-card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 1.4rem;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.25s ease;
+    }
+
+    .comic-card:hover {
+      border-color: rgba(16, 185, 129, 0.6);
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.65);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .panel-tag {
+      font-size: 0.8rem;
+      font-weight: 800;
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      padding: 0.3rem 0.75rem;
+      border-radius: 8px;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+    }
+
+    .panel-tag.danger {
+      background: rgba(244, 63, 94, 0.15);
+      color: #fb7185;
+      border-color: rgba(244, 63, 94, 0.35);
+    }
+
+    .panel-tag.highlight {
+      background: rgba(251, 191, 36, 0.15);
+      color: #fbbf24;
+      border-color: rgba(251, 191, 36, 0.35);
+    }
+
+    .panel-caption {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .img-wrapper {
+      width: 100%;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #1e293b;
+      margin-bottom: 1.25rem;
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .img-wrapper img {
+      width: 100%;
+      height: auto;
+      max-height: 480px;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .img-wrapper:hover img {
+      transform: scale(1.02);
+    }
+
+    .zoom-hint {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(4px);
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .dialogue-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .narrative-box {
+      background: rgba(15, 23, 42, 0.6);
+      border-left: 4px solid #38bdf8;
+      padding: 0.95rem 1.1rem;
+      border-radius: 0 10px 10px 0;
+      font-size: 0.92rem;
+      color: #cbd5e1;
+      line-height: 1.65;
+    }
+
+    .dialogue-box {
+      background: rgba(15, 23, 42, 0.75);
+      border-left: 4px solid var(--primary);
+      padding: 0.95rem 1.1rem;
+      border-radius: 0 10px 10px 0;
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+
+    .dialogue-box.danger {
+      border-left-color: var(--accent);
+      background: rgba(244, 63, 94, 0.08);
+    }
+
+    .dialogue-box.success {
+      border-left-color: #34d399;
+      background: rgba(16, 185, 129, 0.08);
+    }
+
+    .dialogue-box.student {
+      border-left-color: #fbbf24;
+      background: rgba(251, 191, 36, 0.08);
+    }
+
+    .speaker-name {
+      font-weight: 800;
+      font-size: 0.92rem;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .speaker-name.teacher {
+      color: #f472b6;
+    }
+
+    .speaker-name.student {
+      color: #fbbf24;
+    }
+
+    .speaker-name.class {
+      color: #38bdf8;
+    }
+
+    .speaker-name.alert {
+      color: #fb7185;
+    }
+
+    /* Slideshow navigation */
+    .slide-nav {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      gap: 1.25rem;
+      margin: 1.5rem auto;
+      width: 100%;
+    }
+
+    .slide-mode-active .slide-nav {
+      display: flex;
+    }
+
+    .btn-slide {
+      padding: 0.6rem 1.25rem;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      color: #f8fafc;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+
+    .btn-slide:hover:not(:disabled) {
+      background: var(--primary);
+      color: #0b111e;
+      border-color: var(--primary);
+    }
+
+    .btn-slide:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .slide-counter {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #34d399;
+      min-width: 90px;
+      text-align: center;
+    }
+
+    /* Full Strip Gallery Card */
+    .full-strip-box {
+      width: 100%;
+      max-width: 1050px;
+      margin: 1.5rem auto 2.5rem auto;
+      padding: 0 1.25rem;
+    }
+
+    .full-strip-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .full-strip-card img {
+      width: 100%;
+      max-width: 950px;
+      border-radius: 12px;
+      margin-top: 1rem;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    /* Moral Section */
+    .moral-section {
+      width: 100%;
+      max-width: 1050px;
+      background: linear-gradient(145deg, #131f33, #0f1929);
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 0 auto 2.5rem auto;
+      border: 1px dashed rgba(16, 185, 129, 0.4);
+    }
+
+    .moral-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+
+    .moral-item {
+      background: rgba(11, 17, 30, 0.7);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 1.25rem;
+    }
+
+    .moral-item h4 {
+      color: #34d399;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .moral-item p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Original Prompt Box */
+    .original-box {
+      width: 100%;
+      max-width: 1050px;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 1.5rem 1.75rem;
+      margin: 0 auto 2.5rem auto;
+    }
+
+    .original-box h4 {
+      font-size: 1rem;
+      color: #fbbf24;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .original-quote {
+      font-style: italic;
+      color: #94a3b8;
+      background: #0b111e;
+      padding: 1rem 1.25rem;
+      border-radius: 10px;
+      border-left: 3px solid #fbbf24;
+      font-size: 0.92rem;
+    }
+
+    /* Reaction & Interactive Footer */
+    .reaction-section {
+      width: 100%;
+      max-width: 1050px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 1.75rem 2rem;
+      margin: 0 auto 3rem auto;
+      text-align: center;
+    }
+
+    .reaction-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1.25rem;
+    }
+
+    .reaction-btn {
+      padding: 0.75rem 1.4rem;
+      background: #0b111e;
+      border: 1px solid var(--card-border);
+      border-radius: 9999px;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+
+    .reaction-btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      border-color: var(--primary);
+      box-shadow: 0 6px 18px var(--primary-glow);
+    }
+
+    .reaction-count {
+      background: rgba(16, 185, 129, 0.2);
+      color: #34d399;
+      font-size: 0.85rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: 9999px;
+    }
+
+    /* Lightbox Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(8px);
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .modal.show {
+      display: flex;
+      animation: modalFade 0.2s ease;
+    }
+
+    @keyframes modalFade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .modal-content {
+      max-width: 95vw;
+      max-height: 90vh;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+      background: #fff;
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      background: none;
+      border: none;
+      outline: none;
+      transition: color 0.2s;
+    }
+
+    .close-modal:hover {
+      color: var(--accent);
+    }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      border-top: 1px solid var(--card-border);
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      margin-top: auto;
+      background: #080d16;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.85rem; }
+      .grid-mode { grid-template-columns: 1fr; }
+      .interactive-bar { flex-direction: column; align-items: stretch; }
+      .sound-buttons { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <div class="nav-bar">
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn">
+        <span>←</span> Kho Truyện Lam
+      </a>
+      <a href="../index.html" class="nav-btn">
+        <span>🏠</span> Trang Chủ Dự Án
+      </a>
+      <a href="co_ket_bung_bau_vao_thanh_giuong_y_te.html" class="nav-btn">
+        <span>🏥</span> Truyện Kẹt Giường Y Tế
+      </a>
+      <a href="../Nhan/index.html" class="nav-btn secondary">
+        <span>🎭</span> Kho của Nhân
+      </a>
+    </div>
+    <span class="badge-path">Lam/co_giao_ket_bung_bau_vao_ghe.html</span>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="story-tag-badge">🍃 TRUYỆN TRANH HỌC ĐƯỜNG • BỤC GIẢNG &amp; LỚP HỌC 🏫</div>
+    <h1>Cô Giáo Bị Kẹt Bụng Bầu Vào Ghế</h1>
+    
+    <div class="story-lead-quote">
+      <strong>Kỷ niệm học trò "dở khóc dở cười" mà ấm áp:</strong> Cô giáo mang bụng bầu siêu to khổng lồ, khi xoay người lách qua bàn thì chiếc bụng bầu bị kẹt cứng ngắc vào khe ghế. Cả lớp còn đang ngơ ngác chưa hiểu chuyện gì thì bạn học sinh ngồi ngay bàn đầu đã nhanh trí chạy lên giải cứu chiếc bụng bầu an toàn!
+    </div>
+  </header>
+
+  <!-- Giới thiệu nhân vật -->
+  <section class="char-section">
+    <div class="section-headline">
+      <span>👥</span> Nhân Vật Trong Câu Chuyện
+    </div>
+    <div class="char-grid">
+      <div class="char-card">
+        <div class="char-header">
+          <div class="char-avatar">👩‍🏫</div>
+          <div class="char-title">
+            <h3>Cô Giáo</h3>
+            <span>Mẹ Bầu Tháng Cuối</span>
+          </div>
+        </div>
+        <p class="char-desc">
+          Dạy môn Ngữ văn với chiếc bụng bầu tròn xoe to vượt mặt núng nính. Đang dịu dàng giảng bài, lúc xoay người lách qua bàn thì chiếc bụng mắc kẹt vào ghế gỗ bục giảng!
+        </p>
+      </div>
+
+      <div class="char-card">
+        <div class="char-header">
+          <div class="char-avatar">👦</div>
+          <div class="char-title">
+            <h3>Bạn Ngồi Bàn Đầu</h3>
+            <span>Cứu Tinh Nhanh Trí &amp; Ga Lăng</span>
+          </div>
+        </div>
+        <p class="char-desc">
+          Người đầu tiên phát hiện sự cố của cô. Không ngần ngại chạy vút lên bục giảng, hai tay giữ ghế nhẹ nhàng kéo lùi ra sau giải cứu chiếc bụng bầu trong nháy mắt!
+        </p>
+      </div>
+
+      <div class="char-card">
+        <div class="char-header">
+          <div class="char-avatar">🎒</div>
+          <div class="char-title">
+            <h3>Tôi &amp; Cả Lớp</h3>
+            <span>Hội Học Trò Nhí Nhảnh</span>
+          </div>
+        </div>
+        <p class="char-desc">
+          Ban đầu ngơ ngác tưởng cô đang tập thể dục, sau khi nhận ra sự cố liền vỡ òa thán phục và đồng thanh vỗ tay rầm rộ hoan hô người bạn bàn đầu!
+        </p>
+      </div>
+
+      <div class="char-card">
+        <div class="char-header">
+          <div class="char-avatar">👶</div>
+          <div class="char-title">
+            <h3>Em Bé Trong Bụng</h3>
+            <span>Siêu Quậy Nhí</span>
+          </div>
+        </div>
+        <p class="char-desc">
+          Quẫy nhiệt tình trong bụng mẹ, làm chiếc bụng to vượt mặt và là lý do khiến mẹ kẹt ghế dở khóc dở cười!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thanh hiệu ứng âm thanh tương tác (Web Audio API) -->
+  <div class="interactive-bar">
+    <div class="audio-title-group">
+      <div class="audio-icon">🎧</div>
+      <div>
+        <div class="audio-title">Hiệu Ứng Âm Thanh Học Đường</div>
+        <div class="audio-subtitle">Mô phỏng âm thanh chân thực bằng công nghệ Web Audio</div>
+      </div>
+    </div>
+    <div class="sound-buttons">
+      <button class="btn-sound" onclick="playChairSlide()">
+        <span>🪑</span> Tiếng Kéo Ghế Gỗ
+      </button>
+      <button class="btn-sound applause" onclick="playApplause()">
+        <span>👏</span> Cả Lớp Vỗ Tay Rầm Rộ!
+      </button>
+      <button class="btn-sound" onclick="playCheerFanfare()">
+        <span>🎺</span> Nhạc Reo Hoan Hô
+      </button>
+      <button class="btn-sound" onclick="speakStorySummary()">
+        <span>🗣️</span> Nghe Tóm Tắt Truyện
+      </button>
+    </div>
+  </div>
+
+  <!-- Bộ điều khiển chế độ xem -->
+  <div class="controls-wrapper">
+    <div class="section-headline" style="margin-bottom: 0;">
+      <span>🎨</span> Trọn Bộ 4 Phân Cảnh Comic
+    </div>
+    <div class="view-mode-buttons">
+      <button class="btn-mode active" id="btnGrid" onclick="switchView('grid')">
+        <span>🖼️</span> Lưới 4 Khung
+      </button>
+      <button class="btn-mode" id="btnStrip" onclick="switchView('strip')">
+        <span>📜</span> Cuộn Dọc Webtoon
+      </button>
+      <button class="btn-mode" id="btnSlide" onclick="switchView('slide')">
+        <span>📽️</span> Trình Chiếu Từng Cảnh
+      </button>
+    </div>
+  </div>
+
+  <!-- Điều hướng Slide (chỉ hiện khi ở chế độ trình chiếu) -->
+  <div class="slide-nav" id="slideNav">
+    <button class="btn-slide" id="btnPrev" onclick="prevSlide()">
+      <span>←</span> Cảnh Trước
+    </button>
+    <div class="slide-counter" id="slideCounter">Cảnh 1 / 4</div>
+    <button class="btn-slide" id="btnNext" onclick="nextSlide()">
+      Cảnh Sau <span>→</span>
+    </button>
+  </div>
+
+  <!-- Danh sách 4 phân cảnh Comic -->
+  <main class="comic-container grid-mode" id="comicContainer">
+
+    <!-- Cảnh 1 -->
+    <article class="comic-card current" data-slide="1">
+      <div class="card-header">
+        <span class="panel-tag">🌟 CẢNH 1: TIẾT HỌC CHĂM CHÚ</span>
+        <span class="panel-caption">Bục Giảng &amp; Chiếc Bụng Tròn Xoe</span>
+      </div>
+      <div class="img-wrapper" onclick="openLightbox('images/co_ket_ghe_panel_1.svg')">
+        <img src="images/co_ket_ghe_panel_1.svg" alt="Cảnh 1: Cô giáo bụng bầu siêu to">
+        <div class="zoom-hint">🔍 Bấm để phóng to</div>
+      </div>
+      <div class="dialogue-wrap">
+        <div class="narrative-box">
+          📖 <strong>Dẫn truyện:</strong> Hôm ấy, tôi và cả lớp đang ngồi ngay ngắn, chăm chú lắng nghe cô giáo giảng bài Ngữ văn. Cô giáo đang mang thai ở những tháng cuối, chiếc bụng bầu to vượt mặt tròn xoe như giấu cả quả dưa hấu khổng lồ trong chiếc váy bầu hồng xinh xắn. Dù đi lại khệ nệ nhưng ánh mắt cô lúc nào cũng hiền từ truyền cảm hứng cho cả lớp.
+        </div>
+        <div class="dialogue-box">
+          <div class="speaker-name teacher">👩‍🏫 Cô giáo (tay xoa bụng, cười hiền):</div>
+          <em>“Các em chép bài cẩn thận nhé... Mấy hôm nay em bé trong bụng cô quẫy nhiệt tình quá trời, chiếc bụng to vượt mặt luôn rồi này! ❤️”</em>
+        </div>
+        <div class="dialogue-box student">
+          <div class="speaker-name student">👦 Bạn bàn đầu (ngước nhìn cô ngưỡng mộ):</div>
+          <em>“Bụng cô to tròn thế này chắc em bé sau này khỏe mạnh và kháu khỉnh lắm cô nhỉ!”</em>
+        </div>
+      </div>
+    </article>
+
+    <!-- Cảnh 2 -->
+    <article class="comic-card" data-slide="2">
+      <div class="card-header">
+        <span class="panel-tag danger">⚡ CẢNH 2: XOAY NGƯỜI ĐỊNH MỆNH</span>
+        <span class="panel-caption">Bụng Bầu Kẹt Cứng Vào Ghế!</span>
+      </div>
+      <div class="img-wrapper" onclick="openLightbox('images/co_ket_ghe_panel_2.svg')">
+        <img src="images/co_ket_ghe_panel_2.svg" alt="Cảnh 2: Xoay người bị kẹt bụng bầu vào ghế">
+        <div class="zoom-hint">🔍 Bấm để phóng to</div>
+      </div>
+      <div class="dialogue-wrap">
+        <div class="narrative-box">
+          📖 <strong>Dẫn truyện:</strong> Giảng xong đoạn văn, cô giáo bước về bục giảng để ngồi nghỉ chân. Thế nhưng, trong lúc xoay người lách qua khe hẹp giữa mép bàn và chiếc ghế gỗ tựa lưng, sự cố hy hữu đã xảy ra: Chiếc bụng bầu siêu to khổng lồ của cô bị <strong>KẸT CỨNG NGẮC</strong> vào thành ghế! Tiến thoái lưỡng nan, mặt mũi cô đỏ bừng toát mồ hôi hột, trong khi cả lớp phía dưới vẫn ngơ ngác chưa hiểu chuyện gì.
+        </div>
+        <div class="dialogue-box danger">
+          <div class="speaker-name alert">😱 Cô giáo (hai tay ôm ghì bụng bầu, dở khóc dở cười):</div>
+          <em>“ÚI TRỜI ĐẤT ƠI! SAO TỰ NHIÊN KẸT CỨNG NGẮC THẾ NÀY?! Bụng to quá, xoay người một cái là mắc kẹt luôn vào ghế rồi... Không nhúc nhích ra được nữa!”</em>
+        </div>
+        <div class="dialogue-box">
+          <div class="speaker-name class">🎒 Cả lớp (xì xào ngơ ngác):</div>
+          <em>“Ủa, cô sao vậy ta?”, “Cô đang đứng làm gì mà mặt đỏ bừng thế kia?”, “Hình như cô vướng cái gì rồi tụi mày ơi!”</em>
+        </div>
+      </div>
+    </article>
+
+    <!-- Cảnh 3 -->
+    <article class="comic-card" data-slide="3">
+      <div class="card-header">
+        <span class="panel-tag highlight">💡 CẢNH 3: CỨU NGUY KỊP THỜI</span>
+        <span class="panel-caption">Bạn Bàn Đầu Ra Tay Giải Cứu!</span>
+      </div>
+      <div class="img-wrapper" onclick="openLightbox('images/co_ket_ghe_panel_3.svg')">
+        <img src="images/co_ket_ghe_panel_3.svg" alt="Cảnh 3: Bạn bàn đầu nhanh trí giải cứu">
+        <div class="zoom-hint">🔍 Bấm để phóng to</div>
+      </div>
+      <div class="dialogue-wrap">
+        <div class="narrative-box">
+          📖 <strong>Dẫn truyện:</strong> Giữa lúc cả lớp còn đang hoang mang, bạn học sinh ngồi ngay bàn đầu đã cực kỳ tinh ý phát hiện ra cô giáo đang bị kẹt chiếc bụng bầu. Không chần chừ, bạn bật dậy chạy thoăn thoắt lên bục giảng. Bằng sự khéo léo, bạn hai tay bám chắc vào lưng ghế gỗ, nhẹ nhàng kéo lùi ghế ra sau tạo khoảng trống, đồng thời hướng dẫn cô nghiêng nhẹ người để trượt chiếc bụng ra ngoài an toàn!
+        </div>
+        <div class="dialogue-box student">
+          <div class="speaker-name student">👦 Bạn bàn đầu (hai tay giữ chặt ghế kéo lùi):</div>
+          <em>“Cô ơi cô đứng yên nhé, đừng lo! Để em kéo lùi chiếc ghế ra sau cho cô! Cô từ từ nghiêng người sang bên này một xíu ạ... 1... 2... 3... Ra rồi nè cô ơi!”</em>
+        </div>
+        <div class="dialogue-box success">
+          <div class="speaker-name teacher">👩‍🏫 Cô giáo (thở phào nhẹ nhõm vỗ về bụng bầu):</div>
+          <em>“Phù... May quá em ơi! Cảm ơn em nhiều lắm, chứ không cô đứng kẹt dính ở đây tới hết tiết mất thôi! 😅❤️”</em>
+        </div>
+      </div>
+    </article>
+
+    <!-- Cảnh 4 -->
+    <article class="comic-card" data-slide="4">
+      <div class="card-header">
+        <span class="panel-tag">🎉 CẢNH 4: HOAN HÔ ANH HÙNG NHÍ</span>
+        <span class="panel-caption">Cô Cảm Ơn &amp; Cả Lớp Vỗ Tay!</span>
+      </div>
+      <div class="img-wrapper" onclick="openLightbox('images/co_ket_ghe_panel_4.svg')">
+        <img src="images/co_ket_ghe_panel_4.svg" alt="Cảnh 4: Cô giáo cảm ơn bạn bàn đầu">
+        <div class="zoom-hint">🔍 Bấm để phóng to</div>
+      </div>
+      <div class="dialogue-wrap">
+        <div class="narrative-box">
+          📖 <strong>Dẫn truyện:</strong> Chiếc bụng bầu đã được giải phóng an toàn tuyệt đối, không một vết trầy xước! Cô giáo nở nụ cười rạng rỡ, xoa đầu và công khai cảm ơn sự ga lăng, tinh tế của bạn bàn đầu trước lớp. Cả lớp tôi đồng thanh nổ tung một tràng pháo tay rầm rộ khiến bạn bàn đầu mặt đỏ ửng, gãi tai cười toe toét!
+        </div>
+        <div class="dialogue-box success">
+          <div class="speaker-name teacher">👩‍🏫 Cô giáo (đặt tay lên vai bạn học sinh):</div>
+          <em>“Cô cảm ơn em rất nhiều nhé! Vừa nhanh trí, vừa tốt bụng lại cực kỳ ga lăng! Em bé trong bụng cũng gửi lời cảm ơn sâu sắc đến anh hai bàn đầu nhé! Cả lớp cho bạn một tràng pháo tay thật lớn nào! 🎉❤️”</em>
+        </div>
+        <div class="dialogue-box student">
+          <div class="speaker-name student">👦 Bạn bàn đầu (mặt ửng hồng giơ ngón like):</div>
+          <em>“Dạ không có gì đâu cô ơi! Cô và em bé an toàn là em mừng lắm rồi ạ! Hi hi! 👍🥰”</em>
+        </div>
+        <div class="dialogue-box">
+          <div class="speaker-name class">👏 Cả lớp (đồng thanh vỗ tay rầm rộ):</div>
+          <em>“BỐP! BỐP! BỐP! 🎉👏 Hoan hô bạn bàn đầu! 10 điểm tinh tế và ga lăng! Xứng danh cứu tinh lớp mình!”</em>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Trọn bộ tranh toàn cảnh Full Strip -->
+  <section class="full-strip-box">
+    <div class="full-strip-card">
+      <div class="section-headline" style="justify-content: center;">
+        <span>🖼️</span> Trọn Bộ Truyện Tranh Liền Mạch (Full Comic Strip)
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.25rem;">
+        Bức tranh tổng hợp trọn vẹn 4 giai đoạn của sự cố kẹt ghế bục giảng:
+      </p>
+      <img src="images/co_ket_ghe_full.svg" alt="Trọn bộ truyện tranh Cô Giáo Bị Kẹt Bụng Bầu Vào Ghế" onclick="openLightbox('images/co_ket_ghe_full.svg')">
+    </div>
+  </section>
+
+  <!-- Bài học & Góc cười -->
+  <section class="moral-section">
+    <div class="section-headline">
+      <span>💬</span> Bài Học &amp; Góc Cười Rút Ra
+    </div>
+    <div class="moral-grid">
+      <div class="moral-item">
+        <h4><span>🤰</span> Bụng Bầu Siêu To &amp; Bất Ngờ</h4>
+        <p>Mang thai ở những tháng cuối với chiếc bụng bầu vượt mặt luôn đi kèm những tình huống dở khóc dở cười nhưng vô cùng đáng yêu của người phụ nữ trên bục giảng.</p>
+      </div>
+      <div class="moral-item">
+        <h4><span>💡</span> Tinh Ý &amp; Nhanh Nhẹn</h4>
+        <p>Bạn học sinh bàn đầu xứng đáng nhận điểm 10 vì sự quan sát nhạy bén, không ngần ngại chạy lên hỗ trợ cô giáo ngay khi cô gặp tình huống bối rối.</p>
+      </div>
+      <div class="moral-item">
+        <h4><span>❤️</span> Tình Cảm Cô Trò Thiêng Liêng</h4>
+        <p>Khoảnh khắc cô trò cùng cười xòa và lời cảm ơn chân thành từ đáy lòng làm cho tiết học trở thành một kỷ niệm học đường vô giá khó quên!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nhật ký kỷ niệm gốc -->
+  <section class="original-box">
+    <h4><span>📝</span> Nhật Ký Kỷ Niệm Học Trò Gốc Của Tác Giả Lam</h4>
+    <div class="original-quote">
+      "Tôi ở trong lớp học, cô [có bầu rất to], xoay người thì bụng bầu của cô bị kẹt lại. Học sinh chưa biết gì thì bạn ngồi bàn đầu đã giúp cô gỡ bụng bầu ra khỏi ghế. Cô giáo cảm ơn bạn ấy rất nhiều."
+    </div>
+  </section>
+
+  <!-- Nút Thả Cảm Xúc (Reactions) -->
+  <section class="reaction-section">
+    <div class="section-headline" style="justify-content: center;">
+      <span>💖</span> Thả Cảm Xúc Cho Tiết Học
+    </div>
+    <p style="color: var(--text-muted); font-size: 0.95rem;">Bạn thấy sự nhanh trí của bạn bàn đầu thế nào? Bấm để ủng hộ cô giáo và bạn ấy nhé!</p>
+    <div class="reaction-buttons">
+      <button class="reaction-btn" onclick="addReaction('haha')">
+        <span>😂 Cười té ghế</span>
+        <span class="reaction-count" id="count-haha">156</span>
+      </button>
+      <button class="reaction-btn" onclick="addReaction('heart')">
+        <span>❤️ Tình cô trò ấm áp</span>
+        <span class="reaction-count" id="count-heart">312</span>
+      </button>
+      <button class="reaction-btn" onclick="addReaction('student')">
+        <span>👏 Bàn đầu 10 điểm</span>
+        <span class="reaction-count" id="count-student">248</span>
+      </button>
+      <button class="reaction-btn" onclick="addReaction('teacher')">
+        <span>👩‍🏫 Cô giáo đáng yêu</span>
+        <span class="reaction-count" id="count-teacher">180</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal Phóng To Ảnh -->
+  <div id="imageModal" class="modal" onclick="closeLightbox()">
+    <button class="close-modal" onclick="closeLightbox()">&times;</button>
+    <img class="modal-content" id="modalImg" alt="Phóng to tranh">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">← Trở về Kho Lam</a>
+      <a href="co_ket_bung_bau_vao_thanh_giuong_y_te.html">🏥 Cô Kẹt Giường Y Tế</a>
+      <a href="../index.html">🏠 Trang Chủ Dự Án</a>
+      <a href="../Nhan/index.html">🎭 Kho Truyện của Nhân</a>
+    </div>
+    <p>Dự án Truyện Cười &copy; 2026 - Tác giả: <strong>Lam</strong> | Câu chuyện: <em>Cô Giáo Bị Kẹt Bụng Bầu Vào Ghế</em></p>
+  </footer>
+
+  <!-- Script Tương Tác -->
+  <script>
+    /* Chuyển đổi View Mode */
+    let currentSlideIndex = 1;
+    const totalSlides = 4;
+
+    function switchView(mode) {
+      const container = document.getElementById('comicContainer');
+      const nav = document.getElementById('slideNav');
+      const btnGrid = document.getElementById('btnGrid');
+      const btnStrip = document.getElementById('btnStrip');
+      const btnSlide = document.getElementById('btnSlide');
+
+      btnGrid.classList.remove('active');
+      btnStrip.classList.remove('active');
+      btnSlide.classList.remove('active');
+      document.body.classList.remove('slide-mode-active');
+
+      container.className = 'comic-container';
+
+      if (mode === 'grid') {
+        container.classList.add('grid-mode');
+        btnGrid.classList.add('active');
+        nav.style.display = 'none';
+      } else if (mode === 'strip') {
+        container.classList.add('strip-mode');
+        btnStrip.classList.add('active');
+        nav.style.display = 'none';
+      } else if (mode === 'slide') {
+        container.classList.add('slide-mode');
+        btnSlide.classList.add('active');
+        document.body.classList.add('slide-mode-active');
+        nav.style.display = 'flex';
+        showSlide(currentSlideIndex);
+      }
+    }
+
+    function showSlide(index) {
+      currentSlideIndex = index;
+      const cards = document.querySelectorAll('.comic-card');
+      cards.forEach((card, idx) => {
+        if (idx + 1 === index) {
+          card.classList.add('current');
+        } else {
+          card.classList.remove('current');
+        }
+      });
+
+      document.getElementById('slideCounter').textContent = `Cảnh ${index} / ${totalSlides}`;
+      document.getElementById('btnPrev').disabled = (index === 1);
+      document.getElementById('btnNext').disabled = (index === totalSlides);
+    }
+
+    function nextSlide() {
+      if (currentSlideIndex < totalSlides) {
+        showSlide(currentSlideIndex + 1);
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlideIndex > 1) {
+        showSlide(currentSlideIndex - 1);
+      }
+    }
+
+    // Điều khiển bằng phím mũi tên bàn phím
+    document.addEventListener('keydown', function(e) {
+      if (document.body.classList.contains('slide-mode-active')) {
+        if (e.key === 'ArrowRight' || e.key === 'PageDown') {
+          nextSlide();
+        } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+          prevSlide();
+        }
+      }
+    });
+
+    /* Lightbox Modal */
+    function openLightbox(src) {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImg');
+      modalImg.src = src;
+      modal.classList.add('show');
+    }
+
+    function closeLightbox() {
+      document.getElementById('imageModal').classList.remove('show');
+    }
+
+    /* Web Audio API Synthesizers */
+    let audioCtx = null;
+    function getAudioContext() {
+      if (!audioCtx) {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        audioCtx = new AudioContext();
+      }
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+      return audioCtx;
+    }
+
+    // Tiếng Kéo Ghế Gỗ "Kéttttt"
+    function playChairSlide() {
+      try {
+        const ctx = getAudioContext();
+        const now = ctx.currentTime;
+
+        // Tạo tiếng ma sát gỗ sàn
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(120, now);
+        osc.frequency.linearRampToValueAtTime(180, now + 0.15);
+        osc.frequency.linearRampToValueAtTime(90, now + 0.35);
+
+        gain.gain.setValueAtTime(0.4, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.35);
+
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start(now);
+        osc.stop(now + 0.35);
+      } catch (e) {
+        console.warn('Audio not supported:', e);
+      }
+    }
+
+    // Tiếng Vỗ Tay Rầm Rộ "Bốp Bốp Bốp!"
+    function playApplause() {
+      try {
+        const ctx = getAudioContext();
+        const now = ctx.currentTime;
+        for (let i = 0; i < 8; i++) {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'triangle';
+          const startTime = now + i * 0.07;
+          osc.frequency.setValueAtTime(300 + Math.random() * 200, startTime);
+          osc.frequency.exponentialRampToValueAtTime(80, startTime + 0.05);
+
+          gain.gain.setValueAtTime(0.5, startTime);
+          gain.gain.exponentialRampToValueAtTime(0.01, startTime + 0.05);
+
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start(startTime);
+          osc.stop(startTime + 0.05);
+        }
+      } catch (e) {
+        console.warn(e);
+      }
+    }
+
+    // Nhạc Reo Hoan Hô (Fanfare)
+    function playCheerFanfare() {
+      try {
+        const ctx = getAudioContext();
+        const notes = [329.63, 392.00, 523.25, 659.25, 783.99]; // E4 - G4 - C5 - E5 - G5
+        const now = ctx.currentTime;
+
+        notes.forEach((freq, i) => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(freq, now + i * 0.09);
+
+          gain.gain.setValueAtTime(0.35, now + i * 0.09);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.09 + 0.3);
+
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start(now + i * 0.09);
+          osc.stop(now + i * 0.09 + 0.3);
+        });
+      } catch (e) {
+        console.warn(e);
+      }
+    }
+
+    // Đọc Tóm Tắt (Web Speech Synthesis)
+    function speakStorySummary() {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const text = "Truyện tranh học đường: Cô giáo bị kẹt bụng bầu vào ghế. Cô giáo mang thai tháng cuối bụng to vượt mặt, khi xoay người lách qua bàn trên bục giảng thì chiếc bụng bị kẹt cứng vào ghế. Bạn học sinh ngồi bàn đầu đã nhanh trí chạy lên kéo lùi chiếc ghế giải cứu cô an toàn và được cả lớp hoan hô nhiệt liệt!";
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'vi-VN';
+        utterance.rate = 1.0;
+        window.speechSynthesis.speak(utterance);
+      } else {
+        alert("Trình duyệt của bạn chưa hỗ trợ giọng đọc tiếng Việt!");
+      }
+    }
+
+    /* Hệ Thống Cảm Xúc (Reactions) */
+    function addReaction(type) {
+      const el = document.getElementById(`count-${type}`);
+      if (el) {
+        let current = parseInt(el.textContent, 10) || 0;
+        el.textContent = current + 1;
+        createFloatingEmoji(type);
+      }
+    }
+
+    function createFloatingEmoji(type) {
+      const emojiMap = {
+        haha: '😂',
+        heart: '❤️',
+        student: '👏',
+        teacher: '👩‍🏫'
+      };
+      const emoji = document.createElement('div');
+      emoji.textContent = emojiMap[type] || '✨';
+      emoji.style.position = 'fixed';
+      emoji.style.left = (Math.random() * 60 + 20) + 'vw';
+      emoji.style.bottom = '20px';
+      emoji.style.fontSize = '2.5rem';
+      emoji.style.zIndex = '9999';
+      emoji.style.pointerEvents = 'none';
+      emoji.style.transition = 'all 1.2s ease-out';
+      emoji.style.transform = 'translateY(0) scale(1)';
+      emoji.style.opacity = '1';
+
+      document.body.appendChild(emoji);
+
+      requestAnimationFrame(() => {
+        emoji.style.transform = `translateY(-${Math.random() * 250 + 200}px) scale(1.5) rotate(${(Math.random() - 0.5) * 60}deg)`;
+        emoji.style.opacity = '0';
+      });
+
+      setTimeout(() => {
+        if (emoji.parentNode) {
+          emoji.parentNode.removeChild(emoji);
+        }
+      }, 1200);
+    }
+  </script>
+</body>
+</html>
