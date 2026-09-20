@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <!-- Ocean & Tropical Sunset Lighting -->
+    <linearGradient id="oceanSunset" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="40%" stop-color="#F472B6"/>
+      <stop offset="75%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#FB923C"/>
+    </linearGradient>
+
+    <!-- Waves / Ocean Water -->
+    <linearGradient id="oceanWater" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="50%" stop-color="#0369A1"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+
+    <!-- Pink Limousine Boat Paint -->
+    <linearGradient id="pinkLimo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6"/>
+      <stop offset="35%" stop-color="#EC4899"/>
+      <stop offset="70%" stop-color="#DB2777"/>
+      <stop offset="100%" stop-color="#9D174D"/>
+    </linearGradient>
+
+    <!-- Retro 90s Windbreaker Jacket (Teal & Purple & Pink) -->
+    <linearGradient id="retroJacket" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2DD4BF"/>
+      <stop offset="30%" stop-color="#06B6D4"/>
+      <stop offset="70%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#D946EF"/>
+    </linearGradient>
+
+    <!-- Realistic Human Caucasian Skin (Oliver Tree) -->
+    <linearGradient id="oliverSkin" x1="20%" y1="10%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#FFF7ED"/>
+      <stop offset="35%" stop-color="#FFEDD5"/>
+      <stop offset="70%" stop-color="#FDBA74"/>
+      <stop offset="100%" stop-color="#C2410C"/>
+    </linearGradient>
+
+    <!-- Bowl Cut Hair Dark Brown -->
+    <linearGradient id="bowlHair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#451A03"/>
+      <stop offset="50%" stop-color="#291205"/>
+      <stop offset="100%" stop-color="#0F0501"/>
+    </linearGradient>
+
+    <filter id="oliverDrop1" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="6" dy="10" stdDeviation="8" flood-color="#000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND: BẦU TRỜI HOÀNG HÔN NHIỆT ĐỚI SIÊU THỰC -->
+  <rect x="0" y="0" width="1200" height="520" fill="url(#oceanSunset)"/>
+
+  <!-- MẶT BIỂN XANH NGỌC & SÓNG NƯỚC RẼ SÓNG -->
+  <rect x="0" y="500" width="1200" height="300" fill="url(#oceanWater)"/>
+  <!-- Bọt sóng trắng do thuyền rẽ nước tốc độ cao -->
+  <path d="M 0 540 Q 300 480 600 550 Q 900 490 1200 560" fill="none" stroke="#FFF" stroke-width="8" opacity="0.8"/>
+  <path d="M 100 580 Q 400 530 700 600 Q 1000 540 1200 610" fill="none" stroke="#E0F2FE" stroke-width="6" opacity="0.6"/>
+
+  <!-- TIỀN ĐÔ LA BAY PHẤP PHỚI TUNG TÓE TRÊN KHÔNG TRUNG -->
+  <g opacity="0.9">
+    <rect x="180" y="140" width="55" height="30" rx="2" fill="#86EFAC" stroke="#15803D" stroke-width="1.5" transform="rotate(25, 180, 140)"/>
+    <text x="185" y="160" font-family="'Courier New'" font-size="12" font-weight="bold" fill="#14532D" transform="rotate(25, 180, 140)">$100</text>
+
+    <rect x="320" y="90" width="55" height="30" rx="2" fill="#86EFAC" stroke="#15803D" stroke-width="1.5" transform="rotate(-35, 320, 90)"/>
+    <text x="325" y="110" font-family="'Courier New'" font-size="12" font-weight="bold" fill="#14532D" transform="rotate(-35, 320, 90)">$100</text>
+
+    <rect x="940" y="110" width="55" height="30" rx="2" fill="#86EFAC" stroke="#15803D" stroke-width="1.5" transform="rotate(15, 940, 110)"/>
+    <rect x="1050" y="180" width="55" height="30" rx="2" fill="#86EFAC" stroke="#15803D" stroke-width="1.5" transform="rotate(-20, 1050, 180)"/>
+    <rect x="120" y="320" width="55" height="30" rx="2" fill="#86EFAC" stroke="#15803D" stroke-width="1.5" transform="rotate(45, 120, 320)"/>
+  </g>
+
+  <!-- TIÊU ĐỀ KHUNG TRUYỆN -->
+  <g transform="translate(40, 30)">
+    <rect x="0" y="0" width="620" height="46" rx="10" fill="#DB2777" stroke="#FDE047" stroke-width="3" filter="url(#oliverDrop1)"/>
+    <text x="310" y="32" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="900" fill="#FFF" text-anchor="middle" letter-spacing="1">KHUNG 1: CHIẾC LIMOUSINE LAI THUYỀN HỒNG!</text>
+  </g>
+
+  <!-- ==================== CHIẾC XE LIMOUSINE LAI DU THUYỀN MÀU HỒNG (PINK CAR-BOAT) ==================== -->
+  <g id="pinkLimoBoat" transform="translate(180, 320)" filter="url(#oliverDrop1)">
+    <!-- Mũi thuyền nhọn lướt sóng -->
+    <path d="M 50 200 L 180 60 L 680 60 L 780 160 L 720 250 L 80 250 Z" fill="url(#pinkLimo)" stroke="#831843" stroke-width="5"/>
+    
+    <!-- Kính chắn gió phía trước của xe limo -->
+    <polygon points="210,60 260,-20 450,-20 480,60" fill="#38BDF8" opacity="0.75" stroke="#FFF" stroke-width="3"/>
+    
+    <!-- Dải chrome sáng bóng chạy dọc thân xe limo -->
+    <line x1="80" y1="140" x2="760" y2="140" stroke="#FFF" stroke-width="6"/>
+    <!-- Đèn pha xe hơi cổ điển mạ vàng -->
+    <circle cx="100" cy="120" r="18" fill="#FEF08A" stroke="#CA8A04" stroke-width="3"/>
+
+    <!-- Vô lăng thuyền bằng gỗ mạ vàng -->
+    <circle cx="340" cy="20" r="26" fill="none" stroke="#78350F" stroke-width="6"/>
+    <line x1="340" y1="-6" x2="340" y2="46" stroke="#78350F" stroke-width="4"/>
+    <line x1="314" y1="20" x2="366" y2="20" stroke="#78350F" stroke-width="4"/>
+
+    <!-- Động cơ phản lực phun nước phía sau -->
+    <path d="M 720 200 Q 820 240 880 320" fill="none" stroke="#E0F2FE" stroke-width="16" stroke-linecap="round"/>
+  </g>
+
+  <!-- ==================== OLIVER TREE: ĐẦU BÁT ÚP, KÍNH MẮT RUỒI, ÁO GIÓ 90S ==================== -->
+  <g id="oliverCaptain" transform="translate(480, 140)" filter="url(#oliverDrop1)">
+    <!-- Áo khoác gió retro thể thao 90s rộng thùng thình (Oversized Windbreaker) -->
+    <path d="M 40 380 L 80 230 Q 200 200 320 230 L 350 380 L 370 540 L 20 540 Z" fill="url(#retroJacket)" stroke="#0F172A" stroke-width="4"/>
+    <!-- Mảng phối màu hình học tím & hồng đặc trưng của Oliver -->
+    <polygon points="120,230 200,340 280,230" fill="#EC4899" stroke="#DB2777" stroke-width="2"/>
+    <polygon points="80,230 120,380 40,380" fill="#2DD4BF"/>
+    <polygon points="320,230 280,380 350,380" fill="#2DD4BF"/>
+
+    <!-- Hai tay cầm vô lăng lái chiếc thuyền lướt sóng ngầu lòi -->
+    <path d="M 70 260 Q 10 320 -40 310" fill="none" stroke="url(#oliverSkin)" stroke-width="24" stroke-linecap="round"/>
+    <path d="M 330 260 Q 380 310 340 320" fill="none" stroke="url(#oliverSkin)" stroke-width="24" stroke-linecap="round"/>
+
+    <!-- CỔ VÀ GƯƠNG MẶT THƯƠNG HIỆU CỦA OLIVER TREE -->
+    <path d="M 165 160 L 160 230 Q 200 245 240 230 L 235 160 Z" fill="url(#oliverSkin)"/>
+    <path d="M 135 75 C 135 10, 265 10, 265 75 C 265 140, 240 185, 200 195 C 160 185, 135 140, 135 75 Z" fill="url(#oliverSkin)" stroke="#9A3412" stroke-width="2"/>
+
+    <!-- ==================== QUẢ ĐẦU BÁT ÚP HUYỀN THOẠI (BOWL CUT) ==================== -->
+    <!-- Tóc cắt bằng chằn chặn quanh đầu đúng chuẩn bát úp -->
+    <path d="M 125 70 C 115 -25, 285 -25, 275 70 C 275 90, 260 90, 250 85 C 230 85, 210 85, 200 85 C 190 85, 170 85, 150 85 C 140 90, 125 90, 125 70 Z" fill="url(#bowlHair)" stroke="#000" stroke-width="3"/>
+    <!-- Vệt cắt ngang bằng tưng của tóc mái bát úp -->
+    <line x1="128" y1="85" x2="272" y2="85" stroke="#000" stroke-width="4"/>
+
+    <!-- ==================== CẶP KÍNH RÂM MÀU ĐỎ MẮT RUỒI (RED RETRO SUNGLASSES) ==================== -->
+    <g transform="translate(145, 90)">
+      <!-- Tròng kính trái bầu dục đỏ rực -->
+      <ellipse cx="25" cy="18" rx="24" ry="16" fill="#DC2626" stroke="#991B1B" stroke-width="3"/>
+      <!-- Tròng kính phải -->
+      <ellipse cx="85" cy="18" rx="24" ry="16" fill="#DC2626" stroke="#991B1B" stroke-width="3"/>
+      <!-- Cầu nối giữa 2 tròng kính -->
+      <line x1="49" y1="18" x2="61" y2="18" stroke="#000" stroke-width="3"/>
+      <!-- Vệt phản chiếu ánh sáng trắng trên kính -->
+      <polygon points="12,10 24,6 18,26 8,24" fill="#FFF" opacity="0.6"/>
+      <polygon points="72,10 84,6 78,26 68,24" fill="#FFF" opacity="0.6"/>
+    </g>
+
+    <!-- Sống mũi cao và ria mép ngố tàu -->
+    <path d="M 200 115 L 198 145 L 206 148" fill="none" stroke="#9A3412" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- NỤ CƯỜI NHĂN NHỞ CƯỜI KHẨU KHỈNH NGẠO NGHỄ -->
+    <g transform="translate(170, 150)">
+      <ellipse cx="30" cy="15" rx="24" ry="15" fill="#7F1D1D" stroke="#451A03" stroke-width="2"/>
+      <path d="M 12 10 Q 30 6 48 10 L 45 16 Q 30 14 15 16 Z" fill="#FFF"/>
+      <!-- Vệt răng cửa đặc trưng -->
+      <line x1="30" y1="8" x2="30" y2="16" stroke="#E2E8F0" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- ==================== LỜI BÀI HÁT "CASH MACHINE" ==================== -->
+  <g transform="translate(180, 580)" filter="url(#oliverDrop1)">
+    <path d="M 0 0 L 820 0 C 835 0, 845 10, 845 25 L 845 145 C 845 160, 835 170, 820 170 L 480 170 L 450 205 L 460 170 L 25 170 C 10 170, 0 160, 0 145 Z" fill="#0F172A" stroke="#F472B6" stroke-width="3"/>
+    <text x="422" y="38" font-family="'Impact', Arial, sans-serif" font-size="24" font-weight="900" fill="#F472B6" text-anchor="middle">🛥️ OLIVER TREE HÁT VANG TRÊN BIỂN:</text>
+    <text x="422" y="74" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="900" fill="#FEF08A" text-anchor="middle">"SHINY LIKE A LIMOUSINE, YOU'RE SPENDING LIKE A CASH MACHINE!" 💵✨</text>
+    <text x="422" y="104" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#F1F5F9" text-anchor="middle">Lái chiếc du thuyền limousine hồng bóng bẩy, ném tiền đô la bay phấp phới qua mặt biển!</text>
+    <text x="422" y="136" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="900" fill="#38BDF8" text-anchor="middle">Châm biếm sâu cay thói khoe mẽ của giới nhà giàu: 'Tiền nhiều để làm gì khi tâm hồn rỗng tuếch?!' 💸🔥</text>
+  </g>
+
+  <!-- SFX -->
+  <text x="820" y="280" font-family="'Impact', Arial" font-size="38" font-style="italic" fill="#FEF08A" stroke="#DB2777" stroke-width="1.5">LƯỚT SÓNG! 🛥️💨</text>
+</svg>

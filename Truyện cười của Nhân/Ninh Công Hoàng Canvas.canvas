@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"header_ninh","type":"text","text":"# 🪳🩴 Ninh Công Hoàng: Bí Kíp Sinh Tồn Bất Ổn (Realistic Comic Canvas)\nThứ tự đọc: **Khung 1 (Giảng giải) ➜ Khung 2 (Rút dép tổ ong) ➜ Khung 3 (Gián cất cánh bay!) ➜ Khung 4 (Cố thủ nóc tủ)**","x":0,"y":-180,"width":1700,"height":130,"color":"2"},
+		{"id":"ninh_panel1_node","type":"file","file":"ninh_cong_hoang_1.jpg","x":0,"y":0,"width":800,"height":447},
+		{"id":"ninh_panel2_node","type":"file","file":"ninh_cong_hoang_2.jpg","x":900,"y":0,"width":800,"height":447},
+		{"id":"ninh_panel3_node","type":"file","file":"ninh_cong_hoang_3.jpg","x":0,"y":620,"width":800,"height":447},
+		{"id":"ninh_panel4_node","type":"file","file":"ninh_cong_hoang_4.jpg","x":900,"y":620,"width":800,"height":447},
+		{"id":"ninh_story_note","type":"file","file":"03 - Meme & Hiện Tượng Mạng/🎭 Ninh Công Hoàng Và Bí Kíp Sinh Tồn.md","x":1780,"y":0,"width":620,"height":1153}
+	],
+	"edges":[
+		{"id":"edge_ninh_1_2","fromNode":"ninh_panel1_node","fromSide":"right","toNode":"ninh_panel2_node","toSide":"left","label":"Rút dép tổ ong tiếp cận 🩴"},
+		{"id":"edge_ninh_2_3","fromNode":"ninh_panel2_node","fromSide":"bottom","toNode":"ninh_panel3_node","toSide":"top","label":"Gián cất cánh bay! Á Á Á! 🪳💨"},
+		{"id":"edge_ninh_3_4","fromNode":"ninh_panel3_node","fromSide":"right","toNode":"ninh_panel4_node","toSide":"left","label":"Trèo tót lên nóc tủ cố thủ! 😂"}
+	]
+}

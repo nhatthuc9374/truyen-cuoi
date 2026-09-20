@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Hoạt Hình: Shin — Cậu Bé Bút Chì (Crayon Shin-chan Special)</title>
+  <style>
+    :root {
+      --primary: #ef4444;
+      --primary-dark: #dc2626;
+      --accent: #f59e0b;
+      --gold: #fbbf24;
+      --bg: #140b18;
+      --card-bg: #221226;
+      --text: #fdf2f8;
+      --text-muted: #cbd5e1;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      background: radial-gradient(circle at top, #2d1233 0%, #140b18 70%, #0a050d 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 16px 60px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+      max-width: 960px;
+    }
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #ef4444, #f59e0b);
+      color: white;
+      padding: 6px 20px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+    }
+    h1 {
+      font-size: 34px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #f87171, #fbbf24, #34d399);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      background: #000;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7), 0 0 0 2px rgba(251, 191, 36, 0.35);
+    }
+    video {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      display: block;
+      outline: none;
+    }
+    .scene-navigator {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      width: 100%;
+    }
+    .scene-btn {
+      background: var(--card-bg);
+      border: 1px solid rgba(251, 191, 36, 0.2);
+      border-radius: 10px;
+      padding: 12px 14px;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .scene-btn:hover {
+      background: #36173d;
+      border-color: var(--gold);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(239, 68, 68, 0.25);
+    }
+    .scene-btn .time {
+      font-size: 11px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .scene-btn .title {
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .details-card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+    .details-card h2 {
+      font-size: 20px;
+      color: var(--gold);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .grid-story {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .story-box {
+      background: rgba(0, 0, 0, 0.25);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .story-box h3 {
+      font-size: 14px;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+    .story-box p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text);
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 13.5px;
+      font-weight: 600;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: all 0.2s;
+    }
+    .btn-link:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="badge">🖍️ Siêu Phẩm Hoạt Hình Điện Ảnh 2.5D</div>
+    <h1>SHIN — CẬU BÉ BÚT CHÌ</h1>
+    <p class="subtitle">Chuyển thể điện ảnh trực tiếp từ bộ truyện tranh hài 4 khung phong cách người thật với lồng tiếng đa nhân vật sống động và kỹ xảo hoạt hình chân thực.</p>
+  </header>
+
+  <div class="container">
+    <!-- VIDEO PLAYER -->
+    <div class="video-wrapper">
+      <video id="shinVideo" controls poster="images/shin_intro.jpg">
+        <source src="shin_cau_be_but_chi_hoan_hao.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video HTML5.
+      </video>
+    </div>
+
+    <!-- SCENE TIMESTAMPS -->
+    <div class="scene-navigator">
+      <button class="scene-btn" onclick="seekTo(0)">
+        <span class="time">00:00 • 15s</span>
+        <span class="title">🎬 0. Thẻ Mở Đầu</span>
+      </button>
+      <button class="scene-btn" onclick="seekTo(14.2)">
+        <span class="time">00:14 • 17s</span>
+        <span class="title">🍪 1. Chân Ái Chocobi</span>
+      </button>
+      <button class="scene-btn" onclick="seekTo(30.4)">
+        <span class="time">00:30 • 28s</span>
+        <span class="title">🍑 2. Điệu Múa Buri Buri</span>
+      </button>
+      <button class="scene-btn" onclick="seekTo(57.6)">
+        <span class="time">00:57 • 24s</span>
+        <span class="title">🫑 3. Ác Mộng Ớt Chuông</span>
+      </button>
+      <button class="scene-btn" onclick="seekTo(80.8)">
+        <span class="time">01:20 • 23s</span>
+        <span class="title">💥 4. Xoay Thái Dương</span>
+      </button>
+      <button class="scene-btn" onclick="seekTo(103.0)">
+        <span class="time">01:43 • 16.5s</span>
+        <span class="title">🏆 5. 3 Bài Học Hài Hước</span>
+      </button>
+    </div>
+
+    <!-- DETAILS CARD -->
+    <div class="details-card">
+      <h2>📖 Kịch Bản Chi Tiết & Diễn Biến 4 Khung Hình</h2>
+      
+      <div class="grid-story">
+        <div class="story-box">
+          <h3>Khung 1: Chocobi & Bạch Tuyết</h3>
+          <p>Shin 5 tuổi ôm trọn hộp bánh quy Chocobi cá sấu hồng giòn rụm cùng chú cún lông xù Bạch Tuyết (Shiro) ngồi vẫy đuôi hóng hớt xin ăn.</p>
+        </div>
+        <div class="story-box">
+          <h3>Khung 2: Vũ Điệu Buri Buri</h3>
+          <p>Ăn xong bánh thừa năng lượng, Shin múa mông lắc lư trêu ngươi mẹ Misae khiến mẹ tức xì khói đầu với nộ khí xung thiên.</p>
+        </div>
+        <div class="story-box">
+          <h3>Khung 3: Ác Mộng Ớt Chuông</h3>
+          <p>Khắc tinh đĩa ớt chuông xanh xuất hiện! Shin bí mật luồn miếng ớt xuống gầm bàn cho chó Shiro nhưng bị cún cưng che mắt từ chối.</p>
+        </div>
+        <div class="story-box">
+          <h3>Khung 4: Thiết Đầu Công U Đầu</h3>
+          <p>Tuyệt kỹ gia truyền xoay thái dương 300 vòng/phút của mẹ Misae giáng xuống, Shin la oai oái mọc cục u to đùng như quả ổi!</p>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="05 - Truyện Tranh & Dân Gian/Truyện Tranh Shin - Cậu Bé Bút Chì.md" class="btn-link">📄 Mở Ghi Chú Kịch Bản</a>
+        <a href="xem_truyen_shin.html" class="btn-link">🖼️ Xem Web Truyện Tranh</a>
+        <a href="xem_tong_hop_tat_ca_tranh.html" class="btn-link">🗺️ Tổng Kho Tranh & Video</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const video = document.getElementById('shinVideo');
+    function seekTo(sec) {
+      video.currentTime = sec;
+      video.play();
+    }
+  </script>
+</body>
+</html>

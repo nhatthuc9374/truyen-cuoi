@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <!-- Cinematic Lighting & Realistic Human Skin Gradients -->
+    <radialGradient id="studioAmbient" cx="45%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="60%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <radialGradient id="warmKeyLight" cx="35%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#EAB308" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Realistic Human Asian Skin Gradients -->
+    <linearGradient id="faceSkin" x1="20%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#FCE7D0"/>
+      <stop offset="25%" stop-color="#F3C39E"/>
+      <stop offset="60%" stop-color="#DC986E"/>
+      <stop offset="85%" stop-color="#B86F45"/>
+      <stop offset="100%" stop-color="#7C4124"/>
+    </linearGradient>
+    <linearGradient id="neckSkin" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#DC986E"/>
+      <stop offset="40%" stop-color="#B86F45"/>
+      <stop offset="100%" stop-color="#5E2C15"/>
+    </linearGradient>
+    <linearGradient id="handSkin" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#FCE7D0"/>
+      <stop offset="40%" stop-color="#F0B990"/>
+      <stop offset="80%" stop-color="#C97F55"/>
+      <stop offset="100%" stop-color="#7C4124"/>
+    </linearGradient>
+
+    <!-- Realistic Hair Gradients -->
+    <linearGradient id="hairBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D2422"/>
+      <stop offset="35%" stop-color="#1A1412"/>
+      <stop offset="80%" stop-color="#0A0807"/>
+      <stop offset="100%" stop-color="#030202"/>
+    </linearGradient>
+    <linearGradient id="hairSheen" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#6B544C" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#4A3730" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1A1412" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Fabric Gradients -->
+    <linearGradient id="vestRealistic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="40%" stop-color="#334155"/>
+      <stop offset="80%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="shirtDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#262626"/>
+      <stop offset="60%" stop-color="#171717"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </linearGradient>
+
+    <!-- Eye Gradients -->
+    <radialGradient id="irisRealistic" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#78350F"/>
+      <stop offset="50%" stop-color="#451A03"/>
+      <stop offset="100%" stop-color="#170B04"/>
+    </radialGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="humanShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="8" dy="12" stdDeviation="10" flood-color="#000" flood-opacity="0.75"/>
+    </filter>
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND: PHÒNG THU YOUTUBE HIỆN ĐẠI CỦA NINH -->
+  <rect x="0" y="0" width="1200" height="800" fill="url(#studioAmbient)"/>
+  <circle cx="520" cy="380" r="500" fill="url(#warmKeyLight)"/>
+
+  <!-- TẤM BẢNG ĐEN GIẢNG BÀI CHIẾN THUẬT PHÍA SAU -->
+  <g transform="translate(680, 80)" filter="url(#softBlur)" opacity="0.85">
+    <rect x="0" y="0" width="480" height="380" rx="10" fill="#451A03" stroke="#291202" stroke-width="8"/>
+    <rect x="15" y="15" width="450" height="350" rx="6" fill="#064E3B"/>
+    <!-- Bản vẽ phấn con gián -->
+    <text x="240" y="55" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="900" fill="#FEF08A" text-anchor="middle" letter-spacing="1">GIÁO ÁN SINH TỒN: LOÀI GIÁN</text>
+    <ellipse cx="240" cy="190" rx="45" ry="80" fill="#7F1D1D" stroke="#FCA5A5" stroke-width="2"/>
+    <ellipse cx="240" cy="95" rx="22" ry="16" fill="#450A0A" stroke="#FCA5A5" stroke-width="2"/>
+    <path d="M 230 80 Q 190 30 150 20" fill="none" stroke="#FCA5A5" stroke-width="3"/>
+    <path d="M 250 80 Q 290 30 330 20" fill="none" stroke="#FCA5A5" stroke-width="3"/>
+    <text x="240" y="320" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#F87171" text-anchor="middle">⚠️ CẤP ĐỘ ĐE DỌA: VÔ CỰC</text>
+  </g>
+
+  <!-- MÁY QUAY 4K PHÍA TRƯỚC HƠI MỜ TẠO CHIỀU SÂU -->
+  <g transform="translate(40, 480)" filter="url(#softBlur)" opacity="0.65">
+    <line x1="80" y1="80" x2="10" y2="350" stroke="#1E293B" stroke-width="8" stroke-linecap="round"/>
+    <line x1="80" y1="80" x2="80" y2="350" stroke="#0F172A" stroke-width="8" stroke-linecap="round"/>
+    <line x1="80" y1="80" x2="150" y2="350" stroke="#1E293B" stroke-width="8" stroke-linecap="round"/>
+    <rect x="25" y="30" width="110" height="70" rx="8" fill="#0A0F1D"/>
+    <rect x="135" y="45" width="55" height="40" rx="4" fill="#1E293B"/>
+  </g>
+
+  <!-- ==================== NHÂN VẬT NINH CÔNG HOÀNG (CHÂN THỰC) ==================== -->
+  <g id="ninhRealistic" transform="translate(280, 110)" filter="url(#humanShadow)">
+    
+    <!-- THÂN VÀ ÁO VEST CHIẾN THUẬT (TỈ MỈ CÁC NẾP GẤP VẢI) -->
+    <!-- Bờ vai và cơ thể người thật -->
+    <path d="M 40 430 Q 80 290 190 270 Q 300 270 380 290 Q 420 380 440 460 L 460 690 L 20 690 Z" fill="url(#vestRealistic)" stroke="#0F172A" stroke-width="3"/>
+    
+    <!-- Cổ áo thun đen bên trong -->
+    <path d="M 175 265 Q 235 295 295 265 L 290 320 Q 235 340 180 320 Z" fill="url(#shirtDark)"/>
+    <!-- Cổ áo vest chiến thuật có ve bẻ và khóa kéo -->
+    <path d="M 150 270 L 190 370 L 235 440 L 280 370 L 320 270" fill="none" stroke="#64748B" stroke-width="4"/>
+    <line x1="235" y1="440" x2="235" y2="690" stroke="#0F172A" stroke-width="6"/>
+
+    <!-- Túi áo hộp có nắp đậy, cúc bấm và đường chỉ may -->
+    <g stroke="#1E293B" stroke-width="2">
+      <!-- Túi ngực trái -->
+      <rect x="90" y="380" width="95" height="115" rx="6" fill="#1E293B"/>
+      <path d="M 85 380 L 140 400 L 190 380 Z" fill="#334155"/>
+      <circle cx="140" cy="392" r="3.5" fill="#64748B"/>
+
+      <!-- Túi ngực phải -->
+      <rect x="280" y="380" width="95" height="115" rx="6" fill="#1E293B"/>
+      <path d="M 275 380 L 330 400 L 380 380 Z" fill="#334155"/>
+      <circle cx="330" cy="392" r="3.5" fill="#64748B"/>
+    </g>
+
+    <!-- Dây và mic cài ve áo Youtuber -->
+    <rect x="200" y="330" width="12" height="22" rx="4" fill="#0F172A" stroke="#475569" stroke-width="1.5"/>
+    <path d="M 206 352 Q 212 390 195 420" fill="none" stroke="#020617" stroke-width="2.5"/>
+
+    <!-- ==================== CỔ VÀ YẾU HẦU NGƯỜI THẬT ==================== -->
+    <path d="M 185 200 L 180 275 Q 235 295 290 275 L 285 200 Z" fill="url(#neckSkin)"/>
+    <!-- Cơ cổ ức đòn chũm và yết hầu -->
+    <path d="M 210 215 Q 235 235 240 255" fill="none" stroke="#8D431D" stroke-width="3" opacity="0.6"/>
+    <path d="M 260 215 Q 240 235 235 255" fill="none" stroke="#8D431D" stroke-width="3" opacity="0.6"/>
+
+    <!-- ==================== GƯƠNG MẶT CHÂN THỰC NINH CÔNG HOÀNG ==================== -->
+    <!-- Đường viền khuôn mặt góc cạnh nam tính chuẩn tỷ lệ người thật -->
+    <path d="M 155 120 C 155 50, 315 50, 315 120 C 315 175, 290 225, 235 240 C 180 225, 155 175, 155 120 Z" fill="url(#faceSkin)" stroke="#7C4124" stroke-width="2"/>
+
+    <!-- Đổ bóng gò má và đường quai hàm -->
+    <path d="M 160 145 C 160 190, 190 225, 235 238 C 280 225, 310 190, 310 145" fill="none" stroke="#9A4E27" stroke-width="3" opacity="0.45"/>
+
+    <!-- ==================== MẮT NGƯỜI THẬT CHI TIẾT ==================== -->
+    <!-- MẮT TRÁI -->
+    <g transform="translate(175, 125)">
+      <!-- Hốc mắt & mí trên -->
+      <path d="M 0 5 Q 22 -6 44 4" fill="none" stroke="#5E2C15" stroke-width="3" stroke-linecap="round"/>
+      <path d="M 3 2 Q 22 -2 40 4" fill="none" stroke="#7C4124" stroke-width="1.5"/>
+      <!-- Lòng trắng mắt có bóng vòm -->
+      <path d="M 2 5 Q 22 -5 42 5 Q 22 15 2 5 Z" fill="#F8FAFC" stroke="#7C4124" stroke-width="1.5"/>
+      <!-- Khóe mắt trong màu hồng (caruncle) -->
+      <circle cx="3" cy="5" r="2.5" fill="#FDA4AF"/>
+      <!-- Tròng mắt nâu đen realistic -->
+      <circle cx="22" cy="5" r="10" fill="url(#irisRealistic)"/>
+      <circle cx="22" cy="5" r="4.5" fill="#050302"/>
+      <!-- Điểm sáng phản chiếu ánh đèn studio -->
+      <circle cx="20" cy="3" r="2.5" fill="#FFF"/>
+      <circle cx="24" cy="7" r="1.2" fill="#FEF08A"/>
+      <!-- Mí dưới tự nhiên -->
+      <path d="M 4 8 Q 22 14 39 8" fill="none" stroke="#A85D35" stroke-width="1.5" opacity="0.7"/>
+    </g>
+
+    <!-- MẮT PHẢI -->
+    <g transform="translate(250, 125)">
+      <!-- Hốc mắt & mí trên -->
+      <path d="M 0 4 Q 22 -6 44 5" fill="none" stroke="#5E2C15" stroke-width="3" stroke-linecap="round"/>
+      <path d="M 4 4 Q 22 -2 41 2" fill="none" stroke="#7C4124" stroke-width="1.5"/>
+      <!-- Lòng trắng -->
+      <path d="M 2 5 Q 22 -5 42 5 Q 22 15 2 5 Z" fill="#F8FAFC" stroke="#7C4124" stroke-width="1.5"/>
+      <circle cx="41" cy="5" r="2.5" fill="#FDA4AF"/>
+      <!-- Tròng mắt -->
+      <circle cx="22" cy="5" r="10" fill="url(#irisRealistic)"/>
+      <circle cx="22" cy="5" r="4.5" fill="#050302"/>
+      <!-- Điểm sáng phản chiếu -->
+      <circle cx="20" cy="3" r="2.5" fill="#FFF"/>
+      <circle cx="24" cy="7" r="1.2" fill="#FEF08A"/>
+      <!-- Mí dưới -->
+      <path d="M 5 8 Q 22 14 40 8" fill="none" stroke="#A85D35" stroke-width="1.5" opacity="0.7"/>
+    </g>
+
+    <!-- LÔNG MÀY RẬM TỰ NHIÊN CỦA NAM GIỚI -->
+    <path d="M 168 116 Q 195 106 222 116 Q 195 110 168 116 Z" fill="#1A1412"/>
+    <path d="M 248 116 Q 275 106 302 116 Q 275 110 248 116 Z" fill="#1A1412"/>
+
+    <!-- ==================== MŨI NGƯỜI THẬT CÓ KHỐI SỐNG MŨI & CÁNH MŨI ==================== -->
+    <g transform="translate(225, 120)">
+      <!-- Sống mũi cao thẳng -->
+      <path d="M 10 10 L 8 45 L -2 55 L 22 55 L 12 45" fill="none" stroke="#9A4E27" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M 8 15 L 6 45" fill="none" stroke="#FEF3C7" stroke-width="3" opacity="0.5"/> <!-- vệt highlight mũi -->
+      <!-- Đầu mũi tròn tự nhiên -->
+      <ellipse cx="10" cy="53" rx="7" ry="5" fill="#B86F45"/>
+      <!-- Hai cánh mũi và lỗ mũi có bóng đổ -->
+      <path d="M -3 52 Q -6 56 0 58 Q 5 56 3 52" fill="#5E2C15"/>
+      <path d="M 17 52 Q 15 56 20 58 Q 26 56 23 52" fill="#5E2C15"/>
+    </g>
+
+    <!-- RÃNH NHÂN TRUNG VÀ KHUÔN MIỆNG CƯỜI NHẸ TỰ NHIÊN -->
+    <g transform="translate(210, 185)">
+      <!-- Nhân trung -->
+      <line x1="22" y1="0" x2="21" y2="7" stroke="#9A4E27" stroke-width="1.5"/>
+      <line x1="28" y1="0" x2="29" y2="7" stroke="#9A4E27" stroke-width="1.5"/>
+
+      <!-- Môi trên hình chữ M có đổ bóng -->
+      <path d="M 5 12 Q 16 7 25 10 Q 34 7 45 12 Q 35 15 25 14 Q 15 15 5 12 Z" fill="#A8573C" stroke="#662211" stroke-width="1"/>
+      <!-- Đường kẽ môi có nụ cười tự tin hơi hé răng -->
+      <path d="M 5 12 Q 25 18 45 12" fill="none" stroke="#4A1509" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Vệt răng trắng tinh tế -->
+      <path d="M 14 13 Q 25 16 36 13" fill="#FFF" opacity="0.9"/>
+      <!-- Môi dưới đầy đặn với vệt sáng căng bóng -->
+      <path d="M 7 13 Q 25 24 43 13 Q 25 20 7 13 Z" fill="#C46E52"/>
+      <ellipse cx="25" cy="18" rx="8" ry="2" fill="#FCE7D0" opacity="0.6"/>
+      <!-- Vết lõm cằm dưới môi -->
+      <path d="M 18 28 Q 25 32 32 28" fill="none" stroke="#7C4124" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- ==================== TAI NGƯỜI THẬT ĐỦ VÀNH TAI & DẬU TAI ==================== -->
+    <!-- Tai trái -->
+    <path d="M 155 125 C 140 120, 138 165, 150 175 C 153 178, 155 165, 155 155 Z" fill="#DC986E" stroke="#7C4124" stroke-width="2"/>
+    <path d="M 148 135 Q 142 150 148 165" fill="none" stroke="#8D431D" stroke-width="2"/>
+    <!-- Tai phải -->
+    <path d="M 315 125 C 330 120, 332 165, 320 175 C 317 178, 315 165, 315 155 Z" fill="#B86F45" stroke="#5E2C15" stroke-width="2"/>
+    <path d="M 322 135 Q 328 150 322 165" fill="none" stroke="#5E2C15" stroke-width="2"/>
+
+    <!-- ==================== MÁI TÓC LAYER HIỆN ĐẠI CỰC THẬT ==================== -->
+    <path d="M 145 120 C 135 30, 335 20, 325 120 C 300 85, 275 88, 250 98 C 220 85, 185 88, 145 120 Z" fill="url(#hairBase)" stroke="#030202" stroke-width="2"/>
+    <path d="M 160 80 Q 235 45 310 80 Q 235 65 160 80 Z" fill="url(#hairSheen)"/>
+    <!-- Từng lọn tóc tỉa layer tự nhiên lòa xòa trán -->
+    <path d="M 175 95 L 185 118 L 195 98" fill="#1A1412"/>
+    <path d="M 210 98 L 222 122 L 235 100" fill="#1A1412"/>
+    <path d="M 255 100 L 268 120 L 280 102" fill="#1A1412"/>
+
+    <!-- ==================== BÀN TAY NGƯỜI THẬT CÓ NGÓN & MÓNG TAY ==================== -->
+    <!-- Tay phải đưa lên phía trước cử chỉ thuyết minh -->
+    <g transform="translate(370, 370)" filter="url(#humanShadow)">
+      <path d="M 20 50 Q 80 20 70 -20 Q 50 -30 20 0 Z" fill="url(#handSkin)" stroke="#7C4124" stroke-width="2"/>
+      <!-- Ngón trỏ chỉ thẳng -->
+      <path d="M 60 -15 L 100 -55 Q 110 -50 105 -40 L 70 -5 Z" fill="url(#handSkin)" stroke="#7C4124" stroke-width="2"/>
+      <ellipse cx="102" cy="-48" rx="3" ry="4" fill="#FEF3C7" opacity="0.8"/> <!-- móng tay -->
+      <!-- Ngón giữa, áp út, ngón út gập tự nhiên -->
+      <path d="M 68 -2 Q 95 -8 92 10 Q 75 16 64 8 Z" fill="#DC986E" stroke="#7C4124" stroke-width="2"/>
+      <path d="M 62 10 Q 88 10 84 25 Q 68 30 58 18 Z" fill="#C97F55" stroke="#7C4124" stroke-width="2"/>
+      <path d="M 54 20 Q 75 22 72 35 Q 60 40 50 28 Z" fill="#B86F45" stroke="#7C4124" stroke-width="2"/>
+      <!-- Ngón cái khép bên dưới -->
+      <path d="M 30 15 Q 55 5 50 30 Q 30 35 25 25 Z" fill="url(#handSkin)" stroke="#7C4124" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- BANNER TIÊU ĐỀ KHUNG TRUYỆN -->
+  <g transform="translate(40, 30)">
+    <rect x="0" y="0" width="580" height="46" rx="10" fill="#0369A1" stroke="#38BDF8" stroke-width="3" filter="url(#humanShadow)"/>
+    <text x="290" y="32" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="900" fill="#FFF" text-anchor="middle" letter-spacing="1">KHUNG 1: CHUYÊN GIA SINH TỒN LÊN TIẾNG!</text>
+  </g>
+
+  <!-- ==================== PHỤ ĐỀ / LỜI THOẠI ==================== -->
+  <g transform="translate(180, 580)" filter="url(#humanShadow)">
+    <path d="M 0 0 L 800 0 C 815 0, 825 10, 825 25 L 825 140 C 825 155, 815 165, 800 165 L 260 165 L 230 195 L 240 165 L 25 165 C 10 165, 0 155, 0 140 Z" fill="#0F172A" stroke="#38BDF8" stroke-width="3"/>
+    <text x="412" y="38" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="900" fill="#38BDF8" text-anchor="middle">🎙️ NINH CÔNG HOÀNG (CHUYÊN GIA SINH TỒN):</text>
+    <text x="412" y="74" font-family="'Segoe UI', Arial, sans-serif" font-size="16.5" font-weight="bold" fill="#F1F5F9" text-anchor="middle">"Chào mừng anh em! Hôm nay tôi sẽ chỉ cho anh em bí kíp sinh tồn tối thượng:</text>
+    <text x="412" y="104" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="900" fill="#FDE047" text-anchor="middle">LÀM SAO ĐỂ SỐNG SÓT KHI ĐỐI ĐẦU VỚI LOÀI GIÁN NGUY HIỂM NHẤT?"</text>
+    <text x="412" y="134" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="bold" fill="#A7F3D0" text-anchor="middle">Khoa học đã chứng minh: Nắm vững tâm lý học loài gián là anh em bất tử!"</text>
+  </g>
+</svg>

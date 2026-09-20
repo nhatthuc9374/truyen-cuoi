@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truyện Tranh Hài: Oliver Tree & Cú Nhảy Scooter Thế Kỷ</title>
+  <style>
+    :root {
+      --primary: #9C27B0;
+      --primary-dark: #6A1B9A;
+      --accent: #FF4081;
+      --teal: #00E676;
+      --yellow: #FFEA00;
+      --bg: #121212;
+      --card-bg: #1E1E1E;
+      --text: #ECEFF1;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at top, #2A1138 0%, #121212 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+      max-width: 900px;
+    }
+    .badge {
+      display: inline-block;
+      background: linear-gradient(90deg, #E040FB, #00E5FF);
+      color: #000;
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-weight: 900;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 15px rgba(224, 64, 251, 0.4);
+    }
+    h1 {
+      font-size: 34px;
+      font-weight: 900;
+      background: linear-gradient(90deg, #FF4081, #FFEA00, #00E5FF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+      text-shadow: 0 0 20px rgba(255, 64, 129, 0.3);
+    }
+    p.subtitle {
+      font-size: 16px;
+      color: #B0BEC5;
+      line-height: 1.5;
+    }
+    .controls {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      padding: 10px 20px;
+      border: 2px solid #AB47BC;
+      border-radius: 12px;
+      background: #261730;
+      color: #E1BEE7;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn:hover {
+      background: #8E24AA;
+      color: #FFF;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(156, 39, 176, 0.5);
+      border-color: #E040FB;
+    }
+    .btn.active {
+      background: linear-gradient(90deg, #9C27B0, #E040FB);
+      color: #FFF;
+      border-color: #FF80AB;
+    }
+
+    /* Container */
+    .comic-container {
+      width: 100%;
+      max-width: 1240px;
+      transition: all 0.3s ease;
+    }
+    .grid-mode {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+      gap: 26px;
+    }
+    .strip-mode {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+      max-width: 1000px;
+    }
+    .slide-mode .comic-card {
+      display: none;
+    }
+    .slide-mode .comic-card.current {
+      display: block;
+      animation: fadeIn 0.4s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .comic-card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 18px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+      border: 2px solid #332244;
+      position: relative;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .comic-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 40px rgba(224, 64, 251, 0.25);
+      border-color: #AB47BC;
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      padding: 0 6px;
+    }
+    .panel-tag {
+      font-size: 16px;
+      font-weight: 800;
+      color: #E040FB;
+    }
+    .panel-caption {
+      font-size: 14px;
+      font-weight: 600;
+      color: #CE93D8;
+    }
+    .img-wrapper {
+      width: 100%;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #000;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+    }
+    .img-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card-footer {
+      margin-top: 14px;
+      padding: 12px 16px;
+      background: #281B34;
+      border-radius: 12px;
+      border-left: 5px solid #E040FB;
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: #E0E0E0;
+    }
+    .card-footer strong {
+      color: #FF80AB;
+    }
+
+    /* Slideshow navigation */
+    .slide-nav {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 24px;
+    }
+    .slide-mode ~ .slide-nav {
+      display: flex;
+    }
+    .slide-counter {
+      font-size: 18px;
+      font-weight: 800;
+      color: #E040FB;
+    }
+
+    /* Moral section */
+    .moral-section {
+      max-width: 900px;
+      width: 100%;
+      background: #1F1528;
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 40px;
+      border: 2px dashed #9C27B0;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+    .moral-section h3 {
+      color: #FF4081;
+      font-size: 20px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .moral-section ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .moral-section li {
+      margin-bottom: 10px;
+      padding-left: 28px;
+      position: relative;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #ECEFF1;
+    }
+    .moral-section li::before {
+      content: '⚡';
+      position: absolute;
+      left: 0;
+    }
+
+    @media (max-width: 650px) {
+      .grid-mode {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="badge">🎬 CINEMATIC LIVE-ACTION PHOTOREALISTIC COMIC</div>
+    <h1>🛴🔥 Oliver Tree & Cú Nhảy Scooter Thế Kỷ</h1>
+    <p class="subtitle">Cuộc phiêu lưu mạo hiểm hài hước của huyền thoại meme âm nhạc thế giới — Người thật siêu thực 100% tích hợp phụ đề!</p>
+  </header>
+
+  <div class="controls">
+    <button class="btn active" onclick="setMode('grid')">🔲 Chế độ Lưới (2x2)</button>
+    <button class="btn" onclick="setMode('strip')">📜 Dải Dọc (Webtoon)</button>
+    <button class="btn" onclick="setMode('slide')">📽️ Từng Khung Hình</button>
+    <a href="../xem_video_oliver_tree.html" class="btn" style="background: linear-gradient(135deg, #ff007f, #d926a9); color: #fff; border-color: #ff007f; text-decoration: none;">🎬 Xem Video Điện Ảnh (Lồng Tiếng)</a>
+  </div>
+
+  <div style="max-width: 900px; width: 100%; margin-bottom: 24px; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.5); border: 2px solid #E040FB;">
+    <img src="../images/oliver_tree_portrait.jpg" alt="Oliver Tree Chân Dung Nhận Diện" style="width: 100%; display: block;">
+  </div>
+
+  <main class="comic-container grid-mode" id="comicContainer">
+    <!-- KHUNG 1 -->
+    <article class="comic-card current" data-slide="1">
+      <div class="card-header">
+        <span class="panel-tag">KHUNG 1</span>
+        <span class="panel-caption">Họp báo chấn động: Cú nhảy lịch sử! 🎤📸</span>
+      </div>
+      <div class="img-wrapper">
+        <img src="../images/oliver_tree_1.jpg" alt="Oliver Tree Khung 1 - Họp báo">
+      </div>
+      <div class="card-footer">
+        <strong>Diễn biến:</strong> Đứng trước hàng trăm máy ảnh lóe sáng, Oliver Tree với mái tóc úp nồi và áo gió retro 90s hùng hồn tuyên bố: "Tôi sẽ thực hiện cú nhảy scooter gắn động cơ tên lửa lớn nhất lịch sử địa cầu!"
+      </div>
+    </article>
+
+    <!-- KHUNG 2 -->
+    <article class="comic-card" data-slide="2">
+      <div class="card-header">
+        <span class="panel-tag">KHUNG 2</span>
+        <span class="panel-caption">Cỗ máy Scooter quái thú rực lửa! 🚀🔥</span>
+      </div>
+      <div class="img-wrapper">
+        <img src="../images/oliver_tree_2.jpg" alt="Oliver Tree Khung 2 - Phóng xe tên lửa">
+      </div>
+      <div class="card-footer">
+        <strong>Diễn biến:</strong> Đêm đô thị rực rỡ đèn neon, Oliver Tree cưỡi trên chiếc scooter quái thú gắn 2 ống xả phản lực phun lửa cam cháy rực trời, rít ga lao thẳng xuống dốc mạo hiểm: "WOOHOO! VROOM!"
+      </div>
+    </article>
+
+    <!-- KHUNG 3 -->
+    <article class="comic-card" data-slide="3">
+      <div class="card-header">
+        <span class="panel-tag">KHUNG 3</span>
+        <span class="panel-caption">Cú nổ giữa trời: "Life goes on..." 💥🌪️</span>
+      </div>
+      <div class="img-wrapper">
+        <img src="../images/oliver_tree_3.jpg" alt="Oliver Tree Khung 3 - Nổ tung giữa trời">
+      </div>
+      <div class="card-footer">
+        <strong>Diễn biến:</strong> Giữa không trung, chiếc xe nổ tung thành trăm mảnh: BOOM! CRASH! EXBLOOM! Oliver Tree bay ngang trời trong pha slow-motion huyền thoại, kính râm và giày tím văng tứ tung: "AAAGHHH!"
+      </div>
+    </article>
+
+    <!-- KHUNG 4 -->
+    <article class="comic-card" data-slide="4">
+      <div class="card-header">
+        <span class="panel-tag">KHUNG 4</span>
+        <span class="panel-caption">Hồi sinh bất tử: World Tour bắt đầu! 👑🏥</span>
+      </div>
+      <div class="img-wrapper">
+        <img src="../images/oliver_tree_4.jpg" alt="Oliver Tree Khung 4 - Hồi sinh phòng bệnh">
+      </div>
+      <div class="card-footer">
+        <strong>Diễn biến:</strong> Tại bệnh viện, Oliver Tree ngồi xe lăn quấn băng trắng như xác ướp nhưng mái tóc úp nồi vẫn thò ra kiêu hãnh! Đeo kính hồng mới, giơ micro vàng: "Kỷ lục chưa xong nhưng WORLD TOUR: LIFE GOES ON CHÍNH THỨC BẮT ĐẦU!"
+      </div>
+    </article>
+  </main>
+
+  <div class="slide-nav">
+    <button class="btn" onclick="prevSlide()">⬅️ Khung Trước</button>
+    <span class="slide-counter" id="slideIndicator">1 / 4</span>
+    <button class="btn" onclick="nextSlide()">Khung Kế ➡️</button>
+  </div>
+
+  <section class="moral-section">
+    <h3>💡 Bài Học Hài Hước Từ Oliver Tree:</h3>
+    <ul>
+      <li><strong>Tinh thần "Life Goes On":</strong> Dù cuộc đời có quăng bạn vào những cú tiếp đất đi vào lòng đất, hãy cứ đứng dậy (hoặc ngồi xe lăn) và tiếp tục tỏa sáng!</li>
+      <li><strong>Thương hiệu cá nhân là số 1:</strong> Toàn thân có thể gãy xương bó bột, nhưng mái tóc úp nồi và cặp kính râm nhất quyết không thể thiếu!</li>
+      <li><strong>Đừng bao giờ tin vào những lời tuyên bố "giải nghệ" của Oliver Tree! 😂</strong></li>
+    </ul>
+  </section>
+
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 4;
+    const container = document.getElementById('comicContainer');
+    const cards = document.querySelectorAll('.comic-card');
+    const indicator = document.getElementById('slideIndicator');
+
+    function setMode(mode) {
+      document.querySelectorAll('.controls .btn').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+
+      container.className = 'comic-container ' + mode + '-mode';
+      if (mode === 'slide') {
+        showSlide(currentSlide);
+      }
+    }
+
+    function showSlide(n) {
+      currentSlide = n;
+      if (currentSlide > totalSlides) currentSlide = 1;
+      if (currentSlide < 1) currentSlide = totalSlides;
+
+      cards.forEach(c => c.classList.remove('current'));
+      document.querySelector(`.comic-card[data-slide="${currentSlide}"]`).classList.add('current');
+      indicator.textContent = `${currentSlide} / ${totalSlides}`;
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (container.classList.contains('slide-mode')) {
+        if (e.key === 'ArrowRight') nextSlide();
+        if (e.key === 'ArrowLeft') prevSlide();
+      }
+    });
+  </script>
+</body>
+</html>

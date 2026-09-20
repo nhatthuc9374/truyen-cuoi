@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="nightWallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#283593"/>
+      <stop offset="50%" stop-color="#1A237E"/>
+      <stop offset="100%" stop-color="#0D47A1"/>
+    </linearGradient>
+    <linearGradient id="nightTatami" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#37474F"/>
+      <stop offset="60%" stop-color="#263238"/>
+      <stop offset="100%" stop-color="#102027"/>
+    </linearGradient>
+    <radialGradient id="lampCone" cx="50%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#FFF59D" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#FFEE58" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="doraemonBlue3" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#29B6F6"/>
+      <stop offset="70%" stop-color="#0288D1"/>
+      <stop offset="100%" stop-color="#01579B"/>
+    </radialGradient>
+    <radialGradient id="bloatedBellyGrad" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFEE58"/>
+      <stop offset="70%" stop-color="#FDD835"/>
+      <stop offset="100%" stop-color="#F57F17"/>
+    </radialGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="comicShadow3" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="4" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="bubbleShadow3" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND: ĐÊM KHUYA TỐI MỊT TRONG PHÒNG -->
+  <rect x="15" y="15" width="1170" height="770" rx="24" fill="url(#nightWallGrad)" stroke="#263238" stroke-width="8"/>
+
+  <!-- SÀN NHÀ TATAMI BAN ĐÊM -->
+  <rect x="20" y="500" width="1160" height="280" fill="url(#nightTatami)"/>
+  <line x1="20" y1="500" x2="1180" y2="500" stroke="#455A64" stroke-width="6"/>
+  <line x1="20" y1="580" x2="1180" y2="580" stroke="#263238" stroke-width="3" stroke-dasharray="16,8"/>
+  <line x1="20" y1="670" x2="1180" y2="670" stroke="#263238" stroke-width="3" stroke-dasharray="16,8"/>
+
+  <!-- ÁNH ĐÈN BÀN RỌI XUỐNG KHU VỰC NOBITA -->
+  <polygon points="560,70 150,750 950,750" fill="url(#lampCone)" opacity="0.6"/>
+
+  <!-- TIÊU ĐỀ KHUNG TRUYỆN -->
+  <g transform="translate(40, 30)">
+    <rect x="0" y="0" width="450" height="42" rx="10" fill="#E65100" stroke="#BF360C" stroke-width="3" filter="url(#comicShadow3)"/>
+    <text x="225" y="28" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="900" fill="#FFF" text-anchor="middle" letter-spacing="1">KHUNG 3: CƠN ÁC MỘNG NHỒI NHÉT!</text>
+  </g>
+
+  <!-- ĐỒNG HỒ TREO TƯỜNG: 11:45 ĐÊM -->
+  <g transform="translate(950, 45)" filter="url(#comicShadow3)">
+    <circle cx="50" cy="50" r="45" fill="#ECEFF1" stroke="#37474F" stroke-width="5"/>
+    <!-- Kim giờ chỉ 11h45 -->
+    <line x1="50" y1="50" x2="35" y2="25" stroke="#212121" stroke-width="4" stroke-linecap="round"/>
+    <!-- Kim phút chỉ số 9 (45 phút) -->
+    <line x1="50" y1="50" x2="15" y2="50" stroke="#D32F2F" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="50" cy="50" r="4" fill="#D32F2F"/>
+    <text x="50" y="115" font-family="'Impact', Arial" font-size="18" fill="#FF5252" text-anchor="middle">11:45 ĐÊM! ⏰</text>
+  </g>
+
+  <!-- ==================== CÁC CHỒNG SÁCH CAO NGẤT NGƯỞNG ==================== -->
+  <!-- Chồng sách bên trái (Lịch Sử, Địa Lý, Văn Học...) -->
+  <g transform="translate(80, 260)" filter="url(#comicShadow3)">
+    <!-- Sách 1 -->
+    <rect x="20" y="200" width="130" height="35" rx="4" fill="#C62828" stroke="#212121" stroke-width="3"/>
+    <text x="85" y="222" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="900" fill="#FFF" text-anchor="middle">LỊCH SỬ TẬP 1</text>
+    <!-- Sách 2 -->
+    <rect x="15" y="165" width="140" height="35" rx="4" fill="#2E7D32" stroke="#212121" stroke-width="3"/>
+    <text x="85" y="187" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="900" fill="#FFF" text-anchor="middle">LỊCH SỬ TẬP 2</text>
+    <!-- Sách 3 -->
+    <rect x="25" y="130" width="120" height="35" rx="4" fill="#1565C0" stroke="#212121" stroke-width="3"/>
+    <text x="85" y="152" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="900" fill="#FFF" text-anchor="middle">ĐỊA LÝ THẾ GIỚI</text>
+    <!-- Sách 4 -->
+    <rect x="10" y="95" width="150" height="35" rx="4" fill="#6A1B9A" stroke="#212121" stroke-width="3"/>
+    <text x="85" y="117" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="900" fill="#FFF" text-anchor="middle">TIẾNG ANH 3000 TỪ</text>
+    <!-- Sách 5 nghiêng ngả -->
+    <rect x="30" y="60" width="110" height="35" rx="4" fill="#EF6C00" stroke="#212121" stroke-width="3" transform="rotate(5, 85, 77)"/>
+    <text x="85" y="82" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="900" fill="#FFF" text-anchor="middle" transform="rotate(5, 85, 77)">VẬT LÝ 5</text>
+    <!-- Sách 6 -->
+    <rect x="40" y="25" width="95" height="35" rx="4" fill="#00838F" stroke="#212121" stroke-width="3" transform="rotate(-6, 87, 42)"/>
+    <text x="87" y="47" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="900" fill="#FFF" text-anchor="middle" transform="rotate(-6, 87, 42)">SINH HỌC</text>
+  </g>
+
+  <!-- ĐĨA BÁNH MÌ ĐÃ ĂN HẾT TRƠ TRỌI VÀ VỎ VỤN -->
+  <g transform="translate(180, 560)">
+    <ellipse cx="60" cy="40" rx="55" ry="12" fill="#CFD8DC" stroke="#455A64" stroke-width="2"/>
+    <ellipse cx="60" cy="30" rx="50" ry="10" fill="#ECEFF1" stroke="#455A64" stroke-width="2"/>
+    <ellipse cx="60" cy="20" rx="45" ry="9" fill="#FAFAFA" stroke="#455A64" stroke-width="2"/>
+    <!-- Vụn bánh rơi vãi -->
+    <circle cx="30" cy="45" r="3" fill="#D7CCC8"/>
+    <circle cx="45" cy="50" r="4" fill="#D7CCC8"/>
+    <circle cx="85" cy="48" r="3" fill="#D7CCC8"/>
+    <circle cx="100" cy="42" r="5" fill="#D7CCC8"/>
+    <text x="60" y="10" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold" fill="#FF5252" text-anchor="middle">5 Ổ ĐÃ HẾT VÈO!</text>
+  </g>
+
+  <!-- ==================== NOBITA BỤNG TO PHÌNH KHỔNG LỒ ==================== -->
+  <g id="nobitaBloated" transform="translate(360, 260)" filter="url(#comicShadow3)">
+    <!-- Chân Nobita bẹt ra hai bên vì bụng quá to -->
+    <ellipse cx="60" cy="420" rx="55" ry="24" fill="#FFE0B2" stroke="#263238" stroke-width="4"/>
+    <ellipse cx="280" cy="420" rx="55" ry="24" fill="#FFE0B2" stroke="#263238" stroke-width="4"/>
+    <!-- Quần xanh navy bị kéo dãn căng đứt chỉ -->
+    <path d="M 50 370 Q 170 420 290 370 L 290 410 Q 170 460 50 410 Z" fill="#1565C0" stroke="#0D47A1" stroke-width="4"/>
+
+    <!-- ==================== BỤNG TO CĂNG TRÒN NHƯ QUẢ BÓNG ==================== -->
+    <!-- Quả bụng khổng lồ đẩy lồi ra phía trước -->
+    <circle cx="170" cy="310" r="130" fill="url(#bloatedBellyGrad)" stroke="#263238" stroke-width="6"/>
+    <!-- Vết bóng sáng trên bụng căng bóng -->
+    <ellipse cx="140" cy="250" rx="45" ry="20" fill="#FFF" opacity="0.5" transform="rotate(-20, 140, 250)"/>
+    <!-- Rốn Nobita lồi to vì bụng quá căng -->
+    <ellipse cx="170" cy="330" rx="12" ry="8" fill="#F57F17" stroke="#E65100" stroke-width="2"/>
+    <!-- Nếp nhăn áo căng hết cỡ -->
+    <path d="M 70 280 Q 120 295 80 340" fill="none" stroke="#F57F17" stroke-width="3"/>
+    <path d="M 270 280 Q 220 295 260 340" fill="none" stroke="#F57F17" stroke-width="3"/>
+
+    <!-- Cổ áo vàng Nobita -->
+    <polygon points="150,155 170,185 190,155" fill="#FFF" stroke="#263238" stroke-width="3"/>
+
+    <!-- Tay trái ôm bụng xoa xoa vì quá đau no -->
+    <path d="M 60 220 Q 20 290 90 320" fill="none" stroke="#FBC02D" stroke-width="24" stroke-linecap="round"/>
+    <circle cx="95" cy="320" r="16" fill="#FFE0B2" stroke="#263238" stroke-width="4"/>
+
+    <!-- Tay phải run lẩy bẩy cầm lát bánh mì thứ 100 cố nhét vào mồm -->
+    <path d="M 270 200 Q 300 160 245 150" fill="none" stroke="#FBC02D" stroke-width="24" stroke-linecap="round"/>
+    <circle cx="240" cy="148" r="16" fill="#FFE0B2" stroke="#263238" stroke-width="4"/>
+    <!-- Vệt run rẩy quanh tay -->
+    <line x1="265" y1="130" x2="275" y2="120" stroke="#FFF" stroke-width="3"/>
+    <line x1="270" y1="145" x2="285" y2="140" stroke="#FFF" stroke-width="3"/>
+
+    <!-- Lát bánh mì Lịch Sử đang kẹt ở mép mồm -->
+    <g transform="translate(195, 110)">
+      <rect x="0" y="0" width="45" height="40" rx="4" fill="#D7CCC8" stroke="#5D4037" stroke-width="3"/>
+      <rect x="4" y="4" width="37" height="32" rx="3" fill="#FFF9C4"/>
+      <text x="22" y="24" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="900" fill="#5D4037" text-anchor="middle">SỬ VĂN</text>
+    </g>
+
+    <!-- ĐẦU NOBITA MẮT HOA ĐỐM ỐC SÊN (CHÓNG MẶT VÌ NO QUÁ) -->
+    <g transform="translate(50, 0)">
+      <circle cx="120" cy="100" r="65" fill="#FFE0B2" stroke="#263238" stroke-width="5"/>
+      <!-- Hai má phúng phính phồng tướng vì ngậm đầy bánh -->
+      <circle cx="65" cy="115" r="22" fill="#FFCC80" stroke="#263238" stroke-width="4"/>
+      <circle cx="175" cy="115" r="22" fill="#FFCC80" stroke="#263238" stroke-width="4"/>
+      <!-- Tóc Nobita -->
+      <path d="M 55 90 C 45 10, 195 10, 185 90 C 160 65, 135 65, 120 80 C 105 65, 80 70, 55 90 Z" fill="#212121" stroke="#263238" stroke-width="4"/>
+
+      <!-- Kính mắt Nobita méo xẹo vì kiệt sức -->
+      <circle cx="95" cy="95" r="25" fill="#FFF" fill-opacity="0.85" stroke="#263238" stroke-width="4"/>
+      <circle cx="145" cy="95" r="25" fill="#FFF" fill-opacity="0.85" stroke="#263238" stroke-width="4"/>
+      <line x1="120" y1="95" x2="120" y2="95" stroke="#263238" stroke-width="4"/>
+
+      <!-- MẮT XOÁY TRÒN ỐC SÊN (@_@) VÌ SAY BÁNH MÌ -->
+      <path d="M 95 95 m -12,0 a 12,12 0 1,0 24,0 a 8,8 0 1,0 -16,0 a 4,4 0 1,0 8,0" fill="none" stroke="#212121" stroke-width="2.5"/>
+      <path d="M 145 95 m -12,0 a 12,12 0 1,0 24,0 a 8,8 0 1,0 -16,0 a 4,4 0 1,0 8,0" fill="none" stroke="#212121" stroke-width="2.5"/>
+
+      <!-- Miệng méo xệch đang ợ hơi phì phò -->
+      <path d="M 105 130 Q 120 120 135 130" fill="none" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+      <!-- Khói ợ hơi bay ra từ mồm: ỢỢỢ...! -->
+      <path d="M 125 130 Q 140 145 155 135 Q 170 120 185 130" fill="none" stroke="#FFF" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+
+      <!-- HẠT MỒ HÔI RƠI NHƯ MƯA VÌ NO NỨT BỤNG -->
+      <!-- Giọt mồ hôi 1 -->
+      <path d="M 50 65 Q 40 85 50 90 Q 60 85 50 65 Z" fill="#40C4FF" stroke="#0288D1" stroke-width="1.5"/>
+      <!-- Giọt mồ hôi 2 -->
+      <path d="M 190 70 Q 180 90 190 95 Q 200 90 190 70 Z" fill="#40C4FF" stroke="#0288D1" stroke-width="1.5"/>
+      <!-- Giọt mồ hôi 3 trên trán -->
+      <path d="M 120 40 Q 112 55 120 60 Q 128 55 120 40 Z" fill="#40C4FF" stroke="#0288D1" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- ==================== DORAEMON HỐT HOẢNG CAN NGĂN ==================== -->
+  <g id="doraemonPanic" transform="translate(820, 260)" filter="url(#comicShadow3)">
+    <!-- Chân Doraemon run rẩy -->
+    <ellipse cx="60" cy="420" rx="45" ry="25" fill="#FFF" stroke="#263238" stroke-width="4"/>
+    <ellipse cx="160" cy="420" rx="45" ry="25" fill="#FFF" stroke="#263238" stroke-width="4"/>
+
+    <!-- Thân Doraemon nghiêng người về phía Nobita hốt hoảng -->
+    <circle cx="110" cy="300" r="110" fill="url(#doraemonBlue3)" stroke="#263238" stroke-width="5"/>
+    <circle cx="110" cy="315" r="75" fill="#FFF" stroke="#263238" stroke-width="4"/>
+    <path d="M 55 315 C 55 370, 165 370, 165 315 Z" fill="#FFF" stroke="#263238" stroke-width="4"/>
+    <line x1="55" y1="315" x2="165" y2="315" stroke="#263238" stroke-width="4"/>
+
+    <!-- Hai tay Doraemon vẫy loạn xạ hốt hoảng toát mồ hôi -->
+    <!-- Tay trái giơ lên ôm má -->
+    <path d="M 20 280 Q -30 220 -10 180" fill="none" stroke="#0288D1" stroke-width="32" stroke-linecap="round"/>
+    <path d="M 20 280 Q -30 220 -10 180" fill="none" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="-10" cy="175" r="22" fill="#FFF" stroke="#263238" stroke-width="4"/>
+
+    <!-- Tay phải giơ lên trời xua lia lịa -->
+    <path d="M 190 280 Q 240 230 220 180" fill="none" stroke="#0288D1" stroke-width="32" stroke-linecap="round"/>
+    <path d="M 190 280 Q 240 230 220 180" fill="none" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="220" cy="175" r="22" fill="#FFF" stroke="#263238" stroke-width="4"/>
+
+    <!-- Đầu Doraemon với biểu cảm kinh hoàng -->
+    <circle cx="110" cy="150" r="105" fill="url(#doraemonBlue3)" stroke="#263238" stroke-width="5"/>
+    <path d="M 25 175 C 25 105, 195 105, 195 175 C 195 245, 25 245, 25 175 Z" fill="#FFF" stroke="#263238" stroke-width="4"/>
+
+    <!-- Mắt Doraemon trợn tròn to tướng kinh ngạc -->
+    <ellipse cx="90" cy="110" rx="20" ry="28" fill="#FFF" stroke="#263238" stroke-width="4"/>
+    <ellipse cx="130" cy="110" rx="20" ry="28" fill="#FFF" stroke="#263238" stroke-width="4"/>
+    <!-- Con ngươi co rúm bé tí vì hoảng sợ -->
+    <circle cx="90" cy="115" r="4" fill="#212121"/>
+    <circle cx="130" cy="115" r="4" fill="#212121"/>
+
+    <!-- Mũi đỏ -->
+    <circle cx="110" cy="135" r="14" fill="#E53935" stroke="#B71C1C" stroke-width="3"/>
+
+    <!-- Ria mép & nhân trung -->
+    <line x1="110" y1="149" x2="110" y2="185" stroke="#263238" stroke-width="4"/>
+    <line x1="40" y1="145" x2="90" y2="152" stroke="#263238" stroke-width="3"/>
+    <line x1="35" y1="165" x2="88" y2="165" stroke="#263238" stroke-width="3"/>
+    <line x1="42" y1="185" x2="92" y2="178" stroke="#263238" stroke-width="3"/>
+    <line x1="180" y1="145" x2="130" y2="152" stroke="#263238" stroke-width="3"/>
+    <line x1="185" y1="165" x2="132" y2="165" stroke="#263238" stroke-width="3"/>
+    <line x1="178" y1="185" x2="128" y2="178" stroke="#263238" stroke-width="3"/>
+
+    <!-- Miệng Doraemon há hốc chữ O hoảng loạn -->
+    <ellipse cx="110" cy="205" rx="26" ry="32" fill="#D32F2F" stroke="#263238" stroke-width="4"/>
+    <ellipse cx="110" cy="220" rx="16" ry="12" fill="#FF8A80"/>
+
+    <!-- Vòng cổ & chuông -->
+    <rect x="50" y="230" width="120" height="18" rx="8" fill="#D32F2F" stroke="#263238" stroke-width="4"/>
+    <circle cx="110" cy="252" r="18" fill="#FFD600" stroke="#263238" stroke-width="3"/>
+
+    <!-- Mồ hôi hột Doraemon bắn tung tóe -->
+    <path d="M 15 110 Q 0 120 10 130 Q 20 120 15 110 Z" fill="#40C4FF" stroke="#0288D1" stroke-width="1.5"/>
+    <path d="M 205 110 Q 220 120 210 130 Q 200 120 205 110 Z" fill="#40C4FF" stroke="#0288D1" stroke-width="1.5"/>
+  </g>
+
+  <!-- ==================== BONG BÓNG THOẠI ==================== -->
+  <!-- Bong bóng Nobita nghẹn ứ -->
+  <g transform="translate(190, 110)" filter="url(#bubbleShadow3)">
+    <path d="M 0 0 L 290 0 C 305 0, 315 10, 315 25 L 315 85 C 315 100, 305 110, 290 110 L 220 110 L 240 145 L 180 110 L 25 110 C 10 110, 0 100, 0 85 Z" fill="#FFFDE7" stroke="#E65100" stroke-width="4"/>
+    <text x="157" y="32" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="900" fill="#BF360C" text-anchor="middle">HỰ... ẶC... ỢỢỢ... NO QUÁ!</text>
+    <text x="157" y="60" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#212121" text-anchor="middle">Tớ không nuốt nổi một mẩu nào nữa...</text>
+    <text x="157" y="82" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#212121" text-anchor="middle">Nhưng còn 10 chương Lịch sử với Địa lý...</text>
+    <text x="157" y="102" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#C62828" text-anchor="middle">Chẳng lẽ bỏ cuộc sao... ợ... 🤢</text>
+  </g>
+
+  <!-- Bong bóng Doraemon thất thanh la hét -->
+  <g transform="translate(690, 80)" filter="url(#bubbleShadow3)">
+    <path d="M 0 0 L 370 0 C 385 0, 395 10, 395 25 L 395 95 C 395 110, 385 120, 370 120 L 220 120 L 190 155 L 200 120 L 25 120 C 10 120, 0 110, 0 95 Z" fill="#FFEBEE" stroke="#D32F2F" stroke-width="4"/>
+    <text x="197" y="34" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="900" fill="#C62828" text-anchor="middle">DỪNG LẠI MAU NOBITA ƠI!!</text>
+    <text x="197" y="64" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="bold" fill="#37474F" text-anchor="middle">Cậu đã nuốt sạch hơn 50 lát bánh mì,</text>
+    <text x="197" y="87" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="bold" fill="#37474F" text-anchor="middle">hết sạch cả 5 ổ bánh của tớ rồi đấy!</text>
+    <text x="197" y="110" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="900" fill="#E65100" text-anchor="middle">Ăn nữa là NỔ TUNG BỤNG đấy!! 💥</text>
+  </g>
+
+  <!-- SFX -->
+  <text x="350" y="650" font-family="'Impact', Arial, sans-serif" font-size="46" font-style="italic" fill="#FF5722" stroke="#FFF" stroke-width="2" transform="rotate(-8, 350, 650)">ỢỢỢỢỢỢ...!! 💥</text>
+  <text x="590" y="470" font-family="'Impact', Arial, sans-serif" font-size="36" font-style="italic" fill="#FFEB3B" stroke="#BF360C" stroke-width="1.5">PHÌNH TO! 🎈</text>
+</svg>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Truyện Tranh: Oliver Tree & Cú Nhảy Scooter Thế Kỷ</title>
+  <style>
+    :root {
+      --primary: #d926a9;
+      --primary-dark: #9c27b0;
+      --cyan: #00e5ff;
+      --gold: #ffea00;
+      --accent: #ff007f;
+      --bg: #090412;
+      --card-bg: #140b24;
+      --border-color: #2b164a;
+      --text: #f3f4f6;
+      --text-muted: #a1a1aa;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      background: radial-gradient(circle at top, #240b3b 0%, #090412 60%, #030108 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 16px 60px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+      max-width: 960px;
+    }
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff007f, #7928ca);
+      color: white;
+      padding: 6px 20px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 18px rgba(255, 0, 127, 0.45);
+    }
+    h1 {
+      font-size: 34px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #ffea00, #ff007f, #00e5ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+    p.subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .video-theater {
+      width: 100%;
+      max-width: 1100px;
+      background: #000;
+      border: 2px solid rgba(0, 229, 255, 0.4);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 40px rgba(217, 38, 169, 0.25);
+      margin-bottom: 30px;
+      position: relative;
+    }
+    video {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      display: block;
+      background: #000;
+      outline: none;
+    }
+    .controls-panel {
+      max-width: 1100px;
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 36px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    }
+    .controls-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .timeline-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .btn-time {
+      background: #1e1136;
+      border: 1px solid #482375;
+      color: #e4d4f7;
+      padding: 8px 14px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-time:hover {
+      background: #7928ca;
+      border-color: #d926a9;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(217, 38, 169, 0.4);
+    }
+    .btn-time.active {
+      background: linear-gradient(135deg, #d926a9, #7928ca);
+      border-color: var(--cyan);
+      color: #fff;
+    }
+    .action-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 16px;
+      margin-top: 8px;
+    }
+    .btn {
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+    .btn.primary {
+      background: linear-gradient(135deg, #ff007f, #d926a9);
+      color: #fff;
+      border: none;
+      box-shadow: 0 4px 15px rgba(255, 0, 127, 0.4);
+    }
+    .btn.primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 0, 127, 0.6);
+    }
+    .btn.secondary {
+      background: #1e1136;
+      color: var(--cyan);
+      border: 1px solid #482375;
+    }
+    .btn.secondary:hover {
+      background: #2f1a55;
+      border-color: var(--cyan);
+      transform: translateY(-2px);
+    }
+    .section-title {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      max-width: 1100px;
+      width: 100%;
+      color: var(--gold);
+    }
+    .scene-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .scene-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+    .scene-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--cyan);
+      box-shadow: 0 12px 28px rgba(0, 229, 255, 0.2);
+    }
+    .scene-thumb {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .scene-info {
+      padding: 16px;
+    }
+    .scene-tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .tag-intro { background: #7928ca; color: #fff; }
+    .tag-s1 { background: #e11d48; color: #fff; }
+    .tag-s2 { background: #ea580c; color: #fff; }
+    .tag-s3 { background: #dc2626; color: #fff; }
+    .tag-s4 { background: #059669; color: #fff; }
+    .tag-outro { background: #0284c7; color: #fff; }
+    .scene-heading {
+      font-size: 16px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .scene-dialogue {
+      font-size: 13.5px;
+      color: var(--gold);
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 8px;
+      background: rgba(0,0,0,0.3);
+      padding: 8px 10px;
+      border-radius: 8px;
+      border-left: 3px solid var(--gold);
+    }
+    .scene-desc {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .moral-box {
+      max-width: 1100px;
+      width: 100%;
+      background: linear-gradient(135deg, rgba(36, 11, 59, 0.7), rgba(9, 4, 18, 0.9));
+      border: 2px dashed #d926a9;
+      border-radius: 18px;
+      padding: 26px;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+    .moral-box h3 {
+      font-size: 20px;
+      color: var(--cyan);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .moral-list {
+      list-style: none;
+    }
+    .moral-list li {
+      margin-bottom: 14px;
+      position: relative;
+      padding-left: 32px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #e4e4e7;
+    }
+    .moral-list li::before {
+      content: '⚡';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 18px;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #71717a;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="badge">🎬 CINEMATIC AI MOTION 2.5D • MASTER EDITION</div>
+    <h1>🛴🔥 Oliver Tree & Cú Nhảy Scooter Thế Kỷ</h1>
+    <p class="subtitle">Video chuyển thể điện ảnh Full HD 1376x768 • Chuyển động máy quay cầm tay 3D Parallax • Đèn flash paparazzi, khói lửa phản lực, cú nổ chấn động rung màn hình • Lồng tiếng đối thoại tiếng Việt biểu cảm & hòa âm sống động</p>
+  </header>
+
+  <!-- Video Theater -->
+  <div class="video-theater">
+    <video id="videoPlayer" controls preload="metadata" poster="./images/oliver_video_intro.jpg">
+      <source src="oliver_tree_cu_nhay_the_ky.mp4" type="video/mp4">
+      Trình duyệt của bạn không hỗ trợ thẻ video HTML5.
+    </video>
+  </div>
+
+  <!-- Interactive Controls & Timeline -->
+  <div class="controls-panel">
+    <div class="controls-title">⏱️ Nhảy Nhanh Đến Phân Cảnh (Timeline Jump)</div>
+    <div class="timeline-nav">
+      <button class="btn-time" onclick="seekTo(0)">🎬 [00:00] Cảnh 0: Thẻ Mở Đầu</button>
+      <button class="btn-time" onclick="seekTo(8)">🎤 [00:08] Cảnh 1: Họp Báo Chấn Động</button>
+      <button class="btn-time" onclick="seekTo(27)">🚀 [00:27] Cảnh 2: Scooter Phản Lực</button>
+      <button class="btn-time" onclick="seekTo(38)">💥 [00:38] Cảnh 3: Cú Nổ Giữa Trời</button>
+      <button class="btn-time" onclick="seekTo(46)">👑 [00:46] Cảnh 4: World Tour Bất Tử</button>
+      <button class="btn-time" onclick="seekTo(60)">🎉 [01:00] Cảnh 5: 3 Bài Học Vàng</button>
+    </div>
+
+    <div class="action-links">
+      <a href="oliver_tree_cu_nhay_the_ky.mp4" download class="btn primary">⬇️ Tải Video MP4 (~38MB)</a>
+      <a href="HUONG_DAN_TAO_VIDEO_AI_HOAN_HAO.md" target="_blank" class="btn secondary">📖 Sổ Tay Prompt Video AI (Kling / Runway)</a>
+      <a href="xem_truyen_oliver_tree.html" class="btn secondary">📖 Xem Truyện Tranh 4 Khung (Ảnh Gốc)</a>
+      <a href="xem_tong_hop_tat_ca_tranh.html" class="btn secondary">🏠 Trở Về Kho Tranh Truyện</a>
+    </div>
+  </div>
+
+  <div class="section-title">🎞️ Danh Sách 6 Phân Đoạn Kịch Bản Điện Ảnh</div>
+  <div class="scene-grid">
+    <!-- Cảnh 0 -->
+    <div class="scene-card" onclick="seekTo(0)">
+      <img src="./images/oliver_video_intro.jpg" alt="Intro Card" class="scene-thumb">
+      <div class="scene-info">
+        <span class="scene-tag tag-intro">00:00 - 00:08 • Mở Đầu</span>
+        <div class="scene-heading">Thẻ Giới Thiệu & Phong Cách Retro</div>
+        <div class="scene-dialogue">DẪN CHUYỆN: "Chào mừng các bạn đến với siêu phẩm video truyện tranh người thật: Oliver Tree và Cú Nhảy Scooter Thế Kỷ!"</div>
+        <div class="scene-desc">Bối cảnh Cyberpunk Neon huyền ảo, tiếng chuông đồng vọng đưa khán giả vào thế giới mạo hiểm quái chiêu của Oliver Tree.</div>
+      </div>
+    </div>
+
+    <!-- Cảnh 1 -->
+    <div class="scene-card" onclick="seekTo(8)">
+      <img src="./images/oliver_tree_1.jpg" alt="Khung 1 Họp Báo" class="scene-thumb">
+      <div class="scene-info">
+        <span class="scene-tag tag-s1">00:08 - 00:27 • Khung 1</span>
+        <div class="scene-heading">Họp Báo Chấn Động: Cú Nhảy Lịch Sử</div>
+        <div class="scene-dialogue">OLIVER TREE: "Mọi người nghĩ tôi chỉ biết hát viral TikTok thôi sao?! Hôm nay tôi sẽ phá tan mọi quy luật vật lý bằng cú nhảy xe scooter phản lực tên lửa cao nhất địa cầu!"</div>
+        <div class="scene-desc">Camera lia chậm vào bục phát biểu, hàng trăm máy ảnh lóe sáng chớp giật liên hồi theo từng lời tuyên ngôn đanh thép.</div>
+      </div>
+    </div>
+
+    <!-- Cảnh 2 -->
+    <div class="scene-card" onclick="seekTo(27)">
+      <img src="./images/oliver_tree_2.jpg" alt="Khung 2 Scooter Phản Lực" class="scene-thumb">
+      <div class="scene-info">
+        <span class="scene-tag tag-s2">00:27 - 00:38 • Khung 2</span>
+        <div class="scene-heading">Cỗ Máy Scooter Quái Thú Rực Lửa</div>
+        <div class="scene-dialogue">OLIVER TREE: "WOOHOO! VROOM VROOM! CẢM GIÁC NÀY MỚI LÀ SỐNG CHỨ! Tránh đường cho quái thú phản lực tên lửa lao dốc!"</div>
+        <div class="scene-desc">Ống bô phụt bão lửa rực rỡ bốc cháy dữ dội trong đêm neon, camera lướt theo tốc độ xé gió của chiếc xe lao thẳng lên bệ phóng.</div>
+      </div>
+    </div>
+
+    <!-- Cảnh 3 -->
+    <div class="scene-card" onclick="seekTo(38)">
+      <img src="./images/oliver_tree_3.jpg" alt="Khung 3 Cú Nổ" class="scene-thumb">
+      <div class="scene-info">
+        <span class="scene-tag tag-s3">00:38 - 00:46 • Khung 3</span>
+        <div class="scene-heading">Cú Nổ Giữa Trời: "Life Goes On..."</div>
+        <div class="scene-dialogue">OLIVER TREE: "AAAGHHHHHH! CÁI XE PHẢN BỘI TAO RỒIIII! Bay giữa không trung mất trọng lực rồi cứu tao vớiii!"</div>
+        <div class="scene-desc">Tiếng nổ BOOM rung chuyển bầu trời, xe vỡ trăm mảnh, Oliver Tree bay lơ lửng mất trọng lực trong pha slow-motion huyền thoại.</div>
+      </div>
+    </div>
+
+    <!-- Cảnh 4 -->
+    <div class="scene-card" onclick="seekTo(46)">
+      <img src="./images/oliver_tree_4.jpg" alt="Khung 4 World Tour" class="scene-thumb">
+      <div class="scene-info">
+        <span class="scene-tag tag-s4">00:46 - 01:00 • Khung 4</span>
+        <div class="scene-heading">Cú Chốt Hạ Bất Tử: World Tour Mở Bán</div>
+        <div class="scene-dialogue">OLIVER TREE: "Kỷ lục có thể vỡ, xương có thể nứt... NHƯNG ÂM NHẠC LÀ BẤT TỬ! KỂ TỪ HÔM NAY, WORLD TOUR: LIFE GOES ON CHÍNH THỨC BẮT ĐẦU! BẬT NHẠC LÊN NÀO!"</div>
+        <div class="scene-desc">Toàn thân quấn băng như xác ướp nhưng tóc úp nồi vẫn kiêu hãnh, giơ mic vàng và ngón tay chữ V trong tiếng reo hò cuồng nhiệt của y bác sĩ.</div>
+      </div>
+    </div>
+
+    <!-- Cảnh 5 -->
+    <div class="scene-card" onclick="seekTo(60)">
+      <img src="./images/oliver_video_outro.jpg" alt="Outro Card" class="scene-thumb">
+      <div class="scene-info">
+        <span class="scene-tag tag-outro">01:00 - 01:13 • Kết Thúc</span>
+        <div class="scene-heading">Thẻ Tổng Kết 3 Bài Học Hài Hước</div>
+        <div class="scene-dialogue">DẪN CHUYỆN: "Và đó là tinh thần bất diệt Life Goes On của quái kiệt Oliver Tree! Cảm ơn các bạn đã theo dõi, hẹn gặp lại ở những câu chuyện hài hước tiếp theo!"</div>
+        <div class="scene-desc">Đúc kết 3 triết lý sống lạc quan: Tinh thần Life Goes On, Thương hiệu cá nhân là số 1 và Đừng bao giờ tin lời giải nghệ!</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Moral Section -->
+  <div class="moral-box">
+    <h3>💡 3 Bài Học Vàng Đúc Kết Từ Cuộc Phiêu Lưu Của Oliver Tree</h3>
+    <ul class="moral-list">
+      <li><strong>Tinh thần bất diệt "Life Goes On":</strong> Dù cuộc đời có quăng bạn vào những cú tiếp đất thảm họa đi vào lòng đất, nát cả chiếc xe scooter thân yêu, hãy cứ mỉm cười đứng dậy (hoặc ngồi xe lăn) và tiếp tục cống hiến hết mình!</li>
+      <li><strong>Thương hiệu cá nhân là số 1:</strong> Xương có thể rạn nứt vài chỗ, toàn thân có thể quấn băng trắng như xác ướp Ai Cập, nhưng mái tóc úp nồi thương hiệu và cặp kính mát nhất quyết không bao giờ được phép mất đi!</li>
+      <li><strong>Nghệ thuật giải nghệ đỉnh cao:</strong> Đừng bao giờ tin vào những lời tuyên bố giải nghệ của Oliver Tree! Mỗi lần cậu ta tuyên bố giải nghệ chính là tín hiệu cho một chuyến lưu diễn thế giới hoặc album triệu view chuẩn bị bùng nổ!</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>Kho Tàng Truyện Cười Dân Gian & Hiện Đại • Hệ Thống Video Hoạt Họa & Truyện Tranh Điện Ảnh</p>
+  </footer>
+
+  <script>
+    const player = document.getElementById('videoPlayer');
+    function seekTo(seconds) {
+      player.currentTime = seconds;
+      player.play();
+      player.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
+</body>
+</html>

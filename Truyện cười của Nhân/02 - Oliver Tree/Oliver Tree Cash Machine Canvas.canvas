@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"header_cashmachine","type":"text","text":"# 🛥️💸 Oliver Tree: Cash Machine (Realistic Comic Canvas)\nThứ tự đọc: **Khung 1 (Du thuyền Limo hồng) ➜ Khung 2 (Quần chứa nước & Quái nhân) ➜ Khung 3 (Rượt đuổi ngựa & Đập đàn) ➜ Khung 4 (Cây ATM & Mưa tiền)**","x":0,"y":-180,"width":1700,"height":130,"color":"3"},
+		{"id":"cm_panel1_node","type":"file","file":"cash_machine_real_1.jpg","x":0,"y":0,"width":800,"height":533},
+		{"id":"cm_panel2_node","type":"file","file":"cash_machine_real_2.jpg","x":850,"y":0,"width":850,"height":577},
+		{"id":"cm_panel3_node","type":"file","file":"cash_machine_real_3.jpg","x":0,"y":620,"width":800,"height":533},
+		{"id":"cm_panel4_node","type":"file","file":"cash_machine_real_4.jpg","x":900,"y":620,"width":800,"height":533},
+		{"id":"cm_story_note","type":"file","file":"02 - Oliver Tree/🎭 Oliver Tree Cash Machine.md","x":1780,"y":0,"width":620,"height":1153}
+	],
+	"edges":[
+		{"id":"edge_cm_1_2","fromNode":"cm_panel1_node","fromSide":"right","toNode":"cm_panel2_node","toSide":"left","label":"Lên bờ cát & Quái nhân Metatech ⚠️"},
+		{"id":"edge_cm_2_3","fromNode":"cm_panel2_node","fromSide":"bottom","toNode":"cm_panel3_node","toSide":"top","label":"Rượt đuổi lưng ngựa & Đập nát đàn Guitar! 💥"},
+		{"id":"edge_cm_3_4","fromNode":"cm_panel3_node","fromSide":"right","toNode":"cm_panel4_node","toSide":"left","label":"Cú ngã Scooter & Cây ATM nhả tiền vô tận 💵"}
+	]
+}

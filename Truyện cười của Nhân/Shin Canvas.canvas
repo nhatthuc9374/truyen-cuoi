@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"header_shin","type":"text","text":"# 🖍️🍑 Shin: Cậu Bé Bút Chì (Live-Action Manga Canvas)\nThứ tự đọc: **Khung 1 (Chân ái bánh Chocobi) ➜ Khung 2 (Điệu múa Buri Buri) ➜ Khung 3 (Cơn ác mộng ớt chuông) ➜ Khung 4 (Cú xoay thái dương u đầu của mẹ Misae)**","x":0,"y":-180,"width":1700,"height":130,"color":"2"},
+		{"id":"shin_panel1_node","type":"file","file":"images/shin_human_1.jpg","x":0,"y":0,"width":800,"height":447},
+		{"id":"shin_panel2_node","type":"file","file":"images/shin_human_2.jpg","x":900,"y":0,"width":800,"height":447},
+		{"id":"shin_panel3_node","type":"file","file":"images/shin_human_3.jpg","x":0,"y":550,"width":800,"height":447},
+		{"id":"shin_panel4_node","type":"file","file":"images/shin_human_4.jpg","x":900,"y":550,"width":800,"height":447},
+		{"id":"shin_story_note","type":"file","file":"05 - Truyện Tranh & Dân Gian/Truyện Tranh Shin - Cậu Bé Bút Chì.md","x":1780,"y":0,"width":620,"height":1050}
+	],
+	"edges":[
+		{"id":"edge_shin_1_2","fromNode":"shin_panel1_node","fromSide":"right","toNode":"shin_panel2_node","toSide":"left","label":"Ăn no bánh Chocobi ➜ Hăng hái múa mông Buri Buri! 🍑💨"},
+		{"id":"edge_shin_2_3","fromNode":"shin_panel2_node","fromSide":"bottom","toNode":"shin_panel3_node","toSide":"top","label":"Mẹ tức xì khói ➜ Bắt ăn ớt chuông xanh giải ngố! 🫑"},
+		{"id":"edge_shin_3_4","fromNode":"shin_panel3_node","fromSide":"right","toNode":"shin_panel4_node","toSide":"left","label":"Tẩu tán cho Bạch Tuyết bất thành ➜ Lĩnh trọn cú xoay thái dương u đầu! 💥🤕"}
+	]
+}

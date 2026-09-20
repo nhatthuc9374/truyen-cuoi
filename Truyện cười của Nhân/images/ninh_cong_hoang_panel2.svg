@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <!-- Dramatic Chiaroscuro & Human Anatomy Gradients -->
+    <radialGradient id="roomShadow" cx="30%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+
+    <!-- Side-lit Human Face Skin Gradients -->
+    <linearGradient id="splitFaceSkin" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="30%" stop-color="#F59E0B"/>
+      <stop offset="60%" stop-color="#B45309"/>
+      <stop offset="85%" stop-color="#78350F"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="handGripSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="40%" stop-color="#D97706"/>
+      <stop offset="80%" stop-color="#92400E"/>
+      <stop offset="100%" stop-color="#451A03"/>
+    </linearGradient>
+
+    <!-- Cockroach Shell Realistic Gradient -->
+    <linearGradient id="roachShell" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#7F1D1D"/>
+      <stop offset="30%" stop-color="#450A0A"/>
+      <stop offset="70%" stop-color="#2D0606"/>
+      <stop offset="100%" stop-color="#170303"/>
+    </linearGradient>
+
+    <!-- Honeycomb Slipper Material -->
+    <linearGradient id="slipperMat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="40%" stop-color="#FACC15"/>
+      <stop offset="80%" stop-color="#CA8A04"/>
+      <stop offset="100%" stop-color="#854D0E"/>
+    </linearGradient>
+
+    <radialGradient id="sniperReticle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#991B1B" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="cinematicShadow2" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="6" dy="10" stdDeviation="8" flood-color="#000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND: CĂN PHÒNG ĐÊM TỐI ÁNH SÁNG KỊCH TÍNH -->
+  <rect x="0" y="0" width="1200" height="800" fill="url(#roomShadow)"/>
+
+  <!-- SÀN GỖ VÀ CHÂN TƯỜNG CỰC KỲ CHI TIẾT -->
+  <polygon points="0,580 1200,480 1200,800 0,800" fill="#1C1917"/>
+  <line x1="0" y1="640" x2="1200" y2="540" stroke="#292524" stroke-width="3"/>
+  <line x1="0" y1="710" x2="1200" y2="610" stroke="#292524" stroke-width="3"/>
+
+  <!-- TIÊU ĐỀ KHUNG TRUYỆN -->
+  <g transform="translate(40, 30)">
+    <rect x="0" y="0" width="580" height="46" rx="10" fill="#D97706" stroke="#FBBF24" stroke-width="3" filter="url(#cinematicShadow2)"/>
+    <text x="290" y="32" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="900" fill="#FFF" text-anchor="middle" letter-spacing="1">KHUNG 2: CHIẾN THUẬT & VŨ KHÍ TỐI THƯỢNG!</text>
+  </g>
+
+  <!-- ==================== MỤC TIÊU: CON GIÁN CHÂN THỰC Ở CỰ LY GẦN ==================== -->
+  <g id="realisticCockroach" transform="translate(160, 500)" filter="url(#cinematicShadow2)">
+    <!-- Tâm ngắm đỏ phong cách bắn tỉa -->
+    <circle cx="90" cy="90" r="90" fill="url(#sniperReticle)"/>
+    <circle cx="90" cy="90" r="65" fill="none" stroke="#DC2626" stroke-width="2" stroke-dasharray="6,4"/>
+    <line x1="90" y1="10" x2="90" y2="170" stroke="#DC2626" stroke-width="1.5"/>
+    <line x1="10" y1="90" x2="170" y2="90" stroke="#DC2626" stroke-width="1.5"/>
+
+    <!-- Đổ bóng của con gián xuống sàn gỗ -->
+    <ellipse cx="90" cy="115" rx="35" ry="55" fill="#000" opacity="0.6"/>
+
+    <!-- THÂN GIÁN CÓ ĐỘ BÓNG CHITIN CỰC THẬT -->
+    <ellipse cx="90" cy="90" rx="26" ry="50" fill="url(#roachShell)" stroke="#170303" stroke-width="1.5"/>
+    <!-- Vệt sáng phản chiếu ánh đèn trên mai gián -->
+    <path d="M 78 55 Q 84 90 76 125" fill="none" stroke="#FCA5A5" stroke-width="2.5" opacity="0.5"/>
+
+    <!-- Đốt ngực trước (Pronotum) hình đĩa -->
+    <ellipse cx="90" cy="48" rx="20" ry="14" fill="#3D0606" stroke="#170303" stroke-width="1.5"/>
+    <!-- Đầu gián chúi xuống dưới -->
+    <ellipse cx="90" cy="38" rx="10" ry="8" fill="#1C1917"/>
+
+    <!-- Hai râu dài ngoằng có đốt chuyển động -->
+    <path d="M 85 32 Q 50 -5 15 -25" fill="none" stroke="#7F1D1D" stroke-width="2"/>
+    <path d="M 95 32 Q 130 -5 165 -25" fill="none" stroke="#7F1D1D" stroke-width="2"/>
+
+    <!-- 6 chân có gai xương nhọn chân thực -->
+    <path d="M 68 60 L 35 45 L 20 75" fill="none" stroke="#450A0A" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 66 85 L 30 95 L 15 125" fill="none" stroke="#450A0A" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 70 115 L 40 145 L 25 175" fill="none" stroke="#450A0A" stroke-width="3" stroke-linecap="round"/>
+
+    <path d="M 112 60 L 145 45 L 160 75" fill="none" stroke="#450A0A" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 114 85 L 150 95 L 165 125" fill="none" stroke="#450A0A" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 110 115 L 140 145 L 155 175" fill="none" stroke="#450A0A" stroke-width="3" stroke-linecap="round"/>
+
+    <text x="90" y="195" font-family="'Impact', Arial" font-size="16" fill="#F87171" text-anchor="middle">KHOẢNG CÁCH: 1.5 MÉT 🎯</text>
+  </g>
+
+  <!-- ==================== NINH CÔNG HOÀNG TRONG TƯ THẾ HÀNH ĐỘNG THỰC TẾ ==================== -->
+  <g id="ninhActionReal" transform="translate(480, 80)" filter="url(#cinematicShadow2)">
+    
+    <!-- CƠ THỂ KHOM NGƯỜI RÓN RÉN (ANATOMY CHUẨN XÁC) -->
+    <!-- Thân và áo vest chiến thuật có nếp nhăn vải tự nhiên -->
+    <path d="M 90 390 L 130 260 Q 250 230 360 260 L 390 390 L 430 650 L 50 650 Z" fill="#1E293B" stroke="#0F172A" stroke-width="3"/>
+    <!-- Nếp gấp vải căng ở thắt lưng khi cúi -->
+    <path d="M 120 440 Q 240 460 360 430" fill="none" stroke="#0F172A" stroke-width="4"/>
+    <path d="M 140 500 Q 240 520 340 490" fill="none" stroke="#0F172A" stroke-width="3"/>
+
+    <!-- TAY PHẢI CẦM CHẮC DÉP TỔ ONG GIƠ LÊN CAO -->
+    <!-- Bắp tay và cẳng tay có gân cơ chân thực -->
+    <path d="M 360 280 Q 440 210 430 140" fill="none" stroke="url(#handGripSkin)" stroke-width="32" stroke-linecap="round"/>
+    
+    <!-- BÀN TAY NẮM CHẶT QUAI DÉP VỚI CÁC NGÓN TAY TỈ MỈ -->
+    <g transform="translate(400, 110)">
+      <!-- Lưng bàn tay có gân mu bàn tay -->
+      <path d="M 0 20 Q 25 10 30 -5 Q 15 -15 -5 5 Z" fill="url(#handGripSkin)"/>
+      <!-- Các ngón tay quặp chặt quanh quai dép -->
+      <!-- Ngón trỏ & móng -->
+      <rect x="15" y="-12" width="28" height="11" rx="5" fill="#FCD34D" stroke="#92400E" stroke-width="1.5"/>
+      <circle cx="38" cy="-6" r="2.5" fill="#FEF3C7"/>
+      <!-- Ngón giữa -->
+      <rect x="18" y="2" width="28" height="11" rx="5" fill="#F59E0B" stroke="#92400E" stroke-width="1.5"/>
+      <circle cx="41" cy="7" r="2.5" fill="#FEF3C7"/>
+      <!-- Ngón áp út -->
+      <rect x="14" y="16" width="28" height="11" rx="5" fill="#D97706" stroke="#92400E" stroke-width="1.5"/>
+      <!-- Ngón út -->
+      <rect x="8" y="30" width="26" height="10" rx="5" fill="#B45309" stroke="#78350F" stroke-width="1.5"/>
+      <!-- Ngón cái đè chốt -->
+      <path d="M -5 10 Q -15 -5 5 -10" fill="none" stroke="#D97706" stroke-width="10" stroke-linecap="round"/>
+    </g>
+
+    <!-- ==================== CÂY DÉP TỔ ONG VÀNG HUYỀN THOẠI ==================== -->
+    <g transform="translate(370, -40) rotate(32)" filter="url(#cinematicShadow2)">
+      <!-- Đế dép cao su tổ ong dập nổi -->
+      <path d="M 15 0 C 5 -40, 75 -40, 65 0 L 75 180 C 75 210, 5 210, 5 180 Z" fill="url(#slipperMat)" stroke="#78350F" stroke-width="3"/>
+      <!-- Quai dép có các hàng lỗ tổ ong huyền thoại -->
+      <rect x="10" y="35" width="60" height="75" rx="8" fill="#FACC15" stroke="#A16207" stroke-width="2"/>
+      <g fill="#78350F" opacity="0.8">
+        <circle cx="25" cy="50" r="3.5"/>
+        <circle cx="40" cy="50" r="3.5"/>
+        <circle cx="55" cy="50" r="3.5"/>
+        <circle cx="18" cy="70" r="3.5"/>
+        <circle cx="33" cy="70" r="3.5"/>
+        <circle cx="48" cy="70" r="3.5"/>
+        <circle cx="63" cy="70" r="3.5"/>
+        <circle cx="25" cy="90" r="3.5"/>
+        <circle cx="40" cy="90" r="3.5"/>
+        <circle cx="55" cy="90" r="3.5"/>
+      </g>
+    </g>
+
+    <!-- ==================== KHUÔN MẶT CĂNG THẲNG CỰC ĐỘ (SPLIT LIGHTING) ==================== -->
+    <path d="M 175 130 C 175 60, 310 60, 310 130 C 310 195, 280 240, 240 250 C 200 240, 175 195, 175 130 Z" fill="url(#splitFaceSkin)" stroke="#5E2C15" stroke-width="2"/>
+
+    <!-- Tóc đen đổ bóng theo khối đầu thật -->
+    <path d="M 165 115 C 155 35, 325 35, 320 115 C 295 85, 270 90, 245 100 C 220 85, 190 90, 165 115 Z" fill="#0F172A" stroke="#020617" stroke-width="3"/>
+
+    <!-- MẮT NGƯỜI THẬT NHEO LẠI TẬP TRUNG CAO ĐỘ -->
+    <!-- Mắt trái ngắm mục tiêu -->
+    <g transform="translate(195, 138)">
+      <path d="M 0 3 Q 16 -4 32 3 Q 16 10 0 3 Z" fill="#FFF" stroke="#451A03" stroke-width="2"/>
+      <circle cx="16" cy="3" r="6" fill="#170B04"/>
+      <circle cx="15" cy="2" r="1.5" fill="#FFF"/>
+      <!-- Lông mày nhíu chặt tạo nếp nhăn trán -->
+      <path d="M -5 -8 L 35 -3" stroke="#0F172A" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Mắt phải trong vùng bóng tối -->
+    <g transform="translate(255, 138)">
+      <path d="M 0 3 Q 16 -4 32 3 Q 16 10 0 3 Z" fill="#E2E8F0" stroke="#1E293B" stroke-width="2"/>
+      <circle cx="14" cy="3" r="6" fill="#0F172A"/>
+      <circle cx="13" cy="2" r="1.5" fill="#FFF"/>
+      <path d="M 37 -8 L -3 -3" stroke="#0F172A" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Nếp nhăn giữa 2 chân mày (Glabellar lines) thể hiện sự căng thẳng -->
+    <line x1="236" y1="130" x2="236" y2="142" stroke="#5E2C15" stroke-width="2.5"/>
+    <line x1="242" y1="131" x2="242" y2="141" stroke="#5E2C15" stroke-width="2"/>
+
+    <!-- Sống mũi cao và cánh mũi gồng -->
+    <path d="M 235 138 L 232 175 L 244 178" fill="none" stroke="#7C4124" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- GIỌT MỒ HÔI THỰC TẾ ĐANG LĂN TRÊN GÒ MÁ -->
+    <path d="M 205 160 Q 200 175 205 180 Q 210 175 205 160 Z" fill="#38BDF8" stroke="#0284C7" stroke-width="1.5"/>
+    <circle cx="204" cy="176" r="1.5" fill="#FFF"/>
+
+    <!-- Miệng mím chặt quyết tâm dồn lực -->
+    <path d="M 215 205 Q 238 212 260 204" fill="none" stroke="#451A03" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- ==================== BONG BÓNG SUY NGHĨ CHIẾN THUẬT ==================== -->
+  <g transform="translate(140, 600)" filter="url(#cinematicShadow2)">
+    <path d="M 0 0 L 880 0 C 895 0, 905 10, 905 25 L 905 135 C 905 150, 895 160, 880 160 L 620 160 L 600 190 L 595 160 L 25 160 C 10 160, 0 150, 0 135 Z" fill="#0F172A" stroke="#FBBF24" stroke-width="3"/>
+    <text x="452" y="38" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="900" fill="#FBBF24" text-anchor="middle">🤫 NÍN THỞ... BÍ KÍP TIẾP CẬN KHOA HỌC:</text>
+    <text x="452" y="72" font-family="'Segoe UI', Arial, sans-serif" font-size="16.5" font-weight="bold" fill="#F1F5F9" text-anchor="middle">"Quy tắc số 1: Giữ nhịp thở đều đặn, hạ thấp trọng tâm, di chuyển không phát ra tiếng động.</text>
+    <text x="452" y="102" font-family="'Segoe UI', Arial, sans-serif" font-size="16.5" font-weight="bold" fill="#FDE047" text-anchor="middle">Thị giác loài gián rất kém trước các mục tiêu bất động. Giờ là lúc vũ khí tối thượng xuất kích:</text>
+    <text x="452" y="132" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="900" fill="#38BDF8" text-anchor="middle">DÉP TỔ ONG THẦN CHƯỞNG! MỘT PHÁT LÀ TIỄN CHÚ EM VỀ MIỀN CỰC LẠC!" 🩴💥</text>
+  </g>
+
+  <!-- SFX -->
+  <text x="800" y="220" font-family="'Impact', Arial" font-size="36" font-style="italic" fill="#FEF08A" stroke="#92400E" stroke-width="1.5">RÚT DÉP! 🩴⚡</text>
+</svg>

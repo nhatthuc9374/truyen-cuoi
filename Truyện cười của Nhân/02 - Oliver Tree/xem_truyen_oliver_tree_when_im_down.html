@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truyện Tranh: Oliver Tree — "When I'm Down"</title>
+  <style>
+    :root {
+      --primary: #f43f5e;
+      --cyan: #06b6d4;
+      --gold: #fbbf24;
+      --purple: #a855f7;
+      --bg: #0c0614;
+      --card-bg: #180e28;
+      --text: #fdf4ff;
+      --muted: #cbd5e1;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      background: radial-gradient(circle at top, #2b103d 0%, #0c0614 70%, #05020a 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 16px 80px;
+    }
+    header { text-align: center; margin-bottom: 24px; max-width: 960px; }
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--primary), var(--purple));
+      color: white;
+      padding: 6px 20px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 18px rgba(244, 63, 94, 0.4);
+    }
+    h1 {
+      font-size: 34px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #fbbf24, #f43f5e, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+    p.subtitle {
+      font-size: 15.5px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .nav-bar {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      padding: 10px 22px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+    .btn-video {
+      background: linear-gradient(135deg, #f43f5e, #e11d48);
+      color: white;
+      box-shadow: 0 4px 15px rgba(244, 63, 94, 0.4);
+    }
+    .btn-video:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(244, 63, 94, 0.6);
+    }
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .panel-card {
+      background: var(--card-bg);
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .panel-card:hover {
+      border-color: var(--cyan);
+      transform: translateY(-3px);
+    }
+    .panel-header {
+      padding: 14px 22px;
+      background: rgba(0, 0, 0, 0.35);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .panel-tag {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .panel-time {
+      font-size: 12px;
+      color: var(--gold);
+      font-weight: 700;
+    }
+    .panel-img-wrap {
+      position: relative;
+      width: 100%;
+      background: #000;
+    }
+    .panel-img-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .panel-content {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .dialogue-box {
+      background: rgba(244, 63, 94, 0.12);
+      border-left: 4px solid var(--primary);
+      padding: 12px 16px;
+      border-radius: 0 10px 10px 0;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    .dialogue-box strong {
+      color: #fecdd3;
+    }
+    .desc-text {
+      font-size: 14.5px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .footer-box {
+      margin-top: 20px;
+      background: rgba(0,0,0,0.3);
+      padding: 24px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+    }
+    .footer-box h3 {
+      color: var(--gold);
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .footer-box p {
+      color: var(--muted);
+      font-size: 14.5px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="badge">🔥 BỘ TRUYỆN TRANH GRAPHIC NOVEL</div>
+    <h1>OLIVER TREE — "WHEN I'M DOWN"</h1>
+    <p class="subtitle">Tác phẩm chuyển thể từ siêu hit khai sinh hình tượng Oliver Tree. Khám phá phong cách ngông cuồng, quả đầu bát úp và những pha mạo hiểm đi vào lòng đất!</p>
+  </header>
+
+  <div class="nav-bar">
+    <a href="../xem_video_oliver_when_im_down.html" class="btn btn-video">🎬 Mở Rạp Xem Video Hoạt Hình 2.5D</a>
+    <a href="../oliver_tree_when_im_down.mp4" download class="btn" style="background:#241238; color:#fff; border:1px solid rgba(255,255,255,0.2);">⬇️ Tải Video MP4</a>
+  </div>
+
+  <div class="container">
+    <!-- KHUNG 1 -->
+    <div class="panel-card">
+      <div class="panel-header">
+        <span class="panel-tag">Khung 1: Bữa Tiệc Sa Mạc & Quả Đầu Bát Úp</span>
+        <span class="panel-time">00:15 - 00:32</span>
+      </div>
+      <div class="panel-img-wrap">
+        <img src="../images/oliver_when_im_down_1.jpg" alt="Khung 1 Oliver Tree">
+      </div>
+      <div class="panel-content">
+        <div class="dialogue-box">
+          <strong>OLIVER TREE (KÍNH ĐỎ):</strong> "I'M JUST DOWN, BABYYY! Mọi người nghĩ tôi sợ gục ngã sao? Không, tôi chỉ đang phiêu theo từng nhịp bass thôi!"
+        </div>
+        <p class="desc-text">Giữa thung lũng sa mạc hoang vu, chàng ca sĩ tóc bát úp với chiếc áo khoác gió retro 90s rộng thùng thình bung xõa những bước nhảy kỳ quặc bên chiếc Monster Truck tím hồng, khuấy động không khí bằng năng lượng không thể dập tắt.</p>
+      </div>
+    </div>
+
+    <!-- KHUNG 2 -->
+    <div class="panel-card">
+      <div class="panel-header">
+        <span class="panel-tag">Khung 2: Quái Thú Monster Truck Drift Tóe Khói</span>
+        <span class="panel-time">00:32 - 00:51</span>
+      </div>
+      <div class="panel-img-wrap">
+        <img src="../images/oliver_when_im_down_2.jpg" alt="Khung 2 Oliver Tree">
+      </div>
+      <div class="panel-content">
+        <div class="dialogue-box">
+          <strong>OLIVER TREE (HÉT LỚN):</strong> "RRRRAAAHHH! TRÁNH HẾT RA NÀO! KRA-KOOM! Khi tao đã vào guồng thì đừng hòng ai cản nổi!"
+        </div>
+        <p class="desc-text">Oliver nhảy tót lên chiếc Monster Truck số hiệu 69, đạp lút chân ga thực hiện pha drift bẻ lái 180 độ tóe lửa, cuốn phăng bụi cát mịt mù như một cơn bão cuộn trào trên nền nhạc sôi động.</p>
+      </div>
+    </div>
+
+    <!-- KHUNG 3 -->
+    <div class="panel-card">
+      <div class="panel-header">
+        <span class="panel-tag">Khung 3: Cú Phóng Scooter Liều Mạng Qua Biển Lửa</span>
+        <span class="panel-time">00:51 - 01:14</span>
+      </div>
+      <div class="panel-img-wrap">
+        <img src="../images/oliver_when_im_down_3.jpg" alt="Khung 3 Oliver Tree">
+      </div>
+      <div class="panel-content">
+        <div class="dialogue-box">
+          <strong>OLIVER TREE (BAY GIỮA KHÔNG TRUNG):</strong> "WHOOOOSH! KAPOW! Cuộc đời chỉ sống một lần, ngã thì ngã chứ sợ gì không bay!"
+        </div>
+        <p class="desc-text">Đỉnh cao của sự mạo hiểm: Chiếc xe trượt scooter mini lao vút lên không trung xé rách biển lửa bốc cháy ngùn ngụt. Khuôn mặt Oliver há hốc nghẹt thở nhưng vẫn quyết không buông tay lái!</p>
+      </div>
+    </div>
+
+    <!-- KHUNG 4 -->
+    <div class="panel-card">
+      <div class="panel-header">
+        <span class="panel-tag">Khung 4: Cú Tiếp Đất Đi Vào Lòng Đất & Nụ Cười Bất Tử</span>
+        <span class="panel-time">01:14 - 01:36</span>
+      </div>
+      <div class="panel-img-wrap">
+        <img src="../images/oliver_when_im_down_4.jpg" alt="Khung 4 Oliver Tree">
+      </div>
+      <div class="panel-content">
+        <div class="dialogue-box">
+          <strong>OLIVER TREE (CƯỜI RẠNG RỠ):</strong> "NEVER GIVE UP, BABY! Ngã càng đau thì cú tiếp đất càng phải để đời!"
+        </div>
+        <p class="desc-text">Chiếc xe scooter cắm ngược xuống đồi cát. Oliver nằm lọt thỏm trong cát nóng, kính râm xộc xệch nhưng ngón tay cái vẫn giơ cao kiêu hãnh khẳng định tinh thần lạc quan không bao giờ bị đánh bại.</p>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <h3>🌟 Thông Điệp Nghệ Thuật Của Siêu Hit "When I'm Down"</h3>
+      <p>Thất bại và vấp ngã không phải là dấu chấm hết, mà chính là gia vị tạo nên một câu chuyện sống động. Hãy dũng cảm thể hiện cá tính kỳ lạ của bạn, tự tin đối đầu với mọi sóng gió và biến từng thử thách thành một màn trình diễn nghệ thuật đầy tiếng cười!</p>
+    </div>
+  </div>
+
+</body>
+</html>

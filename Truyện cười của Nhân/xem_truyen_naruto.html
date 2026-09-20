@@ -1,0 +1,404 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truyện Tranh Hài: Naruto - Bí Thuật Nghìn Năm Đau Đớn</title>
+  <style>
+    :root {
+      --naruto-orange: #FF6D00;
+      --naruto-dark: #E65100;
+      --konoha-blue: #1565C0;
+      --leaf-green: #2E7D32;
+      --card-bg: #FFFFFF;
+      --text: #263238;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #FFF3E0 0%, #FFFDE7 50%, #E8F5E9 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+      max-width: 900px;
+    }
+    .badge {
+      display: inline-block;
+      background: linear-gradient(45deg, #FF6D00, #FF9100);
+      color: white;
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-weight: 900;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 12px rgba(255, 109, 0, 0.35);
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 900;
+      color: #D84315;
+      text-shadow: 1px 1px 0 #FFF;
+      margin-bottom: 8px;
+    }
+    p.subtitle {
+      font-size: 16px;
+      color: #546E7A;
+      line-height: 1.5;
+    }
+    .controls {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      padding: 10px 20px;
+      border: 2px solid var(--naruto-orange);
+      border-radius: 12px;
+      background: #FFF;
+      color: var(--naruto-dark);
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn:hover {
+      background: var(--naruto-orange);
+      color: #FFF;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(255, 109, 0, 0.3);
+    }
+    .btn.active {
+      background: var(--naruto-dark);
+      color: #FFF;
+      border-color: var(--naruto-dark);
+    }
+
+    /* Comic Container */
+    .comic-container {
+      width: 100%;
+      max-width: 1240px;
+      transition: all 0.3s ease;
+    }
+    .grid-mode {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+      gap: 24px;
+    }
+    .strip-mode {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .slide-mode .comic-card {
+      display: none;
+    }
+    .slide-mode .comic-card.current {
+      display: block;
+      animation: fadeIn 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.97); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .comic-card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 18px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+      border: 3px solid #FFE0B2;
+      position: relative;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .comic-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 36px rgba(255, 109, 0, 0.18);
+      border-color: #FFB74D;
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      padding: 0 6px;
+    }
+    .panel-tag {
+      font-size: 15px;
+      font-weight: 800;
+      background: #FFF3E0;
+      color: var(--naruto-dark);
+      padding: 4px 12px;
+      border-radius: 8px;
+      border: 1px solid #FFE082;
+    }
+    .panel-caption {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: #37474F;
+    }
+    .img-wrapper {
+      width: 100%;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #111;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    }
+    .img-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .img-wrapper:hover img {
+      transform: scale(1.015);
+    }
+    .card-footer {
+      margin-top: 14px;
+      padding: 14px 16px;
+      background: #FFF8E1;
+      border-radius: 12px;
+      border-left: 5px solid #FF8F00;
+      font-size: 14.5px;
+      line-height: 1.6;
+    }
+    .card-footer.alert {
+      background: #FFEBEE;
+      border-left-color: #E53935;
+    }
+    .card-footer.danger {
+      background: #FBE9E7;
+      border-left-color: #D84315;
+    }
+    .card-footer.fun {
+      background: #EDE7F6;
+      border-left-color: #7E57C2;
+    }
+    .card-footer strong {
+      color: #D84315;
+    }
+
+    /* Slideshow navigation */
+    .slide-nav {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 24px;
+    }
+    .slide-mode ~ .slide-nav {
+      display: flex;
+    }
+    .slide-counter {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--naruto-dark);
+    }
+
+    /* Moral section */
+    .moral-section {
+      max-width: 900px;
+      width: 100%;
+      background: #FFF;
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 40px;
+      border: 2px dashed #FF9800;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    }
+    .moral-section h3 {
+      color: var(--naruto-dark);
+      font-size: 20px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .moral-section ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .moral-section li {
+      margin-bottom: 10px;
+      padding-left: 28px;
+      position: relative;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .moral-section li::before {
+      content: '👉';
+      position: absolute;
+      left: 0;
+    }
+
+    @media (max-width: 650px) {
+      .grid-mode {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="badge">NARUTO LIVE-ACTION • 4-KOMA COMEDY</div>
+    <h1>🍃🍜 Naruto: Bí Thuật Nghìn Năm Đau Đớn</h1>
+    <p class="subtitle">Phân cảnh hài hước huyền thoại nhất làng Lá trong bài kiểm tra cướp chuông của Đội 7!</p>
+  </header>
+
+  <div class="controls">
+    <button class="btn active" onclick="setMode('grid')">🔲 Chế độ Lưới (2x2)</button>
+    <button class="btn" onclick="setMode('strip')">📜 Dải Dọc (Webtoon)</button>
+    <button class="btn" onclick="setMode('slide')">📽️ Từng Khung Hình</button>
+  </div>
+
+  <main class="comic-container grid-mode" id="comicContainer">
+    <!-- KHUNG 1 -->
+    <article class="comic-card current" data-slide="1">
+      <div class="card-header">
+        <span class="panel-tag">KHUNG 1</span>
+        <span class="panel-caption">Thánh Gáy Xuất Trận: "Tôi sẽ đập tơi bời thầy!" 😤🔥</span>
+      </div>
+      <div class="img-wrapper">
+        <img src="images/naruto_1.jpg" alt="Naruto Khung 1 - Thách đấu thầy Kakashi">
+      </div>
+      <div class="card-footer alert">
+        <strong>Diễn biến:</strong> Trong khi Sasuke và Sakura khôn ngoan ẩn nấp, Naruto một mình lao ra bãi đất trống chỉ thẳng mặt thầy Kakashi gáy to: <em>"Tôi sẽ cướp chuông và trở thành Hokage vĩ đại nhất!"</em>. Thầy Kakashi thản nhiên chẳng thèm quay đầu nhìn!
+      </div>
+    </article>
+
+    <!-- KHUNG 2 -->
+    <article class="comic-card" data-slide="2">
+      <div class="card-header">
+        <span class="panel-tag">KHUNG 2</span>
+        <span class="panel-caption">Cấm Thuật Đáng Sợ: Ấn Hổ của Jonin?! 📖😱</span>
+      </div>
+      <div class="img-wrapper">
+        <img src="images/naruto_2.jpg" alt="Naruto Khung 2 - Kakashi kết ấn Hổ">
+      </div>
+      <div class="card-footer">
+        <strong>Diễn biến:</strong> Tay kia của thầy Kakashi vẫn cầm cuốn tiểu thuyết cam <em>"Icha Icha Tactics"</em>, nhưng tay này bất ngờ kết <strong>Ấn Hổ</strong>! Naruto run rẩy lùi bước, mồ hôi hột túa ra: <em>"Ấn Hổ?! Chẳng lẽ là Hỏa Độn Hào Hỏa Cầu định thiêu sống mình thật sao?!"</em>.
+      </div>
+    </article>
+
+    <!-- KHUNG 3 -->
+    <article class="comic-card" data-slide="3">
+      <div class="card-header">
+        <span class="panel-tag">KHUNG 3</span>
+        <span class="panel-caption">Bí Thuật Konoha: "NGHÌN NĂM ĐAU ĐỚN!!" 👉💥🍑</span>
+      </div>
+      <div class="img-wrapper">
+        <img src="images/naruto_3.jpg" alt="Naruto Khung 3 - Cú thọc Sennen Goroshi">
+      </div>
+      <div class="card-footer danger">
+        <strong>Khoảnh khắc huyền thoại:</strong> Vút một cái! Kakashi biến ra ngay sau lưng Naruto, bốn ngón tay chắp chặt đâm thẳng vào "yếu huyệt": <em>"Bí thuật Thể thuật Làng Lá: THỌC HUYẾT NGHÌN NĂM ĐAU ĐỚN (Sennen Goroshi)!!"</em>. Naruto đông cứng toàn thân vì cơn thấu tận trời xanh!
+      </div>
+    </article>
+
+    <!-- KHUNG 4 -->
+    <article class="comic-card" data-slide="4">
+      <div class="card-header">
+        <span class="panel-tag">KHUNG 4</span>
+        <span class="panel-caption">Bay Vào Quỹ Đạo: Nỗi nhục nhã của Đội 7! 🚀🌊🤦‍♂️</span>
+      </div>
+      <div class="img-wrapper">
+        <img src="images/naruto_4.jpg" alt="Naruto Khung 4 - Naruto phóng lên trời rơi xuống suối">
+      </div>
+      <div class="card-footer fun">
+        <strong>Hậu quả cười ra nước mắt:</strong> Lực đẩy cực mạnh phóng Naruto bay vút lên trời như tên lửa, hai tay ôm chặt mông gào khóc thấu mây xanh trước khi rơi xuống lòng suối! Sasuke ôm trán bất lực, Sakura bịt miệng nín cười, còn Kakashi thong thả lật trang sách tiếp theo! 📖🤣
+      </div>
+    </article>
+  </main>
+
+  <div class="slide-nav">
+    <button class="btn" onclick="prevSlide()">◀ Khung Trước</button>
+    <span class="slide-counter" id="slideCounter">1 / 4</span>
+    <button class="btn" onclick="nextSlide()">Khung Kế Tiếp ▶</button>
+  </div>
+
+  <section class="moral-section">
+    <h3>💡 Bài Học Nhẫn Giả Sâu Sắc</h3>
+    <ul>
+      <li><strong>Đừng bao giờ để hở lưng trước đối thủ:</strong> Dù đối thủ có đang mải đọc truyện tranh, hai ngón tay của họ vẫn đủ sức biến bạn thành tên lửa đưa lên sao Hỏa! 🚀</li>
+      <li><strong>Cái tên kêu chưa chắc đã cao siêu:</strong> Tưởng đâu cấm thuật bão lửa hủy diệt thế giới, hóa ra là đòn "thọc huyết" nhắm thẳng vào bàn tọa! 🍑</li>
+      <li><strong>Bài học cho thánh gáy sớm:</strong> Vừa tuyên bố trở thành Hokage được 3 giây thì đã cắm đầu uống nước suối làng Lá! 🍜😂</li>
+    </ul>
+  </section>
+
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 4;
+    const container = document.getElementById('comicContainer');
+    const cards = document.querySelectorAll('.comic-card');
+    const counter = document.getElementById('slideCounter');
+    const buttons = document.querySelectorAll('.controls .btn');
+
+    function setMode(mode) {
+      container.className = 'comic-container ' + mode + '-mode';
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      if (mode === 'slide') {
+        showSlide(currentSlide);
+      } else {
+        cards.forEach(card => card.style.display = 'block');
+      }
+    }
+
+    function showSlide(index) {
+      cards.forEach(card => {
+        card.classList.remove('current');
+        card.style.display = 'none';
+      });
+      const targetCard = document.querySelector(`.comic-card[data-slide="${index}"]`);
+      if (targetCard) {
+        targetCard.classList.add('current');
+        targetCard.style.display = 'block';
+      }
+      counter.textContent = `${index} / ${totalSlides}`;
+    }
+
+    function prevSlide() {
+      currentSlide = currentSlide > 1 ? currentSlide - 1 : totalSlides;
+      showSlide(currentSlide);
+    }
+
+    function nextSlide() {
+      currentSlide = currentSlide < totalSlides ? currentSlide + 1 : 1;
+      showSlide(currentSlide);
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (container.classList.contains('slide-mode')) {
+        if (e.key === 'ArrowLeft') prevSlide();
+        if (e.key === 'ArrowRight') nextSlide();
+      }
+    });
+  </script>
+</body>
+</html>
+

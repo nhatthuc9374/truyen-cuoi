@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"header_ot_again","type":"text","text":"# 🛸🛴 Oliver Tree: Again & Again (Vòng Lặp Bất Tận Của Quái Xế Turbo)\nThứ tự đọc: **Khung 1 (Vị thần 8 tay tái xuất) ➜ Khung 2 (Cú nhảy vực thẳm phản lực) ➜ Khung 3 (Đo đất toàn diện) ➜ Khung 4 (Bó bột nguyên cây vẫn quẩy)**","x":0,"y":-180,"width":1700,"height":130,"color":"5"},
+		{"id":"ot_again_p1","type":"file","file":"oliver_again_1.jpg","x":0,"y":0,"width":800,"height":447},
+		{"id":"ot_again_p2","type":"file","file":"oliver_again_2.jpg","x":900,"y":0,"width":800,"height":447},
+		{"id":"ot_again_p3","type":"file","file":"oliver_again_3.jpg","x":0,"y":550,"width":800,"height":447},
+		{"id":"ot_again_p4","type":"file","file":"oliver_again_4.jpg","x":900,"y":550,"width":800,"height":447},
+		{"id":"ot_again_story","type":"file","file":"02 - Oliver Tree/🎭 Oliver Tree Again and Again.md","x":1780,"y":0,"width":620,"height":1050}
+	],
+	"edges":[
+		{"id":"edge_ot_again_1_2","fromNode":"ot_again_p1","fromSide":"right","toNode":"ot_again_p2","toSide":"left","label":"8 tay vít ga phản lực bay qua vực 🚀"},
+		{"id":"edge_ot_again_2_3","fromNode":"ot_again_p2","fromSide":"bottom","toNode":"ot_again_p3","toSide":"top","label":"Tiếp đất thất bại: gãy xe nát bét! 💥"},
+		{"id":"edge_ot_again_3_4","fromNode":"ot_again_p3","fromSide":"right","toNode":"ot_again_p4","toSide":"left","label":"Vào viện bó bột trắng toát vẫn nhảy tưng bừng! 🏥😂"}
+	]
+}
