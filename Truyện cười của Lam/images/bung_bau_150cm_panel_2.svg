@@ -1,0 +1,102 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgP2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF2F2"/>
+      <stop offset="50%" stop-color="#FEE2E2"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+    <linearGradient id="liftWall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="50%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <filter id="shP2" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="750" height="500" rx="16" fill="url(#bgP2)" stroke="#DC2626" stroke-width="4"/>
+
+  <!-- Tiêu đề Cảnh 2 to rõ -->
+  <g filter="url(#shP2)">
+    <rect x="25" y="16" width="560" height="42" rx="10" fill="#DC2626"/>
+    <text x="305" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#FFFFFF" text-anchor="middle">🚨 CẢNH 2: BỤNG ĐÈ NÚT BÁO ĐỘNG THANG MÁY INH ỎI! 🔔</text>
+  </g>
+
+  <!-- Cabin thang máy kim loại sáng bóng -->
+  <g transform="translate(40, 75)" filter="url(#shP2)">
+    <rect width="670" height="350" rx="10" fill="url(#liftWall)" stroke="#64748B" stroke-width="3"/>
+    <line x1="220" y1="0" x2="220" y2="350" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="450" y1="0" x2="450" y2="350" stroke="#94A3B8" stroke-width="2"/>
+  </g>
+
+  <!-- BẢNG ĐIỀU KHIỂN THANG MÁY BÊN PHẢI BỊ BỤNG BẦU ĐÈ TRÚNG -->
+  <g transform="translate(600, 110)" filter="url(#shP2)">
+    <rect width="90" height="280" rx="10" fill="#1E293B" stroke="#0F172A" stroke-width="3"/>
+    <!-- Màn hình tầng G -->
+    <rect x="15" y="15" width="60" height="30" rx="4" fill="#000000"/>
+    <text x="45" y="36" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="900" fill="#EF4444" text-anchor="middle"> tầng 1 </text>
+    
+    <!-- Các hàng nút bấm thang máy tròn -->
+    <circle cx="30" cy="70" r="10" fill="#F8FAFC"/>
+    <circle cx="60" cy="70" r="10" fill="#F8FAFC"/>
+    <circle cx="30" cy="105" r="10" fill="#F8FAFC"/>
+    <circle cx="60" cy="105" r="10" fill="#F8FAFC"/>
+
+    <!-- NÚT CHUÔNG BÁO ĐỘNG CỨU HỎA ĐỎ RỰC BỊ BỤNG BẦU ĐÈ LÚT SÀN -->
+    <circle cx="45" cy="160" r="22" fill="#DC2626" stroke="#FEF08A" stroke-width="4"/>
+    <text x="45" y="167" font-size="20" text-anchor="middle">🔔</text>
+    <text x="45" y="195" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="900" fill="#EF4444" text-anchor="middle">ALARM!</text>
+
+    <!-- Tia sét chuông reo inh ỏi -->
+    <text x="-40" y="160" font-family="'Segoe UI', sans-serif" font-size="26" font-weight="900" fill="#DC2626">REEEENG!!</text>
+  </g>
+
+  <!-- MẸ BẦU CẬN CẢNH LỚN Ở GIỮA - CHIẾC BỤNG BẦU DÀI 1 MÉT ĐÈ VÀO BẢNG ĐIỀU KHIỂN -->
+  <g transform="translate(180, 110)" filter="url(#shP2)">
+    <path d="M 20 230 L 160 230 L 170 380 L 10 380 Z" fill="#FB7185" stroke="#E11D48" stroke-width="3.5"/>
+
+    <!-- BỤNG BẦU 150CM KHỔNG LỒ NHÔ DÀI VỀ PHÍA TRƯỚC CHẠM THẲNG VÀO NÚT BẤM -->
+    <ellipse cx="230" cy="260" rx="140" ry="110" fill="#EC4899" stroke="#9D174D" stroke-width="4.5"/>
+    <ellipse cx="200" cy="220" rx="40" ry="18" fill="#FFFFFF" fill-opacity="0.3"/>
+    <!-- Mũi tên và điểm va chạm với nút chuông -->
+    <polygon points="360,250 380,260 360,270" fill="#EF4444"/>
+    <text x="230" y="270" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">BỤNG ĐÈ CẤN NÚT ALARM!</text>
+
+    <!-- Mẹ bầu ngượng ngùng gãi đầu xin lỗi -->
+    <path d="M 40 220 Q 0 160 40 120" stroke="#FB7185" stroke-width="22" stroke-linecap="round" fill="none"/>
+    <circle cx="40" cy="120" r="14" fill="#FED7AA"/>
+
+    <!-- Đầu mẹ bầu mặt ửng hồng e thẹn cười trừ -->
+    <ellipse cx="90" cy="110" rx="55" ry="58" fill="#FED7AA" stroke="#1E293B" stroke-width="3.5"/>
+    <path d="M 40 100 C 35 40 145 40 145 100 Z" fill="#451A03"/>
+    <!-- Hai mắt e thẹn nhắm tịt -->
+    <path d="M 68 105 Q 78 95 88 105" stroke="#1E293B" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 102 105 Q 112 95 122 105" stroke="#1E293B" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <ellipse cx="65" cy="120" rx="12" ry="8" fill="#FDA4AF"/>
+    <ellipse cx="125" cy="120" rx="12" ry="8" fill="#FDA4AF"/>
+    <path d="M 82 138 Q 95 150 108 138" stroke="#BE123C" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- HÀNG XÓM TRONG THANG MÁY CẬN CẢNH BÊN TRÁI - NÉP SÁT TƯỜNG CƯỜI RŨ RƯỢI -->
+  <g transform="translate(60, 140)" filter="url(#shP2)">
+    <!-- Bác hàng xóm nép sát vách nhường chỗ -->
+    <ellipse cx="50" cy="120" rx="45" ry="48" fill="#FED7AA" stroke="#1E293B" stroke-width="3"/>
+    <path d="M 15 110 C 15 60 85 60 85 110 Z" fill="#64748B"/> <!-- Tóc bạc -->
+    <circle cx="40" cy="115" r="8" fill="#1E293B"/>
+    <circle cx="65" cy="115" r="8" fill="#1E293B"/>
+    <!-- Cười toe toét xua tay -->
+    <path d="M 35 140 Q 52 160 70 140" stroke="#1E293B" stroke-width="3" fill="none"/>
+    <text x="50" y="70" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#15803D" text-anchor="middle">CẢ LỚP NHƯỜNG ĐƯỜNG!</text>
+  </g>
+
+  <!-- BONG BÓNG THOẠI HÀI HƯỚC TRÊN CAO -->
+  <g transform="translate(130, 65)" filter="url(#shP2)">
+    <path d="M 20 0 L 510 0 C 525 0 525 15 525 15 L 525 85 C 525 100 510 100 510 100 L 220 100 L 190 125 L 205 100 L 20 100 C 5 100 5 85 5 85 L 5 15 C 5 0 20 0 20 0 Z" fill="#FFFFFF" stroke="#DC2626" stroke-width="3.5"/>
+    <text x="270" y="28" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="900" fill="#DC2626" text-anchor="middle">😅 MẸ BẦU (MẶT ĐỎ BỪNG, XUA TAY PHÂN TRẦN CẢ THANG MÁY):</text>
+    <text x="270" y="55" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="bold" fill="#0F172A" text-anchor="middle">“Ối các bác ơi cháu xin lỗi! Cháu chưa kịp bước tới...”</text>
+    <text x="270" y="82" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#BE123C" text-anchor="middle">“Mà chiếc bụng bầu của cháu nó tự bấm chuông cứu hỏa trước rồi! 🤣🔔”</text>
+  </g>
+
+</svg>

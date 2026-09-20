@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="medWallBg3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EFF6FF"/>
+      <stop offset="65%" stop-color="#DBEAFE"/>
+      <stop offset="65%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <filter id="medShadow3" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Panel Border & Background -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#medWallBg3)" stroke="#2563EB" stroke-width="4"/>
+
+  <!-- Door Opened on the right side background -->
+  <g transform="translate(540, 60)">
+    <rect x="0" y="0" width="85" height="230" fill="#CBD5E1" stroke="#475569" stroke-width="2"/>
+    <rect x="8" y="8" width="70" height="214" fill="#93C5FD" opacity="0.4"/>
+    <!-- Door handle -->
+    <circle cx="20" cy="115" r="4" fill="#E2E8F0" stroke="#1E293B" stroke-width="1.5"/>
+  </g>
+
+  <!-- Medicine Cabinet on Left Wall -->
+  <rect x="25" y="55" width="75" height="85" rx="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+  <rect x="56" y="68" width="12" height="35" fill="#EF4444" rx="2"/>
+  <rect x="44" y="80" width="35" height="12" fill="#EF4444" rx="2"/>
+
+  <!-- Floor separator line -->
+  <line x1="5" y1="292" x2="645" y2="292" stroke="#94A3B8" stroke-width="2"/>
+
+  <!-- Hospital Bed & Teacher (Left / Center) -->
+  <g id="bed-rescue" transform="translate(40, 180)">
+    <ellipse cx="230" cy="160" rx="210" ry="16" fill="#000000" opacity="0.18"/>
+    <!-- Bed frame & Mattress -->
+    <rect x="15" y="85" width="410" height="15" rx="4" fill="#475569"/>
+    <rect x="18" y="52" width="404" height="34" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <!-- Legs -->
+    <rect x="25" y="95" width="10" height="50" fill="#64748B"/>
+    <circle cx="30" cy="148" r="7" fill="#334155"/>
+    <rect x="400" y="95" width="10" height="50" fill="#64748B"/>
+    <circle cx="405" cy="148" r="7" fill="#334155"/>
+    <!-- Pillow & Headboard -->
+    <rect x="10" y="-10" width="14" height="100" rx="4" fill="#38BDF8" stroke="#0284C7" stroke-width="2"/>
+    <ellipse cx="70" cy="55" rx="42" ry="18" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.5"/>
+  </g>
+
+  <!-- Teacher Relieved on bed, turning toward Lan -->
+  <g id="teacher-relaxing" transform="translate(60, 145)">
+    <!-- Body & Belly -->
+    <path d="M100 70 Q145 75 180 80 L180 115 L100 115 Z" fill="#FDA4AF"/>
+    <!-- Giant Belly being freed -->
+    <ellipse cx="215" cy="85" rx="72" ry="62" fill="#FB7185" stroke="#E11D48" stroke-width="3"/>
+    <path d="M180 60 Q215 40 245 60" stroke="#FFE4E6" stroke-width="5" fill="none" opacity="0.75" stroke-linecap="round"/>
+
+    <!-- Teacher Head turning to right, crying tears of relief -->
+    <circle cx="75" cy="50" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M48 48 C46 25 102 25 100 48 Z" fill="#3B2005"/>
+    <circle cx="50" cy="32" r="12" fill="#3B2005"/>
+    <circle cx="62" cy="25" r="5" fill="#F43F5E"/>
+    <rect x="66" y="45" width="10" height="8" rx="2" fill="none" stroke="#DC2626" stroke-width="1.6"/>
+    <rect x="80" y="45" width="10" height="8" rx="2" fill="none" stroke="#DC2626" stroke-width="1.6"/>
+    <line x1="76" y1="49" x2="80" y2="49" stroke="#DC2626" stroke-width="1.6"/>
+    <!-- Tear of relief & Grateful smile -->
+    <path d="M68 49 Q71 46 74 49" fill="none" stroke="#1E293B" stroke-width="2"/>
+    <path d="M82 49 Q85 46 88 49" fill="none" stroke="#1E293B" stroke-width="2"/>
+    <ellipse cx="65" cy="56" rx="3" ry="5" fill="#38BDF8"/>
+    <path d="M72 58 Q77 64 82 58" fill="none" stroke="#E11D48" stroke-width="2"/>
+    <!-- Hand waving gratefully -->
+    <path d="M95 72 Q135 70 155 52" fill="none" stroke="#FDA4AF" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="155" cy="52" r="8" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+  </g>
+
+  <!-- Bed Rail being Lowered / Released by Lan -->
+  <g id="bed-rail-releasing" transform="translate(40, 180)">
+    <!-- Rail dropping down angle -->
+    <g transform="rotate(8 240 70)">
+      <rect x="65" y="30" width="310" height="8" rx="3" fill="#94A3B8" stroke="#475569" stroke-width="1.5"/>
+      <rect x="65" y="70" width="310" height="7" rx="2" fill="#94A3B8" stroke="#475569" stroke-width="1.5"/>
+      <rect x="80" y="36" width="6" height="35" fill="#CBD5E1"/>
+      <rect x="130" y="36" width="6" height="35" fill="#CBD5E1"/>
+      <rect x="180" y="36" width="6" height="35" fill="#CBD5E1"/>
+      <rect x="230" y="36" width="6" height="35" fill="#CBD5E1"/>
+      <rect x="280" y="36" width="6" height="35" fill="#CBD5E1"/>
+      <rect x="330" y="36" width="6" height="35" fill="#CBD5E1"/>
+    </g>
+    <!-- Release Lock CLICK! Effect -->
+    <circle cx="370" cy="45" r="16" fill="#FDE047" opacity="0.6"/>
+    <text x="370" y="50" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="900" fill="#B45309" text-anchor="middle">TÁCH!</text>
+  </g>
+
+  <!-- BẠN LAN [NỮ] (Female Student Lan) - Quick-witted Savior -->
+  <g id="student-lan" transform="translate(380, 150)">
+    <!-- Floor shadow -->
+    <ellipse cx="50" cy="195" rx="45" ry="12" fill="#000000" opacity="0.2"/>
+
+    <!-- School Uniform: Pleated Skirt (Navy Blue) -->
+    <path d="M30 135 L15 185 L75 185 L60 135 Z" fill="#1E3A8A" stroke="#172554" stroke-width="2"/>
+    <line x1="32" y1="145" x2="28" y2="185" stroke="#3B82F6" stroke-width="1.5"/>
+    <line x1="45" y1="145" x2="45" y2="185" stroke="#3B82F6" stroke-width="1.5"/>
+    <line x1="58" y1="145" x2="62" y2="185" stroke="#3B82F6" stroke-width="1.5"/>
+
+    <!-- Legs & White Socks with Blue Shoes -->
+    <rect x="25" y="185" width="10" height="22" fill="#FFEDD5"/>
+    <rect x="52" y="185" width="10" height="22" fill="#FFEDD5"/>
+    <ellipse cx="28" cy="208" rx="9" ry="5" fill="#1E293B"/>
+    <ellipse cx="57" cy="208" rx="9" ry="5" fill="#1E293B"/>
+
+    <!-- White School Shirt with Red Ribbon Tie -->
+    <path d="M28 85 L62 85 L66 138 L24 138 Z" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+    <polygon points="45,92 40,102 50,102" fill="#DC2626"/>
+    <circle cx="45" cy="91" r="3" fill="#DC2626"/>
+
+    <!-- Gift Bag / Milk carton Lan brought to visit teacher on floor/hand -->
+    <g transform="translate(82, 140)">
+      <rect x="0" y="15" width="28" height="35" rx="3" fill="#FED7AA" stroke="#EA580C" stroke-width="1.5"/>
+      <path d="M7 15 C7 2 21 2 21 15" fill="none" stroke="#EA580C" stroke-width="2"/>
+      <circle cx="14" cy="30" r="6" fill="#F43F5E"/>
+      <text x="14" y="44" font-family="'Segoe UI', sans-serif" font-size="7" font-weight="bold" fill="#C2410C" text-anchor="middle">SỮA TƯƠI</text>
+    </g>
+
+    <!-- Lan Arms: Leaning forward, hands releasing the bed rail lever -->
+    <path d="M30 92 Q-10 110 5 135" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+    <circle cx="5" cy="135" r="8" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+
+    <path d="M55 92 Q20 120 18 142" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+    <circle cx="18" cy="142" r="8" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+
+    <!-- Lan Head: Sweet, Caring, Active -->
+    <circle cx="45" cy="45" r="23" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- Ponytail & Cute Ribbon -->
+    <path d="M25 45 C22 18 70 18 68 45 Z" fill="#1E293B"/>
+    <path d="M62 30 Q85 30 85 55 Q75 65 65 45 Z" fill="#1E293B"/> <!-- Ponytail -->
+    <circle cx="65" cy="32" r="6" fill="#EC4899"/> <!-- Pink ribbon -->
+    <circle cx="62" cy="27" r="4" fill="#F472B6"/>
+
+    <!-- Expressive Eyes: Determined, Caring & Helpful -->
+    <ellipse cx="37" cy="45" rx="3.5" ry="4.5" fill="#1E293B"/>
+    <circle cx="38" cy="43" r="1.5" fill="#FFFFFF"/>
+    <ellipse cx="49" cy="45" rx="3.5" ry="4.5" fill="#1E293B"/>
+    <circle cx="50" cy="43" r="1.5" fill="#FFFFFF"/>
+    <!-- Rosy Cheeks -->
+    <circle cx="31" cy="52" r="3.5" fill="#FDA4AF"/>
+    <circle cx="55" cy="52" r="3.5" fill="#FDA4AF"/>
+    <!-- Confident helpful smile -->
+    <path d="M39 53 Q43 59 47 53" fill="none" stroke="#DC2626" stroke-width="2"/>
+
+    <!-- Sparkles for the hero moment -->
+    <text x="-15" y="85" font-size="16">✨</text>
+    <text x="75" y="65" font-size="15">💡</text>
+  </g>
+
+  <!-- Speech Bubble: Student Lan -->
+  <g filter="url(#medShadow3)">
+    <path d="M310 32 Q310 12 450 12 L610 12 Q630 12 630 35 Q630 65 520 65 L480 65 L450 95 L460 65 L360 65 Q310 65 310 32 Z" fill="#F0FDF4" stroke="#16A34A" stroke-width="2.5"/>
+    <text x="470" y="32" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#15803D" text-anchor="middle">"Cô ơi đừng sợ, có em Lan đây ạ!"</text>
+    <text x="470" y="50" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#15803D" text-anchor="middle">"Để em bấm chốt hạ thanh giường ra cho cô nhé! ❤️"</text>
+  </g>
+
+  <!-- Speech Bubble: Relieved Teacher -->
+  <g filter="url(#medShadow3)">
+    <path d="M110 75 Q110 58 190 58 L270 58 Q290 58 290 78 Q290 98 230 98 L200 98 L180 120 L188 98 L140 98 Q110 98 110 75 Z" fill="#FFF1F2" stroke="#F43F5E" stroke-width="2"/>
+    <text x="200" y="76" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#9F1239" text-anchor="middle">"Phù... May quá Lan ơi! 😭"</text>
+    <text x="200" y="90" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#9F1239" text-anchor="middle">"Cứu chiếc bụng bầu giùm cô!"</text>
+  </g>
+
+  <!-- Panel Header Banner -->
+  <rect x="20" y="16" width="370" height="32" rx="8" fill="#16A34A"/>
+  <text x="205" y="37" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">★ CẢNH 3: BẠN LAN [NỮ] VÀO THĂM &amp; GIẢI CỨU</text>
+
+  <!-- Caption at bottom -->
+  <rect x="25" y="402" width="600" height="34" rx="8" fill="#0F172A" opacity="0.85"/>
+  <text x="325" y="424" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#F8FAFC" text-anchor="middle">Bạn Lan vào thăm cô, thấy cô bị kẹt bụng bầu liền nhanh trí chạy lại mở chốt thanh giường...</text>
+</svg>

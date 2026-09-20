@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sb3LivingBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#450A0A"/>
+      <stop offset="35%" stop-color="#991B1B"/>
+      <stop offset="75%" stop-color="#DC2626"/>
+      <stop offset="100%" stop-color="#FDE047"/>
+    </linearGradient>
+    <filter id="sb3Shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#sb3LivingBg)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Sóng âm thanh tiếng gào thét khẩn cấp tại phòng khách -->
+  <circle cx="260" cy="220" r="90" fill="none" stroke="#FEF08A" stroke-width="3" opacity="0.4"/>
+  <circle cx="260" cy="220" r="150" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="8,6" opacity="0.3"/>
+
+  <!-- Ghế sofa phòng khách & Mẹ đang quằn quại đau đẻ không kịp vào viện -->
+  <g id="sofa-de" transform="translate(60, 160)">
+    <!-- Sofa dài màu cam đỏ -->
+    <rect x="0" y="75" width="280" height="35" rx="8" fill="#C2410C" stroke="#9A3412" stroke-width="3"/>
+    <rect x="0" y="20" width="35" height="75" rx="6" fill="#EA580C"/> <!-- Tay vịn sofa -->
+    <polygon points="25,75 55,15 90,75" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/> <!-- Gối ôm -->
+
+    <!-- Người Mẹ đang gồng mình rặn dữ dội trên sofa -->
+    <path d="M40 50 L110 35 L220 70 L220 95 L20 95 Z" fill="#FDA4AF"/>
+    <!-- Bụng bầu rung lên từng cơn co giật -->
+    <ellipse cx="140" cy="50" rx="55" ry="42" fill="#FB7185" stroke="#E11D48" stroke-width="3.5"/>
+    <text x="140" y="55" font-family="'Impact', sans-serif" font-size="11" fill="#FFFFFF" text-anchor="middle">ĐẦU EM BÉ RA RỒI! 👶⚡</text>
+
+    <!-- Đầu Mẹ mặt đỏ bừng cắn chặt góc gối, gào to vang nhà -->
+    <circle cx="35" cy="0" r="28" fill="#FCA5A5" stroke="#991B1B" stroke-width="3"/>
+    <path d="M5 0 C5 -30 65 -30 65 0 Z" fill="#451A03"/>
+    <path d="M20 -5 L28 2 L20 8" stroke="#7F1D1D" stroke-width="3.5" fill="none"/>
+    <path d="M50 -5 L42 2 L50 8" stroke="#7F1D1D" stroke-width="3.5" fill="none"/>
+    <ellipse cx="35" cy="15" rx="14" ry="16" fill="#7F1D1D"/>
+    <!-- Mồ hôi văng tung tóe -->
+    <circle cx="5" cy="-8" r="4" fill="#38BDF8"/>
+    <circle cx="65" cy="-10" r="3.5" fill="#38BDF8"/>
+  </g>
+
+  <!-- Đứa con ("Tôi") làm BÁC SĨ ĐỠ ĐẺ BẤT ĐẮC DĨ -->
+  <g id="con-do-de" transform="translate(380, 140)">
+    <ellipse cx="70" cy="170" rx="50" ry="12" fill="#000000" opacity="0.25"/>
+    
+    <!-- Đứa con đeo tạp dề & găng tay nilon sẵn sàng đỡ -->
+    <path d="M45 70 L95 70 L110 165 L30 165 Z" fill="#38BDF8" stroke="#0284C7" stroke-width="2"/>
+    <!-- Tạp dề trắng như áo bác sĩ -->
+    <path d="M55 75 L85 75 L95 155 L45 155 Z" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <text x="70" y="110" font-family="'Impact', sans-serif" font-size="9" fill="#DC2626" text-anchor="middle">BS BẤT ĐẮC DĨ</text>
+
+    <!-- Đầu đứa con mồ hôi nhễ nhại nhưng quyết tâm cao độ -->
+    <circle cx="70" cy="35" r="24" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M48 30 C48 10 92 10 92 30 Z" fill="#292524"/>
+    <!-- Mắt trợn to căng thẳng nhưng dũng cảm -->
+    <circle cx="61" cy="34" r="4" fill="#1E293B"/><circle cx="79" cy="34" r="4" fill="#1E293B"/>
+    <ellipse cx="70" cy="46" rx="7" ry="8" fill="#DC2626"/>
+    <text x="96" y="25" font-size="14">💦</text>
+
+    <!-- Hai tay đeo găng tay giơ ra đỡ đẻ -->
+    <path d="M45 80 L-15 95" stroke="#38BDF8" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="-15" cy="95" r="8" fill="#FDE047" stroke="#CA8A04" stroke-width="2"/> <!-- Găng tay vàng -->
+    <path d="M95 80 L140 100" stroke="#38BDF8" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="140" cy="100" r="8" fill="#FDE047" stroke="#CA8A04" stroke-width="2"/>
+  </g>
+
+  <!-- Chậu nước ấm & Khăn sạch chuẩn bị cấp cứu -->
+  <g transform="translate(480, 270)">
+    <!-- Chậu thau nhôm -->
+    <ellipse cx="40" cy="30" rx="35" ry="12" fill="#E2E8F0" stroke="#64748B" stroke-width="2"/>
+    <ellipse cx="40" cy="27" rx="30" ry="9" fill="#38BDF8" opacity="0.6"/> <!-- Nước ấm bốc khói -->
+    <path d="M30 18 Q35 10 32 4" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+    <path d="M48 18 Q53 10 50 4" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+    <!-- Khăn sạch cuộn tròn -->
+    <rect x="80" y="15" width="30" height="18" rx="4" fill="#FEF08A" stroke="#EAB308" stroke-width="1.5"/>
+    <text x="50" y="55" font-family="'Segoe UI', sans-serif" font-size="8.5" font-weight="bold" fill="#F8FAFC" text-anchor="middle">NƯỚC ẤM &amp; KHĂN 🧺</text>
+  </g>
+
+  <!-- Speech Mẹ & Con kịch tính -->
+  <g filter="url(#sb3Shadow)">
+    <path d="M60 30 Q60 5 150 5 L380 5 Q420 5 420 30 Q420 65 370 65 L270 65 L240 90 L250 65 L130 65 Q60 65 60 30 Z" fill="#FEFCE8" stroke="#F59E0B" stroke-width="3"/>
+    <text x="240" y="28" font-family="'Impact', sans-serif" font-size="14" fill="#DC2626" text-anchor="middle">😱 MẸ KÊU THẤT THANH: "KHÔNG KỊP VÀO VIỆN NỮA RỒI CON ƠI!"</text>
+    <text x="240" y="48" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="900" fill="#991B1B" text-anchor="middle">"ĐẦU THÒ RA RỒI! CON ĐỠ ĐẺ CHO MẸ VỚI...!"</text>
+  </g>
+
+  <!-- Lời con hô quyết tâm -->
+  <g filter="url(#sb3Shadow)">
+    <rect x="410" y="75" width="225" height="52" rx="8" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+    <text x="522" y="96" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="900" fill="#047857" text-anchor="middle">🧒 CON: "MẸ YÊN TÂM, CỨ RẶN ĐI!"</text>
+    <text x="522" y="112" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="bold" fill="#DC2626" text-anchor="middle">Hít sâu... rặn mạnh một hơi nữa nào! 💨</text>
+  </g>
+
+  <!-- Tiêu đề phân cảnh -->
+  <rect x="15" y="12" width="370" height="26" rx="6" fill="#1E293B"/>
+  <text x="200" y="29" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#FDE047" text-anchor="middle">CẢNH 3: VỀ NHÀ ĐAU ĐẺ GẤP - CON ĐỠ ĐẺ CHO MẸ</text>
+
+  <!-- Footer chú thích dẫn chuyện -->
+  <rect x="15" y="385" width="620" height="30" rx="6" fill="#0F172A" opacity="0.9"/>
+  <text x="325" y="405" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#F8FAFC" text-anchor="middle">Vừa về đến phòng khách thì mẹ đau đẻ không kịp đi viện, đứa con đành xắn tay áo đỡ đẻ cho mẹ tại nhà...</text>
+</svg>

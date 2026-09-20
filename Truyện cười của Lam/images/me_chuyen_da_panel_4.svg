@@ -1,0 +1,125 @@
+﻿<svg xmlns=http://www.w3.org/2000/svg viewBox=0 0 650 450 width=100% height=100%>
+  <defs>
+    <linearGradient id=p4HospWall x1=0% y1=0% x2=0% y2=100%>
+      <stop offset=0% stop-color=#F0FDF4/>
+      <stop offset=60% stop-color=#DCFCE7/>
+      <stop offset=60% stop-color=#E2E8F0/>
+      <stop offset=100% stop-color=#CBD5E1/>
+    </linearGradient>
+    <filter id=p4Shadow x=-5% y=-5% width=110% height=110%>
+      <feDropShadow dx=2 dy=3 stdDeviation=2 flood-opacity=0.25/>
+    </filter>
+  </defs>
+
+  <rect x=5 y=5 width=640 height=440 rx=16 fill=url(#p4HospWall) stroke=#16A34A stroke-width=4/>
+
+  <rect x=15 y=15 width=620 height=40 rx=8 fill=#FFFFFF stroke=#16A34A stroke-width=2/>
+  <text x=325 y=42 font-family='Segoe UI', Roboto, sans-serif font-size=18 font-weight=900 fill=#15803D text-anchor=middle letter-spacing=1>
+    🎉 CẢNH 4: MẸ TRÒN CON VUÔNG – NỤ CƯỜI THIÊN THẦN!
+  </text>
+
+  <!-- Hospital Wall Monitor & Medical Panel -->
+  <rect x=30 y=65 width=160 height=35 rx=5 fill=#FFFFFF stroke=#94A3B8 stroke-width=2/>
+  <rect x=40 y=72 width=20 height=20 rx=3 fill=#38BDF8/>
+  <line x1=70 y1=82 x2=175 y2=82 stroke=#CBD5E1 stroke-width=3/>
+
+  <!-- Hospital Window with Sunshine -->
+  <rect x=490 y=65 width=120 height=150 rx=8 fill=#FEF08A stroke=#CA8A04 stroke-width=2 opacity=0.7/>
+  <circle cx=550 cy=110 r=22 fill=#FBBF24/>
+
+  <line x1=5 y1=300 x2=645 y2=300 stroke=#94A3B8 stroke-width=2/>
+
+  <!-- Hospital Bed -->
+  <g id=hosp-bed transform=translate(20, 160) filter=url(#p4Shadow)>
+    <rect x=20 y=70 width=380 height=70 rx=12 fill=#FFFFFF stroke=#64748B stroke-width=2.5/>
+    <rect x=10 y=40 width=25 height=100 rx=6 fill=#94A3B8/>
+    <!-- Pillow -->
+    <rect x=35 y=45 width=80 height=45 rx=12 fill=#F1F5F9 stroke=#CBD5E1 stroke-width=2/>
+    <!-- Blanket -->
+    <rect x=130 y=70 width=270 height=70 rx=8 fill=#F8FAFC stroke=#E2E8F0 stroke-width=2/>
+  </g>
+
+  <!-- Mother Holding Newborn Baby -->
+  <g id=mom4 transform=translate(80, 100)>
+    <ellipse cx=80 cy=75 rx=38 ry=46 fill=#713F12/>
+    <!-- Hospital gown light blue floral -->
+    <path d=M50 100 Q80 88 110 100 L130 180 L40 180 Z fill=#E0F2FE stroke=#0284C7 stroke-width=2/>
+    <circle cx=70 cy=120 r=4 fill=#38BDF8 opacity=0.6/>
+    <circle cx=95 cy=125 r=4 fill=#38BDF8 opacity=0.6/>
+
+    <!-- Mother's Head with Joyful Smile -->
+    <circle cx=80 cy=65 r=28 fill=#FFEDD5 stroke=#9A3412 stroke-width=2/>
+    <path d=M54 52 Q80 38 106 52 fill=none stroke=#713F12 stroke-width=7/>
+    <!-- Smiling crescent eyes (radiant joy) -->
+    <path d=M68 62 Q75 56 82 62 fill=none stroke=#713F12 stroke-width=3/>
+    <path d=M88 62 Q95 56 102 62 fill=none stroke=#713F12 stroke-width=3/>
+    <path d=M78 74 Q85 82 92 74 fill=none stroke=#BE123C stroke-width=2.5/>
+    <ellipse cx=70 cy=72 rx=5 ry=3 fill=#FDA4AF/>
+    <ellipse cx=100 cy=72 rx=5 ry=3 fill=#FDA4AF/>
+
+    <!-- Mother's Arms Embracing Baby -->
+    <path d=M50 120 Q85 165 140 145 fill=none stroke=#FFEDD5 stroke-width=16 stroke-linecap=round/>
+
+    <!-- NEWBORN BABY (Swaddled in Pink Blanket) -->
+    <g id=baby transform=translate(100, 105) filter=url(#p4Shadow)>
+      <!-- Swaddle bundle -->
+      <ellipse cx=40 cy=45 rx=28 ry=35 fill=#FCE7F3 stroke=#DB2777 stroke-width=2.5 transform=rotate(25 40 45)/>
+      <path d=M25 25 Q40 50 55 25 fill=none stroke=#F472B6 stroke-width=2/>
+      <!-- Baby's Cute Sleeping Face -->
+      <circle cx=32 cy=26 r=16 fill=#FFEDD5 stroke=#9A3412 stroke-width=1.5/>
+      <path d=M26 26 Q30 29 34 26 fill=none stroke=#713F12 stroke-width=1.5/>
+      <ellipse cx=27 cy=30 rx=3 ry=1.5 fill=#FDA4AF/>
+      <ellipse cx=37 cy=30 rx=3 ry=1.5 fill=#FDA4AF/>
+      <path d=M30 33 Q32 35 34 33 fill=none stroke=#BE123C stroke-width=1.5/>
+      <!-- Tiny tuft of brown baby hair -->
+      <path d=M30 14 Q32 9 34 14 fill=none stroke=#713F12 stroke-width=2/>
+    </g>
+  </g>
+
+  <!-- Daughter Beside Bed Cheering & Proud -->
+  <g id=daughter4 transform=translate(390, 130)>
+    <!-- Pigtails -->
+    <ellipse cx=15 cy=50 rx=14 ry=26 fill=#F472B6 stroke=#DB2777 stroke-width=1.5/>
+    <ellipse cx=85 cy=50 rx=14 ry=26 fill=#F472B6 stroke=#DB2777 stroke-width=1.5/>
+    <circle cx=22 cy=32 r=5 fill=#F43F5E/>
+    <circle cx=78 cy=32 r=5 fill=#F43F5E/>
+
+    <!-- Head & Big Grin -->
+    <circle cx=50 cy=50 r=26 fill=#FFEDD5 stroke=#9A3412 stroke-width=2/>
+    <path d=M28 38 Q50 25 72 38 fill=none stroke=#F472B6 stroke-width=6/>
+    <!-- Big joyful smiling eyes -->
+    <path d=M38 48 Q44 42 50 48 fill=none stroke=#1E3A8A stroke-width=3/>
+    <path d=M58 48 Q64 42 70 48 fill=none stroke=#1E3A8A stroke-width=3/>
+    <!-- Wide open happy laugh -->
+    <path d=M44 58 Q54 70 64 58 Z fill=#BE123C/>
+    <ellipse cx=38 cy=56 rx=4 ry=2.5 fill=#FDA4AF/>
+    <ellipse cx=70 cy=56 rx=4 ry=2.5 fill=#FDA4AF/>
+
+    <!-- Hoodie -->
+    <path d=M30 75 Q50 68 70 75 L76 145 L24 145 Z fill=#FCE7F3 stroke=#DB2777 stroke-width=2/>
+    <!-- Cheering Hands leaning on bed -->
+    <path d=M30 85 Q10 95 -10 100 fill=none stroke=#FCE7F3 stroke-width=10 stroke-linecap=round/>
+    <circle cx=-10 cy=100 r=5 fill=#FFEDD5/>
+    <path d=M70 85 Q90 95 105 85 fill=none stroke=#FCE7F3 stroke-width=10 stroke-linecap=round/>
+    <circle cx=105 cy=85 r=5 fill=#FFEDD5/>
+
+    <!-- Pants & Shoes -->
+    <rect x=32 y=145 width=16 height=50 rx=4 fill=#93C5FD stroke=#2563EB stroke-width=1.5/>
+    <rect x=54 y=145 width=16 height=50 rx=4 fill=#93C5FD stroke=#2563EB stroke-width=1.5/>
+    <ellipse cx=40 cy=198 rx=10 ry=5 fill=#FFFFFF stroke=#64748B stroke-width=1.5/>
+    <ellipse cx=62 cy=198 rx=10 ry=5 fill=#FFFFFF stroke=#64748B stroke-width=1.5/>
+  </g>
+
+  <!-- Speech Bubbles -->
+  <g id=bubble4-mom transform=translate(30, 200)>
+    <rect x=0 y=0 width=140 height=55 rx=16 fill=#FFFFFF stroke=#1E1B4B stroke-width=2 filter=url(#p4Shadow)/>
+    <text x=70 y=25 font-family='Segoe UI', Roboto, sans-serif font-size=14 font-weight=bold fill=#1E1B4B text-anchor=middle>Cảm ơn</text>
+    <text x=70 y=45 font-family='Segoe UI', Roboto, sans-serif font-size=14 font-weight=bold fill=#BE123C text-anchor=middle>con yêu! ❤️</text>
+  </g>
+
+  <g id=bubble4-daughter transform=translate(360, 60)>
+    <rect x=0 y=0 width=250 height=65 rx=16 fill=#FFFFFF stroke=#1E1B4B stroke-width=2 filter=url(#p4Shadow)/>
+    <text x=125 y=26 font-family='Segoe UI', Roboto, sans-serif font-size=13.5 font-weight=bold fill=#1E1B4B text-anchor=middle>Aaa! Bé em dễ thương quá!</text>
+    <text x=125 y=48 font-family='Segoe UI', Roboto, sans-serif font-size=14 font-weight=900 fill=#15803D text-anchor=middle>Mẹ tròn con vuông rồi! 🎉</text>
+  </g>
+</svg>

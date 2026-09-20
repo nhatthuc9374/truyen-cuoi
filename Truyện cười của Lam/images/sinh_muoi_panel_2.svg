@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="painBg10" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF2F2"/>
+      <stop offset="60%" stop-color="#FEE2E2"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <filter id="shadowPain10" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Panel Border & Background (Lights snapped ON!) -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#painBg10)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Distress speed lines radiating -->
+  <g stroke="#EF4444" stroke-width="2.5" opacity="0.6" stroke-dasharray="8 6">
+    <line x1="220" y1="220" x2="30" y2="40"/>
+    <line x1="220" y1="220" x2="160" y2="20"/>
+    <line x1="220" y1="220" x2="450" y2="20"/>
+    <line x1="220" y1="220" x2="620" y2="60"/>
+  </g>
+
+  <!-- Mom Clutching Giant Pregnant Belly in Sudden Agony (Center Left) -->
+  <g id="mom-shrieking" transform="translate(100, 110)">
+    <!-- Shadow -->
+    <ellipse cx="120" cy="205" rx="80" ry="14" fill="#000000" opacity="0.25"/>
+
+    <!-- Bed Mattress & Thrown Pillow -->
+    <rect x="20" y="160" width="220" height="45" rx="5" fill="#1E293B"/>
+
+    <!-- Mom Torso & Dress -->
+    <path d="M50 75 Q80 55 110 75 L160 190 L30 190 Z" fill="#FDA4AF" stroke="#E11D48" stroke-width="2.5"/>
+
+    <!-- GIANT ROUND BABY BUMP with Pain Lightning -->
+    <ellipse cx="125" cy="130" rx="72" ry="60" fill="#FB7185" stroke="#DC2626" stroke-width="3.5"/>
+    <path d="M65 115 L55 130 L68 135 L58 155" fill="none" stroke="#FBBF24" stroke-width="4" stroke-linecap="round"/>
+    <path d="M195 110 L208 125 L195 130 L208 145" fill="none" stroke="#FBBF24" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Both Hands Clamping the Belly tightly -->
+    <path d="M60 85 Q45 125 95 135" fill="none" stroke="#FDA4AF" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="95" cy="135" r="11" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M135 85 Q160 125 145 138" fill="none" stroke="#FDA4AF" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="145" cy="138" r="11" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- Screaming Face -->
+    <circle cx="80" cy="40" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M50 40 C42 10 110 10 108 40 Z" fill="#3B2005"/>
+    <!-- Squeezed Pain Eyes -->
+    <path d="M65 32 L73 37 L65 42" fill="none" stroke="#1E293B" stroke-width="3"/>
+    <path d="M95 32 L87 37 L95 42" fill="none" stroke="#1E293B" stroke-width="3"/>
+    <!-- Wide Open Screaming Mouth -->
+    <ellipse cx="80" cy="54" rx="13" ry="16" fill="#991B1B" stroke="#1E293B" stroke-width="2"/>
+    <ellipse cx="80" cy="60" rx="7" ry="7" fill="#F87171"/>
+    <!-- Sweat flying -->
+    <path d="M35 25 Q28 17 35 10 Q42 17 35 25 Z" fill="#38BDF8"/>
+    <path d="M110 25 Q117 17 112 10 Q105 17 110 25 Z" fill="#38BDF8"/>
+  </g>
+
+  <!-- Dad (Bố) Jumps Out of Bed, Dialing Emergency 115 Frantically (Right Side) -->
+  <g id="dad-emergency" transform="translate(420, 110)">
+    <ellipse cx="60" cy="205" rx="50" ry="12" fill="#000000" opacity="0.25"/>
+
+    <!-- Pyjamas Body (Green plaid/blue) -->
+    <ellipse cx="60" cy="130" rx="32" ry="40" fill="#3B82F6" stroke="#1D4ED8" stroke-width="2.5"/>
+    <ellipse cx="60" cy="178" rx="18" ry="24" fill="#1E3A8A"/>
+
+    <!-- Left Hand: Holding Phone tightly to ear -->
+    <path d="M75 110 Q105 85 85 65" fill="none" stroke="#3B82F6" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="85" cy="65" r="8" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <!-- Smartphone in hand with red screen 115 -->
+    <rect x="75" y="45" width="16" height="30" rx="3" fill="#1E293B" stroke="#000000" stroke-width="1.5" transform="rotate(-15 83 60)"/>
+    <rect x="77" y="48" width="12" height="20" rx="1" fill="#EF4444" transform="rotate(-15 83 60)"/>
+    <text x="82" y="62" font-family="'Segoe UI', sans-serif" font-size="8" font-weight="900" fill="#FFFFFF" text-anchor="middle">115</text>
+
+    <!-- Right Hand: Waving frantically in the air -->
+    <path d="M40 115 Q15 90 20 60" fill="none" stroke="#3B82F6" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="20" cy="60" r="8" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- Dad Head (Messy hair from waking up, panic face) -->
+    <circle cx="55" cy="55" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <!-- Messy Bed Head Hair -->
+    <path d="M28 50 C25 20 85 15 82 50 C85 40 80 30 75 35 C68 20 50 20 45 32 C40 25 32 30 28 50 Z" fill="#1E293B"/>
+    <!-- Big Shocked Bug Eyes -->
+    <circle cx="48" cy="52" r="6" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5"/><circle cx="48" cy="52" r="2" fill="#1E293B"/>
+    <circle cx="68" cy="52" r="6" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5"/><circle cx="68" cy="52" r="2" fill="#1E293B"/>
+    <!-- Shouting mouth -->
+    <ellipse cx="58" cy="66" rx="8" ry="10" fill="#991B1B"/>
+    <!-- Sweat Drop -->
+    <path d="M80 40 Q86 32 82 25 Q75 32 80 40 Z" fill="#38BDF8"/>
+  </g>
+
+  <!-- Child ("Tôi") Panicking in middle -->
+  <g id="child-alarm" transform="translate(300, 180)">
+    <ellipse cx="30" cy="120" rx="25" ry="8" fill="#000000" opacity="0.2"/>
+    <ellipse cx="30" cy="80" rx="18" ry="24" fill="#F43F5E" stroke="#BE123C" stroke-width="2"/>
+    <circle cx="30" cy="40" r="18" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M15 35 C12 18 48 18 45 35 Z" fill="#292524"/>
+    <circle cx="24" cy="38" r="4" fill="#FFFFFF"/><circle cx="24" cy="38" r="1.5" fill="#1E293B"/>
+    <circle cx="36" cy="38" r="4" fill="#FFFFFF"/><circle cx="36" cy="38" r="1.5" fill="#1E293B"/>
+    <ellipse cx="30" cy="48" rx="4" ry="6" fill="#991B1B"/>
+    <!-- Hands on cheeks in terror -->
+    <circle cx="15" cy="42" r="6" fill="#FFEDD5"/><circle cx="45" cy="42" r="6" fill="#FFEDD5"/>
+    <text x="30" y="20" font-size="14" text-anchor="middle">😱</text>
+  </g>
+
+  <!-- Giant Scream Bubble: Mom -->
+  <g filter="url(#shadowPain10)">
+    <path d="M40 25 
+             L80 10 L105 20 L130 2 L160 20 L195 2 L205 25 L250 10 L240 40 L275 60 L245 80 L270 108 L230 105 L215 128 L190 108 L165 122 L155 100 L115 110 L122 88 L85 82 L105 60 Z" 
+          fill="#FEF2F2" stroke="#EF4444" stroke-width="3"/>
+    <text x="170" y="45" font-family="'Impact', sans-serif" font-size="26" font-weight="900" fill="#DC2626" text-anchor="middle">Á Á Á ! ĐAU QUÁ !</text>
+    <text x="170" y="70" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#991B1B" text-anchor="middle">"ÔI TRỜI ƠI... NÓ ĐÒI RA RỒI!"</text>
+  </g>
+
+  <!-- Speech Bubble: Dad Calling 115 -->
+  <g filter="url(#shadowPain10)">
+    <path d="M370 20 Q370 2 440 2 L600 2 Q630 2 630 28 Q630 58 550 58 L480 58 L465 80 L465 58 L420 58 Q370 58 370 20 Z" fill="#F0F9FF" stroke="#0284C7" stroke-width="2.5"/>
+    <text x="500" y="24" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="900" fill="#0369A1" text-anchor="middle">"A LÔ 115! CẤP CỨU KHẨN CẤP!"</text>
+    <text x="500" y="44" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#0F172A" text-anchor="middle">"Vợ tôi chuyển dạ rồi! Cứu vợ tôi với!"</text>
+  </g>
+
+  <!-- Panel Header Banner -->
+  <rect x="20" y="16" width="310" height="32" rx="8" fill="#1E293B"/>
+  <text x="175" y="37" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#EF4444" text-anchor="middle">★ CẢNH 2: BỐ GỌI CẤP CỨU ĐÊM KHUYA</text>
+
+  <!-- Caption at bottom -->
+  <rect x="25" y="402" width="600" height="34" rx="8" fill="#0F172A" opacity="0.85"/>
+  <text x="325" y="424" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#F8FAFC" text-anchor="middle">Mẹ ôm chặt bụng hét toáng lên, cả nhà bật dậy trong đêm, bố hốt hoảng bấm 115 cấp cứu!</text>
+</svg>

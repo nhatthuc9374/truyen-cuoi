@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wallBg1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7"/>
+      <stop offset="65%" stop-color="#FDE68A"/>
+      <stop offset="65%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="boardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B"/>
+      <stop offset="100%" stop-color="#022C22"/>
+    </linearGradient>
+    <filter id="dropShadow1" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Panel Border & Background -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#wallBg1)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Classroom Window -->
+  <rect x="25" y="50" width="80" height="100" rx="6" fill="#BAE6FD" stroke="#64748B" stroke-width="2.5"/>
+  <line x1="65" y1="50" x2="65" y2="150" stroke="#64748B" stroke-width="2"/>
+  <line x1="25" y1="100" x2="105" y2="100" stroke="#64748B" stroke-width="2"/>
+  <!-- Sun & Cloud outside -->
+  <circle cx="45" cy="70" r="10" fill="#FBBF24"/>
+  <ellipse cx="80" cy="85" rx="14" ry="7" fill="#FFFFFF" opacity="0.8"/>
+
+  <!-- Blackboard with Lesson -->
+  <rect x="125" y="45" width="360" height="130" rx="8" fill="url(#boardGrad1)" stroke="#78350F" stroke-width="5"/>
+  <text x="305" y="75" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" fill="#FEF08A" text-anchor="middle">★ TIẾT HỌC NGỮ VĂN ★</text>
+  <text x="150" y="105" font-family="'Segoe UI', cursive, sans-serif" font-size="15" fill="#FFFFFF">"Công cha như núi Thái Sơn..."</text>
+  <text x="150" y="135" font-family="'Segoe UI', cursive, sans-serif" font-size="15" fill="#86EFAC">"Nghĩa mẹ như nước trong nguồn..."</text>
+
+  <!-- Wall Clock -->
+  <circle cx="540" cy="80" r="22" fill="#FFFFFF" stroke="#334155" stroke-width="2.5"/>
+  <line x1="540" y1="80" x2="540" y2="65" stroke="#1E293B" stroke-width="2"/>
+  <line x1="540" y1="80" x2="552" y2="80" stroke="#EF4444" stroke-width="1.5"/>
+
+  <!-- Floor separator line -->
+  <line x1="5" y1="292" x2="645" y2="292" stroke="#94A3B8" stroke-width="2"/>
+
+  <!-- Teacher Desk & Chair on Left/Center -->
+  <g id="teacher-furniture" transform="translate(320, 200)">
+    <!-- Wooden Chair -->
+    <rect x="100" y="50" width="55" height="10" rx="2" fill="#9A3412" stroke="#431407" stroke-width="2"/>
+    <rect x="105" y="60" width="8" height="50" fill="#7C2D12"/>
+    <rect x="142" y="60" width="8" height="50" fill="#7C2D12"/>
+    <!-- Chair Backrest with vertical slats -->
+    <rect x="140" y="-10" width="10" height="65" rx="3" fill="#9A3412" stroke="#431407" stroke-width="2"/>
+    <line x1="145" y1="5" x2="145" y2="45" stroke="#FDE68A" stroke-width="2"/>
+
+    <!-- Teacher Desk -->
+    <rect x="-20" y="25" width="115" height="15" rx="3" fill="#B45309" stroke="#451A03" stroke-width="2"/>
+    <rect x="-15" y="40" width="12" height="70" fill="#92400E"/>
+    <rect x="75" y="40" width="12" height="70" fill="#92400E"/>
+    <!-- Stack of Books & Pen holder on desk -->
+    <rect x="-5" y="10" width="30" height="15" rx="2" fill="#3B82F6"/>
+    <rect x="-3" y="5" width="28" height="6" rx="1" fill="#EF4444"/>
+    <rect x="40" y="5" width="15" height="20" rx="3" fill="#E2E8F0" stroke="#64748B" stroke-width="1.5"/>
+    <line x1="45" y1="2" x2="48" y2="7" stroke="#EF4444" stroke-width="2.5"/>
+  </g>
+
+  <!-- Pregnant Teacher with HUGE ROUND BABY BUMP (Center) -->
+  <g id="teacher" transform="translate(190, 110)">
+    <!-- Floor Shadow -->
+    <ellipse cx="95" cy="205" rx="75" ry="14" fill="#000000" opacity="0.2"/>
+
+    <!-- Pretty Floral Maternity Dress (Pink) -->
+    <path d="M55 75 Q85 60 110 75 L160 200 L30 200 Z" fill="#FDA4AF" stroke="#E11D48" stroke-width="2.5"/>
+
+    <!-- GIANT PREGNANT BELLY -->
+    <ellipse cx="125" cy="140" rx="70" ry="60" fill="#FB7185" stroke="#E11D48" stroke-width="3"/>
+    <path d="M90 110 Q130 90 165 120" stroke="#FFE4E6" stroke-width="5" fill="none" opacity="0.6"/>
+
+    <!-- Flowers on dress -->
+    <circle cx="65" cy="140" r="4" fill="#FEF08A"/><circle cx="65" cy="170" r="4" fill="#FEF08A"/>
+    <circle cx="150" cy="175" r="4" fill="#FEF08A"/>
+
+    <!-- Teacher Right Hand with Chalk pointing up -->
+    <path d="M50 80 Q25 105 35 125" fill="none" stroke="#FDA4AF" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="35" cy="125" r="9" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <line x1="30" y1="120" x2="10" y2="100" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Left Hand Tenderly Resting on the Giant Belly -->
+    <path d="M95 85 Q130 115 115 140" fill="none" stroke="#FDA4AF" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="115" cy="140" r="10" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- Teacher Head & Friendly Face -->
+    <circle cx="80" cy="42" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <circle cx="80" cy="18" r="12" fill="#3B2005"/> <!-- Bun -->
+    <path d="M52 42 C48 15 110 15 108 42 Z" fill="#3B2005"/>
+    <circle cx="60" cy="22" r="6" fill="#F43F5E"/> <!-- Cute clip -->
+
+    <!-- Red Rimmed Glasses -->
+    <rect x="67" y="38" width="11" height="8" rx="2" fill="none" stroke="#DC2626" stroke-width="1.8"/>
+    <rect x="83" y="38" width="11" height="8" rx="2" fill="none" stroke="#DC2626" stroke-width="1.8"/>
+    <line x1="78" y1="42" x2="83" y2="42" stroke="#DC2626" stroke-width="1.8"/>
+
+    <!-- Warm Smiling Eyes & Rosy Cheeks -->
+    <circle cx="72" cy="42" r="2" fill="#1E293B"/><circle cx="88" cy="42" r="2" fill="#1E293B"/>
+    <circle cx="63" cy="48" r="4" fill="#FCA5A5"/><circle cx="97" cy="48" r="4" fill="#FCA5A5"/>
+    <path d="M75 50 Q80 56 85 50" fill="none" stroke="#E11D48" stroke-width="2"/>
+    <text x="105" y="35" font-size="14">✨</text>
+  </g>
+
+  <!-- Front Desk Student ("Bạn Bàn Đầu") Sitting Attentive (Right Side) -->
+  <g id="front-student" transform="translate(480, 210)">
+    <!-- Desk front -->
+    <rect x="-10" y="35" width="110" height="15" rx="3" fill="#D97706" stroke="#451A03" stroke-width="2"/>
+    <rect x="-5" y="50" width="10" height="60" fill="#B45309"/>
+    <rect x="85" y="50" width="10" height="60" fill="#B45309"/>
+
+    <!-- Student Body -->
+    <ellipse cx="45" cy="40" rx="22" ry="24" fill="#38BDF8" stroke="#0284C7" stroke-width="2.5"/>
+    <ellipse cx="45" cy="5" r="20" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <!-- Neat hair -->
+    <path d="M26 2 C24 -15 65 -15 64 2 Z" fill="#1E293B"/>
+    <!-- Curious polite eyes looking at teacher -->
+    <ellipse cx="38" cy="3" rx="3" ry="4" fill="#1E293B"/>
+    <circle cx="39" cy="2" r="1" fill="#FFFFFF"/>
+    <ellipse cx="50" cy="3" rx="3" ry="4" fill="#1E293B"/>
+    <circle cx="51" cy="2" r="1" fill="#FFFFFF"/>
+    <path d="M40 12 Q45 16 50 12" fill="none" stroke="#DC2626" stroke-width="2"/>
+    <!-- Notebook and pencil on desk -->
+    <rect x="25" y="25" width="30" height="18" rx="2" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+    <line x1="60" y1="28" x2="68" y2="23" stroke="#F59E0B" stroke-width="2"/>
+  </g>
+
+  <!-- Speech Bubble: Teacher -->
+  <g filter="url(#dropShadow1)">
+    <path d="M120 22 Q120 4 200 4 L410 4 Q440 4 440 28 Q440 52 350 52 L310 52 L290 75 L300 52 L170 52 Q120 52 120 22 Z" fill="#FFF1F2" stroke="#F43F5E" stroke-width="2.5"/>
+    <text x="280" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#9F1239" text-anchor="middle">"Các em chú ý nghe giảng nhé..."</text>
+    <text x="280" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#9F1239" text-anchor="middle">"Bụng cô dạo này to quá, em bé đạp hoài à! ❤️"</text>
+  </g>
+
+  <!-- Speech Bubble: Front Student / Class -->
+  <g filter="url(#dropShadow1)">
+    <path d="M460 130 Q460 110 520 110 L620 110 Q640 110 640 135 Q640 160 580 160 L540 160 L520 185 L530 160 L490 160 Q460 160 460 130 Z" fill="#F0F9FF" stroke="#0284C7" stroke-width="2"/>
+    <text x="550" y="132" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#0369A1" text-anchor="middle">"Bụng cô to tròn</text>
+    <text x="550" y="150" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#0369A1" text-anchor="middle">dễ thương quá cô ơi!"</text>
+  </g>
+
+  <!-- Panel Header Banner -->
+  <rect x="20" y="16" width="310" height="32" rx="8" fill="#1E293B"/>
+  <text x="175" y="37" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#38BDF8" text-anchor="middle">★ CẢNH 1: CÔ GIÁO BỤNG BẦU "SIÊU TO"</text>
+
+  <!-- Caption at bottom -->
+  <rect x="25" y="402" width="600" height="34" rx="8" fill="#0F172A" opacity="0.85"/>
+  <text x="325" y="424" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#F8FAFC" text-anchor="middle">Trong lớp học, cô giáo có chiếc bụng bầu rất to đang say sưa giảng bài cho học sinh...</text>
+</svg>

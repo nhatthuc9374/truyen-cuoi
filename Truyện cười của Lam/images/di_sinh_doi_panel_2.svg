@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="1200" height="831">
+  <defs>
+    <linearGradient id="p2AlertBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF2F2"/>
+      <stop offset="65%" stop-color="#FEE2E2"/>
+      <stop offset="65%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+    <filter id="p2Shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Panel Border & Background -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#p2AlertBg)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Tia sét cảnh báo cơn đau co thắt -->
+  <path d="M260 110 L275 140 L265 145 L285 180" stroke="#F59E0B" stroke-width="4" fill="none"/>
+  <path d="M390 120 L405 150 L395 155 L415 190" stroke="#F59E0B" stroke-width="4" fill="none"/>
+
+  <!-- Đèn cấp cứu khẩn cấp nhấp nháy đỏ -->
+  <g transform="translate(540, 45)">
+    <rect x="0" y="25" width="50" height="15" rx="3" fill="#334155"/>
+    <ellipse cx="25" cy="20" rx="20" ry="16" fill="#EF4444"/>
+    <ellipse cx="25" cy="15" rx="8" ry="5" fill="#FCA5A5"/>
+    <text x="25" y="-5" font-family="'Impact', sans-serif" font-size="14" fill="#DC2626" text-anchor="middle">KHẨN CẤP! 🚨</text>
+  </g>
+
+  <!-- Dì ôm chặt chiếc bụng bầu gập người vì cơn đau co thắt dồn dập -->
+  <g id="di-dau-de" transform="translate(140, 95)">
+    <ellipse cx="120" cy="210" rx="85" ry="14" fill="#000000" opacity="0.2"/>
+    <path d="M60 90 Q90 70 120 90 L180 205 L30 205 Z" fill="#FDA4AF" stroke="#FB7185" stroke-width="2"/>
+    
+    <!-- Chiếc bụng bầu siêu to nhô ra rung lên bần bật -->
+    <ellipse cx="140" cy="145" rx="76" ry="66" fill="#FB7185" stroke="#DC2626" stroke-width="4"/>
+    
+    <!-- Tia chớp cơn co giật quanh bụng -->
+    <path d="M70 135 L60 145 L72 150 L62 165" stroke="#EF4444" stroke-width="3" fill="none"/>
+    <path d="M210 130 L220 142 L208 147 L218 160" stroke="#EF4444" stroke-width="3" fill="none"/>
+
+    <!-- Đầu dì nhăn nhó, mắt nhắm nghiền, há to miệng kêu thất thanh -->
+    <circle cx="85" cy="45" r="27" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M58 45 C55 12 115 12 112 45 Z" fill="#78350F"/>
+    
+    <!-- Mắt nhíu chặt chữ V đau đớn -->
+    <path d="M72 40 L80 45 L72 50" stroke="#1E293B" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M98 40 L90 45 L98 50" stroke="#1E293B" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Miệng há to gào toáng lên -->
+    <ellipse cx="85" cy="58" rx="13" ry="16" fill="#991B1B" stroke="#1E293B" stroke-width="1.5"/>
+    <!-- Mồ hôi toát ra như tắm -->
+    <circle cx="58" cy="38" r="3.5" fill="#38BDF8"/>
+    <circle cx="114" cy="38" r="3.5" fill="#38BDF8"/>
+
+    <!-- Hai tay ôm ghì lấy bụng bầu -->
+    <path d="M65 85 Q90 130 115 155" fill="none" stroke="#FDA4AF" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="115" cy="155" r="9" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+    <path d="M125 85 Q150 125 170 150" fill="none" stroke="#FDA4AF" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="170" cy="150" r="9" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+  </g>
+
+  <!-- Đứa cháu hoảng hốt ôm hai má nhảy dựng lên -->
+  <g id="chau-hoang-hot" transform="translate(30, 180)">
+    <ellipse cx="35" cy="120" rx="30" ry="8" fill="#000000" opacity="0.2"/>
+    <ellipse cx="35" cy="70" rx="20" ry="24" fill="#38BDF8" stroke="#0284C7" stroke-width="2.5"/>
+    <!-- Đầu đứa cháu tròn xoe mắt thảng thốt -->
+    <circle cx="35" cy="30" r="20" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M17 25 C15 5 55 5 53 25 Z" fill="#292524"/>
+    <circle cx="28" cy="28" r="4" fill="#1E293B"/><circle cx="42" cy="28" r="4" fill="#1E293B"/>
+    <ellipse cx="35" cy="40" rx="6" ry="8" fill="#7F1D1D"/>
+    <!-- Hai tay ôm má la to -->
+    <path d="M18 60 L14 36" stroke="#38BDF8" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="14" cy="36" r="5" fill="#FFEDD5"/>
+    <path d="M52 60 L56 36" stroke="#38BDF8" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="56" cy="36" r="5" fill="#FFEDD5"/>
+  </g>
+
+  <!-- Bác sĩ cuống cuồng giơ tay chỉ huy đẩy giường sinh -->
+  <g id="bac-si-bao-dong" transform="translate(420, 130)">
+    <ellipse cx="60" cy="170" rx="45" ry="12" fill="#000000" opacity="0.2"/>
+    <path d="M30 75 Q60 60 90 75 L105 170 L20 170 Z" fill="#FFFFFF" stroke="#64748B" stroke-width="2.5"/>
+    <!-- Đầu bác sĩ hoảng hốt toát mồ hôi -->
+    <circle cx="60" cy="40" r="24" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M38 35 C38 12 82 12 82 35 Z" fill="#334155"/>
+    <!-- Kính mắt lệch đi vì vội -->
+    <rect x="46" y="36" width="10" height="8" rx="1.5" fill="none" stroke="#0284C7" stroke-width="1.5"/>
+    <rect x="64" y="36" width="10" height="8" rx="1.5" fill="none" stroke="#0284C7" stroke-width="1.5"/>
+    <circle cx="51" cy="40" r="2.5" fill="#1E293B"/><circle cx="69" cy="40" r="2.5" fill="#1E293B"/>
+    <ellipse cx="60" cy="52" rx="7" ry="8" fill="#B91C1C"/>
+    <!-- Tay chỉ khẩn cấp -->
+    <path d="M90 90 L150 70" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="150" cy="70" r="8" fill="#FFEDD5"/>
+  </g>
+
+  <!-- Khung đối thoại của Dì -->
+  <g filter="url(#p2Shadow)">
+    <path d="M120 20 Q120 0 190 0 L400 0 Q440 0 440 25 Q440 55 380 55 L300 55 L280 80 L285 55 L170 55 Q120 55 120 20 Z" fill="#FEF2F2" stroke="#EF4444" stroke-width="2.5"/>
+    <text x="280" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="900" fill="#DC2626" text-anchor="middle">"Á Á Á! BÁC SĨ ƠI CỨU TÔI!"</text>
+    <text x="280" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#991B1B" text-anchor="middle">"ĐAU QUÁ! HÌNH NHƯ TÔI SẮP ĐẺ RỒI! 💥"</text>
+  </g>
+
+  <!-- Khung đối thoại của Cháu & Bác sĩ -->
+  <g filter="url(#p2Shadow)">
+    <path d="M430 75 Q430 55 490 55 L610 55 Q635 55 635 78 Q635 110 580 110 L540 110 L525 130 L530 110 L470 110 Q430 110 430 75 Z" fill="#F0F9FF" stroke="#0284C7" stroke-width="2.5"/>
+    <text x="532" y="76" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="900" fill="#0369A1" text-anchor="middle">BÁC SĨ KHẨN CẤP: 🚨</text>
+    <text x="532" y="93" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#DC2626" text-anchor="middle">"Mau chuyển vào phòng đẻ ngay!"</text>
+    <text x="532" y="105" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" fill="#0369A1" text-anchor="middle">Cổ tử cung mở hết rồi!</text>
+  </g>
+
+  <!-- Tiêu đề phân cảnh -->
+  <rect x="15" y="12" width="310" height="26" rx="6" fill="#1E293B"/>
+  <text x="170" y="29" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#FDE047" text-anchor="middle">CẢNH 2: VỪA VÀO KHÁM THÌ DÌ SẮP ĐẺ</text>
+
+  <!-- Footer chú thích dẫn chuyện -->
+  <rect x="15" y="385" width="620" height="30" rx="6" fill="#0F172A" opacity="0.9"/>
+  <text x="325" y="405" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#F8FAFC" text-anchor="middle">Vừa bước vào phòng khám, cơn đau dữ dội ập đến, bác sĩ tá hỏa phát hiện dì đã chuyển dạ sắp sinh...</text>
+</svg>

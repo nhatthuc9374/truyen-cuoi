@@ -1,0 +1,31 @@
+﻿<svg xmlns=http://www.w3.org/2000/svg viewBox=0 0 1330 980 width=100% height=100%>
+  <defs>
+    <linearGradient id=headerGrad x1=0% y1=0% x2=100% y2=0%>
+      <stop offset=0% stop-color=#38BDF8/>
+      <stop offset=30% stop-color=#F43F5E/>
+      <stop offset=70% stop-color=#F59E0B/>
+      <stop offset=100% stop-color=#10B981/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width=1330 height=980 fill=#0F172A rx=20/>
+
+  <!-- Comic Title Header -->
+  <rect x=25 y=12 width=1280 height=52 rx=12 fill=#1E293B stroke=#334155 stroke-width=2.5/>
+  <text x=665 y=46 font-family='Segoe UI', Roboto, sans-serif font-size=22 font-weight=900 fill=url(#headerGrad) text-anchor=middle letter-spacing=1.5>
+    🌙🤰 TRUYỆN TRANH HOẠT HÌNH: ĐÊM MẸ CHUYỂN DẠ BẤT NGỜ 🚑💖
+  </text>
+
+  <!-- Panel 1 (Top Left) -->
+  <image x=25 y=75 width=630 height=435 href=me_chuyen_da_panel_1.svg/>
+
+  <!-- Panel 2 (Top Right) -->
+  <image x=675 y=75 width=630 height=435 href=me_chuyen_da_panel_2.svg/>
+
+  <!-- Panel 3 (Bottom Left) -->
+  <image x=25 y=525 width=630 height=435 href=me_chuyen_da_panel_3.svg/>
+
+  <!-- Panel 4 (Bottom Right) -->
+  <image x=675 y=525 width=630 height=435 href=me_chuyen_da_panel_4.svg/>
+</svg>

@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nightBg1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="60%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="lampLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="glow10" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Panel Border & Cozy Night Bedroom Background -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#nightBg1)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Bedroom Window with Gentle Moon & Stars -->
+  <rect x="35" y="45" width="90" height="110" rx="8" fill="#020617" stroke="#475569" stroke-width="2.5"/>
+  <line x1="80" y1="45" x2="80" y2="155" stroke="#475569" stroke-width="2"/>
+  <line x1="35" y1="100" x2="125" y2="100" stroke="#475569" stroke-width="2"/>
+  <!-- Crescent Moon & Stars -->
+  <path d="M60 65 C60 55 68 50 75 52 C65 58 65 72 75 75 C68 76 60 72 60 65 Z" fill="#FDE047"/>
+  <circle cx="100" cy="65" r="1.5" fill="#FFFFFF"/>
+  <circle cx="50" cy="120" r="1.5" fill="#FFFFFF"/>
+  <circle cx="105" cy="130" r="2" fill="#FFFFFF"/>
+
+  <!-- Bed Headboard -->
+  <rect x="150" y="120" width="360" height="130" rx="12" fill="#78350F" stroke="#451A03" stroke-width="3"/>
+  <rect x="165" y="135" width="330" height="100" rx="8" fill="#92400E"/>
+
+  <!-- Bedside Table with Warm Lamp (Right) -->
+  <rect x="525" y="180" width="85" height="150" rx="6" fill="#78350F" stroke="#451A03" stroke-width="2"/>
+  <!-- Lamp Base & Shade -->
+  <rect x="555" y="130" width="12" height="50" fill="#CBD5E1"/>
+  <polygon points="535,130 587,130 575,90 547,90" fill="#FEF08A" stroke="#F59E0B" stroke-width="2"/>
+  <!-- Lamp Light Cone -->
+  <polygon points="535,130 400,340 620,340 587,130" fill="url(#lampLight)"/>
+
+  <!-- Bed Mattress & Frame -->
+  <rect x="130" y="240" width="390" height="130" rx="8" fill="#1E293B" stroke="#0F172A" stroke-width="3"/>
+
+  <!-- Mom Sleeping Peacefully in Bed -->
+  <g id="sleeping-mom" transform="translate(160, 160)">
+    <!-- Fluffy Pillow -->
+    <ellipse cx="65" cy="60" rx="42" ry="25" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+
+    <!-- Mom Head & Face Sleeping -->
+    <circle cx="70" cy="45" r="25" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M45 42 C40 15 95 15 95 42 Z" fill="#3B2005"/>
+    <ellipse cx="70" cy="18" rx="10" ry="5" fill="#F43F5E"/>
+    <!-- Closed Curved Sleeping Eyes -->
+    <path d="M58 45 Q64 50 70 45" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M78 45 Q84 50 90 45" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="56" cy="52" r="4" fill="#FDA4AF"/><circle cx="88" cy="52" r="4" fill="#FDA4AF"/>
+    <path d="M68 54 Q74 58 80 54" fill="none" stroke="#E11D48" stroke-width="1.5"/>
+
+    <!-- GIANT PREGNANT BELLY UNDER THE BLANKET! -->
+    <!-- Cozy Patterned Quilt / Blanket -->
+    <path d="M30 75 Q150 20 280 85 L290 180 L20 180 Z" fill="#38BDF8" stroke="#0284C7" stroke-width="3"/>
+    <!-- Massive Mound of Belly protruding under blanket -->
+    <ellipse cx="170" cy="70" rx="78" ry="60" fill="#0284C7" stroke="#0369A1" stroke-width="3"/>
+    <path d="M125 45 Q170 25 215 50" fill="none" stroke="#BAE6FD" stroke-width="4" opacity="0.6"/>
+    <!-- Cute Blanket Pattern Stars -->
+    <text x="140" y="85" font-size="16" fill="#FEF08A">⭐</text>
+    <text x="190" y="70" font-size="14" fill="#FFFFFF">✨</text>
+    <text x="165" y="105" font-size="14" fill="#FEF08A">⭐</text>
+
+    <!-- Snooze Zzz -->
+    <text x="95" y="25" font-family="'Comic Sans MS', sans-serif" font-size="14" font-weight="bold" fill="#93C5FD">z</text>
+    <text x="108" y="12" font-family="'Comic Sans MS', sans-serif" font-size="18" font-weight="bold" fill="#60A5FA">Z</text>
+  </g>
+
+  <!-- Child ("Tôi") sitting by the bed, gently rubbing mom's belly under blanket -->
+  <g id="child-rubbing" transform="translate(360, 180)">
+    <ellipse cx="50" cy="180" rx="40" ry="10" fill="#000000" opacity="0.25"/>
+    
+    <!-- Body Sitting on Edge -->
+    <ellipse cx="50" cy="115" rx="24" ry="28" fill="#F43F5E" stroke="#BE123C" stroke-width="2.5"/>
+    <ellipse cx="50" cy="155" rx="16" ry="18" fill="#1E3A8A"/>
+
+    <!-- Arms Extending Out to Gently Rub Mom's Belly -->
+    <path d="M35 105 Q5 95 -15 70" fill="none" stroke="#F43F5E" stroke-width="12" stroke-linecap="round"/>
+    <path d="M35 105 Q5 95 -15 70" fill="none" stroke="#BE123C" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Hands gently caressing the blanket belly -->
+    <circle cx="-15" cy="70" r="9" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <circle cx="-5" cy="62" r="9" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <!-- Rubbing motion glow / heart ✨ -->
+    <text x="-25" y="55" font-size="16">💖</text>
+
+    <!-- Child Head & Tender Loving Face -->
+    <circle cx="50" cy="60" r="22" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M30 55 C28 30 72 30 70 55 Z" fill="#292524"/>
+    <!-- Gentle Loving Eyes looking at belly -->
+    <path d="M40 58 Q45 52 50 58" fill="none" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M56 58 Q61 52 66 58" fill="none" stroke="#1E293B" stroke-width="2.5"/>
+    <circle cx="36" cy="64" r="3" fill="#FDA4AF"/><circle cx="64" cy="64" r="3" fill="#FDA4AF"/>
+    <path d="M48 68 Q53 74 58 68" fill="none" stroke="#DC2626" stroke-width="2"/>
+  </g>
+
+  <!-- Speech / Thought Bubble: Child ("Tôi") -->
+  <g filter="url(#glow10)">
+    <path d="M230 40 Q230 15 310 15 L490 15 Q540 15 540 42 Q540 70 460 70 L380 70 L360 95 L365 70 L280 70 Q230 70 230 40 Z" fill="#F0F9FF" stroke="#0284C7" stroke-width="2.5"/>
+    <text x="385" y="38" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#0369A1" text-anchor="middle">"Bụng mẹ to tròn dưới lớp chăn..."</text>
+    <text x="385" y="58" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#0369A1" text-anchor="middle">"Con xoa xoa cho mẹ ngủ ngon nhé! ❤️"</text>
+  </g>
+
+  <!-- Panel Header Banner -->
+  <rect x="20" y="16" width="300" height="32" rx="8" fill="#1E293B"/>
+  <text x="170" y="37" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#38BDF8" text-anchor="middle">★ CẢNH 1: XOA BỤNG BẦU TRONG CHĂN</text>
+
+  <!-- Caption at bottom -->
+  <rect x="25" y="402" width="600" height="34" rx="8" fill="#0F172A" opacity="0.85"/>
+  <text x="325" y="424" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#F8FAFC" text-anchor="middle">Đêm khuya, tôi ngồi bên giường nhẹ nhàng xoa bụng bầu to nhô cao dưới lớp chăn của mẹ...</text>
+</svg>

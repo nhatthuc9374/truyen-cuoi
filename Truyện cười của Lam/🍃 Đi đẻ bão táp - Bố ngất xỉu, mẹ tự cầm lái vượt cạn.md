@@ -1,4 +1,4 @@
-# 🍃 🚗💨 Truyện Tranh Hài Hước: Đi Đẻ Bão Táp - Bố Ngất Xỉu, Mẹ Tự Cầm Lái Vượt Cạn
+﻿# 🍃 🚗💨 Truyện Tranh Hài Hước: Đi Đẻ Bão Táp - Bố Ngất Xỉu, Mẹ Tự Cầm Lái Vượt Cạn
 
 > *Câu chuyện có thật siêu hài hước về một đêm đi đẻ "bão táp" có một không hai: 1h sáng mẹ vỡ ối điềm tĩnh gọi chồng, ông bố giật mình nhảy dựng xỏ nhầm 2 chân vào một ống quần vơ chảo rán nhét làn đi đẻ; ra đến xe bố run tay đánh rơi chìa khóa, mẹ bụng to vượt mặt phải tự trèo lên ghế lái đạp ga 120km/h như phim Fast & Furious; vào phòng sinh bác sĩ vừa hô thấy tóc em bé thì bố nhìn thấy giọt máu lăn đùng ra ngất xỉu phải thở oxy; kết thúc bằng màn chào đời viên mãn của cặp song thai 7.0kg khiến ông bố tỉnh dậy trán dán cao khóc nức nở bái phục vợ!*
 
@@ -104,4 +104,3 @@
 ---
 
 *#truyencuoi #truyentranh #comic #didebaotap #bongatxiu #melaisieunhan #vuotcan #songthai #mevacon #giadinhhanhphuc #chuyenda*
-

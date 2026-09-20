@@ -1,0 +1,175 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyNight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="50%" stop-color="#312E81"/>
+      <stop offset="100%" stop-color="#4338CA"/>
+    </linearGradient>
+    <linearGradient id="cabinRedAlert" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF2F2"/>
+      <stop offset="50%" stop-color="#FEE2E2"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <radialGradient id="bellyGo" cx="42%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#F43F5E"/>
+      <stop offset="60%" stop-color="#E11D48"/>
+      <stop offset="100%" stop-color="#9F1239"/>
+    </radialGradient>
+    <filter id="shadowP3" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="3" dy="5" stdDeviation="5" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#cabinRedAlert)"/>
+
+  <!-- Airplane Window showing 10.000m Clouds and Night Sky -->
+  <g transform="translate(60, 80)">
+    <rect x="0" y="0" width="140" height="230" rx="70" fill="#0284C7" stroke="#CBD5E1" stroke-width="10"/>
+    <rect x="8" y="8" width="124" height="214" rx="62" fill="url(#skyNight)"/>
+    <ellipse cx="50" cy="160" rx="40" ry="22" fill="#E0E7FF" opacity="0.4"/>
+    <ellipse cx="90" cy="150" rx="45" ry="25" fill="#E0E7FF" opacity="0.5"/>
+    <!-- Moon & Stars -->
+    <circle cx="95" cy="55" r="14" fill="#FEF08A"/>
+    <text x="35" y="60" font-size="16" fill="#FFFFFF">✨</text>
+    <text x="65" y="90" font-size="14" fill="#FFFFFF">⭐</text>
+  </g>
+
+  <!-- Emergency Flash Lights -->
+  <circle cx="50" cy="40" r="16" fill="#EF4444"/>
+  <circle cx="1150" cy="40" r="16" fill="#EF4444"/>
+
+  <!-- Top Emergency Banner -->
+  <g filter="url(#shadowP3)">
+    <rect x="120" y="14" width="960" height="54" rx="27" fill="#DC2626" stroke="#FFFFFF" stroke-width="3"/>
+    <text x="600" y="49" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="900" fill="#FFFFFF" text-anchor="middle">
+      🚨 CẢNH 3: VỠ ỐI TRÊN ĐỘ CAO 10.000M – PHÒNG SINH TRÊN CHÍN TẦNG MÂY! ☁️
+    </text>
+  </g>
+
+  <!-- Airplane Emergency PA Speaker -->
+  <g transform="translate(1000, 90)" filter="url(#shadowP3)">
+    <circle cx="40" cy="40" r="32" fill="#EF4444" stroke="#FFFFFF" stroke-width="3"/>
+    <text x="40" y="50" font-size="26" text-anchor="middle">📢</text>
+    <rect x="-15" y="80" width="110" height="26" rx="8" fill="#DC2626"/>
+    <text x="40" y="98" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">10.000 MÉT!</text>
+  </g>
+
+  <!-- First-Class Reclined Bed -->
+  <g transform="translate(160, 260)" filter="url(#shadowP3)">
+    <rect x="0" y="80" width="160" height="380" rx="30" fill="#1E3A8A" stroke="#3B82F6" stroke-width="4"/>
+    <ellipse cx="80" cy="140" rx="65" ry="50" fill="#FFFFFF" stroke="#93C5FD" stroke-width="3"/>
+    <rect x="50" y="300" width="500" height="180" rx="30" fill="#1D4ED8" stroke="#1E40AF" stroke-width="4"/>
+    <!-- Medical Sterile Sheets -->
+    <path d="M 90 320 Q 300 290 530 310 L 530 460 L 90 460 Z" fill="#E0F2FE" stroke="#38BDF8" stroke-width="3"/>
+  </g>
+
+  <!-- MOTHER IN LABOR (DETERMINED & HEROIC) -->
+  <g transform="translate(220, 230)" filter="url(#shadowP3)">
+    <!-- Mother body -->
+    <path d="M 40 140 Q 20 280 60 400 L 260 400 Q 280 280 220 140 Z" fill="#FDA4AF"/>
+
+    <!-- ENORMOUS 160CM ROUND BELLY IN HARD CONTRACTION -->
+    <ellipse cx="230" cy="320" rx="175" ry="140" fill="url(#bellyGo)" stroke="#881337" stroke-width="5"/>
+    <ellipse cx="180" cy="260" rx="50" ry="22" fill="#FFFFFF" opacity="0.3"/>
+
+    <!-- Labor contraction pulse wave -->
+    <ellipse cx="230" cy="320" rx="190" ry="152" fill="none" stroke="#FDE047" stroke-width="4" stroke-dasharray="12,8"/>
+
+    <rect x="130" y="300" width="200" height="36" rx="10" fill="#BE123C"/>
+    <text x="230" y="324" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="900" fill="#FFFFFF" text-anchor="middle">⚡ VỠ ỐI TRÊN MÂY! ⚡</text>
+
+    <!-- Mother's Head & Strong Emotion -->
+    <circle cx="120" cy="85" r="52" fill="#FFF1EE"/>
+    <path d="M 65 85 Q 120 20 175 85 Q 170 45 120 35 Q 75 45 65 85 Z" fill="#451A03"/>
+    <path d="M 62 90 Q 50 140 70 170 Q 80 130 75 90 Z" fill="#451A03"/>
+    <path d="M 175 90 Q 185 140 168 170 Q 160 130 168 90 Z" fill="#451A03"/>
+
+    <!-- Determined Clenched Brows -->
+    <path d="M 85 75 L 110 82" stroke="#78350F" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 155 75 L 130 82" stroke="#78350F" stroke-width="4" stroke-linecap="round"/>
+    <!-- Clenched Gritted Eyes -->
+    <path d="M 88 88 L 108 92" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 132 92 L 152 88" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+    <!-- Deep breath / Push Mouth -->
+    <ellipse cx="120" cy="108" rx="16" ry="12" fill="#BE123C"/>
+
+    <!-- Sweat droplets -->
+    <path d="M 168 70 C 168 62 176 62 176 70 C 176 78 168 78 168 70 Z" fill="#38BDF8"/>
+    <path d="M 68 75 C 68 67 76 67 76 75 C 76 83 68 83 68 75 Z" fill="#38BDF8"/>
+
+    <!-- Mother's Hand tightly squeezing Husband's hand -->
+    <path d="M 60 140 Q 30 220 90 260" stroke="#FED7AA" stroke-width="24" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- HUSBAND SUPPORTING WIFE, NERVOUS & LOVING -->
+  <g transform="translate(80, 310)" filter="url(#shadowP3)">
+    <circle cx="80" cy="90" r="46" fill="#FFF1EE"/>
+    <path d="M 40 85 Q 75 40 120 80 Z" fill="#1E293B"/>
+    <!-- Worried Wide Eyes -->
+    <circle cx="70" cy="88" r="8" fill="#1E293B"/><circle cx="72" cy="85" r="2.5" fill="#FFFFFF"/>
+    <circle cx="98" cy="88" r="8" fill="#1E293B"/><circle cx="100" cy="85" r="2.5" fill="#FFFFFF"/>
+    <!-- Trembling mouth -->
+    <path d="M 75 110 Q 84 116 94 110" stroke="#BE123C" stroke-width="3" fill="none"/>
+    <!-- Sweat drop -->
+    <path d="M 118 70 C 118 62 126 62 126 70 C 126 78 118 78 118 70 Z" fill="#38BDF8"/>
+
+    <!-- Husband holding wife's hand -->
+    <path d="M 90 140 Q 140 190 190 180" stroke="#FED7AA" stroke-width="22" stroke-linecap="round" fill="none"/>
+    <text x="75" y="160" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="900" fill="#1E40AF" text-anchor="middle">VỢ CỐ LÊN! 💖</text>
+  </g>
+
+  <!-- VOLUNTEER OB/GYN DOCTOR DELIVERING BABIES -->
+  <g transform="translate(820, 200)" filter="url(#shadowP3)">
+    <!-- Body in White Doctor Coat -->
+    <path d="M 40 150 L 0 380 L 180 380 L 140 150 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="3.5"/>
+    <!-- Turquoise Scrub under coat -->
+    <polygon points="65,150 90,210 115,150" fill="#0D9488"/>
+    <!-- Stethoscope -->
+    <path d="M 68 155 Q 90 240 112 155" stroke="#475569" stroke-width="5" fill="none"/>
+    <circle cx="90" cy="245" r="10" fill="#CBD5E1" stroke="#334155" stroke-width="2"/>
+
+    <!-- Doctor's Head -->
+    <circle cx="90" cy="90" r="48" fill="#FFF1EE"/>
+    <!-- Professional short bob hairstyle -->
+    <path d="M 42 85 Q 90 25 138 85 Q 130 45 90 40 Q 50 45 42 85 Z" fill="#451A03"/>
+    <path d="M 42 85 Q 36 130 50 155 Q 58 120 50 90 Z" fill="#451A03"/>
+    <path d="M 138 85 Q 144 130 130 155 Q 122 120 130 90 Z" fill="#451A03"/>
+
+    <!-- Medical Mask -->
+    <rect x="62" y="92" width="56" height="34" rx="8" fill="#99F6E4" stroke="#0D9488" stroke-width="2"/>
+    <line x1="62" y1="100" x2="48" y2="92" stroke="#0D9488" stroke-width="2"/>
+    <line x1="118" y1="100" x2="132" y2="92" stroke="#0D9488" stroke-width="2"/>
+
+    <!-- Focused Confident Eyes -->
+    <ellipse cx="74" cy="80" rx="6" ry="8" fill="#0F172A"/>
+    <circle cx="76" cy="77" r="2" fill="#FFFFFF"/>
+    <ellipse cx="106" cy="80" rx="6" ry="8" fill="#0F172A"/>
+    <circle cx="108" cy="77" r="2" fill="#FFFFFF"/>
+
+    <!-- Hands in Blue Sterile Medical Gloves -->
+    <path d="M 30 160 Q -20 250 -70 280" stroke="#FFFFFF" stroke-width="26" stroke-linecap="round" fill="none"/>
+    <!-- Blue sterile gloves -->
+    <ellipse cx="-75" cy="285" rx="18" ry="14" fill="#38BDF8" stroke="#0284C7" stroke-width="2"/>
+    <rect x="-140" y="270" width="130" height="30" rx="6" fill="#FDE047" stroke="#CA8A04" stroke-width="2"/>
+    <text x="-75" y="290" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="900" fill="#78350F" text-anchor="middle">ĐỠ ĐẺ TRÊN MÂY</text>
+  </g>
+
+  <!-- BIG DOCTOR SPEECH BUBBLE -->
+  <g transform="translate(420, 80)" filter="url(#shadowP3)">
+    <rect x="0" y="0" width="560" height="96" rx="20" fill="#FFFFFF" stroke="#DC2626" stroke-width="4"/>
+    <polygon points="460,96 490,125 440,96" fill="#FFFFFF"/>
+    <path d="M 440 96 L 490 125 L 460 96" stroke="#DC2626" stroke-width="4"/>
+    <line x1="440" y1="96" x2="460" y2="96" stroke="#FFFFFF" stroke-width="6"/>
+
+    <text x="280" y="32" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#DC2626" text-anchor="middle">
+      👩‍⚕️ BÁC SĨ SẢN KHOA TÌNH NGUYỆN TRÊN CHUYẾN BAY:
+    </text>
+    <text x="280" y="58" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      “Thấy chỏm đầu bé thứ nhất rồi mẹ ơi! Hít sâu thở đều!”
+    </text>
+    <text x="280" y="82" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#2563EB" text-anchor="middle">
+      “1... 2... 3... RẶN MẠNH MỘT HƠI NÀO! BÉ SẮP RA RỒI! 👶💪”
+    </text>
+  </g>
+</svg>

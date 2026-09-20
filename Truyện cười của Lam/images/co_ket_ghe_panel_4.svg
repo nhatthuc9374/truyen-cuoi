@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wallBg4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF9C3"/>
+      <stop offset="50%" stop-color="#FFF1F2"/>
+      <stop offset="100%" stop-color="#E0F2FE"/>
+    </linearGradient>
+    <filter id="dropShadow4" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Panel Border & Background -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#wallBg4)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Celebratory Bunting Garland -->
+  <g>
+    <path d="M20 50 Q160 70 320 50 T630 45" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+    <polygon points="50,53 70,80 90,56" fill="#EF4444"/>
+    <polygon points="110,59 130,86 150,62" fill="#F59E0B"/>
+    <polygon points="170,62 190,90 210,63" fill="#10B981"/>
+    <polygon points="230,60 250,88 270,59" fill="#3B82F6"/>
+    <polygon points="290,54 310,82 330,53" fill="#EC4899"/>
+    <polygon points="350,48 370,76 390,47" fill="#8B5CF6"/>
+    <polygon points="410,46 430,74 450,45" fill="#F59E0B"/>
+    <polygon points="470,45 490,72 510,44" fill="#10B981"/>
+    <polygon points="530,44 550,70 570,44" fill="#EF4444"/>
+  </g>
+
+  <!-- Floating Hearts & Sparkles -->
+  <text x="60" y="105" font-size="20">💖</text>
+  <text x="170" y="100" font-size="18">✨</text>
+  <text x="320" y="95" font-size="22">❤️</text>
+  <text x="440" y="90" font-size="18">🎉</text>
+  <text x="580" y="100" font-size="20">⭐</text>
+
+  <!-- Floor separator line -->
+  <line x1="5" y1="292" x2="645" y2="292" stroke="#94A3B8" stroke-width="2"/>
+
+  <!-- Teacher Standing Proudly & Joyfully (Left-Center) -->
+  <g id="teacher-grateful" transform="translate(130, 110)">
+    <!-- Floor Shadow -->
+    <ellipse cx="90" cy="205" rx="75" ry="14" fill="#000000" opacity="0.2"/>
+
+    <!-- Dress -->
+    <path d="M55 75 Q85 60 110 75 L160 200 L30 200 Z" fill="#FDA4AF" stroke="#E11D48" stroke-width="2.5"/>
+
+    <!-- GIANT PREGNANT BELLY SAFE & SOUND -->
+    <ellipse cx="120" cy="140" rx="68" ry="58" fill="#FB7185" stroke="#E11D48" stroke-width="3"/>
+    <path d="M85 110 Q125 90 160 120" stroke="#FFE4E6" stroke-width="5" fill="none" opacity="0.6"/>
+
+    <!-- Teacher Left Hand happily stroking the baby bump -->
+    <path d="M60 85 Q40 125 80 145" fill="none" stroke="#FDA4AF" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="80" cy="145" r="9" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- Teacher Right Hand gently placed on the hero student's shoulder -->
+    <path d="M100 85 Q160 80 190 110" fill="none" stroke="#FDA4AF" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="190" cy="110" r="9" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- Teacher Head with Radiant Happy Expression -->
+    <circle cx="80" cy="42" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <circle cx="80" cy="18" r="12" fill="#3B2005"/>
+    <path d="M52 42 C48 15 110 15 108 42 Z" fill="#3B2005"/>
+    <circle cx="60" cy="22" r="6" fill="#F43F5E"/>
+
+    <!-- Red Glasses -->
+    <rect x="67" y="38" width="11" height="8" rx="1.5" fill="none" stroke="#DC2626" stroke-width="1.8"/>
+    <rect x="83" y="38" width="11" height="8" rx="1.5" fill="none" stroke="#DC2626" stroke-width="1.8"/>
+    <line x1="78" y1="42" x2="83" y2="42" stroke="#DC2626" stroke-width="1.8"/>
+
+    <!-- Sweet Smiling Eyes & Rosy Blushing Cheeks -->
+    <path d="M68 40 Q73 35 78 40" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M84 40 Q89 35 94 40" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="63" cy="48" r="4" fill="#FCA5A5"/><circle cx="97" cy="48" r="4" fill="#FCA5A5"/>
+    <!-- Big joyful smile -->
+    <path d="M74 50 Q81 58 88 50" fill="none" stroke="#E11D48" stroke-width="2.5"/>
+  </g>
+
+  <!-- Hero Student Standing Proud & Blushing (Center-Right) -->
+  <g id="hero-student-proud" transform="translate(325, 150)">
+    <!-- Floor Shadow -->
+    <ellipse cx="45" cy="165" rx="40" ry="10" fill="#000000" opacity="0.2"/>
+
+    <!-- Body -->
+    <ellipse cx="45" cy="70" rx="22" ry="28" fill="#38BDF8" stroke="#0284C7" stroke-width="2.5"/>
+    <rect x="32" y="95" width="11" height="45" fill="#1E3A8A" rx="3"/>
+    <rect x="47" y="95" width="11" height="45" fill="#1E3A8A" rx="3"/>
+
+    <!-- Left hand on hip, Right hand giving THUMBS UP! 👍 -->
+    <path d="M25 65 Q10 75 20 85" fill="none" stroke="#38BDF8" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="20" cy="85" r="7" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+
+    <!-- Thumbs Up Hand -->
+    <path d="M65 65 Q85 55 90 40" fill="none" stroke="#38BDF8" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="90" cy="40" r="7" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+    <path d="M90 35 L90 26" stroke="#FFEDD5" stroke-width="4" stroke-linecap="round"/>
+    <text x="96" y="32" font-size="16">👍</text>
+
+    <!-- Student Head & Super Happy Blushing Smile -->
+    <circle cx="45" cy="25" r="22" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M25 22 C23 3 67 3 65 22 Z" fill="#1E293B"/>
+
+    <!-- Smiling eyes & cute blush -->
+    <path d="M36 24 Q41 19 46 24" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M49 24 Q54 19 59 24" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="33" cy="28" r="4.5" fill="#FDA4AF"/>
+    <circle cx="61" cy="28" r="4.5" fill="#FDA4AF"/>
+    <path d="M41 33 Q47 40 53 33" fill="none" stroke="#DC2626" stroke-width="2.5"/>
+    <text x="65" y="10" font-size="14">✨</text>
+  </g>
+
+  <!-- Cheering Classmates Clapping Hands (Far Right) -->
+  <g id="class-cheer" transform="translate(470, 185)">
+    <!-- Student 1 -->
+    <g transform="translate(10, 15)">
+      <ellipse cx="25" cy="45" rx="18" ry="22" fill="#A855F7" stroke="#7E22CE" stroke-width="2"/>
+      <circle cx="25" cy="18" r="16" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+      <path d="M12 15 C10 -2 38 -2 36 15 Z" fill="#451A03"/>
+      <!-- Clapping hands -->
+      <circle cx="12" cy="35" r="5" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+      <circle cx="38" cy="35" r="5" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="18" y="22" font-size="12">👏</text>
+    </g>
+
+    <!-- Student 2 cheering -->
+    <g transform="translate(75, 10)">
+      <ellipse cx="25" cy="45" rx="18" ry="22" fill="#34D399" stroke="#059669" stroke-width="2"/>
+      <circle cx="25" cy="18" r="16" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+      <path d="M12 15 C10 -2 38 -2 36 15 Z" fill="#1E293B"/>
+      <!-- Raised hands -->
+      <path d="M8 45 Q-2 25 2 15" fill="none" stroke="#34D399" stroke-width="8" stroke-linecap="round"/>
+      <path d="M42 45 Q52 25 48 15" fill="none" stroke="#34D399" stroke-width="8" stroke-linecap="round"/>
+      <text x="18" y="22" font-size="12">🎉</text>
+    </g>
+
+    <!-- Sound effect "BỐP BỐP BỐP!" -->
+    <g filter="url(#dropShadow4)">
+      <rect x="0" y="80" width="135" height="26" rx="6" fill="#FEF08A" stroke="#F59E0B" stroke-width="2"/>
+      <text x="67" y="98" font-family="'Impact', Arial Black, sans-serif" font-size="13" font-weight="900" fill="#B45309" text-anchor="middle">👏 BỐP ! BỐP ! BỐP !</text>
+    </g>
+  </g>
+
+  <!-- Speech Bubble: Teacher Grateful -->
+  <g filter="url(#dropShadow4)">
+    <path d="M50 25 Q50 6 150 6 L330 6 Q360 6 360 30 Q360 55 280 55 L220 55 L200 78 L210 55 L90 55 Q50 55 50 25 Z" fill="#FFF1F2" stroke="#F43F5E" stroke-width="2.5"/>
+    <text x="205" y="26" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#BE123C" text-anchor="middle">"Cô cảm ơn em rất nhiều nhé!"</text>
+    <text x="205" y="46" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#9F1239" text-anchor="middle">"Em bé trong bụng cũng cảm ơn anh hai bàn đầu! ❤️"</text>
+  </g>
+
+  <!-- Speech Bubble: Front Student -->
+  <g filter="url(#dropShadow4)">
+    <path d="M380 20 Q380 2 460 2 L590 2 Q620 2 620 26 Q620 50 550 50 L480 50 L450 72 L460 50 L420 50 Q380 50 380 20 Z" fill="#F0F9FF" stroke="#0284C7" stroke-width="2"/>
+    <text x="500" y="22" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#0369A1" text-anchor="middle">"Dạ không có chi đâu cô ơi!"</text>
+    <text x="500" y="40" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#0F172A" text-anchor="middle">"Cô và em bé an toàn là tốt rồi ạ! 🥰"</text>
+  </g>
+
+  <!-- Panel Header Banner -->
+  <rect x="20" y="16" width="330" height="32" rx="8" fill="#1E293B"/>
+  <text x="185" y="37" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#F472B6" text-anchor="middle">★ CẢNH 4: CÔ GIÁO CẢM ƠN – CẢ LỚP HOAN HÔ!</text>
+
+  <!-- Caption at bottom -->
+  <rect x="25" y="402" width="600" height="34" rx="8" fill="#0F172A" opacity="0.85"/>
+  <text x="325" y="424" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#F8FAFC" text-anchor="middle">Sau pha giải cứu ngoạn mục, cô giáo xúc động cảm ơn bạn bàn đầu trong tiếng vỗ tay rầm rộ của cả lớp!</text>
+</svg>

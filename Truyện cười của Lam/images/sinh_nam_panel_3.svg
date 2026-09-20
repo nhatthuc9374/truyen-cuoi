@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hospBg3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EFF6FF"/>
+      <stop offset="60%" stop-color="#DBEAFE"/>
+      <stop offset="100%" stop-color="#93C5FD"/>
+    </linearGradient>
+    <filter id="lampGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="shadowH3" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Panel Border & Delivery Room Background -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#hospBg3)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Delivery Room Surgical Lamp Above -->
+  <path d="M300 15 L300 65 L260 85" fill="none" stroke="#64748B" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="250" cy="90" rx="45" ry="18" fill="#F8FAFC" stroke="#475569" stroke-width="3"/>
+  <!-- Light Bulbs Inside Lamp -->
+  <circle cx="230" cy="90" r="8" fill="#FEF08A"/>
+  <circle cx="250" cy="90" r="9" fill="#FDE047"/>
+  <circle cx="270" cy="90" r="8" fill="#FEF08A"/>
+  <!-- Bright Light Cone -->
+  <polygon points="210,100 110,360 410,360 290,100" fill="#FEF08A" opacity="0.25" filter="url(#lampGlow)"/>
+
+  <!-- Supersonic Sound Shockwaves Shaking Room (((( AAAAA )))) -->
+  <path d="M190 120 Q160 160 190 200" fill="none" stroke="#EF4444" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <path d="M170 100 Q130 160 170 220" fill="none" stroke="#EF4444" stroke-width="5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M150 80 Q100 160 150 240" fill="none" stroke="#EF4444" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Delivery Bed (Giường Sinh) -->
+  <rect x="130" y="240" width="310" height="35" rx="6" fill="#0284C7" stroke="#0369A1" stroke-width="3"/>
+  <rect x="150" y="275" width="12" height="90" fill="#64748B"/>
+  <rect x="400" y="275" width="12" height="90" fill="#64748B"/>
+  <!-- Bed Side Railing -->
+  <rect x="180" y="210" width="180" height="30" rx="4" fill="none" stroke="#94A3B8" stroke-width="4"/>
+
+  <!-- Mom in Delivery Bed (Head elevated on pillow, screaming with power of a dragon!) -->
+  <g id="mom-delivering" transform="translate(140, 120)">
+    <!-- Pillow -->
+    <ellipse cx="60" cy="85" rx="40" ry="25" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+
+    <!-- Body & Blanket -->
+    <path d="M80 80 Q150 70 220 120 L230 150 L50 150 Z" fill="#E2E8F0"/>
+    <!-- Huge Belly under blanket -->
+    <ellipse cx="170" cy="115" rx="55" ry="40" fill="#FDA4AF" stroke="#E11D48" stroke-width="2"/>
+
+    <!-- Arms Gripping Bed Rail tightly with white knuckles -->
+    <path d="M75 80 Q95 95 110 115" fill="none" stroke="#FDA4AF" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="110" cy="115" r="9" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M90 70 Q130 85 145 115" fill="none" stroke="#FDA4AF" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="145" cy="115" r="9" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- Head Resting on Pillow, Chin Up Screaming! -->
+    <circle cx="65" cy="45" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M40 45 C35 15 90 15 90 45 Z" fill="#451A03"/>
+
+    <!-- Face Screaming intensely (Tightly closed eyes, flushed red face) -->
+    <ellipse cx="65" cy="45" r="24" fill="#FCA5A5" opacity="0.4"/>
+    <path d="M50 38 L60 42 L50 46" fill="none" stroke="#1E293B" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M80 38 L70 42 L80 46" fill="none" stroke="#1E293B" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Giant Screaming Mouth (Decibel Overload!) -->
+    <ellipse cx="65" cy="56" rx="14" ry="16" fill="#7F1D1D" stroke="#1E293B" stroke-width="2"/>
+    <ellipse cx="65" cy="62" rx="8" ry="7" fill="#EF4444"/>
+    <rect x="56" y="42" width="18" height="5" fill="#FFFFFF"/>
+
+    <!-- Sweat & Tears Flying -->
+    <path d="M30 30 Q22 22 28 15 Q34 22 30 30 Z" fill="#38BDF8"/>
+    <path d="M95 30 Q102 22 98 15 Q92 22 95 30 Z" fill="#38BDF8"/>
+  </g>
+
+  <!-- Doctor & Nurse at foot of bed encouraging -->
+  <g id="staff-assisting" transform="translate(420, 150)">
+    <!-- Shadow -->
+    <ellipse cx="70" cy="195" rx="60" ry="12" fill="#000000" opacity="0.2"/>
+
+    <!-- Doctor in green surgical scrubs & mask -->
+    <path d="M25 80 Q45 70 65 80 L75 185 L15 185 Z" fill="#10B981" stroke="#047857" stroke-width="2.5"/>
+    <!-- Surgical Cap -->
+    <ellipse cx="45" cy="35" rx="22" ry="16" fill="#10B981" stroke="#047857" stroke-width="2"/>
+    <circle cx="45" cy="45" r="18" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <!-- Surgical Mask -->
+    <rect x="32" y="44" width="26" height="18" rx="4" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+    <circle cx="38" cy="40" r="2.5" fill="#1E293B"/><circle cx="52" cy="40" r="2.5" fill="#1E293B"/>
+    <!-- Encouraging hands in surgical gloves -->
+    <path d="M15 90 Q-15 105 -25 130" fill="none" stroke="#10B981" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="-25" cy="130" r="9" fill="#FEF08A" stroke="#CA8A04" stroke-width="1.5"/>
+
+    <!-- Nurse beside cheering on -->
+    <path d="M80 85 Q100 75 120 85 L125 185 L75 185 Z" fill="#38BDF8" stroke="#0284C7" stroke-width="2"/>
+    <circle cx="100" cy="48" r="18" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <rect x="90" y="48" width="22" height="16" rx="3" fill="#FFFFFF"/>
+    <circle cx="95" cy="44" r="2" fill="#1E293B"/><circle cx="107" cy="44" r="2" fill="#1E293B"/>
+    <ellipse cx="100" cy="30" rx="18" ry="12" fill="#38BDF8"/>
+  </g>
+
+  <!-- Child ("Tôi") Covering Ears in Shock at Door -->
+  <g id="child-ears" transform="translate(45, 180)">
+    <ellipse cx="35" cy="120" rx="30" ry="8" fill="#000000" opacity="0.2"/>
+    <ellipse cx="35" cy="80" rx="18" ry="24" fill="#38BDF8" stroke="#0284C7" stroke-width="2"/>
+    <!-- Hands clamping over both ears tightly -->
+    <circle cx="18" cy="40" r="8" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <circle cx="52" cy="40" r="8" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <!-- Head with spiraling / dizzy shock eyes -->
+    <circle cx="35" cy="40" r="18" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M20 35 C18 15 52 15 50 35 Z" fill="#292524"/>
+    <!-- Swirl eyes (@ @) -->
+    <text x="26" y="44" font-size="11" font-weight="bold">🌀</text>
+    <text x="38" y="44" font-size="11" font-weight="bold">🌀</text>
+    <ellipse cx="35" cy="52" rx="4" ry="5" fill="#991B1B"/>
+    <text x="5" y="25" font-size="14">⚡</text>
+  </g>
+
+  <!-- Giant Comic Scream Text across room -->
+  <g filter="url(#shadowH3)">
+    <path d="M120 25 L160 5 L180 20 L220 0 L250 22 L290 5 L310 25 L360 8 L350 40 L390 55 L350 75 L385 105 L345 98 L320 120 L295 95 L260 115 L245 92 L200 105 L205 78 L160 75 L180 50 Z" fill="#FEF2F2" stroke="#EF4444" stroke-width="3"/>
+    <text x="260" y="45" font-family="'Impact', 'Arial Black', sans-serif" font-size="28" font-weight="900" fill="#DC2626" text-anchor="middle" letter-spacing="1.5">Á Á Á ! HÉT ẦM TRỜI !</text>
+    <text x="260" y="70" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#991B1B" text-anchor="middle">"ỐI GIỜI ƠI... RÁNG LÊN NÀO!"</text>
+  </g>
+
+  <!-- Speech Bubble: Doctor -->
+  <g filter="url(#shadowH3)">
+    <path d="M400 30 Q400 10 470 10 L590 10 Q630 10 630 35 Q630 65 560 65 L500 65 L485 85 L485 65 L440 65 Q400 65 400 30 Z" fill="#ECFDF5" stroke="#10B981" stroke-width="2.5"/>
+    <text x="515" y="32" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="900" fill="#047857" text-anchor="middle">"HÍT SÂU... THỞ ĐỀU!"</text>
+    <text x="515" y="52" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#065F46" text-anchor="middle">"Một hơi rặn nữa thôi! Thấy đầu rồi!"</text>
+  </g>
+
+  <!-- Panel Header Banner -->
+  <rect x="20" y="16" width="240" height="32" rx="8" fill="#1E293B"/>
+  <text x="140" y="37" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#F87171" text-anchor="middle">★ CẢNH 3: TIẾNG HÉT RUNG TRỜI</text>
+
+  <!-- Caption at bottom -->
+  <rect x="25" y="402" width="600" height="34" rx="8" fill="#0F172A" opacity="0.85"/>
+  <text x="325" y="424" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#F8FAFC" text-anchor="middle">Vào phòng sinh, mẹ dồn hết công lực hét ầm trời rung chuyển cả góc hành lang bệnh viện!</text>
+</svg>

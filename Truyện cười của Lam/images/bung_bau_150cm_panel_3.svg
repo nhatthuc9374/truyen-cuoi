@@ -1,0 +1,93 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgP3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EFF6FF"/>
+      <stop offset="50%" stop-color="#DBEAFE"/>
+      <stop offset="50%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+    <filter id="shP3" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="750" height="500" rx="16" fill="url(#bgP3)" stroke="#2563EB" stroke-width="4"/>
+
+  <!-- Tiêu đề Cảnh 3 to rõ -->
+  <g filter="url(#shP3)">
+    <rect x="25" y="16" width="560" height="42" rx="10" fill="#2563EB"/>
+    <text x="305" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#FFFFFF" text-anchor="middle">📏 CẢNH 3: THƯỚC Y TẾ BỊ THIẾU – BÁC SĨ MƯỢN THƯỚC XÂY DỰNG! 🏗️</text>
+  </g>
+
+  <!-- Giường bệnh viện cận cảnh -->
+  <g transform="translate(40, 240)" filter="url(#shP3)">
+    <rect width="400" height="40" rx="8" fill="#FFFFFF" stroke="#0284C7" stroke-width="3"/>
+    <rect x="20" y="40" width="360" height="180" fill="#BAE6FD" stroke="#0284C7" stroke-width="3"/>
+  </g>
+
+  <!-- MẸ BẦU NẰM TRÊN GIƯỜNG BỆNH VIỆN - CHIẾC BỤNG BẦU 152CM TRÒN VO NHÔ CAO -->
+  <g transform="translate(60, 120)" filter="url(#shP3)">
+    <path d="M 20 220 L 150 220 L 160 360 L 10 360 Z" fill="#FFFFFF" stroke="#0284C7" stroke-width="3"/> <!-- Váy bệnh viện chấm bi xanh -->
+    <circle cx="50" cy="260" r="5" fill="#38BDF8"/>
+    <circle cx="90" cy="290" r="5" fill="#38BDF8"/>
+
+    <!-- CHIẾC BỤNG BẦU TRÒN VO CỰC ĐẠI 152CM -->
+    <ellipse cx="200" cy="240" rx="135" ry="115" fill="#FED7AA" stroke="#EA580C" stroke-width="4.5"/>
+    <ellipse cx="175" cy="195" rx="35" ry="16" fill="#FFFFFF" fill-opacity="0.35"/>
+    <circle cx="270" cy="240" r="6" fill="#C2410C"/> <!-- Rốn lồi tròn vo -->
+
+    <!-- ĐẦU MẸ BẦU TỰA GỐI TRẮNG CƯỜI TƯƠI -->
+    <ellipse cx="85" cy="110" rx="55" ry="58" fill="#FED7AA" stroke="#1E293B" stroke-width="3.5"/>
+    <path d="M 35 100 C 35 40 140 40 140 100 Z" fill="#451A03"/>
+    <path d="M 65 105 Q 75 95 85 105" stroke="#1E293B" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 98 105 Q 108 95 118 105" stroke="#1E293B" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M 78 135 Q 92 148 106 135" stroke="#BE123C" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- BÁC SĨ SẢN KHOA CẬN CẢNH BÊN PHẢI - QUẤN CHIẾC THƯỚC CUỘN XÂY DỰNG MÀU VÀNG 5M -->
+  <g transform="translate(420, 110)" filter="url(#shP3)">
+    <!-- Thân áo blouse trắng bác sĩ -->
+    <path d="M 40 230 Q 140 160 230 230 L 250 380 L 10 380 Z" fill="#FFFFFF" stroke="#1E293B" stroke-width="3.5"/>
+    <polygon points="125,195 155,195 140,260" fill="#15803D"/> <!-- Cổ áo xanh y tế -->
+
+    <!-- CÁNH TAY BÁC SĨ CẦM CUỘN THƯỚC XÂY DỰNG KIM LOẠI MÀU VÀNG -->
+    <!-- Hộp thước cuộn kim loại màu vàng ở tay phải -->
+    <rect x="-30" y="195" width="45" height="40" rx="6" fill="#FACC15" stroke="#B45309" stroke-width="3"/>
+    <circle cx="-8" cy="215" r="10" fill="#1E293B"/>
+
+    <!-- DÂY THƯỚC KIM LOẠI VÀNG QUẤN QUANH BỤNG MẸ BẦU -->
+    <path d="M -8 215 Q -150 290 -310 270" stroke="#FACC15" stroke-width="12" fill="none"/>
+    <path d="M -8 215 Q -150 290 -310 270" stroke="#000000" stroke-width="2" stroke-dasharray="6,6" fill="none"/> <!-- Vạch chia cm trên thước -->
+
+    <!-- TAG KẾT QUẢ ĐO 152 CM!! -->
+    <g transform="translate(-160, 295)">
+      <rect width="180" height="34" rx="8" fill="#DC2626" stroke="#FFFFFF" stroke-width="2"/>
+      <text x="90" y="23" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">VÒNG BỤNG: 152 CM! 🏆</text>
+    </g>
+
+    <!-- ĐẦU BÁC SĨ TRỢN TRÒN MẮT QUA KÍNH, HÁ HỐC MỒM KINH NGẠC -->
+    <ellipse cx="130" cy="115" rx="55" ry="58" fill="#FED7AA" stroke="#1E293B" stroke-width="3.5"/>
+    <path d="M 75 105 C 75 45 185 45 185 105 Z" fill="#475569"/> <!-- Tóc hoa râm -->
+    <!-- Kính cận tròn to của bác sĩ -->
+    <circle cx="102" cy="112" r="18" fill="#E0F2FE" stroke="#1E293B" stroke-width="3"/>
+    <circle cx="102" cy="112" r="5" fill="#1E293B"/>
+    <circle cx="152" cy="112" r="18" fill="#E0F2FE" stroke="#1E293B" stroke-width="3"/>
+    <circle cx="152" cy="112" r="5" fill="#1E293B"/>
+    <line x1="120" y1="112" x2="134" y2="112" stroke="#1E293B" stroke-width="3"/>
+
+    <!-- Miệng bác sĩ há hốc chữ O to tướng ngã ngửa -->
+    <ellipse cx="130" cy="155" rx="18" ry="16" fill="#7F1D1D" stroke="#000000" stroke-width="2.5"/>
+
+    <!-- Giọt mồ hôi rơi trên trán bác sĩ -->
+    <path d="M 180 95 C 180 85 192 85 192 95 C 192 105 180 105 180 95 Z" fill="#38BDF8"/>
+  </g>
+
+  <!-- BONG BÓNG THOẠI HÀI HƯỚC TRÊN CAO -->
+  <g transform="translate(130, 65)" filter="url(#shP3)">
+    <path d="M 20 0 L 510 0 C 525 0 525 15 525 15 L 525 85 C 525 100 510 100 510 100 L 380 100 L 400 125 L 360 100 L 20 100 C 5 100 5 85 5 85 L 5 15 C 5 0 20 0 20 0 Z" fill="#FFFFFF" stroke="#2563EB" stroke-width="3.5"/>
+    <text x="265" y="28" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="900" fill="#1D4ED8" text-anchor="middle">👨‍⚕️ BÁC SĨ (CẦM THƯỚC XÂY DỰNG, MẮT TRỢN TRÒN KINH NGẠC):</text>
+    <text x="265" y="55" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="bold" fill="#0F172A" text-anchor="middle">“Trời đất ơi! Thước y tế 1m5 của tôi đo không giáp vòng!”</text>
+    <text x="265" y="82" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#DC2626" text-anchor="middle">“Vòng bụng 152cm! Phải mượn thước xây dựng 5m mới đo nổi! 🏗️🤣”</text>
+  </g>
+
+</svg>

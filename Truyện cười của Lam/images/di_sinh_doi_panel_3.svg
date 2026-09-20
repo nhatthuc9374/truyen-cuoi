@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="1200" height="831">
+  <defs>
+    <linearGradient id="p3ScreamBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#450A0A"/>
+      <stop offset="40%" stop-color="#991B1B"/>
+      <stop offset="80%" stop-color="#DC2626"/>
+      <stop offset="100%" stop-color="#FDE047"/>
+    </linearGradient>
+    <filter id="p3Shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Panel Border & Background -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#p3ScreamBg)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Sóng âm thanh tiếng hét rung chuyển phòng sinh -->
+  <circle cx="280" cy="200" r="90" fill="none" stroke="#FEF08A" stroke-width="4" opacity="0.3"/>
+  <circle cx="280" cy="200" r="140" fill="none" stroke="#FEF08A" stroke-width="3" stroke-dasharray="8,6" opacity="0.4"/>
+  <circle cx="280" cy="200" r="190" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="10,8" opacity="0.3"/>
+
+  <!-- Đèn mổ phòng sinh chiếu thẳng vào giường -->
+  <g transform="translate(250, 20)">
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#94A3B8" stroke-width="4"/>
+    <ellipse cx="0" cy="45" rx="35" ry="12" fill="#E2E8F0" stroke="#64748B" stroke-width="2"/>
+    <polygon points="-25,48 25,48 70,220 -70,220" fill="#FEF08A" opacity="0.25"/>
+  </g>
+
+  <!-- Giường sinh bệnh viện & Dì đang rặn đau hết sức -->
+  <g id="giuong-de" transform="translate(140, 150)">
+    <!-- Khung giường sinh nâng cao đầu -->
+    <rect x="-20" y="80" width="310" height="25" rx="4" fill="#0284C7" stroke="#0369A1" stroke-width="2"/>
+    <polygon points="-20,80 30,20 60,80" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/> <!-- Gối đệm tựa lưng -->
+    <rect x="-10" y="105" width="10" height="60" fill="#64748B"/>
+    <rect x="270" y="105" width="10" height="60" fill="#64748B"/>
+
+    <!-- Thân người Dì đang gồng mình rặn đẻ -->
+    <path d="M10 40 L70 30 L180 75 L180 100 L0 100 Z" fill="#FDA4AF"/>
+    
+    <!-- Chiếc bụng bầu siêu to nhô cao đắp khăn xanh y tế -->
+    <ellipse cx="120" cy="55" rx="65" ry="48" fill="#38BDF8" stroke="#0284C7" stroke-width="3"/>
+    <text x="120" y="60" font-family="'Impact', sans-serif" font-size="11" fill="#FFFFFF" text-anchor="middle">BÉ CHƯA CHỊU RA! 👶💢</text>
+
+    <!-- Đầu dì đỏ bừng vì rặn, mồ hôi ướt đẫm, miệng há cực đại gào to -->
+    <circle cx="20" cy="0" r="28" fill="#FCA5A5" stroke="#991B1B" stroke-width="3"/> <!-- Mặt đỏ bừng -->
+    <path d="-10 0 C-10 -30 48 -30 48 0 Z" fill="#78350F"/>
+    
+    <!-- Mắt nhắm chặt, gân trán nổi lên vì rặn mạnh -->
+    <path d="M5 -5 L13 2 L5 8" stroke="#7F1D1D" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <path d="M35 -5 L27 2 L35 8" stroke="#7F1D1D" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <!-- Miệng há to gào hết công lực -->
+    <ellipse cx="20" cy="15" rx="15" ry="16" fill="#7F1D1D" stroke="#450A0A" stroke-width="2"/>
+    <polygon points="12,6 28,6 24,11 16,11" fill="#FFFFFF"/> <!-- Hàm răng nghiến chặt -->
+    
+    <!-- Mồ hôi bắn ra xung quanh -->
+    <circle cx="-15" cy="-8" r="4" fill="#38BDF8"/>
+    <circle cx="45" cy="-12" r="3.5" fill="#38BDF8"/>
+    <circle cx="50" cy="10" r="3" fill="#38BDF8"/>
+
+    <!-- Hai tay nắm chặt thành giường sinh trợ lực -->
+    <path d="M0 30 L-25 70" stroke="#FCA5A5" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="-25" cy="70" r="8" fill="#FFEDD5" stroke="#991B1B" stroke-width="2"/>
+  </g>
+
+  <!-- Bác sĩ đỡ đẻ toát mồ hôi hột chỉ đạo -->
+  <g id="bac-si-do-de" transform="translate(450, 160)">
+    <path d="M20 60 Q50 50 80 60 L95 155 L10 155 Z" fill="#059669" stroke="#047857" stroke-width="2"/> <!-- Áo phẫu thuật xanh lá -->
+    <circle cx="50" cy="25" r="22" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <!-- Khẩu trang y tế -->
+    <rect x="35" y="24" width="30" height="18" rx="3" fill="#E0F2FE" stroke="#0284C7" stroke-width="1.5"/>
+    <circle cx="42" cy="18" r="2.5" fill="#1E293B"/><circle cx="58" cy="18" r="2.5" fill="#1E293B"/>
+    <!-- Mũ trùm tóc y tế -->
+    <ellipse cx="50" cy="10" rx="24" ry="14" fill="#059669"/>
+    <!-- Hai tay đeo găng cao su cổ vũ rặn -->
+    <path d="M15 65 L-25 80" stroke="#059669" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="-25" cy="80" r="8" fill="#FDE047"/>
+    <text x="50" y="-8" font-size="14">💦</text>
+  </g>
+
+  <!-- Đứa cháu đứng ngoài cửa bịt chặt hai tai vì dì hét quá to -->
+  <g id="chau-bit-tai" transform="translate(30, 210)">
+    <ellipse cx="35" cy="110" rx="28" ry="8" fill="#000000" opacity="0.3"/>
+    <ellipse cx="35" cy="65" rx="18" ry="22" fill="#38BDF8" stroke="#0284C7" stroke-width="2"/>
+    <!-- Đầu tròn mắt nhắm tịt vì tiếng hét quá chói tai -->
+    <circle cx="35" cy="25" r="18" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M20 20 C18 2 52 2 50 20 Z" fill="#292524"/>
+    <path d="M24 24 L30 27 L24 30" stroke="#1E293B" stroke-width="2" fill="none"/>
+    <path d="M46 24 L40 27 L46 30" stroke="#1E293B" stroke-width="2" fill="none"/>
+    <!-- Hai tay bịt chặt tai -->
+    <circle cx="15" cy="25" r="7" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+    <circle cx="55" cy="25" r="7" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+    <text x="35" y="-5" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="900" fill="#FDE047" text-anchor="middle">HÉT TO QUÁ! 🙉</text>
+  </g>
+
+  <!-- Khung thoại TIẾNG HÉT CỦA DÌ cực lớn -->
+  <g filter="url(#p3Shadow)">
+    <path d="M100 35 Q100 10 180 10 L440 10 Q480 10 480 35 Q480 75 420 75 L310 75 L280 105 L290 75 L160 75 Q100 75 100 35 Z" fill="#FEFCE8" stroke="#F59E0B" stroke-width="3"/>
+    <text x="290" y="36" font-family="'Impact', sans-serif" font-size="16" fill="#DC2626" text-anchor="middle">🔊 "Á Á Á...! SAO KHÔNG CHỊU RA HẢ CON?!"</text>
+    <text x="290" y="58" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="900" fill="#991B1B" text-anchor="middle">"ĐAU QUÁ TRỜI ƠI! RẶN ĐỨT CẢ RUỘT NÈ...!"</text>
+  </g>
+
+  <!-- Lời cổ vũ của Bác sĩ -->
+  <g filter="url(#p3Shadow)">
+    <rect x="420" y="90" width="210" height="50" rx="8" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+    <text x="525" y="112" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#047857" text-anchor="middle">"Cố lên chị ơi! Hít sâu... rặn mạnh!"</text>
+    <text x="525" y="128" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#DC2626" text-anchor="middle">Thấy đầu bé rồi! Rặn một hơi nữa! 💨</text>
+  </g>
+
+  <!-- Tiêu đề phân cảnh -->
+  <rect x="15" y="12" width="330" height="26" rx="6" fill="#1E293B"/>
+  <text x="180" y="29" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#FDE047" text-anchor="middle">CẢNH 3: BÉ KHÔNG CHỊU RA, DÌ RẶN ĐAU HÉT RUNG TRỜI</text>
+
+  <!-- Footer chú thích dẫn chuyện -->
+  <rect x="15" y="385" width="620" height="30" rx="6" fill="#0F172A" opacity="0.9"/>
+  <text x="325" y="405" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#F8FAFC" text-anchor="middle">Em bé bướng bỉnh trong bụng không chịu chui ra, dì phải dùng hết sức rặn đau hét vang khắp bệnh viện...</text>
+</svg>

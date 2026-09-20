@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="1200" height="831">
+  <defs>
+    <linearGradient id="p4HappyBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF9C3"/>
+      <stop offset="50%" stop-color="#FFF1F2"/>
+      <stop offset="100%" stop-color="#E0F2FE"/>
+    </linearGradient>
+    <filter id="p4Shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Panel Border & Background -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#p4HappyBg)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Trái tim & Ngôi sao hạnh phúc bay lượn -->
+  <text x="70" y="80" font-size="20">💖</text>
+  <text x="180" y="60" font-size="16">✨</text>
+  <text x="440" y="65" font-size="20">🎉</text>
+  <text x="560" y="90" font-size="18">🌟</text>
+
+  <!-- Dì nằm nghỉ ngơi hạnh phúc tựa vào gối -->
+  <g id="di-hanh-phuc" transform="translate(60, 150)">
+    <!-- Giường êm ái -->
+    <rect x="0" y="80" width="260" height="20" rx="3" fill="#0284C7"/>
+    <polygon points="0,80 40,20 80,80" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/> <!-- Gối trắng -->
+    
+    <!-- Thân dì đắp chăn hồng thoải mái, bụng đã xẹp nhỏ -->
+    <path d="M40 50 L120 40 L250 80 L250 100 L20 100 Z" fill="#FDA4AF"/>
+    
+    <!-- Đầu dì mỉm cười mãn nguyện, lau giọt mồ hôi cuối cùng -->
+    <circle cx="50" cy="15" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M22 15 C22 -15 78 -15 78 15 Z" fill="#78350F"/>
+    <!-- Mắt cười cong tít hình vầng trăng khuyết hạnh phúc -->
+    <path d="M38 12 Q44 6 50 12" stroke="#1E293B" stroke-width="2.5" fill="none"/>
+    <path d="M58 12 Q64 6 70 12" stroke="#1E293B" stroke-width="2.5" fill="none"/>
+    <ellipse cx="36" cy="18" rx="4" ry="2.5" fill="#FDA4AF"/>
+    <ellipse cx="72" cy="18" rx="4" ry="2.5" fill="#FDA4AF"/>
+    <!-- Nụ cười rạng rỡ -->
+    <path d="M46 22 Q54 30 62 22" stroke="#DC2626" stroke-width="2.5" fill="none"/>
+    
+    <text x="50" y="-12" font-size="12">❤️</text>
+  </g>
+
+  <!-- CHIẾC NÔI ĐÔI VỚI HAI BÉ "MỈM MỈN" SIÊU ĐÁNG YÊU -->
+  <g id="noi-sinh-doi" transform="translate(290, 160)">
+    <!-- Khung nôi em bé màu vàng ấm áp -->
+    <rect x="0" y="40" width="190" height="75" rx="14" fill="#FEF08A" stroke="#EAB308" stroke-width="3"/>
+    <ellipse cx="95" cy="40" rx="90" ry="12" fill="#FFFFFF" stroke="#EAB308" stroke-width="2"/>
+
+    <!-- EM BÉ THỨ NHẤT (MỈM MỈN QUẤN TÃ XANH BIỂN) -->
+    <g transform="translate(25, -15)">
+      <!-- Gối & Tã quấn tròn xoe -->
+      <ellipse cx="28" cy="55" rx="24" ry="20" fill="#BAE6FD" stroke="#0284C7" stroke-width="2"/>
+      <!-- Đầu tròn xoe, má bánh bao phúng phính "mỉm mỉn" -->
+      <circle cx="28" cy="30" r="18" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+      <!-- Mũ chỏm sơ sinh xanh -->
+      <path d="M12 26 C12 10 44 10 44 26 Z" fill="#38BDF8"/>
+      <circle cx="28" cy="10" r="3.5" fill="#FFFFFF"/>
+      <!-- Má núng nính mỉm mỉn -->
+      <ellipse cx="16" cy="34" rx="4.5" ry="3" fill="#FDA4AF"/>
+      <ellipse cx="40" cy="34" rx="4.5" ry="3" fill="#FDA4AF"/>
+      <!-- Mắt nhắm ngủ tít hạnh phúc -->
+      <path d="M20 28 Q24 24 28 28" stroke="#1E293B" stroke-width="2" fill="none"/>
+      <path d="M30 28 Q34 24 38 28" stroke="#1E293B" stroke-width="2" fill="none"/>
+      <!-- Miệng nhỏ chúm chím mỉm cười -->
+      <ellipse cx="28" cy="36" rx="2.5" ry="1.5" fill="#EF4444"/>
+      <text x="28" y="75" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="900" fill="#0369A1" text-anchor="middle">BÉ AN (MỈM MỈN)</text>
+    </g>
+
+    <!-- EM BÉ THỨ HAI (MỈM MỈN QUẤN TÃ HỒNG) -->
+    <g transform="translate(105, -15)">
+      <!-- Gối & Tã quấn tròn xoe -->
+      <ellipse cx="28" cy="55" rx="24" ry="20" fill="#FCE7F3" stroke="#EC4899" stroke-width="2"/>
+      <!-- Đầu tròn xoe, má hồng núng nính mỉm mỉn -->
+      <circle cx="28" cy="30" r="18" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+      <!-- Mũ chỏm sơ sinh hồng có nơ -->
+      <path d="M12 26 C12 10 44 10 44 26 Z" fill="#F472B6"/>
+      <polygon points="25,9 31,9 28,14" fill="#DC2626"/>
+      <!-- Má núng nính mỉm mỉn -->
+      <ellipse cx="16" cy="34" rx="4.5" ry="3" fill="#FDA4AF"/>
+      <ellipse cx="40" cy="34" rx="4.5" ry="3" fill="#FDA4AF"/>
+      <!-- Mắt chớp he hé nhìn thế giới -->
+      <circle cx="22" cy="28" r="2" fill="#1E293B"/><circle cx="34" cy="28" r="2" fill="#1E293B"/>
+      <!-- Miệng cười chúm chím -->
+      <path d="M25 35 Q28 38 31 35" stroke="#E11D48" stroke-width="1.5" fill="none"/>
+      <text x="28" y="75" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="900" fill="#BE123C" text-anchor="middle">BÉ NHIÊN (MỈM MỈN)</text>
+    </g>
+  </g>
+
+  <!-- Đứa cháu nhảy cẫng lên vỗ tay reo mừng -->
+  <g id="chau-vui-mung" transform="translate(500, 190)">
+    <ellipse cx="40" cy="115" rx="30" ry="8" fill="#000000" opacity="0.2"/>
+    <ellipse cx="40" cy="65" rx="20" ry="25" fill="#38BDF8" stroke="#0284C7" stroke-width="2"/>
+    
+    <!-- Đầu đứa cháu cười tít mắt đầy phấn khích -->
+    <circle cx="40" cy="25" r="22" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M22 20 C20 0 60 0 58 20 Z" fill="#292524"/>
+    <!-- Đôi mắt sáng lấp lánh như sao -->
+    <text x="28" y="26" font-size="12">★</text>
+    <text x="44" y="26" font-size="12">★</text>
+    <!-- Miệng cười to hạnh phúc -->
+    <ellipse cx="40" cy="36" rx="8" ry="6" fill="#DC2626"/>
+    
+    <!-- Hai tay giơ lên trời reo hò -->
+    <path d="M20 55 L-5 25" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="-5" cy="25" r="6" fill="#FFEDD5"/>
+    <path d="M60 55 L85 25" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="85" cy="25" r="6" fill="#FFEDD5"/>
+  </g>
+
+  <!-- Khung thoại của Dì mỉm cười -->
+  <g filter="url(#p4Shadow)">
+    <path d="M30 40 Q30 15 100 15 L280 15 Q310 15 310 45 Q310 78 260 78 L200 78 L170 105 L180 78 L70 78 Q30 78 30 40 Z" fill="#FFF1F2" stroke="#F43F5E" stroke-width="2.5"/>
+    <text x="170" y="38" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="900" fill="#BE123C" text-anchor="middle">🥰 DÌ THỞ PHÀO MỈM CƯỜI:</text>
+    <text x="170" y="56" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#DC2626" text-anchor="middle">"Bõ công dì rặn muốn đứt ruột!"</text>
+    <text x="170" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#78350F" text-anchor="middle">Hai thiên thần mỉm mỉn của dì chào đời rồi! ❤️</text>
+  </g>
+
+  <!-- Khung thoại của Cháu reo mừng -->
+  <g filter="url(#p4Shadow)">
+    <path d="M360 40 Q360 15 430 15 L600 15 Q630 15 630 45 Q630 80 580 80 L520 80 L490 105 L500 80 L400 80 Q360 80 360 40 Z" fill="#FEFCE8" stroke="#F59E0B" stroke-width="2.5"/>
+    <text x="495" y="38" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="900" fill="#D97706" text-anchor="middle">🎉 CHÁU REO HÒ MỪNG RỠ:</text>
+    <text x="495" y="56" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#DC2626" text-anchor="middle">"OA OA! HAI BÉ MỈM MỈN LUÔN!"</text>
+    <text x="495" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#15803D" text-anchor="middle">Má phúng phính trắng hồng cưng xỉu dì ơi! 👶👶</text>
+  </g>
+
+  <!-- Tiêu đề phân cảnh -->
+  <rect x="15" y="12" width="350" height="26" rx="6" fill="#1E293B"/>
+  <text x="190" y="29" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#38BDF8" text-anchor="middle">CẢNH 4: HẠ SINH THÀNH CÔNG HAI BÉ MỈM MỈN</text>
+
+  <!-- Footer chú thích dẫn chuyện -->
+  <rect x="15" y="385" width="620" height="30" rx="6" fill="#0F172A" opacity="0.9"/>
+  <text x="325" y="405" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#F8FAFC" text-anchor="middle">Sau bao đau đớn gồng mình rặn, hạnh phúc vỡ òa khi dì hạ sinh hai thiên thần sinh đôi tròn trịa mỉm mỉn...</text>
+</svg>

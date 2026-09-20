@@ -1,0 +1,257 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="classWall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7"/>
+      <stop offset="60%" stop-color="#FDE68A"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="chalkboard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532D"/>
+      <stop offset="100%" stop-color="#064E3B"/>
+    </linearGradient>
+    <radialGradient id="bellyPink" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FDA4AF"/>
+      <stop offset="60%" stop-color="#FB7185"/>
+      <stop offset="100%" stop-color="#E11D48"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF1EE"/>
+      <stop offset="100%" stop-color="#FED7AA"/>
+    </linearGradient>
+    <filter id="shadowP1" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="3" dy="5" stdDeviation="5" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Classroom Wall Background -->
+  <rect width="1200" height="800" fill="url(#classWall)"/>
+
+  <!-- Classroom Window with Warm Autumn Sun -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="140" height="200" rx="10" fill="#EFF6FF" stroke="#38BDF8" stroke-width="6"/>
+    <line x1="70" y1="0" x2="70" y2="200" stroke="#38BDF8" stroke-width="4"/>
+    <line x1="0" y1="100" x2="140" y2="100" stroke="#38BDF8" stroke-width="4"/>
+    <circle cx="50" cy="50" r="26" fill="#F59E0B"/>
+    <path d="M 0 160 Q 70 120 140 160 L 140 200 L 0 200 Z" fill="#FDE047" opacity="0.8"/>
+  </g>
+
+  <!-- Classroom Green Chalkboard in Background -->
+  <g transform="translate(230, 80)" filter="url(#shadowP1)">
+    <!-- Wooden Frame -->
+    <rect x="-10" y="-10" width="680" height="240" rx="14" fill="#92400E" stroke="#78350F" stroke-width="4"/>
+    <!-- Board Surface -->
+    <rect x="0" y="0" width="660" height="220" rx="8" fill="url(#chalkboard)"/>
+    <!-- Lesson Title -->
+    <text x="330" y="45" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="900" fill="#FDE047" text-anchor="middle">
+      LỚP 4B - TIẾT TẬP ĐỌC: MÙA THU 🍁
+    </text>
+    <line x1="80" y1="60" x2="580" y2="60" stroke="#FEF08A" stroke-width="2" stroke-dasharray="6,4"/>
+    <!-- Poem lines in nice chalk script -->
+    <text x="330" y="105" font-family="'Segoe UI', cursive, sans-serif" font-size="19" fill="#FFFFFF" text-anchor="middle">
+      “Gió heo may se lạnh giữa mây trời... ”
+    </text>
+    <text x="330" y="145" font-family="'Segoe UI', cursive, sans-serif" font-size="19" fill="#FFFFFF" text-anchor="middle">
+      “Tiếng trống trường giục giã bước em đi!”
+    </text>
+    <text x="330" y="185" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="bold" fill="#86EFAC" text-anchor="middle">
+      Cô giáo: Nguyễn Thị Thu Hà (GVCN Lớp 4B)
+    </text>
+  </g>
+
+  <!-- Wall Clock -->
+  <g transform="translate(950, 75)" filter="url(#shadowP1)">
+    <circle cx="45" cy="45" r="40" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/>
+    <line x1="45" y1="45" x2="45" y2="20" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+    <line x1="45" y1="45" x2="65" y2="45" stroke="#E11D48" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="45" cy="45" r="5" fill="#1E293B"/>
+  </g>
+
+  <!-- Top Title Banner -->
+  <g filter="url(#shadowP1)">
+    <rect x="120" y="12" width="960" height="52" rx="26" fill="#EA580C" stroke="#FFFFFF" stroke-width="3"/>
+    <text x="600" y="46" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="900" fill="#FFFFFF" text-anchor="middle">
+      ★ CẢNH 1: CÔ GIÁO BẦU THÁNG THỨ 9 &amp; DÁNG ĐI "CHIM CÁNH CỤT" CỰC CƯNG! 🌸
+    </text>
+  </g>
+
+  <!-- Wooden Floor separator -->
+  <line x1="0" y1="520" x2="1200" y2="520" stroke="#94A3B8" stroke-width="3"/>
+
+  <!-- ==================== CÔ GIÁO BẦU ANIME (CẬN CẢNH TO RÕ, ĐẸP RỰC RỠ) ==================== -->
+  <g id="teacher-hero" transform="translate(260, 200)" filter="url(#shadowP1)">
+    <!-- Floor Shadow -->
+    <ellipse cx="190" cy="560" rx="160" ry="25" fill="#000000" opacity="0.2"/>
+
+    <!-- Maternity Pink Dress -->
+    <path d="M 90 200 Q 50 360 80 540 L 300 540 Q 330 360 270 200 Z" fill="#FBCFE8" stroke="#DB2777" stroke-width="3"/>
+    <!-- Yellow floral pattern on dress -->
+    <circle cx="140" cy="380" r="10" fill="#FEF08A"/><circle cx="140" cy="380" r="4" fill="#F59E0B"/>
+    <circle cx="120" cy="460" r="12" fill="#FEF08A"/><circle cx="120" cy="460" r="5" fill="#F59E0B"/>
+    <circle cx="260" cy="480" r="11" fill="#FEF08A"/><circle cx="260" cy="480" r="4.5" fill="#F59E0B"/>
+
+    <!-- SIÊU BỤNG BẦU TRÒN XOE 130CM (CẬN CẢNH CHOÁN MÀN HÌNH) -->
+    <ellipse cx="235" cy="390" rx="165" ry="145" fill="url(#bellyPink)" stroke="#9F1239" stroke-width="5"/>
+    <ellipse cx="185" cy="330" rx="55" ry="26" fill="#FFFFFF" opacity="0.4"/>
+    <!-- Cute heart sparkle on giant belly -->
+    <circle cx="170" cy="395" r="12" fill="#FEF08A"/><circle cx="170" cy="395" r="5" fill="#F59E0B"/>
+    <circle cx="280" cy="370" r="10" fill="#FEF08A"/><circle cx="280" cy="370" r="4" fill="#F59E0B"/>
+    <text x="235" y="405" font-family="'Segoe UI', sans-serif" font-size="17" font-weight="900" fill="#FFFFFF" text-anchor="middle">
+      ❤️ BỤNG TRÒN CĂNG 9 THÁNG ❤️
+    </text>
+
+    <!-- Baby Footprint / Kick Bump on belly -->
+    <ellipse cx="300" cy="430" rx="20" ry="14" fill="#FDA4AF" opacity="0.8"/>
+    <text x="300" y="435" font-size="14" text-anchor="middle">🐾</text>
+
+    <!-- Teacher's Face & Head (Cute Anime Style) -->
+    <!-- Head base -->
+    <circle cx="180" cy="120" r="62" fill="url(#skin)"/>
+
+    <!-- Stylish Brown Hairstyle with Big Bun -->
+    <circle cx="180" cy="45" r="34" fill="#451A03"/>
+    <!-- Hair bun decorative bow -->
+    <circle cx="180" cy="50" r="14" fill="#F43F5E"/>
+    <polygon points="155,42 180,50 155,58" fill="#F43F5E"/>
+    <polygon points="205,42 180,50 205,58" fill="#F43F5E"/>
+    <!-- Front bangs and side hair -->
+    <path d="M 115 115 Q 180 40 245 115 Q 240 70 180 60 Q 120 70 115 115 Z" fill="#451A03"/>
+    <path d="M 115 115 Q 105 180 125 210 Q 135 170 128 120 Z" fill="#451A03"/>
+    <path d="M 245 115 Q 255 180 235 210 Q 225 170 232 120 Z" fill="#451A03"/>
+
+    <!-- Fashionable Red Eyeglasses -->
+    <rect x="130" y="105" width="40" height="26" rx="8" fill="none" stroke="#DC2626" stroke-width="3.5"/>
+    <rect x="190" y="105" width="40" height="26" rx="8" fill="none" stroke="#DC2626" stroke-width="3.5"/>
+    <line x1="170" y1="116" x2="190" y2="116" stroke="#DC2626" stroke-width="3.5"/>
+
+    <!-- Big Sparkling Anime Eyes -->
+    <ellipse cx="150" cy="118" rx="10" ry="11" fill="#1E293B"/>
+    <circle cx="153" cy="114" r="3.5" fill="#FFFFFF"/>
+    <circle cx="147" cy="122" r="1.5" fill="#FFFFFF"/>
+    <ellipse cx="210" cy="118" rx="10" ry="11" fill="#1E293B"/>
+    <circle cx="213" cy="114" r="3.5" fill="#FFFFFF"/>
+    <circle cx="207" cy="122" r="1.5" fill="#FFFFFF"/>
+
+    <!-- Sweet Blush Cheeks -->
+    <ellipse cx="132" cy="132" rx="12" ry="7" fill="#FB7185" opacity="0.8"/>
+    <ellipse cx="228" cy="132" rx="12" ry="7" fill="#FB7185" opacity="0.8"/>
+    <!-- Radiant Teacher Smile -->
+    <path d="M 165 140 Q 180 154 195 140" stroke="#BE123C" stroke-width="3.5" fill="#E11D48" stroke-linecap="round"/>
+
+    <!-- Right Hand lovingly resting on the top of giant belly -->
+    <path d="M 230 190 Q 280 260 270 310" stroke="#FED7AA" stroke-width="26" stroke-linecap="round" fill="none"/>
+    <!-- Left Hand holding chalk writing on board -->
+    <path d="M 120 190 Q 60 240 85 290" stroke="#FED7AA" stroke-width="24" stroke-linecap="round" fill="none"/>
+    <circle cx="85" cy="290" r="14" fill="#FED7AA"/>
+    <!-- Piece of Chalk in hand -->
+    <rect x="75" y="275" width="10" height="26" rx="3" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" transform="rotate(30 75 275)"/>
+
+    <!-- CUTE CHIBI PENGUIN WALKING ALONGSIDE (DÁNG ĐI CÁNH CỤT) -->
+    <g transform="translate(370, 420)" filter="url(#shadowP1)">
+      <!-- Penguin Body -->
+      <ellipse cx="35" cy="50" rx="26" ry="34" fill="#1E293B"/>
+      <!-- White Belly -->
+      <ellipse cx="35" cy="53" rx="18" ry="25" fill="#FFFFFF"/>
+      <!-- Eyes -->
+      <circle cx="28" cy="36" r="4" fill="#000"/><circle cx="29" cy="35" r="1.5" fill="#FFF"/>
+      <circle cx="42" cy="36" r="4" fill="#000"/><circle cx="43" cy="35" r="1.5" fill="#FFF"/>
+      <!-- Beak -->
+      <polygon points="31,42 39,42 35,48" fill="#F59E0B"/>
+      <!-- Feet -->
+      <ellipse cx="25" cy="84" rx="8" ry="4" fill="#F59E0B"/>
+      <ellipse cx="45" cy="84" rx="8" ry="4" fill="#F59E0B"/>
+      <!-- Funny Tag -->
+      <rect x="-10" y="-12" width="90" height="22" rx="6" fill="#38BDF8"/>
+      <text x="35" y="4" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" text-anchor="middle">LẠCH BẠCH~</text>
+    </g>
+  </g>
+
+  <!-- ==================== CÁC BẠN HỌC SINH LỚP 4B BÀN ĐẦU CẬN CẢNH ==================== -->
+  <g id="students-desk" transform="translate(800, 320)" filter="url(#shadowP1)">
+    <!-- Wooden Desk -->
+    <rect x="0" y="160" width="360" height="24" rx="6" fill="#B45309" stroke="#78350F" stroke-width="3"/>
+    <rect x="40" y="184" width="20" height="180" fill="#78350F"/>
+    <rect x="300" y="184" width="20" height="180" fill="#78350F"/>
+
+    <!-- Books & Pencil Case on Desk -->
+    <rect x="130" y="138" width="80" height="22" rx="4" fill="#10B981"/>
+    <rect x="135" y="130" width="70" height="10" rx="3" fill="#3B82F6"/>
+    <rect x="230" y="142" width="50" height="18" rx="6" fill="#F43F5E"/>
+
+    <!-- BOY STUDENT (LỚP TRƯỞNG, ĐEO KHĂN QUÀNG ĐỎ) -->
+    <g transform="translate(40, 20)">
+      <!-- Body with White Uniform & Red Scarf -->
+      <path d="M 20 90 L 0 160 L 90 160 L 70 90 Z" fill="#FFFFFF" stroke="#334155" stroke-width="2"/>
+      <!-- Red Pioneer Scarf (Khăn quàng đỏ) -->
+      <polygon points="35,90 45,130 55,90" fill="#DC2626"/>
+      <polygon points="40,110 30,150 48,135" fill="#DC2626"/>
+      <!-- Head -->
+      <circle cx="45" cy="50" r="36" fill="url(#skin)"/>
+      <path d="M 12 46 Q 45 10 78 46 Z" fill="#1E293B"/>
+      <!-- Admiring Big Eyes -->
+      <ellipse cx="34" cy="52" rx="5" ry="7" fill="#1E293B"/><circle cx="36" cy="49" r="2" fill="#FFF"/>
+      <ellipse cx="56" cy="52" rx="5" ry="7" fill="#1E293B"/><circle cx="58" cy="49" r="2" fill="#FFF"/>
+      <circle cx="28" cy="60" r="5" fill="#FDA4AF"/>
+      <circle cx="62" cy="60" r="5" fill="#FDA4AF"/>
+      <!-- Big smile -->
+      <path d="M 38 66 Q 45 74 52 66" stroke="#BE123C" stroke-width="2.5" fill="#E11D48" stroke-linecap="round"/>
+    </g>
+
+    <!-- GIRL STUDENT (TÓC CỘT HAI BÊN, XINH XẮN) -->
+    <g transform="translate(200, 20)">
+      <!-- Uniform -->
+      <path d="M 20 90 L 0 160 L 90 160 L 70 90 Z" fill="#FFFFFF" stroke="#334155" stroke-width="2"/>
+      <!-- Pink ribbon collar -->
+      <polygon points="40,90 45,115 50,90" fill="#EC4899"/>
+      <!-- Head -->
+      <circle cx="45" cy="50" r="36" fill="url(#skin)"/>
+      <!-- Pigtails hairstyle -->
+      <circle cx="5" cy="45" r="16" fill="#451A03"/>
+      <circle cx="85" cy="45" r="16" fill="#451A03"/>
+      <path d="M 15 46 Q 45 10 75 46 Z" fill="#451A03"/>
+      <!-- Sparkling Eyes -->
+      <ellipse cx="34" cy="52" rx="5" ry="7" fill="#1E293B"/><circle cx="36" cy="49" r="2" fill="#FFF"/>
+      <ellipse cx="56" cy="52" rx="5" ry="7" fill="#1E293B"/><circle cx="58" cy="49" r="2" fill="#FFF"/>
+      <circle cx="28" cy="60" r="5" fill="#FDA4AF"/>
+      <circle cx="62" cy="60" r="5" fill="#FDA4AF"/>
+      <path d="M 38 66 Q 45 74 52 66" stroke="#BE123C" stroke-width="2.5" fill="#E11D48" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- ==================== SPEECH BUBBLES ==================== -->
+  <!-- Bubble from Teacher -->
+  <g transform="translate(180, 560)" filter="url(#shadowP1)">
+    <rect x="0" y="0" width="460" height="84" rx="18" fill="#FFFFFF" stroke="#E11D48" stroke-width="3.5"/>
+    <polygon points="120,0 140,-25 160,0" fill="#FFFFFF"/>
+    <path d="M 120 0 L 140 -25 L 160 0" stroke="#E11D48" stroke-width="3.5"/>
+    <line x1="122" y1="0" x2="158" y2="0" stroke="#FFFFFF" stroke-width="5"/>
+
+    <text x="230" y="28" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="900" fill="#E11D48" text-anchor="middle">
+      👩‍🏫 CÔ GIÁO (XOA BỤNG BẦU CƯỜI RẠNG RỠ):
+    </text>
+    <text x="230" y="52" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      “Em bé trong bụng cô đạp bụp bụp suốt các con ạ!”
+    </text>
+    <text x="230" y="72" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#D97706" text-anchor="middle">
+      “Chiếc bụng to tròn căng hết cả áo rồi này! ❤️”
+    </text>
+  </g>
+
+  <!-- Bubble from Students -->
+  <g transform="translate(680, 560)" filter="url(#shadowP1)">
+    <rect x="0" y="0" width="480" height="84" rx="18" fill="#FFFFFF" stroke="#16A34A" stroke-width="3.5"/>
+    <polygon points="320,0 340,-25 360,0" fill="#FFFFFF"/>
+    <path d="M 320 0 L 340 -25 L 360 0" stroke="#16A34A" stroke-width="3.5"/>
+    <line x1="322" y1="0" x2="358" y2="0" stroke="#FFFFFF" stroke-width="5"/>
+
+    <text x="240" y="28" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="900" fill="#15803D" text-anchor="middle">
+      🧒 CÁC BẠN HỌC SINH LỚP 4B TRẦM TRỒ:
+    </text>
+    <text x="240" y="52" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      “Bụng cô hôm nay to tròn cưng xỉu luôn cô ơi! 🥰”
+    </text>
+    <text x="240" y="72" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#2563EB" text-anchor="middle">
+      “Nhìn cô đi lạch bạch giống chim cánh cụt mẹ ghê! 🐧💕”
+    </text>
+  </g>
+</svg>

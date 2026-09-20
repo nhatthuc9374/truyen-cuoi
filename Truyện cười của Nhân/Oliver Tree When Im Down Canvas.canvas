@@ -1,4 +1,4 @@
-﻿{
+{
 	"nodes":[
 		{"id":"header_whenimdown","type":"text","text":"# 🏎️🔥 Oliver Tree & Whethan: When I'm Down (Realistic Comic Canvas)\nThứ tự đọc: **Khung 1 (Nhảy sa mạc & Quả đầu bát úp) ➜ Khung 2 (Monster Truck bẻ lái drift tóe lửa) ➜ Khung 3 (Cú phóng Scooter qua biển lửa) ➜ Khung 4 (Hạ cánh cồn cát & Nụ cười bất diệt)**","x":0,"y":-180,"width":1700,"height":130,"color":"1"},
 		{"id":"wid_panel1_node","type":"file","file":"oliver_when_im_down_1.jpg","x":0,"y":0,"width":800,"height":447},

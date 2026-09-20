@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="1200" height="831">
+  <defs>
+    <linearGradient id="p1HospBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="65%" stop-color="#BAE6FD"/>
+      <stop offset="65%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <filter id="p1Shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Panel Border & Background -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#p1HospBg)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Hospital Corridor Elements -->
+  <rect x="530" y="45" width="70" height="55" rx="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+  <path d="M555 55 h20 v35 h-20 z" fill="#EF4444"/>
+  <path d="M547 63 h36 v19 h-36 z" fill="#EF4444"/>
+
+  <!-- Room Sign -->
+  <rect x="30" y="50" width="190" height="35" rx="6" fill="#0284C7"/>
+  <text x="125" y="73" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">🏥 KHOA KHÁM THAI</text>
+
+  <!-- Floor line -->
+  <line x1="5" y1="292" x2="645" y2="292" stroke="#94A3B8" stroke-width="2"/>
+
+  <!-- Bác sĩ ở góc phòng mỉm cười đón tiếp -->
+  <g id="doctor" transform="translate(480, 160)">
+    <ellipse cx="40" cy="130" rx="35" ry="10" fill="#000000" opacity="0.15"/>
+    <path d="M22 65 Q40 55 58 65 L65 130 L15 130 Z" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
+    <circle cx="40" cy="36" r="18" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M24 32 C24 14 56 14 56 32 Z" fill="#334155"/>
+    <!-- Kính & Ống nghe -->
+    <rect x="30" y="32" width="8" height="6" rx="1" fill="none" stroke="#0284C7" stroke-width="1.5"/>
+    <rect x="42" y="32" width="8" height="6" rx="1" fill="none" stroke="#0284C7" stroke-width="1.5"/>
+    <path d="M30 65 Q40 85 50 65" fill="none" stroke="#0284C7" stroke-width="3"/>
+    <circle cx="40" cy="85" r="4" fill="#64748B"/>
+    <circle cx="34" cy="35" r="1.8" fill="#1E293B"/><circle cx="46" cy="35" r="1.8" fill="#1E293B"/>
+    <path d="M35 44 Q40 48 45 44" fill="none" stroke="#EF4444" stroke-width="1.5"/>
+    <rect x="8" y="70" width="18" height="24" rx="2" fill="#FDE047" stroke="#854D0E" stroke-width="1.5"/>
+  </g>
+
+  <!-- Đứa cháu ("Tôi") nắm tay dì đỡ từng bước -->
+  <g id="chau" transform="translate(90, 185)">
+    <ellipse cx="40" cy="105" rx="35" ry="8" fill="#000000" opacity="0.2"/>
+    <ellipse cx="40" cy="68" rx="22" ry="26" fill="#38BDF8" stroke="#0284C7" stroke-width="2.5"/>
+    <ellipse cx="40" cy="95" rx="14" ry="10" fill="#1E3A8A"/>
+    
+    <!-- Đầu đứa cháu mắt tròn xoe nhìn bụng dì -->
+    <circle cx="40" cy="30" r="20" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M22 25 C20 5 60 5 58 25 Z" fill="#292524"/>
+    <ellipse cx="34" cy="28" rx="3.5" ry="4.5" fill="#1E293B"/>
+    <circle cx="35" cy="26" r="1.5" fill="#FFFFFF"/>
+    <ellipse cx="46" cy="28" rx="3.5" ry="4.5" fill="#1E293B"/>
+    <circle cx="47" cy="26" r="1.5" fill="#FFFFFF"/>
+    <path d="M35 38 Q40 44 45 38" fill="none" stroke="#DC2626" stroke-width="2"/>
+
+    <!-- Cánh tay vươn ra đỡ tay dì -->
+    <path d="M55 60 Q85 55 115 50" fill="none" stroke="#38BDF8" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="115" cy="50" r="7" fill="#FFEDD5"/>
+  </g>
+
+  <!-- Dì với chiếc bụng bầu siêu to khổng lồ -->
+  <g id="di" transform="translate(210, 95)">
+    <ellipse cx="120" cy="195" rx="85" ry="14" fill="#000000" opacity="0.2"/>
+    <!-- Váy bầu xòe rộng màu hồng phấn -->
+    <path d="M70 80 Q100 60 130 80 L195 190 L40 190 Z" fill="#FDA4AF" stroke="#FB7185" stroke-width="2"/>
+
+    <!-- Chiếc bụng bầu SIÊU TO KHỔNG LỒ nhô ra phía trước -->
+    <ellipse cx="150" cy="135" rx="76" ry="66" fill="#FB7185" stroke="#E11D48" stroke-width="3.5"/>
+    <!-- Vệt sáng bóng trên bụng bầu tròn xoe -->
+    <path d="M125 100 Q160 85 195 105" stroke="#FFF1F2" stroke-width="6" fill="none" opacity="0.6" stroke-linecap="round"/>
+    
+    <!-- Đầu dì xinh xắn với mái tóc xoăn dài -->
+    <circle cx="95" cy="45" r="27" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M68 45 C65 12 125 12 122 45 Z" fill="#78350F"/>
+    <!-- Lọn tóc xoăn bên má -->
+    <path d="M66 45 Q60 65 68 85" stroke="#78350F" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M124 45 Q130 65 122 85" stroke="#78350F" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+    <!-- Đôi mắt dì dịu dàng mỉm cười -->
+    <ellipse cx="85" cy="45" rx="3.5" ry="4.5" fill="#1E293B"/>
+    <circle cx="86" cy="43" r="1.5" fill="#FFFFFF"/>
+    <ellipse cx="105" cy="45" rx="3.5" ry="4.5" fill="#1E293B"/>
+    <circle cx="106" cy="43" r="1.5" fill="#FFFFFF"/>
+    <!-- Má hồng chúm chím -->
+    <ellipse cx="78" cy="50" rx="4" ry="2.5" fill="#FDA4AF"/>
+    <ellipse cx="112" cy="50" rx="4" ry="2.5" fill="#FDA4AF"/>
+    <!-- Miệng cười hiền từ -->
+    <path d="M90 54 Q95 60 100 54" fill="none" stroke="#E11D48" stroke-width="2"/>
+
+    <!-- Hai tay dì ôm nâng niu chiếc bụng bầu vĩ đại -->
+    <path d="M80 80 Q105 120 135 145" fill="none" stroke="#FDA4AF" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="135" cy="145" r="9" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+    <path d="M125 80 Q150 115 170 140" fill="none" stroke="#FDA4AF" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="170" cy="140" r="9" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+  </g>
+
+  <!-- Khung đối thoại của Cháu -->
+  <g filter="url(#p1Shadow)">
+    <path d="M30 90 Q30 65 100 65 L220 65 Q250 65 250 90 Q250 118 200 118 L160 118 L145 145 L145 118 L70 118 Q30 118 30 90 Z" fill="#F0F9FF" stroke="#0284C7" stroke-width="2.5"/>
+    <text x="140" y="86" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#0369A1" text-anchor="middle">"Dì ơi cẩn thận nha!</text>
+    <text x="140" y="106" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#0369A1" text-anchor="middle">Bụng dì to tròn quá trời!" 🤰</text>
+  </g>
+
+  <!-- Khung đối thoại của Dì -->
+  <g filter="url(#p1Shadow)">
+    <path d="M300 25 Q300 5 380 5 L550 5 Q600 5 600 32 Q600 65 520 65 L450 65 L430 90 L435 65 L350 65 Q300 65 300 25 Z" fill="#FFF1F2" stroke="#F43F5E" stroke-width="2.5"/>
+    <text x="450" y="28" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#9F1239" text-anchor="middle">"Dì cháu mình đi khám thai thôi..."</text>
+    <text x="450" y="48" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#9F1239" text-anchor="middle">"Bụng to thế này chắc em bé lớn lắm! ❤️"</text>
+  </g>
+
+  <!-- Tiêu đề phân cảnh góc trên -->
+  <rect x="15" y="12" width="310" height="26" rx="6" fill="#1E293B"/>
+  <text x="170" y="29" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#38BDF8" text-anchor="middle">CẢNH 1: DÌ CÓ BẦU RẤT TO VÀO VIỆN KHÁM</text>
+
+  <!-- Footer chú thích dẫn chuyện -->
+  <rect x="15" y="385" width="620" height="30" rx="6" fill="#0F172A" opacity="0.9"/>
+  <text x="325" y="405" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#F8FAFC" text-anchor="middle">Tôi đỡ tay dì vào viện, chiếc bụng bầu siêu to nhô cao khiến dì bước từng bước nặng nề...</text>
+</svg>

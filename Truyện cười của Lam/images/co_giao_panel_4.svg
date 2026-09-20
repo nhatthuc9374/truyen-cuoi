@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cWall4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF9C3"/>
+      <stop offset="50%" stop-color="#FFF1F2"/>
+      <stop offset="100%" stop-color="#E0F2FE"/>
+    </linearGradient>
+    <filter id="cShadow4" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Panel Border & Background -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#cWall4)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Party Bunting / Flags across top -->
+  <path d="M20 50 Q160 75 300 55 T630 50" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+  <polygon points="50,55 70,85 90,58" fill="#EF4444"/>
+  <polygon points="120,62 140,90 160,65" fill="#F59E0B"/>
+  <polygon points="190,66 210,95 230,66" fill="#10B981"/>
+  <polygon points="260,65 280,95 300,62" fill="#3B82F6"/>
+  <polygon points="330,58 350,88 370,56" fill="#EC4899"/>
+  <polygon points="400,54 420,84 440,53" fill="#8B5CF6"/>
+  <polygon points="470,52 490,80 510,51" fill="#F59E0B"/>
+  <polygon points="540,50 560,78 580,50" fill="#10B981"/>
+
+  <!-- Confetti & Celebration Icons -->
+  <text x="60" y="110" font-size="20">🎉</text>
+  <text x="240" y="100" font-size="18">💖</text>
+  <text x="380" y="90" font-size="20">✨</text>
+  <text x="590" y="100" font-size="22">👏</text>
+
+  <!-- Teacher in Post-delivery Bed (Left Side) Smiling happily -->
+  <g id="teacher-recovery" transform="translate(30, 160)">
+    <!-- Pillow & Bed -->
+    <ellipse cx="60" cy="80" rx="35" ry="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <rect x="20" y="95" width="150" height="90" rx="6" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="2"/>
+    <path d="M40 100 Q95 85 160 105 L170 185 L30 185 Z" fill="#FDA4AF"/>
+
+    <!-- Teacher Head & Joyful Smile -->
+    <circle cx="70" cy="48" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M45 44 C40 15 95 15 95 44 Z" fill="#3B2005"/>
+    <ellipse cx="70" cy="18" rx="10" ry="6" fill="#F43F5E"/> <!-- Headband -->
+
+    <!-- Glasses -->
+    <rect x="58" y="44" width="10" height="8" rx="1.5" fill="none" stroke="#DC2626" stroke-width="1.8"/>
+    <rect x="72" y="44" width="10" height="8" rx="1.5" fill="none" stroke="#DC2626" stroke-width="1.8"/>
+    <line x1="68" y1="48" x2="72" y2="48" stroke="#DC2626" stroke-width="1.8"/>
+
+    <!-- Happy Eyes & Gentle Smile -->
+    <circle cx="63" cy="48" r="2" fill="#1E293B"/><circle cx="77" cy="48" r="2" fill="#1E293B"/>
+    <circle cx="56" cy="54" r="4" fill="#FCA5A5"/><circle cx="84" cy="54" r="4" fill="#FCA5A5"/>
+    <path d="M66 56 Q70 62 74 56" fill="none" stroke="#E11D48" stroke-width="2"/>
+
+    <!-- Hand resting on crib edge -->
+    <path d="M85 75 Q115 75 130 90" fill="none" stroke="#FDA4AF" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="130" cy="90" r="8" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+  </g>
+
+  <!-- Baby Bassinet with 3 ADORABLE BABIES (Sinh Ba Siêu Dễ Thương) -->
+  <g id="triplets-bassinet" transform="translate(175, 180)">
+    <!-- Bassinet Frame -->
+    <rect x="0" y="50" width="240" height="110" rx="16" fill="#FEF08A" stroke="#F59E0B" stroke-width="3"/>
+    <rect x="8" y="58" width="224" height="94" rx="12" fill="#FFFBEB"/>
+    <circle cx="35" cy="170" r="11" fill="#475569"/>
+    <circle cx="205" cy="170" r="11" fill="#475569"/>
+
+    <!-- ================= BABY 1 (Yellow Swaddle) ================= -->
+    <g transform="translate(20, 35)">
+      <ellipse cx="22" cy="58" rx="18" ry="24" fill="#FDE047" stroke="#CA8A04" stroke-width="2"/>
+      <circle cx="22" cy="30" r="16" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+      <circle cx="12" cy="34" r="4" fill="#FDA4AF"/><circle cx="32" cy="34" r="4" fill="#FDA4AF"/>
+      <path d="M22 14 Q24 9 26 12" fill="none" stroke="#331A05" stroke-width="2"/>
+      <!-- Pacifier -->
+      <circle cx="22" cy="35" r="5" fill="#38BDF8"/>
+      <path d="M16 28 Q19 24 22 28" fill="none" stroke="#1E293B" stroke-width="2"/>
+      <path d="M22 28 Q25 24 28 28" fill="none" stroke="#1E293B" stroke-width="2"/>
+    </g>
+
+    <!-- ================= BABY 2 (Blue Swaddle - Middle) ================= -->
+    <g transform="translate(85, 30)">
+      <ellipse cx="24" cy="62" rx="20" ry="26" fill="#60A5FA" stroke="#2563EB" stroke-width="2"/>
+      <circle cx="24" cy="32" r="17" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+      <!-- Cute baby beanie hat -->
+      <ellipse cx="24" cy="20" rx="14" ry="10" fill="#38BDF8"/>
+      <circle cx="24" cy="10" r="4" fill="#FFFFFF"/>
+      <circle cx="14" cy="36" r="4" fill="#FDA4AF"/><circle cx="34" cy="36" r="4" fill="#FDA4AF"/>
+      <!-- Big joyful smiling eyes -->
+      <circle cx="18" cy="30" r="2.5" fill="#1E293B"/><circle cx="30" cy="30" r="2.5" fill="#1E293B"/>
+      <path d="M20 37 Q24 43 28 37" fill="none" stroke="#DC2626" stroke-width="2"/>
+    </g>
+
+    <!-- ================= BABY 3 (Pink Swaddle) ================= -->
+    <g transform="translate(155, 35)">
+      <ellipse cx="22" cy="58" rx="18" ry="24" fill="#F472B6" stroke="#DB2777" stroke-width="2"/>
+      <circle cx="22" cy="30" r="16" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+      <!-- Cute pink bow -->
+      <circle cx="22" cy="13" r="3" fill="#EC4899"/>
+      <polygon points="17,10 22,13 17,16" fill="#EC4899"/><polygon points="27,10 22,13 27,16" fill="#EC4899"/>
+      <circle cx="12" cy="34" r="4" fill="#F43F5E"/><circle cx="32" cy="34" r="4" fill="#F43F5E"/>
+      <path d="M16 28 Q19 24 22 28" fill="none" stroke="#1E293B" stroke-width="2"/>
+      <path d="M22 28 Q25 24 28 28" fill="none" stroke="#1E293B" stroke-width="2"/>
+      <ellipse cx="22" cy="35" rx="3" ry="2" fill="#DC2626"/>
+    </g>
+
+    <!-- Label -->
+    <rect x="35" y="125" width="170" height="24" rx="6" fill="#F59E0B"/>
+    <text x="120" y="142" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" text-anchor="middle">3 BÉ SIÊU DỄ THƯƠNG 💖</text>
+  </g>
+
+  <!-- Entire Class Clapping & Cheering on Right Side! 👏 -->
+  <g id="class-clapping" transform="translate(435, 160)">
+    <!-- Clapping Sound Effects -->
+    <g font-family="'Impact', Arial Black, sans-serif" font-weight="900" font-size="16" fill="#EF4444">
+      <text x="30" y="25">BỐP!</text>
+      <text x="90" y="15">BỐP!</text>
+      <text x="140" y="30">HOAN HÔ!</text>
+    </g>
+
+    <!-- Student 1 (Clapping hands in front) -->
+    <g transform="translate(10, 40)">
+      <ellipse cx="30" cy="130" rx="25" ry="8" fill="#000000" opacity="0.2"/>
+      <ellipse cx="30" cy="85" rx="18" ry="24" fill="#38BDF8" stroke="#0284C7" stroke-width="2"/>
+      <!-- Clapping Hands Together -->
+      <path d="M15 75 Q30 65 30 55" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="30" cy="55" r="7" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+      <path d="M45 75 Q30 65 30 55" fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+      <text x="30" y="48" font-size="14" text-anchor="middle">👏</text>
+      <!-- Head -->
+      <circle cx="30" cy="35" r="18" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+      <path d="M15 30 C12 12 48 12 45 30 Z" fill="#292524"/>
+      <circle cx="24" cy="32" r="2" fill="#1E293B"/><circle cx="36" cy="32" r="2" fill="#1E293B"/>
+      <path d="M24 40 Q30 46 36 40" fill="none" stroke="#DC2626" stroke-width="2"/>
+    </g>
+
+    <!-- Student 2 (Jumping with arms high) -->
+    <g transform="translate(65, 30)">
+      <ellipse cx="30" cy="140" rx="25" ry="8" fill="#000000" opacity="0.2"/>
+      <ellipse cx="30" cy="90" rx="18" ry="24" fill="#F43F5E" stroke="#E11D48" stroke-width="2"/>
+      <!-- Arms raised high -->
+      <path d="M15 80 Q0 50 10 35" fill="none" stroke="#F43F5E" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="10" cy="35" r="6" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+      <path d="M45 80 Q60 50 50 35" fill="none" stroke="#F43F5E" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="50" cy="35" r="6" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+      <!-- Head with starry eyes -->
+      <circle cx="30" cy="45" r="18" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+      <path d="M15 40 C12 20 48 20 45 40 Z" fill="#3B2005"/>
+      <circle cx="25" cy="42" r="2" fill="#1E293B"/><circle cx="35" cy="42" r="2" fill="#1E293B"/>
+      <path d="M24 50 Q30 58 36 50 Z" fill="#BE123C"/>
+      <circle cx="20" cy="46" r="3" fill="#FDA4AF"/><circle cx="40" cy="46" r="3" fill="#FDA4AF"/>
+    </g>
+
+    <!-- Student 3 (Clapping beside) -->
+    <g transform="translate(125, 45)">
+      <ellipse cx="30" cy="125" rx="25" ry="8" fill="#000000" opacity="0.2"/>
+      <ellipse cx="30" cy="80" rx="16" ry="22" fill="#10B981" stroke="#059669" stroke-width="2"/>
+      <text x="30" y="55" font-size="14" text-anchor="middle">👏</text>
+      <circle cx="30" cy="35" r="16" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+      <path d="M16 30 C14 15 44 15 44 30 Z" fill="#292524"/>
+      <circle cx="25" cy="32" r="2" fill="#1E293B"/><circle cx="35" cy="32" r="2" fill="#1E293B"/>
+      <path d="M25 40 Q30 45 35 40" fill="none" stroke="#DC2626" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- Speech Bubble: The Class Clapping and Cheering -->
+  <g filter="url(#cShadow4)">
+    <path d="M380 25 Q380 5 470 5 L600 5 Q630 5 630 32 Q630 60 560 60 L520 60 L505 82 L510 60 L440 60 Q380 60 380 25 Z" fill="#FEFCE8" stroke="#EAB308" stroke-width="2.5"/>
+    <text x="505" y="28" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="900" fill="#854D0E" text-anchor="middle">"HOAN HÔ CÔ GIÁO! 👏🎉"</text>
+    <text x="505" y="48" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#A16207" text-anchor="middle">"3 em bé nhìn cưng xỉu luôn cô ơi! 💖"</text>
+  </g>
+
+  <!-- Speech Bubble: Teacher -->
+  <g filter="url(#cShadow4)">
+    <path d="M30 25 Q30 5 100 5 L260 5 Q300 5 300 32 Q300 60 230 60 L170 60 L155 82 L160 60 L70 60 Q30 60 30 25 Z" fill="#FFF1F2" stroke="#F43F5E" stroke-width="2.5"/>
+    <text x="165" y="28" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="900" fill="#BE123C" text-anchor="middle">"Cảm ơn cả lớp của cô!"</text>
+    <text x="165" y="48" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#9F1239" text-anchor="middle">"3 thiên thần nhỏ chào các anh chị! 🥰"</text>
+  </g>
+
+  <!-- Panel Header Banner -->
+  <rect x="20" y="16" width="280" height="32" rx="8" fill="#1E293B"/>
+  <text x="160" y="37" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#FACC15" text-anchor="middle">★ CẢNH 4: CẢ LỚP VỖ TAY HOAN HÔ</text>
+
+  <!-- Caption at bottom -->
+  <rect x="25" y="402" width="600" height="34" rx="8" fill="#0F172A" opacity="0.85"/>
+  <text x="325" y="424" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#F8FAFC" text-anchor="middle">Cả lớp đồng thanh vỗ tay hoan hô chúc mừng khi cô giáo hạ sinh thành công 3 bé con siêu dễ thương!</text>
+</svg>

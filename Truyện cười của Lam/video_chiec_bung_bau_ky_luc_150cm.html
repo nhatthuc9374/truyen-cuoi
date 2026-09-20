@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎬 Rạp Chiếu Phim: Chiếc Bụng Bầu Kỷ Lục 150cm & Sự Cố Khám Thai</title>
+  <style>
+    :root {
+      --bg-dark: #0A0F1D;
+      --card-bg: #141B2D;
+      --accent-pink: #F43F5E;
+      --accent-cyan: #0284C7;
+      --accent-gold: #F59E0B;
+      --accent-green: #10B981;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 16px;
+    }
+
+    .header {
+      width: 100%;
+      max-width: 1050px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .title-group h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #F59E0B 0%, #EF4444 50%, #EC4899 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-group p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+
+    .badge-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      color: #FDE68A;
+      padding: 5px 12px;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* Video Player Box */
+    .player-container {
+      width: 100%;
+      max-width: 1050px;
+      background: #020617;
+      border: 2px solid #1E293B;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 35px rgba(245, 158, 11, 0.18);
+    }
+
+    .video-screen {
+      position: relative;
+      width: 100%;
+      background: #000;
+      aspect-ratio: 16 / 9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+    }
+
+    .controls-panel {
+      padding: 16px 20px;
+      background: #0F172A;
+      border-top: 1px solid #1E293B;
+    }
+
+    .actions-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    button, .btn-link {
+      background: #1E293B;
+      color: #F8FAFC;
+      border: 1px solid #334155;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+
+    button:hover, .btn-link:hover {
+      background: #334155;
+      border-color: #475569;
+    }
+
+    button.primary {
+      background: #E11D48;
+      border-color: #BE123C;
+    }
+    button.primary:hover {
+      background: #BE123C;
+    }
+
+    .btn-link.success {
+      background: #059669;
+      border-color: #047857;
+    }
+    .btn-link.success:hover {
+      background: #047857;
+    }
+
+    .scene-tabs {
+      display: flex;
+      gap: 6px;
+      background: #0B0F19;
+      padding: 4px;
+      border-radius: 8px;
+    }
+
+    .scene-tabs button {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      border-radius: 6px;
+      background: transparent;
+      border: none;
+      color: #94A3B8;
+    }
+
+    .scene-tabs button:hover {
+      color: #F8FAFC;
+      background: #1E293B;
+    }
+
+    .scene-tabs button.active {
+      background: #D97706;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+
+    /* Notice box */
+    .audio-notice {
+      margin-top: 16px;
+      width: 100%;
+      max-width: 1050px;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      padding: 12px 18px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.88rem;
+      color: #FDE68A;
+    }
+
+    /* Grid cards */
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      width: 100%;
+      max-width: 1050px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid #1E293B;
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px -6px rgba(0,0,0,0.6);
+      border-color: #F59E0B;
+    }
+
+    .card img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 12px 14px;
+    }
+
+    .card h3 {
+      font-size: 0.95rem;
+      color: #F8FAFC;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .card p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Story text box */
+    .story-section {
+      width: 100%;
+      max-width: 1050px;
+      margin-top: 24px;
+      background: #0F172A;
+      border: 1px solid #1E293B;
+      border-radius: 14px;
+      padding: 24px;
+      line-height: 1.7;
+    }
+
+    .story-section h2 {
+      color: #F59E0B;
+      font-size: 1.3rem;
+      margin-bottom: 16px;
+      border-bottom: 2px solid #1E293B;
+      padding-bottom: 8px;
+    }
+
+    .story-section p {
+      margin-bottom: 14px;
+      color: #E2E8F0;
+      font-size: 0.95rem;
+    }
+
+    .quote-dialogue {
+      background: #1E293B;
+      border-left: 4px solid #F59E0B;
+      padding: 10px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 12px 0;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="title-group">
+      <h1>🎬 Chiếc Bụng Bầu Kỷ Lục 150cm & Sự Cố Khám Thai</h1>
+      <p>Video hoạt hình 3D Pixar lồng tiếng Tiếng Việt & Phụ đề điện ảnh (Cinema Subtitles)</p>
+    </div>
+    <div class="badge-bar">
+      <span class="badge">🎙️ Lồng Tiếng Việt</span>
+      <span class="badge">🔊 Chuẩn Âm -14 LUFS</span>
+      <span class="badge">🌟 Full HD 720p</span>
+      <span class="badge">👶 Sinh Tư 12kg</span>
+    </div>
+  </div>
+
+  <!-- Video Player Box -->
+  <div class="player-container">
+    <div class="video-screen">
+      <video id="mainVideo" controls poster="images/bung_bau_150cm_p1.jpg">
+        <source src="Chiếc bụng bầu kỷ lục 150cm.mp4" type="video/mp4">
+        <source src="Chiec_bung_bau_ky_luc_150cm.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ phát thẻ video HTML5.
+      </video>
+    </div>
+
+    <div class="controls-panel">
+      <div class="actions-bar">
+        <div class="btn-group">
+          <button class="primary" onclick="togglePlay()">▶ Phát / Tạm dừng</button>
+          <button onclick="changeSpeed()">⚡ Tốc độ: <span id="speedVal">1.0x</span></button>
+          
+          <div class="scene-tabs">
+            <button class="active" id="tab0" onclick="seekTo(0, 0)">1. Bàn Ăn Phở</button>
+            <button id="tab1" onclick="seekTo(66, 1)">2. Báo Động Thang Máy</button>
+            <button id="tab2" onclick="seekTo(145, 2)">3. Thước Đo 5m</button>
+            <button id="tab3" onclick="seekTo(225, 3)">4. Sinh Tư & Cúp Vàng</button>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <a href="Chiếc bụng bầu kỷ lục 150cm.mp4" download="Chiec_bung_bau_ky_luc_150cm.mp4" class="btn-link success">
+            📥 Tải Video MP4
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio notice -->
+  <div class="audio-notice">
+    <span style="font-size: 1.4rem;">🔊</span>
+    <div>
+      <strong>Âm thanh chuẩn điện ảnh:</strong> Video đã được hòa âm lồng tiếng Tiếng Việt chất lượng cao và khuếch đại âm lượng chuẩn -14 LUFS. Nếu xem trong Obsidian, hãy chú ý nhấn bật loa trên thanh điều khiển.
+    </div>
+  </div>
+
+  <!-- 4 Scene Highlight Cards -->
+  <div class="story-grid">
+    <div class="card" onclick="seekTo(0, 0)">
+      <img src="images/bung_bau_150cm_p1.jpg" alt="Cảnh 1">
+      <div class="card-content">
+        <h3>🍲 Cảnh 1: Bàn Ăn Phở Bò</h3>
+        <p>Bụng bầu phẳng phiu đặt vừa vặn tô phở bò đặc biệt và ly trà sữa 1 lít, vững vàng không sánh một giọt!</p>
+      </div>
+    </div>
+    <div class="card" onclick="seekTo(66, 1)">
+      <img src="images/bung_bau_150cm_p2.jpg" alt="Cảnh 2">
+      <div class="card-content">
+        <h3>🚨 Cảnh 2: Báo Động Thang Máy</h3>
+        <p>Bụng nhô trước người 1 mét cấn lút nút chuông cứu hỏa, chuông réo vang inh ỏi cả tòa chung cư!</p>
+      </div>
+    </div>
+    <div class="card" onclick="seekTo(145, 2)">
+      <img src="images/bung_bau_150cm_p3.jpg" alt="Cảnh 3">
+      <div class="card-content">
+        <h3>📏 Cảnh 3: Thước Đo 5 Mét</h3>
+        <p>Thước y tế 1m50 bị thiếu, bác sĩ mượn thước cuộn xây dựng kim loại 5m đo kỷ lục 152cm!</p>
+      </div>
+    </div>
+    <div class="card" onclick="seekTo(225, 3)">
+      <img src="images/bung_bau_150cm_p4.jpg" alt="Cảnh 4">
+      <div class="card-content">
+        <h3>🏆 Cảnh 4: Sinh Tư & Cúp Vàng</h3>
+        <p>Mẹ đón 4 thiên thần 12kg bụ bẫm, bố quỳ dâng cúp vàng #1 bái phục Nữ Siêu Nhân vĩ đại!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Full Story Section -->
+  <div class="story-section">
+    <h2>📖 Toàn Văn Câu Chuyện: Chiếc Bụng Bầu Kỷ Lục 150cm</h2>
+    <p>Một mẩu chuyện cười siêu đáng yêu và "bá đạo" về chiếc bụng bầu ngoại cỡ kỷ lục 150cm của mẹ bầu mang thai tư: Sáng sớm bụng bầu phẳng phiu biến thành chiếc bàn ăn để vừa vặn tô phở bò đặc biệt và ly trà sữa 1 lít; bước vào thang máy giờ cao điểm chiếc bụng nhô ra 1 mét đè cấn luôn nút chuông báo động cứu hỏa réo inh ỏi cả tòa nhà; đến phòng khám bác sĩ dùng thước y tế đo bị thiếu đành phải mượn thước cuộn xây dựng kim loại 5 mét của bác bảo vệ; và kết thúc bằng ca sinh tư đại thắng đón 4 thiên thần nhỏ bụ bẫm 12kg khiến ông bố quỳ lạy dâng cúp vàng tôn vợ làm Siêu Nhân số 1 Trái Đất!</p>
+
+    <div class="quote-dialogue">
+      👨 <strong>Bố:</strong> “Trời ơi vợ ơi! Người ta mang bầu thì mệt mỏi, còn em thì biến bụng bầu thành cái bàn ăn đa năng thế kia à?! Đặt cả tô phở nóng hổi lên bụng mà không sợ các con ở trong sốt ruột à em?”<br><br>
+      🤰 <strong>Mẹ:</strong> “Tiện lắm anh ơi! Vừa xem phim vừa ăn sáng khỏi cần với tay ra bàn ăn! Bốn đứa nhỏ bên trong ngửi thấy mùi phở bò với trà sữa đang đạp chân reo hò cổ vũ mẹ ăn thêm đây này! 🤣🧋”
+    </div>
+
+    <div class="quote-dialogue">
+      👨‍⚕️ <strong>Bác sĩ Tuấn:</strong> “Trời cao đất dày ơi! 152 centimet! Đây là chiếc bụng bầu to kỷ lục nhất trong 20 năm làm nghề của tôi! Bên trong không phải sinh đôi sinh ba đâu... mà là một ĐẠI ĐỘI BỐN THIÊN THẦN! Chuẩn bị phòng sinh đặc biệt ngay lập tức!”
+    </div>
+
+    <div class="quote-dialogue">
+      😭 <strong>Bố (quỳ dâng cúp vàng):</strong> “Vợ ơi... Em là Đấng Cứu Thế! Em là Nữ Siêu Nhân vĩ đại nhất trần đời! 😭🙏 Một mình em mang bụng 152cm, đẻ một lèo 4 đứa 12 ký tròn vo! Anh xin thề từ nay về sau, vợ bảo 1 là 1, bảo 2 là 2, đội vợ lên đầu trường sinh bất lão! Anh xin bái phục vợ sát đất!!”
+    </div>
+  </div>
+
+  <script>
+    const video = document.getElementById('mainVideo');
+    const speedVal = document.getElementById('speedVal');
+    const speeds = [1.0, 1.25, 1.5, 0.75];
+    let speedIdx = 0;
+
+    function togglePlay() {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+
+    function seekTo(seconds, tabIdx) {
+      video.currentTime = seconds;
+      video.play();
+      for (let i = 0; i < 4; i++) {
+        const tab = document.getElementById('tab' + i);
+        if (tab) {
+          if (i === tabIdx) tab.classList.add('active');
+          else tab.classList.remove('active');
+        }
+      }
+    }
+
+    function changeSpeed() {
+      speedIdx = (speedIdx + 1) % speeds.length;
+      const spd = speeds[speedIdx];
+      video.playbackRate = spd;
+      speedVal.innerText = spd.toFixed(2).replace('.00', '') + 'x';
+    }
+  </script>
+</body>
+</html>

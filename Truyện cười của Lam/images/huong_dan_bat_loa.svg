@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect x="10" y="10" width="830" height="460" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Header Title -->
+  <text x="425" y="45" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="bold" fill="#F8FAFC" text-anchor="middle">
+    🔊 HƯỚNG DẪN BẬT TIẾNG TRÊN KHUNG PHÁT VIDEO OBSIDIAN
+  </text>
+  <text x="425" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#94A3B8" text-anchor="middle">
+    Mặc định video trong Obsidian luôn ở trạng thái Tắt Tiếng (Muted) để bảo vệ màng nhĩ
+  </text>
+
+  <!-- Video Mockup Frame -->
+  <g transform="translate(65, 95)" filter="url(#shadow)">
+    <!-- Video Screen -->
+    <rect x="0" y="0" width="720" height="220" rx="10" fill="#020617" stroke="#475569" stroke-width="2"/>
+    
+    <!-- Video Preview Content Mockup -->
+    <rect x="20" y="20" width="680" height="150" rx="6" fill="#0F172A"/>
+    <text x="360" y="95" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="bold" fill="#64748B" text-anchor="middle">
+      🎬 Video Đang Phát (Tôi Và Dì Đi Đẻ)
+    </text>
+
+    <!-- Obsidian Video Controls Bar -->
+    <rect x="0" y="172" width="720" height="48" rx="0 0 10 10" fill="#1E293B" opacity="0.95"/>
+    <line x1="0" y1="172" x2="720" y2="172" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Play Button ▶ -->
+    <polygon points="25,188 25,204 40,196" fill="#38BDF8"/>
+
+    <!-- Scrubber bar -->
+    <rect x="55" y="193" width="410" height="6" rx="3" fill="#334155"/>
+    <rect x="55" y="193" width="160" height="6" rx="3" fill="#F43F5E"/>
+    <circle cx="215" cy="196" r="6" fill="#FFFFFF"/>
+
+    <!-- Time Text -->
+    <text x="510" y="200" font-family="'Consolas', monospace" font-size="11" fill="#94A3B8">0:24 / 1:58</text>
+
+    <!-- HIGHLIGHT BOX QUANH BIỂU TƯỢNG CHIẾC LOA -->
+    <rect x="575" y="178" width="80" height="36" rx="6" fill="rgba(239, 68, 68, 0.2)" stroke="#EF4444" stroke-width="2.5" stroke-dasharray="4,3"/>
+
+    <!-- Speaker Icon MUTED (Loa có gạch chéo 🔇) -->
+    <g id="speaker-muted" transform="translate(585, 184)">
+      <!-- Thân loa -->
+      <path d="M4 8 L8 8 L13 4 L13 20 L8 16 L4 16 Z" fill="#EF4444"/>
+      <!-- Dấu chéo đỏ (MUTE) -->
+      <line x1="17" y1="8" x2="25" y2="16" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="25" y1="8" x2="17" y2="16" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Thanh volume slider nhỏ -->
+    <rect x="618" y="194" width="30" height="4" rx="2" fill="#475569"/>
+
+    <!-- Fullscreen Button ⛶ -->
+    <g transform="translate(680, 186)">
+      <path d="M2 7 L2 2 L7 2 M15 2 L20 2 L20 7 M20 13 L20 18 L15 18 M7 18 L2 18 L2 13" fill="none" stroke="#94A3B8" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Mũi tên chỉ dẫn lớn -->
+  <g transform="translate(650, 245)">
+    <!-- Mũi tên đỏ trỏ lên -->
+    <path d="M0 70 L0 15" stroke="#EF4444" stroke-width="4" stroke-linecap="round"/>
+    <polygon points="-8,18 0,0 8,18" fill="#EF4444"/>
+  </g>
+
+  <!-- Hai thẻ so sánh Trạng Thái Loa ở dưới -->
+  <!-- CỘT 1: ĐANG TẮT TIẾNG -->
+  <g transform="translate(75, 340)">
+    <rect x="0" y="0" width="335" height="105" rx="10" fill="#1E293B" stroke="#EF4444" stroke-width="2"/>
+    <circle cx="45" cy="52" r="28" fill="rgba(239, 68, 68, 0.15)"/>
+    
+    <!-- Icon 🔇 lớn -->
+    <g transform="translate(32, 40)">
+      <path d="M4 8 L9 8 L15 3 L15 21 L9 16 L4 16 Z" fill="#EF4444"/>
+      <line x1="19" y1="7" x2="29" y2="17" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+      <line x1="29" y1="7" x2="19" y2="17" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <text x="85" y="38" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="bold" fill="#FCA5A5">
+      1. ĐANG TẮT TIẾNG (MUTE 🔇)
+    </text>
+    <text x="85" y="60" font-family="'Segoe UI', sans-serif" font-size="12" fill="#CBD5E1">
+      Chiếc loa có <tspan font-weight="bold" fill="#EF4444">dấu gạch chéo</tspan> hoặc chữ X.
+    </text>
+    <text x="85" y="80" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#FDE047">
+      👉 BẤM VÀO ĐÂY ĐỂ BẬT TIẾNG!
+    </text>
+  </g>
+
+  <!-- CỘT 2: ĐÃ BẬT TIẾNG -->
+  <g transform="translate(440, 340)">
+    <rect x="0" y="0" width="335" height="105" rx="10" fill="#1E293B" stroke="#10B981" stroke-width="2"/>
+    <circle cx="45" cy="52" r="28" fill="rgba(16, 185, 129, 0.15)"/>
+
+    <!-- Icon 🔊 lớn -->
+    <g transform="translate(30, 39)">
+      <path d="M4 9 L9 9 L15 4 L15 22 L9 17 L4 17 Z" fill="#10B981"/>
+      <!-- Sóng âm thanh phát ra -->
+      <path d="M19 9 Q23 13 19 17" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M23 6 Q29 13 23 20" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M27 3 Q35 13 27 23" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <text x="85" y="38" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="bold" fill="#6EE7B7">
+      2. ĐÃ BẬT TIẾNG (UNMUTED 🔊)
+    </text>
+    <text x="85" y="60" font-family="'Segoe UI', sans-serif" font-size="12" fill="#CBD5E1">
+      Chiếc loa phát ra <tspan font-weight="bold" fill="#10B981">các vòng sóng âm</tspan>.
+    </text>
+    <text x="85" y="80" font-family="'Segoe UI', sans-serif" font-size="12" fill="#38BDF8">
+      Kéo thanh trượt bên cạnh để tăng tối đa âm lượng.
+    </text>
+  </g>
+</svg>

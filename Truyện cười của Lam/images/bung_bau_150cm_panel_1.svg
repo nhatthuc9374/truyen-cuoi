@@ -1,0 +1,121 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgP1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB"/>
+      <stop offset="50%" stop-color="#FEF3C7"/>
+      <stop offset="50%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="bellyBig1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6"/>
+      <stop offset="40%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#BE185D"/>
+    </linearGradient>
+    <filter id="shP1" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <rect width="750" height="500" rx="16" fill="url(#bgP1)" stroke="#EC4899" stroke-width="4"/>
+
+  <!-- Tiêu đề Cảnh 1 to rõ -->
+  <g filter="url(#shP1)">
+    <rect x="25" y="16" width="560" height="42" rx="10" fill="#EC4899"/>
+    <text x="305" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#FFFFFF" text-anchor="middle">🍲 CẢNH 1: BỤNG BẦU BIẾN THÀNH "BÀN ĂN" ĐA NĂNG! 🥤</text>
+  </g>
+
+  <!-- Ghế sofa phòng khách ấm cúng phía sau -->
+  <path d="M 30 380 Q 30 180 120 180 L 680 180 Q 720 180 720 380 Z" fill="#FDE68A" stroke="#D97706" stroke-width="3" opacity="0.6"/>
+
+  <!-- MẸ BẦU CẬN CẢNH LỚN BÊN TRÁI - CHIẾC BỤNG BẦU SIÊU TO KHỔNG LỒ 150CM -->
+  <g transform="translate(60, 110)" filter="url(#shP1)">
+    <!-- Thân mẹ bầu tựa sofa -->
+    <path d="M 20 220 L 180 220 L 190 380 L 0 380 Z" fill="#FB7185" stroke="#E11D48" stroke-width="3.5"/>
+
+    <!-- ĐẦU MẸ BẦU TO RÕ, MẶT TRÒN XINH ĐẸP CƯỜI RẠNG RỠ -->
+    <ellipse cx="95" cy="110" rx="55" ry="58" fill="#FED7AA" stroke="#1E293B" stroke-width="3.5"/>
+    <!-- Tóc búi gọn gàng cài nơ hồng -->
+    <path d="M 45 100 C 40 40 150 40 150 100 Z" fill="#451A03"/>
+    <circle cx="95" cy="40" r="22" fill="#451A03"/> <!-- Búi tóc -->
+    <path d="M 80 40 Q 95 30 110 40" stroke="#EC4899" stroke-width="8" stroke-linecap="round" fill="none"/> <!-- Nơ hồng -->
+
+    <!-- Mắt cười tít mắt hạnh phúc -->
+    <path d="M 70 105 Q 82 95 94 105" stroke="#1E293B" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M 106 105 Q 118 95 130 105" stroke="#1E293B" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <!-- Má hồng hào -->
+    <ellipse cx="68" cy="120" rx="12" ry="8" fill="#FDA4AF"/>
+    <ellipse cx="132" cy="120" rx="12" ry="8" fill="#FDA4AF"/>
+    <!-- Nụ cười tươi rói -->
+    <path d="M 85 140 Q 100 158 118 140" stroke="#BE123C" stroke-width="3.5" fill="none"/>
+
+    <!-- CHIẾC BỤNG BẦU SIÊU TO KHỔNG LỒ 150CM TRÒN CĂNG NHƯ QUẢ CẦU -->
+    <ellipse cx="230" cy="270" rx="130" ry="110" fill="url(#bellyBig1)" stroke="#9D174D" stroke-width="4.5"/>
+    <ellipse cx="200" cy="225" rx="40" ry="18" fill="#FFFFFF" fill-opacity="0.3"/> <!-- Độ bóng tròn của bụng -->
+
+    <!-- VÒNG 150CM KỶ LỤC -->
+    <g transform="translate(160, 310)">
+      <rect width="140" height="28" rx="6" fill="#FFFFFF" stroke="#BE185D" stroke-width="2"/>
+      <text x="70" y="19" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="900" fill="#BE185D" text-anchor="middle">VÒNG BỤNG 150CM!</text>
+    </g>
+
+    <!-- TRÊN ĐỈNH BỤNG BẦU ĐẶT VỪA IN TÔ PHỞ BÒ & LY TRÀ SỮA KHỔNG LỒ -->
+    <!-- Tô phở bò đặc biệt -->
+    <g transform="translate(150, 145)">
+      <ellipse cx="40" cy="35" rx="36" ry="18" fill="#E2E8F0" stroke="#334155" stroke-width="3"/>
+      <ellipse cx="40" cy="30" rx="32" ry="14" fill="#B45309"/> <!-- Nước dùng phở bò -->
+      <line x1="25" y1="28" x2="45" y2="28" stroke="#FEF08A" stroke-width="3"/> <!-- Bánh phở -->
+      <circle cx="50" cy="28" r="6" fill="#7F1D1D"/> <!-- Thịt bò tái -->
+      <!-- Khói phở bốc nghi ngút -->
+      <path d="M 30 15 Q 25 0 35 -10" stroke="#CBD5E1" stroke-width="2.5" fill="none"/>
+      <path d="M 48 15 Q 55 0 45 -10" stroke="#CBD5E1" stroke-width="2.5" fill="none"/>
+      <text x="40" y="55" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" fill="#78350F" text-anchor="middle">TÔ PHỞ BÒ 🍲</text>
+    </g>
+
+    <!-- Ly trà sữa 1 Lít khổng lồ có ống hút -->
+    <g transform="translate(250, 130)">
+      <polygon points="10,60 35,60 40,10 5,10" fill="#FDE68A" stroke="#D97706" stroke-width="2.5"/>
+      <ellipse cx="22" cy="10" rx="18" ry="6" fill="#FFFFFF" stroke="#D97706" stroke-width="2"/>
+      <!-- Trân châu đen bên dưới ly -->
+      <circle cx="16" cy="52" r="4" fill="#1E293B"/>
+      <circle cx="26" cy="52" r="4" fill="#1E293B"/>
+      <circle cx="21" cy="45" r="4" fill="#1E293B"/>
+      <!-- Ống hút to cắm chéo -->
+      <line x1="22" y1="20" x2="35" y2="-8" stroke="#EF4444" stroke-width="5" stroke-linecap="round"/>
+      <text x="22" y="75" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" fill="#B45309" text-anchor="middle">TRÀ SỮA 1L 🧋</text>
+    </g>
+
+    <!-- Tay mẹ cầm đũa gắp phở ăn ngon lành -->
+    <path d="M 40 210 Q 70 170 120 180" stroke="#FB7185" stroke-width="22" stroke-linecap="round" fill="none"/>
+    <circle cx="120" cy="180" r="12" fill="#FED7AA"/>
+    <line x1="120" y1="180" x2="160" y2="165" stroke="#78350F" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- ÔNG CHỒNG CẬN CẢNH BÊN PHẢI - MẮT TRÒN MẮT DẸT BÁI PHỤC -->
+  <g transform="translate(490, 120)" filter="url(#shP1)">
+    <path d="M 30 220 L 190 220 L 200 370 L 10 370 Z" fill="#3B82F6" stroke="#1D4ED8" stroke-width="3.5"/>
+    <!-- Hai tay bố giơ lên ôm má kinh ngạc -->
+    <path d="M 40 220 Q 20 160 50 120" stroke="#3B82F6" stroke-width="22" stroke-linecap="round" fill="none"/>
+    <circle cx="50" cy="120" r="14" fill="#FED7AA"/>
+    <path d="M 180 220 Q 200 160 170 120" stroke="#3B82F6" stroke-width="22" stroke-linecap="round" fill="none"/>
+    <circle cx="170" cy="120" r="14" fill="#FED7AA"/>
+
+    <!-- Đầu bố trợn mắt thán phục -->
+    <ellipse cx="110" cy="115" rx="55" ry="58" fill="#FED7AA" stroke="#1E293B" stroke-width="3.5"/>
+    <path d="M 55 105 C 55 45 165 45 165 105 Z" fill="#1E293B"/>
+    <circle cx="85" cy="110" r="14" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.5"/>
+    <circle cx="85" cy="110" r="5" fill="#1E293B"/>
+    <circle cx="135" cy="110" r="14" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.5"/>
+    <circle cx="135" cy="110" r="5" fill="#1E293B"/>
+    <ellipse cx="110" cy="150" rx="16" ry="12" fill="#7F1D1D" stroke="#000000" stroke-width="2"/>
+    <text x="110" y="70" font-size="28" fill="#F59E0B">✨🤩✨</text>
+  </g>
+
+  <!-- BONG BÓNG THOẠI HÀI HƯỚC Ở TRÊN CAO -->
+  <g transform="translate(150, 65)" filter="url(#shP1)">
+    <path d="M 20 0 L 460 0 C 475 0 475 15 475 15 L 475 85 C 475 100 460 100 460 100 L 130 100 L 95 125 L 110 100 L 20 100 C 5 100 5 85 5 85 L 5 15 C 5 0 20 0 20 0 Z" fill="#FFFFFF" stroke="#EC4899" stroke-width="3.5"/>
+    <text x="245" y="28" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="900" fill="#BE185D" text-anchor="middle">🤰 MẸ BẦU (VỪA ĂN PHỞ TRÊN BỤNG VỪA CƯỜI TƯƠI NÓI):</text>
+    <text x="245" y="55" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="bold" fill="#0F172A" text-anchor="middle">“Tiện ghê anh ơi! Bụng to 150cm phẳng lì như mặt bàn,”</text>
+    <text x="245" y="82" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#E11D48" text-anchor="middle">“Vừa ăn phở vừa uống trà sữa khỏi cần dọn bàn ăn luôn! 🤣”</text>
+  </g>
+
+</svg>

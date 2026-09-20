@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hospBg4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF9C3"/>
+      <stop offset="50%" stop-color="#FFF1F2"/>
+      <stop offset="100%" stop-color="#E0F2FE"/>
+    </linearGradient>
+    <filter id="shadowH4" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Panel Border & Background -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#hospBg4)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Celebratory Flags / Bunting across top -->
+  <g>
+    <path d="M20 50 Q160 75 300 55 T630 50" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+    <polygon points="50,55 70,85 90,58" fill="#EF4444"/>
+    <polygon points="110,61 130,90 150,65" fill="#F59E0B"/>
+    <polygon points="170,66 190,95 210,67" fill="#10B981"/>
+    <polygon points="230,66 250,95 270,65" fill="#3B82F6"/>
+    <polygon points="290,62 310,90 330,60" fill="#EC4899"/>
+    <polygon points="350,58 370,88 390,56" fill="#8B5CF6"/>
+    <polygon points="410,54 430,84 450,53" fill="#F59E0B"/>
+    <polygon points="470,52 490,80 510,51" fill="#10B981"/>
+    <polygon points="530,50 550,78 570,50" fill="#EF4444"/>
+  </g>
+
+  <!-- Floating Baby Icons & Hearts -->
+  <text x="70" y="110" font-size="20">🍼</text>
+  <text x="210" y="115" font-size="18">👶</text>
+  <text x="470" y="100" font-size="20">✨</text>
+  <text x="580" y="110" font-size="22">💖</text>
+  <text x="350" y="95" font-size="18">🎉</text>
+
+  <!-- Mom Relaxing Happily in Post-delivery Bed (Left Side) -->
+  <g id="mom-happy" transform="translate(40, 160)">
+    <!-- Pillow & Bed -->
+    <ellipse cx="60" cy="80" rx="35" ry="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <rect x="20" y="95" width="160" height="90" rx="6" fill="#E2E8F0" stroke="#CBD5E1" stroke-width="2"/>
+    <!-- Blanket Pink Pattern -->
+    <path d="M40 100 Q100 85 170 105 L180 185 L30 185 Z" fill="#FDA4AF"/>
+
+    <!-- Mom Head & Relieved Smile -->
+    <circle cx="70" cy="50" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M45 45 C40 15 95 15 95 45 Z" fill="#451A03"/>
+    <ellipse cx="70" cy="20" rx="10" ry="6" fill="#F43F5E"/> <!-- Headband -->
+
+    <!-- Peaceful Happy Smiling Eyes -->
+    <path d="M58 48 Q64 42 70 48" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M76 48 Q82 42 88 48" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="56" cy="55" r="5" fill="#FCA5A5"/>
+    <circle cx="84" cy="55" r="5" fill="#FCA5A5"/>
+    <!-- Tender loving smile -->
+    <path d="M66 58 Q72 65 78 58" fill="none" stroke="#E11D48" stroke-width="2.5"/>
+
+    <!-- Mom's Loving Hand resting on crib side -->
+    <path d="M90 75 Q125 75 140 90" fill="none" stroke="#FDA4AF" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="140" cy="90" r="8" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+  </g>
+
+  <!-- Big Crib Bassinet containing the 5 CHUBBY CUTE BABIES ("5 ĐỨA MỈM MỈN") -->
+  <g id="quintuplets-crib" transform="translate(190, 190)">
+    <!-- Big Bassinet Frame -->
+    <rect x="0" y="50" width="310" height="110" rx="16" fill="#FEF08A" stroke="#F59E0B" stroke-width="3"/>
+    <rect x="8" y="58" width="294" height="94" rx="12" fill="#FFFBEB"/>
+    <!-- Crib Wheels -->
+    <circle cx="45" cy="170" r="12" fill="#475569" stroke="#1E293B" stroke-width="2"/>
+    <circle cx="265" cy="170" r="12" fill="#475569" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- ================= BABY 1 (Yellow Swaddle) ================= -->
+    <g transform="translate(25, 40)">
+      <!-- Swaddle body -->
+      <ellipse cx="22" cy="55" rx="18" ry="24" fill="#FDE047" stroke="#CA8A04" stroke-width="2"/>
+      <!-- Chubby Face -->
+      <circle cx="22" cy="30" r="16" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+      <!-- Chubby cheeks -->
+      <circle cx="12" cy="34" r="4" fill="#FDA4AF"/>
+      <circle cx="32" cy="34" r="4" fill="#FDA4AF"/>
+      <!-- Tiny baby hair curl -->
+      <path d="M22 14 Q24 9 26 12" fill="none" stroke="#331A05" stroke-width="2"/>
+      <!-- Happy sleep eyes -->
+      <path d="M16 28 Q19 24 22 28" fill="none" stroke="#1E293B" stroke-width="2"/>
+      <!-- Pacifier -->
+      <circle cx="22" cy="35" r="5" fill="#38BDF8"/>
+      <circle cx="22" cy="35" r="2" fill="#FFFFFF"/>
+    </g>
+
+    <!-- ================= BABY 2 (Blue Swaddle) ================= -->
+    <g transform="translate(75, 35)">
+      <ellipse cx="22" cy="60" rx="18" ry="24" fill="#60A5FA" stroke="#2563EB" stroke-width="2"/>
+      <circle cx="22" cy="32" r="16" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+      <circle cx="12" cy="36" r="4" fill="#FDA4AF"/>
+      <circle cx="32" cy="36" r="4" fill="#FDA4AF"/>
+      <path d="M22 16 Q20 11 18 14" fill="none" stroke="#331A05" stroke-width="2"/>
+      <!-- Tiny open eyes -->
+      <circle cx="17" cy="30" r="2.5" fill="#1E293B"/><circle cx="27" cy="30" r="2.5" fill="#1E293B"/>
+      <!-- Open smiling baby mouth -->
+      <path d="M19 36 Q22 41 25 36" fill="none" stroke="#DC2626" stroke-width="2"/>
+    </g>
+
+    <!-- ================= BABY 3 (Pink Swaddle - Center Cute) ================= -->
+    <g transform="translate(130, 30)">
+      <ellipse cx="24" cy="65" rx="20" ry="26" fill="#F472B6" stroke="#DB2777" stroke-width="2"/>
+      <circle cx="24" cy="32" r="17" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+      <!-- Cute Pink Bow on head -->
+      <circle cx="24" cy="14" r="3" fill="#EC4899"/>
+      <polygon points="18,11 24,14 18,17" fill="#EC4899"/>
+      <polygon points="30,11 24,14 30,17" fill="#EC4899"/>
+      <!-- Chubby Cheeks -->
+      <circle cx="13" cy="36" r="4.5" fill="#F43F5E"/>
+      <circle cx="35" cy="36" r="4.5" fill="#F43F5E"/>
+      <circle cx="19" cy="30" r="2.5" fill="#1E293B"/><circle cx="29" cy="30" r="2.5" fill="#1E293B"/>
+      <ellipse cx="24" cy="37" rx="3" ry="2.5" fill="#DC2626"/>
+      <text x="24" y="8" font-size="12" text-anchor="middle">👑</text>
+    </g>
+
+    <!-- ================= BABY 4 (Green Swaddle) ================= -->
+    <g transform="translate(185, 35)">
+      <ellipse cx="22" cy="60" rx="18" ry="24" fill="#4ADE80" stroke="#16A34A" stroke-width="2"/>
+      <circle cx="22" cy="32" r="16" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+      <circle cx="12" cy="36" r="4" fill="#FDA4AF"/>
+      <circle cx="32" cy="36" r="4" fill="#FDA4AF"/>
+      <path d="M22 16 Q25 11 26 14" fill="none" stroke="#331A05" stroke-width="2"/>
+      <!-- Yawning cute face -->
+      <circle cx="17" cy="29" r="2" fill="#1E293B"/><circle cx="27" cy="29" r="2" fill="#1E293B"/>
+      <!-- Little 'O' yawn -->
+      <circle cx="22" cy="36" r="3.5" fill="#991B1B"/>
+    </g>
+
+    <!-- ================= BABY 5 (Purple Swaddle) ================= -->
+    <g transform="translate(235, 40)">
+      <ellipse cx="22" cy="55" rx="18" ry="24" fill="#C084FC" stroke="#9333EA" stroke-width="2"/>
+      <circle cx="22" cy="30" r="16" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.8"/>
+      <circle cx="12" cy="34" r="4" fill="#FDA4AF"/>
+      <circle cx="32" cy="34" r="4" fill="#FDA4AF"/>
+      <path d="M22 14 Q20 9 18 12" fill="none" stroke="#331A05" stroke-width="2"/>
+      <path d="M16 28 Q19 24 22 28" fill="none" stroke="#1E293B" stroke-width="2"/>
+      <path d="M24 28 Q27 24 30 28" fill="none" stroke="#1E293B" stroke-width="2"/>
+      <path d="M19 34 Q22 38 25 34" fill="none" stroke="#DC2626" stroke-width="1.5"/>
+      <!-- Tiny baby arm peeking out waving -->
+      <circle cx="38" cy="46" r="4" fill="#FFEDD5" stroke="#1E293B" stroke-width="1"/>
+    </g>
+
+    <!-- Bassinet Label -->
+    <rect x="75" y="125" width="160" height="24" rx="6" fill="#F59E0B"/>
+    <text x="155" y="142" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">5 THIÊN THẦN MỈM MỈN 💖</text>
+  </g>
+
+  <!-- Child ("Tôi") Cheering in Awe on Right -->
+  <g id="child-cheering" transform="translate(520, 180)">
+    <ellipse cx="40" cy="130" rx="35" ry="8" fill="#000000" opacity="0.2"/>
+    <ellipse cx="40" cy="85" rx="22" ry="26" fill="#38BDF8" stroke="#0284C7" stroke-width="2.5"/>
+    <ellipse cx="40" cy="115" rx="14" ry="12" fill="#1E3A8A"/>
+    <!-- Arms raised in celebration -->
+    <path d="M20 80 Q5 50 15 35" fill="none" stroke="#38BDF8" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="15" cy="35" r="7" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M60 80 Q75 50 65 35" fill="none" stroke="#38BDF8" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="65" cy="35" r="7" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <!-- Head with star eyes 🤩 -->
+    <circle cx="40" cy="45" r="22" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M20 40 C18 15 62 15 60 40 Z" fill="#292524"/>
+    <!-- Big star sparkles in eyes -->
+    <text x="27" y="47" font-size="12" text-anchor="middle">⭐</text>
+    <text x="50" y="47" font-size="12" text-anchor="middle">⭐</text>
+    <!-- Big happy laughing mouth -->
+    <path d="M32 52 Q40 64 48 52 Z" fill="#BE123C" stroke="#1E293B" stroke-width="1.5"/>
+    <circle cx="28" cy="50" r="3" fill="#FCA5A5"/>
+    <circle cx="52" cy="50" r="3" fill="#FCA5A5"/>
+  </g>
+
+  <!-- Speech Bubble: Child ("Tôi") -->
+  <g filter="url(#shadowH4)">
+    <path d="M380 30 Q380 10 460 10 L600 10 Q630 10 630 35 Q630 65 560 65 L520 65 L505 90 L510 65 L440 65 Q380 65 380 30 Z" fill="#FEFCE8" stroke="#EAB308" stroke-width="2.5"/>
+    <text x="505" y="32" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="900" fill="#854D0E" text-anchor="middle">"OA! CON CÓ TẬN 5 ĐỨA EM!"</text>
+    <text x="505" y="52" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#A16207" text-anchor="middle">"Bé nào cũng mỉm mỉn cưng xỉu luôn! 💖"</text>
+  </g>
+
+  <!-- Speech Bubble: Mom -->
+  <g filter="url(#shadowH4)">
+    <path d="M30 30 Q30 10 100 10 L280 10 Q320 10 320 35 Q320 65 240 65 L180 65 L160 90 L165 65 L80 65 Q30 65 30 30 Z" fill="#FFF1F2" stroke="#F43F5E" stroke-width="2.5"/>
+    <text x="175" y="32" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="900" fill="#BE123C" text-anchor="middle">"Bõ công mẹ hét rung cả viện!"</text>
+    <text x="175" y="52" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#9F1239" text-anchor="middle">"Chào mừng 5 thiên thần của mẹ! 🥰"</text>
+  </g>
+
+  <!-- Panel Header Banner -->
+  <rect x="20" y="16" width="250" height="32" rx="8" fill="#1E293B"/>
+  <text x="145" y="37" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#F472B6" text-anchor="middle">★ CẢNH 4: HẠ SINH 5 BÉ MỈM MỈN</text>
+
+  <!-- Caption at bottom -->
+  <rect x="25" y="402" width="600" height="34" rx="8" fill="#0F172A" opacity="0.85"/>
+  <text x="325" y="424" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#F8FAFC" text-anchor="middle">Sau tiếng hét bão táp, mẹ hạ sinh thành công trọn vẹn 5 thiên thần nhỏ mỉm mỉn siêu đáng yêu!</text>
+</svg>

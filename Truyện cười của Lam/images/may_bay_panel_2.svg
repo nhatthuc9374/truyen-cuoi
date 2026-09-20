@@ -1,0 +1,185 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyDay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#BAE6FD"/>
+    </linearGradient>
+    <linearGradient id="cabinP2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="60%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <radialGradient id="belly160" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FDA4AF"/>
+      <stop offset="60%" stop-color="#FB7185"/>
+      <stop offset="100%" stop-color="#E11D48"/>
+    </radialGradient>
+    <filter id="shadowP2" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="3" dy="5" stdDeviation="5" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#cabinP2)"/>
+
+  <!-- Airplane Oval Window with Fluffy Clouds -->
+  <g transform="translate(60, 80)">
+    <rect x="0" y="0" width="140" height="230" rx="70" fill="#0284C7" stroke="#CBD5E1" stroke-width="10"/>
+    <rect x="8" y="8" width="124" height="214" rx="62" fill="url(#skyDay)"/>
+    <ellipse cx="45" cy="150" rx="35" ry="20" fill="#FFFFFF" opacity="0.9"/>
+    <ellipse cx="80" cy="140" rx="42" ry="24" fill="#FFFFFF" opacity="0.95"/>
+    <ellipse cx="110" cy="155" rx="30" ry="18" fill="#FFFFFF" opacity="0.9"/>
+    <circle cx="100" cy="60" r="16" fill="#FEF08A"/>
+  </g>
+
+  <!-- Overhead bins and lights -->
+  <path d="M0 60 Q600 40 1200 60 L1200 75 Q600 55 0 75 Z" fill="#94A3B8"/>
+  <line x1="0" y1="380" x2="1200" y2="380" stroke="#CBD5E1" stroke-width="3"/>
+
+  <!-- Top Banner -->
+  <g filter="url(#shadowP2)">
+    <rect x="150" y="14" width="900" height="52" rx="26" fill="#2563EB" stroke="#FFFFFF" stroke-width="3"/>
+    <text x="600" y="48" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="900" fill="#FFFFFF" text-anchor="middle">
+      💺 CẢNH 2: NỐI 3 ĐOẠN DÂY AN TOÀN &amp; CHIẾC BÀN ĂN MINI CHÀO THUA! 🍹
+    </text>
+  </g>
+
+  <!-- Big Luxury Airplane First-Class Seat -->
+  <g transform="translate(180, 200)" filter="url(#shadowP2)">
+    <rect x="0" y="60" width="160" height="420" rx="30" fill="#1E3A8A" stroke="#3B82F6" stroke-width="4"/>
+    <ellipse cx="80" cy="140" rx="65" ry="50" fill="#FFFFFF" stroke="#93C5FD" stroke-width="3"/>
+    <rect x="40" y="320" width="460" height="180" rx="30" fill="#1D4ED8" stroke="#1E40AF" stroke-width="4"/>
+  </g>
+
+  <!-- MOTHER WITH GIANT 160CM ROUND BELLY -->
+  <g transform="translate(230, 220)" filter="url(#shadowP2)">
+    <!-- Body in yellow floral maternity dress -->
+    <path d="M 40 160 Q 20 280 60 400 L 260 400 Q 280 280 220 160 Z" fill="#FEF08A" stroke="#EAB308" stroke-width="3"/>
+
+    <!-- ENORMOUS 160CM ROUND PREGNANT BELLY -->
+    <ellipse cx="230" cy="330" rx="175" ry="140" fill="url(#belly160)" stroke="#BE123C" stroke-width="5"/>
+    <ellipse cx="180" cy="270" rx="55" ry="25" fill="#FFFFFF" opacity="0.35"/>
+
+    <!-- Floral Patterns on Belly Dress -->
+    <circle cx="150" cy="310" r="10" fill="#FEF08A"/><circle cx="150" cy="310" r="4" fill="#F97316"/>
+    <circle cx="210" cy="370" r="12" fill="#FEF08A"/><circle cx="210" cy="370" r="5" fill="#F97316"/>
+    <circle cx="270" cy="280" r="10" fill="#FEF08A"/><circle cx="270" cy="280" r="4" fill="#F97316"/>
+    <circle cx="310" cy="340" r="11" fill="#FEF08A"/><circle cx="310" cy="340" r="4" fill="#F97316"/>
+
+    <!-- 3 SEATBELT EXTENSIONS CONNECTED AROUND THE BELLY -->
+    <path d="M 60 380 Q 230 450 395 360" stroke="#FBBF24" stroke-width="26" fill="none" stroke-linecap="round"/>
+    <path d="M 60 380 Q 230 450 395 360" stroke="#000000" stroke-width="4" stroke-dasharray="10,8" fill="none"/>
+    <!-- Metal Buckles 1, 2, 3 -->
+    <rect x="130" y="392" width="34" height="28" rx="6" fill="#94A3B8" stroke="#334155" stroke-width="2.5"/>
+    <rect x="215" y="408" width="34" height="28" rx="6" fill="#94A3B8" stroke="#334155" stroke-width="2.5"/>
+    <rect x="300" y="390" width="34" height="28" rx="6" fill="#94A3B8" stroke="#334155" stroke-width="2.5"/>
+    <!-- Seatbelt tag -->
+    <rect x="160" y="445" width="160" height="30" rx="8" fill="#DC2626"/>
+    <text x="240" y="466" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="900" fill="#FFFFFF" text-anchor="middle">⚡ NỐI 3 DÂY PHỤ ⚡</text>
+
+    <!-- Mother's Head & Happy Expression -->
+    <circle cx="120" cy="95" r="52" fill="#FFF1EE"/>
+    <!-- Hair -->
+    <path d="M 65 95 Q 120 30 175 95 Q 170 55 120 45 Q 75 55 65 95 Z" fill="#451A03"/>
+    <path d="M 62 100 Q 50 150 70 180 Q 80 140 75 100 Z" fill="#451A03"/>
+    <path d="M 175 100 Q 185 150 168 180 Q 160 140 168 100 Z" fill="#451A03"/>
+    <circle cx="70" cy="70" r="12" fill="#F43F5E"/><circle cx="70" cy="70" r="5" fill="#FEF08A"/>
+
+    <!-- Happy Eyes -->
+    <path d="M 85 90 Q 98 80 110 90" stroke="#1E293B" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <path d="M 130 90 Q 143 80 155 90" stroke="#1E293B" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <circle cx="88" cy="102" r="9" fill="#FDA4AF"/>
+    <circle cx="152" cy="102" r="9" fill="#FDA4AF"/>
+    <path d="M 108 108 Q 120 120 132 108" stroke="#BE123C" stroke-width="3.5" fill="#E11D48" stroke-linecap="round"/>
+
+    <!-- Loving Arms caressing the belly -->
+    <path d="M 70 170 Q 100 270 180 275" stroke="#FED7AA" stroke-width="24" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- STUCK TRAY TABLE (BÀN ĂN BỊ BỤNG KẸT CHẶT KHÔNG HẠ ĐƯỢC) -->
+  <g transform="translate(470, 390)" filter="url(#shadowP2)">
+    <!-- Metal Arm -->
+    <rect x="0" y="0" width="16" height="110" rx="4" fill="#64748B" transform="rotate(-35 0 0)"/>
+    <!-- Foldable Table Stuck Upwards -->
+    <rect x="-20" y="30" width="130" height="24" rx="6" fill="#CBD5E1" stroke="#475569" stroke-width="3" transform="rotate(-28 -20 30)"/>
+    <rect x="2" y="-10" width="150" height="28" rx="8" fill="#EF4444"/>
+    <text x="77" y="9" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">❌ BÀN ĂN KẸT CỨNG!</text>
+  </g>
+
+  <!-- PRETTY FLIGHT ATTENDANT (TIẾP VIÊN TRƯỞNG ÂN CẦN PHỤC VỤ) -->
+  <g transform="translate(800, 180)" filter="url(#shadowP2)">
+    <!-- Body in Flight Attendant Uniform -->
+    <path d="M 40 150 L 0 380 L 170 380 L 130 150 Z" fill="#0284C7" stroke="#0369A1" stroke-width="3"/>
+    <!-- White shirt collar & Silk neck scarf -->
+    <polygon points="65,150 85,190 105,150" fill="#FFFFFF"/>
+    <!-- Coral red silk scarf -->
+    <polygon points="78,160 85,195 92,160" fill="#F43F5E"/>
+    <circle cx="85" cy="190" r="7" fill="#F59E0B"/>
+    <polygon points="80,195 72,225 85,210" fill="#F43F5E"/>
+    <polygon points="90,195 98,225 85,210" fill="#F43F5E"/>
+
+    <!-- Flight Attendant Head -->
+    <circle cx="85" cy="95" r="48" fill="#FFF1EE"/>
+    <!-- Neat stewardess hairstyle with hair bun -->
+    <path d="M 38 90 Q 85 30 132 90 Q 125 50 85 45 Q 45 50 38 90 Z" fill="#1E293B"/>
+    <!-- Side bangs -->
+    <path d="M 38 90 Q 32 140 48 160 Q 55 125 48 95 Z" fill="#1E293B"/>
+    <!-- Chic Side Bun with gold net -->
+    <circle cx="138" cy="70" r="22" fill="#1E293B"/>
+    <circle cx="138" cy="70" r="16" fill="none" stroke="#F59E0B" stroke-width="2"/>
+
+    <!-- Stewardess Cap -->
+    <ellipse cx="85" cy="52" rx="36" ry="12" fill="#0284C7"/>
+    <rect x="75" y="44" width="20" height="8" rx="2" fill="#F59E0B"/>
+
+    <!-- Friendly big sparkling eyes -->
+    <ellipse cx="68" cy="95" rx="7" ry="9" fill="#0F172A"/>
+    <circle cx="70" cy="92" r="2.5" fill="#FFFFFF"/>
+    <ellipse cx="102" cy="95" rx="7" ry="9" fill="#0F172A"/>
+    <circle cx="104" cy="92" r="2.5" fill="#FFFFFF"/>
+    <circle cx="60" cy="105" r="7" fill="#FDA4AF"/>
+    <circle cx="110" cy="105" r="7" fill="#FDA4AF"/>
+    <!-- Warm smile -->
+    <path d="M 75 112 Q 85 124 95 112" stroke="#BE123C" stroke-width="3" fill="#E11D48" stroke-linecap="round"/>
+
+    <!-- Hands holding tray with orange juice and fruit -->
+    <path d="M 30 170 Q -10 260 40 270" stroke="#0284C7" stroke-width="22" stroke-linecap="round" fill="none"/>
+    <circle cx="40" cy="270" r="12" fill="#FED7AA"/>
+
+    <!-- Service Tray -->
+    <g transform="translate(-80, 240)">
+      <rect x="0" y="20" width="160" height="14" rx="5" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2"/>
+      <!-- Glass of Orange juice with straw and orange slice -->
+      <polygon points="35,20 28,-25 62,-25 55,20" fill="#F97316" stroke="#FFFFFF" stroke-width="2"/>
+      <ellipse cx="45" cy="-25" rx="17" ry="6" fill="#FDBA74"/>
+      <!-- Straw -->
+      <line x1="50" y1="-25" x2="65" y2="-48" stroke="#10B981" stroke-width="4" stroke-linecap="round"/>
+      <!-- Orange slice -->
+      <path d="M 28 -25 A 14 14 0 0 1 42 -38 Z" fill="#F59E0B"/>
+      <!-- Bowl of fresh fruits -->
+      <ellipse cx="110" cy="18" rx="30" ry="12" fill="#FEF08A" stroke="#EAB308" stroke-width="2"/>
+      <circle cx="100" cy="8" r="8" fill="#EF4444"/>
+      <circle cx="115" cy="5" r="9" fill="#84CC16"/>
+      <circle cx="125" cy="9" r="7" fill="#8B5CF6"/>
+    </g>
+  </g>
+
+  <!-- SPEECH BUBBLE FROM STEWARDESS -->
+  <g transform="translate(420, 80)" filter="url(#shadowP2)">
+    <rect x="0" y="0" width="530" height="96" rx="20" fill="#FFFFFF" stroke="#0284C7" stroke-width="4"/>
+    <polygon points="410,96 440,125 390,96" fill="#FFFFFF"/>
+    <path d="M 390 96 L 440 125 L 410 96" stroke="#0284C7" stroke-width="4"/>
+    <line x1="390" y1="96" x2="410" y2="96" stroke="#FFFFFF" stroke-width="6"/>
+
+    <text x="265" y="32" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#0369A1" text-anchor="middle">
+      👩‍✈️ TIẾP VIÊN TRƯỞNG ÂN CẦN PHỤC VỤ:
+    </text>
+    <text x="265" y="58" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      “Mẹ bầu cứ ngả lưng nhé! Nối 3 dây an toàn rồi ạ!”
+    </text>
+    <text x="265" y="82" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="900" fill="#EA580C" text-anchor="middle">
+      “Khay không hạ được thì em bón nước cam và trái cây tận nơi! 🍹✨”
+    </text>
+  </g>
+</svg>
