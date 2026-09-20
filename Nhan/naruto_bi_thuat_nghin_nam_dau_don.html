@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naruto: Bí Thuật Nghìn Năm Đau Đớn - Truyện Tranh Hài HTML</title>
+  <style>
+    :root {
+      --naruto-orange: #f97316;
+      --naruto-dark: #ea580c;
+      --konoha-blue: #2563eb;
+      --leaf-green: #16a34a;
+      --bg: #0b0f19;
+      --card-bg: #161f33;
+      --card-border: #263352;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.6;
+    }
+
+    /* Top Navigation */
+    .nav-bar {
+      width: 100%;
+      background: #111827;
+      border-bottom: 1px solid var(--card-border);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 0.4rem 0.9rem;
+      border-radius: 8px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      transition: all 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      background: rgba(56, 189, 248, 0.2);
+      color: #fff;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin: 2.5rem 1rem 1.5rem 1rem;
+      max-width: 900px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #f97316, #ef4444);
+      color: white;
+      padding: 0.35rem 1.25rem;
+      border-radius: 9999px;
+      font-weight: 800;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 15px rgba(249, 115, 22, 0.35);
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 900;
+      background: linear-gradient(to right, #fbbf24, #f97316, #ef4444);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.75rem;
+    }
+
+    p.subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    /* Characters Section */
+    .char-section {
+      width: 100%;
+      max-width: 1050px;
+      margin: 1.5rem auto;
+      padding: 0 1rem;
+    }
+
+    .char-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .char-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 1.25rem;
+      font-size: 0.92rem;
+    }
+
+    .char-name {
+      font-weight: 700;
+      color: #fbbf24;
+      margin-bottom: 0.35rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* Video Toggle / Player Box */
+    .media-box {
+      width: 100%;
+      max-width: 1050px;
+      margin: 1.5rem auto;
+      padding: 0 1rem;
+    }
+
+    .video-card {
+      background: #111827;
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 1.25rem;
+      text-align: center;
+    }
+
+    .video-card video {
+      width: 100%;
+      max-height: 480px;
+      border-radius: 12px;
+      background: #000;
+      margin-top: 1rem;
+    }
+
+    /* View Controls */
+    .controls {
+      display: flex;
+      gap: 0.75rem;
+      margin: 1.5rem auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-mode {
+      padding: 0.6rem 1.2rem;
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      background: var(--card-bg);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-mode:hover {
+      border-color: var(--naruto-orange);
+      color: #fbbf24;
+      transform: translateY(-2px);
+    }
+
+    .btn-mode.active {
+      background: linear-gradient(135deg, #ea580c, #c2410c);
+      color: #fff;
+      border-color: #ea580c;
+      box-shadow: 0 4px 12px rgba(234, 88, 12, 0.4);
+    }
+
+    /* Comic Container */
+    .comic-container {
+      width: 100%;
+      max-width: 1100px;
+      padding: 0 1rem;
+      margin-bottom: 2rem;
+      transition: all 0.3s ease;
+    }
+
+    .grid-mode {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .strip-mode {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .slide-mode .comic-card {
+      display: none;
+    }
+
+    .slide-mode .comic-card.current {
+      display: block;
+      animation: fadeIn 0.3s ease;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .comic-card {
+      background: var(--card-bg);
+      border-radius: 18px;
+      padding: 1.25rem;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.2s ease;
+    }
+
+    .comic-card:hover {
+      border-color: rgba(249, 115, 22, 0.5);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.85rem;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .panel-tag {
+      font-size: 0.8rem;
+      font-weight: 800;
+      background: rgba(249, 115, 22, 0.15);
+      color: #fbbf24;
+      padding: 0.3rem 0.75rem;
+      border-radius: 8px;
+      border: 1px solid rgba(249, 115, 22, 0.3);
+    }
+
+    .panel-caption {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #e2e8f0;
+    }
+
+    .img-wrapper {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #000;
+      margin-bottom: 1rem;
+    }
+
+    .img-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .img-wrapper:hover img {
+      transform: scale(1.02);
+    }
+
+    .dialogue-box {
+      background: rgba(15, 23, 42, 0.7);
+      border-left: 4px solid var(--naruto-orange);
+      padding: 1rem;
+      border-radius: 0 10px 10px 0;
+      font-size: 0.925rem;
+      line-height: 1.6;
+    }
+
+    .dialogue-box.danger {
+      border-left-color: #ef4444;
+      background: rgba(239, 68, 68, 0.08);
+    }
+
+    .dialogue-box.success {
+      border-left-color: #10b981;
+      background: rgba(16, 185, 129, 0.08);
+    }
+
+    .dialogue-box.warning {
+      border-left-color: #f59e0b;
+      background: rgba(245, 158, 11, 0.08);
+    }
+
+    /* Slideshow navigation */
+    .slide-nav {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      gap: 1.25rem;
+      margin: 1.5rem auto;
+    }
+
+    .slide-mode-active .slide-nav {
+      display: flex;
+    }
+
+    .slide-counter {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #fbbf24;
+    }
+
+    /* Moral Section */
+    .moral-section {
+      width: 100%;
+      max-width: 1050px;
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 1.75rem;
+      margin: 2rem auto;
+      border: 1px dashed rgba(249, 115, 22, 0.4);
+    }
+
+    .moral-section h3 {
+      color: #fbbf24;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .moral-section ul {
+      list-style-type: none;
+    }
+
+    .moral-section li {
+      margin-bottom: 0.75rem;
+      padding-left: 1.75rem;
+      position: relative;
+      font-size: 0.95rem;
+      color: #cbd5e1;
+    }
+
+    .moral-section li::before {
+      content: '👉';
+      position: absolute;
+      left: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      border-top: 1px solid var(--card-border);
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      width: 100%;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 640px) {
+      .grid-mode {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="nav-bar">
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn">← Quay lại Kho Nhan</a>
+      <a href="../index.html" class="nav-btn">🏠 Trang Chủ Dự Án</a>
+    </div>
+    <span style="color: #94a3b8; font-size: 0.85rem;">Truyện Cười HTML #01</span>
+  </nav>
+
+  <!-- Title Header -->
+  <header>
+    <div class="badge">🍃 Naruto Live-Action • 4-Koma Comedy</div>
+    <h1>🎭 Naruto: Bí Thuật Nghìn Năm Đau Đớn</h1>
+    <p class="subtitle">Dựa trên phân cảnh kinh điển nhất làng Lá: Bài kiểm tra cướp chuông của Đội 7 (Team 7 Bell Test)!</p>
+  </header>
+
+  <!-- Hồ Sơ Nhân Vật -->
+  <section class="char-section">
+    <div class="char-grid">
+      <div class="char-card">
+        <div class="char-name">🍜 Uzumaki Naruto (Genin siêu quậy)</div>
+        <div style="color: var(--text-muted);">Cậu nhóc tóc vàng áo cam, luôn mồm gáy to: <em>"Tôi nhất định sẽ cướp chuông và trở thành Hokage vĩ đại nhất làng Lá!"</em>.</div>
+      </div>
+      <div class="char-card">
+        <div class="char-name">📖 Hatake Kakashi (Jonin chán đời)</div>
+        <div style="color: var(--text-muted);">Đội trưởng Đội 7, tay lúc nào cũng cầm cuốn tiểu thuyết người lớn <em>"Icha Icha Tactics"</em>, chiến đấu chỉ bằng một tay.</div>
+      </div>
+      <div class="char-card">
+        <div class="char-name">🍃 Sasuke & Sakura (Đội 7)</div>
+        <div style="color: var(--text-muted);">Hai đồng đội trốn trong bụi rậm, từ hồi hộp theo dõi chuyển sang "xấu hổ thay cho đồng đội"!</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Hoạt Hình (Tùy chọn) -->
+  <section class="media-box">
+    <div class="video-card">
+      <h4 style="color: #fbbf24; margin-bottom: 0.35rem;">🎬 Phiên Bản Hoạt Hình Điện Ảnh (Video 2.5D Motion)</h4>
+      <p style="color: var(--text-muted); font-size: 0.9rem;">Xem trực tiếp video có lồng tiếng diễn cảm và hiệu ứng âm thanh:</p>
+      <video controls poster="images/naruto_intro.jpg">
+        <source src="../Truyện cười của Nhân/naruto_nghin_nam_dau_don.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ thẻ video.
+      </video>
+    </div>
+  </section>
+
+  <!-- Chế độ hiển thị -->
+  <div class="controls">
+    <button class="btn-mode active" onclick="setMode('grid')">🔲 Chế độ Lưới (2x2)</button>
+    <button class="btn-mode" onclick="setMode('strip')">📜 Dải Dọc (Webtoon)</button>
+    <button class="btn-mode" onclick="setMode('slide')">📽️ Từng Khung Hình</button>
+  </div>
+
+  <!-- Comic Strip Container -->
+  <main class="comic-container grid-mode" id="comicContainer">
+
+    <!-- KHUNG 1 -->
+    <article class="comic-card current" data-slide="1">
+      <div class="card-header">
+        <span class="panel-tag">KHUNG 1</span>
+        <span class="panel-caption">Thánh gáy xuất trận — "Hôm nay tôi sẽ hạ gục thầy!" 😤🔥</span>
+      </div>
+      <div class="img-wrapper">
+        <img src="images/naruto_1.jpg" alt="Naruto Khung 1 - Thách đấu thầy Kakashi">
+      </div>
+      <div class="dialogue-box warning">
+        <p><strong>Bối cảnh:</strong> Khu rừng tập luyện làng Lá ngập tràn ánh nắng, tiếng ve kêu râm ran giữa trưa hè.</p>
+        <p style="margin-top: 0.5rem;"><strong>📢 Naruto:</strong> <em>"Này ông thầy tóc bạc kia! Nhìn cho kỹ đây, tôi sẽ không thèm trốn chui trốn nhủi như hai đứa kia đâu! Một mình tôi sẽ đập tơi bời thầy và cướp lấy hai chiếc chuông đó, rồi thầy sẽ phải quỳ xuống công nhận tôi là đệ nhất Hokage tương lai!"</em></p>
+        <p style="margin-top: 0.5rem; color: var(--text-muted);">👉 Đáp lại lời thách thức đanh thép ấy, thầy Kakashi thậm chí còn chẳng buồn liếc mắt nhìn, một tay thản nhiên cuộn cuốn bí kíp chuẩn bị lôi "vũ khí bí mật" ra! 🤦‍♂️</p>
+      </div>
+    </article>
+
+    <!-- KHUNG 2 -->
+    <article class="comic-card" data-slide="2">
+      <div class="card-header">
+        <span class="panel-tag">KHUNG 2</span>
+        <span class="panel-caption">Hóa giải cấm thuật — "Ấn Hổ?! Hỏa độn tối thượng sao?!" 😱📖</span>
+      </div>
+      <div class="img-wrapper">
+        <img src="images/naruto_2.jpg" alt="Naruto Khung 2 - Kakashi kết ấn Hổ">
+      </div>
+      <div class="dialogue-box danger">
+        <p><strong>Căng thẳng tột độ:</strong> Thầy Kakashi một tay vẫn đang chăm chú lật cuốn tiểu thuyết cam <em>"Icha Icha Tactics"</em>, tay còn lại bất ngờ kết thành một thế thủ hai ngón tay chắp chặt giơ thẳng lên trời — <strong>Ấn Hổ (Tiger Seal)</strong>!</p>
+        <p style="margin-top: 0.5rem;"><strong>🥶 Naruto:</strong> <em>"C... cái gì thế kia?! Kết ấn Hổ ngay trước mặt đối thủ?! Đây chẳng phải là ấn chú cơ bản của Hỏa Độn Hào Hỏa Cầu Thuật sao?! Không lẽ thầy ấy định thiêu sống mình thật đấy à?! Chạy mau... hay là lao vào đây?!"</em></p>
+        <p style="margin-top: 0.5rem; color: var(--text-muted);">👉 Sasuke trong bụi cây toát mồ hôi hột: <em>"Một Jonin mà lại dùng nhẫn thuật sát thương khủng khiếp như thế lên tân binh sao?!"</em>.</p>
+      </div>
+    </article>
+
+    <!-- KHUNG 3 -->
+    <article class="comic-card" data-slide="3">
+      <div class="card-header">
+        <span class="panel-tag">KHUNG 3</span>
+        <span class="panel-caption">Bí thuật Konoha — "NGHÌN NĂM ĐAU ĐỚN!!" 💥⚡👉🍑</span>
+      </div>
+      <div class="img-wrapper">
+        <img src="images/naruto_3.jpg" alt="Naruto Khung 3 - Sennen Goroshi">
+      </div>
+      <div class="dialogue-box danger">
+        <p><strong>XOẸT!!</strong> Không phải Hỏa Độn, cũng chẳng phải Lôi Độn! Thầy Kakashi đã dịch chuyển thuấn thân ra ngay phía sau lưng Naruto tự lúc nào. Bốn ngón tay duỗi thẳng tắp, tập trung toàn bộ chakra nhắm chuẩn xác vào "yếu huyệt chí mạng":</p>
+        <p style="margin-top: 0.5rem;"><strong>⚡ Thầy Kakashi:</strong> <em>"Bí Thuật Thể Thuật Tối Thượng Làng Lá: <strong>THỌC HUYẾT NGHÌN NĂM ĐAU ĐỚN</strong> (Sennen Goroshi)!!"</em> 👉💥🍑</p>
+        <p style="margin-top: 0.5rem;"><strong>PHẬP!!</strong> Hai ngón tay đâm thẳng với vận tốc âm thanh! Mắt Naruto lồi ra, đồng tử rung bần bật, hàm dưới rớt xuống đất trong sự bàng hoàng và tê tái tột cùng! 😱⚡</p>
+      </div>
+    </article>
+
+    <!-- KHUNG 4 -->
+    <article class="comic-card" data-slide="4">
+      <div class="card-header">
+        <span class="panel-tag">KHUNG 4</span>
+        <span class="panel-caption">Cất cánh vào quỹ đạo — Nỗi nhục của Đội 7! 🚀🌊🤦‍♂️</span>
+      </div>
+      <div class="img-wrapper">
+        <img src="images/naruto_4.jpg" alt="Naruto Khung 4 - Naruto phóng lên trời rơi xuống suối">
+      </div>
+      <div class="dialogue-box success">
+        <p><strong>VÚTTTTTT!!</strong> Cú thọc ngón tay uy lực kinh hoàng đẩy Naruto phóng thẳng lên không trung như quả tên lửa liên lục địa! Cậu nhóc ôm mông gào khóc thảm thiết giữa trời trước khi rơi tưng xuống lòng suối:</p>
+        <p style="margin-top: 0.5rem;"><strong>🚀 Naruto:</strong> <em>"Á Á Á Á Á!! ĐAU QUÁ MẸ ƠI!! CHÁY MÔNG TÔI RỒI!! ÔNG THẦY QUÁI ĐÃNG!!"</em> 😭🌊</p>
+        <p style="margin-top: 0.5rem; color: var(--text-muted);">👉 <strong>Sasuke</strong> ôm trán bất lực: <em>"Hai tên ngốc này đang làm trò gì thế..."</em> 🤦‍♂️ | <strong>Sakura</strong> bịt chặt miệng ngăn tiếng cười sặc sụa! 🤭 | <strong>Kakashi</strong> thong thả lật tiếp trang sách cam! 📖✨</p>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Slideshow navigation -->
+  <div class="slide-nav" id="slideNav">
+    <button class="btn-mode" onclick="prevSlide()">◀ Khung Trước</button>
+    <span class="slide-counter" id="slideCounter">1 / 4</span>
+    <button class="btn-mode" onclick="nextSlide()">Khung Kế Tiếp ▶</button>
+  </div>
+
+  <!-- Bài học nhẫn giả -->
+  <section class="moral-section">
+    <h3>💡 Bài Học Nhẫn Giả Sâu Sắc</h3>
+    <ul>
+      <li><strong>Đừng bao giờ để lộ sơ hở phía sau lưng:</strong> Dù đối thủ có cầm sách đọc truyện tranh, thì ngón tay của họ vẫn có thể biến thành tên lửa đưa bạn lên sao Hỏa! 🚀</li>
+      <li><strong>Cái tên kêu chưa chắc đã nguy hiểm:</strong> Tưởng đâu cấm thuật bão lửa hủy diệt thế giới, ai ngờ lại là bí thuật nhắm thẳng vào "bàn tọa"! 🍑</li>
+      <li><strong>Đừng bao giờ gáy sớm trước Jonin:</strong> Miệng vừa hét làm Hokage xong thì 3 giây sau đã cắm đầu uống nước suối làng Lá! 🍜😂</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Truyện Cười HTML &copy; 2026 - Tác giả: <strong>Nhân</strong> | Chúc bạn có những phút giây sảng khoái! 😄</p>
+  </footer>
+
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 4;
+    const container = document.getElementById('comicContainer');
+    const cards = document.querySelectorAll('.comic-card');
+    const counter = document.getElementById('slideCounter');
+    const slideNav = document.getElementById('slideNav');
+    const buttons = document.querySelectorAll('.controls .btn-mode');
+
+    function setMode(mode) {
+      container.className = 'comic-container ' + mode + '-mode';
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+
+      if (mode === 'slide') {
+        slideNav.style.display = 'flex';
+        showSlide(currentSlide);
+      } else {
+        slideNav.style.display = 'none';
+        cards.forEach(card => {
+          card.style.display = 'flex';
+        });
+      }
+    }
+
+    function showSlide(index) {
+      cards.forEach(card => {
+        card.classList.remove('current');
+        card.style.display = 'none';
+      });
+      const targetCard = document.querySelector(`.comic-card[data-slide="${index}"]`);
+      if (targetCard) {
+        targetCard.classList.add('current');
+        targetCard.style.display = 'flex';
+      }
+      counter.textContent = `${index} / ${totalSlides}`;
+    }
+
+    function prevSlide() {
+      currentSlide = currentSlide > 1 ? currentSlide - 1 : totalSlides;
+      showSlide(currentSlide);
+    }
+
+    function nextSlide() {
+      currentSlide = currentSlide < totalSlides ? currentSlide + 1 : 1;
+      showSlide(currentSlide);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (container.classList.contains('slide-mode')) {
+        if (e.key === 'ArrowLeft') prevSlide();
+        if (e.key === 'ArrowRight') nextSlide();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -34,7 +34,7 @@ Nhan/
 
 | STT | Tên truyện | Tệp HTML | Thể loại / Ghi chú |
 | :---: | :--- | :--- | :--- |
-| 1 | *(Đang cập nhật...)* | `...` | *Sắp ra mắt* |
+| 1 | 🎭 [Naruto: Bí Thuật Nghìn Năm Đau Đớn](naruto_bi_thuat_nghin_nam_dau_don.html) | [`naruto_bi_thuat_nghin_nam_dau_don.html`](naruto_bi_thuat_nghin_nam_dau_don.html) | Hài hước 4-Koma, phong cách Live-Action |
 
 ---
 
