@@ -76,7 +76,7 @@
 ## ⭐ Đánh Giá & Góp Ý Câu Chuyện
 
 Bạn cảm thấy câu chuyện này thế nào? Hãy gửi ý kiến đóng góp và cảm nhận của bạn để tác giả hoàn thiện hơn nhé:
-👉 [**Gửi đánh giá và cảm nhận tại Google Form**](https://forms.gle/ufaBwJwsBajn33Lx7)
+👉 [**Gửi đánh giá và cảm nhận tại Google Form (Ca Sinh 4)**](https://forms.gle/kgyDdS2fyfdHYuoC6)
 
 ---
 
