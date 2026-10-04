@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎬 Rạp Chiếu Phim: Sự Cố Em Bé Chui Tọt Vào Bụng Mẹ Ở Siêu Thị (Bản Thu Studio Không Giật)</title>
+  <style>
+    :root {
+      --bg-dark: #080D1A;
+      --card-bg: #121A2D;
+      --accent-pink: #F43F5E;
+      --accent-cyan: #0284C7;
+      --accent-gold: #F59E0B;
+      --accent-green: #10B981;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --border: #1E293B;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 16px 50px;
+      overflow-x: hidden;
+    }
+
+    /* Top Navigation */
+    .top-nav {
+      width: 100%;
+      max-width: 1080px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--accent-green);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      transition: all 0.2s;
+    }
+
+    .nav-btn:hover {
+      background: rgba(16, 185, 129, 0.25);
+      color: #fff;
+      transform: translateX(-2px);
+    }
+
+    /* Header */
+    .header {
+      width: 100%;
+      max-width: 1080px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .title-group h1 {
+      font-size: 1.55rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #10B981 0%, #F59E0B 50%, #F43F5E 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-group p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+
+    .badge-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      color: #6EE7B7;
+      padding: 5px 12px;
+      border-radius: 9999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .badge.studio {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: rgba(56, 189, 248, 0.4);
+      color: #7DD3FC;
+    }
+
+    .badge.gold {
+      background: rgba(245, 158, 11, 0.15);
+      border-color: rgba(245, 158, 11, 0.4);
+      color: #FDE68A;
+    }
+
+    /* Cinema Video Player Container */
+    .player-wrapper {
+      width: 100%;
+      max-width: 1080px;
+      background: #020617;
+      border: 2px solid #1E293B;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 40px rgba(16, 185, 129, 0.18);
+      position: relative;
+    }
+
+    .screen-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 Cinema Ratio */
+      background: #000;
+      overflow: hidden;
+    }
+
+    #videoCanvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    /* Overlays inside screen */
+    .cinema-tag {
+      position: absolute;
+      top: 14px;
+      left: 16px;
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(8px);
+      padding: 5px 14px;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #34D399;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .watermark {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      color: rgba(255, 255, 255, 0.45);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* Subtitle banner on video */
+    .subtitle-wrapper {
+      position: absolute;
+      bottom: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 920px;
+      text-align: center;
+      z-index: 20;
+      pointer-events: none;
+    }
+
+    .speaker-badge {
+      display: inline-block;
+      background: #10B981;
+      color: #0F172A;
+      font-weight: 900;
+      font-size: 0.82rem;
+      padding: 3px 12px;
+      border-radius: 8px;
+      margin-bottom: 6px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      transition: all 0.2s ease;
+    }
+
+    .subtitle-text {
+      background: rgba(15, 23, 42, 0.88);
+      backdrop-filter: blur(10px);
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border-radius: 12px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.5;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .subtitle-text.highlight {
+      transform: scale(1.02);
+      border-color: #F59E0B;
+    }
+
+    /* Controls Panel */
+    .controls-panel {
+      padding: 16px 20px;
+      background: #0F172A;
+      border-top: 1px solid #1E293B;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .progress-bar-container {
+      width: 100%;
+      height: 8px;
+      background: #1E293B;
+      border-radius: 4px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #10B981, #F59E0B);
+      border-radius: 4px;
+      width: 0%;
+      transition: width 0.08s linear;
+    }
+
+    .actions-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    button, .btn-link {
+      background: #1E293B;
+      color: #F8FAFC;
+      border: 1px solid #334155;
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+
+    button:hover, .btn-link:hover {
+      background: #334155;
+      border-color: #475569;
+      transform: translateY(-1px);
+    }
+
+    button.primary {
+      background: linear-gradient(135deg, #10B981, #059669);
+      border-color: #10B981;
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+    }
+
+    button.primary:hover {
+      background: linear-gradient(135deg, #34D399, #10B981);
+    }
+
+    .btn-link.success {
+      background: linear-gradient(135deg, #F59E0B, #D97706);
+      border-color: #F59E0B;
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);
+    }
+
+    .time-label {
+      font-family: monospace;
+      font-size: 0.9rem;
+      color: #94A3B8;
+      font-weight: 700;
+    }
+
+    /* Scene Jump Tabs */
+    .scene-tabs {
+      display: flex;
+      gap: 6px;
+      background: #0B0F19;
+      padding: 4px;
+      border-radius: 10px;
+      flex-wrap: wrap;
+    }
+
+    .scene-tabs button {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      border-radius: 7px;
+      background: transparent;
+      border: none;
+      color: #94A3B8;
+    }
+
+    .scene-tabs button:hover {
+      color: #F8FAFC;
+      background: #1E293B;
+    }
+
+    .scene-tabs button.active {
+      background: #10B981;
+      color: #0B111E;
+      font-weight: 800;
+    }
+
+    /* Notice Box */
+    .audio-notice {
+      margin-top: 18px;
+      width: 100%;
+      max-width: 1080px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 14px 18px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.9rem;
+      color: #A7F3D0;
+    }
+
+    /* 4 Scene Highlight Cards */
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      width: 100%;
+      max-width: 1080px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px -6px rgba(0,0,0,0.6);
+      border-color: #10B981;
+    }
+
+    .card img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 12px 14px;
+    }
+
+    .card h3 {
+      font-size: 0.95rem;
+      color: #F8FAFC;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .card p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* Recording Export Indicator */
+    .export-status {
+      display: none;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: #FDE68A;
+      font-weight: 700;
+    }
+
+    .export-status.recording {
+      display: inline-flex;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2.2rem 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hidden Native Master Audio Player (Studio 16kHz PCM Audio - Zero Stutter) -->
+  <audio id="masterAudio" preload="auto">
+    <source src="audio/sieu_thi_full_story.wav" type="audio/wav">
+  </audio>
+
+  <!-- Top Navigation -->
+  <div class="top-nav">
+    <a href="🍃 Sự Cố Em Bé Chui Tọt Vào Bụng Mẹ Ở Siêu Thị.md" class="nav-btn">
+      <span>📄</span> Mở Bài Viết Markdown
+    </a>
+    <a href="../Lam/index.html" class="nav-btn">
+      <span>🍃</span> Cổng Kho Truyện Lam
+    </a>
+    <a href="../index.html" class="nav-btn">
+      <span>🏠</span> Cổng Tổng Hợp
+    </a>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="title-group">
+      <h1>🎬 Rạp Chiếu Phim: Sự Cố Em Bé Chui Tọt Vào Bụng Mẹ Ở Siêu Thị</h1>
+      <p>Video hoạt hình 3D Pixar điện ảnh • Giọng đọc Studio mượt mà 100% không giật lag</p>
+    </div>
+    <div class="badge-bar">
+      <span class="badge studio">🎙️ Audio Studio Chuẩn Microsoft An</span>
+      <span class="badge gold">🌟 3D Pixar Sắc Nét</span>
+      <span class="badge">⚡ Mượt Mà 60 FPS</span>
+    </div>
+  </div>
+
+  <!-- Video Player Theater Box -->
+  <div class="player-wrapper">
+    <div class="screen-container">
+      <canvas id="videoCanvas" width="1280" height="720"></canvas>
+      
+      <!-- Video Screen Overlays -->
+      <div class="cinema-tag" id="sceneTag">CẢNH 1 / 4</div>
+      <div class="watermark">TRUYỆN CƯỜI LAM • 3D CINEMA</div>
+
+      <!-- Cinema Subtitles -->
+      <div class="subtitle-wrapper">
+        <div><span class="speaker-badge" id="speakerBadge">🎙️ Dẫn Chuyện</span></div>
+        <div class="subtitle-text" id="subtitleText">Bấm nút "Phát Phim" để bắt đầu trải nghiệm video hoạt hình điện ảnh mượt mà!</div>
+      </div>
+    </div>
+
+    <!-- Controls Panel -->
+    <div class="controls-panel">
+      <!-- Scrubbable progress bar -->
+      <div class="progress-bar-container" id="progressBar" onclick="seekClick(event)">
+        <div class="progress-bar-fill" id="progressFill"></div>
+      </div>
+
+      <div class="actions-bar">
+        <div class="btn-group">
+          <button class="primary" id="btnPlay" onclick="togglePlay()">▶ Phát Phim</button>
+          <button onclick="toggleMute()"><span id="muteIcon">🔊</span> Âm thanh: <span id="muteState">BẬT</span></button>
+          <button onclick="changeSpeed()">⚡ Tốc độ: <span id="speedVal">1.0x</span></button>
+          <span class="time-label" id="timeLabel">00:00 / 00:51</span>
+        </div>
+
+        <!-- Scene Jump Tabs -->
+        <div class="scene-tabs">
+          <button class="active" id="tab0" onclick="jumpToScene(0)">1. Dạo Siêu Thị</button>
+          <button id="tab1" onclick="jumpToScene(1)">2. Bụng To 120cm</button>
+          <button id="tab2" onclick="jumpToScene(2)">3. Nghi Dưa Hấu</button>
+          <button id="tab3" onclick="jumpToScene(3)">4. Tháo Chạy</button>
+        </div>
+
+        <div class="btn-group">
+          <button id="btnExport" class="btn-link success" onclick="exportVideo()">
+            📥 Xuất / Tải Video MP4
+          </button>
+          <span class="export-status" id="exportStatus">🔴 Đang ghi hình: <span id="recordPercent">0%</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio Notice -->
+  <div class="audio-notice">
+    <span style="font-size: 1.5rem;">✨</span>
+    <div>
+      <strong>Khắc phục triệt để lỗi giọng đọc giật:</strong> Video sử dụng bản thu âm thanh chất lượng cao <strong>Microsoft An (vi-VN)</strong> xuất xưởng chuẩn Studio và được nhúng trực tiếp. Giọng đọc phát liền mạch, trôi chảy, rõ từng chữ, không bị ngắt quãng hay giật lag.
+    </div>
+  </div>
+
+  <!-- 4 Scene Highlight Cards -->
+  <div class="story-grid">
+    <div class="card" onclick="jumpToScene(0)">
+      <img src="images/sieu_thi_p1.jpg" alt="Cảnh 1: Ba mẹ con dạo siêu thị">
+      <div class="card-content">
+        <h3>🛒 Cảnh 1: Ba Mẹ Con Dạo Siêu Thị (0:00 - 0:09)</h3>
+        <p>Mẹ diện đầm maxi vàng hoa nhí rộng thùng thình, cu Tí má bánh bao lon ton chạy nhảy bên cạnh xe đẩy hàng.</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="jumpToScene(1)">
+      <img src="images/sieu_thi_p2.jpg" alt="Cảnh 2: Cu Tí chui vào váy">
+      <div class="card-content">
+        <h3>⚡ Cảnh 2: Bụng Mẹ Phồng To 120cm (0:09 - 0:23)</h3>
+        <p>Cu Tí trốn tìm chui tọt vào trong váy mẹ, biến mẹ thành "bà bầu 9 tháng", cùi chỏ và chân bé thúc u lên từng cục!</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="jumpToScene(2)">
+      <img src="images/sieu_thi_p3.jpg" alt="Cảnh 3: Bảo vệ nghi giấu dưa hấu">
+      <div class="card-content">
+        <h3>🍉 Cảnh 3: Bác Bảo Vệ & Bàn Tay Vẫy Chào (0:23 - 0:37)</h3>
+        <p>Bác bảo vệ nghi giấu quả dưa hấu 5kg, bất thình lình bàn tay bé xíu thò ra khỏi cạp váy ngoe nguẩy chào!</p>
+      </div>
+    </div>
+
+    <div class="card" onclick="jumpToScene(3)">
+      <img src="images/sieu_thi_p4.jpg" alt="Cảnh 4: Mẹ bầu chạy marathon">
+      <div class="card-content">
+        <h3>🏃‍♀️ Cảnh 4: Màn Tháo Chạy Bão Táp (0:37 - 0:51)</h3>
+        <p>Mẹ một tay ôm "bụng bầu 15kg" phi nước đại lao thẳng ra cửa, cả siêu thị cười rần rần rúng động!</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Dự án Truyện Cười &copy; 2026 • <strong>Rạp Chiếu Phim Tương Tác 3D Pixar</strong> • Tác giả: <strong>Lam</strong></p>
+  </footer>
+
+  <script>
+    /* ==========================================================
+       1. TÀI NGUYÊN ẢNH VÀ HỆ THỐNG MASTER AUDIO KHÔNG GIẬT
+       ========================================================== */
+    const canvas = document.getElementById('videoCanvas');
+    const ctx = canvas.getContext('2d');
+    const masterAudio = document.getElementById('masterAudio');
+
+    const sceneImages = [
+      'images/sieu_thi_p1.jpg',
+      'images/sieu_thi_p2.jpg',
+      'images/sieu_thi_p3.jpg',
+      'images/sieu_thi_p4.jpg'
+    ];
+
+    const loadedImages = [];
+    let imagesReady = 0;
+
+    sceneImages.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+      img.onload = () => {
+        imagesReady++;
+        if (imagesReady === sceneImages.length) {
+          drawFrame(0);
+        }
+      };
+      loadedImages.push(img);
+    });
+
+    // Mốc thời gian tương ứng chính xác theo file audio 51.5s
+    const sceneCuts = [0, 9.4, 23.2, 37.7, 51.5];
+
+    const timeline = [
+      // CẢNH 1: DẠO SIÊU THỊ (0s - 9.4s)
+      {
+        startTime: 0,
+        endTime: 4.0,
+        sceneIndex: 0,
+        speaker: "🎙️ Dẫn Chuyện",
+        badgeColor: "#10B981",
+        text: "Chiều Chủ Nhật đẹp trời, mẹ diện đầm maxi hoa nhí màu vàng tươi rộng thùng thình, dẫn hai anh em dạo siêu thị mua sắm thực phẩm và đồ ăn vặt cho cả tuần."
+      },
+      {
+        startTime: 4.0,
+        endTime: 7.2,
+        sceneIndex: 0,
+        speaker: "👩 Mẹ Xinh Đẹp",
+        badgeColor: "#34D399",
+        text: "Mẹ cười tươi: “Hôm nay mẹ sẽ mua sườn non, tôm tươi và rau củ quả về nấu lẩu tẩm bổ cho cả nhà nhé! Hai anh em thích ăn gì cứ bỏ vào xe đẩy cho mẹ!”"
+      },
+      {
+        startTime: 7.2,
+        endTime: 9.4,
+        sceneIndex: 0,
+        speaker: "👶 Cu Tí",
+        badgeColor: "#38BDF8",
+        text: "Cu Tí nhảy chân sáo: “A, siêu thị mát lạnh to quá mẹ ơi! Kẹo mút với bim bim ở đâu ạ? Mẹ đi nhanh lên nào!”"
+      },
+
+      // CẢNH 2: CU TÍ CHUI VÀO VÁY - BỤNG TO 120CM (9.4s - 23.2s)
+      {
+        startTime: 9.4,
+        endTime: 14.5,
+        sceneIndex: 1,
+        speaker: "🎙️ Dẫn Chuyện",
+        badgeColor: "#10B981",
+        text: "Khi mẹ dừng lại chọn tháp dưa hấu năm ký, thấy vạt váy maxi rủ xuống rộng thênh thang, cu Tí liền cúi rạp người rồi chui tọt tót vào bên trong váy mẹ chơi trốn tìm!"
+      },
+      {
+        startTime: 14.5,
+        endTime: 19.5,
+        sceneIndex: 1,
+        speaker: "💥 Bụng To 120cm",
+        badgeColor: "#F59E0B",
+        text: "Chỉ sau đúng ba giây, chiếc váy phẳng phiu bỗng căng phồng tròn ủng 120cm! Cu Tí thích chí ngọ nguậy, cùi chỏ và chân nhỏ xíu thúc u lên từng cục nhấp nhô!"
+      },
+      {
+        startTime: 19.5,
+        endTime: 23.2,
+        sceneIndex: 1,
+        speaker: "😱 Mẹ Hoảng Hốt",
+        badgeColor: "#F43F5E",
+        text: "Mẹ giật nảy mình ôm chặt bụng hét lớn: “Ối giời ơi Tí ơi! Con chui vào đâu đấy?! Ai nhìn vào cũng tưởng mẹ mang bầu chín tháng sắp đẻ rơi giữa siêu thị! Mau ra ngay!”"
+      },
+
+      // CẢNH 3: BẢO VỆ NGHI DƯA HẤU & BÀN TAY BÉ VẪY CHÀO (23.2s - 37.7s)
+      {
+        startTime: 23.2,
+        endTime: 27.5,
+        sceneIndex: 2,
+        speaker: "🎙️ Dẫn Chuyện",
+        badgeColor: "#10B981",
+        text: "Tiếng la của mẹ và hình dáng chiếc bụng nhấp nhô kỳ dị lập tức thu hút mọi người. Bác bảo vệ ca trực cầm bộ đàm bước vội tới, nhìn chằm chằm chiếc bụng bất thường:"
+      },
+      {
+        startTime: 27.5,
+        endTime: 31.8,
+        sceneIndex: 2,
+        speaker: "👮‍♂️ Bác Bảo Vệ",
+        badgeColor: "#38BDF8",
+        text: "“Ủa chị gái ơi! Vừa thấy chị dáng người thon gọn, sao ghé quầy hoa quả là bụng to vượt mặt thế kia?! Chị giấu trộm quả dưa hấu năm ký hay mang bầu sắp đẻ hả chị?!”"
+      },
+      {
+        startTime: 31.8,
+        endTime: 34.6,
+        sceneIndex: 2,
+        speaker: "🤰 Mẹ Phân Bua",
+        badgeColor: "#F43F5E",
+        text: "Mẹ đỏ bừng mặt ra sức phân bua: “Không phải dưa hấu đâu bác ơi, oan cho em quá! Đây là con trai em, thằng bé nó nghịch chui tọt vào váy đấy ạ!”"
+      },
+      {
+        startTime: 34.6,
+        endTime: 37.7,
+        sceneIndex: 2,
+        speaker: "🖐️ Cu Tí Vẫy Chào",
+        badgeColor: "#FBBF24",
+        text: "Nghe tiếng người lạ, cu Tí luồn bàn tay nhỏ xíu qua cạp váy ngoe nguẩy vẫy chào bác bảo vệ. Cả khu quầy hàng không ai nhịn nổi nữa, ôm bụng cười ầm lên như sấm!"
+      },
+
+      // CẢNH 4: MÀN THÁO CHẠY BÃO TÁP (37.7s - 51.5s)
+      {
+        startTime: 37.7,
+        endTime: 42.5,
+        sceneIndex: 3,
+        speaker: "🏃‍♀️ Dẫn Chuyện",
+        badgeColor: "#10B981",
+        text: "Xấu hổ muốn xỉu, mẹ quyết định tung ra hạ sách cuối cùng: Tháo chạy! Nhưng cu Tí vẫn ôm ghì lấy eo mẹ. Thế là mẹ một tay túm váy, một tay ôm bụng bầu 15kg phi nước đại!"
+      },
+      {
+        startTime: 42.5,
+        endTime: 47.0,
+        sceneIndex: 3,
+        speaker: "🧒 Anh Hai & 🤰 Mẹ",
+        badgeColor: "#F59E0B",
+        text: "Tôi kéo tay mẹ cười sặc sụa: “Chạy nhanh mẹ ơi, cửa ra phía trước rồi!” — Mẹ thở phì phò mặt đỏ tía tai: “Xấu hổ muốn xỉu luôn! Tí ơi về nhà mẹ tét mông nghe chưa! 🏃‍♀️💨”"
+      },
+      {
+        startTime: 47.0,
+        endTime: 51.5,
+        sceneIndex: 3,
+        speaker: "📢 Cả Siêu Thị",
+        badgeColor: "#10B981",
+        text: "Hình ảnh mẹ bầu bất đắc dĩ ôm chiếc bụng tròn căng chạy marathon với tốc độ âm thanh khiến tất cả mọi người cười nghiêng ngả, rúng động cả trung tâm thương mại!"
+      }
+    ];
+
+    const totalDuration = 51.5;
+    let activeNodeIndex = -1;
+
+    /* ==========================================================
+       2. ENGINE RENDER ĐỒ HỌA KEN BURNS ĐIỆN ẢNH
+       ========================================================== */
+    function drawFrame(t) {
+      const w = canvas.width;
+      const h = canvas.height;
+
+      // Determine current timeline node
+      let nodeIdx = timeline.findIndex(n => t >= n.startTime && t < n.endTime);
+      if (nodeIdx === -1) nodeIdx = (t >= totalDuration) ? timeline.length - 1 : 0;
+
+      const currentNode = timeline[nodeIdx];
+      const imgIdx = currentNode.sceneIndex;
+      const img = loadedImages[imgIdx];
+
+      ctx.fillStyle = '#080D1A';
+      ctx.fillRect(0, 0, w, h);
+
+      if (img && img.complete) {
+        // Ken Burns effect (Smooth slow zoom & pan)
+        const sceneStart = sceneCuts[imgIdx];
+        const sceneEnd = sceneCuts[imgIdx + 1];
+        const localProgress = Math.min(1, Math.max(0, (t - sceneStart) / (sceneEnd - sceneStart)));
+
+        let zoom = 1.0 + localProgress * 0.08;
+        let panX = (localProgress - 0.5) * 36;
+        let panY = (localProgress - 0.5) * 18;
+
+        ctx.save();
+        ctx.translate(w / 2, h / 2);
+        ctx.scale(zoom, zoom);
+        ctx.translate(-w / 2 + panX, -h / 2 + panY);
+        ctx.drawImage(img, 0, 0, w, h);
+        ctx.restore();
+
+        // Scene 4 speed lines
+        if (imgIdx === 3 && !masterAudio.paused) {
+          ctx.strokeStyle = 'rgba(255, 255, 255, 0.4)';
+          ctx.lineWidth = 3;
+          for (let i = 0; i < 6; i++) {
+            const yLine = 120 + Math.random() * 480;
+            const xStart = Math.random() * 200;
+            ctx.beginPath();
+            ctx.moveTo(xStart, yLine);
+            ctx.lineTo(xStart + 350 + Math.random() * 200, yLine);
+            ctx.stroke();
+          }
+        }
+      }
+
+      // Update scene tag & scene tabs
+      document.getElementById('sceneTag').textContent = `CẢNH ${imgIdx + 1} / 4`;
+      for (let i = 0; i < 4; i++) {
+        const tab = document.getElementById('tab' + i);
+        if (tab) tab.classList.toggle('active', i === imgIdx);
+      }
+
+      // Update Subtitles without re-triggering speech
+      if (nodeIdx !== activeNodeIndex) {
+        activeNodeIndex = nodeIdx;
+        const badge = document.getElementById('speakerBadge');
+        badge.textContent = currentNode.speaker;
+        badge.style.backgroundColor = currentNode.badgeColor || '#10B981';
+
+        const sub = document.getElementById('subtitleText');
+        sub.textContent = currentNode.text;
+        sub.classList.add('highlight');
+        setTimeout(() => sub.classList.remove('highlight'), 300);
+      }
+
+      // Progress bar & Time label
+      const percent = (t / totalDuration) * 100;
+      document.getElementById('progressFill').style.width = Math.min(100, percent) + '%';
+
+      const curSec = Math.floor(t);
+      const mCur = Math.floor(curSec / 60);
+      const sCur = curSec % 60;
+      const mTot = Math.floor(totalDuration / 60);
+      const sTot = Math.floor(totalDuration % 60);
+      document.getElementById('timeLabel').textContent = 
+        `${mCur < 10 ? '0' : ''}${mCur}:${sCur < 10 ? '0' : ''}${sCur} / ${mTot < 10 ? '0' : ''}${mTot}:${sTot < 10 ? '0' : ''}${sTot}`;
+    }
+
+    /* ==========================================================
+       3. ĐIỀU KHIỂN VIDEO ĐỒNG BỘ NATIVE AUDIO
+       ========================================================== */
+    function renderLoop() {
+      if (!masterAudio.paused) {
+        drawFrame(masterAudio.currentTime);
+      }
+      requestAnimationFrame(renderLoop);
+    }
+    requestAnimationFrame(renderLoop);
+
+    masterAudio.addEventListener('timeupdate', () => {
+      drawFrame(masterAudio.currentTime);
+    });
+
+    masterAudio.addEventListener('ended', () => {
+      document.getElementById('btnPlay').innerHTML = "▶ Phát Lại";
+      drawFrame(totalDuration);
+    });
+
+    function togglePlay() {
+      if (masterAudio.paused) {
+        playMovie();
+      } else {
+        pauseMovie();
+      }
+    }
+
+    function playMovie() {
+      if (masterAudio.currentTime >= totalDuration - 0.5) {
+        masterAudio.currentTime = 0;
+      }
+      masterAudio.play().then(() => {
+        document.getElementById('btnPlay').innerHTML = "⏸ Tạm Dừng";
+      }).catch(err => {
+        console.log("Audio autoplay notice:", err);
+      });
+    }
+
+    function pauseMovie() {
+      masterAudio.pause();
+      document.getElementById('btnPlay').innerHTML = "▶ Phát Phim";
+    }
+
+    function seekClick(e) {
+      const rect = document.getElementById('progressBar').getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const ratio = Math.max(0, Math.min(1, clickX / rect.width));
+      masterAudio.currentTime = ratio * totalDuration;
+      activeNodeIndex = -1;
+      drawFrame(masterAudio.currentTime);
+    }
+
+    function jumpToScene(sceneIdx) {
+      masterAudio.currentTime = sceneCuts[sceneIdx];
+      activeNodeIndex = -1;
+      drawFrame(masterAudio.currentTime);
+      if (masterAudio.paused) playMovie();
+    }
+
+    function toggleMute() {
+      masterAudio.muted = !masterAudio.muted;
+      document.getElementById('muteState').textContent = masterAudio.muted ? "TẮT" : "BẬT";
+      document.getElementById('muteIcon').textContent = masterAudio.muted ? "🔇" : "🔊";
+    }
+
+    function changeSpeed() {
+      const speeds = [1.0, 1.25, 1.5, 0.75];
+      let idx = speeds.indexOf(masterAudio.playbackRate);
+      const nextSpd = speeds[(idx + 1) % speeds.length];
+      masterAudio.playbackRate = nextSpd;
+      document.getElementById('speedVal').textContent = nextSpd.toFixed(2).replace('.00', '') + 'x';
+    }
+
+    // Click canvas to toggle play/pause
+    canvas.addEventListener('click', togglePlay);
+
+    // Spacebar to toggle
+    window.addEventListener('keydown', (e) => {
+      if (e.code === 'Space' && e.target.tagName !== 'BUTTON') {
+        e.preventDefault();
+        togglePlay();
+      }
+    });
+
+    /* ==========================================================
+       4. XUẤT FILE VIDEO FULL HD KÈM ÂM THANH MASTER
+       ========================================================== */
+    let mediaRecorder = null;
+    let recordedChunks = [];
+
+    function exportVideo() {
+      if (mediaRecorder && mediaRecorder.state === 'recording') return;
+
+      pauseMovie();
+      masterAudio.currentTime = 0;
+      activeNodeIndex = -1;
+      drawFrame(0);
+
+      const statusEl = document.getElementById('exportStatus');
+      const percentEl = document.getElementById('recordPercent');
+      statusEl.classList.add('recording');
+
+      const stream = canvas.captureStream(30);
+
+      // Connect master audio stream to MediaRecorder
+      try {
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        const source = audioCtx.createMediaElementSource(masterAudio);
+        const dest = audioCtx.createMediaStreamDestination();
+        source.connect(dest);
+        source.connect(audioCtx.destination);
+        if (dest.stream.getAudioTracks().length > 0) {
+          stream.addTrack(dest.stream.getAudioTracks()[0]);
+        }
+      } catch (err) {
+        console.log("Audio capture note:", err);
+      }
+
+      let mimeType = 'video/webm;codecs=vp9';
+      if (!MediaRecorder.isTypeSupported(mimeType)) mimeType = 'video/webm';
+      if (!MediaRecorder.isTypeSupported(mimeType)) mimeType = '';
+
+      recordedChunks = [];
+      mediaRecorder = new MediaRecorder(stream, mimeType ? { mimeType } : {});
+
+      mediaRecorder.ondataavailable = (e) => {
+        if (e.data && e.data.size > 0) recordedChunks.push(e.data);
+      };
+
+      mediaRecorder.onstop = () => {
+        const blob = new Blob(recordedChunks, { type: 'video/webm' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'Su_Co_Em_Be_Chui_Tot_Vao_Bung_Me_O_Sieu_Thi.webm';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+
+        statusEl.classList.remove('recording');
+        alert("✅ Đã xuất và tải về video thành công!");
+      };
+
+      mediaRecorder.start();
+      playMovie();
+
+      const timer = setInterval(() => {
+        if (masterAudio.paused || masterAudio.currentTime >= totalDuration - 0.2) {
+          clearInterval(timer);
+          if (mediaRecorder && mediaRecorder.state === 'recording') {
+            mediaRecorder.stop();
+          }
+          return;
+        }
+        percentEl.textContent = Math.round((masterAudio.currentTime / totalDuration) * 100) + '%';
+      }, 500);
+    }
+  </script>
+</body>
+</html>

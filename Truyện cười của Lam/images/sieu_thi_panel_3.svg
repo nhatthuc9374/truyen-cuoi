@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <linearGradient id="martBg3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EFF6FF"/>
+      <stop offset="60%" stop-color="#DBEAFE"/>
+      <stop offset="60%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <filter id="shadowSM3" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Khung viền và nền panel 3 -->
+  <rect x="6" y="6" width="788" height="538" rx="20" fill="url(#martBg3)" stroke="#2563EB" stroke-width="5"/>
+
+  <!-- Sàn gạch -->
+  <line x1="6" y1="410" x2="794" y2="410" stroke="#94A3B8" stroke-width="3"/>
+
+  <!-- TIÊU ĐỀ CẢNH 3 TO RÕ NÉT -->
+  <rect x="30" y="18" width="650" height="46" rx="12" fill="#2563EB" filter="url(#shadowSM3)"/>
+  <text x="355" y="48" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">🍉 CẢNH 3: BẢO VỆ NGHI GIẤU DƯA HẤU - BÀN TAY BÉ VẪY CHÀO! 🤣</text>
+
+  <!-- ==================== BÁC BẢO VỆ SIÊU THỊ PHÓNG TO, CẦM BỘ ĐÀM ==================== -->
+  <g id="guard" transform="translate(520, 110)">
+    <ellipse cx="60" cy="300" rx="50" ry="14" fill="#000000" opacity="0.25"/>
+
+    <!-- Thân áo xanh bảo vệ -->
+    <rect x="25" y="90" width="70" height="110" rx="8" fill="#1E3A8A" stroke="#0F172A" stroke-width="3"/>
+    <!-- Cà vạt vàng & Huy hiệu công ty -->
+    <path d="M 55 90 L 65 90 L 62 145 L 58 145 Z" fill="#F59E0B"/>
+    <circle cx="42" cy="110" r="6" fill="#FBBF24"/>
+    <rect x="35" y="200" width="50" height="100" fill="#334155" rx="4"/>
+
+    <!-- Đầu bác bảo vệ -->
+    <circle cx="60" cy="45" r="30" fill="#FFEDD5" stroke="#1E293B" stroke-width="3"/>
+    <!-- Mũ bảo vệ màu xanh đậm có ngôi sao vàng to -->
+    <path d="M 25 40 C 25 12 95 12 95 40 Z" fill="#1E3A8A"/>
+    <path d="M 18 40 L 102 40 L 106 46 L 14 46 Z" fill="#0F172A"/>
+    <polygon points="60,22 63,29 70,29 64,33 67,40 60,36 53,40 56,33 50,29 57,29" fill="#F59E0B"/>
+
+    <!-- Mặt bác bảo vệ hoang mang: mắt tròn xoe mồm chữ O -->
+    <circle cx="48" cy="48" r="5" fill="#1E293B"/><circle cx="72" cy="48" r="5" fill="#1E293B"/>
+    <ellipse cx="60" cy="62" rx="7" ry="8" fill="#DC2626"/>
+    <!-- Râu mép hài hước -->
+    <path d="M 50 56 Q 60 53 70 56" stroke="#451A03" stroke-width="3.5" fill="none"/>
+
+    <!-- Tay cầm bộ đàm chỉ vào bụng mẹ -->
+    <path d="M 30 115 L -20 165" stroke="#FFEDD5" stroke-width="11" stroke-linecap="round"/>
+    <path d="M 90 115 L 115 140" stroke="#FFEDD5" stroke-width="11" stroke-linecap="round"/>
+    <!-- Bộ đàm -->
+    <rect x="108" y="125" width="20" height="34" rx="3" fill="#1E293B"/>
+    <line x1="118" y1="125" x2="118" y2="105" stroke="#1E293B" stroke-width="3.5"/>
+
+    <!-- Lời thoại bảo vệ to rõ -->
+    <g transform="translate(-230, -50)">
+      <path d="M 0 0 L 245 0 Q 255 0 255 12 L 255 60 Q 255 72 245 72 L 180 72 L 195 90 L 160 72 L 0 72 Q -12 72 -12 60 L -12 12 Q -12 0 0 0 Z" fill="#FFFFFF" stroke="#1E3A8A" stroke-width="3" filter="url(#shadowSM3)"/>
+      <text x="122" y="27" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="900" fill="#1E3A8A" text-anchor="middle">"ỦA CHỊ ƠI! CHỊ GIẤU DƯA HẤU"</text>
+      <text x="122" y="50" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="900" fill="#DC2626" text-anchor="middle">"hay là mang bầu sắp đẻ thế kia?!"</text>
+    </g>
+  </g>
+
+  <!-- ==================== MẸ NGƯỢNG ĐỎ MẶT & BÀN TAY BÉ VẪY RA ==================== -->
+  <g id="mom-blushing" transform="translate(220, 95)">
+    <ellipse cx="85" cy="330" rx="80" ry="18" fill="#000000" opacity="0.3"/>
+
+    <!-- BỤNG BẦU PHỒNG CĂNG TRÒN (R = 95px) -->
+    <circle cx="105" cy="230" r="95" fill="#FBBF24" stroke="#D97706" stroke-width="5" filter="url(#shadowSM3)"/>
+
+    <!-- BÀN TAY EM BÉ THÒ RA VẪY CHÀO CỰC RÕ -->
+    <g transform="translate(100, 130)">
+      <ellipse cx="15" cy="15" rx="14" ry="12" fill="#FFEDD5" stroke="#D97706" stroke-width="2.5"/>
+      <!-- Các ngón tay xíu xiu vẫy -->
+      <circle cx="8" cy="6" r="4" fill="#FFEDD5"/>
+      <circle cx="14" cy="3" r="4" fill="#FFEDD5"/>
+      <circle cx="20" cy="5" r="4" fill="#FFEDD5"/>
+      <circle cx="24" cy="9" r="4" fill="#FFEDD5"/>
+      <!-- Vệt sóng vẫy chào vui nhộn -->
+      <path d="M 32 6 Q 38 14 32 22" stroke="#059669" stroke-width="3" fill="none"/>
+      <path d="M 38 3 Q 46 14 38 25" stroke="#059669" stroke-width="2.5" fill="none"/>
+      <rect x="45" y="-5" width="105" height="30" rx="6" fill="#10B981"/>
+      <text x="97" y="15" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">🖐️ Bé vẫy tay!</text>
+    </g>
+
+    <!-- Thân mẹ & Đầu mẹ ngượng chín mặt -->
+    <path d="M 50 115 Q 85 95 120 115 L 135 165 L 40 165 Z" fill="#FDE68A" stroke="#D97706" stroke-width="2.5"/>
+    <circle cx="85" cy="55" r="32" fill="#FFEDD5" stroke="#1E293B" stroke-width="3"/>
+    <path d="M 54 55 C 46 20 124 20 116 55 Z" fill="#451A03"/>
+    <circle cx="85" cy="20" r="15" fill="#451A03"/>
+
+    <!-- Mặt đỏ bừng bừng như quả gấc -->
+    <ellipse cx="65" cy="62" rx="11" ry="7" fill="#EF4444" opacity="0.75"/>
+    <ellipse cx="105" cy="62" rx="11" ry="7" fill="#EF4444" opacity="0.75"/>
+    <circle cx="72" cy="52" r="4" fill="#1E293B"/><circle cx="98" cy="52" r="4" fill="#1E293B"/>
+    <path d="M 74 72 Q 85 66 96 72" fill="none" stroke="#DC2626" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Hai tay mẹ cuống cuồng giữ lấy em bé -->
+    <path d="M 35 125 Q 20 190 65 240" stroke="#FFEDD5" stroke-width="11" stroke-linecap="round" fill="none"/>
+    <path d="M 135 125 Q 160 190 135 240" stroke="#FFEDD5" stroke-width="11" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- ==================== KHÁCH HÀNG CƯỜI CHẢY NƯỚC MẮT ==================== -->
+  <g id="laughing-crowd" transform="translate(30, 170)">
+    <ellipse cx="45" cy="235" rx="35" ry="10" fill="#000000" opacity="0.25"/>
+    <circle cx="45" cy="100" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="3"/>
+    <path d="M 24 98 C 21 70 69 70 66 98 Z" fill="#6B21A8"/>
+    <!-- Mắt cười tít -->
+    <path d="M 35 98 Q 40 92 45 98" stroke="#1E293B" stroke-width="3" fill="none"/>
+    <path d="M 52 98 Q 57 92 62 98" stroke="#1E293B" stroke-width="3" fill="none"/>
+    <ellipse cx="49" cy="112" rx="11" ry="8" fill="#DC2626"/>
+    <!-- Giọt nước mắt cười văng ra -->
+    <circle cx="30" cy="98" r="4" fill="#38BDF8"/>
+    <circle cx="68" cy="98" r="4" fill="#38BDF8"/>
+
+    <!-- Thân người ôm bụng cười gập cả lưng -->
+    <ellipse cx="45" cy="155" rx="22" ry="30" fill="#A855F7" stroke="#7E22CE" stroke-width="3"/>
+    <path d="M 28 142 Q 45 162 62 142" stroke="#FFEDD5" stroke-width="7" fill="none"/>
+
+    <!-- Chữ HA HA HA to tướng -->
+    <text x="45" y="45" font-family="'Segoe UI', Impact, sans-serif" font-size="26" font-weight="900" fill="#EF4444" text-anchor="middle">HA HA HA!</text>
+    <text x="45" y="18" font-family="'Segoe UI', Impact, sans-serif" font-size="18" font-weight="900" fill="#F59E0B" text-anchor="middle">CƯỜI XỈU LUÔN!</text>
+  </g>
+
+  <!-- Lời mẹ thanh minh to rõ -->
+  <g transform="translate(180, 440)">
+    <rect x="0" y="0" width="370" height="50" rx="12" fill="#FEF2F2" stroke="#DC2626" stroke-width="3" filter="url(#shadowSM3)"/>
+    <text x="185" y="24" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="900" fill="#991B1B" text-anchor="middle">🤰 "Không phải dưa hấu đâu bác ơi!"</text>
+    <text x="185" y="42" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#DC2626" text-anchor="middle">Thằng bé con em nó chui tọt vào đấy ạ! 😭</text>
+  </g>
+</svg>

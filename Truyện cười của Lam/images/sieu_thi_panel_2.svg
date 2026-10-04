@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <linearGradient id="martBg2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF2F2"/>
+      <stop offset="60%" stop-color="#FFF1F2"/>
+      <stop offset="60%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="hugeBellyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="45%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <filter id="shadowSM2" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Khung viền và nền panel 2 -->
+  <rect x="6" y="6" width="788" height="538" rx="20" fill="url(#martBg2)" stroke="#DC2626" stroke-width="5"/>
+
+  <!-- Sàn gạch -->
+  <line x1="6" y1="400" x2="794" y2="400" stroke="#94A3B8" stroke-width="3"/>
+
+  <!-- Tháp dưa hấu siêu to ở bên phải -->
+  <g transform="translate(560, 200)">
+    <rect x="0" y="90" width="210" height="130" rx="8" fill="#78350F" stroke="#451A03" stroke-width="3"/>
+    <!-- Biển giá Dưa Hấu Khổng Lồ -->
+    <rect x="30" y="55" width="150" height="30" rx="6" fill="#15803D" stroke="#166534" stroke-width="2"/>
+    <text x="105" y="75" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">🍉 DƯA HẤU 5KG/TRÁI</text>
+    <!-- Các quả dưa hấu xếp chồng to bự -->
+    <ellipse cx="45" cy="45" rx="30" ry="24" fill="#16A34A" stroke="#14532D" stroke-width="3"/>
+    <path d="M 25 45 Q 45 35 65 45" stroke="#14532D" stroke-width="2.5" fill="none"/>
+    <ellipse cx="105" cy="45" rx="30" ry="24" fill="#15803D" stroke="#14532D" stroke-width="3"/>
+    <ellipse cx="165" cy="45" rx="30" ry="24" fill="#16A34A" stroke="#14532D" stroke-width="3"/>
+    <ellipse cx="75" cy="12" rx="30" ry="24" fill="#16A34A" stroke="#14532D" stroke-width="3"/>
+    <ellipse cx="135" cy="12" rx="30" ry="24" fill="#15803D" stroke="#14532D" stroke-width="3"/>
+  </g>
+
+  <!-- TIÊU ĐỀ CẢNH 2 TO RÕ -->
+  <rect x="30" y="18" width="600" height="46" rx="12" fill="#DC2626" filter="url(#shadowSM2)"/>
+  <text x="330" y="48" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">⚡ CẢNH 2: EM BÉ CHUI TỌT VÀO VÁY - BỤNG 120CM! 😱</text>
+
+  <!-- TIA SẤM SỐC VÀ HIỆU ỨNG GIẬT BẮN MÌNH -->
+  <path d="M 280 120 L 250 90 L 285 85 L 265 50 L 315 70" stroke="#F59E0B" stroke-width="4.5" fill="none"/>
+  <path d="M 520 120 L 550 90 L 515 85 L 535 50 L 485 70" stroke="#F59E0B" stroke-width="4.5" fill="none"/>
+  <text x="560" y="160" font-family="'Segoe UI', Impact, sans-serif" font-size="28" font-weight="900" fill="#EF4444">XOẸT... CHUI TỌT!</text>
+
+  <!-- ==================== NHÂN VẬT: MẸ BỊ BỤNG BẦU PHỒNG CĂNG 120CM ==================== -->
+  <g id="mom-shocked" transform="translate(280, 80)">
+    <!-- Bóng -->
+    <ellipse cx="100" cy="350" rx="90" ry="20" fill="#000000" opacity="0.3"/>
+
+    <!-- CHIẾC BỤNG BẦU KHỔNG LỒ PHỒNG TO CHIẾM TRỌN TRUNG TÂM (R = 105px) -->
+    <circle cx="115" cy="240" r="105" fill="url(#hugeBellyGrad)" stroke="#B45309" stroke-width="5" filter="url(#shadowSM2)"/>
+    <!-- Thân váy dưới phủ chân -->
+    <path d="M 25 270 C 10 320 15 345 35 350 C 75 355 155 355 195 350 C 215 330 205 270 195 270 Z" fill="#FBBF24" opacity="0.9"/>
+
+    <!-- CÁC CỤC U TAY CHÂN EM BÉ BIẾN DẠNG BỤNG MẸ -->
+    <ellipse cx="165" cy="195" rx="20" ry="14" fill="#F59E0B" stroke="#B45309" stroke-width="3"/>
+    <text x="175" y="175" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="900" fill="#DC2626">Cùi chỏ bé!</text>
+
+    <ellipse cx="75" cy="290" rx="22" ry="15" fill="#F59E0B" stroke="#B45309" stroke-width="3"/>
+    <text x="65" y="325" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="900" fill="#DC2626">Bàn chân bé!</text>
+
+    <!-- Đường rung rinh cộm ngọ nguậy -->
+    <path d="M 195 220 Q 225 240 195 260" stroke="#EF4444" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M 205 210 Q 240 240 205 270" stroke="#EF4444" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Thân trên & Áo mẹ nghiêng ngửa vì sức nặng của con -->
+    <path d="M 65 110 Q 95 90 135 110 L 145 160 L 50 160 Z" fill="#FDE68A" stroke="#D97706" stroke-width="3"/>
+
+    <!-- ĐẦU MẸ HOẢNG HỐT: MẮT CHỮ O MỒM CHỮ O -->
+    <circle cx="100" cy="55" r="34" fill="#FFEDD5" stroke="#1E293B" stroke-width="3.5"/>
+    <path d="M 66 55 C 58 18 142 18 134 55 Z" fill="#451A03"/>
+    <circle cx="100" cy="18" r="16" fill="#451A03"/>
+
+    <!-- Mắt trợn trừng to tướng -->
+    <circle cx="85" cy="55" r="10" fill="#FFFFFF" stroke="#1E293B" stroke-width="3"/>
+    <circle cx="85" cy="55" r="4.5" fill="#1E293B"/>
+    <circle cx="115" cy="55" r="10" fill="#FFFFFF" stroke="#1E293B" stroke-width="3"/>
+    <circle cx="115" cy="55" r="4.5" fill="#1E293B"/>
+
+    <!-- Miệng há to kinh ngạc la làng -->
+    <ellipse cx="100" cy="76" rx="12" ry="14" fill="#DC2626" stroke="#991B1B" stroke-width="3"/>
+
+    <!-- Giọt mồ hôi hột to đùng bắn ra bên thái dương -->
+    <ellipse cx="140" cy="50" rx="6" ry="10" fill="#38BDF8" stroke="#0284C7" stroke-width="1.5" transform="rotate(30 140 50)"/>
+
+    <!-- Hai tay mẹ ôm đỡ lấy chiếc bụng bầu khổng lồ nhúc nhích -->
+    <path d="M 50 120 Q 20 180 55 240" stroke="#FFEDD5" stroke-width="11" stroke-linecap="round" fill="none"/>
+    <path d="M 145 120 Q 185 180 160 240" stroke="#FFEDD5" stroke-width="11" stroke-linecap="round" fill="none"/>
+    <circle cx="58" cy="240" r="10" fill="#FFEDD5"/>
+    <circle cx="158" cy="240" r="10" fill="#FFEDD5"/>
+  </g>
+
+  <!-- ==================== TIẾNG BÉ CƯỜI KHÚC KHÍCH TRONG BỤNG ==================== -->
+  <g transform="translate(420, 360)">
+    <rect x="0" y="0" width="220" height="50" rx="12" fill="#ECFDF5" stroke="#059669" stroke-width="3" filter="url(#shadowSM2)"/>
+    <text x="110" y="24" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="900" fill="#047857" text-anchor="middle">👶 "Kí kì... con trốn trong này!"</text>
+    <text x="110" y="42" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#059669" text-anchor="middle">Bụng mẹ ấm ru nè mẹ ơi! 🤣</text>
+  </g>
+
+  <!-- ==================== NHÂN VẬT: CON LỚN ("TÔI") ÔM MÁ KINH HOÀNG ==================== -->
+  <g id="child-shock" transform="translate(60, 160)">
+    <ellipse cx="50" cy="245" rx="38" ry="12" fill="#000000" opacity="0.25"/>
+    <ellipse cx="50" cy="155" rx="24" ry="32" fill="#38BDF8" stroke="#0284C7" stroke-width="3"/>
+    <rect x="36" y="185" width="28" height="50" fill="#1E3A8A" rx="5"/>
+
+    <circle cx="50" cy="95" r="28" fill="#FFEDD5" stroke="#1E293B" stroke-width="3"/>
+    <path d="M 26 92 C 22 62 78 62 74 92 Z" fill="#292524"/>
+    <!-- Mắt lồi kinh ngạc -->
+    <circle cx="41" cy="92" r="7" fill="#FFFFFF" stroke="#1E293B" stroke-width="2"/>
+    <circle cx="41" cy="92" r="3.5" fill="#1E293B"/>
+    <circle cx="59" cy="92" r="7" fill="#FFFFFF" stroke="#1E293B" stroke-width="2"/>
+    <circle cx="59" cy="92" r="3.5" fill="#1E293B"/>
+    <!-- Miệng há to -->
+    <ellipse cx="50" cy="110" rx="7" ry="9" fill="#DC2626"/>
+
+    <!-- Hai tay ôm má la làng -->
+    <path d="M 30 150 L 26 108" stroke="#FFEDD5" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 70 150 L 74 108" stroke="#FFEDD5" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Lời thoại của tôi -->
+    <g transform="translate(-20, -75)">
+      <path d="M 0 0 L 200 0 Q 210 0 210 12 L 210 46 Q 210 58 200 58 L 50 58 L 35 72 L 40 58 L 0 58 Q -12 58 -12 46 L -12 12 Q -12 0 0 0 Z" fill="#FFFFFF" stroke="#0284C7" stroke-width="3" filter="url(#shadowSM2)"/>
+      <text x="100" y="25" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="900" fill="#0369A1" text-anchor="middle">"Ối mẹ ơi! Em chui vào"</text>
+      <text x="100" y="45" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="900" fill="#DC2626" text-anchor="middle">"bụng mẹ rồi kìa!"</text>
+    </g>
+  </g>
+
+  <!-- Lời thoại của Mẹ -->
+  <g transform="translate(230, 15)">
+    <path d="M 0 0 L 320 0 Q 330 0 330 12 L 330 50 Q 330 62 320 62 L 90 62 L 75 76 L 82 62 L 0 62 Q -12 62 -12 50 L -12 12 Q -12 0 0 0 Z" fill="#FFFFFF" stroke="#DC2626" stroke-width="3.5" filter="url(#shadowSM2)"/>
+    <text x="160" y="27" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="900" fill="#B91C1C" text-anchor="middle">"ỐI TÍ ƠI! CHUI TỌT VÀO ĐÂY LÀM GÌ?!"</text>
+    <text x="160" y="49" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#DC2626" text-anchor="middle">Mau ra không mẹ thành bà bầu 9 tháng bây giờ! 😱</text>
+  </g>
+</svg>

@@ -1,4 +1,4 @@
-﻿# 🍃 🤰😂 Truyện Tranh Hoạt Hình 3D: Chiếc Bụng Bầu Kỷ Lục 150cm & Sự Cố Khám Thai Dở Khóc Dở Cười!
+# 🍃 🤰😂 Truyện Tranh Hoạt Hình 3D: Chiếc Bụng Bầu Kỷ Lục 150cm & Sự Cố Khám Thai Dở Khóc Dở Cười!
 
 > *Một mẩu chuyện cười siêu đáng yêu và "bá đạo" về chiếc bụng bầu ngoại cỡ kỷ lục 150cm của mẹ bầu mang thai tư: Sáng sớm bụng bầu phẳng phiu biến thành chiếc bàn ăn để vừa vặn tô phở bò đặc biệt và ly trà sữa 1 lít; bước vào thang máy giờ cao điểm chiếc bụng nhô ra 1 mét đè cấn luôn nút chuông báo động cứu hỏa réo inh ỏi cả tòa nhà; đến phòng khám bác sĩ dùng thước y tế đo bị thiếu đành phải mượn thước cuộn xây dựng kim loại 5 mét của bác bảo vệ; và kết thúc bằng ca sinh tư đại thắng đón 4 thiên thần nhỏ bụ bẫm 12kg khiến ông bố quỳ lạy dâng cúp vàng tôn vợ làm Siêu Nhân số 1 Trái Đất!*
 

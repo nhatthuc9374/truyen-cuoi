@@ -1,4 +1,4 @@
-﻿# 🍃 🏥🤰 Truyện Tranh Hài Hước: Cô Bị Kẹt Bụng Bầu Vào Thanh Giường Y Tế
+# 🍃 🏥🤰 Truyện Tranh Hài Hước: Cô Bị Kẹt Bụng Bầu Vào Thanh Giường Y Tế
 
 > *Kỷ niệm "dở khóc dở cười" mà vô cùng ấm áp: Cô mang thai tháng cuối với chiếc bụng bầu siêu to khổng lồ, khi nằm nghỉ ở phòng y tế thì chiếc bụng bầu bị kẹt cứng ngắc vào thanh chắn giường. Lúc đó xung quanh vắng tanh không có ai, cô phải toát mồ hôi hột tự loay hoay xoay sở. Đúng lúc nguy nan, bạn Lan [nữ] vừa bước vào phòng thăm cô đã nhanh trí giải cứu chiếc bụng bầu an toàn!*
 

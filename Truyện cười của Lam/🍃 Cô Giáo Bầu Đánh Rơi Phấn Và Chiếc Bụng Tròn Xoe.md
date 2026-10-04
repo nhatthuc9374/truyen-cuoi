@@ -1,4 +1,4 @@
-﻿# 🍃 🏫🤰 Truyện Cười Học Đường: Cô Giáo Bầu Đánh Rơi Phấn & Chiếc Bụng Tròn Xoe
+# 🍃 🏫🤰 Truyện Cười Học Đường: Cô Giáo Bầu Đánh Rơi Phấn & Chiếc Bụng Tròn Xoe
 
 > *Một mẩu chuyện học trò vừa hài hước vừa ấm áp, đáng yêu: Cô giáo mang bụng bầu siêu to tháng thứ 9 bước đi lạch bạch như chim cánh cụt. Khi viên phấn lỡ rơi lăn tít vào gầm bàn, cô khom lưng cúi xuống nhặt nhưng chiếc bụng to cấn chặt đầu gối không với tới được. Ngay lập tức, "biệt đội học trò" bàn đầu đã nhao nhao bò toài dưới sàn giải cứu thành công!*
 

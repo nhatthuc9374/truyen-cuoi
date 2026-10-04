@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="postBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7"/>
+      <stop offset="60%" stop-color="#FDE68A"/>
+      <stop offset="60%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="goldBanner" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <filter id="p4Shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Nền phòng hậu sản ấm áp -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#postBg)" stroke="#F59E0B" stroke-width="4"/>
+
+  <!-- Bong bóng & Ruy băng trang trí -->
+  <circle cx="60" cy="80" r="16" fill="#F472B6" opacity="0.8"/>
+  <path d="M 60 96 Q 55 110 62 120" stroke="#F472B6" stroke-width="1.5" fill="none"/>
+  <circle cx="85" cy="65" r="14" fill="#60A5FA" opacity="0.8"/>
+  <path d="M 85 79 Q 80 95 87 105" stroke="#60A5FA" stroke-width="1.5" fill="none"/>
+  <circle cx="580" cy="75" r="16" fill="#34D399" opacity="0.8"/>
+  <path d="M 580 91 Q 575 105 582 115" stroke="#34D399" stroke-width="1.5" fill="none"/>
+
+  <!-- Tiêu đề phân cảnh -->
+  <rect x="25" y="20" width="430" height="36" rx="10" fill="url(#goldBanner)" filter="url(#p4Shadow)"/>
+  <text x="240" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">🎉 CẢNH 4: SONG THAI CHÀO ĐỜI - BỐ TỈNH KHÓC RÒNG 👶👶💖</text>
+
+  <!-- Dây cờ tam giác tiệc tùng -->
+  <polygon points="120,60 140,85 160,60" fill="#EF4444"/>
+  <polygon points="165,60 185,85 205,60" fill="#3B82F6"/>
+  <polygon points="210,60 230,85 250,60" fill="#10B981"/>
+  <polygon points="255,60 275,85 295,60" fill="#F59E0B"/>
+  <line x1="110" y1="60" x2="305" y2="60" stroke="#64748B" stroke-width="1.5"/>
+
+  <!-- Giường bệnh viện ấm cúng của mẹ -->
+  <rect x="30" y="250" width="360" height="80" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="3"/>
+  <rect x="40" y="330" width="16" height="50" fill="#64748B"/>
+  <rect x="360" y="330" width="16" height="50" fill="#64748B"/>
+
+  <!-- MẸ NGỒI TỰA LƯNG TƯƠI CƯỜI RẠNG RỠ -->
+  <g transform="translate(60, 160)">
+    <!-- Tựa lưng giường dốc -->
+    <polygon points="0,110 30,20 120,70 120,110" fill="#FDE2E4"/>
+
+    <!-- Đầu mẹ mỉm cười hạnh phúc, má hồng hào -->
+    <circle cx="80" cy="30" r="26" fill="#FFE4E6" stroke="#1E293B" stroke-width="2"/>
+    <path d="M 55 20 C 55 2 105 2 105 20 Z" fill="#78350F"/>
+    <path d="M 105 20 Q 115 35 110 50 Q 100 40 102 30 Z" fill="#78350F"/>
+    <!-- Mắt híp cười tít hạt tiêu -->
+    <path d="M 70 30 Q 75 25 80 30" stroke="#1E293B" stroke-width="2.5" fill="none"/>
+    <path d="M 88 30 Q 93 25 98 30" stroke="#1E293B" stroke-width="2.5" fill="none"/>
+    <!-- Má hồng cà chua -->
+    <ellipse cx="68" cy="36" rx="5" ry="3" fill="#FDA4AF"/>
+    <ellipse cx="100" cy="36" rx="5" ry="3" fill="#FDA4AF"/>
+    <!-- Nụ cười mãn nguyện -->
+    <path d="M 77 40 Q 84 48 91 40" stroke="#E11D48" stroke-width="2.5" fill="none"/>
+
+    <!-- Váy áo mẹ sau sinh -->
+    <path d="M 60 56 L 110 56 L 125 120 L 45 120 Z" fill="#F472B6"/>
+
+    <!-- HAI EM BÉ SINH ĐÔI NẰM GỌN TRONG TAY MẸ -->
+    <!-- Bé 1 (Bé Anh - 3.5kg) -->
+    <g transform="translate(90, 65)">
+      <!-- Kén quấn tã màu xanh dương -->
+      <ellipse cx="25" cy="30" rx="20" ry="26" fill="#93C5FD" stroke="#3B82F6" stroke-width="2"/>
+      <!-- Đầu bé bụ bẫm -->
+      <circle cx="25" cy="14" r="14" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+      <ellipse cx="21" cy="13" rx="1.5" ry="2" fill="#1E293B"/><ellipse cx="29" cy="13" rx="1.5" ry="2" fill="#1E293B"/>
+      <!-- Núm vú giả -->
+      <circle cx="25" cy="20" r="4" fill="#38BDF8"/>
+      <!-- Mũ len vàng -->
+      <path d="M 13 12 C 13 0 37 0 37 12 Z" fill="#FDE047"/>
+      <!-- Thẻ cân nặng -->
+      <rect x="5" y="46" width="40" height="15" rx="3" fill="#FFFFFF" stroke="#3B82F6" stroke-width="1"/>
+      <text x="25" y="57" font-size="8" font-weight="bold" fill="#1D4ED8" text-anchor="middle">Anh: 3.5kg</text>
+    </g>
+
+    <!-- Bé 2 (Bé Em - 3.5kg) -->
+    <g transform="translate(135, 65)">
+      <!-- Kén quấn tã màu hồng phấn -->
+      <ellipse cx="25" cy="30" rx="20" ry="26" fill="#FBCFE8" stroke="#EC4899" stroke-width="2"/>
+      <!-- Đầu bé bụ bẫm cười toe -->
+      <circle cx="25" cy="14" r="14" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+      <path d="M 20 13 Q 22 11 24 13" stroke="#1E293B" stroke-width="1.5" fill="none"/>
+      <path d="M 26 13 Q 28 11 30 13" stroke="#1E293B" stroke-width="1.5" fill="none"/>
+      <ellipse cx="25" cy="19" rx="3" ry="2" fill="#E11D48"/>
+      <!-- Nơ hồng trên đầu -->
+      <polygon points="18,3 25,6 18,9" fill="#F43F5E"/>
+      <polygon points="32,3 25,6 32,9" fill="#F43F5E"/>
+      <circle cx="25" cy="6" r="3" fill="#BE185D"/>
+      <!-- Thẻ cân nặng -->
+      <rect x="5" y="46" width="40" height="15" rx="3" fill="#FFFFFF" stroke="#EC4899" stroke-width="1"/>
+      <text x="25" y="57" font-size="8" font-weight="bold" fill="#BE185D" text-anchor="middle">Em: 3.5kg</text>
+    </g>
+
+    <!-- Huy hiệu tổng 7.0kg siêu đẳng -->
+    <g transform="translate(200, 40)">
+      <circle cx="25" cy="25" r="24" fill="#EF4444" stroke="#FFFFFF" stroke-width="2" filter="url(#p4Shadow)"/>
+      <text x="25" y="21" font-size="9" font-weight="900" fill="#FEF08A" text-anchor="middle">TỔNG</text>
+      <text x="25" y="34" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">7.0 KG!</text>
+    </g>
+  </g>
+
+  <!-- BỐ TỈNH DẬY QUỲ BÁI PHỤC VỢ (BÊN PHẢI) - KHÓC LÃ CHÃ, TRÁN DÁN CAO -->
+  <g transform="translate(440, 160)">
+    <!-- Đầu bố cúi lạy, hai dòng nước mắt tuôn như suối -->
+    <circle cx="65" cy="50" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M 45 35 C 45 20 85 20 85 35 Z" fill="#1E293B"/>
+
+    <!-- MIẾNG CAO SALONPAS TO ĐÙNG TRÊN TRÁN -->
+    <rect x="50" y="28" width="30" height="15" rx="2" fill="#FFFFFF" stroke="#10B981" stroke-width="1.5"/>
+    <text x="65" y="39" font-size="7" font-weight="bold" fill="#047857" text-anchor="middle">SALONPAS</text>
+
+    <!-- Mắt nhắm tít khóc to sung sướng -->
+    <path d="M 52 50 Q 56 46 60 50" stroke="#1E293B" stroke-width="2" fill="none"/>
+    <path d="M 70 50 Q 74 46 78 50" stroke="#1E293B" stroke-width="2" fill="none"/>
+    <!-- Hai dòng nước mắt xanh bắn tung tóe -->
+    <path d="M 55 52 Q 40 70 30 110" stroke="#38BDF8" stroke-width="3" fill="none"/>
+    <path d="M 75 52 Q 90 70 100 110" stroke="#38BDF8" stroke-width="3" fill="none"/>
+    <!-- Miệng khóc nức nở mếu máo cười -->
+    <ellipse cx="65" cy="62" rx="9" ry="7" fill="#B91C1C"/>
+
+    <!-- Thân bố quỳ gối hướng về giường vợ -->
+    <path d="M 45 76 L 85 76 L 90 145 L 35 145 Z" fill="#FACC15"/>
+    <polygon points="35,145 90,145 110,185 20,185" fill="#3B82F6"/>
+
+    <!-- Hai tay bố chắp lại vái lạy vợ sát ngực -->
+    <line x1="50" y1="95" x2="30" y2="105" stroke="#FFEDD5" stroke-width="7" stroke-linecap="round"/>
+    <line x1="80" y1="95" x2="30" y2="105" stroke="#FFEDD5" stroke-width="7" stroke-linecap="round"/>
+    <!-- Bàn tay chắp lạy -->
+    <circle cx="27" cy="105" r="7" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+    <!-- Tia hào quang bái phục lấp lánh -->
+    <text x="10" y="90" font-size="16" fill="#F59E0B">✨</text>
+    <text x="0" y="125" font-size="16" fill="#F59E0B">🙏</text>
+  </g>
+
+  <!-- Khung thoại BỐ BÁI PHỤC VỢ -->
+  <rect x="360" y="65" width="270" height="52" rx="10" fill="#FFFFFF" stroke="#D97706" stroke-width="2" filter="url(#p4Shadow)"/>
+  <text x="495" y="85" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#D97706" text-anchor="middle">"Vợ là Siêu Nhân! Vợ là Thần Tượng! 😭🙏</text>
+  <text x="495" y="103" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#DC2626" text-anchor="middle">Từ nay đội vợ lên đầu trường sinh bất lão!"</text>
+
+  <!-- Khung thoại MẸ CƯỜI TƯƠI -->
+  <rect x="50" y="85" width="220" height="42" rx="10" fill="#FFFFFF" stroke="#BE185D" stroke-width="2" filter="url(#p4Shadow)"/>
+  <text x="160" y="103" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#BE185D" text-anchor="middle">"Hai con giống bố y đúc nha! 🥰</text>
+  <text x="160" y="119" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold" fill="#047857" text-anchor="middle">May mà không nhát gan như bố! 🤣"</text>
+
+  <!-- Chú thích đáy -->
+  <rect x="25" y="390" width="600" height="40" rx="8" fill="#F59E0B" stroke="#B45309" stroke-width="1.5"/>
+  <text x="325" y="415" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Mẹ vượt cạn thành công sinh đôi 7kg, bố tỉnh dậy trán dán cao khóc nức nở bái phục vợ!</text>
+</svg>

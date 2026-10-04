@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hospBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="60%" stop-color="#BAE6FD"/>
+      <stop offset="60%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+    <linearGradient id="scrubBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+    <filter id="p3Shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Nền phòng sinh bệnh viện -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#hospBg)" stroke="#0284C7" stroke-width="4"/>
+
+  <!-- Đèn mổ hình tròn trên trần -->
+  <g transform="translate(200, 10)">
+    <line x1="100" y1="0" x2="100" y2="40" stroke="#64748B" stroke-width="4"/>
+    <ellipse cx="100" cy="45" rx="50" ry="12" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2"/>
+    <circle cx="85" cy="45" r="7" fill="#FEF08A"/>
+    <circle cx="100" cy="45" r="7" fill="#FEF08A"/>
+    <circle cx="115" cy="45" r="7" fill="#FEF08A"/>
+    <!-- Luồng sáng vàng rọi xuống -->
+    <polygon points="60,50 140,50 200,260 0,260" fill="#FEF08A" opacity="0.15"/>
+  </g>
+
+  <!-- Tiêu đề phân cảnh -->
+  <rect x="25" y="20" width="410" height="36" rx="10" fill="#0284C7" filter="url(#p3Shadow)"/>
+  <text x="230" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">🏥 CẢNH 3: BÁC SĨ HÔ RẶN, BỐ LĂN RA NGẤT XỈU 😵💨</text>
+
+  <!-- MẸ NẰM BÀN SINH (BÊN TRÁI) - VỪA RẶN VỪA QUÁT BỐ -->
+  <g transform="translate(40, 160)">
+    <!-- Bàn sinh -->
+    <rect x="0" y="100" width="220" height="45" rx="8" fill="#FFFFFF" stroke="#0284C7" stroke-width="2"/>
+    <rect x="20" y="145" width="15" height="40" fill="#64748B"/>
+    <rect x="185" y="145" width="15" height="40" fill="#64748B"/>
+
+    <!-- Thân mẹ nằm nâng cao tựa lưng -->
+    <polygon points="10,100 60,35 140,75 140,100" fill="#F472B6"/>
+    <!-- Bụng bầu nhô cao -->
+    <ellipse cx="110" cy="75" rx="45" ry="40" fill="#EC4899" stroke="#BE185D" stroke-width="2"/>
+
+    <!-- Đầu mẹ gồng mặt đỏ tía, hừng hực khí thế -->
+    <circle cx="45" cy="20" r="24" fill="#FECDD3" stroke="#1E293B" stroke-width="2"/>
+    <path d="M 25 15 C 25 -5 65 -5 65 15 Z" fill="#78350F"/>
+    <!-- Mắt quyết tâm bừng lửa -->
+    <polygon points="35,15 42,12 37,22" fill="#E11D48"/>
+    <polygon points="52,12 59,15 57,22" fill="#E11D48"/>
+    <!-- Miệng há to hét chỉ đạo -->
+    <ellipse cx="48" cy="30" rx="9" ry="7" fill="#881337"/>
+    <!-- Trán mẹ đeo băng đô hoặc mồ hôi gồng sức -->
+    <circle cx="28" cy="12" r="3" fill="#38BDF8"/><circle cx="62" cy="10" r="3" fill="#38BDF8"/>
+
+    <!-- Cánh tay mẹ giơ chỉ thẳng sang giường bố -->
+    <line x1="50" y1="40" x2="160" y2="25" stroke="#FECDD3" stroke-width="8" stroke-linecap="round"/>
+    <!-- Bàn tay chỉ trỏ -->
+    <polygon points="160,20 185,25 160,30" fill="#FECDD3"/>
+    <text x="145" y="15" font-family="'Impact', sans-serif" font-size="14" fill="#E11D48">DẬY MAU! 👉</text>
+  </g>
+
+  <!-- BÁC SĨ ÁO XANH ĐANG ĐỠ ĐẺ CỔ VŨ -->
+  <g transform="translate(195, 140)">
+    <circle cx="45" cy="40" r="20" fill="#FFE4E6" stroke="#1E293B" stroke-width="2"/>
+    <path d="M 25 35 C 25 20 65 20 65 35 Z" fill="#0284C7"/>
+    <!-- Khẩu trang y tế -->
+    <rect x="33" y="42" width="24" height="15" rx="3" fill="#FFFFFF" stroke="#0284C7" stroke-width="1.5"/>
+    <ellipse cx="38" cy="35" rx="3" ry="2" fill="#1E293B"/>
+    <ellipse cx="52" cy="35" rx="3" ry="2" fill="#1E293B"/>
+    <!-- Áo blouse xanh phẫu thuật -->
+    <path d="M 25 60 L 65 60 L 70 140 L 20 140 Z" fill="url(#scrubBlue)"/>
+    <!-- Găng tay y tế cao su vàng giơ ngón cái -->
+    <line x1="30" y1="80" x2="10" y2="105" stroke="#0284C7" stroke-width="6"/>
+    <circle cx="10" cy="108" r="6" fill="#FACC15"/>
+    <text x="5" y="130" font-size="9" font-weight="900" fill="#0369A1">CỐ LÊN!</text>
+  </g>
+
+  <!-- BỐ NẰM BẤT TỈNH TRÊN CÁNG BỆNH (BÊN PHẢI) - THỞ OXY -->
+  <g transform="translate(390, 180)">
+    <!-- Giường/Cáng cấp cứu của bố -->
+    <rect x="0" y="80" width="220" height="40" rx="8" fill="#F1F5F9" stroke="#64748B" stroke-width="2"/>
+    <rect x="25" y="120" width="12" height="40" fill="#475569"/>
+    <rect x="185" y="120" width="12" height="40" fill="#475569"/>
+    <!-- Bánh xe cáng -->
+    <circle cx="31" cy="165" r="7" fill="#1E293B"/>
+    <circle cx="191" cy="165" r="7" fill="#1E293B"/>
+
+    <!-- Thân bố nằm thẳng đơ như khúc gỗ -->
+    <rect x="20" y="55" width="170" height="28" rx="6" fill="#FACC15" stroke="#CA8A04" stroke-width="2"/>
+    <!-- Hai chân duỗi thẳng đơ -->
+    <rect x="140" y="58" width="55" height="22" rx="4" fill="#60A5FA"/>
+
+    <!-- Đầu bố gối trên gối trắng, mắt chữ X X (ngất xỉu) -->
+    <rect x="10" y="45" width="40" height="20" rx="5" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <circle cx="35" cy="40" r="22" fill="#E2E8F0" stroke="#1E293B" stroke-width="2"/>
+    <!-- Tóc bố rũ rượi -->
+    <path d="M 15 35 C 15 20 45 15 50 35 Z" fill="#1E293B"/>
+    <!-- Mắt chữ X (ngất) -->
+    <text x="26" y="38" font-family="'Impact', sans-serif" font-size="13" fill="#EF4444">X</text>
+    <text x="38" y="38" font-family="'Impact', sans-serif" font-size="13" fill="#EF4444">X</text>
+    <!-- Miệng há ngoác thè lưỡi xỉu -->
+    <ellipse cx="33" cy="50" rx="6" ry="4" fill="#7F1D1D"/>
+    <!-- Khăn lạnh đắp trán -->
+    <rect x="20" y="20" width="30" height="8" rx="3" fill="#38BDF8" stroke="#0284C7" stroke-width="1"/>
+    <text x="35" y="27" font-size="6" font-weight="bold" fill="#FFFFFF" text-anchor="middle">KHĂN LẠNH</text>
+
+    <!-- Mặt nạ oxy chụp vào mũi bố -->
+    <ellipse cx="32" cy="46" rx="10" ry="8" fill="#38BDF8" opacity="0.6" stroke="#0284C7" stroke-width="1.5"/>
+    <!-- Dây thở oxy nối ra bình oxy -->
+    <path d="M 28 50 Q 0 65 -15 30" stroke="#0284C7" stroke-width="2.5" fill="none"/>
+
+    <!-- Bình Oxy màu xanh lá cây đứng bên cạnh -->
+    <g transform="translate(-50, -20)">
+      <rect x="0" y="20" width="28" height="90" rx="12" fill="#10B981" stroke="#047857" stroke-width="2"/>
+      <rect x="8" y="8" width="12" height="14" fill="#64748B"/>
+      <!-- Đồng hồ áp suất oxy -->
+      <circle cx="14" cy="5" r="9" fill="#FFFFFF" stroke="#047857" stroke-width="1.5"/>
+      <text x="14" y="8" font-size="7" font-weight="bold" fill="#EF4444" text-anchor="middle">O2</text>
+      <text x="14" y="65" font-size="10" font-weight="bold" fill="#FFFFFF" text-anchor="middle" transform="rotate(-90, 14, 65)">BÌNH OXY</text>
+    </g>
+
+    <!-- Linh hồn bố bay lơ lửng hình bóng ma nhỏ -->
+    <g transform="translate(60, -35)">
+      <path d="M 15 0 C 30 0 30 30 25 35 C 20 40 10 35 5 40 C 0 35 0 0 15 0 Z" fill="#E0F2FE" opacity="0.8" stroke="#38BDF8" stroke-width="1.5"/>
+      <circle cx="10" cy="12" r="2" fill="#0284C7"/><circle cx="20" cy="12" r="2" fill="#0284C7"/>
+      <ellipse cx="15" cy="20" rx="3" ry="4" fill="#0284C7"/>
+      <text x="35" y="20" font-size="9" font-weight="bold" fill="#64748B">Hồn lìa xác...</text>
+    </g>
+  </g>
+
+  <!-- Y TÁ ĐANG HỐT HOẢNG BÓP BÓNG THỞ OXY CHO BỐ -->
+  <g transform="translate(560, 140)">
+    <circle cx="30" cy="40" r="18" fill="#FFE4E6" stroke="#1E293B" stroke-width="2"/>
+    <path d="M 15 35 C 15 22 45 22 45 35 Z" fill="#F472B6"/>
+    <circle cx="25" cy="38" r="2.5" fill="#1E293B"/><circle cx="35" cy="38" r="2.5" fill="#1E293B"/>
+    <ellipse cx="30" cy="47" rx="5" ry="4" fill="#BE185D"/>
+    <!-- Mũ y tá có chữ thập đỏ -->
+    <rect x="20" y="20" width="20" height="12" rx="2" fill="#FFFFFF" stroke="#E11D48" stroke-width="1"/>
+    <path d="M 30 22 L 30 30 M 26 26 L 34 26" stroke="#E11D48" stroke-width="2"/>
+    <!-- Váy y tá trắng -->
+    <path d="M 15 60 L 45 60 L 50 130 L 10 130 Z" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="30" y="150" font-size="9" font-weight="bold" fill="#DC2626" text-anchor="middle">Y TÁ CẤP CỨU!</text>
+  </g>
+
+  <!-- Lời thoại MẸ VỪA RẶN VỪA LA BỐ -->
+  <rect x="35" y="70" width="230" height="48" rx="10" fill="#FFFFFF" stroke="#BE185D" stroke-width="2" filter="url(#p3Shadow)"/>
+  <text x="150" y="90" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#BE185D" text-anchor="middle">"Dậy ngay ông tướng ơi! 😤💢</text>
+  <text x="150" y="108" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#BE185D" text-anchor="middle">Ai đẻ mà ông lăn ra ngất hả?!"</text>
+
+  <!-- Lời thoại Y TÁ CẤP CỨU CHO BỐ -->
+  <rect x="380" y="70" width="240" height="48" rx="10" fill="#FFFFFF" stroke="#0284C7" stroke-width="2" filter="url(#p3Shadow)"/>
+  <text x="500" y="90" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#DC2626" text-anchor="middle">"Bác sĩ ơi! Bố tụt huyết áp ngất rồi! 😵</text>
+  <text x="500" y="108" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#0369A1" text-anchor="middle">Cho thở oxy gấp giường bên!"</text>
+
+  <!-- Chú thích đáy -->
+  <rect x="25" y="390" width="600" height="40" rx="8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="325" y="415" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Vào phòng đẻ, bác sĩ vừa hô rặn thì bố nhìn thấy giọt máu ngất xỉu lăn ra sàn!</text>
+</svg>

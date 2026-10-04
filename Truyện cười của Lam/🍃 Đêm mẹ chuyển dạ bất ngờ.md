@@ -1,4 +1,4 @@
-﻿# 🍃 🌙🤰 Truyện Tranh Hoạt Hình: Đêm Mẹ Chuyển Dạ Bất Ngờ
+# 🍃 🌙🤰 Truyện Tranh Hoạt Hình: Đêm Mẹ Chuyển Dạ Bất Ngờ
 
 > *Một buổi tối ấm áp bỗng trở nên hồi hộp khi mẹ mang chiếc bụng bầu siêu to bất ngờ lên cơn đau chuyển dạ tại nhà. Bạn nhỏ đã vô cùng nhanh trí, bình tĩnh đỡ mẹ nghỉ ngơi, nâng chân mẹ gác lên đệm êm, lấy nước ấm và gọi điện thoại cấp cứu 115 thần tốc giúp mẹ đến viện an toàn đón em bé chào đời!*
 

@@ -1,4 +1,4 @@
-﻿# 🍃 🤰🍉 Truyện Tranh Dài: Chiếc Bụng Bầu "Siêu To Khổng Lồ" Của Mẹ & Biệt Đội Hộ Tống Nhí
+# 🍃 🤰🍉 Truyện Tranh Dài: Chiếc Bụng Bầu "Siêu To Khổng Lồ" Của Mẹ & Biệt Đội Hộ Tống Nhí
 
 > *Câu chuyện gia đình siêu hài hước, ấm áp và ngập tràn niềm vui về chiếc bụng bầu "siêu to kỷ lục" của mẹ: từ màn đo bụng bằng thước dây thợ may, sự cố ủi xe đẩy tự động trong siêu thị, cho đến sự ra đời kỳ diệu của ba thiên thần nhỏ mỉm mỉn!*
 

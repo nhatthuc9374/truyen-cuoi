@@ -1,0 +1,399 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1330 980" width="100%" height="100%">
+  <defs>
+    <!-- Main Banner Gradient -->
+    <linearGradient id="fullBanner" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DC2626"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+
+    <!-- Panel 1 Defs -->
+    <linearGradient id="p1NightBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="65%" stop-color="#312E81"/>
+      <stop offset="65%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="bellyP1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6"/>
+      <stop offset="50%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#DB2777"/>
+    </linearGradient>
+    <filter id="p1Shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+
+    <!-- Panel 2 Defs -->
+    <linearGradient id="p2SpeedBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="bellyP2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6"/>
+      <stop offset="50%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#DB2777"/>
+    </linearGradient>
+    <filter id="p2Shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+
+    <!-- Panel 3 Defs -->
+    <linearGradient id="p3HospBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="60%" stop-color="#BAE6FD"/>
+      <stop offset="60%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+    <linearGradient id="p3ScrubBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+    <filter id="p3Shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+
+    <!-- Panel 4 Defs -->
+    <linearGradient id="p4PostBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7"/>
+      <stop offset="60%" stop-color="#FDE68A"/>
+      <stop offset="60%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="p4GoldBanner" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <filter id="p4Shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Nền đen toàn bộ khung truyện -->
+  <rect width="1330" height="980" fill="#0F172A" rx="20"/>
+
+  <!-- Banner Tiêu Đề Chính -->
+  <rect x="25" y="15" width="1280" height="55" rx="14" fill="url(#fullBanner)" stroke="#FDE047" stroke-width="3"/>
+  <text x="665" y="52" font-family="'Segoe UI', Roboto, sans-serif" font-size="23" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">
+    ⚡ TRỌN BỘ TRUYỆN TRANH: ĐI ĐẺ BÃO TÁP - BỐ NGẤT XỈU, MẸ TỰ CẦM LÁI VƯỢT CẠN 🚗💨👶👶
+  </text>
+
+  <!-- ==================== CẢNH 1: TOP-LEFT ==================== -->
+  <g transform="translate(20, 85) scale(0.97)">
+    <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#p1NightBg)" stroke="#4338CA" stroke-width="4"/>
+
+    <rect x="25" y="20" width="370" height="36" rx="10" fill="#4F46E5" filter="url(#p1Shadow)"/>
+    <text x="210" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">🌙 CẢNH 1: 1H ĐÊM VỠ ỐI &amp; ÔNG BỐ HOẢNG LOẠN ⏰😱</text>
+
+    <!-- Cửa sổ & Mặt trăng -->
+    <rect x="50" y="80" width="90" height="90" rx="8" fill="#0F172A" stroke="#6366F1" stroke-width="2"/>
+    <circle cx="110" cy="115" r="18" fill="#FDE047"/>
+    <circle cx="102" cy="110" r="16" fill="#0F172A"/>
+    <circle cx="170" cy="110" r="22" fill="#EF4444" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="170" y="115" font-size="9" font-weight="bold" fill="#FFFFFF" text-anchor="middle">01:00 AM</text>
+
+    <!-- Giường -->
+    <rect x="30" y="230" width="300" height="70" rx="8" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2"/>
+    <polygon points="30,230 70,180 140,230" fill="#FBCFE8"/>
+
+    <!-- Mẹ bầu điềm tĩnh -->
+    <g transform="translate(60, 160)">
+      <circle cx="45" cy="30" r="24" fill="#FFE4E6" stroke="#1E293B" stroke-width="2"/>
+      <path d="M 25 25 C 25 2 65 2 65 25 Z" fill="#78350F"/>
+      <ellipse cx="38" cy="28" rx="3" ry="3.5" fill="#1E293B"/><ellipse cx="52" cy="28" rx="3.5" ry="3" fill="#1E293B"/>
+      <path d="M 42 38 Q 45 44 48 38" stroke="#E11D48" stroke-width="2" fill="none"/>
+      <ellipse cx="34" cy="32" rx="3" ry="2" fill="#FDA4AF"/><ellipse cx="56" cy="32" rx="3" ry="2" fill="#FDA4AF"/>
+      <path d="M 30 50 L 60 50 L 110 80 L 20 80 Z" fill="#F472B6"/>
+      <ellipse cx="115" cy="60" rx="85" ry="70" fill="url(#bellyP1)" stroke="#BE185D" stroke-width="3.5" filter="url(#p1Shadow)"/>
+      <text x="115" y="65" font-family="'Impact', sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">SẮP ĐẺ RỒI! 👶👶</text>
+      <path d="M 55 52 Q 80 65 100 62" stroke="#F472B6" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <circle cx="100" cy="62" r="5" fill="#FFE4E6"/>
+    </g>
+
+    <!-- Bố hoảng loạn -->
+    <g transform="translate(390, 120)">
+      <circle cx="60" cy="40" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+      <path d="M 40 25 L 35 5 L 48 15 L 60 -2 L 72 15 L 85 5 L 80 25 Z" fill="#1E293B"/>
+      <circle cx="50" cy="36" r="7" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5"/><circle cx="50" cy="36" r="3" fill="#1E293B"/>
+      <circle cx="70" cy="36" r="7" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5"/><circle cx="70" cy="36" r="3" fill="#1E293B"/>
+      <ellipse cx="60" cy="54" rx="10" ry="12" fill="#7F1D1D"/>
+      <circle cx="95" cy="20" r="4" fill="#38BDF8"/><circle cx="25" cy="15" r="3" fill="#38BDF8"/>
+      <text x="100" y="55" font-family="'Impact', sans-serif" font-size="20" fill="#EF4444">Á Á Á! 😱</text>
+
+      <rect x="40" y="66" width="40" height="55" rx="5" fill="#FACC15" stroke="#CA8A04" stroke-width="2"/>
+      <text x="60" y="95" font-size="8" fill="#854D0E" font-weight="bold" text-anchor="middle">ÁO TRÁI</text>
+
+      <rect x="45" y="120" width="30" height="70" rx="6" fill="#60A5FA" stroke="#2563EB" stroke-width="2"/>
+      <ellipse cx="50" cy="192" rx="8" ry="5" fill="#FFEDD5"/>
+      <ellipse cx="70" cy="192" rx="8" ry="5" fill="#FFEDD5"/>
+      <text x="60" y="215" font-size="10" font-weight="bold" fill="#DC2626" text-anchor="middle">Xỏ nhầm 1 ống! 🦵🦵</text>
+
+      <line x1="40" y1="85" x2="0" y2="100" stroke="#FFEDD5" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="-15" cy="100" r="16" fill="#334155" stroke="#0F172A" stroke-width="2"/>
+      <line x1="-15" y1="100" x2="-35" y2="85" stroke="#78350F" stroke-width="4"/>
+      <text x="-15" y="130" font-size="9" font-weight="bold" fill="#FDE047" text-anchor="middle">Cầm chảo rán 🍳</text>
+    </g>
+
+    <!-- Làn đi đẻ -->
+    <g transform="translate(320, 270)">
+      <rect x="0" y="20" width="75" height="50" rx="8" fill="#EF4444" stroke="#B91C1C" stroke-width="2"/>
+      <path d="M 15 20 Q 37 -10 60 20" stroke="#B91C1C" stroke-width="4" fill="none"/>
+      <text x="37" y="50" font-size="9" font-weight="bold" fill="#FFFFFF" text-anchor="middle">LÀN ĐẺ</text>
+    </g>
+
+    <!-- Lời thoại mẹ -->
+    <rect x="40" y="65" width="220" height="50" rx="10" fill="#FFFFFF" stroke="#BE185D" stroke-width="2" filter="url(#p1Shadow)"/>
+    <text x="150" y="85" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#BE185D" text-anchor="middle">"Anh ơi dậy đi, em vỡ ối rồi!</text>
+    <text x="150" y="103" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#BE185D" text-anchor="middle">Bình tĩnh nào sao nhảy dựng thế? 😄"</text>
+
+    <!-- Chú thích đáy -->
+    <rect x="25" y="390" width="600" height="40" rx="8" fill="#312E81" stroke="#6366F1" stroke-width="1.5"/>
+    <text x="325" y="415" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#E0E7FF" text-anchor="middle">Mẹ bầu vỡ ối cực kỳ điềm tĩnh, trong khi bố hoảng loạn vơ chảo rán nhét làn đi đẻ!</text>
+  </g>
+
+  <!-- ==================== CẢNH 2: TOP-RIGHT ==================== -->
+  <g transform="translate(670, 85) scale(0.97)">
+    <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#p2SpeedBg)" stroke="#EF4444" stroke-width="4"/>
+
+    <!-- Vệt tốc độ gió -->
+    <line x1="50" y1="100" x2="20" y2="100" stroke="#FDE047" stroke-width="3" stroke-dasharray="10 15" opacity="0.6"/>
+    <line x1="80" y1="140" x2="30" y2="140" stroke="#38BDF8" stroke-width="4" stroke-dasharray="20 20" opacity="0.5"/>
+    <line x1="600" y1="90" x2="520" y2="90" stroke="#FDE047" stroke-width="3" stroke-dasharray="15 15" opacity="0.6"/>
+
+    <rect x="25" y="20" width="400" height="36" rx="10" fill="#DC2626" filter="url(#p2Shadow)"/>
+    <text x="225" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">🚗 CẢNH 2: BỐ RUN LẨY BẨY, MẸ LÁI XE VƯỢT CẠN 💨🔥</text>
+
+    <!-- Taplo & Kính xe -->
+    <path d="M 60 120 L 590 120 L 610 320 L 40 320 Z" fill="#1E293B" stroke="#64748B" stroke-width="3"/>
+    <path d="M 80 130 L 570 130 L 590 270 L 60 270 Z" fill="#0284C7" opacity="0.25"/>
+    <path d="M 40 270 L 610 270 L 630 380 L 20 380 Z" fill="#0F172A" stroke="#334155" stroke-width="3"/>
+
+    <!-- Đồng hồ 120 km/h -->
+    <circle cx="325" cy="315" r="32" fill="#000000" stroke="#EF4444" stroke-width="3"/>
+    <path d="M 325 315 L 342 295" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+    <text x="325" y="322" font-size="11" font-weight="900" fill="#FDE047" text-anchor="middle">120 KM/H</text>
+    <text x="325" y="336" font-size="8" font-weight="bold" fill="#38BDF8" text-anchor="middle">FAST &amp; FURIOUS</text>
+
+    <!-- Mẹ lái ngầu -->
+    <g transform="translate(90, 140)">
+      <circle cx="65" cy="40" r="26" fill="#FFE4E6" stroke="#1E293B" stroke-width="2"/>
+      <path d="M 40 25 C 40 5 85 5 88 25 Z" fill="#78350F"/>
+      <path d="M 40 30 Q 15 35 10 50 Q 25 45 42 40 Z" fill="#78350F"/>
+      <rect x="48" y="32" width="16" height="12" rx="3" fill="#0F172A"/>
+      <rect x="68" y="32" width="16" height="12" rx="3" fill="#0F172A"/>
+      <line x1="64" y1="38" x2="68" y2="38" stroke="#0F172A" stroke-width="2"/>
+      <line x1="50" y1="35" x2="62" y2="35" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M 58 58 Q 66 65 74 58" stroke="#BE185D" stroke-width="3" fill="none"/>
+
+      <path d="M 45 66 L 85 66 L 95 140 L 35 140 Z" fill="#F472B6"/>
+      <ellipse cx="90" cy="115" rx="60" ry="50" fill="url(#bellyP2)" stroke="#BE185D" stroke-width="3" filter="url(#p2Shadow)"/>
+      <text x="90" y="118" font-size="10" font-weight="900" fill="#FFFFFF" text-anchor="middle">BỤNG ĐÈ VÔ LĂNG</text>
+
+      <ellipse cx="125" cy="120" rx="35" ry="32" fill="none" stroke="#000000" stroke-width="8"/>
+      <circle cx="125" cy="120" r="10" fill="#334155"/>
+      <line x1="55" y1="85" x2="105" y2="105" stroke="#FFE4E6" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="105" cy="105" r="6" fill="#F43F5E"/>
+      <line x1="75" y1="85" x2="145" y2="105" stroke="#FFE4E6" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="145" cy="105" r="6" fill="#F43F5E"/>
+    </g>
+
+    <!-- Bố co ro run rẩy -->
+    <g transform="translate(420, 140)">
+      <circle cx="50" cy="40" r="26" fill="#D1FAE5" stroke="#1E293B" stroke-width="2"/>
+      <path d="M 30 25 C 30 10 70 10 70 25 Z" fill="#1E293B"/>
+      <circle cx="42" cy="38" r="6" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5"/>
+      <circle cx="58" cy="38" r="6" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5"/>
+      <path d="M 40 55 L 45 52 L 50 56 L 55 52 L 60 55" stroke="#1E293B" stroke-width="2" fill="none"/>
+      <circle cx="25" cy="30" r="4" fill="#38BDF8"/><circle cx="75" cy="35" r="4" fill="#38BDF8"/>
+      <rect x="25" y="66" width="50" height="75" rx="8" fill="#FACC15" stroke="#CA8A04" stroke-width="2"/>
+      <rect x="20" y="85" width="58" height="42" rx="6" fill="#EF4444" stroke="#B91C1C" stroke-width="2"/>
+      <circle cx="15" cy="95" r="14" fill="#334155"/>
+      <line x1="15" y1="95" x2="-5" y2="85" stroke="#78350F" stroke-width="4"/>
+      <path d="M 25 75 Q 15 100 35 110" stroke="#D1FAE5" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <path d="M 75 75 Q 85 100 65 110" stroke="#D1FAE5" stroke-width="7" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Thoại mẹ & bố -->
+    <rect x="40" y="65" width="250" height="48" rx="10" fill="#FFFFFF" stroke="#BE185D" stroke-width="2" filter="url(#p2Shadow)"/>
+    <text x="165" y="84" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#BE185D" text-anchor="middle">"Bám chắc tay nắm anh ơi! 🏎️💨</text>
+    <text x="165" y="102" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#BE185D" text-anchor="middle">Em đưa anh... à đưa em đi đẻ!"</text>
+
+    <rect x="370" y="65" width="250" height="48" rx="10" fill="#FFFFFF" stroke="#0284C7" stroke-width="2" filter="url(#p2Shadow)"/>
+    <text x="495" y="84" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#0369A1" text-anchor="middle">"Vợ ơi... từ từ thôi... 🤢</text>
+    <text x="495" y="102" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#DC2626" text-anchor="middle">Tim anh rớt ra ngoài rồi... hu hu!"</text>
+
+    <rect x="25" y="390" width="600" height="40" rx="8" fill="#1E293B" stroke="#EF4444" stroke-width="1.5"/>
+    <text x="325" y="415" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#FEF08A" text-anchor="middle">Bố run rẩy làm rơi chìa khóa, mẹ bầu tự trèo ghế lái phóng 120km/h vượt cạn!</text>
+  </g>
+
+  <!-- ==================== CẢNH 3: BOTTOM-LEFT ==================== -->
+  <g transform="translate(20, 525) scale(0.97)">
+    <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#p3HospBg)" stroke="#0284C7" stroke-width="4"/>
+
+    <!-- Đèn mổ -->
+    <g transform="translate(200, 10)">
+      <line x1="100" y1="0" x2="100" y2="40" stroke="#64748B" stroke-width="4"/>
+      <ellipse cx="100" cy="45" rx="50" ry="12" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2"/>
+      <circle cx="85" cy="45" r="7" fill="#FEF08A"/>
+      <circle cx="100" cy="45" r="7" fill="#FEF08A"/>
+      <circle cx="115" cy="45" r="7" fill="#FEF08A"/>
+      <polygon points="60,50 140,50 200,260 0,260" fill="#FEF08A" opacity="0.15"/>
+    </g>
+
+    <rect x="25" y="20" width="410" height="36" rx="10" fill="#0284C7" filter="url(#p3Shadow)"/>
+    <text x="230" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">🏥 CẢNH 3: BÁC SĨ HÔ RẶN, BỐ LĂN RA NGẤT XỈU 😵💨</text>
+
+    <!-- Mẹ trên bàn sinh -->
+    <g transform="translate(40, 160)">
+      <rect x="0" y="100" width="220" height="45" rx="8" fill="#FFFFFF" stroke="#0284C7" stroke-width="2"/>
+      <polygon points="10,100 60,35 140,75 140,100" fill="#F472B6"/>
+      <ellipse cx="110" cy="75" rx="45" ry="40" fill="#EC4899" stroke="#BE185D" stroke-width="2"/>
+
+      <circle cx="45" cy="20" r="24" fill="#FECDD3" stroke="#1E293B" stroke-width="2"/>
+      <path d="M 25 15 C 25 -5 65 -5 65 15 Z" fill="#78350F"/>
+      <ellipse cx="48" cy="30" rx="9" ry="7" fill="#881337"/>
+      <line x1="50" y1="40" x2="160" y2="25" stroke="#FECDD3" stroke-width="8" stroke-linecap="round"/>
+      <polygon points="160,20 185,25 160,30" fill="#FECDD3"/>
+      <text x="145" y="15" font-family="'Impact', sans-serif" font-size="14" fill="#E11D48">DẬY MAU! 👉</text>
+    </g>
+
+    <!-- Bác sĩ -->
+    <g transform="translate(195, 140)">
+      <circle cx="45" cy="40" r="20" fill="#FFE4E6" stroke="#1E293B" stroke-width="2"/>
+      <path d="M 25 35 C 25 20 65 20 65 35 Z" fill="#0284C7"/>
+      <rect x="33" y="42" width="24" height="15" rx="3" fill="#FFFFFF" stroke="#0284C7" stroke-width="1.5"/>
+      <path d="M 25 60 L 65 60 L 70 140 L 20 140 Z" fill="url(#p3ScrubBlue)"/>
+      <text x="5" y="130" font-size="9" font-weight="900" fill="#0369A1">CỐ LÊN!</text>
+    </g>
+
+    <!-- Bố ngất xỉu thở oxy -->
+    <g transform="translate(390, 180)">
+      <rect x="0" y="80" width="220" height="40" rx="8" fill="#F1F5F9" stroke="#64748B" stroke-width="2"/>
+      <rect x="20" y="55" width="170" height="28" rx="6" fill="#FACC15" stroke="#CA8A04" stroke-width="2"/>
+      <circle cx="35" cy="40" r="22" fill="#E2E8F0" stroke="#1E293B" stroke-width="2"/>
+      <text x="26" y="38" font-family="'Impact', sans-serif" font-size="13" fill="#EF4444">X</text>
+      <text x="38" y="38" font-family="'Impact', sans-serif" font-size="13" fill="#EF4444">X</text>
+      <rect x="20" y="20" width="30" height="8" rx="3" fill="#38BDF8" stroke="#0284C7" stroke-width="1"/>
+      <text x="35" y="27" font-size="6" font-weight="bold" fill="#FFFFFF" text-anchor="middle">KHĂN LẠNH</text>
+
+      <ellipse cx="32" cy="46" rx="10" ry="8" fill="#38BDF8" opacity="0.6" stroke="#0284C7" stroke-width="1.5"/>
+      <path d="M 28 50 Q 0 65 -15 30" stroke="#0284C7" stroke-width="2.5" fill="none"/>
+
+      <!-- Bình Oxy -->
+      <g transform="translate(-50, -20)">
+        <rect x="0" y="20" width="28" height="90" rx="12" fill="#10B981" stroke="#047857" stroke-width="2"/>
+        <circle cx="14" cy="5" r="9" fill="#FFFFFF" stroke="#047857" stroke-width="1.5"/>
+        <text x="14" y="8" font-size="7" font-weight="bold" fill="#EF4444" text-anchor="middle">O2</text>
+      </g>
+    </g>
+
+    <!-- Y tá cấp cứu -->
+    <g transform="translate(560, 140)">
+      <circle cx="30" cy="40" r="18" fill="#FFE4E6" stroke="#1E293B" stroke-width="2"/>
+      <rect x="20" y="20" width="20" height="12" rx="2" fill="#FFFFFF" stroke="#E11D48" stroke-width="1"/>
+      <path d="M 30 22 L 30 30 M 26 26 L 34 26" stroke="#E11D48" stroke-width="2"/>
+      <path d="M 15 60 L 45 60 L 50 130 L 10 130 Z" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+      <text x="30" y="150" font-size="9" font-weight="bold" fill="#DC2626" text-anchor="middle">Y TÁ CẤP CỨU!</text>
+    </g>
+
+    <rect x="35" y="70" width="230" height="48" rx="10" fill="#FFFFFF" stroke="#BE185D" stroke-width="2" filter="url(#p3Shadow)"/>
+    <text x="150" y="90" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#BE185D" text-anchor="middle">"Dậy ngay ông tướng ơi! 😤💢</text>
+    <text x="150" y="108" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#BE185D" text-anchor="middle">Ai đẻ mà ông lăn ra ngất hả?!"</text>
+
+    <rect x="380" y="70" width="240" height="48" rx="10" fill="#FFFFFF" stroke="#0284C7" stroke-width="2" filter="url(#p3Shadow)"/>
+    <text x="500" y="90" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#DC2626" text-anchor="middle">"Bác sĩ ơi! Bố tụt huyết áp ngất rồi! 😵</text>
+    <text x="500" y="108" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#0369A1" text-anchor="middle">Cho thở oxy gấp giường bên!"</text>
+
+    <rect x="25" y="390" width="600" height="40" rx="8" fill="#0284C7" stroke="#38BDF8" stroke-width="1.5"/>
+    <text x="325" y="415" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Vào phòng đẻ, bác sĩ vừa hô rặn thì bố nhìn thấy giọt máu ngất xỉu lăn ra sàn!</text>
+  </g>
+
+  <!-- ==================== CẢNH 4: BOTTOM-RIGHT ==================== -->
+  <g transform="translate(670, 525) scale(0.97)">
+    <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#p4PostBg)" stroke="#F59E0B" stroke-width="4"/>
+
+    <!-- Bong bóng -->
+    <circle cx="60" cy="80" r="16" fill="#F472B6" opacity="0.8"/>
+    <circle cx="85" cy="65" r="14" fill="#60A5FA" opacity="0.8"/>
+    <circle cx="580" cy="75" r="16" fill="#34D399" opacity="0.8"/>
+
+    <rect x="25" y="20" width="430" height="36" rx="10" fill="url(#p4GoldBanner)" filter="url(#p4Shadow)"/>
+    <text x="240" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">🎉 CẢNH 4: SONG THAI CHÀO ĐỜI - BỐ TỈNH KHÓC RÒNG 👶👶💖</text>
+
+    <!-- Giường mẹ -->
+    <rect x="30" y="250" width="360" height="80" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="3"/>
+
+    <!-- Mẹ bế 2 bé sinh đôi -->
+    <g transform="translate(60, 160)">
+      <polygon points="0,110 30,20 120,70 120,110" fill="#FDE2E4"/>
+      <circle cx="80" cy="30" r="26" fill="#FFE4E6" stroke="#1E293B" stroke-width="2"/>
+      <path d="M 55 20 C 55 2 105 2 105 20 Z" fill="#78350F"/>
+      <path d="M 70 30 Q 75 25 80 30" stroke="#1E293B" stroke-width="2.5" fill="none"/>
+      <path d="M 88 30 Q 93 25 98 30" stroke="#1E293B" stroke-width="2.5" fill="none"/>
+      <ellipse cx="68" cy="36" rx="5" ry="3" fill="#FDA4AF"/><ellipse cx="100" cy="36" rx="5" ry="3" fill="#FDA4AF"/>
+      <path d="M 77 40 Q 84 48 91 40" stroke="#E11D48" stroke-width="2.5" fill="none"/>
+      <path d="M 60 56 L 110 56 L 125 120 L 45 120 Z" fill="#F472B6"/>
+
+      <!-- Bé 1 (Anh: 3.5kg) -->
+      <g transform="translate(90, 65)">
+        <ellipse cx="25" cy="30" rx="20" ry="26" fill="#93C5FD" stroke="#3B82F6" stroke-width="2"/>
+        <circle cx="25" cy="14" r="14" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+        <circle cx="25" cy="20" r="4" fill="#38BDF8"/>
+        <path d="M 13 12 C 13 0 37 0 37 12 Z" fill="#FDE047"/>
+        <rect x="5" y="46" width="40" height="15" rx="3" fill="#FFFFFF" stroke="#3B82F6" stroke-width="1"/>
+        <text x="25" y="57" font-size="8" font-weight="bold" fill="#1D4ED8" text-anchor="middle">Anh: 3.5kg</text>
+      </g>
+
+      <!-- Bé 2 (Em: 3.5kg) -->
+      <g transform="translate(135, 65)">
+        <ellipse cx="25" cy="30" rx="20" ry="26" fill="#FBCFE8" stroke="#EC4899" stroke-width="2"/>
+        <circle cx="25" cy="14" r="14" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+        <ellipse cx="25" cy="19" rx="3" ry="2" fill="#E11D48"/>
+        <circle cx="25" cy="6" r="3" fill="#BE185D"/>
+        <rect x="5" y="46" width="40" height="15" rx="3" fill="#FFFFFF" stroke="#EC4899" stroke-width="1"/>
+        <text x="25" y="57" font-size="8" font-weight="bold" fill="#BE185D" text-anchor="middle">Em: 3.5kg</text>
+      </g>
+
+      <!-- Huy hiệu 7.0kg -->
+      <g transform="translate(200, 40)">
+        <circle cx="25" cy="25" r="24" fill="#EF4444" stroke="#FFFFFF" stroke-width="2" filter="url(#p4Shadow)"/>
+        <text x="25" y="21" font-size="9" font-weight="900" fill="#FEF08A" text-anchor="middle">TỔNG</text>
+        <text x="25" y="34" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">7.0 KG!</text>
+      </g>
+    </g>
+
+    <!-- Bố tỉnh dậy bái phục -->
+    <g transform="translate(440, 160)">
+      <circle cx="65" cy="50" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+      <path d="M 45 35 C 45 20 85 20 85 35 Z" fill="#1E293B"/>
+
+      <rect x="50" y="28" width="30" height="15" rx="2" fill="#FFFFFF" stroke="#10B981" stroke-width="1.5"/>
+      <text x="65" y="39" font-size="7" font-weight="bold" fill="#047857" text-anchor="middle">SALONPAS</text>
+
+      <path d="M 55 52 Q 40 70 30 110" stroke="#38BDF8" stroke-width="3" fill="none"/>
+      <path d="M 75 52 Q 90 70 100 110" stroke="#38BDF8" stroke-width="3" fill="none"/>
+      <ellipse cx="65" cy="62" rx="9" ry="7" fill="#B91C1C"/>
+
+      <path d="M 45 76 L 85 76 L 90 145 L 35 145 Z" fill="#FACC15"/>
+      <polygon points="35,145 90,145 110,185 20,185" fill="#3B82F6"/>
+
+      <line x1="50" y1="95" x2="30" y2="105" stroke="#FFEDD5" stroke-width="7" stroke-linecap="round"/>
+      <line x1="80" y1="95" x2="30" y2="105" stroke="#FFEDD5" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="27" cy="105" r="7" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+      <text x="10" y="90" font-size="16" fill="#F59E0B">✨</text>
+      <text x="0" y="125" font-size="16" fill="#F59E0B">🙏</text>
+    </g>
+
+    <!-- Thoại bố & mẹ -->
+    <rect x="360" y="65" width="270" height="52" rx="10" fill="#FFFFFF" stroke="#D97706" stroke-width="2" filter="url(#p4Shadow)"/>
+    <text x="495" y="85" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#D97706" text-anchor="middle">"Vợ là Siêu Nhân! Vợ là Thần Tượng! 😭🙏</text>
+    <text x="495" y="103" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#DC2626" text-anchor="middle">Từ nay đội vợ lên đầu trường sinh bất lão!"</text>
+
+    <rect x="50" y="85" width="220" height="42" rx="10" fill="#FFFFFF" stroke="#BE185D" stroke-width="2" filter="url(#p4Shadow)"/>
+    <text x="160" y="103" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#BE185D" text-anchor="middle">"Hai con giống bố y đúc nha! 🥰</text>
+    <text x="160" y="119" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold" fill="#047857" text-anchor="middle">May mà không nhát gan như bố! 🤣"</text>
+
+    <rect x="25" y="390" width="600" height="40" rx="8" fill="#F59E0B" stroke="#B45309" stroke-width="1.5"/>
+    <text x="325" y="415" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Mẹ vượt cạn thành công sinh đôi 7kg, bố tỉnh dậy trán dán cao khóc nức nở bái phục vợ!</text>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+file 'c:/truyen-cuoi/Lam/images/di_de_bao_tap_p1.jpg'
+duration 55.79
+file 'c:/truyen-cuoi/Lam/images/di_de_bao_tap_p2.jpg'
+duration 44.13
+file 'c:/truyen-cuoi/Lam/images/di_de_bao_tap_p3.jpg'
+duration 57.46
+file 'c:/truyen-cuoi/Lam/images/di_de_bao_tap_p4.jpg'
+duration 51.53
+file 'c:/truyen-cuoi/Lam/images/di_de_bao_tap_p4.jpg'

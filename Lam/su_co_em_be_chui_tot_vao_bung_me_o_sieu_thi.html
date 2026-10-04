@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🛒 Sự Cố Em Bé Chui Tọt Vào Bụng Mẹ Ở Siêu Thị - Truyện Cười Lam</title>
+  <style>
+    :root {
+      --primary: #10b981;
+      --primary-hover: #059669;
+      --primary-glow: rgba(16, 185, 129, 0.35);
+      --accent: #f43f5e;
+      --accent-hover: #e11d48;
+      --accent-glow: rgba(244, 63, 94, 0.3);
+      --gold: #fbbf24;
+      --sky: #38bdf8;
+      --bg: #0b111e;
+      --card-bg: #131f33;
+      --card-hover: #192842;
+      --card-border: #233554;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.6;
+    }
+
+    /* Top Navigation */
+    .nav-bar {
+      width: 100%;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--card-border);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.45rem 0.95rem;
+      border-radius: 9999px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      transition: all 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      background: rgba(16, 185, 129, 0.22);
+      transform: translateY(-1px);
+      color: #fff;
+    }
+
+    .nav-btn.secondary {
+      color: #fbbf24;
+      background: rgba(251, 191, 36, 0.1);
+      border-color: rgba(251, 191, 36, 0.25);
+    }
+
+    .nav-btn.secondary:hover {
+      background: rgba(251, 191, 36, 0.22);
+      color: #fff;
+    }
+
+    .badge-path {
+      background: #1e293b;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-family: monospace;
+    }
+
+    /* Header & Hero */
+    header {
+      text-align: center;
+      margin: 2.5rem 1rem 1.5rem 1rem;
+      max-width: 950px;
+    }
+
+    .story-tag-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, #10b981, #f59e0b);
+      color: #ffffff;
+      padding: 0.4rem 1.25rem;
+      border-radius: 9999px;
+      font-weight: 800;
+      font-size: 0.825rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 4px 18px var(--primary-glow);
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 900;
+      line-height: 1.25;
+      background: linear-gradient(to right, #34d399, #fbbf24, #f43f5e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    .story-lead-quote {
+      background: linear-gradient(145deg, rgba(16, 185, 129, 0.08), rgba(245, 158, 11, 0.08));
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 5px solid #10b981;
+      border-radius: 14px;
+      padding: 1.25rem 1.5rem;
+      font-size: 1.05rem;
+      color: #e2e8f0;
+      max-width: 860px;
+      margin: 1rem auto 2rem auto;
+      text-align: left;
+      line-height: 1.7;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .story-lead-quote strong {
+      color: #34d399;
+    }
+
+    /* Characters Section */
+    .char-section {
+      width: 100%;
+      max-width: 1050px;
+      margin: 0 auto 2.5rem auto;
+      padding: 0 1.25rem;
+    }
+
+    .section-headline {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #f1f5f9;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .char-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .char-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 1.25rem 1.4rem;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .char-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--primary);
+      box-shadow: 0 12px 24px -8px var(--primary-glow);
+    }
+
+    .char-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.65rem;
+    }
+
+    .char-avatar {
+      font-size: 2rem;
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      background: rgba(16, 185, 129, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .char-title h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .char-title span {
+      font-size: 0.82rem;
+      color: #34d399;
+      font-weight: 600;
+    }
+
+    .char-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Interactive Audio Bar */
+    .interactive-bar {
+      width: 100%;
+      max-width: 1050px;
+      background: linear-gradient(135deg, #162438, #111b2b);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 1.25rem 1.5rem;
+      margin: 0 auto 2.5rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .audio-title-group {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .audio-icon {
+      font-size: 1.8rem;
+    }
+
+    .audio-title {
+      font-weight: 700;
+      font-size: 1rem;
+      color: #fff;
+    }
+
+    .audio-subtitle {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .sound-buttons {
+      display: flex;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-sound {
+      padding: 0.55rem 1.1rem;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      color: #34d399;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.875rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      transition: all 0.2s;
+    }
+
+    .btn-sound:hover {
+      background: var(--primary);
+      color: #0b111e;
+      box-shadow: 0 4px 14px var(--primary-glow);
+      transform: scale(1.03);
+    }
+
+    .btn-sound.alert {
+      background: rgba(244, 63, 94, 0.15);
+      border-color: rgba(244, 63, 94, 0.35);
+      color: #fb7185;
+    }
+
+    .btn-sound.alert:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    /* View Controls */
+    .controls-wrapper {
+      width: 100%;
+      max-width: 1050px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 0 auto 1.75rem auto;
+      padding: 0 1.25rem;
+    }
+
+    .view-mode-buttons {
+      display: flex;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-mode {
+      padding: 0.55rem 1.15rem;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      background: var(--card-bg);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .btn-mode:hover {
+      border-color: var(--primary);
+      color: #34d399;
+      transform: translateY(-2px);
+    }
+
+    .btn-mode.active {
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: #ffffff;
+      border-color: #10b981;
+      box-shadow: 0 4px 15px var(--primary-glow);
+    }
+
+    /* Comic Container */
+    .comic-container {
+      width: 100%;
+      max-width: 1050px;
+      padding: 0 1.25rem;
+      margin-bottom: 2.5rem;
+      transition: all 0.3s ease;
+    }
+
+    /* Grid Mode */
+    .grid-mode {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+      gap: 1.75rem;
+    }
+
+    /* Strip Mode */
+    .strip-mode {
+      display: flex;
+      flex-direction: column;
+      gap: 2.25rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Slide Mode */
+    .slide-mode .comic-card {
+      display: none;
+    }
+
+    .slide-mode .comic-card.current {
+      display: flex;
+      animation: fadeIn 0.3s ease;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* Comic Card */
+    .comic-card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 1.4rem;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.25s ease;
+    }
+
+    .comic-card:hover {
+      border-color: rgba(16, 185, 129, 0.6);
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.65);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .panel-tag {
+      font-size: 0.8rem;
+      font-weight: 800;
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      padding: 0.3rem 0.75rem;
+      border-radius: 8px;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+    }
+
+    .panel-tag.danger {
+      background: rgba(244, 63, 94, 0.15);
+      color: #fb7185;
+      border-color: rgba(244, 63, 94, 0.35);
+    }
+
+    .panel-tag.highlight {
+      background: rgba(251, 191, 36, 0.15);
+      color: #fbbf24;
+      border-color: rgba(251, 191, 36, 0.35);
+    }
+
+    .panel-caption {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .img-wrapper {
+      width: 100%;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #1e293b;
+      margin-bottom: 1.25rem;
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .img-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .img-wrapper:hover img {
+      transform: scale(1.02);
+    }
+
+    .zoom-hint {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(4px);
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 0.3rem 0.65rem;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      pointer-events: none;
+    }
+
+    .panel-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      flex: 1;
+    }
+
+    .narration-box {
+      background: rgba(15, 23, 42, 0.6);
+      border-left: 4px solid #38bdf8;
+      padding: 0.95rem 1.1rem;
+      border-radius: 0 10px 10px 0;
+      font-size: 0.92rem;
+      color: #cbd5e1;
+      line-height: 1.65;
+    }
+
+    .dialogue-box {
+      background: rgba(15, 23, 42, 0.75);
+      border-left: 4px solid var(--primary);
+      padding: 0.95rem 1.1rem;
+      border-radius: 0 10px 10px 0;
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+
+    .dialogue-box.danger {
+      border-left-color: var(--accent);
+      background: rgba(244, 63, 94, 0.08);
+    }
+
+    .dialogue-box.gold {
+      border-left-color: #fbbf24;
+      background: rgba(251, 191, 36, 0.08);
+    }
+
+    .dialogue-box.sky {
+      border-left-color: #38bdf8;
+      background: rgba(56, 189, 248, 0.08);
+    }
+
+    .speaker-name {
+      font-weight: 800;
+      font-size: 0.92rem;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* Slideshow Navigation */
+    .slide-nav {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      gap: 1.25rem;
+      margin: 1.5rem auto;
+      width: 100%;
+    }
+
+    .slide-mode-active .slide-nav {
+      display: flex;
+    }
+
+    .btn-slide {
+      padding: 0.6rem 1.25rem;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      color: #f8fafc;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+
+    .btn-slide:hover:not(:disabled) {
+      background: var(--primary);
+      color: #0b111e;
+      border-color: var(--primary);
+    }
+
+    .btn-slide:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .slide-counter {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #34d399;
+      min-width: 90px;
+      text-align: center;
+    }
+
+    /* Full Strip Gallery Card */
+    .full-strip-box {
+      width: 100%;
+      max-width: 1050px;
+      margin: 1.5rem auto 2.5rem auto;
+      padding: 0 1.25rem;
+    }
+
+    .full-strip-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .full-strip-card img {
+      width: 100%;
+      max-width: 1000px;
+      border-radius: 14px;
+      margin-top: 1rem;
+      cursor: pointer;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+      transition: transform 0.25s ease;
+    }
+
+    .full-strip-card img:hover {
+      transform: scale(1.01);
+    }
+
+    /* Records Table */
+    .record-box {
+      width: 100%;
+      max-width: 1050px;
+      margin: 0 auto 2.5rem auto;
+      padding: 0 1.25rem;
+    }
+
+    .record-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card-bg);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+    }
+
+    .record-table th, .record-table td {
+      padding: 1rem 1.25rem;
+      text-align: left;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .record-table th {
+      background: rgba(15, 23, 42, 0.9);
+      color: #34d399;
+      font-weight: 800;
+      font-size: 0.95rem;
+    }
+
+    .record-table tr:hover {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    /* Moral Section */
+    .moral-section {
+      width: 100%;
+      max-width: 1050px;
+      background: linear-gradient(145deg, #131f33, #0f1929);
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 0 auto 2.5rem auto;
+      border: 1px dashed rgba(16, 185, 129, 0.4);
+    }
+
+    .moral-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+
+    .moral-item {
+      background: rgba(11, 17, 30, 0.7);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 1.25rem;
+    }
+
+    .moral-item h4 {
+      color: #34d399;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .moral-item p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    /* Reaction Bar */
+    .reaction-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+      margin: 2rem auto;
+    }
+
+    .btn-react {
+      padding: 0.6rem 1.25rem;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 9999px;
+      color: #f8fafc;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+
+    .btn-react:hover {
+      transform: scale(1.08);
+      border-color: var(--gold);
+      background: rgba(251, 191, 36, 0.15);
+      color: var(--gold);
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(3, 7, 18, 0.92);
+      backdrop-filter: blur(12px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .lightbox-modal.active {
+      display: flex;
+    }
+
+    .lightbox-content {
+      position: relative;
+      max-width: 95vw;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .lightbox-content img {
+      max-width: 95vw;
+      max-height: 85vh;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85);
+      border: 2px solid var(--primary);
+      object-fit: contain;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: -45px;
+      right: 0;
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+
+    .lightbox-close:hover {
+      background: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2.2rem 1.5rem;
+      border-top: 1px solid var(--card-border);
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      margin-top: auto;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="nav-bar">
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn">
+        <span>←</span> Kho Truyện của Lam
+      </a>
+      <a href="../index.html" class="nav-btn secondary">
+        <span>🏠</span> Cổng Tổng Hợp
+      </a>
+      <a href="video_su_co_em_be_chui_tot_vao_bung_me_o_sieu_thi.html" class="nav-btn" style="color: #f59e0b; background: rgba(245, 158, 11, 0.12); border-color: rgba(245, 158, 11, 0.3);">
+        <span>🎬</span> Xem Video Hoạt Hình &rarr;
+      </a>
+    </div>
+    <span class="badge-path">Lam/su_co_em_be_chui_tot_vao_bung_me_o_sieu_thi.html</span>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="story-tag-badge">🛒 Siêu Thị • 👶 Trò Trốn Tìm • 🤰 Bụng Bầu 120cm • 🏃‍♀️ Marathon Hài Hước</div>
+    <h1>🛒 Sự Cố Em Bé Chui Tọt Vào Bụng Mẹ Ở Siêu Thị</h1>
+    <div class="story-lead-quote">
+      Chuyến đi siêu thị cuối tuần bão táp: chiếc váy maxi hoa nhí rộng thùng thình, cu Tí tinh nghịch chui tọt vào bên trong váy khiến bụng mẹ nhô phồng tròn ủng <strong>120cm</strong> nhấp nhô cùi chỏ, bác bảo vệ nghi giấu trộm dưa hấu 5kg và màn ôm bụng chạy tháo thân làm <strong>cả siêu thị cười rúng động!</strong>
+    </div>
+  </header>
+
+  <!-- Nhân Vật -->
+  <section class="char-section">
+    <div class="section-headline">👥 Nhân Vật Chính Trong Sự Cố</div>
+    <div class="char-grid">
+      <div class="char-card">
+        <div class="char-header">
+          <div class="char-avatar">👩</div>
+          <div class="char-title">
+            <h3>Mẹ Trẻ Xinh Đẹp</h3>
+            <span>Diện đầm maxi hoa nhí</span>
+          </div>
+        </div>
+        <p class="char-desc">Đang chọn dưa hấu ngon thì bỗng biến thành "bà bầu vượt mặt 120cm" vì con trai chui tọt vào váy, ôm bụng chạy marathon tốc độ âm thanh.</p>
+      </div>
+
+      <div class="char-card">
+        <div class="char-header">
+          <div class="char-avatar">👶</div>
+          <div class="char-title">
+            <h3>Cu Tí (3 Tuổi)</h3>
+            <span>Em bé má bánh bao tròn xoe</span>
+          </div>
+        </div>
+        <p class="char-desc">Nghịch ngợm chơi trốn tìm chui tọt vào váy mẹ, đạp cùi chỏ lồi lõm rồi luồn tay qua cạp váy ngoe nguẩy vẫy chào bác bảo vệ!</p>
+      </div>
+
+      <div class="char-card">
+        <div class="char-header">
+          <div class="char-avatar">🧒</div>
+          <div class="char-title">
+            <h3>Tôi (Anh Hai 10 Tuổi)</h3>
+            <span>"Tài xế" đẩy xe hàng siêu thị</span>
+          </div>
+        </div>
+        <p class="char-desc">Vừa há hốc mồm kinh ngạc trước chiếc bụng bầu thần tốc của mẹ, vừa cười sặc sụa dắt tay mẹ phi nước đại thoát khỏi đám đông.</p>
+      </div>
+
+      <div class="char-card">
+        <div class="char-header">
+          <div class="char-avatar">👮‍♂️</div>
+          <div class="char-title">
+            <h3>Bác Bảo Vệ Tận Tụy</h3>
+            <span>Cầm bộ đàm soi camera</span>
+          </div>
+        </div>
+        <p class="char-desc">Nghi vấn mẹ giấu quả dưa hấu 5kg, nhưng đứng hình cười bò khi thấy bàn tay bé xíu thò ra từ cạp váy vẫy chào thân ái!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Sound Bar -->
+  <section class="interactive-bar">
+    <div class="audio-title-group">
+      <div class="audio-icon">🔊</div>
+      <div>
+        <div class="audio-title">Bàn Phím Âm Thanh Tương Tác (Web Audio FX)</div>
+        <div class="audio-subtitle">Bấm nút để kích hoạt các âm thanh siêu thị chân thực</div>
+      </div>
+    </div>
+    <div class="sound-buttons">
+      <button class="btn-sound" style="background: linear-gradient(135deg, #10b981, #059669); color: #fff; border-color: #10b981;" onclick="toggleStoryAudio()">🎙️ <span id="voiceBtnText">Phát Giọng Đọc Studio</span></button>
+      <button class="btn-sound" onclick="playSupermarketChime()">🔔 Chuông Siêu Thị</button>
+      <button class="btn-sound" onclick="playBabyWiggleSound()">👶 Bé Cựa Quậy</button>
+      <button class="btn-sound alert" onclick="playRunFastSound()">🏃‍♀️💨 Chạy Nước Đại</button>
+      <button class="btn-sound" onclick="playLaughCrowdSound()">🤣 Tiếng Cười Rộ</button>
+    </div>
+    <audio id="storyAudioPlayer" src="audio/sieu_thi_full_story.wav" preload="auto" onended="onStoryAudioEnded()"></audio>
+  </section>
+
+  <!-- View Controls -->
+  <div class="controls-wrapper" id="comicControls">
+    <div class="section-headline" style="margin-bottom: 0;">🎨 Bộ Truyện Tranh Hoạt Hình 3D Pixar</div>
+    <div class="view-mode-buttons">
+      <button class="btn-mode active" id="btnGrid" onclick="setViewMode('grid')">📱 Lưới 2 Cột</button>
+      <button class="btn-mode" id="btnStrip" onclick="setViewMode('strip')">📜 Dọc Cuộn Liền</button>
+      <button class="btn-mode" id="btnSlide" onclick="setViewMode('slide')">🎬 Từng Cảnh Chi Tiết</button>
+    </div>
+  </div>
+
+  <!-- Comic Container -->
+  <main class="comic-container grid-mode" id="comicContainer">
+    
+    <!-- Cảnh 1 -->
+    <div class="comic-card current" data-slide="1">
+      <div class="card-header">
+        <span class="panel-tag">🛒 Phân Cảnh 1</span>
+        <span class="panel-caption">Ba Mẹ Con Dạo Siêu Thị & Đầm Maxi</span>
+      </div>
+      <div class="img-wrapper" onclick="openLightbox('images/sieu_thi_p1.jpg')">
+        <img src="images/sieu_thi_p1.jpg" alt="Cảnh 1: Ba mẹ con dạo siêu thị" loading="lazy">
+        <div class="zoom-hint">🔍 Nhấn để phóng to</div>
+      </div>
+      <div class="panel-content">
+        <div class="narration-box">
+          Chiều Chủ Nhật mát rượi, mẹ diện chiếc đầm suông maxi vàng hoa nhí rộng rãi, dẫn hai anh em dạo siêu thị ngắm nghía đồ ăn và bánh kẹo. Cu Tí má bánh bao lon ton chạy nhảy lăng xăng.
+        </div>
+        <div class="dialogue-box">
+          <div class="speaker-name" style="color: #34d399;">👩 Mẹ Xinh Đẹp</div>
+          <em>“Hôm nay mẹ sẽ mua sườn non, tôm tươi và thật nhiều rau củ quả về nấu lẩu tẩm bổ cho cả nhà nhé! Thích gì cứ chọn nào!”</em>
+        </div>
+        <div class="dialogue-box sky">
+          <div class="speaker-name" style="color: #38bdf8;">👶 Cu Tí</div>
+          <em>“Aaa siêu thị mát lạnh to quá mẹ ơi! Kẹo mút với bim bim ở đâu ạ? Đi nhanh lên mẹ ơi! 🍭”</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cảnh 2 -->
+    <div class="comic-card" data-slide="2">
+      <div class="card-header">
+        <span class="panel-tag danger">⚡ Phân Cảnh 2</span>
+        <span class="panel-caption">Em Bé Chui Vào Váy - Bụng Mẹ To 120cm!</span>
+      </div>
+      <div class="img-wrapper" onclick="openLightbox('images/sieu_thi_p2.jpg')">
+        <img src="images/sieu_thi_p2.jpg" alt="Cảnh 2: Cu Tí chui tọt vào váy mẹ" loading="lazy">
+        <div class="zoom-hint">🔍 Nhấn để phóng to</div>
+      </div>
+      <div class="panel-content">
+        <div class="narration-box">
+          Bên cạnh tháp dưa hấu 5kg, cu Tí bất ngờ chui tọt vào bên trong váy mẹ chơi trốn tìm! Chỉ sau 3 giây, chiếc đầm maxi căng tròn ủng, nhô ra 120cm u lên từng cục nhấp nhô cùi chỏ bé.
+        </div>
+        <div class="dialogue-box danger">
+          <div class="speaker-name" style="color: #fb7185;">😱 Mẹ Hoảng Hốt</div>
+          <em>“ỐI GIỜI ƠI TÍ ƠI! Con chui vào đâu đấy?! Bụng mẹ to đùng thế này ai nhìn vào cũng tưởng mẹ sắp đẻ rơi giữa siêu thị mất! Mau ra ngay!”</em>
+        </div>
+        <div class="dialogue-box gold">
+          <div class="speaker-name" style="color: #fbbf24;">👶 Cu Tí Trong Váy</div>
+          <em>“Kí kì... mẹ không tìm thấy con đâu! Con trốn trong bụng mẹ êm ru nè! Mẹ bế con luôn đi! 🤣”</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cảnh 3 -->
+    <div class="comic-card" data-slide="3">
+      <div class="card-header">
+        <span class="panel-tag highlight">🍉 Phân Cảnh 3</span>
+        <span class="panel-caption">Bảo Vệ Nghi Dưa Hấu & Bàn Tay Vẫy Chào!</span>
+      </div>
+      <div class="img-wrapper" onclick="openLightbox('images/sieu_thi_p3.jpg')">
+        <img src="images/sieu_thi_p3.jpg" alt="Cảnh 3: Bảo vệ nghi giấu dưa hấu và bàn tay bé vẫy chào" loading="lazy">
+        <div class="zoom-hint">🔍 Nhấn để phóng to</div>
+      </div>
+      <div class="panel-content">
+        <div class="narration-box">
+          Bác bảo vệ cầm bộ đàm nghi ngờ mẹ giấu trộm quả dưa hấu 5kg vào bụng. Đang lúc mẹ đỏ mặt thanh minh thì cu Tí thò hẳn một bàn tay nhỏ xíu ra ngoài cạp váy ngoe nguẩy vẫy chào!
+        </div>
+        <div class="dialogue-box">
+          <div class="speaker-name" style="color: #38bdf8;">👮‍♂️ Bác Bảo Vệ</div>
+          <em>“Chị gái ơi! Vừa thấy dáng thon gọn sao ghé quầy hoa quả là bụng to vượt mặt thế kia?! Chị giấu dưa hấu hay sắp đẻ hả chị?!”</em>
+        </div>
+        <div class="dialogue-box danger">
+          <div class="speaker-name" style="color: #fb7185;">🤰 Mẹ Đỏ Mặt</div>
+          <em>“Oan cho em quá! Đây là con trai em... thằng bé nó chui tọt vào váy mẹ đấy ạ!”</em>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cảnh 4 -->
+    <div class="comic-card" data-slide="4">
+      <div class="card-header">
+        <span class="panel-tag">🏃‍♀️ Phân Cảnh 4</span>
+        <span class="panel-caption">Màn Tháo Chạy Marathon Hối Hả</span>
+      </div>
+      <div class="img-wrapper" onclick="openLightbox('images/sieu_thi_p4.jpg')">
+        <img src="images/sieu_thi_p4.jpg" alt="Cảnh 4: Mẹ bầu ôm bụng chạy marathon" loading="lazy">
+        <div class="zoom-hint">🔍 Nhấn để phóng to</div>
+      </div>
+      <div class="panel-content">
+        <div class="narration-box">
+          Cu Tí vẫn ôm chặt eo mẹ, thế là mẹ một tay túm váy một tay ôm "bụng bầu 15kg", phi nước đại lao thẳng ra cửa kính tự động trong tiếng cười rộ rúng động của cả siêu thị!
+        </div>
+        <div class="dialogue-box danger">
+          <div class="speaker-name" style="color: #fb7185;">🤰 Mẹ Phi Nước Đại</div>
+          <em>“Ôi giời đất ơi xấu hổ muốn xỉu luôn! Chạy nhanh lên con ơi! Tí ơi là Tí, về nhà mẹ tét mông nghe chưa! 🏃‍♀️💨”</em>
+        </div>
+        <div class="dialogue-box gold">
+          <div class="speaker-name" style="color: #fbbf24;">👶 Cu Tí Thích Thú</div>
+          <em>“Vù vù... tên lửa mẹ bay nhanh quá! Hoan hô mẹ ơi! 🚀👶”</em>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Slide Navigation Controls -->
+  <div class="slide-nav" id="slideNav">
+    <button class="btn-slide" id="btnPrevSlide" onclick="prevSlide()">← Cảnh Trước</button>
+    <div class="slide-counter" id="slideCounter">Cảnh 1 / 4</div>
+    <button class="btn-slide" id="btnNextSlide" onclick="nextSlide()">Cảnh Kế →</button>
+  </div>
+
+  <!-- Full Strip Overview Card -->
+  <section class="full-strip-box">
+    <div class="full-strip-card">
+      <div class="section-headline" style="justify-content: center;">🖼️ Trọn Bộ 4 Khung Hình 3D Pixar (High-Resolution)</div>
+      <p style="color: var(--text-muted); font-size: 0.95rem;">Nhấn vào bức ảnh bên dưới để mở toàn màn hình chất lượng cực nét:</p>
+      <img src="images/sieu_thi_full.jpg" alt="Trọn bộ 4 cảnh hoạt hình Sự Cố Siêu Thị" onclick="openLightbox('images/sieu_thi_full.jpg')" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Records Table -->
+  <section class="record-box">
+    <div class="section-headline">📊 Bảng Kỷ Lục Hài Hước Trong Sự Cố</div>
+    <table class="record-table">
+      <thead>
+        <tr>
+          <th>Hạng Mục Kỷ Lục</th>
+          <th>Chi Tiết Thực Tế</th>
+          <th>Ý Nghĩa / Bình Luận Hài Hước</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>👗 <strong>Trang phục gây họa</strong></td>
+          <td><strong>Váy maxi hoa nhí suông rộng</strong></td>
+          <td>Vô tình tạo thành "chiếc lều cắm trại" lý tưởng cho cu Tí trốn</td>
+        </tr>
+        <tr>
+          <td>⏱️ <strong>Thời gian "mang thai"</strong></td>
+          <td><strong>Đúng 3 giây</strong></td>
+          <td>Kỷ lục nhanh nhất lịch sử: chui tọt vào váy là bụng tròn phồng ngay</td>
+        </tr>
+        <tr>
+          <td>📏 <strong>Kích thước chiếc bụng</strong></td>
+          <td><strong>120 cm</strong></td>
+          <td>Tròn căng nhô cao, cùi chỏ và bàn chân cu cậu thúc u lên từng cục</td>
+        </tr>
+        <tr>
+          <td>🍉 <strong>Vật thể bị nghi ngờ</strong></td>
+          <td><strong>Quả dưa hấu siêu thị 5kg</strong></td>
+          <td>Bác bảo vệ nghi giấu dưa hấu vì bụng to tròn quá bất thường</td>
+        </tr>
+        <tr>
+          <td>🖐️ <strong>Pha tương tác đắt giá</strong></td>
+          <td><strong>Bé thò bàn tay ra vẫy chào</strong></td>
+          <td>Phát súng chốt hạ khiến toàn bộ khách hàng và bảo vệ cười nghiêng ngả</td>
+        </tr>
+        <tr>
+          <td>🏃‍♀️ <strong>Tốc độ tháo chạy</strong></td>
+          <td><strong>25 km/h</strong></td>
+          <td>Mẹ bầu bất đắc dĩ ôm bụng phi nước đại lao thẳng ra cửa kính</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Reaction Bar -->
+  <div class="reaction-bar">
+    <button class="btn-react" onclick="react(this, '🤣')">🤣 Cười Xỉu <span class="count">142</span></button>
+    <button class="btn-react" onclick="react(this, '🍉')">🍉 Quả Dưa Hấu <span class="count">89</span></button>
+    <button class="btn-react" onclick="react(this, '👶')">👶 Cu Tí Tinh Quái <span class="count">115</span></button>
+    <button class="btn-react" onclick="react(this, '🏃‍♀️')">🏃‍♀️ Mẹ Marathon <span class="count">98</span></button>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox(event)">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+      <img id="lightboxImg" src="" alt="Hình ảnh phóng to">
+    </div>
+  </div>
+
+  <footer>
+    <p>Dự án Truyện Cười &copy; 2026 • Tác phẩm: <strong>Sự Cố Em Bé Chui Tọt Vào Bụng Mẹ Ở Siêu Thị</strong> • Tác giả: <strong>Lam</strong></p>
+  </footer>
+
+  <script>
+    /* Chuyển đổi View Mode */
+    let currentSlide = 1;
+    const totalSlides = 4;
+
+    function setViewMode(mode) {
+      const container = document.getElementById('comicContainer');
+      const btnGrid = document.getElementById('btnGrid');
+      const btnStrip = document.getElementById('btnStrip');
+      const btnSlide = document.getElementById('btnSlide');
+      const body = document.body;
+
+      btnGrid.classList.remove('active');
+      btnStrip.classList.remove('active');
+      btnSlide.classList.remove('active');
+      body.classList.remove('slide-mode-active');
+      container.classList.remove('grid-mode', 'strip-mode', 'slide-mode');
+
+      if (mode === 'grid') {
+        container.classList.add('grid-mode');
+        btnGrid.classList.add('active');
+      } else if (mode === 'strip') {
+        container.classList.add('strip-mode');
+        btnStrip.classList.add('active');
+      } else if (mode === 'slide') {
+        container.classList.add('slide-mode');
+        btnSlide.classList.add('active');
+        body.classList.add('slide-mode-active');
+        showSlide(currentSlide);
+      }
+    }
+
+    function showSlide(n) {
+      currentSlide = n;
+      const cards = document.querySelectorAll('.comic-card');
+      cards.forEach((c, idx) => {
+        if (idx + 1 === n) {
+          c.classList.add('current');
+        } else {
+          c.classList.remove('current');
+        }
+      });
+      document.getElementById('slideCounter').textContent = 'Cảnh ' + n + ' / ' + totalSlides;
+      document.getElementById('btnPrevSlide').disabled = (n === 1);
+      document.getElementById('btnNextSlide').disabled = (n === totalSlides);
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) {
+        showSlide(currentSlide - 1);
+      }
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides) {
+        showSlide(currentSlide + 1);
+      }
+    }
+
+    /* Lightbox Modal phóng to hình */
+    function openLightbox(src) {
+      const modal = document.getElementById('lightboxModal');
+      const img = document.getElementById('lightboxImg');
+      img.src = src;
+      modal.classList.add('active');
+    }
+
+    function closeLightbox(e) {
+      const modal = document.getElementById('lightboxModal');
+      modal.classList.remove('active');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+      if (document.body.classList.contains('slide-mode-active')) {
+        if (e.key === 'ArrowLeft') prevSlide();
+        if (e.key === 'ArrowRight') nextSlide();
+      }
+    });
+
+    /* Thả cảm xúc */
+    function react(btn, emoji) {
+      const span = btn.querySelector('.count');
+      let val = parseInt(span.textContent);
+      span.textContent = val + 1;
+      btn.style.transform = 'scale(1.25)';
+      setTimeout(() => btn.style.transform = '', 200);
+      playPopSound();
+    }
+
+    /* Web Audio Sound Synthesizers */
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+    function playSupermarketChime() {
+      const now = audioCtx.currentTime;
+      const notes = [523.25, 659.25, 783.99, 1046.50]; // C5, E5, G5, C6
+      notes.forEach((freq, idx) => {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(freq, now + idx * 0.14);
+        gain.gain.setValueAtTime(0.2, now + idx * 0.14);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.14 + 0.5);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now + idx * 0.14);
+        osc.stop(now + idx * 0.14 + 0.5);
+      });
+    }
+
+    function playBabyWiggleSound() {
+      const now = audioCtx.currentTime;
+      for (let i = 0; i < 4; i++) {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(350 + Math.random() * 200, now + i * 0.1);
+        gain.gain.setValueAtTime(0.18, now + i * 0.1);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.1 + 0.12);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now + i * 0.1);
+        osc.stop(now + i * 0.1 + 0.12);
+      }
+    }
+
+    function playRunFastSound() {
+      const now = audioCtx.currentTime;
+      for (let i = 0; i < 8; i++) {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(160 + (i % 2) * 50, now + i * 0.08);
+        gain.gain.setValueAtTime(0.22, now + i * 0.08);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.08 + 0.07);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now + i * 0.08);
+        osc.stop(now + i * 0.08 + 0.07);
+      }
+    }
+
+    function playLaughCrowdSound() {
+      const now = audioCtx.currentTime;
+      for (let i = 0; i < 10; i++) {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        const startFreq = 400 + Math.random() * 300;
+        osc.frequency.setValueAtTime(startFreq, now + i * 0.07);
+        osc.frequency.linearRampToValueAtTime(startFreq + 100, now + i * 0.07 + 0.08);
+        gain.gain.setValueAtTime(0.12, now + i * 0.07);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + i * 0.07 + 0.15);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now + i * 0.07);
+        osc.stop(now + i * 0.07 + 0.15);
+      }
+    }
+
+    function playPopSound() {
+      const now = audioCtx.currentTime;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(600, now);
+      osc.frequency.exponentialRampToValueAtTime(950, now + 0.1);
+      gain.gain.setValueAtTime(0.2, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.1);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start(now);
+      osc.stop(now + 0.1);
+    }
+
+    /* Quản lý phát âm thanh lồng tiếng Studio không giật */
+    const storyAudioPlayer = document.getElementById('storyAudioPlayer');
+    const voiceBtnText = document.getElementById('voiceBtnText');
+
+    function toggleStoryAudio() {
+      if (storyAudioPlayer.paused) {
+        storyAudioPlayer.play().then(() => {
+          voiceBtnText.textContent = "Tạm Dừng Giọng Đọc";
+        }).catch(e => console.log(e));
+      } else {
+        storyAudioPlayer.pause();
+        voiceBtnText.textContent = "Phát Giọng Đọc Studio";
+      }
+    }
+
+    function onStoryAudioEnded() {
+      voiceBtnText.textContent = "Phát Lại Giọng Đọc";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+/* Cho hình ảnh to lên, căn giữa và hiển thị sắc nét trong Obsidian */
+.markdown-rendered img,
+.markdown-source-view.mod-cm6 .cm-embed-block img,
+.markdown-preview-view img {
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 16px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Phóng to hình ảnh không nằm trong bảng */
+.image-embed:not(.table-cell-wrapper .image-embed) img:not([width]) {
+  width: 100% !important;
+  max-width: 1100px !important;
+}
+
+/* Nếu có kích thước width chỉ định bằng cú pháp ![...|1000] */
+.image-embed img[width] {
+  max-width: 100%;
+}
+
+.markdown-rendered img:hover,
+.markdown-source-view.mod-cm6 .cm-embed-block img:hover {
+  transform: scale(1.015);
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.55);
+}
+
+/* Bảng hiển thị 2 cột hoặc 3 cột ảnh */
+.markdown-rendered table img,
+.markdown-source-view.mod-cm6 .cm-embed-block table img {
+  width: 100% !important;
+  max-width: 520px !important;
+  margin: 0.5rem auto;
+}

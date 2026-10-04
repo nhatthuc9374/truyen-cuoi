@@ -1,4 +1,4 @@
-﻿# 🍃 🤰📖 Nhật Ký Mang Bầu Siêu Hài Hước: 9 Tháng 10 Ngày "Dở Khóc Dở Cười"
+# 🍃 🤰📖 Nhật Ký Mang Bầu Siêu Hài Hước: 9 Tháng 10 Ngày "Dở Khóc Dở Cười"
 
 > *Chuyện kể về hành trình mang thai đầy sóng gió nhưng ngập tràn tiếng cười và tình yêu thương của cô Lan: từ những cơn nghén "độc lạ Bình Dương", chiếc bụng bầu to vượt mặt với những pha mắc kẹt kinh điển, đến cuộc vượt cạn rung chuyển bệnh viện để đón thiên thần nhỏ "mỉm mỉn" chào đời!*
 

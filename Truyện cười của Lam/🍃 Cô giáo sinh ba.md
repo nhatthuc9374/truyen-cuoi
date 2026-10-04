@@ -1,4 +1,4 @@
-﻿# 🍃 🏫👶 Truyện Tranh Học Đường: Cô Giáo Đi Đẻ Sinh Ba
+# 🍃 🏫👶 Truyện Tranh Học Đường: Cô Giáo Đi Đẻ Sinh Ba
 
 > *Kỷ niệm học trò nhớ đời: từ tiết học đang yên ắng bỗng cô giáo chuyển dạ vỡ ối, xe cấp cứu hụ còi náo loạn cả trường đến cái kết ngọt ngào khi cả lớp vỗ tay chúc mừng cô hạ sinh 3 thiên thần nhỏ siêu dễ thương!*
 

@@ -1,4 +1,4 @@
-﻿# 🍃 🏥👶 Truyện Tranh Hài Hước: Ca Sinh 4 Ly Kỳ Của Mẹ - Bác Sĩ Bất Đắc Dĩ Đỡ Đẻ Tại Nhà
+# 🍃 🏥👶 Truyện Tranh Hài Hước: Ca Sinh 4 Ly Kỳ Của Mẹ - Bác Sĩ Bất Đắc Dĩ Đỡ Đẻ Tại Nhà
 
 > *Chuyện thật như đùa: Mẹ mang thai 4 bé, vào viện đẻ được 2 bé thì 2 bé sau ở lì trong bụng không chịu ra. Mẹ đành ôm bụng bầu còn lại về nhà, ai ngờ vừa tới nơi lại đau đẻ gấp, đứa con phải làm "bác sĩ bất đắc dĩ" và cái kết đại thành công!*
 

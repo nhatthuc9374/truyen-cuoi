@@ -1,4 +1,4 @@
-﻿# 🍃 🤰🌀 Truyện Tranh Hài Hước: Chiếc Bụng Bầu Ngoại Cỡ 135cm & Sự Cố Kẹt Cửa Xoay Bão Táp
+# 🍃 🤰🌀 Truyện Tranh Hài Hước: Chiếc Bụng Bầu Ngoại Cỡ 135cm & Sự Cố Kẹt Cửa Xoay Bão Táp
 
 > *Một câu chuyện cười ra nước mắt, dí dỏm và ngập tràn tình yêu thương về chiếc bụng bầu "vượt mọi chuẩn mực kích thước" 135cm của mẹ: từ bữa tiệc lẩu ngồi cách xa nửa mét phải dùng đũa câu cá gắp tôm, sự cố kẹt cứng giữa hai cánh cửa xoay tự động rúng động cả trung tâm thương mại, cuộc giải cứu bằng bơ thực vật kết hợp cú đạp phản lực sấm sét của ba chú siêu quậy, cho tới màn vượt cạn thần tốc đón trọn 3 "chú củ cải béo" mỉm mỉn nặng gần 10kg!*
 
