@@ -78,3 +78,10 @@
 ## 📜 Câu Chuyện Gốc
 
 > *"Cả lớp tôi đang học cô [có bầu rất to] đang dạy học, bỗng nhiên cô ôm bụng hét lên: Á á đau quá! Cả trường náo loạn, cả lớp tôi xì xào: Cô vỡ ối rồi! Cô sao thế! Xe cấp cứu đến rất nhanh! Khi đẻ cô hét rất to và ôm bụng bầu, cuối cùng cả lớp vỗ tay hoan hô vì cô đã hạ sinh 3 đứa rất dễ thương."*
+
+---
+
+## ⭐ Đánh Giá & Góp Ý Câu Chuyện
+
+Bạn cảm thấy câu chuyện này thế nào? Hãy gửi ý kiến đóng góp và cảm nhận của bạn để tác giả hoàn thiện hơn nhé:
+👉 [**Gửi đánh giá và cảm nhận tại Google Form**](https://forms.gle/ufaBwJwsBajn33Lx7)

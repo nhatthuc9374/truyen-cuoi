@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍃 Ca Sinh 5 Bất Ngờ - Tôi Và Mẹ Đi Đẻ - Truyện Cười Lam</title>
+  <style>
+    :root {
+      --primary: #10b981;
+      --primary-hover: #059669;
+      --primary-glow: rgba(16, 185, 129, 0.35);
+      --accent: #f43f5e;
+      --accent-hover: #e11d48;
+      --accent-glow: rgba(244, 63, 94, 0.3);
+      --gold: #fbbf24;
+      --sky: #38bdf8;
+      --bg: #0b111e;
+      --card-bg: #131f33;
+      --card-hover: #192842;
+      --card-border: #233554;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.6;
+    }
+
+    /* Top Navigation */
+    .nav-bar {
+      width: 100%;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--card-border);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.45rem 0.95rem;
+      border-radius: 9999px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      transition: all 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      background: rgba(16, 185, 129, 0.22);
+      transform: translateY(-1px);
+      color: #fff;
+    }
+
+    .nav-btn.secondary {
+      color: #fbbf24;
+      background: rgba(251, 191, 36, 0.1);
+      border-color: rgba(251, 191, 36, 0.25);
+    }
+
+    .nav-btn.secondary:hover {
+      background: rgba(251, 191, 36, 0.22);
+      color: #fff;
+    }
+
+    .badge-path {
+      background: #1e293b;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-family: monospace;
+    }
+
+    /* Header & Hero */
+    header {
+      text-align: center;
+      margin: 2.5rem 1rem 1.5rem 1rem;
+      max-width: 950px;
+    }
+
+    .story-tag-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, #10b981, #0ea5e9);
+      color: #ffffff;
+      padding: 0.4rem 1.25rem;
+      border-radius: 9999px;
+      font-weight: 800;
+      font-size: 0.825rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 4px 18px var(--primary-glow);
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      font-weight: 900;
+      line-height: 1.25;
+      background: linear-gradient(to right, #34d399, #38bdf8, #f472b6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    .story-lead-quote {
+      background: linear-gradient(145deg, rgba(16, 185, 129, 0.08), rgba(244, 63, 94, 0.08));
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 5px solid #10b981;
+      border-radius: 14px;
+      padding: 1.25rem 1.5rem;
+      font-size: 1.05rem;
+      color: #e2e8f0;
+      max-width: 860px;
+      margin: 1rem auto 2rem auto;
+      text-align: left;
+      line-height: 1.7;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Interactive Toolbar */
+    .interactive-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1050px;
+      padding: 0.9rem 1.25rem;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      margin-bottom: 2rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .mode-buttons, .sound-buttons {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .tool-btn {
+      background: #0f172a;
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 0.5rem 0.95rem;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.2s ease;
+    }
+
+    .tool-btn:hover {
+      background: #1e293b;
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .tool-btn.active {
+      background: rgba(16, 185, 129, 0.2);
+      border-color: var(--primary);
+      color: #34d399;
+    }
+
+    .tool-btn.sound {
+      border-color: rgba(245, 158, 11, 0.3);
+      color: #fbbf24;
+    }
+
+    .tool-btn.sound:hover {
+      background: rgba(245, 158, 11, 0.15);
+      border-color: #fbbf24;
+      color: #fff;
+    }
+
+    /* Slide Navigation */
+    .slide-nav {
+      display: none;
+      width: 100%;
+      max-width: 1050px;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding: 0.5rem 1rem;
+      background: rgba(15, 23, 42, 0.6);
+      border-radius: 12px;
+      border: 1px solid var(--card-border);
+    }
+
+    .btn-slide {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.5rem 1.25rem;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.2s;
+    }
+
+    .btn-slide:hover:not(:disabled) {
+      background: var(--primary-hover);
+      transform: scale(1.05);
+    }
+
+    .btn-slide:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+
+    .slide-counter {
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    /* Comic Container */
+    .comic-container {
+      width: 100%;
+      max-width: 1050px;
+      margin-bottom: 3.5rem;
+    }
+
+    .comic-container.grid-mode {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.75rem;
+    }
+
+    .comic-container.strip-mode {
+      display: flex;
+      flex-direction: column;
+      gap: 2.25rem;
+    }
+
+    .comic-container.slide-mode {
+      display: block;
+    }
+
+    .comic-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .comic-card:hover {
+      border-color: rgba(16, 185, 129, 0.5);
+      transform: translateY(-3px);
+    }
+
+    .comic-container.slide-mode .comic-card {
+      display: none;
+    }
+
+    .comic-container.slide-mode .comic-card.current {
+      display: flex;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card-header {
+      padding: 1rem 1.25rem;
+      background: rgba(11, 17, 30, 0.7);
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .panel-tag {
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #34d399;
+      background: rgba(16, 185, 129, 0.15);
+      padding: 0.25rem 0.65rem;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+
+    .panel-tag.danger {
+      color: #f43f5e;
+      background: rgba(244, 63, 94, 0.15);
+    }
+
+    .panel-tag.highlight {
+      color: #fbbf24;
+      background: rgba(251, 191, 36, 0.15);
+    }
+
+    .panel-caption {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #cbd5e1;
+    }
+
+    .img-wrapper {
+      position: relative;
+      cursor: zoom-in;
+      background: #000;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 280px;
+    }
+
+    .img-wrapper img {
+      width: 100%;
+      height: auto;
+      max-height: 480px;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+
+    .img-wrapper:hover img {
+      transform: scale(1.02);
+    }
+
+    .zoom-hint {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 0.3rem 0.65rem;
+      border-radius: 6px;
+      pointer-events: none;
+      backdrop-filter: blur(4px);
+    }
+
+    .dialogue-wrap {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      flex: 1;
+    }
+
+    .narrative-box {
+      font-size: 0.925rem;
+      color: #cbd5e1;
+      background: rgba(15, 23, 42, 0.5);
+      padding: 0.85rem 1rem;
+      border-radius: 10px;
+      border-left: 3px solid var(--sky);
+      line-height: 1.6;
+    }
+
+    .dialogue-box {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      border-radius: 10px;
+      padding: 0.85rem 1rem;
+      font-size: 0.93rem;
+      color: #f1f5f9;
+    }
+
+    .dialogue-box.danger {
+      background: rgba(244, 63, 94, 0.08);
+      border-color: rgba(244, 63, 94, 0.25);
+    }
+
+    .speaker-name {
+      font-weight: 800;
+      font-size: 0.85rem;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .speaker-name.mom { color: #f472b6; }
+    .speaker-name.child { color: #38bdf8; }
+    .speaker-name.alert { color: #fb7185; }
+    .speaker-name.doctor { color: #34d399; }
+
+    /* Full Strip Section */
+    .full-strip-box {
+      width: 100%;
+      max-width: 1050px;
+      margin-bottom: 3.5rem;
+    }
+
+    .full-strip-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 1.75rem;
+      text-align: center;
+    }
+
+    .full-strip-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-top: 1.25rem;
+      cursor: zoom-in;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Moral Section */
+    .moral-section {
+      width: 100%;
+      max-width: 1050px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 1.75rem 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .section-headline {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .moral-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .moral-item {
+      background: rgba(15, 23, 42, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+
+    .moral-item h4 {
+      color: #38bdf8;
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .moral-item p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    /* Reactions */
+    .reaction-section {
+      width: 100%;
+      max-width: 1050px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 1.75rem 2rem;
+      margin: 0 auto 3rem auto;
+      text-align: center;
+    }
+
+    .reaction-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1.25rem;
+    }
+
+    .reaction-btn {
+      padding: 0.75rem 1.4rem;
+      background: #0b111e;
+      border: 1px solid var(--card-border);
+      border-radius: 9999px;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+
+    .reaction-btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      border-color: var(--primary);
+      box-shadow: 0 6px 18px var(--primary-glow);
+    }
+
+    .reaction-count {
+      background: rgba(16, 185, 129, 0.2);
+      color: #34d399;
+      font-size: 0.85rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: 9999px;
+    }
+
+    /* Feedback Section */
+    .feedback-section {
+      width: 100%;
+      max-width: 1050px;
+      margin: 0 auto 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .feedback-card {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(56, 189, 248, 0.08) 50%, rgba(251, 191, 36, 0.1) 100%), var(--card-bg);
+      border: 2px solid rgba(16, 185, 129, 0.4);
+      border-radius: 24px;
+      padding: 2.25rem 2rem;
+      text-align: center;
+      box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.5), 0 0 25px rgba(16, 185, 129, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .feedback-card:hover {
+      border-color: rgba(16, 185, 129, 0.8);
+      box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.6), 0 0 35px rgba(16, 185, 129, 0.25);
+      transform: translateY(-3px);
+    }
+
+    .feedback-badge {
+      display: inline-block;
+      padding: 0.35rem 1rem;
+      border-radius: 9999px;
+      background: rgba(16, 185, 129, 0.2);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #34d399;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .feedback-title {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 0.75rem;
+    }
+
+    .feedback-desc {
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 680px;
+      margin: 0 auto 1.75rem auto;
+      line-height: 1.65;
+    }
+
+    .btn-feedback {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 1rem 2.25rem;
+      border-radius: 9999px;
+      box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.5);
+      transition: all 0.25s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-feedback:hover {
+      background: linear-gradient(135deg, #059669, #047857);
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 14px 30px -5px rgba(16, 185, 129, 0.7);
+      color: #ffffff;
+    }
+
+    .feedback-note {
+      margin-top: 1.25rem;
+      color: #94a3b8;
+      font-size: 0.85rem;
+    }
+
+    /* Modal Lightbox */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(8px);
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .modal.show {
+      display: flex;
+    }
+
+    .modal-content {
+      max-width: 95vw;
+      max-height: 90vh;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      background: none;
+      border: none;
+      outline: none;
+    }
+
+    .close-modal:hover {
+      color: var(--accent);
+    }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      border-top: 1px solid var(--card-border);
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      margin-top: auto;
+      background: #080d16;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.85rem; }
+      .comic-container.grid-mode { grid-template-columns: 1fr; }
+      .interactive-bar { flex-direction: column; align-items: stretch; }
+      .sound-buttons { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <div class="nav-bar">
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn">
+        <span>←</span> Kho Truyện Lam
+      </a>
+      <a href="../index.html" class="nav-btn">
+        <span>🏠</span> Trang Chủ Dự Án
+      </a>
+      <a href="../Nhan/index.html" class="nav-btn secondary">
+        <span>🎭</span> Kho của Nhân
+      </a>
+    </div>
+    <span class="badge-path">Lam/ca_sinh_5_bat_ngo.html</span>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="story-tag-badge">🍃 TRUYỆN TRANH HÀI HƯỚC • CA SINH 5 NĂM BÉ MỈM MỈN 👶</div>
+    <h1>Ca Sinh 5 Bất Ngờ - Tôi Và Mẹ Đi Đẻ</h1>
+    
+    <div class="story-lead-quote">
+      <strong>Chuyến đi khám thai bất ngờ nhớ đời:</strong> Từ chiếc bụng bầu siêu to khổng lồ, tiếng hét rung chuyển cả bệnh viện khi các bé bướng bỉnh chưa chịu ra, đến khoảnh khắc vỡ òa hạnh phúc đón trọn vẹn 5 thiên thần sinh năm "mỉm mỉn" trắng hồng núng nính!
+    </div>
+  </header>
+
+  <!-- Thanh Tương Tác & Chế Độ Xem -->
+  <div class="interactive-bar">
+    <div class="mode-buttons">
+      <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Chế độ xem:</span>
+      <button class="tool-btn active" id="btnGrid" onclick="switchView('grid')">
+        <span>🔲</span> Lưới 2 cột
+      </button>
+      <button class="tool-btn" id="btnStrip" onclick="switchView('strip')">
+        <span>📜</span> Lướt dọc
+      </button>
+      <button class="tool-btn" id="btnSlide" onclick="switchView('slide')">
+        <span>📽️</span> Trình chiếu
+      </button>
+    </div>
+
+    <div class="sound-buttons">
+      <button class="tool-btn sound" onclick="playRedAlert()">
+        <span>🚨</span> Báo Động Đỏ
+      </button>
+      <button class="tool-btn sound" onclick="playScreamShock()">
+        <span>📢</span> Tiếng Hét Rung Trời
+      </button>
+      <button class="tool-btn sound" onclick="playBabyLullaby()">
+        <span>👶</span> 5 Bé Mỉm Mỉn
+      </button>
+      <button class="tool-btn" onclick="speakStorySummary()" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">
+        <span>🔊</span> Đọc Tóm Tắt
+      </button>
+    </div>
+  </div>
+
+  <!-- Điều Hướng Slide -->
+  <div class="slide-nav" id="slideNav">
+    <button class="btn-slide" id="btnPrev" onclick="prevSlide()">
+      <span>←</span> Cảnh Trước
+    </button>
+    <div class="slide-counter" id="slideCounter">Cảnh 1 / 4</div>
+    <button class="btn-slide" id="btnNext" onclick="nextSlide()">
+      Cảnh Sau <span>→</span>
+    </button>
+  </div>
+
+  <!-- Danh sách 4 phân cảnh Comic -->
+  <main class="comic-container grid-mode" id="comicContainer">
+
+    <!-- Cảnh 1 -->
+    <article class="comic-card current" data-slide="1">
+      <div class="card-header">
+        <span class="panel-tag">🌟 CẢNH 1: ĐI KHÁM ĐỊNH KỲ</span>
+        <span class="panel-caption">Bụng Bầu Khổng Lồ Khệ Nệ Từng Bước</span>
+      </div>
+      <div class="img-wrapper" onclick="openLightbox('images/sinh_nam_panel_1.svg')">
+        <img src="images/sinh_nam_panel_1.svg" alt="Cảnh 1: Bụng bầu siêu to">
+        <div class="zoom-hint">🔍 Bấm để phóng to</div>
+      </div>
+      <div class="dialogue-wrap">
+        <div class="narrative-box">
+          📖 <strong>Dẫn truyện:</strong> Tôi hộ tống mẹ đi khám thai định kỳ. Bụng mẹ dạo này to vượt mặt, to tròn như giấu cả rổ dưa hấu trong váy bầu hồng. Mẹ bước đi khệ nệ, tôi lon ton đi bên cạnh cẩn thận đỡ tay mẹ như hộ tống hoàng hậu vi hành.
+        </div>
+        <div class="dialogue-box">
+          <div class="speaker-name child">🧒 Tôi (mắt tròn xoe đỡ tay mẹ):</div>
+          <em>“Mẹ ơi đi chậm chậm thôi nha! Bụng mẹ hôm nay to tròn quá trời luôn, con nhìn mà cảm tưởng sắp chạm tới cằm mẹ rồi ấy!”</em>
+        </div>
+        <div class="dialogue-box">
+          <div class="speaker-name mom">🤰 Mẹ (xoa bụng cười hiền từ):</div>
+          <em>“Mẹ con mình chỉ đi khám xem em bé thế nào thôi con... Bụng to thế này chắc bên trong em bé háu ăn, khỏe mạnh lắm đây! ❤️”</em>
+        </div>
+      </div>
+    </article>
+
+    <!-- Cảnh 2 -->
+    <article class="comic-card" data-slide="2">
+      <div class="card-header">
+        <span class="panel-tag danger">⚡ CẢNH 2: VỪA VÀO ĐÃ ĐẺ!</span>
+        <span class="panel-caption">Bác Sĩ Kích Hoạt Báo Động Đỏ!</span>
+      </div>
+      <div class="img-wrapper" onclick="openLightbox('images/sinh_nam_panel_2.svg')">
+        <img src="images/sinh_nam_panel_2.svg" alt="Cảnh 2: Cơn đau đột ngột">
+        <div class="zoom-hint">🔍 Bấm để phóng to</div>
+      </div>
+      <div class="dialogue-wrap">
+        <div class="narrative-box">
+          📖 <strong>Dẫn truyện:</strong> Vừa bước chân vào phòng khám còn chưa kịp đặt máy siêu âm, mẹ bỗng gập người hét toáng lên rung rinh cả cửa kính! Bác sĩ giật mình rơi cả bút, cuống cuồng bấm chuông báo động đỏ chuyển mẹ vào phòng sinh gấp!
+        </div>
+        <div class="dialogue-box danger">
+          <div class="speaker-name alert">😱 Mẹ (ôm chặt bụng bầu gào to):</div>
+          <em>“Á Á Á...! ĐAU QUÁ CON ƠI! HÌNH NHƯ MẸ SẮP ĐẺ RỒI! BÁC SĨ ƠI CỨU TÔI VỚI!”</em>
+        </div>
+        <div class="dialogue-box">
+          <div class="speaker-name doctor">👨‍⚕️ Bác sĩ (hốt hoảng bấm chuông đỏ):</div>
+          <em>“Báo động đỏ! Vỡ ối rồi, cổ tử cung mở trọn rồi! Đẩy cáng chuyển sản phụ vào phòng đẻ khẩn cấp ngay lập tức!”</em>
+        </div>
+      </div>
+    </article>
+
+    <!-- Cảnh 3 -->
+    <article class="comic-card" data-slide="3">
+      <div class="card-header">
+        <span class="panel-tag highlight">🔊 CẢNH 3: TIẾNG HÉT RUNG TRỜI</span>
+        <span class="panel-caption">Bé Bướng Bỉnh – Mẹ Rặn Muốn Đứt Ruột</span>
+      </div>
+      <div class="img-wrapper" onclick="openLightbox('images/sinh_nam_panel_3.svg')">
+        <img src="images/sinh_nam_panel_3.svg" alt="Cảnh 3: Tiếng hét rung trời">
+        <div class="zoom-hint">🔍 Bấm để phóng to</div>
+      </div>
+      <div class="dialogue-wrap">
+        <div class="narrative-box">
+          📖 <strong>Dẫn truyện:</strong> Các bé trong bụng bướng bỉnh chưa chịu ra, mẹ phải dồn 200% công lực gồng mình rặn đẻ. Tiếng hét của mẹ rung chuyển cả hành lang bệnh viện khiến ai đi qua cũng rợn tóc gáy, tôi đứng ngoài chỉ biết bịt chặt hai tai toát mồ hôi hột!
+        </div>
+        <div class="dialogue-box danger">
+          <div class="speaker-name alert">🔊 Mẹ (nắm chặt thành giường sắt, hét rách họng):</div>
+          <em>“Á Á Á Á Á...! SAO LÌ THẾ HẢ CÁC CON, KHÔNG CHỊU RA HẢ?! ĐAU QUÁ TRỜI ƠI... RẶN ĐỨT CẢ RUỘT NÈ...!”</em>
+        </div>
+        <div class="dialogue-box">
+          <div class="speaker-name child">🌀 Tôi &amp; Bác sĩ:</div>
+          <em>“Mẹ hét to như còi báo động phòng không luôn á... Mẹ ơi cố lên, hít sâu rặn một hơi nữa thôi!”</em>
+        </div>
+      </div>
+    </article>
+
+    <!-- Cảnh 4 -->
+    <article class="comic-card" data-slide="4">
+      <div class="card-header">
+        <span class="panel-tag">🎉 CẢNH 4: KẾT QUẢ DIỆU KỲ</span>
+        <span class="panel-caption">Đón Trọn Vẹn 5 Bé "Mỉm Mỉn" Má Bánh Bao!</span>
+      </div>
+      <div class="img-wrapper" onclick="openLightbox('images/sinh_nam_panel_4.svg')">
+        <img src="images/sinh_nam_panel_4.svg" alt="Cảnh 4: Hạ sinh 5 bé mỉm mỉn">
+        <div class="zoom-hint">🔍 Bấm để phóng to</div>
+      </div>
+      <div class="dialogue-wrap">
+        <div class="narrative-box">
+          📖 <strong>Dẫn truyện:</strong> Năm tiếng khóc oe oe đồng thanh vang lên! Chiếc bụng to tướng xẹp xuống nhẹ nhõm, thay vào đó là 5 thiên thần sinh năm "mỉm mỉn", má phúng phính trắng hồng như bánh bao sữa xếp hàng trong chiếc nôi sưởi ấm áp!
+        </div>
+        <div class="dialogue-box">
+          <div class="speaker-name child">🤩 Tôi (nhảy cẫng lên reo hò):</div>
+          <em>“OA OA OA! Tận 5 ĐỨA EM luôn kìa mẹ ơi! Bé nào nhìn cũng mỉm mỉn, má bánh bao trắng hồng cưng xỉu luôn! 💖👶👶👶👶👶”</em>
+        </div>
+        <div class="dialogue-box">
+          <div class="speaker-name mom">🥰 Mẹ (thở phào nhẹ nhõm, ngập tràn hạnh phúc):</div>
+          <em>“Hèn chi bụng to như cái trống, bắt mẹ hét banh nóc bệnh viện! Bõ công mẹ rặn muốn đứt ruột, chào mừng 5 thiên thần mỉm mỉn của mẹ! ❤️”</em>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Trọn bộ tranh liền mạch -->
+  <section class="full-strip-box">
+    <div class="full-strip-card">
+      <div class="section-headline" style="justify-content: center;">
+        <span>🖼️</span> Trọn Bộ Truyện Tranh Liền Mạch (Full Comic Strip)
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.25rem;">
+        Khoảnh khắc đáng nhớ của chuyến đi khám thai hóa ca sinh năm kỳ tích:
+      </p>
+      <img src="images/sinh_nam_full.svg" alt="Trọn bộ truyện tranh Ca Sinh 5 Bất Ngờ Của Mẹ" onclick="openLightbox('images/sinh_nam_full.svg')">
+    </div>
+  </section>
+
+  <!-- Bài học & Góc cười -->
+  <section class="moral-section">
+    <div class="section-headline">
+      <span>💬</span> Bài Học &amp; Góc Nhìn Hài Hước
+    </div>
+    <div class="moral-grid">
+      <div class="moral-item">
+        <h4><span>🤰</span> Kỷ Lục Sinh 5 Hiếm Thấy</h4>
+        <p>Chiếc bụng bầu vượt mặt giấu trọn 5 sinh linh bé bỏng là kỳ tích hiếm có, minh chứng cho sự kiên cường phi thường của người mẹ.</p>
+      </div>
+      <div class="moral-item">
+        <h4><span>🧒</span> Người Con Trưởng Thành</h4>
+        <p>Từ cậu nhóc tháp tùng mẹ đi khám, chứng kiến mẹ vượt cạn vất vả giúp em thêm yêu thương, thấu hiểu và gắn kết với các em bé.</p>
+      </div>
+      <div class="moral-item">
+        <h4><span>👶</span> 5 Thiên Thần "Mỉm Mỉn"</h4>
+        <p>Những đôi má phúng phính trắng hồng đã xua tan mọi đau đớn nhọc nhằn, mang lại tiếng cười và niềm hạnh phúc vô tận cho cả gia đình.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nút Thả Cảm Xúc -->
+  <section class="reaction-section">
+    <div class="section-headline" style="justify-content: center;">
+      <span>💖</span> Thả Cảm Xúc Chúc Mừng 5 Bé Mỉm Mỉn
+    </div>
+    <p style="color: var(--text-muted); font-size: 0.95rem;">Bạn thấy sự dũng cảm của mẹ và 5 em bé thế nào? Bấm nút chia sẻ niềm vui nhé!</p>
+    <div class="reaction-buttons">
+      <button class="reaction-btn" onclick="addReaction('haha')">
+        <span>😂 Cười té ghế</span>
+        <span class="reaction-count" id="count-haha">210</span>
+      </button>
+      <button class="reaction-btn" onclick="addReaction('heart')">
+        <span>❤️ Mẹ siêu anh hùng</span>
+        <span class="reaction-count" id="count-heart">512</span>
+      </button>
+      <button class="reaction-btn" onclick="addReaction('five')">
+        <span>👶 5 bé mỉm mỉn</span>
+        <span class="reaction-count" id="count-five">438</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Đánh Giá & Góp Ý Câu Chuyện (Google Form) -->
+  <section class="feedback-section">
+    <div class="feedback-card">
+      <div class="feedback-badge">📝 Khảo Sát &amp; Đánh Giá</div>
+      <h3 class="feedback-title">⭐ Bạn Đánh Giá Thế Nào Về Câu Chuyện Này?</h3>
+      <p class="feedback-desc">
+        Ý kiến đóng góp và cảm nhận của bạn là nguồn động lực vô cùng quý báu giúp tác giả hoàn thiện và mang đến nhiều mẩu truyện cười thú vị, ý nghĩa hơn nữa! Hãy dành chút thời gian gửi đánh giá nhé!
+      </p>
+      <div class="feedback-cta-wrap">
+        <a href="https://forms.gle/ufaBwJwsBajn33Lx7" target="_blank" rel="noopener noreferrer" class="btn-feedback">
+          <span class="btn-icon">📋</span>
+          <span>Bấm Vào Đây Để Gửi Đánh Giá (Google Forms)</span>
+          <span class="btn-arrow">&rarr;</span>
+        </a>
+      </div>
+      <div class="feedback-note">
+        <span>✨ Chỉ mất khoảng 30 giây để hoàn thành khảo sát</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="imageModal" class="modal" onclick="closeLightbox()">
+    <button class="close-modal" onclick="closeLightbox()">&times;</button>
+    <img class="modal-content" id="modalImg" alt="Phóng to tranh">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">← Trở về Kho Lam</a>
+      <a href="../index.html">🏠 Trang Chủ Dự Án</a>
+      <a href="../Nhan/index.html">🎭 Kho Truyện của Nhân</a>
+      <a href="https://forms.gle/ufaBwJwsBajn33Lx7" target="_blank" rel="noopener noreferrer" style="color: #fbbf24;">⭐ Đánh Giá Câu Chuyện (Google Form)</a>
+    </div>
+    <p>Dự án Truyện Cười &copy; 2026 - Tác giả: <strong>Lam</strong> | Câu chuyện: <em>Tôi Và Mẹ Đi Đẻ - Ca Sinh 5</em></p>
+  </footer>
+
+  <!-- Script Tương Tác -->
+  <script>
+    let currentSlideIndex = 1;
+    const totalSlides = 4;
+
+    function switchView(mode) {
+      const container = document.getElementById('comicContainer');
+      const nav = document.getElementById('slideNav');
+      const btnGrid = document.getElementById('btnGrid');
+      const btnStrip = document.getElementById('btnStrip');
+      const btnSlide = document.getElementById('btnSlide');
+
+      btnGrid.classList.remove('active');
+      btnStrip.classList.remove('active');
+      btnSlide.classList.remove('active');
+
+      container.className = `comic-container ${mode}-mode`;
+
+      if (mode === 'slide') {
+        btnSlide.classList.add('active');
+        nav.style.display = 'flex';
+        showSlide(currentSlideIndex);
+      } else {
+        nav.style.display = 'none';
+        if (mode === 'grid') btnGrid.classList.add('active');
+        if (mode === 'strip') btnStrip.classList.add('active');
+      }
+    }
+
+    function showSlide(index) {
+      currentSlideIndex = index;
+      const cards = document.querySelectorAll('.comic-card');
+      cards.forEach((card, i) => {
+        card.classList.toggle('current', (i + 1) === index);
+      });
+      document.getElementById('slideCounter').textContent = `Cảnh ${index} / ${totalSlides}`;
+      document.getElementById('btnPrev').disabled = (index === 1);
+      document.getElementById('btnNext').disabled = (index === totalSlides);
+    }
+
+    function prevSlide() {
+      if (currentSlideIndex > 1) showSlide(currentSlideIndex - 1);
+    }
+
+    function nextSlide() {
+      if (currentSlideIndex < totalSlides) showSlide(currentSlideIndex + 1);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      const container = document.getElementById('comicContainer');
+      if (container.classList.contains('slide-mode')) {
+        if (e.key === 'ArrowRight' || e.key === 'PageDown') nextSlide();
+        else if (e.key === 'ArrowLeft' || e.key === 'PageUp') prevSlide();
+      }
+    });
+
+    function openLightbox(src) {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImg');
+      modalImg.src = src;
+      modal.classList.add('show');
+    }
+
+    function closeLightbox() {
+      document.getElementById('imageModal').classList.remove('show');
+    }
+
+    let audioCtx = null;
+    function getAudioContext() {
+      if (!audioCtx) {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        audioCtx = new AudioContext();
+      }
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      return audioCtx;
+    }
+
+    // Tiếng còi báo động đỏ phòng khám
+    function playRedAlert() {
+      try {
+        const ctx = getAudioContext();
+        const now = ctx.currentTime;
+        for (let i = 0; i < 3; i++) {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'sawtooth';
+          const t = now + i * 0.25;
+          osc.frequency.setValueAtTime(950, t);
+          osc.frequency.linearRampToValueAtTime(600, t + 0.2);
+          gain.gain.setValueAtTime(0.3, t);
+          gain.gain.exponentialRampToValueAtTime(0.01, t + 0.2);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start(t);
+          osc.stop(t + 0.2);
+        }
+      } catch (e) { console.warn(e); }
+    }
+
+    // Tiếng hét rặn đẻ & sóng âm
+    function playScreamShock() {
+      try {
+        const ctx = getAudioContext();
+        const now = ctx.currentTime;
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(220, now);
+        osc.frequency.linearRampToValueAtTime(880, now + 0.4);
+        osc.frequency.linearRampToValueAtTime(120, now + 0.8);
+        gain.gain.setValueAtTime(0.4, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.8);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start(now);
+        osc.stop(now + 0.8);
+      } catch (e) { console.warn(e); }
+    }
+
+    // Nhạc mừng 5 bé mỉm mỉn
+    function playBabyLullaby() {
+      try {
+        const ctx = getAudioContext();
+        const notes = [523.25, 659.25, 783.99, 1046.50];
+        const now = ctx.currentTime;
+        notes.forEach((freq, i) => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'sine';
+          const t = now + i * 0.12;
+          osc.frequency.setValueAtTime(freq, t);
+          gain.gain.setValueAtTime(0.35, t);
+          gain.gain.exponentialRampToValueAtTime(0.001, t + 0.4);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start(t);
+          osc.stop(t + 0.4);
+        });
+      } catch (e) { console.warn(e); }
+    }
+
+    function speakStorySummary() {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const text = "Truyện tranh: Tôi và mẹ đi đẻ ca sinh năm bất ngờ. Mẹ mang chiếc bụng bầu siêu to vào bệnh viện khám thai định kỳ, vừa bước vào phòng khám thì bác sĩ báo sắp sinh. Mẹ đã gồng mình rặn đẻ hét rung chuyển bệnh viện và đón chào trọn vẹn năm em bé mỉm mỉn má bánh bao trắng hồng!";
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'vi-VN';
+        utterance.rate = 1.0;
+        window.speechSynthesis.speak(utterance);
+      } else {
+        alert("Trình duyệt chưa hỗ trợ Speech Synthesis!");
+      }
+    }
+
+    function addReaction(type) {
+      const el = document.getElementById(`count-${type}`);
+      if (el) {
+        let current = parseInt(el.textContent, 10) || 0;
+        el.textContent = current + 1;
+        createFloatingEmoji(type);
+      }
+    }
+
+    function createFloatingEmoji(type) {
+      const emojiMap = { haha: '😂', heart: '❤️', five: '👶' };
+      const emoji = document.createElement('div');
+      emoji.textContent = emojiMap[type] || '✨';
+      emoji.style.position = 'fixed';
+      emoji.style.left = (Math.random() * 60 + 20) + 'vw';
+      emoji.style.bottom = '20px';
+      emoji.style.fontSize = '2.5rem';
+      emoji.style.zIndex = '9999';
+      emoji.style.pointerEvents = 'none';
+      emoji.style.transition = 'all 1.2s ease-out';
+      document.body.appendChild(emoji);
+      requestAnimationFrame(() => {
+        emoji.style.transform = `translateY(-${Math.random() * 250 + 200}px) scale(1.5) rotate(${(Math.random() - 0.5) * 60}deg)`;
+        emoji.style.opacity = '0';
+      });
+      setTimeout(() => { if (emoji.parentNode) emoji.parentNode.removeChild(emoji); }, 1200);
+    }
+  </script>
+</body>
+</html>

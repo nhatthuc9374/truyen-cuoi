@@ -142,3 +142,10 @@
 > 1. **Về hình học không gian:** Khi bụng bầu đã vượt mốc 120cm, hãy luôn tránh xa các loại cửa xoay tự động, cửa quay tàu điện ngầm và lối đi hẹp ở rạp chiếu phim! Sự lựa chọn an toàn nhất là cửa mở hai cánh hoặc cửa cuốn rộng rãi!
 > 2. **Về tình cảm gia đình:** Đằng sau chiếc bụng bầu to vượt mặt và những bước đi "chim cánh cụt" nặng nề là sự hy sinh vô bờ bến của người phụ nữ. Một người chồng tâm lý, biết cầm đũa dài đút từng miếng ăn và luôn bên cạnh che chở sẽ là chỗ dựa tuyệt vời nhất để mẹ vượt cạn thành công!
 > 3. **Niềm vui làm cha mẹ:** Mọi mệt mỏi, khó khăn hay những pha dở khóc dở cười suốt 9 tháng 10 ngày đều sẽ tan biến như một giấc mơ khi nghe tiếng khóc chào đời và ngắm nhìn những thiên thần nhỏ mỉm mỉn nằm trọn trong vòng tay yêu thương! 🥰💖
+
+---
+
+## ⭐ Đánh Giá & Góp Ý Câu Chuyện
+
+Bạn cảm thấy câu chuyện này thế nào? Hãy gửi ý kiến đóng góp và cảm nhận của bạn để tác giả hoàn thiện hơn nhé:
+👉 [**Gửi đánh giá và cảm nhận tại Google Form**](https://forms.gle/ufaBwJwsBajn33Lx7)

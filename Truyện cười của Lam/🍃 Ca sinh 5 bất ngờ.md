@@ -1,4 +1,4 @@
-﻿# 🍃 🏥👶 Truyện Tranh Hài Hước: Tôi Và Mẹ Đi Đẻ - Ca Sinh 5 Năm Bé Mỉm Mỉn
+# 🍃 🏥👶 Truyện Tranh Hài Hước: Tôi Và Mẹ Đi Đẻ - Ca Sinh 5 Năm Bé Mỉm Mỉn
 
 > *Chuyến đi khám thai bất ngờ nhớ đời của hai mẹ con: từ chiếc bụng bầu siêu to khổng lồ, tiếng hét rung chuyển cả bệnh viện khi các bé bướng bỉnh không chịu ra, đến khoảnh khắc vỡ òa hạnh phúc đón chào 5 thiên thần sinh năm mỉm mỉn trắng hồng!*
 
@@ -82,6 +82,13 @@
 ## 📜 Câu Chuyện Gốc
 
 > *"Tôi và mẹ [có bầu rất to] vào viện khám thai. Trong lúc khám, mẹ tôi bỗng nhiên ôm bụng hét to: Á á! Đau quá! Tôi và mẹ vào phòng đẻ nhưng khi vào phòng sinh thì mẹ tôi hét ầm trời! Cuối cùng thì mẹ hạ sinh 5 đứa mỉm mỉn."*
+
+---
+
+## ⭐ Đánh Giá & Góp Ý Câu Chuyện
+
+Bạn cảm thấy câu chuyện này thế nào? Hãy gửi ý kiến đóng góp và cảm nhận của bạn để tác giả hoàn thiện hơn nhé:
+👉 [**Gửi đánh giá và cảm nhận tại Google Form**](https://forms.gle/ufaBwJwsBajn33Lx7)
 
 ---
 

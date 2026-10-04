@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sb1Bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="65%" stop-color="#BAE6FD"/>
+      <stop offset="65%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <filter id="sb1Shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#sb1Bg)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Hospital Signs -->
+  <rect x="30" y="50" width="190" height="35" rx="6" fill="#0284C7"/>
+  <text x="125" y="73" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">🏥 PHÒNG SINH BỆNH VIỆN</text>
+
+  <!-- Floor line -->
+  <line x1="5" y1="300" x2="645" y2="300" stroke="#94A3B8" stroke-width="2"/>
+
+  <!-- Nôi 2 bé đầu tiên đã ra đời bên trái -->
+  <g transform="translate(40, 190)">
+    <rect x="0" y="30" width="120" height="60" rx="10" fill="#FEF08A" stroke="#EAB308" stroke-width="2.5"/>
+    <!-- Bé 1 -->
+    <circle cx="35" cy="25" r="15" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+    <path d="M22 22 C22 10 48 10 48 22 Z" fill="#38BDF8"/>
+    <ellipse cx="26" cy="28" rx="3.5" ry="2" fill="#FDA4AF"/><ellipse cx="44" cy="28" rx="3.5" ry="2" fill="#FDA4AF"/>
+    <ellipse cx="35" cy="45" rx="18" ry="14" fill="#BAE6FD" stroke="#0284C7" stroke-width="1.5"/>
+    <!-- Bé 2 -->
+    <circle cx="85" cy="25" r="15" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+    <path d="M72 22 C72 10 98 10 98 22 Z" fill="#F472B6"/>
+    <ellipse cx="76" cy="28" rx="3.5" ry="2" fill="#FDA4AF"/><ellipse cx="94" cy="28" rx="3.5" ry="2" fill="#FDA4AF"/>
+    <ellipse cx="85" cy="45" rx="18" ry="14" fill="#FCE7F3" stroke="#EC4899" stroke-width="1.5"/>
+    <text x="60" y="75" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" fill="#0369A1" text-anchor="middle">2 BÉ ĐÃ RA TRƯỚC 👶👶</text>
+  </g>
+
+  <!-- Mẹ trên giường đẻ nhưng BỤNG VẪN CÒN SIÊU TO vì còn 2 bé bên trong! -->
+  <g id="me-nam-giuong" transform="translate(180, 140)">
+    <!-- Giường bệnh -->
+    <rect x="0" y="85" width="260" height="20" rx="3" fill="#0284C7"/>
+    <polygon points="0,85 35,25 70,85" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    
+    <!-- Người mẹ nằm ngơ ngác ôm chiếc bụng VẪN TO ĐÙNG -->
+    <path d="M35 55 L90 45 L220 85 L220 105 L20 105 Z" fill="#FDA4AF"/>
+    <!-- Chiếc bụng bầu to tướng còn lại -->
+    <ellipse cx="120" cy="55" rx="60" ry="48" fill="#FB7185" stroke="#E11D48" stroke-width="3"/>
+    <text x="120" y="58" font-family="'Impact', sans-serif" font-size="10" fill="#FFFFFF" text-anchor="middle">2 BÉ Ở LÌ TRONG NÀY!</text>
+
+    <!-- Đầu mẹ ngơ ngác, trán vã mồ hôi -->
+    <circle cx="45" cy="20" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M18 18 C18 -12 72 -12 72 18 Z" fill="#451A03"/>
+    <ellipse cx="36" cy="18" rx="3.5" ry="4.5" fill="#1E293B"/><ellipse cx="54" cy="18" rx="3.5" ry="4.5" fill="#1E293B"/>
+    <ellipse cx="45" cy="30" rx="5" ry="6" fill="#7F1D1D"/>
+    <!-- Hai tay xoa bụng thắc mắc -->
+    <path d="M40 45 Q70 70 95 65" stroke="#FDA4AF" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <circle cx="95" cy="65" r="7" fill="#FFEDD5"/>
+    <text x="65" y="-5" font-size="16">❓</text>
+  </g>
+
+  <!-- Bác sĩ gãi đầu bối rối cầm ống nghe -->
+  <g transform="translate(470, 150)">
+    <ellipse cx="40" cy="140" rx="35" ry="10" fill="#000000" opacity="0.15"/>
+    <path d="M22 65 Q40 55 58 65 L65 140 L15 140 Z" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
+    <circle cx="40" cy="36" r="20" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M20 32 C20 12 60 12 60 32 Z" fill="#334155"/>
+    <!-- Tay gãi đầu bối rối -->
+    <path d="M55 60 L68 35 L55 20" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <circle cx="55" cy="20" r="6" fill="#FFEDD5"/>
+    <!-- Mắt chớp chớp bối rối -->
+    <circle cx="34" cy="36" r="2.5" fill="#1E293B"/><circle cx="46" cy="36" r="2.5" fill="#1E293B"/>
+    <path d="M35 46 Q40 42 45 46" stroke="#991B1B" stroke-width="2" fill="none"/>
+    <text x="50" y="-8" font-size="14">😅</text>
+  </g>
+
+  <!-- Speech Mẹ & Bác Sĩ -->
+  <g filter="url(#sb1Shadow)">
+    <path d="M120 20 Q120 0 200 0 L450 0 Q490 0 490 25 Q490 60 430 60 L330 60 L300 85 L310 60 L180 60 Q120 60 120 20 Z" fill="#FFF1F2" stroke="#F43F5E" stroke-width="2.5"/>
+    <text x="305" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="900" fill="#9F1239" text-anchor="middle">🤰 MẸ THẮC MẮC: "BÁC SĨ ƠI! SAO 2 ĐỨA KIA KHÔNG CHỊU RA?!"</text>
+    <text x="305" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#0284C7" text-anchor="middle">👨‍⚕️ Bác sĩ: "Ca sinh 4 hy hữu! Hai bé sau ngủ say quá, chưa có cơn rặn tiếp theo!"</text>
+  </g>
+
+  <!-- Tiêu đề phân cảnh -->
+  <rect x="15" y="12" width="360" height="26" rx="6" fill="#1E293B"/>
+  <text x="195" y="29" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#38BDF8" text-anchor="middle">CẢNH 1: ĐẺ 2 BÉ TRƯỚC, 2 BÉ SAU Ở LÌ TRONG BỤNG</text>
+
+  <!-- Footer chú thích dẫn chuyện -->
+  <rect x="15" y="385" width="620" height="30" rx="6" fill="#0F172A" opacity="0.9"/>
+  <text x="325" y="405" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#F8FAFC" text-anchor="middle">Mẹ mang thai 4 bé, vào viện đẻ được 2 bé thì 2 bé sau bướng bỉnh ở lì trong bụng không chịu chui ra...</text>
+</svg>

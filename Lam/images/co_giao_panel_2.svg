@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cWall2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF2F2"/>
+      <stop offset="65%" stop-color="#FEE2E2"/>
+      <stop offset="65%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <filter id="shadowC2" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Panel Border & Classroom Background -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#cWall2)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Large Window looking out to School Yard (Top Right) -->
+  <rect x="420" y="45" width="200" height="150" rx="8" fill="#BAE6FD" stroke="#475569" stroke-width="3"/>
+  <rect x="425" y="115" width="190" height="75" fill="#94A3B8"/> <!-- Schoolyard pavement -->
+  <rect x="440" y="60" width="60" height="55" fill="#F87171" opacity="0.6"/> <!-- School building -->
+
+  <!-- AMBULANCE 115 Zooming into Schoolyard! 🚑 -->
+  <g id="ambulance" transform="translate(450, 110)">
+    <!-- Motion lines & dust -->
+    <ellipse cx="-15" cy="50" rx="20" ry="6" fill="#FFFFFF" opacity="0.7"/>
+    <line x1="-30" y1="42" x2="-5" y2="42" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Ambulance Body -->
+    <rect x="0" y="15" width="105" height="40" rx="5" fill="#FFFFFF" stroke="#1E293B" stroke-width="2"/>
+    <!-- Cab front -->
+    <path d="M70 15 L95 15 Q105 25 105 40 L105 55 L70 55 Z" fill="#FFFFFF" stroke="#1E293B" stroke-width="2"/>
+    <polygon points="75,20 95,20 100,32 75,32" fill="#38BDF8"/>
+    <!-- Red Stripe & Medical Cross -->
+    <rect x="0" y="32" width="100" height="10" fill="#EF4444"/>
+    <circle cx="35" cy="37" r="8" fill="#FFFFFF"/>
+    <path d="M33 32 h4 v10 h-4 z" fill="#EF4444"/>
+    <path d="M30 35 h10 v4 h-10 z" fill="#EF4444"/>
+    <!-- Emergency Flashing Siren 🚨 -->
+    <ellipse cx="40" cy="11" rx="8" ry="4" fill="#EF4444"/>
+    <path d="M36 8 L44 8 L42 11 L38 11 Z" fill="#DC2626"/>
+    <text x="40" y="5" font-size="14" text-anchor="middle">🚨</text>
+    <!-- Wheels -->
+    <circle cx="25" cy="55" r="10" fill="#334155" stroke="#1E293B" stroke-width="2"/>
+    <circle cx="85" cy="55" r="10" fill="#334155" stroke="#1E293B" stroke-width="2"/>
+    <circle cx="25" cy="55" r="3" fill="#FFFFFF"/>
+    <circle cx="85" cy="55" r="3" fill="#FFFFFF"/>
+  </g>
+  <!-- Siren sound waves -->
+  <text x="560" y="85" font-family="'Impact', sans-serif" font-size="11" fill="#DC2626" font-weight="900">Ò... Í... Ò... Í...!</text>
+
+  <!-- Teacher Clutching Belly in Sudden Intense Agony (Left Side) -->
+  <g id="teacher-pain" transform="translate(110, 100)">
+    <ellipse cx="90" cy="210" rx="75" ry="14" fill="#000000" opacity="0.25"/>
+
+    <!-- Broken piece of chalk dropped on floor -->
+    <rect x="180" y="205" width="8" height="4" rx="1" fill="#FFFFFF" transform="rotate(25 180 205)"/>
+    <rect x="192" y="208" width="6" height="4" rx="1" fill="#FFFFFF" transform="rotate(-15 192 208)"/>
+
+    <!-- Dress -->
+    <path d="M50 85 Q75 65 100 85 L150 200 L25 200 Z" fill="#FDA4AF" stroke="#E11D48" stroke-width="2.5"/>
+
+    <!-- HUGE BELLY with PAIN RAYS -->
+    <ellipse cx="115" cy="140" rx="68" ry="58" fill="#FB7185" stroke="#DC2626" stroke-width="3.5"/>
+    <!-- Yellow Pain Lightning -->
+    <path d="M55 125 L45 140 L58 145 L48 165" fill="none" stroke="#FBBF24" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M185 120 L195 135 L185 140 L198 155" fill="none" stroke="#FBBF24" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Both Hands Clamping the Belly -->
+    <path d="M55 90 Q40 130 90 145" fill="none" stroke="#FDA4AF" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="90" cy="145" r="11" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M125 90 Q150 130 135 148" fill="none" stroke="#FDA4AF" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="135" cy="148" r="11" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- Screaming Agonized Face -->
+    <circle cx="75" cy="48" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M48 48 C42 15 105 15 102 48 Z" fill="#3B2005"/>
+    <rect x="62" y="42" width="11" height="8" rx="1.5" fill="none" stroke="#DC2626" stroke-width="2" transform="rotate(-10 67 46)"/>
+    <rect x="78" y="40" width="11" height="8" rx="1.5" fill="none" stroke="#DC2626" stroke-width="2" transform="rotate(-10 83 44)"/>
+    
+    <!-- Squeezed Pain Eyes -->
+    <path d="M60 40 L68 45 L60 50" fill="none" stroke="#1E293B" stroke-width="3"/>
+    <path d="M90 40 L82 45 L90 50" fill="none" stroke="#1E293B" stroke-width="3"/>
+
+    <!-- Screaming Mouth -->
+    <ellipse cx="75" cy="62" rx="12" ry="16" fill="#991B1B" stroke="#1E293B" stroke-width="2"/>
+    <ellipse cx="75" cy="67" rx="7" ry="7" fill="#F87171"/>
+
+    <!-- Sweat Flying -->
+    <path d="M35 30 Q28 22 34 15 Q40 22 35 30 Z" fill="#38BDF8"/>
+    <path d="M105 30 Q112 22 108 15 Q102 22 105 30 Z" fill="#38BDF8"/>
+  </g>
+
+  <!-- Students Whispering in Panic & Confusion (Center-Right) -->
+  <g id="students-panic" transform="translate(290, 200)">
+    <!-- Student 1 (Boy standing up in shock) -->
+    <ellipse cx="40" cy="130" rx="35" ry="8" fill="#000000" opacity="0.2"/>
+    <ellipse cx="40" cy="80" rx="18" ry="24" fill="#38BDF8" stroke="#0284C7" stroke-width="2"/>
+    <circle cx="40" cy="38" r="18" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M22 35 C20 15 58 15 56 35 Z" fill="#292524"/>
+    <circle cx="34" cy="36" r="5" fill="#FFFFFF"/><circle cx="34" cy="36" r="2" fill="#1E293B"/>
+    <circle cx="46" cy="36" r="5" fill="#FFFFFF"/><circle cx="46" cy="36" r="2" fill="#1E293B"/>
+    <ellipse cx="40" cy="46" rx="4" ry="6" fill="#991B1B"/>
+
+    <!-- Student 2 (Girl holding face) -->
+    <g transform="translate(65, 10)">
+      <ellipse cx="35" cy="120" rx="30" ry="8" fill="#000000" opacity="0.2"/>
+      <ellipse cx="35" cy="75" rx="18" ry="22" fill="#FFFFFF" stroke="#334155" stroke-width="2"/>
+      <circle cx="35" cy="35" r="16" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+      <path d="M20 30 C18 12 50 12 48 30 Z" fill="#3B2005"/>
+      <circle cx="50" cy="28" r="4" fill="#EC4899"/>
+      <circle cx="30" cy="33" r="4" fill="#FFFFFF"/><circle cx="30" cy="33" r="1.5" fill="#1E293B"/>
+      <circle cx="40" cy="33" r="4" fill="#FFFFFF"/><circle cx="40" cy="33" r="1.5" fill="#1E293B"/>
+      <text x="35" y="15" font-size="12">😱</text>
+    </g>
+  </g>
+
+  <!-- Giant Scream Bubble: Teacher -->
+  <g filter="url(#shadowC2)">
+    <path d="M50 25 
+             L90 10 L115 20 L140 2 L170 20 L205 2 L215 25 L260 10 L250 40 L285 60 L255 80 L280 108 L240 105 L225 128 L200 108 L175 122 L165 100 L125 110 L132 88 L95 82 L115 60 Z" 
+          fill="#FEF2F2" stroke="#EF4444" stroke-width="3"/>
+    <text x="180" y="45" font-family="'Impact', sans-serif" font-size="24" font-weight="900" fill="#DC2626" text-anchor="middle">Á Á Á ! ĐAU QUÁ !</text>
+    <text x="180" y="68" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#991B1B" text-anchor="middle">"CÔ VỠ ỐI RỒI CÁC EM ƠI!"</text>
+  </g>
+
+  <!-- Whispering / Shouting Bubbles from Students -->
+  <g filter="url(#shadowC2)">
+    <path d="M270 90 Q270 70 340 70 L480 70 Q510 70 510 95 Q510 120 460 120 L420 120 L405 145 L410 120 L320 120 Q270 120 270 90 Z" fill="#F0F9FF" stroke="#0284C7" stroke-width="2.5"/>
+    <text x="390" y="92" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#0369A1" text-anchor="middle">"Cô sao thế ạ?!"</text>
+    <text x="390" y="110" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#DC2626" text-anchor="middle">"Cô vỡ ối rồi! Xe cấp cứu đến rồi!"</text>
+  </g>
+
+  <!-- Panel Header Banner -->
+  <rect x="20" y="16" width="280" height="32" rx="8" fill="#1E293B"/>
+  <text x="160" y="37" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#EF4444" text-anchor="middle">★ CẢNH 2: CẢ TRƯỜNG NÁO LOẠN</text>
+
+  <!-- Caption at bottom -->
+  <rect x="25" y="402" width="600" height="34" rx="8" fill="#0F172A" opacity="0.85"/>
+  <text x="325" y="424" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#F8FAFC" text-anchor="middle">Cô giáo ôm bụng hét toáng lên, cả lớp xì xào hoảng hốt và xe cấp cứu 115 lao tới như một cơn gió!</text>
+</svg>

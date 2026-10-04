@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍃 Chiếc Bụng Bầu Ngoại Cỡ 135cm &amp; Sự Cố Kẹt Cửa Xoay - Truyện Cười Lam</title>
+  <style>
+    :root {
+      --primary: #10b981;
+      --primary-hover: #059669;
+      --primary-glow: rgba(16, 185, 129, 0.35);
+      --accent: #f43f5e;
+      --accent-hover: #e11d48;
+      --accent-glow: rgba(244, 63, 94, 0.3);
+      --gold: #fbbf24;
+      --sky: #38bdf8;
+      --bg: #0b111e;
+      --card-bg: #131f33;
+      --card-hover: #192842;
+      --card-border: #233554;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.6;
+    }
+
+    /* Top Navigation */
+    .nav-bar {
+      width: 100%;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--card-border);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.45rem 0.95rem;
+      border-radius: 9999px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      transition: all 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      background: rgba(16, 185, 129, 0.22);
+      transform: translateY(-1px);
+      color: #fff;
+    }
+
+    .nav-btn.secondary {
+      color: #fbbf24;
+      background: rgba(251, 191, 36, 0.1);
+      border-color: rgba(251, 191, 36, 0.25);
+    }
+
+    .nav-btn.secondary:hover {
+      background: rgba(251, 191, 36, 0.22);
+      color: #fff;
+    }
+
+    .badge-path {
+      background: #1e293b;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-family: monospace;
+    }
+
+    /* Header & Hero */
+    header {
+      text-align: center;
+      margin: 2.5rem 1rem 1.5rem 1rem;
+      max-width: 950px;
+    }
+
+    .story-tag-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, #10b981, #0ea5e9);
+      color: #ffffff;
+      padding: 0.4rem 1.25rem;
+      border-radius: 9999px;
+      font-weight: 800;
+      font-size: 0.825rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 4px 18px var(--primary-glow);
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      font-weight: 900;
+      line-height: 1.25;
+      background: linear-gradient(to right, #34d399, #38bdf8, #f472b6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    .story-lead-quote {
+      background: linear-gradient(145deg, rgba(16, 185, 129, 0.08), rgba(244, 63, 94, 0.08));
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-left: 5px solid #10b981;
+      border-radius: 14px;
+      padding: 1.25rem 1.5rem;
+      font-size: 1.05rem;
+      color: #e2e8f0;
+      max-width: 860px;
+      margin: 1rem auto 2rem auto;
+      text-align: left;
+      line-height: 1.7;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Interactive Toolbar */
+    .interactive-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1050px;
+      padding: 0.9rem 1.25rem;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      margin-bottom: 2rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .mode-buttons, .sound-buttons {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .tool-btn {
+      background: #0f172a;
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 0.5rem 0.95rem;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.2s ease;
+    }
+
+    .tool-btn:hover {
+      background: #1e293b;
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .tool-btn.active {
+      background: rgba(16, 185, 129, 0.2);
+      border-color: var(--primary);
+      color: #34d399;
+    }
+
+    .tool-btn.sound {
+      border-color: rgba(245, 158, 11, 0.3);
+      color: #fbbf24;
+    }
+
+    .tool-btn.sound:hover {
+      background: rgba(245, 158, 11, 0.15);
+      border-color: #fbbf24;
+      color: #fff;
+    }
+
+    /* Slide Navigation */
+    .slide-nav {
+      display: none;
+      width: 100%;
+      max-width: 1050px;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding: 0.5rem 1rem;
+      background: rgba(15, 23, 42, 0.6);
+      border-radius: 12px;
+      border: 1px solid var(--card-border);
+    }
+
+    .btn-slide {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.5rem 1.25rem;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.2s;
+    }
+
+    .btn-slide:hover:not(:disabled) {
+      background: var(--primary-hover);
+      transform: scale(1.05);
+    }
+
+    .btn-slide:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+
+    .slide-counter {
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    /* Comic Container */
+    .comic-container {
+      width: 100%;
+      max-width: 1050px;
+      margin-bottom: 3.5rem;
+    }
+
+    .comic-container.grid-mode {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.75rem;
+    }
+
+    .comic-container.strip-mode {
+      display: flex;
+      flex-direction: column;
+      gap: 2.25rem;
+    }
+
+    .comic-container.slide-mode {
+      display: block;
+    }
+
+    .comic-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .comic-card:hover {
+      border-color: rgba(16, 185, 129, 0.5);
+      transform: translateY(-3px);
+    }
+
+    .comic-container.slide-mode .comic-card {
+      display: none;
+    }
+
+    .comic-container.slide-mode .comic-card.current {
+      display: flex;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card-header {
+      padding: 1rem 1.25rem;
+      background: rgba(11, 17, 30, 0.7);
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .panel-tag {
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #34d399;
+      background: rgba(16, 185, 129, 0.15);
+      padding: 0.25rem 0.65rem;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+
+    .panel-tag.danger {
+      color: #f43f5e;
+      background: rgba(244, 63, 94, 0.15);
+    }
+
+    .panel-tag.highlight {
+      color: #fbbf24;
+      background: rgba(251, 191, 36, 0.15);
+    }
+
+    .panel-caption {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #cbd5e1;
+    }
+
+    .img-wrapper {
+      position: relative;
+      cursor: zoom-in;
+      background: #000;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 280px;
+    }
+
+    .img-wrapper img {
+      width: 100%;
+      height: auto;
+      max-height: 480px;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+
+    .img-wrapper:hover img {
+      transform: scale(1.02);
+    }
+
+    .zoom-hint {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 0.3rem 0.65rem;
+      border-radius: 6px;
+      pointer-events: none;
+      backdrop-filter: blur(4px);
+    }
+
+    .dialogue-wrap {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      flex: 1;
+    }
+
+    .narrative-box {
+      font-size: 0.925rem;
+      color: #cbd5e1;
+      background: rgba(15, 23, 42, 0.5);
+      padding: 0.85rem 1rem;
+      border-radius: 10px;
+      border-left: 3px solid var(--sky);
+      line-height: 1.6;
+    }
+
+    .dialogue-box {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      border-radius: 10px;
+      padding: 0.85rem 1rem;
+      font-size: 0.93rem;
+      color: #f1f5f9;
+    }
+
+    .dialogue-box.dad {
+      background: rgba(56, 189, 248, 0.08);
+      border-color: rgba(56, 189, 248, 0.25);
+    }
+
+    .dialogue-box.danger {
+      background: rgba(244, 63, 94, 0.08);
+      border-color: rgba(244, 63, 94, 0.25);
+    }
+
+    .speaker-name {
+      font-weight: 800;
+      font-size: 0.85rem;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .speaker-name.mom { color: #f472b6; }
+    .speaker-name.dad { color: #38bdf8; }
+    .speaker-name.alert { color: #fb7185; }
+    .speaker-name.doctor { color: #34d399; }
+
+    /* Full Strip Section */
+    .full-strip-box {
+      width: 100%;
+      max-width: 1050px;
+      margin-bottom: 3.5rem;
+    }
+
+    .full-strip-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 1.75rem;
+      text-align: center;
+    }
+
+    .full-strip-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-top: 1.25rem;
+      cursor: zoom-in;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Record Table & Moral */
+    .record-table-box {
+      width: 100%;
+      max-width: 1050px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 1.75rem 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .record-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .record-table th, .record-table td {
+      padding: 0.85rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--card-border);
+    }
+
+    .record-table th {
+      background: rgba(15, 23, 42, 0.6);
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .record-table tr:hover {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .moral-section {
+      width: 100%;
+      max-width: 1050px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 1.75rem 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .section-headline {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .moral-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .moral-item {
+      background: rgba(15, 23, 42, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+
+    .moral-item h4 {
+      color: #38bdf8;
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .moral-item p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    /* Reactions */
+    .reaction-section {
+      width: 100%;
+      max-width: 1050px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 1.75rem 2rem;
+      margin: 0 auto 3rem auto;
+      text-align: center;
+    }
+
+    .reaction-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1.25rem;
+    }
+
+    .reaction-btn {
+      padding: 0.75rem 1.4rem;
+      background: #0b111e;
+      border: 1px solid var(--card-border);
+      border-radius: 9999px;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+
+    .reaction-btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      border-color: var(--primary);
+      box-shadow: 0 6px 18px var(--primary-glow);
+    }
+
+    .reaction-count {
+      background: rgba(16, 185, 129, 0.2);
+      color: #34d399;
+      font-size: 0.85rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: 9999px;
+    }
+
+    /* Feedback & Rating Section */
+    .feedback-section {
+      width: 100%;
+      max-width: 1050px;
+      margin: 0 auto 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .feedback-card {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(56, 189, 248, 0.08) 50%, rgba(251, 191, 36, 0.1) 100%), var(--card-bg);
+      border: 2px solid rgba(16, 185, 129, 0.4);
+      border-radius: 24px;
+      padding: 2.25rem 2rem;
+      text-align: center;
+      box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.5), 0 0 25px rgba(16, 185, 129, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .feedback-card:hover {
+      border-color: rgba(16, 185, 129, 0.8);
+      box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.6), 0 0 35px rgba(16, 185, 129, 0.25);
+      transform: translateY(-3px);
+    }
+
+    .feedback-badge {
+      display: inline-block;
+      padding: 0.35rem 1rem;
+      border-radius: 9999px;
+      background: rgba(16, 185, 129, 0.2);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #34d399;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .feedback-title {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 0.75rem;
+    }
+
+    .feedback-desc {
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 680px;
+      margin: 0 auto 1.75rem auto;
+      line-height: 1.65;
+    }
+
+    .btn-feedback {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 1rem 2.25rem;
+      border-radius: 9999px;
+      box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.5);
+      transition: all 0.25s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-feedback:hover {
+      background: linear-gradient(135deg, #059669, #047857);
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 14px 30px -5px rgba(16, 185, 129, 0.7);
+      color: #ffffff;
+    }
+
+    .feedback-note {
+      margin-top: 1.25rem;
+      color: #94a3b8;
+      font-size: 0.85rem;
+    }
+
+    /* Modal Lightbox */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(8px);
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .modal.show {
+      display: flex;
+    }
+
+    .modal-content {
+      max-width: 95vw;
+      max-height: 90vh;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      background: none;
+      border: none;
+      outline: none;
+    }
+
+    .close-modal:hover {
+      color: var(--accent);
+    }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      border-top: 1px solid var(--card-border);
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      margin-top: auto;
+      background: #080d16;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.85rem; }
+      .comic-container.grid-mode { grid-template-columns: 1fr; }
+      .interactive-bar { flex-direction: column; align-items: stretch; }
+      .sound-buttons { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <div class="nav-bar">
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn">
+        <span>←</span> Kho Truyện Lam
+      </a>
+      <a href="../index.html" class="nav-btn">
+        <span>🏠</span> Trang Chủ Dự Án
+      </a>
+      <a href="../Nhan/index.html" class="nav-btn secondary">
+        <span>🎭</span> Kho của Nhân
+      </a>
+    </div>
+    <span class="badge-path">Lam/chiec_bung_bau_135cm_ket_cua_xoay.html</span>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="story-tag-badge">🍃 TRUYỆN TRANH HÀI HƯỚC • SIÊU KỶ LỤC 135CM 🌀</div>
+    <h1>Chiếc Bụng Bầu Ngoại Cỡ 135cm &amp; Sự Cố Kẹt Cửa Xoay Bão Táp</h1>
+    
+    <div class="story-lead-quote">
+      <strong>Kỷ niệm "dở khóc dở cười" mà vô cùng tự hào:</strong> Từ bữa tiệc lẩu ngồi xa nửa mét phải dùng đũa dài như cần câu, sự cố cấn kẹt rúng động cửa xoay trung tâm thương mại, cuộc giải cứu bằng bơ thực vật kết hợp phản lực tên lửa của 3 chú lính nhí, đến màn vượt cạn thần tốc đón 3 củ cải béo mỉm mỉn nặng gần 10kg!
+    </div>
+  </header>
+
+  <!-- Thanh Tương Tác & Chế Độ Xem -->
+  <div class="interactive-bar">
+    <div class="mode-buttons">
+      <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Chế độ xem:</span>
+      <button class="tool-btn active" id="btnGrid" onclick="switchView('grid')">
+        <span>🔲</span> Lưới 2 cột
+      </button>
+      <button class="tool-btn" id="btnStrip" onclick="switchView('strip')">
+        <span>📜</span> Lướt dọc
+      </button>
+      <button class="tool-btn" id="btnSlide" onclick="switchView('slide')">
+        <span>📽️</span> Trình chiếu
+      </button>
+    </div>
+
+    <div class="sound-buttons">
+      <button class="tool-btn sound" onclick="playAlarmSiren()">
+        <span>🚨</span> Còi Báo Động
+      </button>
+      <button class="tool-btn sound" onclick="playBoingKick()">
+        <span>🚀</span> Cú Đạp Phản Lực
+      </button>
+      <button class="tool-btn sound" onclick="playCheerFanfare()">
+        <span>🎉</span> Hoan Hô Kỷ Lục
+      </button>
+      <button class="tool-btn" onclick="speakStorySummary()" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">
+        <span>🔊</span> Đọc Tóm Tắt
+      </button>
+    </div>
+  </div>
+
+  <!-- Điều Hướng Slide -->
+  <div class="slide-nav" id="slideNav">
+    <button class="btn-slide" id="btnPrev" onclick="prevSlide()">
+      <span>←</span> Cảnh Trước
+    </button>
+    <div class="slide-counter" id="slideCounter">Cảnh 1 / 4</div>
+    <button class="btn-slide" id="btnNext" onclick="nextSlide()">
+      Cảnh Sau <span>→</span>
+    </button>
+  </div>
+
+  <!-- Danh sách 4 phân cảnh Comic -->
+  <main class="comic-container grid-mode" id="comicContainer">
+
+    <!-- Cảnh 1 -->
+    <article class="comic-card current" data-slide="1">
+      <div class="card-header">
+        <span class="panel-tag">🍲 CẢNH 1: BỮA TIỆC ĐẶC BIỆT</span>
+        <span class="panel-caption">Bàn Lẩu Xa Nửa Mét &amp; Đũa Cần Câu</span>
+      </div>
+      <div class="img-wrapper" onclick="openLightbox('images/ket_cua_xoay_panel_1.svg')">
+        <img src="images/ket_cua_xoay_panel_1.svg" alt="Cảnh 1: Bữa lẩu xa cách nửa mét">
+        <div class="zoom-hint">🔍 Bấm để phóng to</div>
+      </div>
+      <div class="dialogue-wrap">
+        <div class="narrative-box">
+          📖 <strong>Dẫn truyện:</strong> Bước sang tuần thứ 38 thai kỳ tam thai, bụng mẹ chạm ngưỡng kỷ lục 135cm tròn vo như quả khí cầu mini. Bố đưa mẹ đi ăn lẩu, nhưng bụng chạm mép bàn tạo khoảng cách nửa mét! Bố phải sắm đôi đũa dài như cần câu để gắp đồ ăn đút cho vợ, còn mẹ thản nhiên kê luôn đĩa dưa hấu lên đỉnh bụng thưởng thức!
+        </div>
+        <div class="dialogue-box dad">
+          <div class="speaker-name dad">👨 Bố (vươn đũa dài mét, cười ha hả):</div>
+          <em>“Há miệng to nào hoàng hậu ơi! Bụng em to thế này anh phải làm cần thủ tiếp tế đồ ăn qua đại dương bụng bầu cho bốn mẹ con luôn! 🥢🦐”</em>
+        </div>
+        <div class="dialogue-box">
+          <div class="speaker-name mom">🤰 Mẹ (nhai tôm viên, xoa đỉnh bụng):</div>
+          <em>“Ngon tuyệt anh ơi! Bụng to kê đĩa hoa quả vừa êm vừa tiện, ba em bé bên trong còn đang quẫy theo nhạc nhà hàng nữa kìa! 🍉🎶”</em>
+        </div>
+      </div>
+    </article>
+
+    <!-- Cảnh 2 -->
+    <article class="comic-card" data-slide="2">
+      <div class="card-header">
+        <span class="panel-tag danger">🚨 CẢNH 2: SỰ CỐ KẸT CỬA XOAY</span>
+        <span class="panel-caption">Cấn Kẹt 135cm Rúng Động Trung Tâm</span>
+      </div>
+      <div class="img-wrapper" onclick="openLightbox('images/ket_cua_xoay_panel_2.svg')">
+        <img src="images/ket_cua_xoay_panel_2.svg" alt="Cảnh 2: Pha kẹt cửa xoay">
+        <div class="zoom-hint">🔍 Bấm để phóng to</div>
+      </div>
+      <div class="dialogue-wrap">
+        <div class="narrative-box">
+          📖 <strong>Dẫn truyện:</strong> Ra về qua lối cửa kính xoay tự động 4 cánh, khoang cửa chỉ rộng 60cm mà chiều dày thân và bụng mẹ lên tới 75cm! Cửa vừa khép tới lưng thì đỉnh bụng chạm cứng kính trước. Chuông báo động hú vang inh ỏi, hệ thống phanh gấp kích hoạt giam mẹ bầu giữa lồng kính như búp bê VIP!
+        </div>
+        <div class="dialogue-box danger">
+          <div class="speaker-name alert">🚨 Cảm biến cửa xoay &amp; Bác bảo vệ:</div>
+          <em>“TÍT TÍT BÍP BÍP! PHÁT HIỆN KẸT CỨNG! Báo động có mẹ bầu VIP mang chiếc bụng bầu kỷ lục đang kẹt cứng giữa hai cánh cửa xoay! Mang dầu ăn cứu viện gấp!”</em>
+        </div>
+        <div class="dialogue-box">
+          <div class="speaker-name mom">🤰 Mẹ (ôm bụng tròn vo, cười ngặt nghẽo):</div>
+          <em>“Ối dồi ôi cứu mẹ con em với! Bụng to quá giờ em thành diễn viên xiếc trong lồng kính trung tâm thương mại rồi các bác ơi! 🎠🤣”</em>
+        </div>
+      </div>
+    </article>
+
+    <!-- Cảnh 3 -->
+    <article class="comic-card" data-slide="3">
+      <div class="card-header">
+        <span class="panel-tag highlight">⚡ CẢNH 3: CÚ ĐẠP GIẢI CỨU</span>
+        <span class="panel-caption">Bơ Bôi Trơn &amp; Phản Lực Ba Siêu Quậy</span>
+      </div>
+      <div class="img-wrapper" onclick="openLightbox('images/ket_cua_xoay_panel_3.svg')">
+        <img src="images/ket_cua_xoay_panel_3.svg" alt="Cảnh 3: Cú đạp giải cứu">
+        <div class="zoom-hint">🔍 Bấm để phóng to</div>
+      </div>
+      <div class="dialogue-wrap">
+        <div class="narrative-box">
+          📖 <strong>Dẫn truyện:</strong> Đội cứu hộ dùng hai hộp bơ thực vật bôi trơn mép kính, bố kéo hết sức nhưng bụng nảy lại như bóng cao su. Bất ngờ, ba chú nhí trong bụng đồng loạt tung cước đạp rầm rầm vào cửa kính tạo lực đẩy phản lực cực mạnh! "BOINGGG!" - Mẹ bầu phóng vèo ra ngoài lọt thỏm vào tay bố giữa tiếng reo hò của hàng trăm khán giả!
+        </div>
+        <div class="dialogue-box dad">
+          <div class="speaker-name dad">👨 Bố (ôm chặt mẹ, hét to tự hào):</div>
+          <em>“TUYỆT VỜI! HOAN HÔ BA SIÊU NHÂN NHÍ! Chưa ra đời mà đã biết tung song phi giải cứu mẹ khỏi cửa xoay rồi! Đẳng cấp vô địch! 🚀👏”</em>
+        </div>
+        <div class="dialogue-box danger">
+          <div class="speaker-name mom">🤰 Mẹ (giật thót mình ôm bụng):</div>
+          <em>“Ối ối anh ơi! Ba đứa nhỏ đạp bung cửa xong hình như... VỠ ỐI LUÔN RỒI! Gọi 115 đưa em đi đẻ gấp! 🚑💨”</em>
+        </div>
+      </div>
+    </article>
+
+    <!-- Cảnh 4 -->
+    <article class="comic-card" data-slide="4">
+      <div class="card-header">
+        <span class="panel-tag">🎉 CẢNH 4: VƯỢT CẠN HUY HOÀNG</span>
+        <span class="panel-caption">Đón 3 Củ Cải Béo Mỉm Mỉn 9.6kg!</span>
+      </div>
+      <div class="img-wrapper" onclick="openLightbox('images/ket_cua_xoay_panel_4.svg')">
+        <img src="images/ket_cua_xoay_panel_4.svg" alt="Cảnh 4: Ba củ cải béo mỉm mỉn chào đời">
+        <div class="zoom-hint">🔍 Bấm để phóng to</div>
+      </div>
+      <div class="dialogue-wrap">
+        <div class="narrative-box">
+          📖 <strong>Dẫn truyện:</strong> Sau màn khởi động đạp tung cửa xoay, ba bạn nhỏ háo hức chui ra nhanh như chớp. Chỉ sau 3 hơi rặn sấm sét, mẹ đã đón trọn 3 bé (3.2kg, 3.1kg, 3.3kg) tổng cộng 9.6kg má phúng phính trắng hồng! Bác sĩ trưởng khoa đích thân trao cúp vàng vinh danh "Bà Mẹ Của Năm"!
+        </div>
+        <div class="dialogue-box">
+          <div class="speaker-name doctor">👨‍⚕️ Bác sĩ trưởng khoa (trao cúp vàng):</div>
+          <em>“Đỡ đẻ 30 năm, tam thai gần 10 ký thịt má phúng phính mỉm mỉn khỏe re thế này đúng là kỳ tích! Xin trao cúp vô địch 'Bà Mẹ Của Năm'!”</em>
+        </div>
+        <div class="dialogue-box">
+          <div class="speaker-name mom">🤰 Mẹ (nụ cười rạng rỡ, ôm 3 thiên thần):</div>
+          <em>“Kẹt cửa xoay hay ăn lẩu xa nửa mét đổi lại 3 củ cải béo mỉm mỉn thế này mẹ thấy xứng đáng ngàn lần! Cảm ơn ba thiên thần của ba mẹ! ❤️👶👶👶”</em>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Trọn bộ tranh liền mạch -->
+  <section class="full-strip-box">
+    <div class="full-strip-card">
+      <div class="section-headline" style="justify-content: center;">
+        <span>🖼️</span> Trọn Bộ Truyện Tranh Liền Mạch (Full Comic Strip)
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.25rem;">
+        Hành trình kỳ tích từ bàn tiệc lẩu, cửa xoay đến phòng sinh đón 3 bé mỉm mỉn:
+      </p>
+      <img src="images/ket_cua_xoay_full.svg" alt="Trọn bộ truyện tranh Chiếc Bụng Bầu Ngoại Cỡ 135cm &amp; Kẹt Cửa Xoay" onclick="openLightbox('images/ket_cua_xoay_full.svg')">
+    </div>
+  </section>
+
+  <!-- Bảng Kỷ Lục -->
+  <section class="record-table-box">
+    <div class="section-headline">
+      <span>📊</span> Bảng Kỷ Lục Độc Lạ Trong Chuyến Vượt Cạn
+    </div>
+    <table class="record-table">
+      <thead>
+        <tr>
+          <th>Hạng Mục Kỷ Lục</th>
+          <th>Thông Số Thực Tế</th>
+          <th>Bình Luận Hài Hước</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>📏 Chu vi bụng bầu</td>
+          <td><strong>135 cm</strong></td>
+          <td>Dùng thước dây may đồ mới đo trọn, to hơn cả võ sĩ Sumo!</td>
+        </tr>
+        <tr>
+          <td>🥢 Chiều dài đôi đũa</td>
+          <td><strong>100 cm (1 mét)</strong></td>
+          <td>Dài như cần câu cá để với qua đại dương bụng bầu tiếp tế tôm!</td>
+        </tr>
+        <tr>
+          <td>🌀 Thời gian kẹt cửa xoay</td>
+          <td><strong>8 phút 15 giây</strong></td>
+          <td>Trở thành búp bê lồng kính VIP thu hút hàng trăm khán giả cổ vũ.</td>
+        </tr>
+        <tr>
+          <td>🧈 Vật liệu cứu hộ</td>
+          <td><strong>2 hộp bơ + 3 cú song phi</strong></td>
+          <td>Bơ thực vật bôi trơn phối hợp phản lực tên lửa của 3 em bé!</td>
+        </tr>
+        <tr>
+          <td>👶 Tổng cân nặng tam thai</td>
+          <td><strong>9.6 kg</strong> (3.2kg + 3.1kg + 3.3kg)</td>
+          <td>Ba em bé má bánh bao mỉm mỉn, trắng hồng núng nính cưng xỉu!</td>
+        </tr>
+        <tr>
+          <td>🏆 Danh hiệu vinh danh</td>
+          <td><strong>Cúp Vàng Bà Mẹ Của Năm</strong></td>
+          <td>Bác sĩ trưởng khoa trao tặng giải thưởng siêu nhân y học.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Bài học & Góc cười -->
+  <section class="moral-section">
+    <div class="section-headline">
+      <span>💬</span> Bài Học &amp; Thông Điệp Yêu Thương
+    </div>
+    <div class="moral-grid">
+      <div class="moral-item">
+        <h4><span>📐</span> Hình Học Không Gian</h4>
+        <p>Bụng bầu vượt 120cm hãy tránh xa cửa xoay tự động và lối đi hẹp. Sự lựa chọn số một luôn là cửa mở hai cánh hoặc cửa trượt rộng rãi!</p>
+      </div>
+      <div class="moral-item">
+        <h4><span>💖</span> Tình Cảm Gia Đình</h4>
+        <p>Đằng sau chiếc bụng vượt mặt là sự hy sinh vô bờ bến của mẹ. Người chồng tâm lý, biết cầm đũa 1 mét đút ăn sẽ là chỗ dựa vững chãi nhất!</p>
+      </div>
+      <div class="moral-item">
+        <h4><span>👶</span> Hạnh Phúc Trọn Vẹn</h4>
+        <p>Mọi pha dở khóc dở cười đều tan biến khi nghe tiếng khóc chào đời và ngắm nhìn 3 thiên thần mỉm mỉn nằm gọn trong vòng tay yêu thương.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nút Thả Cảm Xúc -->
+  <section class="reaction-section">
+    <div class="section-headline" style="justify-content: center;">
+      <span>💖</span> Thả Cảm Xúc Cho Ca Vượt Cạn Kỷ Lục
+    </div>
+    <p style="color: var(--text-muted); font-size: 0.95rem;">Bạn thấy sự dũng cảm của mẹ và cú đạp của 3 bé thế nào? Thả tim ủng hộ nhé!</p>
+    <div class="reaction-buttons">
+      <button class="reaction-btn" onclick="addReaction('haha')">
+        <span>😂 Cười té ghế</span>
+        <span class="reaction-count" id="count-haha">342</span>
+      </button>
+      <button class="reaction-btn" onclick="addReaction('heart')">
+        <span>❤️ Quá ấm áp</span>
+        <span class="reaction-count" id="count-heart">528</span>
+      </button>
+      <button class="reaction-btn" onclick="addReaction('kick')">
+        <span>🚀 3 cú tung cước</span>
+        <span class="reaction-count" id="count-kick">415</span>
+      </button>
+      <button class="reaction-btn" onclick="addReaction('cup')">
+        <span>🏆 Mẹ của năm</span>
+        <span class="reaction-count" id="count-cup">298</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Đánh Giá & Góp Ý Câu Chuyện (Google Form) -->
+  <section class="feedback-section">
+    <div class="feedback-card">
+      <div class="feedback-badge">📝 Khảo Sát &amp; Đánh Giá</div>
+      <h3 class="feedback-title">⭐ Bạn Đánh Giá Thế Nào Về Câu Chuyện Này?</h3>
+      <p class="feedback-desc">
+        Ý kiến đóng góp và cảm nhận của bạn là nguồn động lực vô cùng quý báu giúp tác giả hoàn thiện và mang đến nhiều mẩu truyện cười thú vị, ý nghĩa hơn nữa! Hãy dành chút thời gian gửi đánh giá nhé!
+      </p>
+      <div class="feedback-cta-wrap">
+        <a href="https://forms.gle/ufaBwJwsBajn33Lx7" target="_blank" rel="noopener noreferrer" class="btn-feedback">
+          <span class="btn-icon">📋</span>
+          <span>Bấm Vào Đây Để Gửi Đánh Giá (Google Forms)</span>
+          <span class="btn-arrow">&rarr;</span>
+        </a>
+      </div>
+      <div class="feedback-note">
+        <span>✨ Chỉ mất khoảng 30 giây để hoàn thành khảo sát</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="imageModal" class="modal" onclick="closeLightbox()">
+    <button class="close-modal" onclick="closeLightbox()">&times;</button>
+    <img class="modal-content" id="modalImg" alt="Phóng to tranh">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">← Trở về Kho Lam</a>
+      <a href="../index.html">🏠 Trang Chủ Dự Án</a>
+      <a href="../Nhan/index.html">🎭 Kho Truyện của Nhân</a>
+      <a href="https://forms.gle/ufaBwJwsBajn33Lx7" target="_blank" rel="noopener noreferrer" style="color: #fbbf24;">⭐ Đánh Giá Câu Chuyện (Google Form)</a>
+    </div>
+    <p>Dự án Truyện Cười &copy; 2026 - Tác giả: <strong>Lam</strong> | Câu chuyện: <em>Chiếc Bụng Bầu Ngoại Cỡ 135cm &amp; Kẹt Cửa Xoay</em></p>
+  </footer>
+
+  <!-- Script Tương Tác -->
+  <script>
+    let currentSlideIndex = 1;
+    const totalSlides = 4;
+
+    function switchView(mode) {
+      const container = document.getElementById('comicContainer');
+      const nav = document.getElementById('slideNav');
+      const btnGrid = document.getElementById('btnGrid');
+      const btnStrip = document.getElementById('btnStrip');
+      const btnSlide = document.getElementById('btnSlide');
+
+      btnGrid.classList.remove('active');
+      btnStrip.classList.remove('active');
+      btnSlide.classList.remove('active');
+
+      container.className = `comic-container ${mode}-mode`;
+
+      if (mode === 'slide') {
+        btnSlide.classList.add('active');
+        nav.style.display = 'flex';
+        showSlide(currentSlideIndex);
+      } else {
+        nav.style.display = 'none';
+        if (mode === 'grid') btnGrid.classList.add('active');
+        if (mode === 'strip') btnStrip.classList.add('active');
+      }
+    }
+
+    function showSlide(index) {
+      currentSlideIndex = index;
+      const cards = document.querySelectorAll('.comic-card');
+      cards.forEach((card, i) => {
+        card.classList.toggle('current', (i + 1) === index);
+      });
+      document.getElementById('slideCounter').textContent = `Cảnh ${index} / ${totalSlides}`;
+      document.getElementById('btnPrev').disabled = (index === 1);
+      document.getElementById('btnNext').disabled = (index === totalSlides);
+    }
+
+    function prevSlide() {
+      if (currentSlideIndex > 1) showSlide(currentSlideIndex - 1);
+    }
+
+    function nextSlide() {
+      if (currentSlideIndex < totalSlides) showSlide(currentSlideIndex + 1);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      const container = document.getElementById('comicContainer');
+      if (container.classList.contains('slide-mode')) {
+        if (e.key === 'ArrowRight' || e.key === 'PageDown') nextSlide();
+        else if (e.key === 'ArrowLeft' || e.key === 'PageUp') prevSlide();
+      }
+    });
+
+    function openLightbox(src) {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImg');
+      modalImg.src = src;
+      modal.classList.add('show');
+    }
+
+    function closeLightbox() {
+      document.getElementById('imageModal').classList.remove('show');
+    }
+
+    let audioCtx = null;
+    function getAudioContext() {
+      if (!audioCtx) {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        audioCtx = new AudioContext();
+      }
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      return audioCtx;
+    }
+
+    // Tiếng còi báo động "Bíp bíp bíp!"
+    function playAlarmSiren() {
+      try {
+        const ctx = getAudioContext();
+        const now = ctx.currentTime;
+        for (let i = 0; i < 4; i++) {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'square';
+          const t = now + i * 0.16;
+          osc.frequency.setValueAtTime(880, t);
+          gain.gain.setValueAtTime(0.2, t);
+          gain.gain.exponentialRampToValueAtTime(0.01, t + 0.12);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start(t);
+          osc.stop(t + 0.12);
+        }
+      } catch (e) { console.warn(e); }
+    }
+
+    // Tiếng Boinggg & Phóng Phản Lực
+    function playBoingKick() {
+      try {
+        const ctx = getAudioContext();
+        const now = ctx.currentTime;
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(150, now);
+        osc.frequency.exponentialRampToValueAtTime(650, now + 0.3);
+        osc.frequency.exponentialRampToValueAtTime(220, now + 0.6);
+        gain.gain.setValueAtTime(0.5, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.6);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start(now);
+        osc.stop(now + 0.6);
+      } catch (e) { console.warn(e); }
+    }
+
+    // Tiếng reo hoan hô
+    function playCheerFanfare() {
+      try {
+        const ctx = getAudioContext();
+        const notes = [261.63, 329.63, 392.00, 523.25, 659.25, 783.99];
+        const now = ctx.currentTime;
+        notes.forEach((freq, i) => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'triangle';
+          const t = now + i * 0.08;
+          osc.frequency.setValueAtTime(freq, t);
+          gain.gain.setValueAtTime(0.3, t);
+          gain.gain.exponentialRampToValueAtTime(0.001, t + 0.35);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start(t);
+          osc.stop(t + 0.35);
+        });
+      } catch (e) { console.warn(e); }
+    }
+
+    function speakStorySummary() {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const text = "Truyện tranh: Chiếc bụng bầu ngoại cỡ 135 centimet và sự cố kẹt cửa xoay bão táp. Mẹ mang tam thai bụng to kỷ lục, khi đi ăn lẩu phải dùng đũa dài một mét, đến trung tâm thương mại bị kẹt cứng giữa cửa xoay tự động. Ba em bé trong bụng đã đồng loạt tung cước đạp bung cửa giúp mẹ thoát ra ngoài an toàn và hạ sinh ba củ cải béo mỉm mỉn gần mười cân!";
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'vi-VN';
+        utterance.rate = 1.0;
+        window.speechSynthesis.speak(utterance);
+      } else {
+        alert("Trình duyệt chưa hỗ trợ Speech Synthesis!");
+      }
+    }
+
+    function addReaction(type) {
+      const el = document.getElementById(`count-${type}`);
+      if (el) {
+        let current = parseInt(el.textContent, 10) || 0;
+        el.textContent = current + 1;
+        createFloatingEmoji(type);
+      }
+    }
+
+    function createFloatingEmoji(type) {
+      const emojiMap = { haha: '😂', heart: '❤️', kick: '🚀', cup: '🏆' };
+      const emoji = document.createElement('div');
+      emoji.textContent = emojiMap[type] || '✨';
+      emoji.style.position = 'fixed';
+      emoji.style.left = (Math.random() * 60 + 20) + 'vw';
+      emoji.style.bottom = '20px';
+      emoji.style.fontSize = '2.5rem';
+      emoji.style.zIndex = '9999';
+      emoji.style.pointerEvents = 'none';
+      emoji.style.transition = 'all 1.2s ease-out';
+      document.body.appendChild(emoji);
+      requestAnimationFrame(() => {
+        emoji.style.transform = `translateY(-${Math.random() * 250 + 200}px) scale(1.5) rotate(${(Math.random() - 0.5) * 60}deg)`;
+        emoji.style.opacity = '0';
+      });
+      setTimeout(() => { if (emoji.parentNode) emoji.parentNode.removeChild(emoji); }, 1200);
+    }
+  </script>
+</body>
+</html>

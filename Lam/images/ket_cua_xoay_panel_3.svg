@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgP3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEFCE8"/>
+      <stop offset="60%" stop-color="#FEF08A"/>
+      <stop offset="60%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+    <linearGradient id="bellyGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6"/>
+      <stop offset="50%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#BE185D"/>
+    </linearGradient>
+    <filter id="shadowP3" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Nền sảnh giải cứu rực rỡ -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#bgP3)" stroke="#CA8A04" stroke-width="4"/>
+
+  <!-- Tiêu đề Cảnh 3 -->
+  <rect x="25" y="18" width="410" height="36" rx="10" fill="#EAB308" filter="url(#shadowP3)"/>
+  <text x="230" y="42" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#78350F" text-anchor="middle">⚡ CẢNH 3: CÚ ĐẠP GIẢI CỨU CỦA 3 SIÊU QUẬY! 💥🚀</text>
+
+  <!-- Vệt gió tốc độ và hiệu ứng xoay tít mù của cửa xoay -->
+  <path d="M 120 180 Q 200 130 300 160" stroke="#0284C7" stroke-width="4" stroke-dasharray="6,6" fill="none" opacity="0.6"/>
+  <path d="M 100 240 Q 180 190 280 220" stroke="#0284C7" stroke-width="5" stroke-dasharray="8,8" fill="none" opacity="0.7"/>
+  <path d="M 80 300 Q 160 250 260 280" stroke="#0284C7" stroke-width="4" stroke-dasharray="6,6" fill="none" opacity="0.6"/>
+
+  <!-- Cánh cửa xoay bung toang sang một bên -->
+  <line x1="160" y1="140" x2="100" y2="340" stroke="#38BDF8" stroke-width="10" stroke-linecap="round"/>
+  <text x="110" y="170" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" fill="#0369A1">VÙNG VỤT!</text>
+
+  <!-- Hộp bơ thực vật bôi trơn rơi văng trên sàn -->
+  <rect x="70" y="370" width="45" height="25" rx="5" fill="#FDE047" stroke="#CA8A04" stroke-width="2"/>
+  <text x="92" y="387" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="bold" fill="#854D0E" text-anchor="middle">BƠ TƯƠI</text>
+
+  <!-- MẸ BẦU PHÓNG VỌT RA NGOÀI NHƯ TÊN LỬA ĐẨY -->
+  <!-- Thân và đầu mẹ tươi cười hớn hở -->
+  <circle cx="380" cy="180" r="28" fill="#FFE4E6" stroke="#1E293B" stroke-width="2.5"/>
+  <path d="M 355 180 C 355 145 405 145 405 180 Z" fill="#78350F"/>
+  <!-- Mắt mẹ chớp chớp nháy mắt tinh nghịch -->
+  <path d="M 370 178 Q 377 172 384 178" stroke="#1E293B" stroke-width="2.5" fill="none"/>
+  <path d="M 390 176 L 396 182 M 396 176 L 390 182" stroke="#1E293B" stroke-width="2"/> <!-- Nháy mắt -->
+  <ellipse cx="380" cy="192" rx="7" ry="5" fill="#E11D48"/>
+  <ellipse cx="368" cy="188" rx="4" ry="2" fill="#FB7185"/>
+  <ellipse cx="392" cy="188" rx="4" ry="2" fill="#FB7185"/>
+
+  <!-- CHIẾC BỤNG BẦU SIÊU KHỔNG LỒ 135CM TỎA RA HÀO QUANG CÔNG LỰC -->
+  <!-- Vòng hào quang vàng -->
+  <ellipse cx="330" cy="270" rx="145" ry="115" fill="none" stroke="#FDE047" stroke-width="6" stroke-dasharray="10,8" opacity="0.8"/>
+  <!-- Quả cầu bụng bầu tròn vo -->
+  <ellipse cx="330" cy="270" rx="130" ry="105" fill="url(#bellyGrad3)" stroke="#831843" stroke-width="5" filter="url(#shadowP3)"/>
+
+  <!-- 3 VẾT CHÂN BÉ TÝ BUNG LỰC "BỤP BỤP BỤP" TRÊN THÀNH BỤNG -->
+  <!-- Vết chân 1 -->
+  <ellipse cx="270" cy="240" rx="14" ry="18" fill="#FBCFE8" stroke="#DB2777" stroke-width="2"/>
+  <circle cx="265" cy="218" r="3" fill="#DB2777"/>
+  <circle cx="272" cy="216" r="3.5" fill="#DB2777"/>
+  <circle cx="279" cy="218" r="3" fill="#DB2777"/>
+  <text x="250" y="205" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#BE185D">BỤP 1!</text>
+
+  <!-- Vết chân 2 -->
+  <ellipse cx="320" cy="280" rx="15" ry="19" fill="#FBCFE8" stroke="#DB2777" stroke-width="2"/>
+  <circle cx="314" cy="257" r="3" fill="#DB2777"/>
+  <circle cx="321" cy="255" r="3.5" fill="#DB2777"/>
+  <circle cx="328" cy="257" r="3" fill="#DB2777"/>
+  <text x="320" y="325" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#BE185D">BỤP 2!</text>
+
+  <!-- Vết chân 3 -->
+  <ellipse cx="380" cy="235" rx="14" ry="18" fill="#FBCFE8" stroke="#DB2777" stroke-width="2"/>
+  <circle cx="375" cy="213" r="3" fill="#DB2777"/>
+  <circle cx="382" cy="211" r="3.5" fill="#DB2777"/>
+  <circle cx="389" cy="213" r="3" fill="#DB2777"/>
+  <text x="400" y="205" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#BE185D">BỤP 3!</text>
+
+  <!-- Hiệu ứng nổ kình lực phản lực -->
+  <polygon points="200,260 180,240 190,265 170,275 195,280" fill="#F59E0B"/>
+  <polygon points="210,310 190,325 215,325 205,345 225,335" fill="#EF4444"/>
+
+  <!-- ÔNG BỐ ĐÓN ĐƯỢC VỢ TRONG NIỀM HẠNH PHÚC TỘT CÙNG -->
+  <circle cx="560" cy="220" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+  <path d="M 535 215 C 535 190 585 190 585 215 Z" fill="#1E293B"/>
+  <path d="M 548 218 Q 555 212 562 218" stroke="#1E293B" stroke-width="2.5" fill="none"/>
+  <path d="M 565 218 Q 572 212 578 218" stroke="#1E293B" stroke-width="2.5" fill="none"/>
+  <path d="M 555 230 Q 563 240 572 230" stroke="#DC2626" stroke-width="3" fill="none"/>
+  <!-- Hai tay bố mở rộng đón vợ -->
+  <path d="M 540 245 L 460 250" stroke="#0284C7" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 560 250 L 575 350" stroke="#0284C7" stroke-width="24" stroke-linecap="round"/>
+
+  <!-- Hộp thoại của Bố -->
+  <rect x="420" y="90" width="210" height="48" rx="10" fill="#FFFFFF" stroke="#0284C7" stroke-width="2" filter="url(#shadowP3)"/>
+  <path d="M 545 138 L 555 155 L 535 145 Z" fill="#FFFFFF" stroke="#0284C7" stroke-width="2"/>
+  <text x="525" y="110" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#0369A1" text-anchor="middle">“HOAN HÔ! Ba siêu nhân nhí</text>
+  <text x="525" y="126" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#0369A1" text-anchor="middle">đạp tung cửa giải cứu mẹ rồi! 🚀👏”</text>
+
+  <!-- Hộp thoại của Mẹ -->
+  <rect x="180" y="375" width="280" height="52" rx="10" fill="#FFFFFF" stroke="#BE185D" stroke-width="2" filter="url(#shadowP3)"/>
+  <path d="M 330 375 L 340 360 L 350 375 Z" fill="#FFFFFF" stroke="#BE185D" stroke-width="2"/>
+  <text x="320" y="396" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#9D174D" text-anchor="middle">“Ối anh ơi! Ba đứa đạp mạnh quá...</text>
+  <text x="320" y="414" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#BE123C" text-anchor="middle">VỠ ỐI RỒI! VÀO VIỆN ĐẺ NGAY THÔI! 🚑💨”</text>
+</svg>

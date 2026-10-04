@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgP2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EFF6FF"/>
+      <stop offset="60%" stop-color="#DBEAFE"/>
+      <stop offset="60%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#93C5FD" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#E0F2FE" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#60A5FA" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="bellyGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB7185"/>
+      <stop offset="50%" stop-color="#E11D48"/>
+      <stop offset="100%" stop-color="#9F1239"/>
+    </linearGradient>
+    <filter id="shadowP2" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Nền sảnh trung tâm thương mại -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#bgP2)" stroke="#1D4ED8" stroke-width="4"/>
+
+  <!-- Tiêu đề Cảnh 2 -->
+  <rect x="25" y="18" width="410" height="36" rx="10" fill="#2563EB" filter="url(#shadowP2)"/>
+  <text x="230" y="42" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">🚨 CẢNH 2: PHA KẸT CỬA XOAY RÚNG ĐỘNG TTTM! 🌀</text>
+
+  <!-- KHUNG CỬA XOAY TRÒN BẰNG KIM LOẠI & KÍNH -->
+  <!-- Vòng tròn trên trần cửa xoay -->
+  <ellipse cx="325" cy="120" rx="180" ry="35" fill="#334155" stroke="#0F172A" stroke-width="3"/>
+  <ellipse cx="325" cy="115" rx="175" ry="30" fill="#475569"/>
+
+  <!-- Hai vách kính cong bao quanh bên ngoài -->
+  <path d="M 145 120 L 145 380 Q 145 420 185 420" stroke="#0284C7" stroke-width="6" fill="none"/>
+  <path d="M 505 120 L 505 380 Q 505 420 465 420" stroke="#0284C7" stroke-width="6" fill="none"/>
+
+  <!-- Cột trục xoay trung tâm -->
+  <rect x="315" y="120" width="20" height="260" fill="#64748B" stroke="#334155" stroke-width="2"/>
+
+  <!-- Cánh cửa kính bên trái cấn vào lưng mẹ -->
+  <line x1="325" y1="250" x2="200" y2="290" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+  <polygon points="325,130 200,160 200,370 325,370" fill="url(#glassGrad)" stroke="#38BDF8" stroke-width="2"/>
+
+  <!-- Cánh cửa kính bên phải cấn chặt vào đỉnh bụng bầu mẹ -->
+  <line x1="325" y1="250" x2="410" y2="220" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+  <polygon points="325,130 410,130 410,370 325,370" fill="url(#glassGrad)" stroke="#38BDF8" stroke-width="2"/>
+
+  <!-- Đèn cảm biến báo động trên đỉnh cửa kêu inh ỏi -->
+  <circle cx="325" cy="95" r="14" fill="#EF4444" filter="url(#shadowP2)"/>
+  <text x="325" y="75" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="900" fill="#EF4444" text-anchor="middle">🚨 TÍT TÍT TÍT! KẸT RỒI!</text>
+
+  <!-- MẸ BẦU ĐỨNG CHÍNH GIỮA BỊ KẸT BỤNG -->
+  <!-- Thân và đầu mẹ -->
+  <circle cx="280" cy="190" r="28" fill="#FFE4E6" stroke="#1E293B" stroke-width="2.5"/>
+  <path d="M 255 190 C 255 155 305 155 305 190 Z" fill="#78350F"/>
+  <!-- Mắt mẹ tròn xoe hoảng hốt dở khóc dở cười -->
+  <circle cx="272" cy="188" r="4" fill="#1E293B"/>
+  <circle cx="288" cy="188" r="4" fill="#1E293B"/>
+  <ellipse cx="280" cy="202" rx="6" ry="4" fill="#E11D48"/> <!-- Miệng chữ O -->
+  <ellipse cx="268" cy="198" rx="4" ry="2" fill="#FB7185"/>
+  <ellipse cx="292" cy="198" rx="4" ry="2" fill="#FB7185"/>
+
+  <!-- Váy bầu và CHIẾC BỤNG BẦU SIÊU KHỔNG LỒ 135CM NẰM KẸT CỨNG -->
+  <ellipse cx="355" cy="270" rx="115" ry="95" fill="url(#bellyGrad2)" stroke="#881337" stroke-width="5" filter="url(#shadowP2)"/>
+  
+  <!-- Hai tay mẹ áp vào thành bụng -->
+  <path d="M 270 230 Q 300 240 330 250" stroke="#FFE4E6" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="330" cy="250" r="8" fill="#FFE4E6"/>
+
+  <!-- Tia sét / hiệu ứng cấn kẹt tại 2 điểm tiếp xúc -->
+  <polygon points="260,285 245,275 255,295 240,305 265,300" fill="#FACC15" stroke="#EAB308" stroke-width="1"/>
+  <polygon points="410,240 425,230 415,250 430,260 405,255" fill="#FACC15" stroke="#EAB308" stroke-width="1"/>
+  <text x="445" y="240" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="900" fill="#DC2626">CẤN CỬA!</text>
+
+  <!-- BÁC BẢO VỆ BÊN NGOÀI CẦM BỘ ĐÀM HỐT HOẢNG -->
+  <circle cx="100" cy="250" r="24" fill="#FEF3C7" stroke="#1E293B" stroke-width="2"/>
+  <rect x="85" y="228" width="30" height="12" rx="4" fill="#1E3A8A"/> <!-- Mũ bảo vệ -->
+  <circle cx="95" cy="248" r="3" fill="#1E293B"/>
+  <circle cx="108" cy="248" r="3" fill="#1E293B"/>
+  <path d="M 97 260 Q 102 255 107 260" stroke="#1E293B" stroke-width="2" fill="none"/>
+  <path d="M 100 274 L 100 360" stroke="#1E3A8A" stroke-width="24" stroke-linecap="round"/>
+  <!-- Tay cầm bộ đàm -->
+  <rect x="65" y="270" width="14" height="24" rx="3" fill="#334155"/>
+  <line x1="72" y1="270" x2="72" y2="255" stroke="#334155" stroke-width="2"/>
+
+  <!-- Hộp thoại bảo vệ -->
+  <rect x="20" y="140" width="180" height="50" rx="8" fill="#FFFFFF" stroke="#1E3A8A" stroke-width="2" filter="url(#shadowP2)"/>
+  <path d="M 90 190 L 95 210 L 105 190 Z" fill="#FFFFFF" stroke="#1E3A8A" stroke-width="2"/>
+  <text x="110" y="160" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#1E3A8A" text-anchor="middle">“A lô! Cứu hộ khẩn cấp!</text>
+  <text x="110" y="176" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#DC2626" text-anchor="middle">Có mẹ bầu VIP bụng to kẹt cửa!”</text>
+
+  <!-- Hộp thoại mẹ bầu -->
+  <rect x="250" y="375" width="280" height="52" rx="10" fill="#FFFFFF" stroke="#E11D48" stroke-width="2" filter="url(#shadowP2)"/>
+  <path d="M 330 375 L 340 355 L 350 375 Z" fill="#FFFFFF" stroke="#E11D48" stroke-width="2"/>
+  <text x="390" y="396" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#BE123C" text-anchor="middle">“Ối dồi ôi! Bụng to quá cấn luôn 2 cánh cửa!</text>
+  <text x="390" y="414" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#BE123C" text-anchor="middle">Cửa xoay biến thành vòng quay ngựa gỗ rồi! 🎠🤣”</text>
+</svg>

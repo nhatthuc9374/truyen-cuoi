@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sb2StreetBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="55%" stop-color="#BAE6FD"/>
+      <stop offset="55%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <filter id="sb2Shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#sb2StreetBg)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Vạch kẻ đường phố -->
+  <line x1="5" y1="248" x2="645" y2="248" stroke="#94A3B8" stroke-width="3"/>
+  <line x1="50" y1="360" x2="150" y2="360" stroke="#FDE047" stroke-width="5" stroke-dasharray="25,20"/>
+  <line x1="250" y1="360" x2="400" y2="360" stroke="#FDE047" stroke-width="5" stroke-dasharray="25,20"/>
+  <line x1="500" y1="360" x2="620" y2="360" stroke="#FDE047" stroke-width="5" stroke-dasharray="25,20"/>
+
+  <!-- Đứa con ("Tôi") hăm hở đẩy xe đẩy đôi chở 2 em bé vừa đẻ -->
+  <g id="xe-day-em-be" transform="translate(60, 150)">
+    <!-- Xe nôi đôi có bánh xe -->
+    <ellipse cx="60" cy="170" rx="45" ry="10" fill="#000000" opacity="0.25"/>
+    <circle cx="25" cy="165" r="16" fill="#1E293B" stroke="#64748B" stroke-width="3"/>
+    <circle cx="105" cy="165" r="16" fill="#1E293B" stroke="#64748B" stroke-width="3"/>
+    <!-- Khung xe đẩy đôi màu xanh & cam -->
+    <rect x="10" y="90" width="110" height="55" rx="8" fill="#0284C7" stroke="#0369A1" stroke-width="2"/>
+    <line x1="120" y1="95" x2="160" y2="60" stroke="#475569" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- 2 Em bé thò đầu ra khỏi xe đẩy -->
+    <circle cx="40" cy="80" r="14" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+    <path d="M28 78 C28 66 52 66 52 78 Z" fill="#38BDF8"/>
+    <ellipse cx="33" cy="83" rx="3" ry="1.5" fill="#FDA4AF"/><ellipse cx="47" cy="83" rx="3" ry="1.5" fill="#FDA4AF"/>
+    
+    <circle cx="85" cy="80" r="14" fill="#FFEDD5" stroke="#1E293B" stroke-width="1.5"/>
+    <path d="M73 78 C73 66 97 66 97 78 Z" fill="#F472B6"/>
+    <ellipse cx="78" cy="83" rx="3" ry="1.5" fill="#FDA4AF"/><ellipse cx="92" cy="83" rx="3" ry="1.5" fill="#FDA4AF"/>
+
+    <!-- Đứa con đang đẩy xe -->
+    <g transform="translate(145, 10)">
+      <ellipse cx="25" cy="140" rx="20" ry="6" fill="#000000" opacity="0.2"/>
+      <ellipse cx="25" cy="90" rx="16" ry="22" fill="#38BDF8" stroke="#0284C7" stroke-width="2"/>
+      <circle cx="25" cy="50" r="18" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+      <path d="M10 46 C10 28 40 28 40 46 Z" fill="#292524"/>
+      <circle cx="20" cy="48" r="2.5" fill="#1E293B"/><circle cx="30" cy="48" r="2.5" fill="#1E293B"/>
+      <path d="M20 56 Q25 60 30 56" stroke="#DC2626" stroke-width="1.5" fill="none"/>
+      <!-- Tay bám vào cần đẩy xe -->
+      <path d="M20 80 L-5 55" stroke="#38BDF8" stroke-width="7" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Mẹ đi phía sau, HAI TAY ÔM CHIẾC BỤNG BẦU VẪN TO TƯỚNG VỀ NHÀ -->
+  <g id="me-om-bung-ve" transform="translate(300, 100)">
+    <ellipse cx="100" cy="205" rx="75" ry="12" fill="#000000" opacity="0.25"/>
+    <path d="M60 85 Q90 65 120 85 L175 195 L30 195 Z" fill="#FDA4AF" stroke="#FB7185" stroke-width="2"/>
+    
+    <!-- Bụng bầu to đùng nhô ra phía trước -->
+    <ellipse cx="135" cy="140" rx="68" ry="58" fill="#FB7185" stroke="#E11D48" stroke-width="3"/>
+    <path d="M115 110 Q145 95 175 115" stroke="#FFF1F2" stroke-width="5" fill="none" opacity="0.6"/>
+
+    <!-- Đầu mẹ mệt mỏi nhưng buồn cười, hai tay ôm bụng -->
+    <circle cx="85" cy="45" r="26" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M58 45 C55 15 115 15 112 45 Z" fill="#451A03"/>
+    <!-- Mắt chớp he hé mệt mỏi -->
+    <ellipse cx="76" cy="44" rx="3.5" ry="3" fill="#1E293B"/><ellipse cx="96" cy="44" rx="3.5" ry="3" fill="#1E293B"/>
+    <path d="M80 54 Q86 58 92 54" stroke="#DC2626" stroke-width="2" fill="none"/>
+    
+    <!-- Hai tay ôm chiếc bụng còn lại -->
+    <path d="M70 80 Q95 120 125 145" stroke="#FDA4AF" stroke-width="11" stroke-linecap="round" fill="none"/>
+    <circle cx="125" cy="145" r="8" fill="#FFEDD5"/>
+    <path d="M110 80 Q135 115 155 140" stroke="#FDA4AF" stroke-width="11" stroke-linecap="round" fill="none"/>
+    <circle cx="155" cy="140" r="8" fill="#FFEDD5"/>
+    <text x="85" y="-5" font-size="14">😅</text>
+  </g>
+
+  <!-- Hàng xóm đứng bên đường lác mắt kinh ngạc -->
+  <g id="hang-xom" transform="translate(520, 135)">
+    <ellipse cx="40" cy="165" rx="30" ry="8" fill="#000000" opacity="0.2"/>
+    <path d="M20 70 L60 70 L70 160 L10 160 Z" fill="#A855F7" stroke="#7E22CE" stroke-width="2"/>
+    <circle cx="40" cy="35" r="22" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M22 30 C22 10 58 10 58 30 Z" fill="#1E293B"/>
+    <!-- Mắt trợn trừng lồi ra kinh ngạc -->
+    <circle cx="32" cy="34" r="5.5" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5"/>
+    <circle cx="33" cy="34" r="2.5" fill="#1E293B"/>
+    <circle cx="48" cy="34" r="5.5" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5"/>
+    <circle cx="47" cy="34" r="2.5" fill="#1E293B"/>
+    <!-- Miệng há to ngạc nhiên -->
+    <ellipse cx="40" cy="48" rx="8" ry="10" fill="#7F1D1D"/>
+    <text x="40" y="-8" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="900" fill="#EF4444" text-anchor="middle">ỦA GÌ VẬY?! 😲</text>
+  </g>
+
+  <!-- Speech Hàng xóm & Mẹ -->
+  <g filter="url(#sb2Shadow)">
+    <path d="M25 45 Q25 20 90 20 L270 20 Q300 20 300 50 Q300 85 250 85 L180 85 L150 110 L160 85 L60 85 Q25 85 25 45 Z" fill="#FEFCE8" stroke="#F59E0B" stroke-width="2.5"/>
+    <text x="165" y="44" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="900" fill="#B45309" text-anchor="middle">👀 HÀNG XÓM NGƠ NGÁC HỎI:</text>
+    <text x="165" y="62" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#DC2626" text-anchor="middle">"Ủa vừa đẻ 2 đứa xong..."</text>
+    <text x="165" y="76" font-family="'Segoe UI', sans-serif" font-size="10" fill="#78350F" text-anchor="middle">Sao bụng vẫn to tướng vác về thế kia?! 😱</text>
+  </g>
+
+  <!-- Tiêu đề phân cảnh -->
+  <rect x="15" y="12" width="350" height="26" rx="6" fill="#1E293B"/>
+  <text x="190" y="29" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#38BDF8" text-anchor="middle">CẢNH 2: MẸ ÔM BỤNG BẦU CÒN LẠI VỀ NHÀ</text>
+
+  <!-- Footer chú thích dẫn chuyện -->
+  <rect x="15" y="385" width="620" height="30" rx="6" fill="#0F172A" opacity="0.9"/>
+  <text x="325" y="405" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#F8FAFC" text-anchor="middle">Con đẩy 2 em bé sơ sinh đi trước, mẹ ôm chiếc bụng bầu vẫn to tướng đi sau khiến ai nấy há hốc mồm...</text>
+</svg>

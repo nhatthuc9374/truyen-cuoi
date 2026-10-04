@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hospBg1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="65%" stop-color="#BAE6FD"/>
+      <stop offset="65%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <filter id="shadowH1" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Panel Border & Background -->
+  <rect x="5" y="5" width="640" height="440" rx="16" fill="url(#hospBg1)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Hospital Corridor Elements -->
+  <!-- Red Cross Sign -->
+  <rect x="530" y="45" width="70" height="55" rx="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+  <path d="M555 55 h20 v35 h-20 z" fill="#EF4444"/>
+  <path d="M547 63 h36 v19 h-36 z" fill="#EF4444"/>
+
+  <!-- Room Sign -->
+  <rect x="30" y="50" width="180" height="35" rx="6" fill="#0284C7"/>
+  <text x="120" y="73" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">🏥 KHOA KHÁM THAI</text>
+
+  <!-- Floor reflection line -->
+  <line x1="5" y1="292" x2="645" y2="292" stroke="#94A3B8" stroke-width="2"/>
+
+  <!-- Doctor in the background smiling politely -->
+  <g id="bg-doctor" transform="translate(470, 165)">
+    <ellipse cx="40" cy="125" rx="35" ry="10" fill="#000000" opacity="0.15"/>
+    <path d="M22 65 Q40 55 58 65 L65 125 L15 125 Z" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
+    <circle cx="40" cy="38" r="18" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M25 35 C25 15 55 15 55 35 Z" fill="#334155"/>
+    <!-- Stethoscope -->
+    <path d="M30 65 Q40 85 50 65" fill="none" stroke="#0284C7" stroke-width="3"/>
+    <circle cx="40" cy="85" r="4" fill="#64748B"/>
+    <circle cx="34" cy="38" r="2" fill="#1E293B"/><circle cx="46" cy="38" r="2" fill="#1E293B"/>
+    <path d="M36 46 Q40 50 44 46" fill="none" stroke="#EF4444" stroke-width="1.5"/>
+    <!-- Clip board -->
+    <rect x="10" y="70" width="18" height="24" rx="2" fill="#FDE047" stroke="#854D0E" stroke-width="1.5"/>
+  </g>
+
+  <!-- Child ("Tôi") walking beside mom, holding mom's arm carefully -->
+  <g id="child" transform="translate(100, 190)">
+    <ellipse cx="40" cy="100" rx="35" ry="8" fill="#000000" opacity="0.2"/>
+    <!-- Body -->
+    <ellipse cx="40" cy="65" rx="22" ry="26" fill="#38BDF8" stroke="#0284C7" stroke-width="2.5"/>
+    <ellipse cx="40" cy="92" rx="14" ry="10" fill="#1E3A8A"/>
+    <!-- Head -->
+    <circle cx="40" cy="30" r="20" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <path d="M22 25 C20 5 60 5 58 25 Z" fill="#292524"/>
+    <!-- Wide Curious Eyes looking up at mom's huge belly -->
+    <ellipse cx="34" cy="28" rx="3.5" ry="4.5" fill="#1E293B"/>
+    <circle cx="35" cy="26" r="1.5" fill="#FFFFFF"/>
+    <ellipse cx="46" cy="28" rx="3.5" ry="4.5" fill="#1E293B"/>
+    <circle cx="47" cy="26" r="1.5" fill="#FFFFFF"/>
+    <!-- Mouth smiling with amazement -->
+    <path d="M35 38 Q40 44 45 38" fill="none" stroke="#DC2626" stroke-width="2"/>
+    <circle cx="28" cy="33" r="3" fill="#FCA5A5"/>
+    <circle cx="52" cy="33" r="3" fill="#FCA5A5"/>
+    <!-- Arm reaching out to gently support mom -->
+    <path d="M55 58 Q75 60 90 75" fill="none" stroke="#38BDF8" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="90" cy="75" r="7" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+  </g>
+
+  <!-- Mom with HUGE PREGNANT BELLY! -->
+  <g id="mom" transform="translate(230, 100)">
+    <!-- Shadow -->
+    <ellipse cx="110" cy="190" rx="90" ry="15" fill="#000000" opacity="0.25"/>
+
+    <!-- Maternity Pink Dress -->
+    <path d="M60 80 Q90 60 120 80 L180 185 L30 185 Z" fill="#FDA4AF" stroke="#E11D48" stroke-width="2.5"/>
+
+    <!-- GIANT ROUND BABY BUMP! -->
+    <ellipse cx="140" cy="135" rx="75" ry="65" fill="#FB7185" stroke="#E11D48" stroke-width="3"/>
+    <path d="M100 100 Q150 75 195 110" stroke="#FFE4E6" stroke-width="6" fill="none" opacity="0.6"/>
+
+    <!-- Mom's Loving Hands Cradling the Big Belly -->
+    <path d="M80 90 Q75 130 110 145" fill="none" stroke="#FDA4AF" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="110" cy="145" r="12" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+    <path d="M150 90 Q175 130 165 145" fill="none" stroke="#FDA4AF" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="165" cy="145" r="12" fill="#FFEDD5" stroke="#1E293B" stroke-width="2"/>
+
+    <!-- Mom's Head & Face -->
+    <circle cx="85" cy="45" r="28" fill="#FFEDD5" stroke="#1E293B" stroke-width="2.5"/>
+    <!-- Gentle Mom Hairstyle -->
+    <path d="M55 45 C50 10 115 10 115 45 C115 65 105 70 100 58 C90 35 75 35 68 58 Z" fill="#451A03"/>
+    <circle cx="65" cy="20" r="10" fill="#F43F5E"/> <!-- Cute hairclip -->
+
+    <!-- Sweet gentle smiling eyes -->
+    <path d="M72 42 Q78 36 84 42" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M92 42 Q98 36 104 42" fill="none" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="74" cy="50" r="5" fill="#FDA4AF"/>
+    <circle cx="102" cy="50" r="5" fill="#FDA4AF"/>
+    <path d="M82 54 Q88 60 94 54" fill="none" stroke="#E11D48" stroke-width="2.5"/>
+    <text x="110" y="35" font-size="14">✨</text>
+  </g>
+
+  <!-- Speech Bubble: Child ("Tôi") -->
+  <g filter="url(#shadowH1)">
+    <path d="M40 90 Q40 65 110 65 L220 65 Q250 65 250 92 Q250 120 200 120 L160 120 L145 145 L145 120 L80 120 Q40 120 40 90 Z" fill="#F0F9FF" stroke="#0284C7" stroke-width="2.5"/>
+    <text x="145" y="88" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#0369A1" text-anchor="middle">"Mẹ ơi cẩn thận nha!</text>
+    <text x="145" y="108" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#0369A1" text-anchor="middle">Bụng mẹ hôm nay to quá trời!"</text>
+  </g>
+
+  <!-- Speech Bubble: Mom -->
+  <g filter="url(#shadowH1)">
+    <path d="M300 25 Q300 5 380 5 L550 5 Q600 5 600 32 Q600 62 520 62 L450 62 L430 85 L435 62 L350 62 Q300 62 300 25 Z" fill="#FFF1F2" stroke="#F43F5E" stroke-width="2.5"/>
+    <text x="450" y="28" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#9F1239" text-anchor="middle">"Mẹ con mình đi khám thai định kỳ thôi..."</text>
+    <text x="450" y="48" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#9F1239" text-anchor="middle">"Bụng to thế này chắc em bé khỏe lắm đây! ❤️"</text>
+  </g>
+
+  <!-- Panel Header Banner -->
+  <rect x="20" y="16" width="280" height="32" rx="8" fill="#1E293B"/>
+  <text x="160" y="37" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#38BDF8" text-anchor="middle">★ CẢNH 1: BỤNG BẦU "SIÊU TO KHỔNG LỒ"</text>
+
+  <!-- Caption at bottom -->
+  <rect x="25" y="402" width="600" height="34" rx="8" fill="#0F172A" opacity="0.85"/>
+  <text x="325" y="424" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#F8FAFC" text-anchor="middle">Tôi dắt mẹ có chiếc bụng bầu to vượt mặt vào bệnh viện để khám thai định kỳ...</text>
+</svg>
