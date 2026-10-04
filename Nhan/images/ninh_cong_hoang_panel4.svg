@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <!-- Realistic Room & Human Atmosphere Gradients -->
+    <linearGradient id="roomInterior" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="60%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Natural Wood Texture for Wardrobe -->
+    <linearGradient id="woodGrain" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#451A03"/>
+      <stop offset="25%" stop-color="#78350F"/>
+      <stop offset="50%" stop-color="#5B2104"/>
+      <stop offset="75%" stop-color="#92400E"/>
+      <stop offset="100%" stop-color="#3A1502"/>
+    </linearGradient>
+
+    <!-- Quilted Floral Blanket Realistic Fabric -->
+    <linearGradient id="blanketDrape" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BE123C"/>
+      <stop offset="40%" stop-color="#E11D48"/>
+      <stop offset="80%" stop-color="#9F1239"/>
+      <stop offset="100%" stop-color="#4C0519"/>
+    </linearGradient>
+
+    <linearGradient id="skinExhausted" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="40%" stop-color="#F59E0B"/>
+      <stop offset="80%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+
+    <linearGradient id="warningBanner" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B45309"/>
+      <stop offset="30%" stop-color="#F59E0B"/>
+      <stop offset="70%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#CA8A04"/>
+    </linearGradient>
+
+    <filter id="humanPanel4Shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="6" dy="10" stdDeviation="8" flood-color="#000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND: CĂN PHÒNG SAU CƠN ĐẠI HỌA -->
+  <rect x="0" y="0" width="1200" height="800" fill="url(#roomInterior)"/>
+
+  <!-- SÀN GỖ VÀ GẠCH BÓNG DƯỚI ĐẤT -->
+  <rect x="0" y="550" width="1200" height="250" fill="#1C1917"/>
+  <line x1="0" y1="550" x2="1200" y2="550" stroke="#44403C" stroke-width="4"/>
+
+  <!-- TIÊU ĐỀ KHUNG TRUYỆN -->
+  <g transform="translate(40, 30)">
+    <rect x="0" y="0" width="600" height="46" rx="10" fill="#15803D" stroke="#4ADE80" stroke-width="3" filter="url(#humanPanel4Shadow)"/>
+    <text x="300" y="32" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="900" fill="#FFF" text-anchor="middle" letter-spacing="1">KHUNG 4: CỐ THỦ TRÊN NÓC TỦ & CẢNH BÁO!</text>
+  </g>
+
+  <!-- ==================== CHIẾC TỦ GỖ TỰ NHIÊN ĐỒ SỘ ==================== -->
+  <g id="realisticWardrobe" transform="translate(420, 140)" filter="url(#humanPanel4Shadow)">
+    <!-- Thân tủ gỗ -->
+    <rect x="0" y="90" width="370" height="445" rx="6" fill="url(#woodGrain)" stroke="#1C0A02" stroke-width="5"/>
+    
+    <!-- Các cánh cửa tủ với phào chỉ gỗ nổi -->
+    <rect x="15" y="105" width="160" height="415" rx="4" fill="#5B2104" stroke="#2D0F02" stroke-width="2.5"/>
+    <rect x="30" y="125" width="130" height="170" rx="3" fill="none" stroke="#78350F" stroke-width="2"/>
+    <rect x="30" y="325" width="130" height="175" rx="3" fill="none" stroke="#78350F" stroke-width="2"/>
+
+    <rect x="195" y="105" width="160" height="415" rx="4" fill="#5B2104" stroke="#2D0F02" stroke-width="2.5"/>
+    <rect x="210" y="125" width="130" height="170" rx="3" fill="none" stroke="#78350F" stroke-width="2"/>
+    <rect x="210" y="325" width="130" height="175" rx="3" fill="none" stroke="#78350F" stroke-width="2"/>
+
+    <!-- Tay nắm cửa bằng đồng mạ vàng -->
+    <circle cx="155" cy="300" r="7" fill="#FACC15" stroke="#78350F" stroke-width="2"/>
+    <circle cx="215" cy="300" r="7" fill="#FACC15" stroke="#78350F" stroke-width="2"/>
+
+    <!-- ==================== NINH CÔNG HOÀNG NGỒI CO RÔ TRÊN NÓC TỦ ==================== -->
+    <g transform="translate(85, -80)">
+      
+      <!-- CHIẾC CHĂN HOA QUẤN KÍN NGƯỜI VỚI CÁC NẾP VẢI RỦ XUỐNG TỰ NHIÊN -->
+      <path d="M 20 80 Q 100 -20 185 80 L 195 175 Q 100 200 10 175 Z" fill="url(#blanketDrape)" stroke="#4C0519" stroke-width="3"/>
+      <!-- Nếp gấp vải dồn ở chân và ngực -->
+      <path d="M 30 110 Q 100 140 175 110" fill="none" stroke="#9F1239" stroke-width="3.5"/>
+      <path d="M 25 140 Q 100 170 180 140" fill="none" stroke="#9F1239" stroke-width="3.5"/>
+
+      <!-- Họa tiết hoa nhí trên chăn truyền thống Việt Nam -->
+      <g fill="#FEF08A" opacity="0.85">
+        <circle cx="55" cy="65" r="5"/>
+        <circle cx="95" cy="45" r="4.5"/>
+        <circle cx="140" cy="65" r="5.5"/>
+        <circle cx="65" cy="125" r="5"/>
+        <circle cx="120" cy="135" r="5"/>
+        <circle cx="155" cy="115" r="4.5"/>
+      </g>
+
+      <!-- GƯƠNG MẶT MỆT MỎI, HOANG MANG THÒ RA KHỎI CHĂN -->
+      <path d="M 60 25 C 60 -25, 145 -25, 145 25 C 145 65, 130 90, 102 95 C 75 90, 60 65, 60 25 Z" fill="url(#skinExhausted)" stroke="#78350F" stroke-width="2"/>
+
+      <!-- Tóc bù xù, vài lọn rơi trán chân thực -->
+      <path d="M 55 15 C 45 -30, 150 -30, 145 15 C 130 0, 115 2, 102 10 C 90 2, 75 2, 55 15 Z" fill="#0F172A" stroke="#020617" stroke-width="2.5"/>
+
+      <!-- MẮT NGƯỜI THẬT ĐẢO NHÌN XUỐNG DƯỚI ĐẤT SỢ HÃI -->
+      <!-- Mắt trái -->
+      <g transform="translate(74, 25)">
+        <ellipse cx="10" cy="5" rx="9" ry="7" fill="#FFF" stroke="#451A03" stroke-width="1.5"/>
+        <circle cx="10" cy="7" r="4" fill="#170B04"/> <!-- tròng mắt nhìn xuống sàn -->
+        <circle cx="9" cy="6" r="1" fill="#FFF"/>
+        <!-- Quầng thâm mắt do sợ hãi -->
+        <path d="M 0 13 Q 10 17 20 13" fill="none" stroke="#92400E" stroke-width="1.5" opacity="0.6"/>
+      </g>
+      <!-- Mắt phải -->
+      <g transform="translate(108, 25)">
+        <ellipse cx="10" cy="5" rx="9" ry="7" fill="#FFF" stroke="#451A03" stroke-width="1.5"/>
+        <circle cx="10" cy="7" r="4" fill="#170B04"/>
+        <circle cx="9" cy="6" r="1" fill="#FFF"/>
+        <path d="M 0 13 Q 10 17 20 13" fill="none" stroke="#92400E" stroke-width="1.5" opacity="0.6"/>
+      </g>
+
+      <!-- Sống mũi & môi run rẩy -->
+      <path d="M 102 24 L 98 44 L 105 46" fill="none" stroke="#92400E" stroke-width="2" stroke-linecap="round"/>
+      <!-- Môi hơi hé run bần bật -->
+      <path d="M 90 62 Q 102 58 114 62" fill="none" stroke="#5E2C15" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- ==================== BÀN TAY CẦM CÁN CHỔI GỖ PHÒNG THỦ ==================== -->
+      <!-- Tay thò ra từ chăn -->
+      <g transform="translate(160, 110)">
+        <!-- Bàn tay nắm chặt cán chổi -->
+        <circle cx="15" cy="5" r="14" fill="#F59E0B" stroke="#78350F" stroke-width="2"/>
+        <!-- Cán chổi trúc dài 2m hướng thẳng xuống sàn nhà -->
+        <line x1="15" y1="5" x2="160" y2="250" stroke="#78350F" stroke-width="9" stroke-linecap="round"/>
+        <!-- Đầu chổi quét nhà bằng rơm rạ rủ xuống -->
+        <polygon points="150,235 205,285 145,305 130,260" fill="#FACC15" stroke="#A16207" stroke-width="2.5"/>
+        <!-- Dây đai buộc rơm đỏ -->
+        <rect x="140" y="245" width="22" height="6" fill="#DC2626"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== DƯỚI SÀN: CON GIÁN TÍ HON THONG THẢ ĐỨNG CHẢI RÂU ==================== -->
+  <g id="cockroachChilling" transform="translate(200, 570)" filter="url(#humanPanel4Shadow)">
+    <!-- Đổ bóng gián trên sàn -->
+    <ellipse cx="40" cy="50" rx="16" ry="6" fill="#000" opacity="0.5"/>
+    <!-- Con gián thật bé xíu -->
+    <ellipse cx="40" cy="40" rx="12" ry="20" fill="#450A0A" stroke="#170303" stroke-width="1.5"/>
+    <path d="M 36 24 Q 20 8 8 -5" fill="none" stroke="#7F1D1D" stroke-width="1.5"/>
+    <path d="M 44 24 Q 60 8 72 -5" fill="none" stroke="#7F1D1D" stroke-width="1.5"/>
+
+    <!-- Bong bóng thoại của con gián -->
+    <g transform="translate(60, -25)">
+      <rect x="0" y="0" width="180" height="42" rx="8" fill="#FFF" stroke="#292524" stroke-width="2"/>
+      <text x="90" y="26" font-family="'Segoe UI', sans-serif" font-size="12.5" font-weight="bold" fill="#000" text-anchor="middle">Ủa làm gì trèo cao dữ vậy ba? 🪳</text>
+    </g>
+  </g>
+
+  <!-- ==================== BONG BÓNG LỜI THOẠI TRÊN NÓC TỦ ==================== -->
+  <g transform="translate(740, 110)" filter="url(#humanPanel4Shadow)">
+    <path d="M 0 0 L 380 0 C 395 0, 405 10, 405 25 L 405 110 C 405 125, 395 135, 380 135 L 70 135 L 40 170 L 50 135 L 25 135 C 10 135, 0 125, 0 110 Z" fill="#0F172A" stroke="#4ADE80" stroke-width="3"/>
+    <text x="202" y="34" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="900" fill="#4ADE80" text-anchor="middle">"MÀY ĐỪNG CÓ MÀ BƯỚC TỚI!" 🥶</text>
+    <text x="202" y="65" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#F1F5F9" text-anchor="middle">Tao có vũ khí chổi cán dài 2 mét đấy!</text>
+    <text x="202" y="90" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#FDE047" text-anchor="middle">Đêm nay tao ngủ luôn trên nóc tủ!</text>
+    <text x="202" y="115" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="bold" fill="#F87171" text-anchor="middle">Ai cứu tôi vớiiii... hu hu! 😭</text>
+  </g>
+
+  <!-- ==================== BẢNG CẢNH BÁO BẤT HỦ CỦA NINH CÔNG HOÀNG ==================== -->
+  <g transform="translate(60, 690)" filter="url(#humanPanel4Shadow)">
+    <rect x="0" y="0" width="1080" height="75" rx="14" fill="url(#warningBanner)" stroke="#78350F" stroke-width="3"/>
+    <rect x="15" y="12" width="190" height="50" rx="8" fill="#451A03"/>
+    <text x="110" y="44" font-family="'Impact', Arial" font-size="22" font-weight="900" fill="#FEF08A" text-anchor="middle">⚠️ CẢNH BÁO:</text>
+
+    <text x="230" y="34" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="900" fill="#291202">MỌI HÀNH ĐỘNG TRONG VIDEO CHỈ MANG TÍNH CHẤT GIẢI TRÍ!</text>
+    <text x="230" y="58" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#451A03">Vui lòng KHÔNG bắt chước "chuyên gia", vì chuyên gia gặp gián biết bay cũng trèo lên nóc tủ! 😂🪳</text>
+  </g>
+
+  <!-- SFX -->
+  <text x="180" y="240" font-family="'Impact', Arial" font-size="36" font-style="italic" fill="#38BDF8" stroke="#0F172A" stroke-width="2">RUN LẨY BẨY! 🥶</text>
+</svg>

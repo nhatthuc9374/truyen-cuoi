@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <!-- Action Shock Impact Lighting -->
+    <radialGradient id="impactBlast" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#F97316" stop-opacity="0.75"/>
+      <stop offset="70%" stop-color="#EF4444" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1E1B4B" stop-opacity="0.95"/>
+    </radialGradient>
+
+    <!-- Horse Brown Coat -->
+    <linearGradient id="horseCoat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#78350F"/>
+      <stop offset="50%" stop-color="#451A03"/>
+      <stop offset="100%" stop-color="#1C0A02"/>
+    </linearGradient>
+
+    <!-- Guitar Sunburst Shatter -->
+    <linearGradient id="sunburstGuitar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="40%" stop-color="#EA580C"/>
+      <stop offset="80%" stop-color="#78350F"/>
+      <stop offset="100%" stop-color="#000"/>
+    </linearGradient>
+
+    <filter id="impactShadow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="8" dy="12" stdDeviation="10" flood-color="#000" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND: CƠN NỔ VA CHẠM ĐẦY KỊCH TÍNH -->
+  <rect x="0" y="0" width="1200" height="800" fill="#0F172A"/>
+  <circle cx="580" cy="380" r="500" fill="url(#impactBlast)"/>
+
+  <!-- TIA VA CHẠM MANGA BẮN TỎA RA TỪ CÚ ĐẬP ĐÀN -->
+  <g stroke="#FFF" stroke-width="3" opacity="0.7">
+    <line x1="560" y1="320" x2="0" y2="0"/>
+    <line x1="560" y1="320" x2="200" y2="0"/>
+    <line x1="560" y1="320" x2="400" y2="0"/>
+    <line x1="560" y1="320" x2="800" y2="0"/>
+    <line x1="560" y1="320" x2="1000" y2="0"/>
+    <line x1="560" y1="320" x2="1200" y2="0"/>
+    <line x1="560" y1="320" x2="1200" y2="500"/>
+    <line x1="560" y1="320" x2="1200" y2="800"/>
+    <line x1="560" y1="320" x2="0" y2="800"/>
+  </g>
+
+  <!-- MẢNH VỠ GỖ CỦA CÂY ĐÀN GUITAR & TIỀN ĐÔ LA BAY TUNG TÓE -->
+  <g opacity="0.9">
+    <!-- Mảnh vỡ thùng đàn -->
+    <polygon points="520,240 560,210 540,270" fill="url(#sunburstGuitar)"/>
+    <polygon points="620,220 660,250 630,280" fill="url(#sunburstGuitar)"/>
+    <polygon points="500,340 460,380 520,390" fill="url(#sunburstGuitar)"/>
+    <!-- Dây đàn bung đứt xoắn tít -->
+    <path d="M 520 280 Q 480 200 420 240" fill="none" stroke="#FFF" stroke-width="2"/>
+    <path d="M 600 280 Q 680 200 720 250" fill="none" stroke="#FFF" stroke-width="2"/>
+
+    <!-- Tiền đô la nổ tung ra từ quái nhân vàng -->
+    <rect x="380" y="220" width="55" height="30" rx="2" fill="#86EFAC" stroke="#15803D" stroke-width="1.5" transform="rotate(30, 380, 220)"/>
+    <rect x="680" y="240" width="55" height="30" rx="2" fill="#86EFAC" stroke="#15803D" stroke-width="1.5" transform="rotate(-40, 680, 240)"/>
+    <rect x="580" y="160" width="55" height="30" rx="2" fill="#86EFAC" stroke="#15803D" stroke-width="1.5" transform="rotate(15, 580, 160)"/>
+  </g>
+
+  <!-- TIÊU ĐỀ KHUNG TRUYỆN -->
+  <g transform="translate(40, 30)">
+    <rect x="0" y="0" width="620" height="46" rx="10" fill="#DC2626" stroke="#FEF08A" stroke-width="3" filter="url(#impactShadow3)"/>
+    <text x="310" y="32" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="900" fill="#FFF" text-anchor="middle" letter-spacing="1">KHUNG 3: RƯỢT ĐUỔI NGỰA & CÚ ĐẬP GUITAR!</text>
+  </g>
+
+  <!-- ==================== CON NGỰA CHIẾN & KẺ THÙ ÁO VÀNG BỊ TRÚNG ĐÒN ==================== -->
+  <g id="horseRider" transform="translate(140, 180)" filter="url(#impactShadow3)">
+    <!-- Đầu và cổ ngựa giương cao hí vang hoảng loạn -->
+    <path d="M 220 260 L 260 140 Q 320 120 340 180 L 320 260 Z" fill="url(#horseCoat)" stroke="#1C0A02" stroke-width="3"/>
+    <!-- Tai ngựa vểnh ngược -->
+    <polygon points="260,140 275,100 290,140" fill="#451A03"/>
+    <circle cx="285" cy="165" r="7" fill="#FFF"/>
+    <circle cx="285" cy="165" r="3.5" fill="#000"/>
+    <!-- Bờm ngựa đen tung bay -->
+    <path d="M 250 150 Q 230 200 220 250" stroke="#0A0A0A" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+    <!-- QUÁI NHÂN ÁO VÀNG NGỒI TRÊN LƯNG NGỰA BỊ ĐẬP TRÚNG MẶT LẢO ĐẢO -->
+    <g transform="translate(60, 40)">
+      <!-- Thân hình vàng phồng to bật ngửa ra sau -->
+      <ellipse cx="140" cy="160" rx="90" ry="110" fill="#FACC15" stroke="#854D0E" stroke-width="4"/>
+      <!-- Đầu quái nhân vàng bị cây đàn đập bẹp dí lõm một mảng -->
+      <path d="M 120 60 Q 180 90 200 40 Q 180 0 120 20 Z" fill="#FACC15" stroke="#854D0E" stroke-width="3"/>
+      <!-- Hai tay buông cương ngựa chới với -->
+      <path d="M 60 140 Q -10 120 -30 150" fill="none" stroke="#EAB308" stroke-width="26" stroke-linecap="round"/>
+      <path d="M 220 140 Q 280 120 300 150" fill="none" stroke="#EAB308" stroke-width="26" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- ==================== OLIVER TREE PHẢN CÔNG: VUNG ĐÀN GUITAR ĐẬP NÁT BẤT NGỜ ==================== -->
+  <g id="oliverSmashing" transform="translate(620, 140)" filter="url(#impactShadow3)">
+    
+    <!-- Thân người trong tư thế vung tay đập cực mạnh (Dynamic Action Pose) -->
+    <path d="M 60 380 L 100 240 Q 210 200 320 240 L 330 380 L 360 620 L 30 620 Z" fill="#2DD4BF" stroke="#0F172A" stroke-width="4"/>
+    <polygon points="140,230 200,340 260,230" fill="#EC4899"/>
+
+    <!-- HAI TAY CẦM CẦN ĐÀN GUITAR VUNG XUỐNG DỒN TOÀN BỘ LỰC -->
+    <g transform="translate(-80, 80)">
+      <!-- Cánh tay vung mạnh -->
+      <path d="M 190 140 Q 120 90 40 100" fill="none" stroke="#FED7AA" stroke-width="26" stroke-linecap="round"/>
+      <circle cx="40" cy="100" r="14" fill="#FDBA74" stroke="#9A3412" stroke-width="2"/>
+      
+      <!-- CẦN ĐÀN GUITAR TRÊN TAY VỪA GÃY LÀM ĐÔI TẠI ĐIỂM TIẾP XÚC -->
+      <polygon points="40,95 -60,110 -50,130 50,110" fill="#78350F" stroke="#291202" stroke-width="3"/>
+      <polygon points="40,95 20,40 5,60 30,105" fill="#451A03"/> <!-- vết gãy nứt sắc nhọn -->
+    </g>
+
+    <!-- ĐẦU BÁT ÚP NGHIẾN RĂNG BÙNG NỔ PHONG CÁCH ROCKSTAR PUNK -->
+    <circle cx="210" cy="100" r="50" fill="#FED7AA" stroke="#9A3412" stroke-width="2"/>
+    <path d="M 160 90 C 150 -5, 270 -5, 260 90 Z" fill="#0A0A0A"/>
+    <line x1="160" y1="90" x2="260" y2="90" stroke="#000" stroke-width="4"/>
+
+    <!-- KÍNH RÂM ĐỎ SẮC LẠNH TRƯỚC VA CHẠM -->
+    <ellipse cx="190" cy="98" rx="18" ry="12" fill="#DC2626" stroke="#000" stroke-width="2"/>
+    <ellipse cx="230" cy="98" rx="18" ry="12" fill="#DC2626" stroke="#000" stroke-width="2"/>
+
+    <!-- KHẨU HÌNH NGHIẾN RĂNG BẬT RA TIẾNG HÉT CHIẾN THẮNG -->
+    <g transform="translate(185, 130)">
+      <rect x="0" y="0" width="50" height="22" rx="4" fill="#7F1D1D" stroke="#000" stroke-width="2"/>
+      <line x1="0" y1="11" x2="50" y2="11" stroke="#FFF" stroke-width="4"/>
+      <line x1="12" y1="2" x2="12" y2="20" stroke="#CBD5E1" stroke-width="1.5"/>
+      <line x1="25" y1="2" x2="25" y2="20" stroke="#CBD5E1" stroke-width="1.5"/>
+      <line x1="38" y1="2" x2="38" y2="20" stroke="#CBD5E1" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- ==================== LỜI THOẠI HÀNH ĐỘNG KỊCH TÍNH ==================== -->
+  <g transform="translate(180, 580)" filter="url(#impactShadow3)">
+    <path d="M 0 0 L 820 0 C 835 0, 845 10, 845 25 L 845 145 C 845 160, 835 170, 820 170 L 480 170 L 450 205 L 460 170 L 25 170 C 10 170, 0 160, 0 145 Z" fill="#0F172A" stroke="#EF4444" stroke-width="3"/>
+    <text x="422" y="38" font-family="'Impact', Arial, sans-serif" font-size="24" font-weight="900" fill="#EF4444" text-anchor="middle">💥 CÚ ĐẬP GUITAR ĐỈNH CAO CỦA OLIVER TREE:</text>
+    <text x="422" y="74" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="900" fill="#FEF08A" text-anchor="middle">"BỎ CÁI TRÒ RƯỢT ĐUỔI TRÊN LƯNG NGỰA ẤY ĐI! TAO ĐÂU PHẢI MÓN ĐỒ ĐỂ MUA BÁN!" 🎸💥</text>
+    <text x="422" y="104" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="bold" fill="#F1F5F9" text-anchor="middle">Cây đàn guitar vỡ tan tành, quái nhân vàng Metatech bị đánh văng nổ tung bọc xốp và tiền đô la!</text>
+    <text x="422" y="136" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="900" fill="#38BDF8" text-anchor="middle">Một pha phản công đậm chất punk rock điên rồ và nghệ thuật không giống ai! ⚡🔥</text>
+  </g>
+
+  <!-- SFX -->
+  <text x="760" y="320" font-family="'Impact', Arial" font-size="44" font-style="italic" fill="#FEF08A" stroke="#DC2626" stroke-width="2">BỐP! CHÁT! 💥🎸</text>
+</svg>
