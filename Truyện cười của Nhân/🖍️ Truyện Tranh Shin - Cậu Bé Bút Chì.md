@@ -5,6 +5,7 @@
 > **Xem trực tiếp phiên bản hoạt hình 2.5D Motion với giọng lồng tiếng diễn cảm và nhạc nền sống động!**  
 > 📺 **Trình phát Web:** [xem_video_shin.html](file:///C:/DU-AN/truyen-cuoi/Truyện cười của Nhân/xem_video_shin.html)  
 > 🎥 **Tệp Video Master:** [shin_cau_be_but_chi_hoan_hao.mp4](file:///C:/DU-AN/truyen-cuoi/Truyện cười của Nhân/shin_cau_be_but_chi_hoan_hao.mp4)  
+> 📋 **Gửi Đánh Giá Câu Chuyện:** [Khảo Sát Ý Kiến Shin: Cậu Bé Bút Chì (Google Forms)](https://forms.gle/SiMMVMoPb2ZKEdQW8)  
 > ![Shin — Cậu Bé Bút Chì](shin_cau_be_but_chi_hoan_hao.mp4)
 
 ---
@@ -134,3 +135,11 @@ Chú chó lông xù màu trắng tròn như cục bông được Shin nhặt v�
 
 * 🎯 **Mở Canvas riêng:** [[canvas/Shin Canvas.canvas|Bảng Canvas Shin — Cậu Bé Bút Chì]]
 * 🗺️ **Mở Tổng kho tranh:** [[canvas/Tổng Hợp Tất Cả Các Tranh.canvas|Master Gallery Canvas Toàn Năng]]
+
+---
+
+## ⭐ 5. Khảo Sát & Đánh Giá Ý Kiến
+> 📝 **Bạn thấy câu chuyện Shin: Cậu Bé Bút Chì như thế nào?**  
+> Hãy dành 30 giây gửi đánh giá và cảm nhận của bạn để giúp tác giả sáng tác nhiều tác phẩm vui hơn nhé!  
+> 👉 **Bấm vào đây để đánh giá:** [Form Khảo Sát Ý Kiến Shin: Cậu Bé Bút Chì (Google Forms)](https://forms.gle/SiMMVMoPb2ZKEdQW8)
+

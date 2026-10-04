@@ -165,6 +165,81 @@
       background: none;
       border: none;
     }
+
+    /* Feedback Section */
+    .feedback-section {
+      width: 100%;
+      max-width: 900px;
+      margin: 40px auto 20px auto;
+      padding: 0 16px;
+    }
+    .feedback-card {
+      background: linear-gradient(145deg, #1e293b, #1e1b4b);
+      border: 2px solid rgba(239, 68, 68, 0.4);
+      border-radius: 20px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.5), 0 0 25px rgba(239, 68, 68, 0.15);
+      transition: all 0.3s ease;
+    }
+    .feedback-card:hover {
+      border-color: rgba(239, 68, 68, 0.8);
+      box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.6), 0 0 35px rgba(239, 68, 68, 0.25);
+      transform: translateY(-3px);
+    }
+    .feedback-badge {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: rgba(239, 68, 68, 0.2);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      color: #f87171;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .feedback-title {
+      font-size: 24px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+    .feedback-desc {
+      color: var(--text-muted);
+      font-size: 15px;
+      max-width: 680px;
+      margin: 0 auto 24px auto;
+      line-height: 1.6;
+    }
+    .btn-feedback {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #ef4444, #dc2626);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 14px 32px;
+      border-radius: 999px;
+      box-shadow: 0 10px 25px -5px rgba(239, 68, 68, 0.5);
+      transition: all 0.25s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .btn-feedback:hover {
+      background: linear-gradient(135deg, #dc2626, #b91c1c);
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 14px 30px -5px rgba(239, 68, 68, 0.7);
+      color: #ffffff;
+    }
+    .feedback-note {
+      margin-top: 16px;
+      color: #94a3b8;
+      font-size: 13px;
+    }
   </style>
 </head>
 <body>
@@ -178,7 +253,10 @@
   <div class="controls">
     <button class="btn active" onclick="setViewMode('grid')">📑 Lưới 2x2</button>
     <button class="btn" onclick="setViewMode('single')">📜 Xem Dọc Từng Khung</button>
-    <a href="xem_tong_hop_tat_ca_tranh.html" class="btn">🏠 Về Kho Tranh Tổng Hợp</a>
+    <a href="xem_video_shin.html" class="btn" style="color: #fbbf24; border-color: rgba(251, 191, 36, 0.4);">🎬 Xem Video Hoạt Hình</a>
+    <a href="https://forms.gle/SiMMVMoPb2ZKEdQW8" target="_blank" rel="noopener noreferrer" class="btn" style="background: rgba(239, 68, 68, 0.2); border-color: rgba(239, 68, 68, 0.5); color: #fca5a5;">⭐ Đánh Giá Truyện (Google Form)</a>
+    <a href="../Nhan/index.html" class="btn">🎭 Kho của Nhân</a>
+    <a href="../index.html" class="btn">🏠 Trang Chủ</a>
   </div>
 
   <main class="comic-grid" id="comicContainer">
@@ -214,6 +292,38 @@
       </div>
     </div>
   </main>
+
+  <!-- Đánh Giá & Góp Ý Câu Chuyện Shin: Cậu Bé Bút Chì (Google Form) -->
+  <section class="feedback-section">
+    <div class="feedback-card">
+      <div class="feedback-badge">📝 Khảo Sát &amp; Đánh Giá</div>
+      <h3 class="feedback-title">⭐ Bạn Đánh Giá Thế Nào Về Truyện Shin: Cậu Bé Bút Chì?</h3>
+      <p class="feedback-desc">
+        Ý kiến đóng góp và cảm nhận của bạn là nguồn động lực quý báu giúp tác giả hoàn thiện và mang đến nhiều mẩu truyện cười thú vị hơn nữa! Hãy dành chút thời gian gửi đánh giá nhé!
+      </p>
+      <div class="feedback-cta-wrap">
+        <a href="https://forms.gle/SiMMVMoPb2ZKEdQW8" target="_blank" rel="noopener noreferrer" class="btn-feedback">
+          <span class="btn-icon">📋</span>
+          <span>Bấm Vào Đây Để Gửi Đánh Giá (Google Forms)</span>
+          <span class="btn-arrow">&rarr;</span>
+        </a>
+      </div>
+      <div class="feedback-note">
+        <span>✨ Chỉ mất khoảng 30 giây để hoàn thành khảo sát</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Navigation -->
+  <footer style="margin-top: 30px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding: 24px 16px; width: 100%; max-width: 900px;">
+    <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 12px;">
+      <a href="../Nhan/index.html" style="color: #38bdf8; text-decoration: none; font-weight: 600;">← Cổng Kho của Nhân</a>
+      <a href="../index.html" style="color: #94a3b8; text-decoration: none; font-weight: 600;">🏠 Trang Chủ Dự Án</a>
+      <a href="xem_video_shin.html" style="color: #f87171; text-decoration: none; font-weight: 600;">🎬 Xem Video Hoạt Hình Shin</a>
+      <a href="https://forms.gle/SiMMVMoPb2ZKEdQW8" target="_blank" rel="noopener noreferrer" style="color: #fbbf24; text-decoration: none; font-weight: 700;">⭐ Gửi Đánh Giá (Google Forms)</a>
+    </div>
+    <p style="color: var(--text-muted); font-size: 13px;">Dự án Truyện Cười &copy; 2026 - Tác giả: <strong>Nhân</strong> | Tác phẩm: <em>Shin — Cậu Bé Bút Chì</em></p>
+  </footer>
 
   <div class="lightbox" id="lightbox" onclick="closeLightbox()">
     <button class="lightbox-close">&times;</button>
