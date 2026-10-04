@@ -8,6 +8,8 @@
     :root {
       --primary: #f59e0b;
       --primary-hover: #d97706;
+      --primary-glow: rgba(245, 158, 11, 0.25);
+      --accent: #ef4444;
       --bg: #0f172a;
       --card-bg: #1e293b;
       --card-hover: #273549;
@@ -40,11 +42,19 @@
     }
 
     .top-nav {
-      max-width: 1050px;
+      max-width: 1100px;
       margin: 0 auto 1.5rem auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
     }
 
     .back-btn {
@@ -64,7 +74,8 @@
 
     .back-btn:hover {
       background: rgba(56, 189, 248, 0.25);
-      transform: translateX(-4px);
+      transform: translateX(-3px);
+      color: #fff;
     }
 
     .lam-btn {
@@ -84,7 +95,7 @@
 
     .lam-btn:hover {
       background: rgba(16, 185, 129, 0.25);
-      transform: translateX(4px);
+      transform: translateX(3px);
       color: #fff;
     }
 
@@ -98,7 +109,7 @@
     }
 
     .header-content {
-      max-width: 1050px;
+      max-width: 1100px;
       margin: 0 auto;
       text-align: center;
     }
@@ -113,15 +124,15 @@
     }
 
     .header-content p {
-      color: var(--text-muted);
+      color: #cbd5e1;
       font-size: 1.15rem;
-      max-width: 650px;
+      max-width: 700px;
       margin: 0 auto;
     }
 
     main {
       flex: 1;
-      max-width: 1050px;
+      max-width: 1100px;
       width: 100%;
       margin: 2.5rem auto;
       padding: 0 1.5rem;
@@ -131,7 +142,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       flex-wrap: wrap;
       gap: 1rem;
     }
@@ -156,7 +167,7 @@
 
     .search-wrap input:focus {
       border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+      box-shadow: 0 0 0 3px var(--primary-glow);
     }
 
     .search-wrap::before {
@@ -166,6 +177,39 @@
       top: 50%;
       transform: translateY(-50%);
       font-size: 0.9rem;
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .filter-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 0.45rem 1rem;
+      border-radius: 10px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .filter-btn:hover {
+      background: var(--card-hover);
+      color: var(--text);
+      border-color: var(--primary);
+    }
+
+    .filter-btn.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
     }
 
     .count-badge {
@@ -179,7 +223,7 @@
 
     .story-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
       gap: 1.5rem;
       margin-bottom: 3rem;
     }
@@ -187,7 +231,7 @@
     .story-card {
       background: var(--card-bg);
       border: 1px solid var(--border);
-      border-radius: 16px;
+      border-radius: 18px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
@@ -204,16 +248,26 @@
     }
 
     .card-banner {
-      height: 120px;
+      height: 150px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 3.5rem;
-      background: linear-gradient(135deg, #f59e0b, #ef4444);
+      background: linear-gradient(135deg, #1e1b4b, #312e81);
+      position: relative;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card-banner::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 40%, rgba(15, 23, 42, 0.75) 100%);
     }
 
     .card-body {
-      padding: 1.25rem;
+      padding: 1.35rem;
       display: flex;
       flex-direction: column;
       flex: 1;
@@ -221,7 +275,8 @@
 
     .tags {
       display: flex;
-      gap: 0.5rem;
+      flex-wrap: wrap;
+      gap: 0.4rem;
       margin-bottom: 0.75rem;
     }
 
@@ -234,33 +289,105 @@
       font-weight: 600;
     }
 
+    .tag.blue {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+    }
+
+    .tag.purple {
+      background: rgba(168, 85, 247, 0.15);
+      color: #c084fc;
+    }
+
+    .tag.red {
+      background: rgba(239, 68, 68, 0.15);
+      color: #f87171;
+    }
+
+    .tag.green {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+    }
+
     .card-title {
-      font-size: 1.2rem;
-      font-weight: 700;
+      font-size: 1.22rem;
+      font-weight: 800;
       color: #ffffff;
       margin-bottom: 0.5rem;
+      line-height: 1.35;
     }
 
     .card-desc {
       color: var(--text-muted);
-      font-size: 0.9rem;
+      font-size: 0.91rem;
       flex: 1;
       margin-bottom: 1.25rem;
+      line-height: 1.6;
     }
 
     .card-link-label {
-      color: #38bdf8;
+      color: #fbbf24;
       font-size: 0.9rem;
-      font-weight: 600;
+      font-weight: 700;
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: auto;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 0.75rem;
+    }
+
+    .btn-badge {
+      font-size: 0.8rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
       gap: 0.35rem;
+      transition: all 0.2s ease;
+    }
+
+    .btn-badge.gold {
+      background: rgba(245, 158, 11, 0.18);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+    }
+
+    .btn-badge.gold:hover {
+      background: var(--primary);
+      color: #0f172a;
+    }
+
+    .btn-badge.blue {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.35);
+    }
+
+    .btn-badge.blue:hover {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+
+    .btn-badge.red {
+      background: rgba(239, 68, 68, 0.15);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.35);
+    }
+
+    .btn-badge.red:hover {
+      background: #ef4444;
+      color: #fff;
     }
 
     .guide-box {
       background: linear-gradient(145deg, #1e293b, #172033);
       border: 1px dashed #475569;
-      border-radius: 16px;
+      border-radius: 18px;
       padding: 2rem;
       margin-top: 2rem;
     }
@@ -291,27 +418,27 @@
       background: rgba(15, 23, 42, 0.6);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 1rem;
+      padding: 1.1rem;
     }
 
     .step-num {
       display: inline-block;
-      width: 24px;
-      height: 24px;
-      line-height: 24px;
+      width: 26px;
+      height: 26px;
+      line-height: 26px;
       text-align: center;
       border-radius: 50%;
       background: var(--primary);
       color: #0f172a;
-      font-weight: 700;
-      font-size: 0.8rem;
+      font-weight: 800;
+      font-size: 0.85rem;
       margin-bottom: 0.5rem;
     }
 
     .step-title {
-      font-weight: 600;
+      font-weight: 700;
       color: #f1f5f9;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.35rem;
       font-size: 0.95rem;
     }
 
@@ -322,7 +449,7 @@
 
     footer {
       text-align: center;
-      padding: 2rem 1.5rem;
+      padding: 2.2rem 1.5rem;
       border-top: 1px solid var(--border);
       color: var(--text-muted);
       font-size: 0.875rem;
@@ -334,7 +461,7 @@
 
   <header>
     <div class="top-nav">
-      <div style="display: flex; gap: 0.75rem; align-items: center;">
+      <div class="nav-actions">
         <a href="../index.html" class="back-btn">
           <span>←</span> Trang Chủ Dự Án
         </a>
@@ -342,42 +469,285 @@
           <span>🍃</span> Kho của Lam &rarr;
         </a>
       </div>
-      <span class="badge-path">C:\DU-AN\truyen-cuoi\Nhan</span>
+      <span class="badge-path">C:\truyen-cuoi\Nhan</span>
     </div>
     <div class="header-content">
       <h1>🎭 Kho Truyện Cười - Nhân</h1>
-      <p>Nơi lưu trữ và sáng tác các mẩu chuyện cười, tiểu phẩm hài hước tương tác dạng HTML.</p>
+      <p>Nơi lưu trữ và sáng tác các tác phẩm truyện tranh hài hước tương tác, video hoạt hình 2.5D Motion và vũ trụ quái kiệt Turbo 3000.</p>
     </div>
   </header>
 
   <main>
     <div class="toolbar">
       <div class="search-wrap">
-        <input type="text" id="searchInput" placeholder="Tìm kiếm truyện cười..." oninput="filterStories()">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm truyện cười của Nhân..." oninput="filterStories()">
       </div>
-      <div class="count-badge" id="countDisplay">1 câu chuyện</div>
+      <div class="count-badge" id="countDisplay">12 tác phẩm</div>
     </div>
 
-    <!-- Grid danh sách truyện cười -->
+    <!-- Filter Category Tabs -->
+    <div class="filter-tabs">
+      <button class="filter-btn active" onclick="setCategory('all', this)">✨ Tất Cả (12)</button>
+      <button class="filter-btn" onclick="setCategory('manga', this)">🍃 Manga & Anime</button>
+      <button class="filter-btn" onclick="setCategory('oliver', this)">🛴 Quái Kiệt Oliver Tree</button>
+      <button class="filter-btn" onclick="setCategory('video', this)">🎬 Có Video Phim</button>
+    </div>
+
+    <!-- Grid danh sách truyện cười của Nhân -->
     <div class="story-grid" id="storyList">
-      <a class="story-card" href="naruto_bi_thuat_nghin_nam_dau_don.html">
-        <div class="card-banner" style="background: url('images/naruto_intro.jpg') center/cover no-repeat; height: 160px;">
-        </div>
+
+      <!-- 1. Naruto Bí Thuật -->
+      <div class="story-card" data-category="manga video">
+        <div class="card-banner" style="background-image: url('images/naruto_intro.jpg');"></div>
         <div class="card-body">
           <div class="tags">
             <span class="tag">🍃 Naruto</span>
-            <span class="tag">🔥 Hài hước</span>
+            <span class="tag red">🔥 Thiên Niên Sát</span>
             <span class="tag">🥋 4-Koma</span>
+            <span class="tag blue">🎬 Video 2.5D</span>
           </div>
           <div class="card-title">🎭 Naruto: Bí Thuật Nghìn Năm Đau Đớn</div>
           <div class="card-desc">
-            Phân cảnh kinh điển trong bài kiểm tra cướp chuông của Đội 7. Khi thánh gáy Naruto chạm trán cú thọc chí mạng của thầy Kakashi!
+            Phân cảnh kinh điển trong bài kiểm tra cướp chuông của Đội 7. Khi thánh gáy Naruto chạm trán cú thọc chí mạng "Thiên Niên Sát" của thầy Kakashi bay thẳng lên mây!
           </div>
           <div class="card-link-label">
-            <span>Đọc truyện ngay</span> &rarr;
+            <a href="naruto_bi_thuat_nghin_nam_dau_don.html" class="btn-badge gold">📖 Đọc Truyện Ngay &rarr;</a>
+            <a href="../Truyện cười của Nhân/xem_video_naruto.html" class="btn-badge red">🎬 Video Motion</a>
           </div>
         </div>
-      </a>
+      </div>
+
+      <!-- 2. Shin Cậu Bé Bút Chì -->
+      <div class="story-card" data-category="manga video">
+        <div class="card-banner" style="background-image: url('images/shin_intro.jpg');"></div>
+        <div class="card-body">
+          <div class="tags">
+            <span class="tag red">🖍️ Shin-chan</span>
+            <span class="tag">🍑 Múa mông lắc lư</span>
+            <span class="tag blue">🎬 Video Phim</span>
+            <span class="tag">😆 Cười té ghế</span>
+          </div>
+          <div class="card-title">🖍️ Shin - Cậu Bé Bút Chì: Cậu Bé Hoàn Hảo</div>
+          <div class="card-desc">
+            Nhóc tì Shin 5 tuổi với tuyệt kỹ múa mông huyền thoại và màn đối đáp siêu bá đạo khiến mẹ Misa bốc khói đầu, bạn bè ôm bụng cười ngất!
+          </div>
+          <div class="card-link-label">
+            <a href="../Truyện cười của Nhân/xem_truyen_shin.html" class="btn-badge gold">📖 Đọc Truyện &rarr;</a>
+            <a href="../Truyện cười của Nhân/xem_video_shin.html" class="btn-badge red">🎬 Video Hoạt Hình</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Doraemon Bánh Mì Trí Nhớ -->
+      <div class="story-card" data-category="manga video">
+        <div class="card-banner" style="background-image: url('images/doraemon_intro.jpg');"></div>
+        <div class="card-body">
+          <div class="tags">
+            <span class="tag blue">🔔 Doraemon</span>
+            <span class="tag">🍞 Bánh mì trí nhớ</span>
+            <span class="tag red">🚽 Căng bụng cấp tốc</span>
+            <span class="tag">🎬 Video HD</span>
+          </div>
+          <div class="card-title">🔔 Doraemon: Bánh Mì Trí Nhớ Bão Táp</div>
+          <div class="card-desc">
+            Nobita ăn nguyên cả chục ổ bánh mì trí nhớ để chuẩn bị cho kỳ thi sinh tử. Ai ngờ ăn quá no dẫn đến cơn đau bụng kinh hoàng trước giờ G và bay màu toàn bộ trí nhớ!
+          </div>
+          <div class="card-link-label">
+            <a href="../Truyện cười của Nhân/xem_video_doraemon.html" class="btn-badge red">🎬 Rạp Phim Doraemon &rarr;</a>
+            <span style="color: var(--text-muted); font-size: 0.8rem;">Full HD Lồng Tiếng</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Kiteretsu Cuốn Từ Điển Kì Bí -->
+      <div class="story-card" data-category="manga video">
+        <div class="card-banner" style="background-image: url('images/kiteretsu_intro.jpg');"></div>
+        <div class="card-body">
+          <div class="tags">
+            <span class="tag purple">🤖 Kiteretsu</span>
+            <span class="tag">📖 Từ điển kỳ bí</span>
+            <span class="tag">⚔️ Samurai Korosuke</span>
+            <span class="tag blue">🎬 Video HD</span>
+          </div>
+          <div class="card-title">🤖 Kiteretsu: Cuốn Từ Điển Kì Bí & Korosuke</div>
+          <div class="card-desc">
+            Cậu bé thiên tài Kiteretsu chế tạo chú robot kiếm sĩ Korosuke mê ăn bánh bao croquette cùng những phát minh dở khóc dở cười từ cuốn sách bí truyền!
+          </div>
+          <div class="card-link-label">
+            <a href="../Truyện cười của Nhân/xem_video_kiteretsu.html" class="btn-badge red">🎬 Xem Phim Kiteretsu &rarr;</a>
+            <span style="color: var(--text-muted); font-size: 0.8rem;">Video 2.5D Motion</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Ninh Công Hoàng Bí Kíp Sinh Tồn -->
+      <div class="story-card" data-category="manga video">
+        <div class="card-banner" style="background-image: url('images/ninh_cong_hoang_intro.jpg');"></div>
+        <div class="card-body">
+          <div class="tags">
+            <span class="tag green">🎒 Ninh Công Hoàng</span>
+            <span class="tag">🏕️ Sinh tồn hoang dã</span>
+            <span class="tag red">🦟 Bất ổn toàn phần</span>
+            <span class="tag blue">🎬 Video Phim</span>
+          </div>
+          <div class="card-title">🎒 Ninh Công Hoàng: Bí Kíp Sinh Tồn Bất Ổn</div>
+          <div class="card-desc">
+            Cẩm nang sinh tồn nơi hoang dã phiên bản "tấu hài đỉnh cao" của Ninh Công Hoàng. Các mẹo nhóm lửa, dựng lều và chống muỗi cười ra nước mắt!
+          </div>
+          <div class="card-link-label">
+            <a href="../Truyện cười của Nhân/xem_truyen_ninh_cong_hoang.html" class="btn-badge gold">📖 Đọc Truyện &rarr;</a>
+            <a href="../Truyện cười của Nhân/xem_video_ninh_cong_hoang.html" class="btn-badge red">🎬 Video Sinh Tồn</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Oliver Tree - Cash Machine -->
+      <div class="story-card" data-category="oliver video">
+        <div class="card-banner" style="background-image: url('images/oliver_cash_machine_intro.jpg');"></div>
+        <div class="card-body">
+          <div class="tags">
+            <span class="tag">🛴 Turbo 3000</span>
+            <span class="tag green">💵 Cash Machine</span>
+            <span class="tag">🏧 Cây ATM bay</span>
+            <span class="tag blue">🎬 Video Âm Nhạc</span>
+          </div>
+          <div class="card-title">💵 Oliver Tree: Cash Machine - Mưa Tiền & Lòng Tham</div>
+          <div class="card-desc">
+            Quái kiệt đầu bát úp cưỡi xe scooter mini đối đầu cây ATM khổng lồ nhả tiền điên cuồng. Tiểu phẩm châm biếm sâu cay và hài hước bậc nhất!
+          </div>
+          <div class="card-link-label">
+            <a href="../Truyện cười của Nhân/02 - Oliver Tree/xem_truyen_cash_machine.html" class="btn-badge gold">📖 Đọc Truyện 4 Ô &rarr;</a>
+            <a href="../Truyện cười của Nhân/02 - Oliver Tree/xem_video_oliver_cash_machine.html" class="btn-badge red">🎬 Video Clip</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Oliver Tree - Again & Again -->
+      <div class="story-card" data-category="oliver video">
+        <div class="card-banner" style="background-image: url('images/oliver_again_intro.jpg');"></div>
+        <div class="card-body">
+          <div class="tags">
+            <span class="tag">🛴 Turbo 3000</span>
+            <span class="tag purple">🔄 Again & Again</span>
+            <span class="tag red">🏥 Vòng lặp bất tận</span>
+            <span class="tag">🛵 Quái xế hồi sinh</span>
+          </div>
+          <div class="card-title">🔄 Oliver Tree: Again & Again - Vòng Lặp Quái Xế</div>
+          <div class="card-desc">
+            Ngã xe sấp mặt, vào viện bó bột kín mít, rồi lại nhảy phắt dậy vác scooter phóng bạt mạng tiếp! Tinh thần bất khuất đầy hài hước của gã Turbo.
+          </div>
+          <div class="card-link-label">
+            <a href="../Truyện cười của Nhân/02 - Oliver Tree/xem_truyen_oliver_tree_again_and_again.html" class="btn-badge gold">📖 Đọc Truyện Tranh &rarr;</a>
+            <a href="../Truyện cười của Nhân/xem_video_oliver_tree.html" class="btn-badge red">🎬 Tuyển Tập Phim</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. Oliver Tree - All That x Alien Boy -->
+      <div class="story-card" data-category="oliver video">
+        <div class="card-banner" style="background-image: url('images/oliver_alien_boy_intro.jpg');"></div>
+        <div class="card-body">
+          <div class="tags">
+            <span class="tag">🛴 Turbo 3000</span>
+            <span class="tag purple">👽 Alien Boy</span>
+            <span class="tag blue">🛸 Đĩa bay UFO</span>
+            <span class="tag">🐙 Dị nhân 8 tay</span>
+          </div>
+          <div class="card-title">👽 Oliver Tree: All That x Alien Boy - Chạm Trán UFO</div>
+          <div class="card-desc">
+            Gã quái xế mặc bộ đồ gió tím hồng retro đối mặt với đĩa bay người ngoài hành tinh. Sự kết hợp giữa viễn tưởng và phong cách hài hước không đỡ nổi!
+          </div>
+          <div class="card-link-label">
+            <a href="../Truyện cười của Nhân/02 - Oliver Tree/xem_truyen_oliver_tree_all_that_alien_boy.html" class="btn-badge gold">📖 Đọc Truyện &rarr;</a>
+            <a href="../Truyện cười của Nhân/02 - Oliver Tree/xem_video_oliver_alien_boy.html" class="btn-badge red">🎬 Video Clip</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. Oliver Tree - Out Of Ordinary -->
+      <div class="story-card" data-category="oliver video">
+        <div class="card-banner" style="background-image: url('images/oliver_out_of_ordinary_intro.jpg');"></div>
+        <div class="card-body">
+          <div class="tags">
+            <span class="tag">🛴 Turbo 3000</span>
+            <span class="tag red">🔥 Out Of Ordinary</span>
+            <span class="tag">🕶️ Kính râm đỏ</span>
+            <span class="tag blue">🎬 Video HD</span>
+          </div>
+          <div class="card-title">🔥 Oliver Tree: Out Of Ordinary - Phi Thường Hay Dị Biệt</div>
+          <div class="card-desc">
+            Tuyên ngôn phá vỡ mọi quy chuẩn và khuôn khổ thông thường. Dù ai có cười chê phong cách lập dị thì gã Turbo vẫn tự tin tỏa sáng rực rỡ!
+          </div>
+          <div class="card-link-label">
+            <a href="../Truyện cười của Nhân/02 - Oliver Tree/xem_truyen_oliver_tree_out_of_ordinary.html" class="btn-badge gold">📖 Đọc Truyện &rarr;</a>
+            <a href="../Truyện cười của Nhân/02 - Oliver Tree/xem_video_oliver_out_of_ordinary.html" class="btn-badge red">🎬 Video Clip</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10. Oliver Tree - Welcome To LA -->
+      <div class="story-card" data-category="oliver video">
+        <div class="card-banner" style="background-image: url('images/oliver_welcome_to_la_intro.jpg');"></div>
+        <div class="card-body">
+          <div class="tags">
+            <span class="tag">🛴 Turbo 3000</span>
+            <span class="tag green">🌴 Welcome To LA</span>
+            <span class="tag">🛹 Bãi biển Venice</span>
+            <span class="tag blue">🎬 Video HD</span>
+          </div>
+          <div class="card-title">🌴 Oliver Tree: Welcome To LA - Giấc Mơ Hollywood</div>
+          <div class="card-desc">
+            Chuyến thám hiểm thành phố Los Angeles hoa lệ của quái xế Turbo với chiếc xe trượt cà tàng, nơi giấc mơ chạm trán những cú ngã sấp mặt!
+          </div>
+          <div class="card-link-label">
+            <a href="../Truyện cười của Nhân/02 - Oliver Tree/xem_truyen_oliver_tree_welcome_to_la.html" class="btn-badge gold">📖 Đọc Truyện &rarr;</a>
+            <a href="../Truyện cười của Nhân/02 - Oliver Tree/xem_video_oliver_welcome_to_la.html" class="btn-badge red">🎬 Video Clip</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11. Oliver Tree - When I'm Down -->
+      <div class="story-card" data-category="oliver video">
+        <div class="card-banner" style="background-image: url('images/oliver_when_im_down_intro.jpg');"></div>
+        <div class="card-body">
+          <div class="tags">
+            <span class="tag">🛴 Turbo 3000</span>
+            <span class="tag purple">🌧️ When I'm Down</span>
+            <span class="tag">🕺 Điệu nhảy giải sầu</span>
+            <span class="tag blue">🎬 Video MV</span>
+          </div>
+          <div class="card-title">🌧️ Oliver Tree: When I'm Down - Ngày Tụt Mood Hài Hước</div>
+          <div class="card-desc">
+            Bí quyết trị tụt mood có 1-0-2 của Turbo: Bật nhạc quẩy hết cỡ, vít ga scooter tốc độ ánh sáng và biến mọi nỗi buồn thành một trò hề vui vẻ!
+          </div>
+          <div class="card-link-label">
+            <a href="../Truyện cười của Nhân/02 - Oliver Tree/xem_truyen_oliver_tree_when_im_down.html" class="btn-badge gold">📖 Đọc Truyện &rarr;</a>
+            <a href="../Truyện cười của Nhân/02 - Oliver Tree/xem_video_oliver_when_im_down.html" class="btn-badge red">🎬 Video Clip</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12. Tuyển tập Cú Nhảy Thế Kỷ -->
+      <div class="story-card" data-category="oliver video">
+        <div class="card-banner" style="background-image: url('images/oliver_video_intro.jpg');"></div>
+        <div class="card-body">
+          <div class="tags">
+            <span class="tag">🛴 Turbo 3000</span>
+            <span class="tag red">🚀 Cú Nhảy Thế Kỷ</span>
+            <span class="tag blue">🎬 Rạp Phim Studio</span>
+            <span class="tag">🍿 Trọn Bộ Tuyển Tập</span>
+          </div>
+          <div class="card-title">🚀 Oliver Tree: Cú Nhảy Thế Kỷ - Rạp Phim Motion</div>
+          <div class="card-desc">
+            Trọn bộ rạp chiếu phim tổng hợp các thước phim biểu diễn mạo hiểm đỉnh nóc kịch trần, pha nhảy qua hẻm núi ngoạn mục của quái kiệt Oliver Tree!
+          </div>
+          <div class="card-link-label">
+            <a href="../Truyện cười của Nhân/xem_video_oliver_tree.html" class="btn-badge red">🎬 Rạp Phim Oliver Tree &rarr;</a>
+            <a href="../Truyện cười của Nhân/xem_video_oliver_when_im_down.html" class="btn-badge blue">📹 Bản When I'm Down</a>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- Hướng dẫn thêm truyện mới -->
@@ -388,43 +758,58 @@
         <div class="step-item">
           <span class="step-num">1</span>
           <div class="step-title">Tạo tệp HTML</div>
-          <div class="step-desc">Tạo tệp mới trong thư mục <code>Nhan/</code>, ví dụ: <code>chuyen_cuoi_01.html</code></div>
+          <div class="step-desc">Tạo tệp mới trong thư mục <code>Nhan/</code> hoặc <code>Truyện cười của Nhân/</code>.</div>
         </div>
         <div class="step-item">
           <span class="step-num">2</span>
           <div class="step-title">Soạn thảo nội dung</div>
-          <div class="step-desc">Viết nội dung truyện cười, thêm style CSS và hình ảnh để trang thật sinh động.</div>
+          <div class="step-desc">Viết nội dung truyện cười, thêm hình ảnh minh họa trong <code>Nhan/images/</code>.</div>
         </div>
         <div class="step-item">
           <span class="step-num">3</span>
           <div class="step-title">Gắn liên kết</div>
-          <div class="step-desc">Mở tệp <code>index.html</code> này và thêm thẻ liên kết đến truyện vừa tạo vào danh sách!</div>
+          <div class="step-desc">Mở tệp <code>index.html</code> này và thêm thẻ truyện vào danh sách để độc giả thưởng thức!</div>
         </div>
       </div>
     </div>
   </main>
 
   <footer>
-    <p>Dự án Truyện Cười &copy; 2026 - Tác giả: <strong>Nhân</strong></p>
+    <p>Dự án Truyện Cười &copy; 2026 - Tác giả: <strong>Nhân</strong> | Chúc bạn có những phút giây tràn ngập tiếng cười! 😄</p>
   </footer>
 
   <script>
+    let currentCategory = 'all';
+
+    function setCategory(cat, btn) {
+      currentCategory = cat;
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      filterStories();
+    }
+
     function filterStories() {
-      const q = document.getElementById('searchInput').value.toLowerCase();
+      const q = document.getElementById('searchInput').value.toLowerCase().trim();
       const cards = document.querySelectorAll('.story-card');
       let count = 0;
+
       cards.forEach(card => {
         const text = card.textContent.toLowerCase();
-        if (text.includes(q)) {
+        const cats = card.getAttribute('data-category') || '';
+        const matchQuery = !q || text.includes(q);
+        const matchCat = (currentCategory === 'all') || cats.includes(currentCategory);
+
+        if (matchQuery && matchCat) {
           card.style.display = '';
           count++;
         } else {
           card.style.display = 'none';
         }
       });
+
       const badge = document.getElementById('countDisplay');
       if (badge) {
-        badge.textContent = count + ' câu chuyện';
+        badge.textContent = count + ' tác phẩm';
       }
     }
   </script>

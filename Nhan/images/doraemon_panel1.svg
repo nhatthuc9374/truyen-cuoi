@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9C4"/>
+      <stop offset="70%" stop-color="#FFF59D"/>
+      <stop offset="100%" stop-color="#FFE082"/>
+    </linearGradient>
+    <linearGradient id="tatamiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C8E6C9"/>
+      <stop offset="60%" stop-color="#A5D6A7"/>
+      <stop offset="100%" stop-color="#81C784"/>
+    </linearGradient>
+    <linearGradient id="breadCrust" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8D6E63"/>
+      <stop offset="50%" stop-color="#6D4C41"/>
+      <stop offset="100%" stop-color="#4E342E"/>
+    </linearGradient>
+    <linearGradient id="breadCrumb" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9C4"/>
+      <stop offset="100%" stop-color="#FFF176"/>
+    </linearGradient>
+    <radialGradient id="magicGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFEE58" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#FFCA28" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFA000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="doraemonBlue" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#29B6F6"/>
+      <stop offset="70%" stop-color="#0288D1"/>
+      <stop offset="100%" stop-color="#01579B"/>
+    </radialGradient>
+    <radialGradient id="bellGold" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FFEE58"/>
+      <stop offset="60%" stop-color="#FDD835"/>
+      <stop offset="100%" stop-color="#F57F17"/>
+    </radialGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="comicShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="4" dy="6" stdDeviation="4" flood-color="#1A237E" flood-opacity="0.25"/>
+    </filter>
+    <filter id="bubbleShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+    <filter id="glowGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND: NOBITA'S ROOM -->
+  <rect x="15" y="15" width="1170" height="770" rx="24" fill="url(#wallGrad)" stroke="#263238" stroke-width="8"/>
+
+  <!-- Tường Nhật Bản có khung gỗ -->
+  <line x1="20" y1="180" x2="1180" y2="180" stroke="#8D6E63" stroke-width="6"/>
+  <line x1="380" y1="20" x2="380" y2="480" stroke="#BCAAA4" stroke-width="4"/>
+  <line x1="780" y1="20" x2="780" y2="480" stroke="#BCAAA4" stroke-width="4"/>
+
+  <!-- Cửa sổ nhìn ra trời mây -->
+  <g transform="translate(80, 50)">
+    <rect x="0" y="0" width="220" height="150" rx="8" fill="#B3E5FC" stroke="#6D4C41" stroke-width="6"/>
+    <line x1="110" y1="0" x2="110" y2="150" stroke="#6D4C41" stroke-width="4"/>
+    <line x1="0" y1="75" x2="220" y2="75" stroke="#6D4C41" stroke-width="4"/>
+    <!-- Đám mây trắng -->
+    <path d="M 30 110 Q 50 85 80 95 Q 110 80 130 100 Q 150 95 160 115 Z" fill="#FFF" opacity="0.9"/>
+  </g>
+
+  <!-- Bàn học Nobita bên góc trái -->
+  <g transform="translate(40, 280)">
+    <rect x="0" y="70" width="220" height="140" rx="6" fill="#8D6E63" stroke="#4E342E" stroke-width="5"/>
+    <rect x="15" y="90" width="85" height="40" rx="4" fill="#BCAAA4" stroke="#4E342E" stroke-width="3"/>
+    <circle cx="58" cy="110" r="5" fill="#3E2723"/>
+    <!-- Hộc bàn máy thời gian hơi hé mở sáng le lói -->
+    <rect x="115" y="90" width="85" height="40" rx="4" fill="#81D4FA" stroke="#0288D1" stroke-width="3"/>
+    <text x="157" y="115" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#01579B" text-anchor="middle">TIME</text>
+    <!-- Chồng sách bài tập trên bàn -->
+    <rect x="25" y="35" width="70" height="35" rx="3" fill="#E57373" stroke="#C62828" stroke-width="3"/>
+    <rect x="30" y="15" width="60" height="20" rx="3" fill="#81C784" stroke="#2E7D32" stroke-width="3"/>
+    <text x="60" y="28" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold" fill="#1B5E20" text-anchor="middle">TOÁN 5</text>
+    <!-- Đèn bàn -->
+    <path d="M 140 70 L 160 10 L 190 25 L 175 70" fill="none" stroke="#546E7A" stroke-width="4"/>
+    <path d="M 145 5 L 180 25 L 135 45 Z" fill="#FF7043" stroke="#D84315" stroke-width="3"/>
+  </g>
+
+  <!-- SÀN NHÀ TATAMI -->
+  <rect x="20" y="470" width="1160" height="310" fill="url(#tatamiGrad)"/>
+  <line x1="20" y1="470" x2="1180" y2="470" stroke="#558B2F" stroke-width="8"/>
+  <!-- Chiếu Tatami viền đen -->
+  <line x1="20" y1="560" x2="1180" y2="560" stroke="#33691E" stroke-width="4" stroke-dasharray="16,8"/>
+  <line x1="20" y1="660" x2="1180" y2="660" stroke="#33691E" stroke-width="4" stroke-dasharray="16,8"/>
+  <line x1="580" y1="470" x2="580" y2="780" stroke="#2E7D32" stroke-width="6"/>
+
+  <!-- TIÊU ĐỀ KHUNG TRUYỆN -->
+  <g transform="translate(40, 30)">
+    <rect x="0" y="0" width="280" height="42" rx="10" fill="#E53935" stroke="#B71C1C" stroke-width="3" filter="url(#comicShadow)"/>
+    <text x="140" y="28" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="900" fill="#FFF" text-anchor="middle" letter-spacing="1">KHUNG 1: CỨU TỚ VỚI!</text>
+  </g>
+
+  <!-- ==================== NOBITA QUỲ KHÓC ÔM CHÂN ==================== -->
+  <g id="nobita" transform="translate(320, 370)" filter="url(#comicShadow)">
+    <!-- Chân gập quỳ -->
+    <ellipse cx="60" cy="270" rx="45" ry="25" fill="#FFE0B2" stroke="#263238" stroke-width="4"/>
+    <ellipse cx="140" cy="275" rx="50" ry="25" fill="#FFE0B2" stroke="#263238" stroke-width="4"/>
+    <ellipse cx="185" cy="285" rx="25" ry="18" fill="#FFF" stroke="#263238" stroke-width="3"/> <!-- tất chân -->
+    <ellipse cx="25" cy="280" rx="25" ry="18" fill="#FFF" stroke="#263238" stroke-width="3"/>
+
+    <!-- Quần đùi xanh navy -->
+    <path d="M 40 210 Q 100 240 160 210 L 155 260 Q 95 285 45 260 Z" fill="#1565C0" stroke="#0D47A1" stroke-width="4"/>
+
+    <!-- Lưng / Áo vàng Nobita gù gập quỳ khóc -->
+    <path d="M 30 140 Q 80 100 150 130 L 155 220 Q 90 235 35 210 Z" fill="#FBC02D" stroke="#263238" stroke-width="5"/>
+    <!-- Cổ áo trắng -->
+    <polygon points="45,135 65,155 85,135" fill="#FFF" stroke="#263238" stroke-width="3"/>
+
+    <!-- Hai tay với ôm chặt lấy chân Doraemon -->
+    <path d="M 130 160 Q 220 180 270 210" fill="none" stroke="#FBC02D" stroke-width="26" stroke-linecap="round"/>
+    <path d="M 130 160 Q 220 180 270 210" fill="none" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+    <!-- Bàn tay tròn xoe bấu víu -->
+    <circle cx="280" cy="215" r="18" fill="#FFE0B2" stroke="#263238" stroke-width="4"/>
+
+    <!-- Đầu Nobita cúi gục góc 45 độ -->
+    <g transform="translate(-10, 30)">
+      <circle cx="95" cy="80" r="55" fill="#FFE0B2" stroke="#263238" stroke-width="5"/>
+      <!-- Tóc đen Nobita -->
+      <path d="M 45 70 C 40 10, 145 10, 150 70 C 130 50, 110 50, 95 60 C 80 50, 60 55, 45 70 Z" fill="#212121" stroke="#263238" stroke-width="4"/>
+      <!-- Mắt kính tròn to viền đen với mắt nhắm tít khóc -->
+      <circle cx="75" cy="85" r="22" fill="#FFF" fill-opacity="0.9" stroke="#263238" stroke-width="4"/>
+      <circle cx="118" cy="85" r="22" fill="#FFF" fill-opacity="0.9" stroke="#263238" stroke-width="4"/>
+      <!-- Cầu kính -->
+      <line x1="97" y1="85" x2="96" y2="85" stroke="#263238" stroke-width="4"/>
+      <!-- Mắt nhắm tít hình > < vì khóc gào -->
+      <path d="M 65 80 L 75 88 L 65 96" fill="none" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+      <path d="M 128 80 L 118 88 L 128 96" fill="none" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+      <!-- Miệng gào khóc há to ngoác -->
+      <path d="M 75 110 Q 95 145 120 110 Z" fill="#D32F2F" stroke="#263238" stroke-width="4"/>
+      <ellipse cx="98" cy="120" rx="14" ry="7" fill="#FF8A80"/>
+      <!-- NƯỚC MẮT VÒI RỒNG PHUN RA HAI BÊN -->
+      <path d="M 60 88 C 20 85, -20 120, -50 100" fill="none" stroke="#40C4FF" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 60 88 C 10 70, -30 60, -70 80" fill="none" stroke="#80D8FF" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 135 88 C 170 70, 210 50, 240 75" fill="none" stroke="#40C4FF" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="-55" cy="100" r="10" fill="#00B0FF"/>
+      <circle cx="-75" cy="78" r="8" fill="#40C4FF"/>
+      <circle cx="245" cy="77" r="9" fill="#00B0FF"/>
+    </g>
+  </g>
+
+  <!-- ==================== DORAEMON TỎA SÁNG HÀO HÙNG ==================== -->
+  <g id="doraemon" transform="translate(680, 220)" filter="url(#comicShadow)">
+    <!-- HÀO QUANG SAU LƯNG DORAEMON -->
+    <circle cx="150" cy="180" r="230" fill="url(#magicGlow)"/>
+
+    <!-- Tia hào quang vàng xoay -->
+    <path d="M 150 180 L 70 -40 L 110 -40 Z" fill="#FFF59D" opacity="0.4"/>
+    <path d="M 150 180 L 220 -40 L 260 -40 Z" fill="#FFF59D" opacity="0.4"/>
+    <path d="M 150 180 L 370 60 L 390 100 Z" fill="#FFF59D" opacity="0.4"/>
+    <path d="M 150 180 L 380 250 L 370 290 Z" fill="#FFF59D" opacity="0.4"/>
+    <path d="M 150 180 L -40 100 L -40 60 Z" fill="#FFF59D" opacity="0.4"/>
+
+    <!-- CHÂN DORAEMON -->
+    <ellipse cx="90" cy="450" rx="55" ry="32" fill="#FFF" stroke="#263238" stroke-width="5"/>
+    <ellipse cx="210" cy="450" rx="55" ry="32" fill="#FFF" stroke="#263238" stroke-width="5"/>
+
+    <!-- THÂN TRÒN DORAEMON -->
+    <circle cx="150" cy="310" r="135" fill="url(#doraemonBlue)" stroke="#263238" stroke-width="6"/>
+
+    <!-- BỤNG TRẮNG -->
+    <circle cx="150" cy="325" r="95" fill="#FFF" stroke="#263238" stroke-width="4"/>
+
+    <!-- TÚI THẦN KỲ 4D BÁN NGUYỆT -->
+    <path d="M 85 325 C 85 395, 215 395, 215 325 Z" fill="#FFF" stroke="#263238" stroke-width="4"/>
+    <line x1="85" y1="325" x2="215" y2="325" stroke="#263238" stroke-width="4"/>
+
+    <!-- TAY TRÁI DORAEMON (Chống nạnh tự tin) -->
+    <path d="M 40 280 Q -20 330 30 360" fill="none" stroke="#0288D1" stroke-width="38" stroke-linecap="round"/>
+    <path d="M 40 280 Q -20 330 30 360" fill="none" stroke="#263238" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="30" cy="360" r="28" fill="#FFF" stroke="#263238" stroke-width="5"/>
+
+    <!-- TAY PHẢI DORAEMON (Giơ cao bảo bối lên trời!) -->
+    <!-- Cánh tay vươn lên trên phải -->
+    <path d="M 245 270 Q 320 200 310 110" fill="none" stroke="#0288D1" stroke-width="38" stroke-linecap="round"/>
+    <path d="M 245 270 Q 320 200 310 110" fill="none" stroke="#263238" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="310" cy="105" r="30" fill="#FFF" stroke="#263238" stroke-width="5"/>
+
+    <!-- ==================== BÁO BỐI: BÁNH MÌ TRÍ NHỚ (ANKIPAN) ==================== -->
+    <g transform="translate(290, -10)" filter="url(#glowGlow)">
+      <!-- Lát bánh mì sandwich vàng ruộm -->
+      <!-- Viền vỏ bánh mì nâu -->
+      <path d="M -10 10 C -10 -25, 40 -35, 75 -35 C 110 -35, 160 -25, 160 10 L 155 130 C 155 145, 140 155, 125 155 L 25 155 C 10 155, -5 145, -5 130 Z" fill="url(#breadCrust)" stroke="#3E2723" stroke-width="5"/>
+      <!-- Ruột bánh mì vàng óng mềm mại -->
+      <path d="M 5 15 C 5 -15, 45 -22, 75 -22 C 105 -22, 145 -15, 145 15 L 140 120 C 140 135, 128 142, 115 142 L 35 142 C 22 142, 10 135, 10 120 Z" fill="url(#breadCrumb)" stroke="#F57F17" stroke-width="3"/>
+      <!-- Chữ Nhật Bản / Ký tự in trên bánh mì: アンキパン (ANKIPAN) -->
+      <text x="75" y="45" font-family="'Arial Black', 'Impact', sans-serif" font-size="28" font-weight="900" fill="#5D4037" text-anchor="middle">アンキ</text>
+      <text x="75" y="85" font-family="'Arial Black', 'Impact', sans-serif" font-size="28" font-weight="900" fill="#5D4037" text-anchor="middle">パン</text>
+      <text x="75" y="118" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="900" fill="#D84315" text-anchor="middle">TRÍ NHỚ</text>
+
+      <!-- Ngôi sao lấp lánh quanh bánh mì -->
+      <path d="M -25 -20 L -18 -30 L -8 -20 L -18 -10 Z" fill="#FFF" stroke="#FFD600" stroke-width="2"/>
+      <path d="M 180 30 L 190 15 L 200 30 L 190 45 Z" fill="#FFF" stroke="#FFD600" stroke-width="2"/>
+      <path d="M 30 -50 L 40 -65 L 50 -50 L 40 -35 Z" fill="#FFF" stroke="#FFD600" stroke-width="2"/>
+      <circle cx="170" cy="110" r="5" fill="#FFEE58"/>
+      <circle cx="-15" cy="80" r="4" fill="#FFEE58"/>
+    </g>
+
+    <!-- ĐẦU DORAEMON -->
+    <circle cx="150" cy="140" r="125" fill="url(#doraemonBlue)" stroke="#263238" stroke-width="6"/>
+
+    <!-- KHUÔN MẶT TRẮNG TRÒN TRỊA -->
+    <path d="M 50 170 C 50 85, 250 85, 250 170 C 250 250, 50 250, 50 170 Z" fill="#FFF" stroke="#263238" stroke-width="4"/>
+
+    <!-- MẮT TRÁI & PHẢI DORAEMON (Ánh mắt tự tin, tinh nghịch) -->
+    <ellipse cx="128" cy="85" rx="22" ry="32" fill="#FFF" stroke="#263238" stroke-width="4"/>
+    <ellipse cx="172" cy="85" rx="22" ry="32" fill="#FFF" stroke="#263238" stroke-width="4"/>
+    <!-- Đồng tử đen nháy + chấm sáng -->
+    <ellipse cx="135" cy="90" rx="9" ry="12" fill="#212121"/>
+    <circle cx="137" cy="85" r="4" fill="#FFF"/>
+    <ellipse cx="165" cy="90" rx="9" ry="12" fill="#212121"/>
+    <circle cx="167" cy="85" r="4" fill="#FFF"/>
+
+    <!-- MŨI ĐỎ TRÒN XOE -->
+    <circle cx="150" cy="118" r="16" fill="#E53935" stroke="#B71C1C" stroke-width="3"/>
+    <circle cx="145" cy="113" r="5" fill="#FFF"/>
+
+    <!-- ĐƯỜNG RÃNH NHÂN TRUNG VÀ RIA MÉP -->
+    <line x1="150" y1="134" x2="150" y2="185" stroke="#263238" stroke-width="4"/>
+    <!-- 6 sợi ria mép kinh điển -->
+    <line x1="60" y1="130" x2="120" y2="140" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+    <line x1="55" y1="155" x2="118" y2="155" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+    <line x1="62" y1="180" x2="122" y2="170" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+
+    <line x1="240" y1="130" x2="180" y2="140" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+    <line x1="245" y1="155" x2="182" y2="155" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+    <line x1="238" y1="180" x2="178" y2="170" stroke="#263238" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- MIỆNG CƯỜI TƯƠI RẠNG RỠ -->
+    <path d="M 90 185 Q 150 255 210 185 Z" fill="#D32F2F" stroke="#263238" stroke-width="4"/>
+    <!-- Lưỡi hồng -->
+    <path d="M 120 215 Q 150 195 180 215 Q 150 245 120 215 Z" fill="#FF8A80" stroke="#C2185B" stroke-width="2"/>
+
+    <!-- VÒNG CỔ ĐỎ & CHUÔNG VÀNG -->
+    <rect x="75" y="235" width="150" height="22" rx="10" fill="#D32F2F" stroke="#263238" stroke-width="4"/>
+    <circle cx="150" cy="262" r="22" fill="url(#bellGold)" stroke="#263238" stroke-width="4"/>
+    <line x1="130" y1="256" x2="170" y2="256" stroke="#5D4037" stroke-width="3"/>
+    <circle cx="150" cy="265" r="5" fill="#3E2723"/>
+    <line x1="150" y1="270" x2="150" y2="284" stroke="#3E2723" stroke-width="3"/>
+  </g>
+
+  <!-- ==================== BONG BÓNG THOẠI ==================== -->
+  <!-- Bong bóng Nobita khóc cầu cứu -->
+  <g transform="translate(140, 200)" filter="url(#bubbleShadow)">
+    <path d="M 0 0 L 260 0 C 275 0, 285 10, 285 25 L 285 110 C 285 125, 275 135, 260 135 L 200 135 L 220 180 L 170 135 L 25 135 C 10 135, 0 125, 0 110 Z" fill="#FFF" stroke="#263238" stroke-width="4"/>
+    <text x="140" y="38" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="900" fill="#D32F2F" text-anchor="middle">HU HU HU! CỨU TỚ VỚI!</text>
+    <text x="140" y="68" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="bold" fill="#212121" text-anchor="middle">Mai thi học kỳ rồi Doraemon ơi!</text>
+    <text x="140" y="93" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="bold" fill="#212121" text-anchor="middle">Tớ chưa thuộc chữ nào hết trơn!</text>
+    <text x="140" y="118" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="bold" fill="#C62828" text-anchor="middle">Điểm 0 nữa là mẹ tống ra đường!</text>
+  </g>
+
+  <!-- Bong bóng Doraemon tự hào giới thiệu bảo bối -->
+  <g transform="translate(680, 50)" filter="url(#bubbleShadow)">
+    <path d="M 20 0 L 390 0 C 405 0, 415 10, 415 25 L 415 115 C 415 130, 405 140, 390 140 L 180 140 L 150 175 L 155 140 L 20 140 C 5 140, -5 130, -5 115 L -5 25 C -5 10, 5 0, 20 0 Z" fill="#E1F5FE" stroke="#0288D1" stroke-width="4"/>
+    <text x="205" y="38" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="900" fill="#01579B" text-anchor="middle">ĐỪNG LO! ĐÃ CÓ BẢO BỐI ĐÂY!</text>
+    <text x="205" y="73" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="900" fill="#E65100" text-anchor="middle">✨ BÁNH MÌ TRÍ NHỚ ✨</text>
+    <text x="205" y="102" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="bold" fill="#37474F" text-anchor="middle">Chỉ cần ịn vào trang sách giáo khoa rồi ăn,</text>
+    <text x="205" y="125" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="bold" fill="#00897B" text-anchor="middle">là thuộc làu làu ngay tắp lự!</text>
+  </g>
+
+  <!-- HIỆU ỨNG ÂM THANH MANGA (SFX) -->
+  <text x="560" y="240" font-family="'Impact', Arial, sans-serif" font-size="46" font-style="italic" fill="#FF6F00" stroke="#FFE082" stroke-width="2" transform="rotate(-15, 560, 240)">KENG TENG! ✨</text>
+  <text x="250" y="550" font-family="'Impact', Arial, sans-serif" font-size="36" font-style="italic" fill="#0288D1" stroke="#E1F5FE" stroke-width="1" transform="rotate(10, 250, 550)">HU HU HU HU!! 😭</text>
+</svg>
